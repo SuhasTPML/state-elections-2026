@@ -1,0 +1,699 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Assembly Constituency Map (Non-Bihar)</title>
+  <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, Arial, sans-serif; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    #controls { padding: 8px 12px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+
+    .controls-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 4px;
+    }
+    .map-section-title { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
+    .controls-description { font-family: 'Roboto Slab', serif; font-size: 16px; color: #000; margin-bottom: 6px; }
+
+    .controls-main {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .controls-search {
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .controls-search input {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .controls-search .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .dropdown-item {
+      padding: 8px 12px;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    .dropdown-item:hover { background: #f0f0f0; }
+    .dropdown-note {
+      padding: 8px 12px;
+      color: #666;
+      font-style: italic;
+      background: #f9f9f9;
+      font-size: 12px;
+    }
+
+    .controls-options {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+      justify-self: end;
+    }
+    .controls-options label {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .controls-options select {
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    #status { color: #b00; margin-left: 8px; font-size: 13px; }
+    #mapwrap {
+      flex: 1;
+      min-height: 380px;
+      aspect-ratio: 4 / 3;
+      position: relative;
+    }
+    svg { width: 100%; height: 100%; background: #f9fafb; display:block; }
+    .ac {
+      stroke-width: 0.5;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      shape-rendering: geometricPrecision;
+    }
+    .ac:not(.no-hover):hover { fill: #a9d0ff; cursor: pointer; }
+    .selected { stroke-width: 2; }
+    .dimmed { opacity: 0.3; transition: opacity 0.2s ease; }
+
+    #mapControls {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
+    #crossBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: none;
+    }
+    .map-control-btn {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #666;
+      border-radius: 50%;
+      background: white;
+      color: #333;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .map-control-btn:hover {
+      background: #f0f0f0;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .map-control-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    #bottomSheet {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #ccc;
+      padding: 15px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+      font-size: 14px;
+      max-height: 140px;
+      overflow-y: auto;
+      display: none;
+    }
+    .sheet-header { margin-bottom: 12px; line-height: 1.3; display: flex; align-items: baseline; gap: 10px; }
+    .sheet-header .ac-number { font-size: 14px; font-weight: 500; color: #6b7280; }
+    .sheet-header .ac-name { font-size: 18px; font-weight: 700; color: #1f2937; }
+    .sheet-header .district-name { font-size: 13px; font-weight: 400; color: #9ca3af; margin-left: auto; }
+    .info-row { margin-bottom: 10px; font-size: 14px; color: #374151; }
+    .info-row strong { color: #1f2937; }
+
+    body.bottom-sheet-active #mapwrap {
+      padding-bottom: 160px;
+      transition: padding-bottom 0.2s ease;
+    }
+
+    @media (max-width: 768px) {
+      #mapwrap { min-height: 320px; }
+      #controls { padding: 6px 12px; gap: 5px; }
+      .controls-main { grid-template-columns: 1fr; gap: 8px; }
+      .controls-options { justify-self: start; }
+      #mapControls { top: 15px; left: 15px; gap: 8px; }
+      #crossBtn { top: 15px; right: 15px; }
+      .map-control-btn { width: 50px; height: 50px; font-size: 24px; }
+      #bottomSheet { max-height: 120px; }
+      body.bottom-sheet-active #mapwrap { padding-bottom: 140px; }
+    }
+
+    @media (max-width: 480px) {
+      #controls { padding: 5px 10px; gap: 4px; }
+      .controls-search input { font-size: 16px; }
+      #mapControls { top: 10px; left: 10px; gap: 6px; }
+      #crossBtn { top: 10px; right: 10px; }
+      .map-control-btn { width: 44px; height: 44px; font-size: 20px; border-width: 1.5px; }
+      #bottomSheet { max-height: 30vh; padding: 12px; }
+      body.bottom-sheet-active #mapwrap { padding-bottom: 35vh; }
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <div class="controls-header">
+      <h3 id="mapTitle" class="map-section-title">Assembly Constituency Map</h3>
+      <span id="status"></span>
+    </div>
+    <div id="mapDescription" class="controls-description">
+      Tap on a constituency to view details, or search by number/name/district.
+    </div>
+    <div class="controls-main">
+      <div class="controls-search">
+        <input id="acSearch" type="search" placeholder="Search constituency by number, name, or district..." />
+        <div id="dropdown" class="dropdown"></div>
+      </div>
+      <div class="controls-options">
+        <label for="stateSelect">State:</label>
+        <select id="stateSelect"></select>
+      </div>
+    </div>
+  </div>
+
+  <div id="mapwrap">
+    <svg id="svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
+      <g id="zoomlayer"></g>
+    </svg>
+    <button id="crossBtn" class="map-control-btn" title="Clear selection and reset view">×</button>
+    <div id="mapControls">
+      <button id="zoomInBtn" class="map-control-btn" title="Zoom in">+</button>
+      <button id="zoomOutBtn" class="map-control-btn" title="Zoom out">−</button>
+    </div>
+  </div>
+
+  <div id="bottomSheet"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script>
+    const DEFAULT_MAP_WIDTH = 1200;
+    const DEFAULT_MAP_HEIGHT = 900;
+
+    const REMOTE_BASE = 'https://suhastpml.github.io/Bihar_constituency_page';
+    const RAW_GITHUB_BASE = 'https://raw.githubusercontent.com/suhastpml/Bihar_constituency_page/main';
+    const JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/suhastpml/Bihar_constituency_page@main';
+
+    function uniqueCandidates(list){
+      const seen = new Set();
+      const out = [];
+      for (const item of list) {
+        if (!item || seen.has(item)) continue;
+        seen.add(item);
+        out.push(item);
+      }
+      return out;
+    }
+
+    function buildStateGeoCandidates(fileStem){
+      const optimized = `${fileStem}_optimized.geojson`;
+      const standard = `${fileStem}.geojson`;
+      const origin = (location.protocol === 'http:' || location.protocol === 'https:')
+        ? [
+            `${location.origin}/data/geojson/${optimized}`,
+            `${location.origin}/data/geojson/${standard}`
+          ]
+        : [];
+
+      return uniqueCandidates([
+        `${REMOTE_BASE}/data/geojson/${optimized}`,
+        `${REMOTE_BASE}/data/geojson/${standard}`,
+        `${RAW_GITHUB_BASE}/data/geojson/${optimized}`,
+        `${RAW_GITHUB_BASE}/data/geojson/${standard}`,
+        `${JSDELIVR_BASE}/data/geojson/${optimized}`,
+        `${JSDELIVR_BASE}/data/geojson/${standard}`,
+        ...origin,
+        './data/geojson/' + optimized,
+        './data/geojson/' + standard,
+        'data/geojson/' + optimized,
+        'data/geojson/' + standard,
+        '../data/geojson/' + optimized,
+        '../data/geojson/' + standard,
+        '../../data/geojson/' + optimized,
+        '../../data/geojson/' + standard
+      ]);
+    }
+
+    const STATE_CONFIG = {
+      ASSAM: {
+        label: 'Assam',
+        title: 'Assam Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('ASSAM_ASSEMBLY')
+      },
+      KERALA: {
+        label: 'Kerala',
+        title: 'Kerala Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('KERALA_ASSEMBLY')
+      },
+      PUDUCHERRY: {
+        label: 'Puducherry',
+        title: 'Puducherry Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY')
+      },
+      TAMIL_NADU: {
+        label: 'Tamil Nadu',
+        title: 'Tamil Nadu Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('TAMIL_NADU_ASSEMBLY')
+      },
+      WEST_BENGAL: {
+        label: 'West Bengal',
+        title: 'West Bengal Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('WEST_BENGAL_ASSEMBLY')
+      }
+    };
+
+    const DEFAULT_STATE = 'ASSAM';
+    const svg = d3.select('#svg');
+    const g = d3.select('#zoomlayer');
+
+    const statusEl = document.getElementById('status');
+    const mapTitleEl = document.getElementById('mapTitle');
+    const mapDescriptionEl = document.getElementById('mapDescription');
+    const searchEl = document.getElementById('acSearch');
+    const dropdownEl = document.getElementById('dropdown');
+    const stateSelectEl = document.getElementById('stateSelect');
+    const wrapEl = document.getElementById('mapwrap');
+    const bottomSheetEl = document.getElementById('bottomSheet');
+    const crossBtn = document.getElementById('crossBtn');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+
+    let mapWidth = DEFAULT_MAP_WIDTH;
+    let mapHeight = DEFAULT_MAP_HEIGHT;
+    let projection = null;
+    let path = null;
+    let currentGeoData = null;
+    let currentState = DEFAULT_STATE;
+    let selectedKey = null;
+    let resizeDebounce = null;
+    let searchData = [];
+    const featureByKey = new Map();
+
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    function setQueryParam(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      history.replaceState(null, '', url);
+    }
+
+    function removeQueryParam(name) {
+      const url = new URL(window.location);
+      url.searchParams.delete(name);
+      history.replaceState(null, '', url);
+    }
+
+    function normalizeStateKey(stateKey){
+      const raw = String(stateKey || '').trim().toUpperCase().replace(/[-\s]+/g, '_');
+      return STATE_CONFIG[raw] ? raw : DEFAULT_STATE;
+    }
+
+    function initialStateFromQuery(){
+      return normalizeStateKey(getQueryParam('state'));
+    }
+
+    function updateMapDimensions(){
+      const rect = wrapEl ? wrapEl.getBoundingClientRect() : null;
+      const nextWidth = rect && Number.isFinite(rect.width) && rect.width > 0 ? rect.width : DEFAULT_MAP_WIDTH;
+      let nextHeight = rect && Number.isFinite(rect.height) && rect.height > 0 ? rect.height : 0;
+      if (!nextHeight || nextHeight < 240) {
+        nextHeight = nextWidth * (DEFAULT_MAP_HEIGHT / DEFAULT_MAP_WIDTH);
+      }
+      mapWidth = Math.max(240, Math.round(nextWidth));
+      mapHeight = Math.max(200, Math.round(nextHeight));
+      svg.attr('viewBox', `0 0 ${mapWidth} ${mapHeight}`);
+    }
+
+    function setMapHeadingForState(stateKey){
+      const cfg = STATE_CONFIG[stateKey] || STATE_CONFIG[DEFAULT_STATE];
+      mapTitleEl.textContent = cfg.title;
+      mapDescriptionEl.textContent = cfg.description;
+    }
+
+    function populateStateDropdown(){
+      const options = Object.entries(STATE_CONFIG)
+        .map(([key, cfg]) => `<option value="${key}">${cfg.label}</option>`)
+        .join('');
+      stateSelectEl.innerHTML = options;
+    }
+
+    function featureKey(props){
+      const raw = props.AC_NO ?? props.ac_no ?? props.Ac_No ?? props.no ?? props.NO ?? props.id ?? '';
+      const digits = String(raw).match(/\d+/);
+      if (digits && digits[0]) return digits[0].padStart(3, '0');
+      return String(raw || '').trim().toUpperCase();
+    }
+
+    function featureName(props){
+      return String(props.AC_NAME || props.ac_name || props.Ac_Name || props.NAME || props.name || '').trim();
+    }
+
+    function featureDistrict(props){
+      return String(props.DIST_NAME || props.dist_name || props.DISTRICT || '').trim();
+    }
+
+    function updateCrossButton(){
+      const transform = d3.zoomTransform(svg.node());
+      const isZoomed = transform.k > 1.01;
+      const isSelected = selectedKey !== null;
+      crossBtn.style.display = (isZoomed || isSelected) ? 'block' : 'none';
+    }
+
+    const zoom = d3.zoom().scaleExtent([1, 20]).on('zoom', (ev) => {
+      g.attr('transform', ev.transform);
+      updateCrossButton();
+    });
+    svg.call(zoom);
+
+    function draw(features){
+      g.selectAll('path.ac')
+        .data(features, d => featureKey(d.properties))
+        .join('path')
+        .attr('class', 'ac')
+        .attr('data-key', d => featureKey(d.properties))
+        .attr('d', d => path(d))
+        .attr('fill', '#f3f4f6')
+        .attr('stroke', '#1f77b4')
+        .on('click', (_, d) => selectByKey(featureKey(d.properties)));
+    }
+
+    function cacheFeatures(features){
+      featureByKey.clear();
+      for (const f of features) {
+        featureByKey.set(featureKey(f.properties), f);
+      }
+    }
+
+    function populateSearch(features){
+      searchData = features.map(f => {
+        const key = featureKey(f.properties);
+        const name = featureName(f.properties);
+        const dist = featureDistrict(f.properties);
+        const label = `${name}${dist ? ` (${dist})` : ''}`;
+        return {
+          key,
+          name,
+          dist,
+          label,
+          searchText: `${key} ${name} ${dist}`.toLowerCase()
+        };
+      }).sort((a, b) => a.key.localeCompare(b.key, undefined, { numeric: true }));
+    }
+
+    function showDropdown(matches){
+      if (!matches.length) {
+        dropdownEl.style.display = 'none';
+        return;
+      }
+      dropdownEl.innerHTML = '';
+      const isFullList = matches.length === searchData.length;
+      const limit = isFullList ? 50 : 15;
+      matches.slice(0, limit).forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'dropdown-item';
+        div.textContent = item.label;
+        div.addEventListener('click', () => {
+          searchEl.value = item.label;
+          selectByKey(item.key);
+          dropdownEl.style.display = 'none';
+        });
+        dropdownEl.appendChild(div);
+      });
+      if (matches.length > limit) {
+        const moreDiv = document.createElement('div');
+        moreDiv.className = 'dropdown-note';
+        moreDiv.textContent = `Showing ${limit} of ${matches.length} constituencies...`;
+        dropdownEl.appendChild(moreDiv);
+      }
+      dropdownEl.style.display = 'block';
+    }
+
+    function filterMatches(rawQuery){
+      const query = String(rawQuery || '').trim().toLowerCase();
+      if (!query) return searchData;
+      return searchData.filter(item => item.searchText.includes(query));
+    }
+
+    function hideDropdown(){
+      setTimeout(() => {
+        dropdownEl.style.display = 'none';
+      }, 120);
+    }
+
+    function fitToFeature(feature){
+      if (!feature || !path) return;
+      const b = path.bounds(feature);
+      const dx = b[1][0] - b[0][0];
+      const dy = b[1][1] - b[0][1];
+      if (!Number.isFinite(dx) || !Number.isFinite(dy) || dx <= 0 || dy <= 0) return;
+      const cx = (b[0][0] + b[1][0]) / 2;
+      const cy = (b[0][1] + b[1][1]) / 2;
+      const scale = Math.max(1, 0.9 / Math.max(dx / mapWidth, dy / mapHeight));
+      const transform = d3.zoomIdentity.translate(mapWidth / 2, mapHeight / 2).scale(scale).translate(-cx, -cy);
+      svg.transition().duration(650).call(zoom.transform, transform);
+    }
+
+    function renderDetails(feature){
+      const props = feature.properties || {};
+      const key = featureKey(props);
+      const name = featureName(props);
+      const district = featureDistrict(props);
+      const stateLabel = (STATE_CONFIG[currentState] && STATE_CONFIG[currentState].label) || '';
+      bottomSheetEl.innerHTML = `
+        <div class="sheet-header">
+          <span class="ac-number">AC ${key}</span>
+          <span class="ac-name">${name || 'Unknown Constituency'}</span>
+          <span class="district-name">${district || ''}</span>
+        </div>
+        <div class="info-row"><strong>State:</strong> ${stateLabel}</div>
+        <div class="info-row"><strong>District:</strong> ${district || 'NA'}</div>
+      `;
+      bottomSheetEl.style.display = 'block';
+      document.body.classList.add('bottom-sheet-active');
+    }
+
+    function clearSelection(resetZoom = true){
+      selectedKey = null;
+      g.selectAll('path.ac')
+        .classed('selected', false)
+        .classed('dimmed', false)
+        .classed('no-hover', false)
+        .attr('stroke', '#1f77b4');
+      if (resetZoom) {
+        svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity);
+      }
+      bottomSheetEl.style.display = 'none';
+      document.body.classList.remove('bottom-sheet-active');
+      removeQueryParam('ac');
+      removeQueryParam('name');
+      updateCrossButton();
+    }
+
+    function selectByKey(key, suppressUrlUpdate = false){
+      const feature = featureByKey.get(key);
+      if (!feature) return;
+      selectedKey = key;
+      g.selectAll('path.ac').classed('selected', d => featureKey(d.properties) === key);
+      g.selectAll('path.ac').classed('dimmed', d => featureKey(d.properties) !== key);
+      g.selectAll('path.ac').classed('no-hover', d => featureKey(d.properties) === key);
+      g.selectAll('path.ac').attr('stroke', d => featureKey(d.properties) === key ? '#0b63ce' : '#1f77b4');
+      fitToFeature(feature);
+      renderDetails(feature);
+
+      if (!suppressUrlUpdate) {
+        const item = searchData.find(x => x.key === key);
+        setQueryParam('ac', key);
+        if (item && item.name) setQueryParam('name', item.name);
+      }
+      updateCrossButton();
+    }
+
+    async function loadFromCandidates(candidates, description = 'data') {
+      let lastError = null;
+      for (const url of candidates) {
+        try {
+          const response = await fetch(url, { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response;
+        } catch (err) {
+          lastError = err;
+        }
+      }
+      throw new Error(`Failed to load ${description} from all candidates. Last error: ${lastError ? lastError.message : 'unknown'}`);
+    }
+
+    async function loadState(stateKey){
+      const normalizedState = normalizeStateKey(stateKey);
+      const cfg = STATE_CONFIG[normalizedState];
+      currentState = normalizedState;
+      setMapHeadingForState(normalizedState);
+      stateSelectEl.value = normalizedState;
+
+      try {
+        statusEl.textContent = `Loading ${cfg.label} map...`;
+        selectedKey = null;
+        searchEl.value = '';
+        dropdownEl.style.display = 'none';
+        bottomSheetEl.style.display = 'none';
+        document.body.classList.remove('bottom-sheet-active');
+
+        const response = await loadFromCandidates(cfg.geoCandidates, `${cfg.label} GeoJSON`);
+        const geoData = await response.json();
+        if (!geoData || !Array.isArray(geoData.features) || !geoData.features.length) {
+          throw new Error(`Invalid GeoJSON for ${cfg.label}`);
+        }
+
+        currentGeoData = geoData;
+        updateMapDimensions();
+        // Use planar fitting for these source files; spherical fitting collapses them.
+        projection = d3.geoIdentity().reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData);
+        path = d3.geoPath(projection);
+
+        draw(currentGeoData.features);
+        cacheFeatures(currentGeoData.features);
+        populateSearch(currentGeoData.features);
+
+        svg.call(zoom.transform, d3.zoomIdentity);
+        setQueryParam('state', normalizedState);
+        statusEl.textContent = '';
+
+        const initialAc = getQueryParam('ac');
+        if (initialAc && featureByKey.has(initialAc)) {
+          selectByKey(initialAc, true);
+        } else {
+          const initialName = (getQueryParam('name') || '').trim().toLowerCase();
+          if (initialName) {
+            const match = searchData.find(item => item.name.toLowerCase() === initialName || item.label.toLowerCase() === initialName);
+            if (match) selectByKey(match.key, true);
+          }
+        }
+      } catch (e) {
+        statusEl.textContent = `Failed to load ${cfg.label}: ${e && e.message ? e.message : 'unknown error'}`;
+      }
+    }
+
+    function bindSearch(){
+      searchEl.addEventListener('input', () => {
+        showDropdown(filterMatches(searchEl.value));
+      });
+
+      searchEl.addEventListener('focus', () => {
+        showDropdown(filterMatches(searchEl.value));
+      });
+
+      searchEl.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter') {
+          ev.preventDefault();
+          const matches = filterMatches(searchEl.value);
+          if (matches.length) {
+            searchEl.value = matches[0].label;
+            selectByKey(matches[0].key);
+            dropdownEl.style.display = 'none';
+          }
+        } else if (ev.key === 'Escape') {
+          dropdownEl.style.display = 'none';
+        }
+      });
+
+      searchEl.addEventListener('blur', hideDropdown);
+
+      document.addEventListener('click', (ev) => {
+        if (!dropdownEl.contains(ev.target) && ev.target !== searchEl) {
+          dropdownEl.style.display = 'none';
+        }
+      });
+    }
+
+    function bindControls(){
+      crossBtn.onclick = () => clearSelection(true);
+      zoomInBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1.3);
+      zoomOutBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.3);
+
+      stateSelectEl.addEventListener('change', async () => {
+        removeQueryParam('ac');
+        removeQueryParam('name');
+        await loadState(stateSelectEl.value);
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (!currentGeoData) return;
+      if (resizeDebounce) clearTimeout(resizeDebounce);
+      resizeDebounce = setTimeout(() => {
+        updateMapDimensions();
+        projection = d3.geoIdentity().reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData);
+        path = d3.geoPath(projection);
+        g.selectAll('path.ac').attr('d', d => path(d));
+        if (selectedKey && featureByKey.has(selectedKey)) {
+          fitToFeature(featureByKey.get(selectedKey));
+        } else {
+          svg.call(zoom.transform, d3.zoomIdentity);
+        }
+      }, 120);
+    });
+
+    async function init(){
+      populateStateDropdown();
+      bindSearch();
+      bindControls();
+      updateMapDimensions();
+      await loadState(initialStateFromQuery());
+    }
+
+    init();
+  </script>
+</body>
+</html>
