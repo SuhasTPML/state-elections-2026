@@ -69,6 +69,22 @@
       font-size: 12px;
     }
 
+    #mapTooltip {
+      position: fixed;
+      pointer-events: none;
+      z-index: 2000;
+      opacity: 0;
+      background: rgba(17, 24, 39, 0.92);
+      color: #fff;
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 12px;
+      line-height: 1.2;
+      white-space: nowrap;
+      transform: translate(-50%, -120%);
+      transition: opacity 0.08s ease;
+    }
+
     .controls-options {
       display: flex;
       align-items: center;
@@ -100,9 +116,10 @@
       stroke-linejoin: round;
       stroke-linecap: round;
       shape-rendering: geometricPrecision;
+      vector-effect: non-scaling-stroke;
     }
     .ac:not(.no-hover):hover { fill: #a9d0ff; cursor: pointer; }
-    .selected { stroke-width: 2; }
+    .selected { stroke-width: 3; fill: #93c5fd; }
     .dimmed { opacity: 0.3; transition: opacity 0.2s ease; }
 
     #mapControls {
@@ -229,6 +246,7 @@
   </div>
 
   <div id="bottomSheet"></div>
+  <div id="mapTooltip"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script>
@@ -324,6 +342,7 @@
     const stateSelectEl = document.getElementById('stateSelect');
     const wrapEl = document.getElementById('mapwrap');
     const bottomSheetEl = document.getElementById('bottomSheet');
+    const tooltipEl = document.getElementById('mapTooltip');
     const crossBtn = document.getElementById('crossBtn');
     const zoomInBtn = document.getElementById('zoomInBtn');
     const zoomOutBtn = document.getElementById('zoomOutBtn');
@@ -427,6 +446,9 @@
         .attr('d', d => path(d))
         .attr('fill', '#f3f4f6')
         .attr('stroke', '#1f77b4')
+        .on('mouseenter', (ev, d) => showTooltip(ev, d))
+        .on('mousemove', (ev) => moveTooltip(ev))
+        .on('mouseleave', () => hideTooltip())
         .on('click', (_, d) => selectByKey(featureKey(d.properties)));
     }
 
@@ -459,9 +481,7 @@
         return;
       }
       dropdownEl.innerHTML = '';
-      const isFullList = matches.length === searchData.length;
-      const limit = isFullList ? 50 : 15;
-      matches.slice(0, limit).forEach(item => {
+      matches.forEach(item => {
         const div = document.createElement('div');
         div.className = 'dropdown-item';
         div.textContent = item.label;
@@ -472,13 +492,27 @@
         });
         dropdownEl.appendChild(div);
       });
-      if (matches.length > limit) {
-        const moreDiv = document.createElement('div');
-        moreDiv.className = 'dropdown-note';
-        moreDiv.textContent = `Showing ${limit} of ${matches.length} constituencies...`;
-        dropdownEl.appendChild(moreDiv);
-      }
       dropdownEl.style.display = 'block';
+    }
+
+    function showTooltip(ev, feature){
+      if (!tooltipEl) return;
+      const name = featureName((feature && feature.properties) || {});
+      tooltipEl.textContent = `Constituency: ${name || 'NA'}`;
+      tooltipEl.style.opacity = '1';
+      tooltipEl.style.left = `${ev.clientX}px`;
+      tooltipEl.style.top = `${ev.clientY - 8}px`;
+    }
+
+    function moveTooltip(ev){
+      if (!tooltipEl || tooltipEl.style.opacity !== '1') return;
+      tooltipEl.style.left = `${ev.clientX}px`;
+      tooltipEl.style.top = `${ev.clientY - 8}px`;
+    }
+
+    function hideTooltip(){
+      if (!tooltipEl) return;
+      tooltipEl.style.opacity = '0';
     }
 
     function filterMatches(rawQuery){
@@ -527,6 +561,7 @@
 
     function clearSelection(resetZoom = true){
       selectedKey = null;
+      hideTooltip();
       g.selectAll('path.ac')
         .classed('selected', false)
         .classed('dimmed', false)
