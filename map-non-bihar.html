@@ -314,12 +314,32 @@
       ]);
     }
 
+    function buildStateSvgCandidates(fileName, remoteUrl){
+      const origin = (location.protocol === 'http:' || location.protocol === 'https:')
+        ? [
+            `${location.origin}/data/svg/${fileName}`,
+            `${location.origin}/${fileName}`
+          ]
+        : [];
+      return uniqueCandidates([
+        ...origin,
+        './data/svg/' + fileName,
+        'data/svg/' + fileName,
+        '../data/svg/' + fileName,
+        '../../data/svg/' + fileName,
+        './' + fileName,
+        fileName,
+        remoteUrl
+      ]);
+    }
+
     const STATE_CONFIG = {
       ASSAM: {
         label: 'Assam',
         title: 'Assam Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('ASSAM_ASSEMBLY'),
+        mapType: 'svg',
+        svgCandidates: buildStateSvgCandidates('ASSAM_2023_keyed.svg'),
         resultsUrl: new URL('results/ASSAM_results.json', DATA_BASE_URL).toString()
       },
       KERALA: {
@@ -374,6 +394,7 @@
 
     let mapWidth = DEFAULT_MAP_WIDTH;
     let mapHeight = DEFAULT_MAP_HEIGHT;
+    let currentReflectY = true;
     let projection = null;
     let path = null;
     let currentGeoData = null;
@@ -1097,6 +1118,92 @@
       throw new Error(`Failed to load ${description} from all candidates. Last error: ${lastError ? lastError.message : 'unknown'}`);
     }
 
+    function parseSvgPointPairs(pointsText){
+      const nums = String(pointsText || '').match(/-?\d*\.?\d+(?:e[-+]?\d+)?/gi);
+      if (!nums || nums.length < 6) return [];
+      const out = [];
+      for (let i = 0; i + 1 < nums.length; i += 2) {
+        const x = Number(nums[i]);
+        const y = Number(nums[i + 1]);
+        if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+        out.push([x, y]);
+      }
+      return out;
+    }
+
+    function parseFeatureNoFromSvgPolygon(el, fallbackIndex){
+      const candidates = [
+        el.getAttribute('data-ac-no'),
+        el.getAttribute('data-ac-key'),
+        el.getAttribute('id')
+      ];
+      for (const candidate of candidates) {
+        const m = String(candidate || '').match(/\d+/);
+        if (m && m[0]) return parseInt(m[0], 10);
+      }
+      const titleEl = el.querySelector('title');
+      const titleMatch = String(titleEl && titleEl.textContent ? titleEl.textContent : '').match(/\d+/);
+      if (titleMatch && titleMatch[0]) return parseInt(titleMatch[0], 10);
+      return fallbackIndex + 1;
+    }
+
+    function parseFeatureNameFromSvgPolygon(el, fallbackNo){
+      const fromAttr = String(el.getAttribute('data-ac-name') || '').trim();
+      if (fromAttr) return fromAttr;
+      const titleEl = el.querySelector('title');
+      const titleText = String(titleEl && titleEl.textContent ? titleEl.textContent : '').trim();
+      if (titleText) {
+        const m = titleText.match(/^\s*\d+\s+(.+?)(?:\s*-\s*.+)?\s*$/);
+        if (m && m[1]) return m[1].trim();
+      }
+      return `AC ${fallbackNo}`;
+    }
+
+    function parseFeatureDistrictFromSvgPolygon(el){
+      const fromAttr = String(el.getAttribute('data-district') || '').trim();
+      if (fromAttr) return fromAttr;
+      const titleEl = el.querySelector('title');
+      const titleText = String(titleEl && titleEl.textContent ? titleEl.textContent : '').trim();
+      if (!titleText) return '';
+      const parts = titleText.split(/\s+-\s+/);
+      return parts.length > 1 ? String(parts.slice(1).join(' - ')).trim() : '';
+    }
+
+    function buildFeaturesFromKeyedSvg(svgText){
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(String(svgText || ''), 'image/svg+xml');
+      const polygons = Array.from(doc.querySelectorAll('polygon'));
+      const features = [];
+      polygons.forEach((el, idx) => {
+        const points = parseSvgPointPairs(el.getAttribute('points') || '');
+        if (points.length < 3) return;
+        const no = parseFeatureNoFromSvgPolygon(el, idx);
+        const ring = points.slice();
+        const first = ring[0];
+        const last = ring[ring.length - 1];
+        if (first[0] !== last[0] || first[1] !== last[1]) ring.push([first[0], first[1]]);
+        features.push({
+          type: 'Feature',
+          properties: {
+            AC_NO: no,
+            AC_NAME: parseFeatureNameFromSvgPolygon(el, no),
+            DIST_NAME: parseFeatureDistrictFromSvgPolygon(el)
+          },
+          geometry: {
+            type: 'Polygon',
+            coordinates: [ring]
+          }
+        });
+      });
+      features.sort((a, b) => {
+        const ka = featureKey(a.properties);
+        const kb = featureKey(b.properties);
+        return ka.localeCompare(kb, undefined, { numeric: true, sensitivity: 'base' });
+      });
+      if (!features.length) throw new Error('SVG parse failed: no valid polygons found');
+      return features;
+    }
+
     async function loadState(stateKey){
       const normalizedState = normalizeStateKey(stateKey);
       const cfg = STATE_CONFIG[normalizedState];
@@ -1113,17 +1220,29 @@
         document.body.classList.remove('bottom-sheet-active');
         hideTooltip();
 
-        const response = await loadFromCandidates(cfg.geoCandidates, `${cfg.label} GeoJSON`);
-        const geoData = await response.json();
+        let geoData = null;
+        if (cfg.mapType === 'svg') {
+          const response = await loadFromCandidates(cfg.svgCandidates, `${cfg.label} SVG`);
+          const svgText = await response.text();
+          const features = buildFeaturesFromKeyedSvg(svgText);
+          geoData = { type: 'FeatureCollection', features };
+          currentReflectY = false;
+        } else {
+          const response = await loadFromCandidates(cfg.geoCandidates, `${cfg.label} GeoJSON`);
+          geoData = await response.json();
+          currentReflectY = true;
+        }
         if (!geoData || !Array.isArray(geoData.features) || !geoData.features.length) {
-          throw new Error(`Invalid GeoJSON for ${cfg.label}`);
+          throw new Error(`Invalid map data for ${cfg.label}`);
         }
         const hasElectionData = await loadElectionDataForState(cfg);
 
         currentGeoData = geoData;
         updateMapDimensions();
         // Use planar fitting for these source files; spherical fitting collapses them.
-        projection = d3.geoIdentity().reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData);
+        const baseProjection = d3.geoIdentity();
+        projection = currentReflectY ? baseProjection.reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData)
+                                     : baseProjection.fitSize([mapWidth, mapHeight], currentGeoData);
         path = d3.geoPath(projection);
 
         draw(currentGeoData.features);
@@ -1207,7 +1326,9 @@
       if (resizeDebounce) clearTimeout(resizeDebounce);
       resizeDebounce = setTimeout(() => {
         updateMapDimensions();
-        projection = d3.geoIdentity().reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData);
+        const baseProjection = d3.geoIdentity();
+        projection = currentReflectY ? baseProjection.reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData)
+                                     : baseProjection.fitSize([mapWidth, mapHeight], currentGeoData);
         path = d3.geoPath(projection);
         g.selectAll('path.ac').attr('d', d => path(d));
         if (selectedKey && featureByKey.has(selectedKey)) {
