@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -334,14 +334,7 @@
     }
 
     const STATE_CONFIG = {
-      ASSAM: {
-        label: 'Assam',
-        title: 'Assam Assembly Constituency Map',
-        description: 'Tap on a constituency to view details, or search by number/name/district.',
-        mapType: 'svg',
-        svgCandidates: buildStateSvgCandidates('ASSAM_2023_keyed.svg'),
-        resultsUrl: new URL('results/ASSAM_results.json', DATA_BASE_URL).toString()
-      },
+
       KERALA: {
         label: 'Kerala',
         title: 'Kerala Assembly Constituency Map',
@@ -379,7 +372,7 @@
       }
     };
 
-    const DEFAULT_STATE = 'ASSAM';
+    const DEFAULT_STATE = 'KERALA';
     const COMPACT_GROUP_PADDING = 10;
     const svg = d3.select('#svg');
     const g = d3.select('#zoomlayer');
@@ -820,7 +813,7 @@
       }
 
       legendEl.innerHTML = legendItems
-        .map(item => `<span style="margin-right: 15px;"><span style="color: ${item.color}; font-size: 16px;">�</span> ${item.label}</span>`)
+        .map(item => `<span style="margin-right: 15px;"><span style="color: ${item.color}; font-size: 16px;">¦</span> ${item.label}</span>`)
         .join('');
       legendEl.style.display = 'block';
     }
@@ -1429,4 +1422,5 @@
   </script>
 </body>
 </html>
+
 
