@@ -1,0 +1,254 @@
+[
+  {
+    "code": "AIADMK",
+    "name": "AIADMK",
+    "color": "#1E88E5",
+    "alliances": {
+      "2020": "NDA"
+    },
+    "alliance_2020": "NDA"
+  },
+  {
+    "code": "AINRC",
+    "name": "AINRC",
+    "color": "#FBC02D",
+    "alliances": {
+      "2020": "NDA"
+    },
+    "alliance_2020": "NDA"
+  },
+  {
+    "code": "BJP",
+    "name": "BJP",
+    "color": "#FF9933",
+    "alliances": {
+      "2020": "NDA"
+    },
+    "alliance_2020": "NDA"
+  },
+  {
+    "code": "CPI",
+    "name": "CPI",
+    "color": "#E53935",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "CPI(M)",
+    "name": "CPI(M)",
+    "color": "#D32F2F",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "Con(S)",
+    "name": "Con(S)",
+    "color": "#8c5373",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "DMK",
+    "name": "DMK",
+    "color": "#DD1100",
+    "alliances": {
+      "2020": "UPA"
+    },
+    "alliance_2020": "UPA"
+  },
+  {
+    "code": "GJM",
+    "name": "GJM",
+    "color": "#8E24AA",
+    "alliances": {
+      "2020": "NDA"
+    },
+    "alliance_2020": "NDA"
+  },
+  {
+    "code": "INC",
+    "name": "INC",
+    "color": "#00BFFF",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "IND",
+    "name": "IND",
+    "color": "#6B7280",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "INL",
+    "name": "INL",
+    "color": "#976b51",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "ISF",
+    "name": "ISF",
+    "color": "#43A047",
+    "alliances": {
+      "2020": "SM"
+    },
+    "alliance_2020": "SM"
+  },
+  {
+    "code": "IUML",
+    "name": "IUML",
+    "color": "#2E7D32",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "JD(S)",
+    "name": "JD(S)",
+    "color": "#388E3C",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "JKC",
+    "name": "JKC",
+    "color": "#726f51",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "KC(B)",
+    "name": "KC(B)",
+    "color": "#c7c58f",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "KC(J)",
+    "name": "KC(J)",
+    "color": "#bfc68f",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "KC(M)",
+    "name": "KC(M)",
+    "color": "#9cc78f",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "KMDK",
+    "name": "KMDK",
+    "color": "#b99173",
+    "alliances": {
+      "2020": "SPA"
+    },
+    "alliance_2020": "SPA"
+  },
+  {
+    "code": "LJD",
+    "name": "LJD",
+    "color": "#567651",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "NCK",
+    "name": "NCK",
+    "color": "#867d51",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "NCP",
+    "name": "NCP",
+    "color": "#1976D2",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "NSC",
+    "name": "NSC",
+    "color": "#6e7f51",
+    "alliances": {
+      "2020": "LDF"
+    },
+    "alliance_2020": "LDF"
+  },
+  {
+    "code": "PMK",
+    "name": "PMK",
+    "color": "#FF7043",
+    "alliances": {
+      "2020": "NDA"
+    },
+    "alliance_2020": "NDA"
+  },
+  {
+    "code": "RMPI",
+    "name": "RMPI",
+    "color": "#c4c176",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "TMC",
+    "name": "TMC",
+    "color": "#23A455",
+    "alliances": {
+      "2020": "TMC"
+    },
+    "alliance_2020": "TMC"
+  },
+  {
+    "code": "UDF",
+    "name": "UDF",
+    "color": "#679751",
+    "alliances": {
+      "2020": "UDF"
+    },
+    "alliance_2020": "UDF"
+  },
+  {
+    "code": "VCK",
+    "name": "VCK",
+    "color": "#7B1FA2",
+    "alliances": {
+      "2020": "SPA"
+    },
+    "alliance_2020": "SPA"
+  }
+]

@@ -1,0 +1,1010 @@
+[
+  {
+    "no": "1",
+    "constituency_name": "Ratabari (SC)",
+    "current_mla_name": "Bijoy Malakar",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "SC"
+  },
+  {
+    "no": "2",
+    "constituency_name": "Patharkandi",
+    "current_mla_name": "Krishnendu Paul",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "3",
+    "constituency_name": "Karimganj North",
+    "current_mla_name": "Kamalakhya Dey Purkayastha",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "4",
+    "constituency_name": "Karimganj South",
+    "current_mla_name": "Siddique Ahmed",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "5",
+    "constituency_name": "Badarpur",
+    "current_mla_name": "Abdul Aziz",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "6",
+    "constituency_name": "Hailakandi",
+    "current_mla_name": "Zakir Hussain Laskar",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "7",
+    "constituency_name": "Katlicherra",
+    "current_mla_name": "Sujam Uddin Laskar",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "8",
+    "constituency_name": "Algapur",
+    "current_mla_name": "Nizamuddin Choudhury",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "9",
+    "constituency_name": "Silchar",
+    "current_mla_name": "Dipayan Chakraborty",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "10",
+    "constituency_name": "Sonai",
+    "current_mla_name": "Karim Uddin Barbhuiya",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "11",
+    "constituency_name": "Dholai (SC)",
+    "current_mla_name": "Parimal Suklabaidya",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "SC"
+  },
+  {
+    "no": "12",
+    "constituency_name": "Udharbond",
+    "current_mla_name": "Mihir Kanti Shome",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "13",
+    "constituency_name": "Lakhipur",
+    "current_mla_name": "Kaushik Rai",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "14",
+    "constituency_name": "Barkhola",
+    "current_mla_name": "Misbahul Islam Laskar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "15",
+    "constituency_name": "Katigorah",
+    "current_mla_name": "Khalil Uddin Mazumder",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "16",
+    "constituency_name": "Haflong (ST)",
+    "current_mla_name": "Nandita Garlosa",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "17",
+    "constituency_name": "Bokajan (ST)",
+    "current_mla_name": "Numal Momin",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "18",
+    "constituency_name": "Howraghat (ST)",
+    "current_mla_name": "Dorsing Ronghang",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "19",
+    "constituency_name": "Diphu (ST)",
+    "current_mla_name": "Bidya Sing Engleng",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "20",
+    "constituency_name": "Baithalangso (ST)",
+    "current_mla_name": "Rupsing Teron",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "21",
+    "constituency_name": "Mankachar",
+    "current_mla_name": "Adv. Aminul Islam",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "22",
+    "constituency_name": "Salmara South",
+    "current_mla_name": "Wazed Ali Choudhury",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "23",
+    "constituency_name": "Dhubri",
+    "current_mla_name": "Nazrul Hoque",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "24",
+    "constituency_name": "Gauripur",
+    "current_mla_name": "Nijanur Rahman",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "25",
+    "constituency_name": "Golakganj",
+    "current_mla_name": "Abdus Sobahun Ali Sarkar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "26",
+    "constituency_name": "Bilasipara West",
+    "current_mla_name": "Hafiz Bashir Ahmed",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "27",
+    "constituency_name": "Bilasipara East",
+    "current_mla_name": "Samsul Huda",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "28",
+    "constituency_name": "Gossaigaon",
+    "current_mla_name": "Majendra Narzary",
+    "current_mla_party": "BPF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "29",
+    "constituency_name": "Kokrajhar West (ST)",
+    "current_mla_name": "Rabiram Narzary",
+    "current_mla_party": "BPF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "ST"
+  },
+  {
+    "no": "30",
+    "constituency_name": "Kokrajhar East (ST)",
+    "current_mla_name": "Lawrence Islary",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "31",
+    "constituency_name": "Sidli (ST)",
+    "current_mla_name": "Joyanta Basumatary",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "32",
+    "constituency_name": "Bongaigaon",
+    "current_mla_name": "Phani Bhusan Choudhury",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "33",
+    "constituency_name": "Bijni",
+    "current_mla_name": "Ajoy Kumar Ray",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "34",
+    "constituency_name": "Abhayapuri North",
+    "current_mla_name": "Abdul Batin Khandkar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "35",
+    "constituency_name": "Abhayapuri South (SC)",
+    "current_mla_name": "Pradip Sarkar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "SC"
+  },
+  {
+    "no": "36",
+    "constituency_name": "Dudhnai (ST)",
+    "current_mla_name": "Jadab Sawargiary",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "ST"
+  },
+  {
+    "no": "37",
+    "constituency_name": "Goalpara East",
+    "current_mla_name": "Abdul Kalam Rasheed Alam",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "38",
+    "constituency_name": "Goalpara West",
+    "current_mla_name": "Md. Abdur Rashid Mandal",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "39",
+    "constituency_name": "Jaleswar",
+    "current_mla_name": "Aftabuddin Mollah",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "40",
+    "constituency_name": "Sorbhog",
+    "current_mla_name": "Manoranjan Talukdar",
+    "current_mla_party": "CPI(M)",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "41",
+    "constituency_name": "Bhabanipur",
+    "current_mla_name": "Phanidhar Talukdar",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "42",
+    "constituency_name": "Patacharkuchi",
+    "current_mla_name": "Ranjeet Kumar Dass",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "43",
+    "constituency_name": "Barpeta",
+    "current_mla_name": "Abdur Rahim Ahmed",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "44",
+    "constituency_name": "Jania",
+    "current_mla_name": "Rafiqul Islam",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "45",
+    "constituency_name": "Baghbor",
+    "current_mla_name": "Sherman Ali Ahmed",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "46",
+    "constituency_name": "Sarukhetri",
+    "current_mla_name": "Jakir Hussain Sikdar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "47",
+    "constituency_name": "Chenga",
+    "current_mla_name": "Ashraful Hussain",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "48",
+    "constituency_name": "Boko (SC)",
+    "current_mla_name": "Nandita Das",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "SC"
+  },
+  {
+    "no": "49",
+    "constituency_name": "Chaygaon",
+    "current_mla_name": "Rekibuddin Ahmed",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "50",
+    "constituency_name": "Palasbari",
+    "current_mla_name": "Hemanga Thakuria",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "51",
+    "constituency_name": "Jalukbari",
+    "current_mla_name": "Himanta Biswa Sarma",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "52",
+    "constituency_name": "Dispur",
+    "current_mla_name": "Atul Bora",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "53",
+    "constituency_name": "Gauhati East",
+    "current_mla_name": "Siddhartha Bhattacharya",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "54",
+    "constituency_name": "Gauhati West",
+    "current_mla_name": "Ramendra Narayan Kalita",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "55",
+    "constituency_name": "Hajo",
+    "current_mla_name": "Suman Haripriya",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "56",
+    "constituency_name": "Kamalpur",
+    "current_mla_name": "Diganta Kalita",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "57",
+    "constituency_name": "Rangia",
+    "current_mla_name": "Bhabesh Kalita",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "58",
+    "constituency_name": "Tamulpur",
+    "current_mla_name": "Leho Ram Boro",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "59",
+    "constituency_name": "Nalbari",
+    "current_mla_name": "Jayanta Malla Baruah",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "60",
+    "constituency_name": "Barkhetry",
+    "current_mla_name": "Diganta Barman",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "61",
+    "constituency_name": "Dharmapur",
+    "current_mla_name": "Chandra Mohan Patowary",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "62",
+    "constituency_name": "Barama (ST)",
+    "current_mla_name": "Bhupen Boro",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "63",
+    "constituency_name": "Chapaguri (ST)",
+    "current_mla_name": "Urkhao Gwra Brahma",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "64",
+    "constituency_name": "Panery",
+    "current_mla_name": "Biswajit Daimary",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "65",
+    "constituency_name": "Kalaigaon",
+    "current_mla_name": "Durga Das Boro",
+    "current_mla_party": "BPF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "66",
+    "constituency_name": "Sipajhar",
+    "current_mla_name": "Parmananda Rajbongshi",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "67",
+    "constituency_name": "Mangaldoi (SC)",
+    "current_mla_name": "Basanta Das",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "SC"
+  },
+  {
+    "no": "68",
+    "constituency_name": "Dalgaon",
+    "current_mla_name": "Mazibur Rahman",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "69",
+    "constituency_name": "Udalguri (ST)",
+    "current_mla_name": "Gobinda Chandra Basumatary",
+    "current_mla_party": "UPPL",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "70",
+    "constituency_name": "Majbat",
+    "current_mla_name": "Charan Boro",
+    "current_mla_party": "BPF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "71",
+    "constituency_name": "Dhekiajuli",
+    "current_mla_name": "Ashok Singhal",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "72",
+    "constituency_name": "Barchalla",
+    "current_mla_name": "Ganesh Kumar Limbu",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "73",
+    "constituency_name": "Tezpur",
+    "current_mla_name": "Prithiraj Rava",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "74",
+    "constituency_name": "Rangapara",
+    "current_mla_name": "Krishna Kamal Tanti",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "75",
+    "constituency_name": "Sootea",
+    "current_mla_name": "Padma Hazarika",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "76",
+    "constituency_name": "Biswanath",
+    "current_mla_name": "Promod Borthakur",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "77",
+    "constituency_name": "Behali",
+    "current_mla_name": "Ranjit Dutta",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "78",
+    "constituency_name": "Gohpur",
+    "current_mla_name": "Utpal Borah",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "79",
+    "constituency_name": "Jagiroad (SC)",
+    "current_mla_name": "Pijush Hazarika",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "SC"
+  },
+  {
+    "no": "80",
+    "constituency_name": "Marigaon",
+    "current_mla_name": "Rama Kanta Dewri",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "81",
+    "constituency_name": "Laharighat",
+    "current_mla_name": "Dr. Asif Mohammad Nazar",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "82",
+    "constituency_name": "Raha (SC)",
+    "current_mla_name": "Sashi Kanta Das",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "SC"
+  },
+  {
+    "no": "83",
+    "constituency_name": "Dhing",
+    "current_mla_name": "Aminul Islam",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "84",
+    "constituency_name": "Batadroba",
+    "current_mla_name": "Sibamoni Bora",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "85",
+    "constituency_name": "Rupohihat",
+    "current_mla_name": "Nurul Huda",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "86",
+    "constituency_name": "Nowgong",
+    "current_mla_name": "Rupak Sarmah",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "87",
+    "constituency_name": "Barhampur",
+    "current_mla_name": "Jitu Goswami",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "88",
+    "constituency_name": "Samaguri",
+    "current_mla_name": "Rakibul Hussain",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "89",
+    "constituency_name": "Kaliabor",
+    "current_mla_name": "Keshab Mahanta",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "90",
+    "constituency_name": "Jamunamukh",
+    "current_mla_name": "Sirajuddin Ajmal",
+    "current_mla_party": "AIUDF",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "91",
+    "constituency_name": "Hojai",
+    "current_mla_name": "Ramkrishna Ghosh",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "92",
+    "constituency_name": "Lumding",
+    "current_mla_name": "Sibu Misra",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "93",
+    "constituency_name": "Bokakhat",
+    "current_mla_name": "Atul Bora",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "94",
+    "constituency_name": "Sarupathar",
+    "current_mla_name": "Biswajit Phukan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "95",
+    "constituency_name": "Golaghat",
+    "current_mla_name": "Ajanta Neog",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "96",
+    "constituency_name": "Khumtai",
+    "current_mla_name": "Mrinal Saikia",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "97",
+    "constituency_name": "Dergaon (SC)",
+    "current_mla_name": "Bhabendra Nath Bharali",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "SC"
+  },
+  {
+    "no": "98",
+    "constituency_name": "Jorhat",
+    "current_mla_name": "Hitendra Nath Goswami",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "99",
+    "constituency_name": "Majuli (ST)",
+    "current_mla_name": "Sarbananda Sonowal",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "100",
+    "constituency_name": "Titabar",
+    "current_mla_name": "Bhaskar Jyoti Baruah",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "101",
+    "constituency_name": "Mariani",
+    "current_mla_name": "Rupjyoti Kurmi",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "102",
+    "constituency_name": "Teok",
+    "current_mla_name": "Renupoma Rajkhowa",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "103",
+    "constituency_name": "Amguri",
+    "current_mla_name": "Prodip Hazarika",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "104",
+    "constituency_name": "Nazira",
+    "current_mla_name": "Debabrata Saikia",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "105",
+    "constituency_name": "Mahmara",
+    "current_mla_name": "Jogen Mohan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "106",
+    "constituency_name": "Sonari",
+    "current_mla_name": "Dharmeswar Konwar",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "107",
+    "constituency_name": "Thowra",
+    "current_mla_name": "Sushanta Borgohain",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "108",
+    "constituency_name": "Sibsagar",
+    "current_mla_name": "Akhil Gogoi{{efn|Akhil Gogoi is the president of Raijor Dal, but he contested the election as an independent candidate.}}",
+    "current_mla_party": "IND",
+    "current_mla_alliance": "OTH",
+    "reserved": "GEN"
+  },
+  {
+    "no": "109",
+    "constituency_name": "Bihpuria",
+    "current_mla_name": "Amiya Kumar Bhuyan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "110",
+    "constituency_name": "Naoboicha",
+    "current_mla_name": "Bharat Chandra Narah",
+    "current_mla_party": "INC",
+    "current_mla_alliance": "MAHAJOT",
+    "reserved": "GEN"
+  },
+  {
+    "no": "111",
+    "constituency_name": "Lakhimpur",
+    "current_mla_name": "Manab Deka",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "112",
+    "constituency_name": "Dhakuakhana (ST)",
+    "current_mla_name": "Naba Kumar Doley",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "113",
+    "constituency_name": "Dhemaji (ST)",
+    "current_mla_name": "Ranoj Pegu",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "114",
+    "constituency_name": "Jonai (ST)",
+    "current_mla_name": "Bhubon Pegu",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "ST"
+  },
+  {
+    "no": "115",
+    "constituency_name": "Moran",
+    "current_mla_name": "Chakradhar Gogoi",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "116",
+    "constituency_name": "Dibrugarh",
+    "current_mla_name": "Prasanta Phukan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "117",
+    "constituency_name": "Lahowal",
+    "current_mla_name": "Binod Hazarika",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "118",
+    "constituency_name": "Duliajan",
+    "current_mla_name": "Terash Gowalla",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "119",
+    "constituency_name": "Tingkhong",
+    "current_mla_name": "Bimal Borah",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "120",
+    "constituency_name": "Naharkatia",
+    "current_mla_name": "Taranga Gogoi",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "121",
+    "constituency_name": "Chabua",
+    "current_mla_name": "Ponakan Baruah",
+    "current_mla_party": "AGP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "122",
+    "constituency_name": "Tinsukia",
+    "current_mla_name": "Sanjoy Kishan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "123",
+    "constituency_name": "Digboi",
+    "current_mla_name": "Suren Phukan",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "124",
+    "constituency_name": "Margherita",
+    "current_mla_name": "Bhaskar Sharma",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "125",
+    "constituency_name": "Doomdooma",
+    "current_mla_name": "Rupesh Gowala",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  },
+  {
+    "no": "126",
+    "constituency_name": "Sadiya",
+    "current_mla_name": "Bolin Chetia",
+    "current_mla_party": "BJP",
+    "current_mla_alliance": "NDA",
+    "reserved": "GEN"
+  }
+]
