@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -356,6 +356,13 @@
         geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY'),
         resultsUrl: new URL('results/PUDUCHERRY_results.json', DATA_BASE_URL).toString()
       },
+      PUDUCHERRY_COMPACT: {
+        label: 'Puducherry (Compact)',
+        title: 'Puducherry Assembly Constituency Map (Compact Layout)',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY_compact'),
+        resultsUrl: new URL('results/PUDUCHERRY_results.json', DATA_BASE_URL).toString()
+      },
       TAMIL_NADU: {
         label: 'Tamil Nadu',
         title: 'Tamil Nadu Assembly Constituency Map',
@@ -373,6 +380,7 @@
     };
 
     const DEFAULT_STATE = 'ASSAM';
+    const COMPACT_GROUP_PADDING = 10;
     const svg = d3.select('#svg');
     const g = d3.select('#zoomlayer');
 
@@ -412,6 +420,20 @@
     let activeColorModes = [];
     let currentColorMode = ENABLE_2025_MODES ? 'alliance-2025' : 'alliance-2020';
     const featureByKey = new Map();
+
+    function buildProjectionForState(stateKey, geoData){
+      const baseProjection = d3.geoIdentity();
+      const padding = stateKey === 'PUDUCHERRY_COMPACT' ? COMPACT_GROUP_PADDING : 0;
+      const boundedPadding = Math.max(0, Math.min(padding, Math.floor(Math.min(mapWidth, mapHeight) / 4)));
+      if (currentReflectY) {
+        return boundedPadding
+          ? baseProjection.reflectY(true).fitExtent([[boundedPadding, boundedPadding], [mapWidth - boundedPadding, mapHeight - boundedPadding]], geoData)
+          : baseProjection.reflectY(true).fitSize([mapWidth, mapHeight], geoData);
+      }
+      return boundedPadding
+        ? baseProjection.fitExtent([[boundedPadding, boundedPadding], [mapWidth - boundedPadding, mapHeight - boundedPadding]], geoData)
+        : baseProjection.fitSize([mapWidth, mapHeight], geoData);
+    }
 
     function getQueryParam(name) {
       const params = new URLSearchParams(window.location.search);
@@ -798,7 +820,7 @@
       }
 
       legendEl.innerHTML = legendItems
-        .map(item => `<span style="margin-right: 15px;"><span style="color: ${item.color}; font-size: 16px;">■</span> ${item.label}</span>`)
+        .map(item => `<span style="margin-right: 15px;"><span style="color: ${item.color}; font-size: 16px;">�</span> ${item.label}</span>`)
         .join('');
       legendEl.style.display = 'block';
     }
@@ -908,6 +930,64 @@
         .on('mousemove', (ev) => moveTooltip(ev))
         .on('mouseleave', () => hideTooltip())
         .on('click', (_, d) => selectByKey(featureKey(d.properties)));
+    }
+
+    function renderDistrictGroups(features){
+      const shouldRender = currentState === 'PUDUCHERRY_COMPACT' && Array.isArray(features) && features.length && path;
+      const overlay = g.selectAll('g.district-groups')
+        .data(shouldRender ? [null] : [])
+        .join(
+          enter => enter.append('g').attr('class', 'district-groups').style('pointer-events', 'none'),
+          update => update,
+          exit => exit.remove()
+        );
+      if (!shouldRender || !overlay.node()) return;
+
+      const pad = 10;
+      const groups = Array.from(d3.group(features, f => featureDistrict(f.properties) || 'Unknown'), ([district, items]) => {
+        let x0 = Infinity;
+        let y0 = Infinity;
+        let x1 = -Infinity;
+        let y1 = -Infinity;
+        items.forEach(feature => {
+          const bounds = path.bounds(feature);
+          if (!Number.isFinite(bounds[0][0]) || !Number.isFinite(bounds[0][1]) || !Number.isFinite(bounds[1][0]) || !Number.isFinite(bounds[1][1])) return;
+          x0 = Math.min(x0, bounds[0][0]);
+          y0 = Math.min(y0, bounds[0][1]);
+          x1 = Math.max(x1, bounds[1][0]);
+          y1 = Math.max(y1, bounds[1][1]);
+        });
+        if (!Number.isFinite(x0) || !Number.isFinite(y0) || !Number.isFinite(x1) || !Number.isFinite(y1)) return null;
+        return {
+          district,
+          x: x0 - pad,
+          y: y0 - pad,
+          width: (x1 - x0) + (pad * 2),
+          height: (y1 - y0) + (pad * 2)
+        };
+      }).filter(Boolean);
+
+      const districtGroups = overlay.selectAll('g.district-group')
+        .data(groups, d => d.district)
+        .join(
+          enter => {
+            const group = enter.append('g').attr('class', 'district-group');
+            group.append('rect')
+              .attr('rx', 8)
+              .attr('ry', 8)
+              .attr('fill', 'none')
+              .attr('stroke', '#94a3b8')
+              .attr('stroke-width', 1.5)
+              .attr('stroke-dasharray', '6 4');
+            return group;
+          },
+          update => update,
+          exit => exit.remove()
+        );
+      districtGroups.attr('transform', d => `translate(${d.x},${d.y})`);
+      districtGroups.select('rect')
+        .attr('width', d => d.width)
+        .attr('height', d => d.height);
     }
 
     function cacheFeatures(features){
@@ -1240,12 +1320,11 @@
         currentGeoData = geoData;
         updateMapDimensions();
         // Use planar fitting for these source files; spherical fitting collapses them.
-        const baseProjection = d3.geoIdentity();
-        projection = currentReflectY ? baseProjection.reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData)
-                                     : baseProjection.fitSize([mapWidth, mapHeight], currentGeoData);
+        projection = buildProjectionForState(normalizedState, currentGeoData);
         path = d3.geoPath(projection);
 
         draw(currentGeoData.features);
+        renderDistrictGroups(currentGeoData.features);
         cacheFeatures(currentGeoData.features);
         populateSearch(currentGeoData.features);
         configureColorModes();
@@ -1326,11 +1405,10 @@
       if (resizeDebounce) clearTimeout(resizeDebounce);
       resizeDebounce = setTimeout(() => {
         updateMapDimensions();
-        const baseProjection = d3.geoIdentity();
-        projection = currentReflectY ? baseProjection.reflectY(true).fitSize([mapWidth, mapHeight], currentGeoData)
-                                     : baseProjection.fitSize([mapWidth, mapHeight], currentGeoData);
+        projection = buildProjectionForState(currentState, currentGeoData);
         path = d3.geoPath(projection);
         g.selectAll('path.ac').attr('d', d => path(d));
+        renderDistrictGroups(currentGeoData.features);
         if (selectedKey && featureByKey.has(selectedKey)) {
           fitToFeature(featureByKey.get(selectedKey));
         } else {
