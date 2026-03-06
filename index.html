@@ -198,7 +198,7 @@
       vector-effect: non-scaling-stroke;
     }
     .ac:not(.no-hover):hover { fill: #a9d0ff; cursor: pointer; }
-    .selected { stroke-width: 3; fill: #93c5fd; }
+    .selected { stroke-width: 3; }
     .dimmed { opacity: 0.3; transition: opacity 0.2s ease; }
 
     #mapControls {
@@ -664,6 +664,22 @@
       return '#' + String(hex || '').replace('#', '').trim().toLowerCase();
     }
 
+    function darkenColor(hex, amount = 0.25){
+      const h = to6Hex(hex);
+      if (!isValidHexColor(h)) return '#0b63ce';
+      const raw = h.replace('#', '');
+      const r = parseInt(raw.slice(0, 2), 16);
+      const g = parseInt(raw.slice(2, 4), 16);
+      const b = parseInt(raw.slice(4, 6), 16);
+      const scale = (c) => Math.max(0, Math.min(255, Math.round(c * (1 - amount))));
+      const toHex = (n) => n.toString(16).padStart(2, '0');
+      return '#' + toHex(scale(r)) + toHex(scale(g)) + toHex(scale(b));
+    }
+
+    function selectedStrokeForKey(acKey){
+      return darkenColor(getColorForMode(acKey, currentColorMode));
+    }
+
     function deterministicColorFor(key){
       let h = 0;
       for (let i = 0; i < key.length; i++) {
@@ -991,6 +1007,12 @@
 
     function applyCurrentColorMode(){
       g.selectAll('path.ac').attr('fill', d => getColorForMode(featureKey(d.properties), currentColorMode));
+      if (selectedKey) {
+        g.selectAll('path.ac').attr('stroke', d => {
+          const key = featureKey(d.properties);
+          return key === selectedKey ? selectedStrokeForKey(key) : '#1f77b4';
+        });
+      }
       updateLegend();
     }
 
@@ -1360,7 +1382,10 @@
       g.selectAll('path.ac').classed('selected', d => featureKey(d.properties) === key);
       g.selectAll('path.ac').classed('dimmed', d => featureKey(d.properties) !== key);
       g.selectAll('path.ac').classed('no-hover', d => featureKey(d.properties) === key);
-      g.selectAll('path.ac').attr('stroke', d => featureKey(d.properties) === key ? '#0b63ce' : '#1f77b4');
+      g.selectAll('path.ac').attr('stroke', d => {
+        const k = featureKey(d.properties);
+        return k === key ? selectedStrokeForKey(k) : '#1f77b4';
+      });
       fitToFeature(feature);
       renderDetails(feature);
 
