@@ -13,11 +13,10 @@
     /* Change 1: Compact controls — reduced padding and gap */
     #controls { padding: 6px 12px; display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
 
-    /* Change 1: Header row now holds title + selects via space-between */
+    /* Change 1: Header row — title only */
     .controls-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 10px;
     }
     .controls-header-left {
@@ -27,13 +26,17 @@
       flex: 1;
       min-width: 0;
     }
-    .controls-header-right {
+    #searchRow {
       display: flex;
       align-items: center;
       gap: 8px;
-      flex-shrink: 0;
     }
-    .map-section-title { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
+    #searchRow .controls-search {
+      flex: 1;
+      min-width: 0;
+      margin-bottom: 0;
+    }
+    .map-section-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
     /* Change 1: Hide description — redundant with search placeholder */
     .controls-description { display: none; }
     .controls-disclaimer {
@@ -119,9 +122,64 @@
       font-size: 14px;
     }
     .controls-legend {
-      margin-top: 2px;
-      font-size: 13px;
       display: none;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      gap: 6px;
+      padding: 2px 0;
+      align-items: center;
+    }
+    .controls-legend::-webkit-scrollbar { display: none; }
+
+    .legend-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+      font-size: 11px;
+      color: #374151;
+      white-space: nowrap;
+    }
+    .legend-swatch {
+      display: inline-block;
+      width: 22px;
+      height: 11px;
+      border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+
+    /* Tab bar */
+    #stateTabs {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    #stateTabs::-webkit-scrollbar { display: none; }
+
+    .state-tab {
+      flex-shrink: 0;
+      padding: 4px 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background: white;
+      color: #374151;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .state-tab:hover { background: #f3f4f6; border-color: #999; }
+    .state-tab.active {
+      background: #1f2937;
+      color: white;
+      border-color: #1f2937;
     }
 
     #status { color: #b00; margin-left: 8px; font-size: 13px; }
@@ -232,11 +290,8 @@
     @media (max-width: 768px) {
       #mapwrap { min-height: 320px; }
       #controls { padding: 6px 12px; gap: 4px; }
-      .controls-header { flex-wrap: wrap; }
       /* Hide labels on mobile — selects are self-descriptive */
-      .controls-header-right label { display: none; }
-      /* Push selects onto their own row below the title */
-      .controls-header-right { flex-basis: 100%; flex-shrink: 1; flex-wrap: wrap; gap: 4px; }
+      .controls-options label { display: none; }
       .controls-options select { font-size: 12px; padding: 4px 6px; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
@@ -260,30 +315,27 @@
 </head>
 <body>
   <div id="controls">
-    <!-- Change 1: Title and selects in same row; description hidden via CSS -->
+    <!-- Change 1: Title in header only; color-by moved next to search -->
     <div class="controls-header">
       <div class="controls-header-left">
-        <h3 id="mapTitle" class="map-section-title">Assembly Constituency Map</h3>
+        <h3 id="mapTitle" class="map-section-title">State Assembly Constituency Map</h3>
         <span id="status"></span>
       </div>
-      <div class="controls-header-right">
-        <div class="controls-options">
-          <label for="stateSelect">State:</label>
-          <select id="stateSelect"></select>
-        </div>
-        <div id="colorModeWrap" class="controls-options" style="display:none;">
-          <label for="colorMode">Color by:</label>
-          <select id="colorMode"></select>
-        </div>
-      </div>
     </div>
+    <div id="stateTabs"></div>
     <div id="mapDescription" class="controls-description">
       Tap on a constituency to view details, or search by number/name/district.
     </div>
     <div id="mapDisclaimer" class="controls-disclaimer"></div>
-    <div class="controls-search">
-      <input id="acSearch" type="search" placeholder="Search constituency by number, name, or district..." />
-      <div id="dropdown" class="dropdown"></div>
+    <div id="searchRow">
+      <div class="controls-search">
+        <input id="acSearch" type="search" placeholder="Search constituency by number, name, or district..." />
+        <div id="dropdown" class="dropdown"></div>
+      </div>
+      <div id="colorModeWrap" class="controls-options" style="display:none;">
+        <label for="colorMode">Color by:</label>
+        <select id="colorMode"></select>
+      </div>
     </div>
     <div id="legend" class="controls-legend"></div>
   </div>
@@ -443,7 +495,6 @@
     const mapDisclaimerEl = document.getElementById('mapDisclaimer');
     const searchEl = document.getElementById('acSearch');
     const dropdownEl = document.getElementById('dropdown');
-    const stateSelectEl = document.getElementById('stateSelect');
     const colorModeWrapEl = document.getElementById('colorModeWrap');
     const colorModeEl = document.getElementById('colorMode');
     const legendEl = document.getElementById('legend');
@@ -529,7 +580,6 @@
 
     function setMapHeadingForState(stateKey){
       const cfg = STATE_CONFIG[stateKey] || STATE_CONFIG[DEFAULT_STATE];
-      mapTitleEl.textContent = cfg.title;
       mapDescriptionEl.textContent = cfg.description;
       const disclaimerText = String(cfg.disclaimer || '').trim();
       if (mapDisclaimerEl) {
@@ -538,11 +588,28 @@
       }
     }
 
-    function populateStateDropdown(){
-      const options = Object.entries(STATE_CONFIG)
-        .map(([key, cfg]) => `<option value="${key}">${cfg.label}</option>`)
-        .join('');
-      stateSelectEl.innerHTML = options;
+    function populateStateTabs() {
+      const tabsEl = document.getElementById('stateTabs');
+      tabsEl.innerHTML = '';
+      Object.entries(STATE_CONFIG).forEach(([key, cfg]) => {
+        const btn = document.createElement('button');
+        btn.className = 'state-tab';
+        btn.dataset.key = key;
+        btn.textContent = cfg.label;
+        btn.addEventListener('click', async () => {
+          if (key === currentState) return;
+          removeQueryParam('ac');
+          removeQueryParam('name');
+          await loadState(key);
+        });
+        tabsEl.appendChild(btn);
+      });
+    }
+
+    function setActiveTab(stateKey) {
+      document.querySelectorAll('.state-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.key === stateKey);
+      });
     }
 
     function featureKey(props){
@@ -879,9 +946,9 @@
       }
 
       legendEl.innerHTML = legendItems
-        .map(item => `<span style="margin-right: 15px;"><span style="color: ${item.color}; font-size: 16px;">¦</span> ${item.label}</span>`)
+        .map(item => `<span class="legend-chip"><span class="legend-swatch" style="background:${item.color};"></span>${item.label}</span>`)
         .join('');
-      legendEl.style.display = 'block';
+      legendEl.style.display = 'flex';
     }
 
     function applyCurrentColorMode(){
@@ -1358,7 +1425,7 @@
       const cfg = STATE_CONFIG[normalizedState];
       currentState = normalizedState;
       setMapHeadingForState(normalizedState);
-      stateSelectEl.value = normalizedState;
+      setActiveTab(normalizedState);
 
       try {
         statusEl.textContent = `Loading ${cfg.label} map...`;
@@ -1461,12 +1528,6 @@
       crossBtn.onclick = () => clearSelection(true);
       zoomInBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1.3);
       zoomOutBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.3);
-
-      stateSelectEl.addEventListener('change', async () => {
-        removeQueryParam('ac');
-        removeQueryParam('name');
-        await loadState(stateSelectEl.value);
-      });
     }
 
     window.addEventListener('resize', () => {
@@ -1487,7 +1548,7 @@
     });
 
     async function init(){
-      populateStateDropdown();
+      populateStateTabs();
       bindSearch();
       bindControls();
       updateMapDimensions();
