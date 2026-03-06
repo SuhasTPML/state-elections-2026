@@ -1208,7 +1208,7 @@
 
     /* Change 5: Richer tooltip — AC key · name · district */
     function showTooltip(ev, feature){
-      if (!tooltipEl) return;
+      if (!tooltipEl || selectedKey) return;
       const props = (feature && feature.properties) || {};
       const key = featureKey(props);
       const name = featureName(props);
@@ -1356,6 +1356,7 @@
       const feature = featureByKey.get(key);
       if (!feature) return;
       selectedKey = key;
+      hideTooltip();
       g.selectAll('path.ac').classed('selected', d => featureKey(d.properties) === key);
       g.selectAll('path.ac').classed('dimmed', d => featureKey(d.properties) !== key);
       g.selectAll('path.ac').classed('no-hover', d => featureKey(d.properties) === key);
