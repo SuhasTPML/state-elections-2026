@@ -445,14 +445,13 @@
     const DEFAULT_RESULTS_DISCLAIMER = '';
 
     const STATE_CONFIG = {
-      ASSAM: {
-        label: 'Assam',
-        title: 'Assam Assembly Constituency Map',
+      TAMIL_NADU: {
+        label: 'Tamil Nadu',
+        title: 'Tamil Nadu Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        mapType: 'svg',
-        svgCandidates: buildStateSvgCandidates('ASSAM_2023_keyed.svg'),
-        resultsUrl: new URL('results/ASSAM_results.json', DATA_BASE_URL).toString(),
-        disclaimer: 'Assam only: some seats show no data because constituency names/boundaries changed after 2021.'
+        geoCandidates: buildStateGeoCandidates('TAMIL_NADU_ASSEMBLY'),
+        resultsUrl: new URL('results/TAMIL_NADU_results.json', DATA_BASE_URL).toString(),
+        disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
 
       KERALA: {
@@ -463,28 +462,29 @@
         resultsUrl: new URL('results/KERALA_results.json', DATA_BASE_URL).toString(),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
-      PUDUCHERRY: {
-        label: 'Puducherry',
-        title: 'Puducherry Assembly Constituency Map',
-        description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY_compact'),
-        resultsUrl: new URL('results/PUDUCHERRY_results.json', DATA_BASE_URL).toString(),
-        disclaimer: DEFAULT_RESULTS_DISCLAIMER
-      },
-      TAMIL_NADU: {
-        label: 'Tamil Nadu',
-        title: 'Tamil Nadu Assembly Constituency Map',
-        description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('TAMIL_NADU_ASSEMBLY'),
-        resultsUrl: new URL('results/TAMIL_NADU_results.json', DATA_BASE_URL).toString(),
-        disclaimer: DEFAULT_RESULTS_DISCLAIMER
-      },
       WEST_BENGAL: {
         label: 'West Bengal',
         title: 'West Bengal Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
         geoCandidates: buildStateGeoCandidates('WEST_BENGAL_ASSEMBLY'),
         resultsUrl: new URL('results/WEST_BENGAL_results.json', DATA_BASE_URL).toString(),
+        disclaimer: DEFAULT_RESULTS_DISCLAIMER
+      },
+      ASSAM: {
+        label: 'Assam',
+        title: 'Assam Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        mapType: 'svg',
+        svgCandidates: buildStateSvgCandidates('ASSAM_2023_keyed.svg'),
+        resultsUrl: new URL('results/ASSAM_results.json', DATA_BASE_URL).toString(),
+        disclaimer: 'Assam only: some seats show no data because constituency names/boundaries changed after 2021.'
+      },
+      PUDUCHERRY: {
+        label: 'Puducherry',
+        title: 'Puducherry Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY_compact'),
+        resultsUrl: new URL('results/PUDUCHERRY_results.json', DATA_BASE_URL).toString(),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       }
     };
