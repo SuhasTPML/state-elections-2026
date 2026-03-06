@@ -1,0 +1,6306 @@
+{{Short description|State legislative assembly election}}
+{{Use dmy dates|date=March 2016}}
+{{Use Indian English|date=September 2016}}
+{{Infobox election
+| election_name = 2016 West Bengal Legislative Assembly election
+| country = India
+| type = parliamentary
+| ongoing = no
+| turnout = 83.02% ({{decrease}} 1.31 [[Percentage point|pp]])
+| previous_election = 2011 West Bengal Legislative Assembly election
+| previous_year = 2011
+| next_election = 2021 West Bengal Legislative Assembly election
+| next_year = 2021
+| opinion_polls = 2016 West Bengal Legislative Assembly election#Surveys and polls
+| election_date = {{Start date|df=yes|2016|04|4}} — {{End date|df=yes|2016|05|5}}
+| seats_for_election = All 294 seats in the [[West Bengal Legislative Assembly]]
+| majority_seats = 148
+| image1 = {{CSS image crop|Image=Mamata Banerjee - Kolkata 2011-12-08 7531 Cropped.JPG|bSize= 100|cWidth=100|cHeight=120|oLeft=0|oTop=0}}
+| leader1 = [[Mamata Banerjee]]
+| party1 = All India Trinamool Congress
+| alliance1 = -
+| leaders_seat1 = [[Bhabanipur, West Bengal Assembly constituency|Bhabanipur]]
+| seats1 = '''211'''
+| seat_change1 = {{increase}} 27
+| popular_vote1 = '''24,564,523'''
+| percentage1 = '''44.91%'''
+| swing1 = {{increase}} 5.98 [[Percentage point|pp]]
+| image2 = {{CSS image crop|Image=Abdul Mannan (Indian politician).jpeg|bSize=140|cWidth=100|cHeight=120|oLeft=30|oTop=35}}
+| leader2 = [[Abdul Mannan|Mohammad Abdul Mannan]]
+| leaders_seat2 = [[Champdani Assembly constituency|Champdani]]
+| party2 = Indian National Congress
+| alliance2 = [[Secular Democratic Alliance|Mahajot]]
+| seats2 = 44
+| seat_change2 = {{increase}} 2
+| popular_vote2 = 6,700,938
+| percentage2 = 12.25%
+| swing2 = {{increase}} 3.16%
+| image4 = {{CSS image crop|Image=Dr. Surjya Kanta Mishra at a meeting to assess implementation of safe drinking water, rural sanitation and NREGA schemes, in Kolkata on June 01, 2007.jpg|bSize=120|cWidth=100|cHeight=120|oLeft=10|oTop=0}}
+| leader4 = [[Surya Kanta Mishra]]
+| leaders_seat4 = [[Narayangarh Assembly constituency|Narayangarh]] (''lost'')
+| party4 = Communist Party of India (Marxist)
+| alliance4 = [[Secular Democratic Alliance|Mahajot]]<br />{{collapsible list
+ | titlestyle = font-weight:normal;background:transparent;text-align:left;
+ | title = ''Parties''
+ | '''[[Left Front (West Bengal)|LF]]'''<br />{{collapsible list
+ | titlestyle = font-weight:normal;background:transparent;text-align:left;
+ | title = ''Parties''
+ |[[Communist Party of India (Marxist)|CPI(M)]]
+ | [[All India Forward Bloc|AIFB]]
+ | [[Revolutionary Socialist Party (India)|RSP]]
+ |[[Communist Party of India|CPI]]
+ |[[Democratic Socialist Party (Prabodh Chandra)|DSP]]
+}}
+ | [[Indian National Congress|INC]]
+ | [[Independent politician|IND]]
+}}
+| seats4 = 26
+| seat_change4 = {{decrease}} 14
+| popular_vote4 = 1,42,16,327
+| percentage4 = 19.75%
+| swing4 = {{decrease}} 10.33%
+| image5 = {{CSS image crop|Image=Dilip Ghosh.jpg|bSize=120|cWidth=100|cHeight=120|oLeft=10|oTop=0}}
+| party5 = Bharatiya Janata Party
+| alliance5 = National Democratic Alliance
+| leader_since5 = 2015
+| seats5 = 3
+| leaders_seat5 = [[Kharagpur Sadar Assembly constituency|Kharagpur Sadar]]
+| seat_change5 = {{increase}} 3
+| last_election5 = 4.87%, 0 seats
+| popular_vote5 = 7,809,760
+| percentage5 = 10.63%
+| swing5 = {{increase}} 5.76 [[Percentage point|pp]]
+| leader5 = [[Dilip Ghosh (politician)|Dilip Ghosh]]
+| map_image = {{Switcher|[[File:2016 West Bengal Legislative Assembly Election Results Map.svg|300px]]|Partywise result|[[File:2016 West Bengal Legislative Assembly Election Alliance Wise Result.svg|300px]]|Alliance wise result}}
+| map_size = 300px
+| map_caption = Seatwise Result Map of the election
+| title = [[Chief Minister]]
+| before_election = [[Mamata Banerjee]]
+| before_party = Trinamool Congress
+| after_election = [[Mamata Banerjee]]
+| after_party = Trinamool Congress
+| posttitle = 
+| map2_image = {{Switcher|[[File:India West Bengal Assembly election 2016.svg|350px]]|Partywise results by constituency|[[File:West Bengal State Assembly election Alliance wise Result in 2016.svg|350px]]|Alliance wise results by constituency}}
+| registered = 65,939,006
+| image_size = 160x160px
+| outgoing_members = 2011 West Bengal Legislative Assembly election#By constituency
+| elected_members = 2016 West Bengal Legislative Assembly election#Results by Constituency
+| leader_since1 = 1998
+| leader_since2 = 2015
+| leader_since4 = 2016
+| last_election1 = 38.93%, 184 seats
+| last_election2 = 9.09%, 42 seats
+| last_election4 = 30.08%, 40 seats
+| vote_type = Coalition
+| 1blank = Alliance seats
+| 1data1 = '''211'''
+| 1data2 = 77
+| 1data4 = 77
+| 1data5 = 6
+}}
+
+'''Legislative Assembly elections''' were held in 2016 for all [[List of constituencies of the West Bengal Vidhan Sabha|294 seats]] of the [[West Bengal Legislative Assembly|''Vidhan Sabha'']] in the [[India]]n state of [[West Bengal]]. The [[All India Trinamool Congress]] under [[Mamata Banerjee]] won 211 seats, and thus returned to power with an enhanced majority. As in the [[2011 West Bengal Legislative Assembly election|2011 election]], the election was held in six phases, with the first phase divided into two days.<ref>{{Cite web|url=https://indianexpress.com/article/explained/west-bengal-poll-schedule-who-benefits-and-how/|title=West Bengal election schedule: Who benefits and how|date=9 March 2016}}</ref><ref>{{Cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6333-west-bengal-assembly-election-schedule.html|title=Assembly Election Result 2016, Assembly Election Schedule Candidate List, Assembly Election Opinion/Exit Poll Latest News 2016|website=infoelections.com|access-date=2016-04-10}}</ref> The first phase was held in [[Red corridor|Naxalite-Maoist affected red corridor areas]] with two polling dates: 4 April and 11 April. The other phases were held on 17, 21, 25, 30 April and 5 May. The result of the election was declared on 19 May.
+
+In the previous election in 2011, the [[All India Trinamool Congress]] in a coalition with [[Indian National Congress|INC]] won a majority and ended the 34-year rule of the [[Left Front (West Bengal)|Left Front]] government in the state.
+
+== Background ==
+In the previous assembly election in 2011, the [[All India Trinamool Congress]], under the leadership of Mamata Banerjee, won a majority and ended the 34-year rule of the [[Left Front (West Bengal)|Left Front]] government. During 2011 election, the main theme of TMC was ''paribartan'' (meaning "change"), implying it was time to change the Left Front reign of 34-years in the state. However, during the five year rule of TMC, urban population, in particular, were in general unhappy with the government.<ref name="the wire">{{cite web|url=http://thewire.in/2016/04/14/critical-challenges-lie-ahead-for-trinamool-congress-to-retain-west-bengals-vote-29553/|title=Critical Challenges Lie Ahead for Trinamool Congress to Retain West Bengal's Vote|last=Mahaprashasta|first=Ajoy Ashirwad|date=14 April 2016|work=[[The Wire (India)|The Wire]]|access-date=4 May 2016|archive-url=https://web.archive.org/web/20160419233829/http://thewire.in/2016/04/14/critical-challenges-lie-ahead-for-trinamool-congress-to-retain-west-bengals-vote-29553/|archive-date=19 April 2016|url-status=dead|df=dmy-all}}</ref>  Also, newspapers reported that chief minister Banerjee has been only trying to consolidate votes from the sizable Muslim minority.<ref name="hindu-muslim">{{cite news|url=http://www.thehindu.com/news/national/other-states/mamata-muslims-and-paribartan/article8517367.ece  | title= Mamata, Muslims and paribartan|last=Gupta|first=Smita|date=26 April 2016|newspaper=[[The Hindu]] |access-date=4 May 2016}}</ref>
+
+In January 2016, the Election Commission of India urged the central government to allow it to carry out a limited delimitation exercise in West Bengal to ensure voting rights to people who came to India following the [[India-Bangladesh enclaves|exchange of enclaves between India and Bangladesh]].<ref>{{Cite news|url=https://economictimes.indiatimes.com/news/politics-and-nation/west-bengal-polls-election-commission-seeks-nod-for-delimitation-in-enclaves/articleshow/50452516.cms|title=West Bengal polls: Election Commission seeks nod for delimitation in enclaves|newspaper=The Economic Times|date=5 January 2016 }}</ref> As per updated voter list for the year 2016 published by the Election Commission of India in January 2016, West Bengal has surpassed the rest of the country in elector-population ratio with 0.68. The final electoral roll in West Bengal for 2016 with 6.55 crore voters has 3.39 crore male and 3.16 crore female voters.<ref>{{cite news | url=https://www.thehindu.com/news/cities/kolkata/Bengal-elector-population-ratio-jumps/article13988385.ece | title=Bengal elector-population ratio jumps | date=8 January 2016 | newspaper=The Hindu | access-date=26 July 2020 }}</ref>
+
+===Major issues===
+
+Prior to the West Bengal elections, on 3 January 2016, a mob turned violent and vandalised Kaliachak Police station, block development office and public property in [[Kaliachak Assembly constituency|Kaliachak]], [[Malda district]].<ref>{{Cite web|url=https://indianexpress.com/article/explained/malda-flare-up-why-the-bjp-is-making-such-an-issue-of-it/|title=Malda flare-up: Why the BJP is making such an issue of it|date=12 January 2016}}</ref> Mamata Banerjee's government was severely criticised for not handling the situation better.<ref>{{Cite web|url=https://www.indiatoday.in/mail-today/story/kaliachak-in-malda-turns-ghost-town-48-hrs-after-violence-302304-2016-01-06|title=48 hours after communal riots, Kaliachak in Malda turns ghost town|first=Soudhriti|last=Bhabani|date=January 6, 2016|website=India Today}}</ref><ref>{{Cite web|url=https://scroll.in/article/801459/it-was-localised-violence-in-a-crime-prone-area-why-some-newspapers-were-low-key-on-the-malda-violence|title=Why did the media ignore the Malda communal violence?|first=Ipsita|last=Chakravarty|website=Scroll.in|date=6 January 2016 }}</ref><ref>{{Cite web |url=http://thewire.in/2016/01/08/as-elections-come-closer-communal-pot-bubbles-in-west-bengal-18855/ |title = As Elections Come Closer, the Communal Pot Bubbles in West Bengal {{!}} The Wire  |access-date=12 April 2016 |archive-url=https://web.archive.org/web/20160331152126/http://thewire.in/2016/01/08/as-elections-come-closer-communal-pot-bubbles-in-west-bengal-18855/ |archive-date=31 March 2016 |url-status=dead |df=dmy-all }}</ref>
+
+The [[Saradha Group financial scandal]], the [[Narada sting operation|Narada Sting operation]] (which showcased the prominent ministers & MPs of the ruling party of accepting bribes), lack of any major industrial investments, and law & order issue surfaced as major issues and proved to be an acid test for Trinamool Congress. The [[Kolkata flyover collapse]] also happened during the poll process.
+
+== Schedule ==
+Assembly elections in West Bengal are to be held in phases from 4 April to 5 May 2016.<ref name="infoelections.com">{{Cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6333-west-bengal-assembly-election-schedule.html|title=Assembly Election Results Dates Candidate List Opinion/Exit Poll Latest News, Political Consulting Survey Election Campaign Management Company India|website=infoelections.com}}</ref>
+{{wide image|2016 West Bengal State assembly polling dates.png|300px|Voting phases.}}
+
+===Election dates by constituency===
+{| class="wikitable" style="width: 100%;font-size: 90%;"
+|-
+! Phase
+! Date
+! No. of constituencies
+! Voter turnout
+|- style="text-align:center"
+| 1(a)
+| 4 April 2016
+| 18
+| 84.22%<ref name="ndtv.com">{{Cite news|url=https://timesofindia.indiatimes.com/elections-2016/west-bengal-elections-2016/news/west-bengal-assembly-polls-2016-86-voter-turnout-in-6th-phase-of-west-bengal-polls/articleshow/52155376.cms|title=86% voter turnout in 6th phase of West Bengal polls |website=The Times of India|date=6 May 2016 }}</ref>
+|- style="text-align:center"
+| colspan="4"| Nayagram, Gopiballavpur, Jhargram, Salboni, Medinipur, Binpur, Bandwan, Balarampur, Baghmundi, Joypur, Purulia, Manbazar, Kashipur, Para, Raghunathpur, Ranibandh, Raipur, Taldangra.
+|-style="text-align:center"
+| 1(b) 
+|11 April 2016
+| 31
+| 83.73%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"|Dantan, Keshiary, Kharagpur Sadar, Narayangarh, Sabang, Pingla, Kharagpur, Debra, Daspur, Ghatal, Chandrakona, Garbeta, Keshpur, Saltora, Chhatna, Bankura, Barjora, Onda, Bishnupur, katulpur, Indus, Sonamukhi, Pandabeshwar, Durgapur Purba, Durgapur Paschim, Raniganj, Jamuria, Asansol Dakshin, Asansol Uttar, Kulti, Barabani
+|- style="text-align:center"
+| 2
+| 17 April 2016 
+| 56
+| 83.05%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"| Kumargram, Kalchini, Alipurduars, Falakata, Madarihat, Dhupguri, Maynaguri, Jalpaiguri, Rajganj, Dabgram-Fulbari, Mal, Nagrakata, Kalimpong, Darjeeling, Kurseong, Matigara-Naxalbari, Siliguri, Phansidewa, Chopra, Islampur, Goalpokhar, Chakulia, Karandighi, Hemtabad, Kaliaganj, Raiganj, Itahar, Kushmandi, Kumarganj, Balurghat, Tapan, Gangarampur, Harirampur, Habibpur, Gazole, Chanchal, Harishchandrapur, Malatipur, Ratua, Manikchak, Maldaha, English Bazar, Mothabari, Sujapur, Baisnabnagar, Dubrajpur, Suri, Bolpur, Nanoor, Labpur, Sainthia, Mayureswar, Rampurhat, Hansan, Nalhati, Murarai.
+|- style="text-align:center"
+| 3
+| 21 April 2016 
+| 62
+| 82.28%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"|Farakka, Samserganj, Suti, Jangipur, Raghunathganj, Sagardighi, Lalgola, Bhagawangola, Raninagar, Murshidabad, Nabagram, Khargram, Burwan, Kandi, Bharatpur, Rejinagar, Beldanga, Baharampur, Hariharpara, Nowda, Domkal, Jalangi, Karimpur, Tehatta, Palashipara, Kaliganj, Nakashipara, Chapra, Krishnanagar Uttar, Nabadwip, Krishnanagar Dakshin, Santipur, Ranaghat Uttar Paschim, Krishnaganj, Ranaghat Uttar Purba, Ranaghat Dakshin, Chakdaha, Kalyani, Haringhata, Chowrangee, Entally, Beleghata, Jorasanko, Shyampukur, Maniktala, Kashipur-Belgachhia, Khandaghosh, Bardhamandakshin, Raina, Jamalpur, Monteswar, Kalna, Memari, Bardhaman Uttar, Bhatar, Purbasthali Dakshin, Purbasthali Uttar, Katwa, Ketugram, Mangalkot, Ausgram, Galsi.
+|- style="text-align:center"
+| 4
+| 25 April 2016
+| 49
+| 81.25%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"| Bagda, Bangaon Uttar, Bangaon Dakshin, Gaighata, Swarupnagar, Baduria, Habra, Ashoknagar, Amdanga, Bijpur, Naihati, Bhatpara, Jagatdal, Noapara, Barrackpur, Khardaha, Dum Dum Uttar, Panihati, Kamarhati, Baranagar, Dum Dum, Rajarhat New Town, Bidhannagar, Rajarhat Gopalpur, Madhyamgram, Barasat, Deganga, Haroa, Minakhan, Sandeshkhali, Basirhat Dakshin, Basirhat Uttar, Hingalganj, Bally, Howrah Uttar, Howrah Madhya, Shibpur, Howrah Dakshin, Sankrail, Panchla, Uluberia Purba, Uluberia Uttar, Uluberia Dakshin, Shyampur, Bagnan, Amta, Udaynarayanpur, Jagatballavpur, Domjur.
+|- style="text-align:center"
+| 5
+| 30 April 2016
+| 53
+| 81.66%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"|Gosaba, Basanti, Kultali, Patharpratima, Kakdwip, Sagar, Kulpi, Raidighi, Mandirbazar, Jaynagar, Baruipur Purba, Canning Paschim, Canning Purba, Baruipur Paschim, Magrahat Purba, Magrahat Paschim, Diamond Harbour, Falta, Satgachhia, Bishnupur, Sonarpur Dakshin, Bhangar, Kasba, Jadavpur, Sonarpur Uttar, Tollygunge, Behala Purba, Behala Paschim, Maheshtala, Budge Budge, Metiaburuz, Kolkata Port, Bhowanipore, Rashbehari, Ballygunge, Uttarpara, Sreerampur, Champdani, Singur, Chandannagar, Chunchura, Balagarh, Pandua, Saptagram, Chanditala, Jangipara, Haripal, Dhanekhali, Tarakeswar, Pursurah, Arambag, Goghat, Khanakul. 
+|- style="text-align:center"
+| 6
+| 5 May 2016
+| 25
+| 86.76%<ref name="ndtv.com"/>
+|- style="text-align:center"
+| colspan="4"|Mekliganj, Mathabhanga, Cooch behar Uttar, Cooch behar Dakshin, Sitalkuchi, Sitai, Dinhata, Natabari, Tufanganj, Tamluk, Panskura Purba, Panskura Paschim, Moyna, Nandakumar, Mahisadal, Haldia, Nandigram, Chandipur, Patashpur, Kanthi Uttar, Bhagabanpur, Khejuri, Kanthi Dakshin, Ramnagar, Egra.
+|}
+
+On 4 March 2016, [[Election Commission of India]] announced that 22 assembly constituencies in West Bengal would have [[Voter-verified paper audit trail]] (VVPAT) machines attached along with [[Indian voting machines|EVM]]s.<ref>{{Cite web|url=https://pib.gov.in/ErrorPage.html?aspxerrorpath=/newsite/mainpage.aspx|title=Untitled Page|website=pib.gov.in}}</ref> [[Voter-verified paper audit trail]] (VVPAT) machines were to be in place in more than 5,993 polling stations.<ref>{{Cite web|url=https://www.ndtv.com/india-news/over-1-4-lakh-non-bailable-warrants-executed-in-bengal-election-commission-1286559|title=Over 1.4 Lakh Non-Bailable Warrants Executed In Bengal: Election Commission|website=NDTV.com}}</ref><ref name="infoelections.com" />
+
+{| class="wikitable" | align="center"
+|-
+! colspan="3" | Assembly constituencies of West Bengal having [[Voter-verified paper audit trail|VVPAT]] facility with [[Indian voting machines|EVM]]s<ref>{{Cite web|url=http://eci.nic.in/eci_main1/current/PN16_04032016.pdf|title=VVPAT usage in 64 seats in 5 states Schedule for the General Elections to the Legislative Assemblies of Assam, Kerala, Tamil Nadu, West Bengal, and Puducherry.}}</ref>
+|-
+| [[Cooch Behar Dakshin Assembly constituency|CoochBehar Dakshin]]|| [[Alipurduars Assembly constituency|Alipurduar]]|| [[Jalpaiguri Assembly constituency|Jalpaiguri]] (SC)
+|-
+| [[Siliguri Assembly constituency|Siliguri]]|| [[Raiganj Assembly constituency|Raiganj]]|| [[Balurghat Assembly constituency|Balurghat]]
+|-
+|[[English Bazar Assembly constituency|Englishbazar]]|| [[Murshidabad Assembly constituency|Murshidabad]]|| Krishnanagar
+|-
+|[[Barasat Assembly constituency|Barasat]]||[[Jadavpur Assembly constituency|Jadavpur]]|| [[Ballygunge Assembly constituency|Ballygunge]]
+|-
+|[[Chowrangee Assembly constituency|Chowrangee]]|| [[Howrah Madhya Assembly constituency|Howrah madhya]]|| [[Chandannagar Assembly constituency|Chandannagore]]
+|-
+|[[Tamluk Assembly constituency|Tamluk]] ||[[Medinipur Assembly constituency|Medinipur]]||[[Purulia Assembly constituency|Purulia]]
+|-
+|[[Bankura Assembly constituency|Bankura]]||[[Bardhaman Dakshin Assembly constituency|Bardhaman dakshin]]||[[Behala Paschim Assembly constituency|Behala Paschim]]
+|-
+|[[Suri Assembly constituency|Suri]]|| ||
+|}
+
+== Candidates and Contesting Parties ==
+=== Candidates ===
+[[All India Trinamool Congress|AITC]] released its candidate list on 5 March, the same day the elections were announced.<ref>{{cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6337-west-bengal-tmc-candidate-list.html|title=West Bengal Assembly Election TMC Candidate List 2016|work=Infoelection}}</ref>
+
+On 10 March, [[BJP]] released its first candidate list of 52 members.<ref>{{cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6335-west-bengal-bjp-candidate-list.html|title=West Bengal Assembly Election BJP Candidate List 2016|work=Infoelection}}</ref>
+
+Left Front consisting of [[CPI(M)]], [[CPI]], [[Revolutionary Socialist Party (India)|RSP]] and [[All India Forward Bloc]] along with [[Indian National Congress|INC]] released their respective candidate list in several rounds after consultations and bargaining.<ref>{{cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6338-wset-bengal-cpm-candidate-list.html|title=West Bengal Assembly Election Left Front Candidate List 2016|work=Infoelection}}</ref><ref>{{cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6336-west-bengal-congress-candidate-list.html|title=West Bengal Assembly Election Congress Candidate List 2016|work=Infoelection}}</ref>
+
+=== Contesting Parties ===
+'''[[All India Trinamool Congress|Trinamool Congress+]]'''
+*[[All India Trinamool Congress]] (AITC)
+*[[Jana Andolan Party]]
+
+'''[[Secular Democratic Alliance|Mahajot]]''' 
+*[[Communist Party of India (Marxist)]] (CPIM)
+*[[Communist Party of India]] (CPI)
+*[[Revolutionary Socialist Party (India)|Revolutionary Socialist Party]] (RSP)
+*[[All India Forward Bloc]] (AIFB)
+*[[Revolutionary Communist Party of India]] (RCPI)
+*[[Marxist Forward Bloc]] (MFB)
+*[[Democratic Socialist Party (Prabodh Chandra)|Democratic Socialist Party]] (DSP(PC))
+*[[Indian National Congress]] (INC) 
+*[[Rashtriya Janata Dal]] (RJD)
+*[[Janata Dal (United)]] (JD(U)) 
+*[[Nationalist Congress Party]] (NCP) 
+*[[Communist Party of Bharat]] (CPB)
+*Bharat Nirman Party (Led by [[Lakshman Chandra Seth]])<ref>[https://web.archive.org/web/20160506185245/http://www.telegraphindia.com/1160506/jsp/bengal/story_84109.jsp#.VzdJleT1bGs] Living former Members of the House of Commons</ref>
+*Save Democracy Forum
+*[[Independent Politician|Independent Candidate]]
+
+'''[[National Democratic Alliance (India)|National Democratic Alliance]]'''
+*[[Bharatiya Janata Party]] (BJP)
+*[[Gorkha Janmukti Morcha]] (GJM)
+
+=== Alliance(s) ===
+Following the heavy defeats in the 2011 Assembly elections and the 2014 Indian General Election, the [[Communist Party of India (Marxist)]] welcomed ideas of the alliance even with parties not conforming to the communist ideology in general. The first signs came in the [[Siliguri Municipal Corporation]] election in 2015, when the [[CPI(M)]] made some local understanding with [[Indian National Congress|Congress]] to keep TMC and BJP out of power; resulting in CPI(M) leader [[Ashok Bhattacharya]] being appointed as the [[Mayor]] of Siliguri. This success then got popularity as 'Siliguri Model'.
+
+After the success of the model, in the long run, some Congress and CPI(M) leaders advocated for a Left-Congress alliance.<ref>{{cite web|url=https://infoelections.com/infoelection/index.php/kolkata/6939-left-congress-alliance-in-west-bengal-elections-2016.html|title=Left-Congress alliance in West Bengal Elections 2016, hinted Left leaders|work=infoelections}}</ref> on the grounds that on summing up individual voteshare of the Congress & Left Front in state polled during the 2014 general elections, were large enough in many areas to defeat the Trinamool Congress. The precedence of the [[UPA-Left Coordination Committee|Left Front providing outside support to the UPA-I government in 2004-2008]] was cited in support. This gradually materialized into an "alliance" between INC and [[Left Front (West Bengal)|Left Front]] in all the seats except a few in [[Murshidabad district]] and [[Maldah district]].
+
+Given the political history of West Bengal, the materialisation of an alliance between the Congress & the CPI(M), 2 parties that have been bitter rivals of each other in the state since India's independence in 1947 & have a history of unleashing political violence against each other's cadres, (like [[Sainbari murder|1970 Sainbari murders]], during the [[Emergency (India)|Emergency era]] & the [[1993 Kolkata firing]]) took the political circles of the state by surprise. After much dispute and secession of 2 far-left groups : [[SUCI(C)]] and [[Communist Party of India (Marxist–Leninist) Liberation|CPI(ML)L]] from the [[Left Front (West Bengal)|Left Front]], both Congress and Communists formed an understanding basis of what they called "seat-sharing", strongly objecting to the use of the word-"alliance". Trinamool Congress claimed that by forging an electoral understanding with the Left Front in the state, the Congress party was insulting the memory of those party workers who had died in political violence perpetrated by the Left Front, & Mamata Banerjee's allegation in 1998 about the state Congress having become a 'B-team' of the Left Front (due to which she broke away from the Congress to create her own party), stood vindicated. The CPI(M) (which had famously refused the Congress' proposal of making veteran Communist leader and one of its founders [[Jyoti Basu]] the country's prime minister in 1990, 1991 & 1996 in order not to been seen deviating from the cause of establishing the ''[[dictatorship of the proletariat]]'') was similarly accused of compromising with its ideological stance & indulging in hypocrisy by the TMC & BJP for entering into seat-sharing agreement with the Congress.
+
+The ruling [[All India Trinamool Congress]] announced its candidate list for all the 294 seats, as they were fighting alone this time. But after the announcement, the candidate from [[Kalimpong Assembly constituency|Kalimpong]] and former [[Gorkha Janmukti Morcha]] leader, Harka Bahadur Chettri, stated that he will fight as an Independent candidate under the entity of his newly formed political party, [[Jana Andolan Party]], and will be supported by the Trinamool Congress.
+
+The [[Bharatiya Janata Party|BJP]] announced its candidate list for 291 seats in several phases, leaving 3 seats of the Darjeeling Hills for their allies, the [[Gorkha Janmukti Morcha]].
+== Seat Allotment ==
+=== {{legend2|{{party color|All India Trinamool Congress}}|[[Trinamool Congress|Trinamool Congress+]]}} ===
+{| class="wikitable" width="50%" style="text-align:center;
+| colspan="6" {{Party color cell|All India Trinamool Congress}}
+|-
+| colspan="6" | '''[[All India Trinamool Congress|All India Trinamool Congress-led Alliance]]'''
+|-
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|All India Trinamool Congress}}
+| [[File:All India Trinamool Congress flag.svg|50px|border]]
+| [[File:All India Trinamool Congress symbol 2021.svg|50px|center]]
+| [[Mamata Banerjee]]
+| 293
+|-
+| {{Full party name with color|Jana Andolan Party}}
+|
+|
+| Harka Bahadur Chettri
+| 1
+|-
+!colspan="5"| Total
+!294
+|}
+
+=== {{legend2|{{party color|Secular Democratic Alliance}}|[[Left Front-led Alliance|Mahajot]]}} ===
+{| class="wikitable" width="50%" style="text-align:center;
+| colspan="6" {{Party color cell|Secular Democratic Alliance}}
+|-
+| colspan="6" | '''[[Left Front-led Alliance|Mahajot]]'''
+|-
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|Communist Party of India (Marxist)|dab=yes}}
+| [[File:CPI(M) Flag.jpg|50x50px]]
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| [[Surya Kanta Mishra]]
+| 143+5
+|-
+| {{Full party name with color|Indian National Congress}}
+| [[File:Indian National Congress Flag.svg|50px]]
+| [[File:Hand INC.svg|50px]]
+| [[Adhir Ranjan Chowdhury]]
+| 75+17
+|-
+| {{Full party name with color|All India Forward Bloc}}
+| [[File:All India Forward Bloc flag.svg|50px]]
+| [[File:Indian Election Symbol Lion.svg|50px]]
+| [[Debabrata Biswas (politician)|Debabrata Biswas]]
+| 22+3
+|-
+| {{Full party name with color|Revolutionary Socialist Party (India)}}
+| [[File:RSP-flag.svg|50px]] 
+| [[File:Indian Election Symbol Spade and Stoker.png|50px]]
+| Manoj Bhattacharya
+| 11+8
+|-
+| {{Full party name with color|Communist Party of India}}
+| [[File:CPI-banner.svg|50px]]
+| [[File:CPI symbol.svg|50px]]
+| [[Prabodh Panda]]
+| 11
+|-
+| {{Full party name with color|Democratic Socialist Party (Prabodh Chandra)}}
+| [[File:DSP-flag.svg|50x50px]]
+|
+| Prabodh Chandra Sinha
+| 2
+|-
+| {{Full party name with color|Rashtriya Janata Dal}}
+| [[File:RJD Flag.svg|50x50px]]
+| [[File:Indian Election Symbol Hurricane Lamp.png|50x50px]]
+|
+| 1
+|-
+| {{Full party name with color|Janata Dal (United)|dab=yes}}
+| [[File:Janata Dal (United) Flag.svg|50x50px]]
+| [[File:Indian Election Symbol Arrow.svg|50x50px]]
+|
+| 1+1
+|-
+| {{Full party name with color|Nationalist Congress Party}}
+| [[File:NCP-flag.svg|50x50px]]
+| [[File:Nationalist Congress Party Election Symbol.png|50x50px]]
+| 
+| 1
+|-
+| {{Full party name with color|Independent politician}}
+| 
+| 
+| 
+| 10
+|-
+!colspan="5"| Total
+!277+17
+|}
+NOTE: A total of 311 candidates were fielded. These candidates contested 277 unique seats. In 17 of those seats, there were two candidates each, making a total of 34 candidates across those constituencies. Overall, the alliance contested all 294 assembly seats.
+====Friendly Fights====
+{| class="wikitable" style="line-height:20px;text-align:center;"
+! Sl. No.
+! Parties Involved
+! #
+! Constituency Name
+|-
+! 1
+| rowspan="5"|[[Communist Party of India (Marxist)|CPI(M)]] and [[Indian National Congress|INC]]
+! 58
+| [[Jangipur, West Bengal Assembly constituency|Jangipur]]
+|-
+! 2
+! 75
+| [[Domkal Assembly constituency|Domkal]]
+|-
+! 3
+! 88
+| [[Krishnaganj Assembly constituency|Krishnaganj (SC)]]
+|-
+! 4
+! 60
+| [[Sagardighi Assembly constituency|Sagardighi]]
+|-
+! 5
+! 73
+| [[Hariharpara Assembly constituency|Hariharpara]]
+|-
+! 6
+| rowspan="3"|[[Indian National Congress|INC]] and [[All India Forward Bloc|AIFB]]
+! 46
+| [[Harishchandrapur Assembly constituency|Harishchandrapur]]
+|-
+! 7
+! 64
+| [[Murshidabad Assembly constituency|Murshidabad]]
+|-
+! 8
+! 291
+| [[Rampurhat Assembly constituency|Rampurhat]]
+|-
+! 9
+| [[Indian National Congress|INC]] and [[Janata Dal (United)|JD(U)]]
+! 29
+| [[Islampur, West Bengal Assembly constituency|Islampur]]
+|-
+! 10
+| rowspan="8"|[[Indian National Congress|INC]] and [[Revolutionary Socialist Party (India)|RSP]]
+! 11
+| [[Kalchini Assembly constituency|Kalchini (ST)]]
+|-
+! 11
+! 12
+| [[Alipurduars Assembly constituency|Alipurduars]]
+|-
+! 12
+! 47
+| [[Malatipur Assembly constituency|Malatipur]]
+|-
+! 13
+! 57
+| [[Suti Assembly constituency|Suti]]
+|-
+! 14
+! 59
+| [[Raghunathganj Assembly constituency|Raghunathganj]]
+|-
+! 15
+! 67
+| [[Burwan Assembly constituency|Burwan (SC)]]
+|-
+! 16
+! 69
+| [[Bharatpur, West Bengal Assembly constituency|Bharatpur]]
+|-
+! 17
+! 74
+| [[Naoda Assembly constituency|Nowda]]
+|}
+
+=== {{legend2|{{party color|National Democratic Alliance (India)}}|[[National Democratic Alliance (India)|National Democratic Alliance]]}} ===
+{| class="wikitable" width="50%" style="text-align:center;
+| colspan="6" {{Party color cell|National Democratic Alliance}}
+|-
+| colspan="6" | '''[[National Democratic Alliance]]'''
+|-
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|Bharatiya Janata Party}}
+| [[File:BJP Flag.svg|50px]]
+| [[File:Lotos flower symbol.svg|40x40px]]
+| [[Dilip Ghosh (politician)|Dilip Ghosh]]
+| 291
+|-
+| {{Full party name with color|Gorkha Janmukti Morcha}}
+|
+|
+| [[Bimal Gurung]]
+| 3
+|-
+!colspan="5"| Total
+!294
+|}
+
+==Candidates==
+{| class="wikitable" style="text-align:center;"
+! rowspan="2" | District
+! colspan="2" rowspan="2" | Constituency
+| colspan="3" style="background:{{party color|Trinamool Congress}}"|
+| colspan="3" style="background:{{party color|Secular Democratic Alliance}}"|
+| colspan="3" style="background:{{party color|National Democratic Alliance}}"|
+|-
+! colspan="3" | [[Trinamool Congress|AITC+]]
+! colspan="3" | [[Secular Democratic Alliance|Mahajot]]
+! colspan="3" | [[National Democratic Alliance|NDA]]
+|-
+| rowspan="9" | [[Cooch Behar district|Cooch Behar]]
+!1
+|[[Mekliganj Assembly constituency|Mekliganj (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Arghya Roy Pradhan]]
+|{{Party name with color|All India Forward Bloc}}
+|[[Paresh Chandra Adhikary]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Dadhiram Ray
+|-
+!2
+|[[Mathabhanga Assembly constituency|Mathabhanga (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Binay Krishna Barman]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Khagen Chandra Barman
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Sushil Barman]]
+|-
+!3
+|[[Cooch Behar Uttar Assembly constituency|Cooch Behar Uttar (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Parimal Barman
+|{{Party name with color|All India Forward Bloc}}
+|[[Nagendra Nath Roy]]
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Sukumar Roy (politician)|Sukumar Roy]]
+|-
+!4
+|[[Cooch Behar Dakshin Assembly constituency|Cooch Behar Dakshin]]
+|{{Party name with color|Trinamool Congress}}
+|[[Mihir Goswami]]
+|{{Party name with color|All India Forward Bloc}}
+|Debasis Banik
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Nikhil Ranjan Dey]]
+|-
+!5
+|[[Sitalkuchi Assembly constituency|Sitalkuchi (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Hiten Barman]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Namadipti Adhikary
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Baren Chandra Barman]]
+|-
+!6
+|[[Sitai Assembly constituency|Sitai (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Jagadish Chandra Barma Basunia|Jagadish Basunia]]
+|{{Party name with color|Indian National Congress}}
+|Keshab Chandra Ray
+|{{Party name with color|Bharatiya Janata Party}}
+|Bhaben Chandra Ray
+|-
+!7
+|[[Dinhata Assembly constituency|Dinhata]]
+|{{Party name with color|Trinamool Congress}}
+|[[Udayan Guha]]
+|{{Party name with color|All India Forward Bloc}}
+|Akshay Thakur
+|{{Party name with color|Bharatiya Janata Party}}
+|Sachindra Nath Adhikari
+|-
+!8
+|[[Natabari Assembly constituency|Natabari]]
+|{{Party name with color|Trinamool Congress}}
+|[[Rabindra Nath Ghosh]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Tamser Ali
+|{{Party name with color|Bharatiya Janata Party}}
+|Ali Hossain
+|-
+!9
+|[[Tufanganj Assembly constituency|Tufanganj]]
+|{{Party name with color|Trinamool Congress}}
+|[[Fazal Karim Miah]]
+|{{Party name with color|Indian National Congress}}
+|Shyamal Chowdhury
+|{{Party name with color|Bharatiya Janata Party}}
+|Bivas Sen Ishore
+|-
+| rowspan="5" | [[Alipurduar district|Alipurduar]]
+!10
+|[[Kumargram Assembly constituency|Kumargram (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|[[James Kujur]]
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|[[Manoj Kumar Oraon]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Leos Kujur
+|-
+!11
+|[[Kalchini Assembly constituency|Kalchini (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Wilson Champramary]]
+|{{Party name with color|Indian National Congress}}
+|Avijit Narjinary
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Bishal Lama]]
+|-
+!12
+|[[Alipurduars Assembly constituency|Alipurduars]]
+|{{Party name with color|Trinamool Congress}}
+|[[Sourav Chakraborty (politician)|Sourav Chakraborty]]
+|{{Party name with color|Indian National Congress}}
+|Biswa Ranjan Sarkar
+|{{Party name with color|Bharatiya Janata Party}}
+|Kushal Chatterjee
+|-
+!13
+|[[Falakata Assembly constituency|Falakata (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Anil Adhikari (politician)|Anil Adhikari]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Kshitish Chandra Ray
+|{{Party name with color|Bharatiya Janata Party}}
+|Narayan Chandra Mondal
+|-
+!14
+|[[Madarihat Assembly constituency|Madarihat (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|Padam Lama
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Kumari Kujur
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Manoj Tigga]]
+|-
+| rowspan="7" | [[Jalpaiguri district|Jalpaiguri]]
+!15
+|[[Dhupguri Assembly constituency|Dhupguri (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Mitali Roy]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Mamata Roy]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Agun Roy
+|-
+!16
+|[[Maynaguri Assembly constituency|Maynaguri (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Ananta Deb Adhikari]]
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Chhaya Dey
+|{{Party name with color|Bharatiya Janata Party}}
+|Biswajit Roy
+|-
+!17
+|[[Jalpaiguri Assembly constituency|Jalpaiguri (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Dhartimohan Roy
+|{{Party name with color|Indian National Congress}}
+|[[Sukhbilas Barma]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Tapan Roy
+|-
+!18
+|[[Rajganj Assembly constituency|Rajganj (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Khageswar Roy]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Satyendra Nath Mondal
+|{{Party name with color|Bharatiya Janata Party}}
+|Prakash Chandra Roy
+|-
+!19
+|[[Dabgram-Phulbari Assembly constituency|Dabgram-Phulbari]]
+|{{Party name with color|Trinamool Congress}}
+|[[Goutam Deb]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Dilip Singh
+|{{Party name with color|Bharatiya Janata Party}}
+|Rathindra Bose
+|-
+!20
+|[[Mal Assembly constituency|Mal (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Bulu Chik Baraik]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Augustus Kerketta
+|{{Party name with color|Bharatiya Janata Party}}
+|Mahesh Bagey
+|-
+!21
+|[[Nagrakata Assembly constituency|Nagrakata (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Sukra Munda]]
+|{{Party name with color|Indian National Congress}}
+|[[Joseph Munda]]
+|{{Party name with color|Bharatiya Janata Party}}
+|[[John Barla]]
+|-
+|[[Kalimpong district|Kalimpong]]
+!22
+|[[Kalimpong Assembly constituency|Kalimpong]]
+|{{Party name with color|Jana Andolan Party}}
+|[[Harka Bahadur Chhetri]]
+|{{Party name with color|Communist Party of Revolutionary Marxists}}
+|Kishore Pradhan
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|[[Sarita Rai]]
+|-
+| rowspan="5" | [[Darjeeling district|Darjeeling]]
+!23
+|[[Darjeeling Assembly constituency|Darjeeling]]
+|{{Party name with color|Trinamool Congress}}
+|Sharda Rai Subba
+|{{Party name with color|Communist Party of Revolutionary Marxists}}
+|Govind Chhetri
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|[[Amar Singh Rai]]
+|-
+!24
+|[[Kurseong Assembly constituency|Kurseong]]
+|{{Party name with color|Trinamool Congress}}
+|[[Shanta Chhetri]]
+|{{Party name with color|Communist Party of Revolutionary Marxists}}
+|Arun Kumar Ghatani
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|[[Rohit Sharma (West Bengal politician)|Rohit Sharma]]
+|-
+!25
+|[[Matigara-Naxalbari|Matigara-Naxalbari (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Amar Sinha
+|{{Party name with color|Indian National Congress}}
+|[[Sankar Malakar|Shankar Malakar]]
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Anandamoy Barman]]
+|-
+!26
+|[[Siliguri Assembly constituency|Siliguri]]
+|{{Party name with color|Trinamool Congress}}
+|[[Bhaichung Bhutia]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Ashok Bhattacharya]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Gita Chatterjee
+|-
+!27
+|[[Phansidewa Assembly constituency|Phansidewa (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|Carolus Lakra
+|{{Party name with color|Indian National Congress}}
+|[[Sunil Chandra Tirkey]]
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Durga Murmu]]
+|-
+| rowspan="9" | [[Uttar Dinajpur district|Uttar Dinajpur]]
+!28
+|[[Chopra Assembly constituency|Chopra]]
+|{{Party name with color|Trinamool Congress}}
+|[[Hamidul Rahman]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Akramul Hoque
+|{{Party name with color|Bharatiya Janata Party}}
+|Sajen Ram Singha
+|-
+!29
+|[[Islampur, West Bengal Assembly constituency|Islampur]]
+|{{Party name with color|Trinamool Congress}}
+|[[Abdul Karim Chowdhury]]
+|{{Party name with color|Indian National Congress}}
+|[[Kanaia Lal Agarwal]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Saumya Roop Mandal
+|-
+!30
+|[[Goalpokhar Assembly constituency|Goalpokhar]]
+|{{Party name with color|Trinamool Congress}}
+|[[Md. Ghulam Rabbani|Ghulam Rabbani]]
+|{{Party name with color|Indian National Congress}}
+|Afjal Hosen
+|{{Party name with color|Bharatiya Janata Party}}
+|Debashis Sarkar
+|-
+!31
+|[[Chakulia Assembly constituency|Chakulia]]
+|{{Party name with color|Trinamool Congress}}
+|Alema Noorie
+|{{Party name with color|All India Forward Bloc}}
+|[[Ali Imran Ramz]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Ashim Kumar Mridha
+|-
+!32
+|[[Karandighi Assembly constituency|Karandighi]]
+|{{Party name with color|Trinamool Congress}}
+|[[Manodeb Sinha]]
+|{{Party name with color|All India Forward Bloc}}
+|Gokul Roy
+|{{Party name with color|Bharatiya Janata Party}}
+|Abdul Jalil
+|-
+!33
+|[[Hemtabad Assembly constituency|Hemtabad (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Sabita Kshetry
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Debendra Nath Roy]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Bhanu Ram Barman
+|-
+!34
+|[[Kaliaganj Assembly constituency|Kaliaganj (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Basanta Roy
+|{{Party name with color|Indian National Congress}}
+|[[Pramatha Nath Ray]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Rupak Roy
+|-
+!35
+|[[Raiganj Assembly constituency|Raiganj]]
+|{{Party name with color|Trinamool Congress}}
+|Purnendu Dey
+|{{Party name with color|Indian National Congress}}
+|[[Mohit Sengupta]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Pradip Sarkar
+|-
+!36
+|[[Itahar Assembly constituency|Itahar]]
+|{{Party name with color|Trinamool Congress}}
+|[[Amal Acharjee]]
+|{{Party name with color|Communist Party of India}}
+|[[Srikumar Mukherjee]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Yunish Hoque
+|-
+| rowspan="6" | [[Dakshin Dinajpur district|Dakshin Dinajpur]]
+!37
+|[[Kushmandi Assembly constituency|Kushmandi (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Rekha Roy]]
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|[[Narmada Chandra Roy]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Ranjit Kumar Roy
+|-
+!38
+|[[Kumarganj Assembly constituency|Kumarganj]]
+|{{Party name with color|Trinamool Congress}}
+|[[Toraf Hossain Mandal]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Mafuja Khatun]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Manas Sarkar
+|-
+!39
+|[[Balurghat Assembly constituency|Balurghat]]
+|{{Party name with color|Trinamool Congress}}
+|[[Sankar Chakraborty|Shankar Chakraborty]]
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|[[Biswanath Chowdhury]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Gautam Chakraborty
+|-
+!40
+|[[Tapan Assembly constituency|Tapan (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Bachchu Hansda]]
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Raghu Urow
+|{{Party name with color|Bharatiya Janata Party}}
+|Krishna Kujur
+|-
+!41
+|[[Gangarampur Assembly constituency|Gangarampur (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Satyendra Nath Ray]]
+|{{Party name with color|Indian National Congress}}
+|[[Goutam Das]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Sanatan Karmakar
+|-
+!42
+|[[Harirampur Assembly constituency|Harirampur]]
+|{{Party name with color|Trinamool Congress}}
+|[[Biplab Mitra]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Rafikul Islam]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Phani Bhushan Mahata
+|-
+| rowspan="14" | [[Malda district|Malda]]
+!43
+|[[Habibpur Assembly constituency|Habibpur (ST)]]
+|{{Party name with color|Trinamool Congress}}
+|Amal Kisku
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Khagen Murmu]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Pradip Baskey
+|-
+!44
+|[[Gazole Assembly constituency|Gazole (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Sushil Chandra Roy
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Dipali Biswas]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Sudhangshu Sarkar
+|-
+!45
+|[[Chanchal Assembly constituency|Chanchal]]
+|{{Party name with color|Trinamool Congress}}
+|Soumitra Ray
+|{{Party name with color|Indian National Congress}}
+|[[Asif Mehbub]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Dipankar Ram
+|-
+!rowspan=2|46
+|rowspan=2|[[Harishchandrapur Assembly constituency|Harishchandrapur]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|[[Tajmul Hossain]]
+|{{Party name with color|Indian National Congress}}
+|[[Mostaque Alam]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Sanvarlal Kedia
+|-
+|{{Party name with color|All India Forward Bloc}}
+|Alam Mohammad Rafiqul
+|-
+!rowspan=2|47
+|rowspan=2|[[Malatipur Assembly constituency|Malatipur]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Moazzem Hossain
+|{{Party name with color|Indian National Congress}}
+|[[Alberuni Zulkarnain]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Saumitra Sarkar
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|[[Abdur Rahim Boxi|Abdur Rahim Bakshi]]
+|-
+!48
+|[[Ratua Assembly constituency|Ratua]]
+|{{Party name with color|Trinamool Congress}}
+|Shehnaz Quadery
+|{{Party name with color|Indian National Congress}}
+|[[Samar Mukherjee (Malda politician)|Samar Mukherjee]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Sanjay Saha
+|-
+!49
+|[[Manikchak Assembly constituency|Manikchak]]
+|{{Party name with color|Trinamool Congress}}
+|[[Sabitri Mitra]]
+|{{Party name with color|Indian National Congress}}
+|[[Md. Mottakin Alam|Mottakin Alam]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Shibendu Shekhar Roy
+|-
+!50
+|[[Maldaha Assembly constituency|Maldaha]]
+|{{Party name with color|Trinamool Congress}}
+|Dulal Sarkar
+|{{Party name with color|Indian National Congress}}
+|[[Bhupendra Nath Halder]]
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Gopal Chandra Saha]]
+|-
+!51
+|[[English Bazar Assembly constituency|English Bazar]]
+|{{Party name with color|Trinamool Congress}}
+|[[Krishnendu Narayan Choudhury|Krishnendu Choudhury]]
+|{{Party name with color|Independent|shortname=IND}}
+|[[Nihar Ranjan Ghosh]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Suman Banerjee
+|-
+!52
+|[[Mothabari Assembly constituency|Mothabari]]
+|{{Party name with color|Trinamool Congress}}
+|Mohammad Nazrul Islam
+|{{Party name with color|Indian National Congress}}
+|[[Sabina Yeasmin]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Shyam Chand Ghosh
+|-
+!53
+|[[Sujapur Assembly constituency|Sujapur]]
+|{{Party name with color|Trinamool Congress}}
+|Abu Nasar Khan
+|{{Party name with color|Indian National Congress}}
+|[[Isha Khan Choudhury]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Nandan Kumar Ghosh
+|-
+!54
+|[[Baisnabnagar Assembly constituency|Baisnabnagar]]
+|{{Party name with color|Trinamool Congress}}
+|Asit Bose
+|{{Party name with color|Indian National Congress}}
+|Azizul Haque
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Swadhin Kumar Sarkar]]
+|-
+| rowspan="32" | [[Murshidabad district|Murshidabad]]
+!55
+|[[Farakka Assembly constituency|Farakka]]
+|{{Party name with color|Trinamool Congress}}
+|Mohammad Mustafa
+|{{Party name with color|Indian National Congress}}
+|[[Mainul Haque]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Indranath Upadhyay
+|-
+!56
+|[[Samserganj Assembly constituency|Samserganj]]
+|{{Party name with color|Trinamool Congress}}
+|[[Amirul Islam (politician)|Amirul Islam]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Touab Ali
+|{{Party name with color|Bharatiya Janata Party}}
+|Milan Ghosh
+|-
+!rowspan=2|57
+|rowspan=2|[[Suti Assembly constituency|Suti]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|[[Emani Biswas]]
+|{{Party name with color|Indian National Congress}}
+|[[Humayun Reza]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Samrat Ghosh
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Nezamuddin
+|-
+!rowspan=2|58
+|rowspan=2|[[Jangipur, West Bengal Assembly constituency|Jangipur]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|[[Jakir Hossain (politician)|Jakir Hossain]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Somnath Singha Ray
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Sudhan Kumar Das
+|-
+|{{Party name with color|Indian National Congress}}
+|[[Md. Sohrab|Mohammad Sohrab]]
+|-
+!rowspan=2|59
+|rowspan=2|[[Raghunathganj Assembly constituency|Raghunathganj]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Abul Kasem Molla
+|{{Party name with color|Indian National Congress}}
+|[[Akhruzzaman]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Golam Modashbar
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Abul Hasnat
+|-
+!rowspan=2|60
+|rowspan=2|[[Sagardighi Assembly constituency|Sagardighi]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|[[Subrata Saha]]
+|{{Party name with color|Indian National Congress}}
+|Aminul Islam
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Debsharan Ghosh
+|-
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Rajab Ali Mallick
+|-
+!61
+|[[Lalgola Assembly constituency|Lalgola]]
+|{{Party name with color|Trinamool Congress}}
+|Chand Mohammad
+|{{Party name with color|Indian National Congress}}
+|[[Abu Hena (Indian politician)|Abu Hena]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Amar Kumar Das
+|-
+!62
+|[[Bhagabangola Assembly constituency|Bhagabangola]]
+|{{Party name with color|Trinamool Congress}}
+|Abu Sufian Sarkar
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Mahasin Ali]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Mehebub Alam
+|-
+!63
+|[[Raninagar Assembly constituency|Raninagar]]
+|{{Party name with color|Trinamool Congress}}
+|Humayun Kabir
+|{{Party name with color|Indian National Congress}}
+|[[Firoza Begam]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Basu Basak
+|-
+!rowspan=2|64
+|rowspan=2|[[Murshidabad Assembly constituency|Murshidabad]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Ashim Krishna Bhatta
+|{{Party name with color|Indian National Congress}}
+|[[Shaoni Singha Roy]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|[[Gouri Shankar Ghosh]]
+|-
+|{{Party name with color|All India Forward Bloc}}
+|Bivas Chakraborty
+|-
+!65
+|[[Nabagram Assembly constituency|Nabagram (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Dilip Saha
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Kanai Chandra Mondal]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Sushanta Marjit
+|-
+!66
+|[[Khargram Assembly constituency|Khargram (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|Madhab Chandra Marjit
+|{{Party name with color|Indian National Congress}}
+|[[Ashis Marjit|Ashish Marjit]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Sumanta Mondal
+|-
+!rowspan=2|67
+|rowspan=2|[[Burwan Assembly constituency|Burwan (SC)]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Shasthi Charan Mal
+|{{Party name with color|Indian National Congress}}
+|[[Protima Rajak]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Amiya Kumar Das
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Binoy Sarkar
+|-
+!68
+|[[Kandi Assembly constituency|Kandi]]
+|{{Party name with color|Trinamool Congress}}
+|Santanu Sen
+|{{Party name with color|Indian National Congress}}
+|[[Apurba Sarkar]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Binay Bhushan Das
+|-
+!rowspan=2|69
+|rowspan=2|[[Bharatpur, West Bengal Assembly constituency|Bharatpur]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Khadem Dastagir
+|{{Party name with color|Indian National Congress}}
+|[[Kamalesh Chatterjee]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Iman Kalyan Mukherjee
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|[[Id Mohammad]]
+|-
+!70
+|[[Rejinagar Assembly constituency|Rejinagar]]
+|{{Party name with color|Trinamool Congress}}
+|Begum Siddika
+|{{Party name with color|Indian National Congress}}
+|[[Rabiul Alam Chowdhury]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Bankim Karmakar
+|-
+!71
+|[[Beldanga Assembly constituency|Beldanga]]
+|{{Party name with color|Trinamool Congress}}
+|Golam Kibria Mia
+|{{Party name with color|Indian National Congress}}
+|[[Safiujjaman Seikh|Sheikh Safiujjaman]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Alok Ghosh
+|-
+!72
+|[[Baharampur Assembly constituency|Baharampur]]
+|{{Party name with color|Trinamool Congress}}
+|Sujata Banerjee
+|{{Party name with color|Indian National Congress}}
+|[[Manoj Chakraborty]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Mala Bhattacharya
+|-
+!rowspan=2|73
+|rowspan=2|[[Hariharpara Assembly constituency|Hariharpara]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|[[Niamot Sheikh]]
+|{{Party name with color|Indian National Congress}}
+|Alamgir Mir Palash
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Tulsi Prasad Sukul
+|-
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Insar Ali Biswas
+|-
+!rowspan=2|74
+|rowspan=2|[[Naoda Assembly constituency|Naoda]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Masud Karim
+|{{Party name with color|Indian National Congress}}
+|[[Abu Taher Khan]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Sajal Bhaumik
+|-
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|Abdul Bari Molla
+|-
+!rowspan=2|75
+|rowspan=2|[[Domkal Assembly constituency|Domkal]]
+|{{Party name with color|Trinamool Congress|rowspan=2}}
+|rowspan=2|Soumik Hossain
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Anisur Rahman (politician, born 1952)|Anisur Rahman]]
+|{{Party name with color|Bharatiya Janata Party|rowspan=2}}
+|rowspan=2|Nanda Dulal Pal
+|-
+|{{Party name with color|Indian National Congress}}
+|Abdur Rahaman Sheikh
+|-
+!76
+|[[Jalangi Assembly constituency|Jalangi]]
+|{{Party name with color|Trinamool Congress}}
+|Alok Das
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Abdur Razzak (Murshidabad politician)|Abdur Razzak]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Chandan Mondal
+|-
+| rowspan="17" | [[Nadia district|Nadia]]
+!77
+|[[Karimpur Assembly constituency|Karimpur]]
+|{{Party name with color|Trinamool Congress}}
+|[[Mahua Moitra]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Samarendranath Ghosh
+|{{Party name with color|Bharatiya Janata Party}}
+|Subhasis Bhattacharya
+|-
+!78
+|[[Tehatta Assembly constituency|Tehatta]]
+|{{Party name with color|Trinamool Congress}}
+|[[Gouri Sankar Dutta|Gouri Shankar Dutta]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Ranjit Kumar Mandal
+|{{Party name with color|Bharatiya Janata Party}}
+|Arjun Kumar Biswas
+|-
+!79
+|[[Palashipara Assembly constituency|Palashipara]]
+|{{Party name with color|Trinamool Congress}}
+|[[Tapas Kumar Saha]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[S. M. Saadi]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Bibhas Mondal
+|-
+!80
+|[[Kaliganj Assembly constituency|Kaliganj]]
+|{{Party name with color|Trinamool Congress}}
+|[[Nasiruddin Ahamed]]
+|{{Party name with color|Indian National Congress}}
+|[[Hasanuzzaman Sk|Hasanuzzaman Sheikh]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Saikat Sarkar
+|-
+!81
+|[[Nakashipara Assembly constituency|Nakashipara]]
+|{{Party name with color|Trinamool Congress}}
+|[[Kallol Khan]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Tanmay Ganguly
+|{{Party name with color|Bharatiya Janata Party}}
+|Anup Kumar Mondal
+|-
+!82
+|[[Chapra, West Bengal Assembly constituency|Chapra]]
+|{{Party name with color|Trinamool Congress}}
+|[[Rukbanur Rahman]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Shamsul Islam Mollah
+|{{Party name with color|Bharatiya Janata Party}}
+|Sutirtha Chakraborty
+|-
+!83
+|[[Krishnanagar Uttar Assembly constituency|Krishnanagar Uttar]]
+|{{Party name with color|Trinamool Congress}}
+|[[Abani Mohan Joardar]]
+|{{Party name with color|Indian National Congress}}
+|Ashim Kumar Saha
+|{{Party name with color|Bharatiya Janata Party}}
+|Chanchal Kumar Biswas
+|-
+!84
+|[[Nabadwip Assembly constituency|Nabadwip]]
+|{{Party name with color|Trinamool Congress}}
+|[[Pundarikakshya Saha]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Sumit Biswas
+|{{Party name with color|Bharatiya Janata Party}}
+|Gautam Pal
+|-
+!85
+|[[Krishnanagar Dakshin Assembly constituency|Krishnanagar Dakshin]]
+|{{Party name with color|Trinamool Congress}}
+|[[Ujjal Biswas]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Meghlal Sheikh
+|{{Party name with color|Bharatiya Janata Party}}
+|Mahadev Sarkar
+|-
+!86
+|[[Santipur Assembly constituency|Santipur]]
+|{{Party name with color|Trinamool Congress}}
+|[[Ajoy Dey]]
+|{{Party name with color|Indian National Congress}}
+|[[Arindam Bhattacharya (politician)|Arindam Bhattacharya]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Swapan Kumar Dam
+|-
+!87
+|[[Ranaghat Uttar Paschim Assembly constituency|Ranaghat Uttar Paschim]]
+|{{Party name with color|Trinamool Congress}}
+|[[Parthasarathi Chatterjee]]
+|{{Party name with color|Indian National Congress}}
+|[[Shankar Singha]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Anal Biswas
+|-
+!88
+|[[Krishnaganj Assembly constituency|Krishnaganj (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Satyajit Biswas]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Mrinal Biswas
+|{{Party name with color|Bharatiya Janata Party}}
+|Sujit Kumar Biswas
+|-
+!89
+|[[Ranaghat Uttar Purba Assembly constituency|Ranaghat Uttar Purba (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Samir Kumar Poddar]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Babusona Sarkar
+|{{Party name with color|Bharatiya Janata Party}}
+|Nikhil Ranjan Sarkar
+|-
+!90
+|[[Ranaghat Dakshin Assembly constituency|Ranaghat Dakshin (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Abir Biswas|Abir Ranjan Biswas]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Rama Biswas]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Susmit Ranjan Haldar
+|-
+!91
+|[[Chakdaha Assembly constituency|Chakdaha]]
+|{{Party name with color|Trinamool Congress}}
+|[[Ratna Ghosh Kar]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Biswanath Gupta
+|{{Party name with color|Bharatiya Janata Party}}
+|Pradip Kumar Sarkar
+|-
+!92
+|[[Kalyani Assembly constituency|Kalyani (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Ramendra Nath Biswas]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|[[Alokesh Das]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Ranajit Kumar Biswas
+|-
+!93
+|[[Haringhata Assembly constituency|Haringhata (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Nilima Nag|Nilima Nag Mallick]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Ajoy Das
+|{{Party name with color|Bharatiya Janata Party}}
+|Suresh Sikdar
+|-
+|rowspan="33" | [[North 24 Parganas district|North 24 Parganas]]
+!94
+|[[Bagdah Assembly constituency|Bagdah (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Upendra Nath Biswas|Upendranath Biswas]]
+|{{Party name with color|Indian National Congress}}
+|[[Dulal Chandra Bar]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Biva Majumdar
+|-
+!95
+|[[Bangaon Uttar Assembly constituency|Bongaon Uttar (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Biswajit Das (politician)|Biswajit Das]]
+|{{Party name with color|All India Forward Bloc}}
+|Sushanta Bowali
+|{{Party name with color|Bharatiya Janata Party}}
+|K. D. Biswas
+|-
+!96
+|[[Bangaon Dakshin Assembly constituency|Bongaon Dakshin (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Surajit Kumar Biswas]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Ramendranath Audhya
+|{{Party name with color|Bharatiya Janata Party}}
+|[[Swapan Majumder]]
+|-
+!97
+|[[Gaighata Assembly constituency|Gaighata (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Pulin Bihari Ray]]
+|{{Party name with color|Communist Party of India}}
+|[[Kapil Krishna Thakur]]
+|{{Party name with color|Bharatiya Janata Party}}
+|Shankar Thakur
+|-
+!98
+|[[Swarupnagar Assembly constituency|Swarupnagar (SC)]]
+|{{Party name with color|Trinamool Congress}}
+|[[Bina Mondal]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|Dhiman Sarkar
+|{{Party name with color|Bharatiya Janata Party}}
+|Mihir Kumar Bagchi
+|-
+!99
+|[[Baduria Assembly constituency|Baduria]]
+|-
+!100
+|[[Habra Assembly constituency|Habra]]
+|-
+!101
+|[[Ashoknagar Assembly constituency|Ashokenagar]]
+|-
+!102
+|[[Amdanga Assembly constituency|Amdanga]]
+|-
+!103
+|[[Bijpur Assembly constituency|Bijpur]]
+|-
+!104
+|[[Naihati Assembly constituency|Naihati]]
+|-
+!105
+|[[Bhatpara Assembly constituency|Bhatpara]]
+|-
+!106
+|[[Jagatdal Assembly constituency|Jagatdal]]
+|-
+!107
+|[[Noapara Assembly constituency|Noapara]]
+|-
+!108
+|[[Barrackpur Assembly constituency|Barrackpur]]
+|-
+!109
+|[[Khardaha Assembly constituency|Khardaha]]
+|-
+!110
+|[[Dum Dum Uttar Assembly constituency|Dum Dum Uttar]]
+|-
+!111
+|[[Panihati Assembly constituency|Panihati]]
+|-
+!112
+|[[Kamarhati Assembly constituency|Kamarhati]]
+|-
+!113
+|[[Baranagar Assembly constituency|Baranagar]]
+|-
+!114
+|[[Dum Dum Assembly constituency|Dum Dum]]
+|-
+!115
+|[[Rajarhat New Town Assembly constituency|Rajarhat New Town]]
+|-
+!116
+|[[Bidhannagar Assembly constituency|Bidhannagar]]
+|-
+!117
+|[[Rajarhat Gopalpur Assembly constituency|Rajarhat Gopalpur]]
+|-
+!118
+|[[Madhyamgram Assembly constituency|Madhyamgram]]
+|-
+!119
+|[[Barasat Assembly constituency|Barasat]]
+|-
+!120
+|[[Deganga Assembly constituency|Deganga]]
+|-
+!121
+|[[Haroa Assembly constituency|Haroa]]
+|-
+!122
+|[[Minakhan Assembly constituency|Minakhan (SC)]]
+|-
+!123
+|[[Sandeshkhali Assembly constituency|Sandeshkhali (ST)]]
+|-
+!124
+|[[Basirhat Dakshin Assembly constituency|Basirhat Dakshin]]
+|-
+!125
+|[[Basirhat Uttar Assembly constituency|Basirhat Uttar]]
+|-
+!126
+|[[Hingalganj Assembly constituency|Hingalganj (SC)]]
+|-
+| rowspan="31" |[[South 24 Parganas district|South 24 Parganas]]
+!127
+|[[Gosaba Assembly constituency|Gosaba (SC)]]
+|-
+!128
+|[[Basanti Assembly constituency|Basanti (SC)]]
+|-
+!129
+|[[Kultali Assembly constituency|Kultali (SC)]]
+|-
+!130
+|[[Patharpratima Assembly constituency|Patharpratima]]
+|-
+!131
+|[[Kakdwip Assembly constituency|Kakdwip]]
+|-
+!132
+|[[Sagar, West Bengal Assembly constituency|Sagar]]
+|-
+!133
+|[[Kulpi Assembly constituency|Kulpi]]
+|-
+!134
+|[[Raidighi Assembly constituency|Raidighi]]
+|-
+!135
+|[[Mandirbazar Assembly constituency|Mandirbazar (SC)]]
+|-
+!136
+|[[Jaynagar Assembly constituency|Jaynagar (SC)]]
+|-
+!137
+|[[Baruipur Purba Assembly constituency|Baruipur Purba (SC)]]
+|-
+!138
+|[[Canning Paschim Assembly constituency|Canning Paschim (SC)]]
+|-
+!139
+|[[Canning Purba Assembly constituency|Canning Purba]]
+|-
+!140
+|[[Baruipur Paschim Assembly constituency|Baruipur Paschim]]
+|-
+!141
+|[[Magrahat Purba Assembly constituency|Magrahat Purba (SC)]]
+|-
+!142
+|[[Magrahat Paschim Assembly constituency|Magrahat Paschim]]
+|-
+!143
+|[[Diamond Harbour Assembly constituency|Diamond Harbour]]
+|-
+!144
+|[[Falta Assembly constituency|Falta]]
+|-
+!145
+|[[Satgachhia Assembly constituency|Satgachia]]
+|-
+!146
+|[[Bishnupur, South 24 Parganas Assembly constituency|Bishnupur (SC)]]
+|-
+!147
+|[[Sonarpur Dakshin Assembly constituency|Sonarpur Dakshin]]
+|-
+!148
+|[[Bhangar Assembly constituency|Bhangar]]
+|-
+!149
+|[[Kasba, West Bengal Assembly constituency|Kasba]]
+|-
+!150
+|[[Jadavpur Assembly constituency|Jadavpur]]
+|-
+!151
+|[[Sonarpur Uttar Assembly constituency|Sonarpur Uttar]]
+|-
+!152
+|[[Tollyganj Assembly constituency|Tollygunge]]
+|-
+!153
+|[[Behala Purba Assembly constituency|Behala Purba]]
+|-
+!154
+|[[Behala Paschim]]
+|-
+!155
+|[[Maheshtala Assembly constituency|Maheshtala]]
+|-
+!156
+|[[Budge Budge Assembly constituency|Budge Budge]]
+|-
+!157
+|[[Metiaburuz Assembly constituency|Metiaburuz]]
+|-
+| rowspan="11" | [[Kolkata district|Kolkata]]
+!158
+|[[Kolkata Port Assembly constituency|Kolkata Port]]
+|-
+!159
+|[[Bhabanipur, West Bengal Assembly constituency|Bhabanipur]]
+|-
+!160
+|[[Rashbehari Assembly constituency|Rashbehari]]
+|-
+!161
+|[[Ballygunge Assembly constituency|Ballygunge]]
+|-
+!162
+|[[Chowrangee Assembly constituency|Chowrangee]]
+|-
+!163
+|[[Entally Assembly constituency|Entally]]
+|-
+!164
+|[[Beleghata Assembly constituency|Beleghata]]
+|-
+!165
+|[[Jorasanko Assembly constituency|Jorasanko]]
+|-
+!166
+|[[Shyampukur Assembly constituency|Shyampukur]]
+|-
+!167
+|[[Maniktala Assembly constituency|Maniktala]]
+|-
+!168
+|[[Kashipur-Belgachhia]]
+|-
+|rowspan="16" | [[Howrah district|Howrah]]
+!169
+|[[Bally Assembly constituency|Bally]]
+|-
+!170
+|[[Howrah Uttar]]
+|-
+!171
+|[[Howrah Madhya]]
+|-
+!172
+|[[Shibpur Assembly constituency|Shibpur]]
+|-
+!173
+|[[Howrah Dakshin]]
+|-
+!174
+|[[Sankrail Assembly constituency|Sankrail (SC)]]
+|-
+!175
+|[[Panchla Assembly constituency|Panchla]]
+|-
+!176
+|[[Uluberia Purba]]
+|-
+!177
+|[[Uluberia Uttar|Uluberia Uttar (SC)]]
+|-
+!178
+|[[Uluberia Dakshin]]
+|-
+!179
+|[[Shyampur Assembly constituency|Shyampur]]
+|-
+!180
+|[[Bagnan Assembly constituency|Bagnan]]
+|-
+!181
+|[[Amta Assembly constituency|Amta]]
+|-
+!182
+|[[Udaynarayanpur Assembly constituency|Udaynarayanpur]]
+|-
+!183
+|[[Jagatballavpur Assembly constituency|Jagatballavpur]]
+|-
+!184
+|[[Domjur Assembly constituency|Domjur]]
+|-
+| rowspan="18" | [[Hooghly district|Hooghly]]
+!185
+|[[Uttarpara Assembly constituency|Uttarpara]]
+|-
+!186
+|[[Sreerampur Assembly constituency|Sreerampur]]
+|-
+!187
+|[[Champdani Assembly constituency|Champdani]]
+|-
+!188
+|[[Singur Assembly constituency|Singur]]
+|-
+!189
+|[[Chandannagar Assembly constituency|Chandannagar]]
+|-
+!190
+|[[Chunchura Assembly constituency|Chunchura]]
+|-
+!191
+|[[Balagarh Assembly constituency|Balagarh (SC)]]
+|-
+!192
+|[[Pandua Assembly constituency|Pandua]]
+|-
+!193
+|[[Saptagram Assembly constituency|Saptagram]]
+|-
+!194
+|[[Chanditala Assembly constituency|Chanditala]]
+|-
+!195
+|[[Jangipara Assembly constituency|Jangipara]]
+|-
+!196
+|[[Haripal Assembly constituency|Haripal]]
+|-
+!197
+|[[Dhanekhali Assembly constituency|Dhanekhali (SC)]]
+|-
+!198
+|[[Tarakeswar Assembly constituency|Tarakeswar]]
+|-
+!199
+|[[Pursurah Assembly constituency|Pursurah]]
+|-
+!200
+|[[Arambag Assembly constituency|Arambagh (SC)]]
+|-
+!201
+|[[Goghat Assembly constituency|Goghat (SC)]]
+|-
+!202
+|[[Khanakul Assembly constituency|Khanakul]]
+|-
+| rowspan="16" | [[Purba Medinipur district|Purba Medinipur]]
+!203
+|[[Tamluk Assembly constituency|Tamluk]]
+|-
+!204
+|[[Panskura Purba]]
+|-
+!205
+|[[Panskura Paschim]]
+|-
+!206
+|[[Moyna Assembly constituency|Moyna]]
+|-
+!207
+|[[Nandakumar Assembly constituency|Nandakumar]]
+|-
+!208
+|[[Mahisadal Assembly constituency|Mahisadal]]
+|-
+!209
+|[[Haldia Assembly constituency|Haldia (SC)]]
+|-
+!210
+|[[Nandigram Assembly constituency|Nandigram]]
+|-
+!211
+|[[Chandipur Assembly constituency|Chandipur]]
+|-
+!212
+|[[Patashpur Assembly constituency|Patashpur]]
+|-
+!213
+|[[Kanthi Uttar Assembly constituency|Kanthi Uttar]]
+|-
+!214
+|[[Bhagabanpur Assembly constituency|Bhagabanpur]]
+|-
+!215
+|[[Khejuri Assembly constituency|Khejuri (SC)]]
+|-
+!216
+|[[Kanthi Dakshin Assembly constituency|Kanthi Dakshin]]
+|-
+!217
+|[[Ramnagar, Purba Medinipur Assembly constituency|Ramnagar]]
+|-
+!218
+|[[Egra Assembly constituency|Egra]]
+|-
+|[[Paschim Medinipur district|Paschim Medinipur]]
+!219
+|[[Dantan Assembly constituency|Dantan]]
+|-
+| rowspan="3" | [[Jhargram district|Jhargram]]
+!220
+|[[Nayagram Assembly constituency|Nayagram (ST)]]
+|-
+!221
+|[[Gopiballavpur Assembly constituency|Gopiballavpur]]
+|-
+!222
+|[[Jhargram Assembly constituency|Jhargram]]
+|-
+| rowspan="14" | [[Paschim Medinipur district|Paschim Medinipur]]
+!223
+|[[Keshiary Assembly constituency|Keshiary (ST)]]
+|-
+!224
+|[[Kharagpur Sadar Assembly constituency|Kharagpur Sadar]]
+|-
+!225
+|[[Narayangarh Assembly constituency|Narayangarh]]
+|-
+!226
+|[[Sabang Assembly constituency|Sabang]]
+|-
+!227
+|[[Pingla Assembly constituency|Pingla]]
+|-
+!228
+|[[Kharagpur Assembly constituency|Kharagpur]]
+|-
+!229
+|[[Debra Assembly constituency|Debra]]
+|-
+!230
+|[[Daspur Assembly constituency|Daspur]]
+|-
+!231
+|[[Ghatal Assembly constituency|Ghatal]]
+|-
+!232
+|[[Chandrakona Assembly constituency|Chandrakona (SC)]]
+|-
+!233
+|[[Garbeta Assembly constituency|Garbeta]]
+|-
+!234
+|[[Salboni Assembly constituency|Salboni]]
+|-
+!235
+|[[Keshpur Assembly constituency|Keshpur]]
+|-
+!236
+|[[Medinipur Assembly constituency|Medinipur]]
+|-
+|[[Jhargram district|Jhargram]]
+!237
+|[[Binpur Assembly constituency|Binpur (ST)]]
+|-
+| rowspan="9" | [[Purulia district|Purulia]]
+!238
+|[[Bandwan Assembly constituency|Bandwan (ST)]]
+|-
+!239
+|[[Balarampur, Purulia Assembly constituency|Balarampur]]
+|-
+!240
+|[[Baghmundi Assembly constituency|Baghmundi]]
+|-
+!241
+|[[Joypur, Purulia Assembly constituency|Joypur]]
+|-
+!242
+|[[Purulia Assembly constituency|Purulia]]
+|-
+!243
+|[[Manbazar Assembly constituency|Manbazar (ST)]]
+|-
+!244
+|[[Kashipur, West Bengal Assembly constituency|Kashipur]]
+|-
+!245
+|[[Para Assembly constituency|Para (SC)]]
+|-
+!246
+|[[Raghunathpur, West Bengal Assembly constituency|Raghunathpur (SC)]]
+|-
+| rowspan="12" | [[Bankura district|Bankura]]
+!247
+|[[Saltora Assembly constituency|Saltora (SC)]]
+|-
+!248
+|[[Chhatna Assembly constituency|Chhatna]]
+|-
+!249
+|[[Ranibandh Assembly constituency|Ranibandh (ST)]]
+|-
+!250
+|[[Raipur, Bankura Assembly constituency|Raipur (ST)]]
+|-
+!251
+|[[Taldangra Assembly constituency|Taldangra]]
+|-
+!252
+|[[Bankura Assembly constituency|Bankura]]
+|-
+!253
+|[[Barjora Assembly constituency|Barjora]]
+|-
+!254
+|[[Onda Assembly constituency|Onda]]
+|-
+!255
+|[[Bishnupur, Bankura Assembly constituency|Bishnupur]]
+|-
+!256
+|[[Katulpur|Katulpur (SC)]]
+|-
+!257
+|[[Indas Assembly constituency|Indas (SC)]]
+|-
+!258
+|[[Sonamukhi Assembly constituency|Sonamukhi (SC)]]
+|-
+| rowspan="16" |[[Purba Bardhaman district|Purba Bardhaman]]
+!259
+|[[Khandaghosh Assembly constituency|Khandaghosh (SC)]]
+|-
+!260
+|[[Bardhaman Dakshin]]
+|-
+!261
+|[[Raina Assembly constituency|Raina (SC)]]
+|-
+!262
+|[[Jamalpur, West Bengal Assembly constituency|Jamalpur (SC)]]
+|-
+!263
+|[[Monteswar Assembly constituency|Monteswar]]
+|-
+!264
+|[[Kalna Assembly constituency|Kalna (SC)]]
+|-
+!265
+|[[Memari Assembly constituency|Memari]]
+|-
+!266
+|[[Bardhaman Uttar|Bardhaman Uttar (SC)]]
+|-
+!267
+|[[Bhatar Assembly constituency|Bhatar]]
+|-
+!268
+|[[Purbasthali Dakshin]]
+|-
+!269
+|[[Purbasthali Uttar]]
+|-
+!270
+|[[Katwa Assembly constituency|Katwa]]
+|-
+!271
+|[[Ketugram Assembly constituency|Ketugram]]
+|-
+!272
+|[[Mangalkot Assembly constituency|Mangalkot]]
+|-
+!273
+|[[Ausgram Assembly constituency|Ausgram (SC)]]
+|-
+!274
+|[[Galsi Assembly constituency|Galsi (SC)]]
+|-
+| rowspan="9" | [[Paschim Bardhaman district|Paschim Bardhaman]]
+!275
+|[[Pandabeswar Assembly constituency|Pandabeswar]]
+|-
+!276
+|[[Durgapur Purba]]
+|-
+!277
+|[[Durgapur Paschim]]
+|-
+!278
+|[[Raniganj, West Bengal Assembly constituency|Raniganj]]
+|-
+!279
+|[[Jamuria Assembly constituency|Jamuria]]
+|-
+!280
+|[[Asansol Dakshin Assembly constituency|Asansol Dakshin]]
+|-
+!281
+|[[Asansol Uttar Assembly constituency|Asansol Uttar]]
+|-
+!282
+|[[Kulti Assembly constituency|Kulti]]
+|-
+!283
+|[[Barabani Assembly constituency|Barabani]]
+|-
+| rowspan="11" | [[Birbhum district|Birbhum]]
+!284
+|[[Dubrajpur Assembly constituency|Dubrajpur (SC)]]
+|-
+!285
+|[[Suri Assembly constituency|Suri]]
+|-
+!286
+|[[Bolpur Assembly constituency|Bolpur]]
+|-
+!287
+|[[Nanoor Assembly constituency|Nanoor (SC)]]
+|-
+!288
+|[[Labpur Assembly constituency|Labpur]]
+|-
+!289
+|[[Sainthia Assembly constituency|Sainthia (SC)]]
+|-
+!290
+|[[Mayureswar Assembly constituency|Mayureswar]]
+|-
+!291
+|[[Rampurhat Assembly constituency|Rampurhat]]
+|-
+!292
+|[[Hansan Assembly constituency|Hansan]]
+|-
+!293
+|[[Nalhati Assembly constituency|Nalhati]]
+|-
+!294
+|[[Murarai Assembly constituency|Murarai]]
+|}
+
+==Voting==
+79.22% voting was recorded in the third phase of West Bengal polls held on 21 April 2016.<ref>{{Cite web|url=https://infoelections.com/infoelection/index.php/kolkata/7373-west-bengal-election-fourth-phase-live-voting-updates.html|title=Assembly Election Results Dates Candidate List Opinion/Exit Poll Latest News, Political Consulting Survey Election Campaign Management Company India|website=infoelections.com}}</ref>
+79.51% voting was recorded in second phase of West Bengal polls.<ref>{{Cite news|url=https://www.thehindu.com/news/national/other-states/assams-85-has-pollsters-riveted/article8462872.ece|title=Assam's 85% has pollsters riveted|newspaper=The Hindu |date=12 April 2016|via=www.thehindu.com}}</ref><ref>{{Cite web|url=https://www.livemint.com/Politics/zyVwmJTO0g3FarxLge56AJ/Second-day-of-polling-in-Assam-West-Bengal-begins.html|title=Assam, West Bengal see high voter turnout in assembly elections|author1=Anuja|first2=Gyan |last2=Varma|date=11 April 2016|website=mint}}</ref>
+
+==Surveys and polls==
+===Exit poll===
+{| class="wikitable sortable" style="text-align:center;font-size:80%;line-height:20px;"
+|-
+! rowspan="2" class="wikitable" style="width:180px;" | Polling Agency
+| bgcolor= "{{party color|All India Trinamool Congress}}" |
+| bgcolor="{{party color|Sanjukta Morcha}}" |
+| bgcolor="{{party color|Bharatiya Janata Party}}" |
+| style="background:gray;" |
+|-
+! class="wikitable" style="width:70px;"| [[All India Trinamool Congress|AITC]]
+! class="wikitable" style="width:70px;"| [[Secular Democratic Alliance|SDA]]
+! class="wikitable" style="width:70px;"| [[National Democratic Alliance|NDA]]
+! class="wikitable" style="width:70px;"| Others
+|-
+![[ABP News]]–[[Nielsen Corporation|Nielsen]]
+| style="background:#B0F4B0"|163
+|126
+|1
+|4
+|-
+![[India Today]]-Axis
+| style="background:#B0F4B0"|243
+|44
+|4
+|3
+|-
+![[Times Now]]–[[CVoter]]
+| style="background:#B0F4B0"|167
+|120
+|4
+|3
+|-
+![[News 24 (India)|News 24]]–Today's Chanakya
+| style="background:#B0F4B0"|210
+|70
+|14
+| {{dash}} 
+|-
+![[NDTV]]
+| style="background:#B0F4B0"|184
+|103
+|5
+|2
+|-
+!'''BRACE'''-[[News Time]]-খবর ৩৬৫ দিন
+| style="background:#B0F4B0"|214
+|72
+|3
+|5
+|}
+
+==Result==
+=== Results by Parties ===
+
+The election results were announced along with other four state assemblies on 19 May 2016.<ref>{{cite news|title=NDTV Live Results|url=http://www.ndtv.com/elections|access-date=19 May 2016}}</ref><ref>{{Cite web|url=https://infoelections.com/infoelection/index.php/kolkata/180-wbresult2011.html|title=Assembly Election Results Dates Candidate List Opinion/Exit Poll Latest News, Political Consulting Survey Election Campaign Management Company India|website=infoelections.com}}</ref> [[All India Trinamool Congress|AITC]] won 211 seats, and thus was reelected with an enhanced majority. They also became the first ruling party to win without an ally since 1962 in West Bengal.<ref>{{cite web | url=https://zeenews.india.com/news/west-bengal/after-sweeping-polls-in-west-bengal-tmcs-legislative-party-to-meet-in-kolkata-today_1887311.html | title=It's 'Mamata wave' in West Bengal as voters reject Congress-Left alliance | publisher=[[Zee News]] | work=Ritesh K Srivastava | date=20 May 2016 | access-date=20 May 2016}}</ref>
+
+{{Pie chart
+|thumb = right
+|caption='''Vote share by alliance'''
+|label1 = [[All India Trinamool Congress|AITC+]]
+|value1 = 44.91
+|color1 = {{party color|All India Trinamool Congress}}
+|label3 = [[National Democratic Alliance|NDA]]
+|value3 = 10.67
+|color3 = {{party color|National Democratic Alliance}}
+|label2 = [[Secular Democratic Alliance|SDA]]
+|value2 = 39.16
+|color2 = {{party color|Sanjukta Morcha}}
+|label4 = [[None of the above|NOTA]]
+|value4 = 1.52
+|color4 = White
+|label5 = [[Independent politician|IND]]
+|value5 = 1.49
+|color5 = Black
+|label6 = Others
+|value6 = 2.26
+|color6 = #C1C1C1
+}}
+
+{{Pie chart
+| thumb = right
+| caption = '''Vote share by Party'''
+| label1 = [[All India Trinamool Congress|AITC]]
+| value1 = 44.91
+| color1 = {{party color|All India Trinamool Congress}}
+| label4 = [[Bharatiya Janata party|BJP]]
+| value4 = 10.16
+| color4 = {{party color|Bharatiya Janata Party}}
+| label3 = [[Communist Party of India (Marxist)|CPI(M)]]
+| value3 = 19.75
+| color3 = {{party color|Communist Party of India (Marxist)}}
+| label2 = [[Indian National Congress|INC]]
+| value2 = 12.25
+| color2 = {{party color|Indian National Congress}}
+| label6 = [[Independent politician|IND]]
+| value6 = 2.16
+| color6 = Black
+| label5 = [[All India Forward Bloc|AIFB]]
+| value5 = 2.82
+| color5 = {{party color|All India Forward Bloc}}
+| label7 = [[Revolutionary Socialist Party (India)|RSP]]
+| value7 = 1.67
+| color7 = {{party color|Revolutionary Socialist Party (India)}}
+| label8 = [[Communist Party of India|CPI]]
+| value8 = 1.45
+| color8 = {{party color|Communist Party of India}}
+| label9 = [[Gorkha Janmukti Morcha|GJM]]
+| value9 = 0.47
+| color9 = {{party color|Gorkha Janmukti Morcha}}
+| label10 = [[Democratic Socialist Party (Prabodh Chandra)|DSP]]
+| value10 = 0.31
+| color10 = {{party color|Democratic Socialist Party (Prabodh Chandra)}}
+| label11 = [[Nationalist Congress Party|NCP]]
+| value11 = 0.13
+| color11 = {{party color|Nationalist Congress Party}}
+| label12 = [[Samajwadi Party|SP]]
+| value12 = 0.08
+| color12 = {{party color|Samajwadi Party}}
+| label13 = [[Rashtriya Janata Dal|RJD]]
+| value13 = 0.03
+| color13 = {{party color|Rashtriya Janata Dal}}
+| label14 = [[None of the above|NOTA]]
+| value14 = 1.52
+| color14 = White
+| label15 = Others
+| value15 = 2.29
+| color15 = #C1C1C1
+}}
+
+<section begin="Results" />{{election table|sortable=yes}}
+! colspan="2" rowspan="2" |Parties and coalitions
+! colspan="3" |2016 West Bengal Bidhan Sabha Election
+! colspan="3" |Seats
+|- valign="top"
+! Votes 
+!%||'''±'''[[Percentage point|pp]]|| Contested || Won ||'''+/−'''
+|-
+| {{party color cell|All India Trinamool Congress}}
+|[[All India Trinamool Congress]] (AITC) ||{{formatnum:24564523}}
+|44.91
+|{{increase}}||293 || 211
+||{{nowrap|{{increase}}27}}
+|-
+| {{party color cell|Communist Party of India (Marxist)}}
+| [[Communist Party of India (Marxist)]] (CPM)  ||{{formatnum:10802058}}
+|19.75||{{nowrap|{{decrease}}}}||148||26
+||{{decrease}}14
+|-
+| {{party color cell|Indian National Congress}}
+| [[Indian National Congress]] (INC)
+|{{formatnum:6700938}}
+|12.25|||{{increase}}||92|| 44
+||{{increase}}2
+|-
+| {{party color cell|Bharatiya Janata Party}}
+|[[Bharatiya Janata Party]] (BJP) ||{{formatnum:5555134}}
+|10.16||{{increase}}||291||3
+||{{increase}}3
+|-
+| {{party color cell|All India Forward Bloc}}
+|[[All India Forward Bloc]] (AIFB)
+|{{formatnum:1543764}}
+|2.82
+|{{decrease}}1.98
+|25
+|2
+|{{decrease}}9
+|-
+| {{party color cell|Independent politician}}
+|[[Independent politician|Independents]] (IND)||{{formatnum:1184047}}
+|2.16||{{decrease}}0.97|| 371
+|1
+||{{decrease}}1 
+|-
+| {{party color cell|Revolutionary Socialist Party (India)}}
+|[[Revolutionary Socialist Party (India)|Revolutionary Socialist Party]] (RSP)
+|{{formatnum:911004}}
+|1.67
+|{{decrease}}1.33
+|19
+|3
+|{{decrease}}4
+|-
+| {{party color cell|Communist Party of India}}
+|[[Communist Party of India]] (CPI)
+|{{formatnum:791925}}
+|1.45
+|{{decrease}}0.35
+|11
+|1
+|{{decrease}}1
+|-
+| {{party color cell|Socialist Unity Centre of India}}
+|[[Socialist Unity Centre of India]] (SUCI)||{{formatnum:365996}}
+|0.67||{{increase}}0.23|| 182
+|0
+||{{decrease}}1 
+|-
+| {{party color cell|Gorkha Janmukti Morcha}}
+|[[Gorkha Janmukti Morcha]] (GOJAM)
+|{{formatnum:254626}}
+|0.47
+|{{decrease}}0.25
+|5
+|3
+|{{Steady}}
+|-
+| {{party color cell|Democratic Socialist Party (Prabodh Chandra)}}
+|[[Democratic Socialist Party (Prabodh Chandra)|Democratic Socialist Party]] (DSP)
+|{{formatnum:167576}}
+|0.31
+|{{decrease}}0.04
+|2
+|0
+|{{decrease}}1 
+|-
+| {{party color cell|Nationalist Congress Party}}
+|[[Nationalist Congress Party]] (NCP)
+|{{formatnum:69898}}
+|0.13
+|{{increase}}0.10
+|1
+|0
+|{{Steady}}
+|-
+| {{party color cell|Samajwadi Party}}
+|[[Samajwadi Party]] (SP)
+|{{formatnum:46402}}
+|0.08
+|{{decrease}}0.66
+|23
+|0
+|{{decrease}}1 
+|-
+| {{party color cell|Rashtriya Janata Dal}}
+|[[Rashtriya Janata Dal]] (RJD)
+|{{formatnum:15439}}
+|0.03
+|{{decrease}}0.02
+|1
+|0
+|{{Steady}}
+|-
+| {{party color cell|None of the Above}}
+|[[None of the above|None of the Above]] (NOTA)
+|{{formatnum:831848}}
+|1.52
+|{{increase}}1.52
+| colspan="3" bgcolor="#E9E9E9" |
+|-
+|- class="unsortable" style="background-color:#E9E9E9"
+! colspan="9" |
+|-
+| colspan="2" |'''Total'''|| '''{{formatnum:54697791}}'''
+|'''100.0'''
+| bgcolor="#E9E9E9" |
+|'''2255'''
+| '''294''' ||'''±0'''
+|-
+! colspan="9" |
+|-
+| style="text-align:left;" colspan="2" |Valid votes
+| align="right" |{{formatnum:54697791}}
+| align="right" |99.92
+| colspan="4" rowspan="5" style="background-color:#E9E9E9"  |
+|-
+| style="text-align:left;" colspan="2" |Invalid votes
+| align="right" |{{formatnum:44622}}
+| align="right" |0.08
+|-
+| style="text-align:left;" colspan="2" |'''Votes cast / turnout'''
+| align="right" |'''{{formatnum:54742413}}'''
+| align="right" |'''83.02'''
+|-
+| style="text-align:left;" colspan="2" |Abstentions
+| align="right" |{{formatnum:11196593}}
+| align="right" |16.98
+|-
+| style="text-align:left;" colspan="2" |'''Registered voters'''
+| align="right" | '''{{formatnum:65939006}}'''
+|colspan="1" style="background-color:#E9E9E9"|
+|-
+|}<section end="Results" />
+
+===Results by polling phase===
+{| class="wikitable sortable" style="text-align:center;"
+!rowspan=2|Phase
+!rowspan=2|Seats
+|bgcolor="{{party color|Trinamool Congress}}"|
+|bgcolor="{{party color|Secular Democratic Alliance}}"|
+|bgcolor="{{party color|National Democratic Alliance}}"|
+|bgcolor="{{party color|Independent}}"|
+|-
+!class="wikitable"|[[Trinamool Congress|AITC]]  
+!class="wikitable"|[[Secular Democratic Alliance|SDA]] 
+!class="wikitable"|[[National Democratic Alliance|NDA]] 
+!class="wikitable"|Others 
+|-
+|-
+!First A
+|18
+| {{party color cell|Trinamool Congress}}16
+|2
+|0
+|0
+|-
+!First B
+|31
+| {{party color cell|Trinamool Congress}}20
+|10
+|1
+|0
+|-
+!Second
+|56
+|25
+|{{party color cell|Communist Party of India (Marxist)}}26
+|5
+|0
+|-
+!Third
+|62
+| {{party color cell|Trinamool Congress}}38
+|24
+|0
+|0
+|-
+!Fourth
+|49
+| {{party color cell|Trinamool Congress}}42
+|7
+|0
+|0
+|-
+!Fifth
+|53
+| {{party color cell|Trinamool Congress}}49
+|4
+|0
+|0
+|-
+!Sixth
+|25
+| {{party color cell|Trinamool Congress}}21
+|4
+|0
+|0
+|-
+! Total
+! 294
+|{{party color cell|Trinamool Congress}}211
+|77
+|6
+|0
+|}
+
+===Results by region===
+{| class="wikitable sortable" width="75%" style="text-align:center;"
+!rowspan="3"|Region
+!rowspan="3"|District
+!rowspan="3"|Seats
+|colspan="2" bgcolor="{{party color|Trinamool Congress}}"|
+|colspan="2" bgcolor="{{party color|Secular Democratic Alliance}}"|
+|colspan="2" bgcolor="{{party color|National Democratic Alliance}}"|
+|colspan="2" bgcolor="{{party color|Independent}}"|
+|-
+!colspan="2" class="wikitable"|[[Trinamool Congress|AITC]]  
+!colspan="2" class="wikitable"|[[Secular Democratic Alliance|SDA]] 
+!colspan="2" class="wikitable"|[[National Democratic Alliance|NDA]] 
+!colspan="2" class="wikitable"|Others
+|-
+!Won
+!±
+!Won
+!±
+!Won
+!±
+!Won
+!±
+|-  
+! rowspan=7| North Bengal
+| [[Cooch Behar district|Cooch Behar]]
+|9
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |8
+|{{up}} 3
+|1
+|{{down}} 3
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Alipurduar district|Alipurduar]]
+|5
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |4
+|{{up}} 2
+|0
+|{{down}} 2
+|1
+|{{steady}}
+|0
+|{{steady}} 
+|-
+| [[Jalpaiguri district|Jalpaiguri]]
+|7
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |6
+|{{up}} 2
+|1
+|{{down}} 2
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Darjeeling district|Darjeeling]]
+|6
+|0
+|{{down}} 3
+|3
+|{{up}} 3
+|3
+|{{steady}}
+|0
+|{{steady}}  
+|-
+| [[Uttar Dinajpur district|Uttar Dinajpur]]
+|9
+|4
+|{{down}} 1
+|style="background:{{party color|Secular Democratic Alliance}} ; color:white;" |5
+|{{up}} 2
+|0
+|{{steady}} 
+|0
+|{{down}} 1
+|-
+| [[Dakshin Dinajpur district|Dakshin Dinajpur]]
+|6
+|2
+|{{down}} 3
+|style="background:{{party color|Secular Democratic Alliance}} ; color:white;" |4
+|{{up}} 3
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Malda district|Malda]]
+|12
+|0
+|{{down}} 9
+|style="background:{{party color|Secular Democratic Alliance}} ; color:white;" |11
+|{{up}} 8
+|1
+|{{up}} 1
+|0
+|{{steady}} 
+|-
+! colspan=2|Total || 54 || 24 || {{down}} 9 || style="background:{{party color|Secular Democratic Alliance}} ; color:white;" | 25 || {{up}} 9 || 5 || {{up}} 1 || 0 || {{down}} 1
+|-
+! rowspan=9| South Bengal
+| [[Murshidabad district|Murshidabad]]
+|22
+|4
+|{{down}} 11
+|style="background:{{party color|Secular Democratic Alliance}} ; color:white;" |18
+|{{up}} 11
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Nadia district|Nadia]]
+|17
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |13
+|{{down}} 1
+|4
+|{{up}} 1
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[North 24 Parganas district|North 24 Parganas]]
+|33
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |27
+|{{down}} 2
+|6
+|{{up}} 2
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[South 24 Parganas]]
+|31
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |29
+|{{up}} 2
+|2
+|{{down}} 2 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Kolkata district|Kolkata]] 
+|11
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |11
+|{{steady}} 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Howrah district|Howrah]]
+|16
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |15
+|{{down}} 1
+|1
+|{{up}} 1 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Hooghly district|Hooghly]]
+|18
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |16
+|{{steady}} 
+|2
+|{{steady}} 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Purba Medinipur district|Purba Medinipur]]
+|16
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |13
+|{{down}} 3
+|3
+|{{up}} 3
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Paschim Medinipur district|Paschim Medinipur]]
+|19
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |17
+|{{up}} 7
+|1
+|{{down}} 8
+|1
+|{{up}} 1
+|0
+|{{steady}} 
+|-
+! colspan=2|Total || 183 || style="background:{{party color|Trinamool Congress}} ; color:white;" |145 || {{down}} 9 || 37 || {{up}} 8 || 1 || {{up}} 1 || 0 || {{steady}} 
+|-
+! rowspan=4| Rarh Banga
+| [[Purulia district|Purulia]]
+|9
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |7
+|{{steady}} 
+|2
+|{{steady}} 
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Bankura district|Bankura]]
+|12
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |7
+|{{down}} 1
+|5
+|{{up}} 1
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Bardhaman district|Bardhaman]]
+|25
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |19
+|{{up}} 4
+|6
+|{{down}} 4
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+| [[Birbhum district|Birbhum]]
+|11
+|style="background:{{party color|Trinamool Congress}} ; color:white;" |9
+|{{up}} 1
+|2
+|{{down}} 1
+|0
+|{{steady}} 
+|0
+|{{steady}} 
+|-
+! colspan=2|Total || 57 || style="background:{{party color|Trinamool Congress}} ; color:white;" |42 || {{up}} 4 || 15 || {{down}} 4 || 0 || {{steady}}  || 0 || {{steady}} 
+|-
+! colspan=2|Total
+!294
+! style="background:{{party color|Trinamool Congress}} ; color:white;" |211
+! {{down}} 14
+!77
+! {{up}} 13
+!6{{efn|NDA won 6 seats: BJP won 3 seats and its ally GJM won 3 seats.}}
+! {{up}} 2
+!0
+! {{down}} 1
+|}
+
+=== Results by constituency ===
+{|class="wikitable sortable" 
+! colspan="2" |Constituency
+! colspan="4" |Winner
+! colspan="4" |Runner-up
+! rowspan="2" data-sort-type=number|Margin
+|-
+! No.
+! Name
+! Candidate
+! colspan="2" |Party
+! data-sort-type=number|Votes
+! Candidate
+! colspan="2" |Party
+! data-sort-type=number|Votes
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Cooch Behar district|<span style="color:white;">'''Cooch Behar district'''</span>]]
+|-
+|1
+|[[Mekliganj Assembly constituency|Mekliganj]] (SC)
+|[[Arghya Roy Pradhan]]
+|{{Party name with color|Trinamool Congress}}
+|74,823
+|[[Paresh Chandra Adhikary]]
+|{{Party name with color|All India Forward Bloc}}
+|68,186
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |6,637
+|-
+|2
+|[[Mathabhanga Assembly constituency|Mathabhanga]] (SC)
+|[[Binay Krishna Barman]]
+|{{Party name with color|Trinamool Congress}}
+|96,383
+|Khagen Chandra Barman
+|{{Party name with color|Communist Party of India (Marxist)}}
+|64,465
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |31,918
+|-
+|3
+| [[Cooch Behar Uttar Assembly constituency|Cooch Behar Uttar]] (SC)
+|[[Nagendra Nath Roy]]
+|{{Party name with color|All India Forward Bloc}}
+|97,629
+|Parimal Barman
+|{{Party name with color|Trinamool Congress}}
+|85,336
+| style="background:{{party color|All India Forward Bloc}} ; color:white;" |12,293
+|-
+|4
+| [[Cooch Behar Dakshin Assembly constituency|Cooch Behar Dakshin]]
+|[[Mihir Goswami]]
+|{{Party name with color|Trinamool Congress}}
+|82,849
+|Debasis Banik
+|{{Party name with color|All India Forward Bloc}}
+|64,654
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |18,195
+|-
+|5
+|[[Sitalkuchi Assembly constituency|Sitalkuchi]] (SC)
+|[[Hiten Barman]]
+|{{Party name with color|Trinamool Congress}}
+|1,01,647
+|Namadipti Adhikary
+|{{Party name with color|Communist Party of India (Marxist)}}
+|86,164
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |15,483
+|-
+|6
+|[[Sitai Assembly constituency|Sitai]] (SC)
+|[[Jagadish Chandra Barma Basunia|Jagadish Barma Basunia]]
+|{{Party name with color|Trinamool Congress}}
+|1,03,410
+|Keshab Chandra Ray
+|{{Party name with color|Indian National Congress}}
+|78,159
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |25,251
+|-
+|7
+|[[Dinhata Assembly constituency|Dinhata]]
+|[[Udayan Guha]]
+|{{Party name with color|Trinamool Congress}}
+|1,00,732
+|Akshay Thakur
+|{{Party name with color|All India Forward Bloc}}
+|78,939
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |21,793
+|-
+|8
+|[[Natabari Assembly constituency|Natabari]]
+|[[Rabindra Nath Ghosh]]
+|{{Party name with color|Trinamool Congress}}
+|93,257
+|Tamser Ali
+|{{Party name with color|Communist Party of India (Marxist)}}
+|77,100
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |16,157
+|-
+|9
+|[[Tufanganj Assembly constituency|Tufanganj]]
+|[[Fazal Karim Miah]]
+|{{Party name with color|Trinamool Congress}}
+|85,052
+|Shyamal Chowdhury
+|{{Party name with color|Indian National Congress}}
+|69,782
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |15,270
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Alipurduar district|<span style="color:white;">'''Alipurduar district'''</span>]]
+|-
+|10
+|[[Kumargram Assembly constituency|Kumargram]] (ST)
+|[[James Kujur]]
+|{{Party name with color|Trinamool Congress}}
+|77,668 
+|Manoj Kumar Oraon
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|71,515
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |6,153
+|-
+|11
+|[[Kalchini Assembly constituency|Kalchini]] (ST)
+|[[Wilson Champramary]]
+|{{Party name with color|Trinamool Congress}}
+|62,061
+|[[Bishal Lama]]
+|{{Party name with color|Bharatiya Janata Party}}
+|60,550
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |1,511
+|-
+|12
+|[[Alipurduars Assembly constituency|Alipurduars]]
+|[[Sourav Chakraborty (politician)|Sourav Chakraborty]]
+|{{Party name with color|Trinamool Congress}}
+|89,695
+|Biswa Ranjan Sarkar
+|{{Party name with color|Indian National Congress}}
+|77,737
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |11,958
+|-
+|13
+|[[Falakata Assembly constituency|Falakata]]
+|[[Anil Adhikari (politician)|Anil Adhikari]]
+|{{Party name with color|Trinamool Congress}}
+|86,647
+|Kshitish Chandra Ray
+|{{Party name with color|Communist Party of India (Marxist)}}
+|69,808 
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |16,839
+|-
+|14
+|[[Madarihat Assembly constituency|Madarihat]]
+|[[Manoj Tigga]]
+|{{Party name with color|Bharatiya Janata Party}}
+|66,989
+|Padam Lama
+|{{Party name with color|Trinamool Congress}}
+|44,951
+| style="background:{{party color|Bharatiya Janata Party}} ; color:white;" |22,038
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Jalpaiguri district|<span style="color:white;">'''Jalpaiguri district'''</span>]]
+|-
+|15
+|[[Dhupguri Assembly constituency|Dhupguri]] (SC)
+|[[Mitali Roy]]
+|{{Party name with color|Trinamool Congress}}
+|90,781
+| [[Mamata Roy]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|71,517
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |19,264
+|-
+|16
+|[[Maynaguri Assembly constituency|Maynaguri]] (SC)
+|[[Ananta Deb Adhikari]]
+|{{Party name with color|Trinamool Congress}}
+|1,00,837
+|Chhaya Dey
+|{{Party name with color|Revolutionary Socialist Party (India)}}
+|65,930
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |34,907
+|-
+|17
+|[[Jalpaiguri Assembly constituency|Jalpaiguri]] (SC)
+|[[Sukhbilas Barma]]
+|{{Party name with color|Indian National Congress}}
+|94,553
+|Dhartimohan Roy
+|{{Party name with color|Trinamool Congress}}
+|89,396
+| style="background:{{party color|Indian National Congress}} ; color:white;" |5,157
+|-
+|18
+|[[Rajganj Assembly constituency|Rajganj]] (SC)
+|[[Khageswar Roy]]
+|{{Party name with color|Trinamool Congress}}
+|89,785
+|Satyendra Nath Mondal
+|{{Party name with color|Communist Party of India (Marxist)}}
+|75,108
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |14,677
+|-
+|19
+|[[Dabgram-Phulbari Assembly constituency|Dabgram-Phulbari]]
+|[[Goutam Deb]]
+|{{Party name with color|Trinamool Congress}}
+|1,05,769
+|Dilip Singh
+|{{Party name with color|Communist Party of India (Marxist)}}
+|81,958
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |23,811
+|-
+|20
+|[[Mal Assembly constituency|Mal]] (ST)
+|[[Bulu Chik Baraik]]
+|{{Party name with color|Trinamool Congress}}
+|84,877
+|Augustus Kerketta
+|{{Party name with color|Communist Party of India (Marxist)}}
+|66,415
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |18,462
+|-
+|21
+|[[Nagrakata Assembly constituency|Nagrakata]] (ST)
+|[[Sukra Munda]]
+|{{Party name with color|Trinamool Congress}}
+|57,306
+|[[Joseph Munda]]
+|{{Party name with color|Indian National Congress}}
+|54,078
+| style="background:{{party color|Trinamool Congress}} ; color:white;" |3,228
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Kalimpong district|<span style="color:white;">'''Kalimpong district'''</span>]]
+|-
+|22
+|[[Kalimpong Assembly constituency|Kalimpong]]
+|[[Sarita Rai]]
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|67,693
+|Harka Bahadur Chhetri
+|{{Party name with color|Jana Andolan Party}}
+|56,262
+| style="background:{{party color|Gorkha Janmukti Morcha}} ; color:white;" |11,431
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Darjeeling district|<span style="color:white;">'''Darjeeling district'''</span>]]
+|-
+|23
+|[[Darjeeling Assembly constituency|Darjeeling]]
+|[[Amar Singh Rai]]
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|95,386
+|Sarda Rai Subba
+|{{Party name with color|Trinamool Congress}}
+|45,473
+| style="background:{{party color|Gorkha Janmukti Morcha}} ; color:white;" |49,913
+|-
+|24
+|[[Kurseong Assembly constituency|Kurseong]]
+|[[Rohit Sharma (West Bengal politician)|Rohit Sharma]]
+|{{Party name with color|Gorkha Janmukti Morcha}}
+|86,947
+|[[Shanta Chhetri]]
+|{{Party name with color|Trinamool Congress}}
+|53,221
+| style="background:{{party color|Gorkha Janmukti Morcha}} ; color:white;" |33,726
+|-
+|25
+|[[Matigara-Naxalbari Assembly constituency|Matigara-Naxalbari]] (SC)
+|[[Sankar Malakar|Shankar Malakar]]
+|{{Party name with color|Indian National Congress}}
+|86,441
+|Amar Sinha
+|{{Party name with color|Trinamool Congress}}
+|67,814
+| style="background:{{party color|Indian National Congress}} ; color:white;" |18,627
+|-
+|26
+|[[Siliguri Assembly constituency|Siliguri]]
+|[[Ashok Bhattacharya]]
+|{{Party name with color|Communist Party of India (Marxist)}}
+|78,054
+| [[Bhaichung Bhutia]]
+|{{Party name with color|Trinamool Congress}}
+|63,982
+| style="background:{{party color|Communist Party of India (Marxist)}} ; color:white;" |14,072
+|-
+| 27
+| [[Phansidewa Assembly constituency|Phansidewa]] (ST)
+| [[Sunil Chandra Tirkey]]
+|{{Party name with color|Indian National Congress}}
+|73,158
+|Carolus Lakra
+|{{Party name with color|Trinamool Congress}}
+|66,084
+| style="background:{{party color|Indian National Congress}} ; color:white;" |7,074
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Uttar Dinajpur district|<span style="color:white;">'''Uttar Dinajpur district'''</span>]]
+|-
+|28
+|[[Chopra Assembly constituency|Chopra]]
+|[[Hamidul Rahman|Hamidul Rahaman]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|74390
+|Akramul Hoque
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|57530
+|16860
+|-
+|29
+|[[Islampur, West Bengal Assembly constituency|Islampur]]
+|[[Kanaia Lal Agarwal]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|65559
+|Abdul Karim Chowdhury
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|57841
+|7718
+|-
+|30
+|[[Goalpokhar Assembly constituency|Goalpokhar]]
+|[[Md. Ghulam Rabbani]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|64869
+| Afjal Hosen
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|57121
+|7748
+|-
+|31
+|[[Chakulia Assembly constituency|Chakulia]]
+|[[Ali Imran Ramz|Ali Imran Ramz (Victor)]]
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|64185
+|Ashim Kumar Mridha
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|36656
+|27529	
+|-
+|32
+|[[Karandighi Assembly constituency|Karandighi]]
+|[[Manodeb Sinha]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|54599
+|Gokul Roy
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|51367
+|3232
+|-
+|33
+|[[Hemtabad Assembly constituency|Hemtabad]]
+|[[Debendra Nath Roy]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|80419
+|Sabita Kshetry
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|67283
+|13136
+|-
+|34
+|[[Kaliaganj Assembly constituency|Kaliaganj]]
+|[[Pramatha Nath Ray]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|112868
+|Basanta Roy
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|66266
+|46602
+|-
+|35
+|[[Raiganj Assembly constituency|Raiganj]]
+|[[Mohit Sengupta]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|87983
+|Purnendu Dey
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|36736
+|51247
+|-
+|36
+|[[Itahar Assembly constituency|Itahar]]
+|[[Amal Acharjee]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|88507
+|[[Srikumar Mukherjee]]
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|69387
+|19120
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Dakshin Dinajpur district|<span style="color:white;">'''Dakshin Dinajpur district'''</span>]]
+|-
+|37
+|[[Kushmandi Assembly constituency|Kushmandi]]
+|[[Narmada Chandra Roy]]
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|68965
+|Rekha Roy
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|65436
+|4529
+|-
+|38
+|[[Kumarganj Assembly constituency|Kumarganj]]
+|[[Toraf Hossain Mandal]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|64501
+|Mafuja Khatun
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|61005
+|3496
+|-
+|39
+|[[Balurghat Assembly constituency|Balurghat]]
+|[[Biswanath Chowdhury|Biswanath Choudhury]]
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|60590
+|[[Sankar Chakraborty|Shankar Chakravorti]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|59140
+|1450
+|-
+|40
+|[[Tapan Assembly constituency|Tapan]]
+|[[Bachchu Hansda]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|72511
+|Raghu Urow
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|68110
+|4401
+|-
+|41
+|[[Gangarampur Assembly constituency|Gangarampur]]
+|[[Goutam Das (politician)|Goutam Das]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|80401
+|Satyendra Nath Roy
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|69668
+|10733
+|-
+|42
+|[[Harirampur Assembly constituency|Harirampur]]
+|[[Rafikul Islam]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|71447
+|[[Biplab Mitra]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|66943
+|4504
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Malda district|<span style="color:white;">'''Malda district'''</span>]]
+|-
+|43
+|[[Habibpur Assembly constituency|Habibpur]]
+|[[Khagen Murmu]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|64095
+|Amal Kisku
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|61583
+|2512
+|-
+|44
+|[[Gazole Assembly constituency|Gazole]]
+|[[Dipali Biswas]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85949
+|Sushil Chandra Roy
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|65347
+|20602
+|-
+|45
+|[[Chanchal Assembly constituency|Chanchal]]
+|[[Asif Mehbub]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|92590
+|Soumitra Ray
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|40222
+|52368
+|-
+|46
+|[[Harishchandrapur Assembly constituency|Harishchandrapur]]
+|[[Mostaque Alam]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|60047
+|[[Tajmul Hossain]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|42190
+|17857
+|-
+|47
+|[[Malatipur Assembly constituency|Malatipur]]
+|[[Alberuni Zulkarnain]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|50643
+|[[Abdur Rahim Boxi]]
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|48043
+|2610
+|-
+|48
+|[[Ratua Assembly constituency|Ratua]]
+|[[Samar Mukherjee (Malda politician)|Samar Mukherjee]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|96587
+|Shehnaz Quadery
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|53312
+|43275
+|-
+|49
+|[[Manikchak Assembly constituency|Manikchak]]
+|[[Md. Mottakin Alam]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|78472
+|[[Sabitri Mitra]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|65869
+|12603
+|-
+|50
+|[[Maldaha Assembly constituency|Maldaha]]
+|[[Bhupendra Nath Halder]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|88243
+|Dulal Sarkar
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|54934
+|33309
+|-
+|51
+|[[English Bazar Assembly constituency|English Bazar]]
+|[[Nihar Ranjan Ghosh]]
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|107183
+|[[Krishnendu Narayan Choudhury]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|67456
+|39727
+|-
+|52
+|[[Mothabari Assembly constituency|Mothabari]]
+|[[Sabina Yeasmin]] 
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|69089
+|Md. Najrul Islam
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|30915
+|38174
+|-
+|53
+|[[Sujapur Assembly constituency|Sujapur]]
+|[[Isha Khan Choudhury]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|97332
+|Abu Nasar Khan Choudhury
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|50252
+|47080
+|-
+|54
+|[[Baisnabnagar Assembly constituency|Baisnabnagar]]
+|[[Swadhin Kumar Sarkar]]
+|{{Party name with color|Bharatiya Janata Party}}
+|70,185	
+| Azizul Haque
+|{{Party name with color|Indian National Congress}}
+|65,688
+| style="background:{{party color|Bharatiya Janata Party}} ; color:white;" |4,497
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Murshidabad district|<span style="color:white;">'''Murshidabad district'''</span>]]
+|-
+|55
+|[[Farakka Assembly constituency|Farakka]]
+|[[Mainul Haque]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|83314
+|Md. Mustafa
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|55147
+|28167
+|-
+|56
+|[[Samserganj Assembly constituency|Samserganj]]
+|[[Amirul Islam (politician)|Amirul Islam]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|48381
+|Touab Ali
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|46601
+|1780
+|-
+|57
+|[[Suti Assembly constituency|Suti]]
+|[[Humayun Reza]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|84017
+|Emani Biswas
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|80067
+|3950
+|-
+|58
+|[[Jangipur, West Bengal Assembly constituency|Jangipur]]
+|[[Jakir Hossain (politician)|Jakir Hossain]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|66869
+|Somnath Singha Ray
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|46236
+|20633
+|-
+|59
+|[[Raghunathganj Assembly constituency|Raghunathganj]]
+|[[Akhruzzaman]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|78497
+|Abul Kasem Molla
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|54711
+|23786
+|-
+|60
+|[[Sagardighi Assembly constituency|Sagardighi]]
+|[[Subrata Saha]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|44817
+|Aminul Islam
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|39603
+|5214
+|-
+|61
+|[[Lalgola Assembly constituency|Lalgola]]
+|[[Abu Hena (Indian politician)|Abu Hena]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|100110
+|Chand Mohammad
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|46635
+|53475
+|-
+|62
+|[[Bhagabangola Assembly constituency|Bhagabangola]]
+|[[Mahasin Ali]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|105037
+|Abu Sufian Sarkar
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|68732
+|36305
+|-
+|63
+|[[Raninagar Assembly constituency|Raninagar]]
+|[[Firoza Begam]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|111132
+|Dr. Humayun Kabir
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|62750
+|48382
+|-
+|64
+|[[Murshidabad Assembly constituency|Murshidabad]]
+|[[Shaoni Singha Roy]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|94579
+|Ashim Krishna Bhatta
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|69440
+|25139
+|-
+|65
+|[[Nabagram Assembly constituency|Nabagram]]
+|[[Kanai Chandra Mondal]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|99545
+|Dilip Saha
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|61102
+|38443
+|-
+|66
+|[[Khargram Assembly constituency|Khargram]]
+|[[Ashis Marjit]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|88913
+|Madhab Chandra Marjit
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|55740
+|33173
+|-
+|67
+|[[Burwan Assembly constituency|Burwan]]
+|[[Protima Rajak]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|55906
+|Shasthi Charan Mal
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|40904
+|15002
+|-
+|68
+|[[Kandi Assembly constituency|Kandi]]
+|[[Apurba Sarkar]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|81723
+|[[Santunu Sen|Santanu Sen]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|60943
+|20780
+|-
+|69
+|[[Bharatpur, West Bengal Assembly constituency|Bharatpur]]
+|[[Kamalesh Chatterjee]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|59789
+|Khadem A Dastegir
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|48772
+|11017
+|-
+|70
+|[[Rejinagar Assembly constituency|Rejinagar]]
+|[[Rabiul Alam Chowdhury]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|79770
+|Humayun Kabir
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|74210
+|5560
+|-
+|71
+|[[Beldanga Assembly constituency|Beldanga]]
+|[[Seikh Safiujjaman]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|87017
+|Golam Kibria Mia
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|56736
+|30281
+|-
+|72
+|[[Baharampur Assembly constituency|Baharampur]]
+|[[Manoj Chakraborty]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|127762
+|Sujata Banerjee
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|35489
+|92273
+|-
+|73
+|[[Hariharpara Assembly constituency|Hariharpara]]
+|[[Niamot Sheikh]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|71502
+|Alamgir Mir
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|66499
+|5003
+|-
+|74
+|[[Naoda Assembly constituency|Naoda]]
+|[[Abu Taher Khan]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|62639
+|Masud Karim
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|43377
+|19262
+|-
+|75
+|[[Domkal Assembly constituency|Domkal]]
+|[[Anisur Rahman (politician, born 1952)|Anisur Rahaman]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|71703
+|Soumik Hossain
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|64813
+|6890
+|-
+|76
+|[[Jalangi Assembly constituency|Jalangi]]
+|[[Abdur Razzak (Murshidabad politician)|Abdur Razzak Mandal]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|96250
+|Alok Das
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|70983
+|25267
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Nadia district|<span style="color:white;">'''Nadia district'''</span>]]
+|-
+|77
+|[[Karimpur Assembly constituency|Karimpur]]
+|[[Mahua Moitra]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|90989
+|Samarendranath Ghosh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|75000
+|15989
+|-
+|78
+|[[Tehatta Assembly constituency|Tehatta]]
+|[[Gouri Sankar Dutta]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|97611
+|Ranjit Kumar Mandal
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|80215
+|17394
+|-
+|79
+|[[Palashipara Assembly constituency|Palashipara]]
+|[[Tapas Kumar Saha]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|82127
+|S.M.Sadi
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|76568
+|5559
+|-
+|80
+|[[Kaliganj Assembly constituency|Kaliganj]]
+|[[Hasanuzzaman Sk]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|85125
+|[[Nasiruddin Ahamed]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|83898
+|1227
+|-
+|81
+|[[Nakashipara Assembly constituency|Nakashipara]]
+|[[Kallol Khan]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|88032
+|Tanmay Ganguli
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|81782
+|6250
+|-
+|82
+|[[Chapra, West Bengal Assembly constituency|Chapra]]
+|[[Rukbanur Rahman]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|89556
+|Shamsul Islam Mollah
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|76093
+|13463
+|-
+|83
+|[[Krishnanagar Uttar Assembly constituency|Krishnanagar Uttar]]
+|[[Abani Mohan Joardar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|82864
+|Asim Kumar Saha
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|69949
+|12915
+|-
+|84
+|[[Nabadwip Assembly constituency|Nabadwip]]
+|[[Pundarikakshya Saha]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|102228
+|Sumit Biswas
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|66432
+|35397
+|-
+|85
+|[[Krishnanagar Dakshin Assembly constituency|Krishnanagar Dakshin]]
+|[[Ujjal Biswas]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|80711
+|Meghlal Sheikh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67897
+|12814
+|-
+|86
+|[[Santipur Assembly constituency|Santipur]]
+|[[Arindam Bhattacharya (politician)|Arindam Bhattacharya]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|103566
+|[[Ajoy Dey]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|84078
+|19488	
+|-
+|87
+|[[Ranaghat Uttar Paschim Assembly constituency|Ranaghat Uttar Paschim]]
+|[[Shankar Singha|Sankar Singha]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|109607
+|Parthasarathi Chatterjee
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|86187
+|23420	
+|-
+|88
+|[[Krishnaganj Assembly constituency|Krishnaganj]]
+|[[Satyajit Biswas]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|114626
+|Mrinal Biswas
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70698
+|43928
+|-
+|89
+|[[Ranaghat Uttar Purba Assembly constituency|Ranaghat Uttar Purba]]
+|[[Samir Kumar Poddar]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|93215
+|Babusona Sarkar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78243
+|14972
+|-
+|90
+|[[Ranaghat Dakshin Assembly constituency|Ranaghat Dakshin]]
+|[[Rama Biswas]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|104159
+|[[Abir Biswas|Abir Ranjan Biswas]]
+|bgcolor=#3CB371|
+| [[All India Trinamool Congress|TMC]]
+|86906
+|17253
+|-
+|91
+|[[Chakdaha Assembly constituency|Chakdaha]]
+|[[Ratna Ghosh Kar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94241
+|Biswanath Gupta
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70588
+|23653
+|-
+|92
+|[[Kalyani Assembly constituency|Kalyani]]
+|[[Ramendra Nath Biswas]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95795
+|[[Alakesh Das]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|69700
+|26095
+|-
+|93
+|[[Haringhata Assembly constituency|Haringhata]]
+|[[Nilima Nag]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94530
+|Ajoy Das
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|73181
+|21349
+|-
+| colspan="11" bgcolor="grey" align="center" | [[North 24 Parganas district|<span style="color:white;">'''North 24 Parganas district'''</span>]]
+|-
+| 94
+| [[Bagdah Assembly constituency|Bagdah]]
+|[[Dulal Chandra Bar]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|102026
+|[[U. N. Biswas|Upendra Nath Biswas]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89790
+|12236
+|-
+|95
+|[[Bangaon Uttar Assembly constituency|Bangaon Uttar]]
+|[[Biswajit Das (politician)|Biswajit Das]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95822
+|Sushanta Bowali
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|62630
+|33192
+|-
+|96
+|[[Bangaon Dakshin Assembly constituency|Bangaon Dakshin]]
+|[[Surajit Kumar Biswas]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|92379
+|Ramendranath Audhya
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|65475
+|26904
+|-
+|97
+|[[Gaighata Assembly constituency|Gaighata]]
+|[[Pulin Bihari Ray]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93812
+|Kapil Krishna Thakur
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|64240
+|29572
+|-
+|98
+|[[Swarupnagar Assembly constituency|Swarupnagar]]
+|[[Bina Mondal|Bina Mandal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93807
+|Dhiman Sarkar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|81866
+|11941	
+|-
+|99
+|[[Baduria Assembly constituency|Baduria]]
+|[[Abdur Rahim Quazi]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|98408
+|Amir Ali
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76163
+|22245
+|-
+|100
+|[[Habra Assembly constituency|Habra]]
+|[[Jyotipriya Mallick]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|101590
+|Ashis Kantha Mukherjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|55643
+|45947
+|-
+|101
+|[[Ashoknagar Assembly constituency|Ashokenagar]]
+|[[Dhiman Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|98042
+|Satyasebi Kar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|75143
+|22899
+|-
+|102
+|[[Amdanga Assembly constituency|Amdanga]]
+|[[Rafiqur Rahaman]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96193
+|[[Abdus Sattar (West Bengal politician)|Abdus Sattar]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|73228
+|22965
+|-
+|103
+|[[Bijpur Assembly constituency|Bijpur]]
+|[[Subhranshu Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76842
+|Rabindra Nath Mukherjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|28888
+|47954
+|-
+|104
+|[[Naihati Assembly constituency|Naihati]]
+|[[Partha Bhowmick]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|74057
+|Gargi Chatterjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|45429
+|28628
+|-
+|105
+|[[Bhatpara Assembly constituency|Bhatpara]]
+|[[Arjun Singh (politician, born 1962)|Arjun Singh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|59253
+|Jitendra Shaw
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|30318
+|28935
+|-
+|106
+|[[Jagatdal Assembly constituency|Jagatdal]]
+|[[Parash Dutta]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76712
+|Haripada Biswas
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|49667
+|27045
+|-
+|107
+|[[Noapara Assembly constituency|Noapara]]
+|[[Madhusudan Ghose]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|79548
+|Manju Basu
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|78453
+|1095
+|-
+|108
+|[[Barrackpore Assembly constituency|Barrackpore]]
+|[[Silbhadra Dutta]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|58109
+|Debasish Bhowmick
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|50790
+|7319	
+|-
+|109
+|[[Khardaha Assembly constituency|Khardaha]]
+|[[Amit Mitra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|83688
+|[[Asim Dasgupta]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|62488
+|21200
+|-
+|110
+|[[Dum Dum Uttar Assembly constituency|Dum Dum Uttar]]
+|[[Tanmoy Bhattacharya]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|91959
+|[[Chandrima Bhattacharya]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|85410
+|6549
+|-
+|111
+|[[Panihati Assembly constituency|Panihati]]
+|[[Nirmal Ghosh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|73545
+|Sanmoy Bandyopadhyay
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|70515
+|3030
+|-
+|112
+|[[Kamarhati Assembly constituency|Kamarhati]]
+|[[Manash Mukherjee]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|62194
+|[[Madan Mitra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|57996
+|4202
+|-
+|113
+|[[Baranagar Assembly constituency|Baranagar]]
+|[[Tapas Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76531
+|Sukumar Ghosh
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|60431
+|16100
+|-
+|114
+|[[Dum Dum Assembly constituency|Dum Dum]]
+|[[Bratya Basu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|81579
+|Palash Das
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|72263
+|9316
+|-
+|115
+|[[Rajarhat New Town Assembly constituency|Rajarhat New Town]]
+|[[Sabyasachi Dutta]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90671
+|Narendra Nath Chatterjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|81478
+|9193	
+|-
+|116
+|[[Bidhannagar Assembly constituency|Bidhannagar]]
+|[[Sujit Bose (politician)|Sujit Bose]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|66130
+|[[Arunava Ghosh]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|59142
+|6988
+|-
+|117
+|[[Rajarhat Gopalpur Assembly constituency|Rajarhat Gopalpur]]
+|[[Purnendo Bose|Purnendu Basu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|72793
+|[[Nepaldev Bhattacharjee|Nepaldeb Bhattacharjee]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|65919
+|6874
+|-
+|118
+|[[Madhyamgram Assembly constituency|Madhyamgram]]
+|[[Rathin Ghosh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|110271
+|Tapas Majumder
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|74467
+|35804
+|-
+|119
+|[[Barasat Assembly constituency|Barasat]]
+|[[Chiranjeet Chakraborty|Chiranjeet Chakrabarti]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|99667
+|Sanjib Chattopadhyay
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|74668
+|24999
+|-
+|120
+|[[Deganga Assembly constituency|Deganga]]
+|[[Rahima Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97412
+|Md. Hasanoor Jaman Chowdhury
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|71422
+|25990
+|-
+|121
+|[[Haroa Assembly constituency|Haroa]]
+|[[Haji Nurul Islam]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|113001
+|Imtiaz Hossain
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70594
+|42407
+|-
+|122
+|[[Minakhan Assembly constituency|Minakhan]]
+|[[Usha Rani Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103210
+|Dinabandhu Mondal
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|60612
+|42598
+|-
+|123
+|[[Sandeshkhali Assembly constituency|Sandeshkhali]]
+|[[Sukumar Mahata]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96556
+|Nirapada Sardar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|58366
+|38190
+|-
+|124
+|[[Basirhat Dakshin Assembly constituency|Basirhat Dakshin]]
+|[[Dipendu Biswas]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|88085
+|[[Samik Bhattacharya]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|64027
+|24058	
+|-
+|125
+|[[Basirhat Uttar Assembly constituency|Basirhat Uttar]]
+|[[Rafikul Islam Mondal]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|97828
+|A.T.M. Abdullah
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97336
+|492	
+|-
+|126
+|[[Hingalganj Assembly constituency|Hingalganj]]
+|[[Debes Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94753
+|Anandamay Mandal
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|64449 
+|30304	
+|-
+| colspan="11" bgcolor="grey" align="center" | [[South 24 Parganas|<span style="color:white;">'''South 24 Parganas district'''</span>]]
+|-
+|127
+|[[Gosaba Assembly constituency|Gosaba]]
+|[[Jayanta Naskar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90716
+|Uttam Kumar Saha
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|71045
+|19671
+|-
+|128
+|[[Basanti Assembly constituency|Basanti]]
+|[[Gobinda Chandra Naskar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90522
+|[[Subhas Naskar]]
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|73915 
+|16607
+|-
+|129
+|[[Kultali Assembly constituency|Kultali]]
+|[[Ram Sankar Halder]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|73932
+|Gopal Majhi
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|62212
+|11690
+|-
+|130
+|[[Patharpratima Assembly constituency|Patharpratima]]
+|[[Samir Kumar Jana]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|107595
+|Phanibhushan Giri
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|93802
+|13793
+|-
+|131
+|[[Kakdwip Assembly constituency|Kakdwip]]
+|[[Manturam Pakhira]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|104750
+|Rafik Uddin Molla
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|79831
+|24919
+|-
+|132
+|[[Sagar, West Bengal Assembly constituency|Sagar]]
+|[[Bankim Chandra Hazra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|112812
+|Asim Kumar Mandal
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|94741
+|18071
+|-
+|133
+|[[Kulpi Assembly constituency|Kulpi]]
+|[[Jogaranjan Halder]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84036
+|Rejaul Haque Khan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|72581
+|11455
+|-
+|134
+|[[Raidighi Assembly constituency|Raidighi]]
+|[[Debashree Roy|Debasree Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|101161
+|[[Kanti Ganguly]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|99932
+|1229
+|-
+|135
+|[[Mandirbazar Assembly constituency|Mandirbazar]]
+|[[Joydeb Halder]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94339
+|Sarat Chandra Haldar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|69400
+|24939
+|-
+|136
+|[[Jaynagar Assembly constituency|Jaynagar]]
+|[[Biswanath Das]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|64582
+|Sujit Patwari
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|49531
+|15051
+|-
+|137
+|[[Baruipur Purba Assembly constituency|Baruipur Purba]]
+|[[Nirmal Mondal|Nirmal Chandra Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|92313
+|Sujoy Mistry
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|71951
+|20362
+|-
+|138
+|[[Canning Paschim Assembly constituency|Canning Paschim]]
+|[[Shyamal Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93498
+|Arnab Roy
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|74772
+|18726
+|-
+|139
+|[[Canning Purba Assembly constituency|Canning Purba]]
+|[[Saokat Molla]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|115264
+|Ajijer Rahaman Molla
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+| 60230
+|55034
+|-
+|140
+|[[Baruipur Paschim Assembly constituency|Baruipur Paschim]]
+|[[Biman Banerjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|99945
+|Safiuddin Khan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|63413
+|36542
+|-
+|141
+|[[Magrahat Purba Assembly constituency|Magrahat Purba]]
+|[[Namita Saha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89486
+|Chandan Saha
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|79926
+|9560
+|-
+|142
+|[[Magrahat Paschim Assembly constituency|Magrahat Paschim]]
+|[[Giasuddin Molla]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|87482
+|Khalid Ebadullah
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|71593
+|15889	
+|-
+|143
+|[[Diamond Harbour Assembly constituency|Diamond Harbour]]
+|[[Dipak Kumar Halder]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96833
+|[[Abul Hasnat (Magrahat Paschim politician)|Abul Hasnat]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|81796
+|15037	
+|-
+|144
+|[[Falta Assembly constituency|Falta]]
+|[[Tamonash Ghosh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94381
+|Bidhan Parui
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70801
+|23580
+|-
+|145
+|[[Satgachhia Assembly constituency|Satgachia]]
+|[[Sonali Guha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|100171
+| Paramita Ghosh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|82899
+|17272
+|-
+|146
+|[[Bishnupur, South 24 Parganas Assembly constituency|Bishnupur]]
+|[[Dilip Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|107129
+|Aloke Sardar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|76499
+|30360
+|-
+|147
+|[[Sonarpur Dakshin Assembly constituency|Sonarpur Dakshin]]
+|[[Jiban Mukhopadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97455
+|Tarit Chakraborty
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|82426
+|15029	
+|-
+|148
+|[[Bhangar Assembly constituency|Bhangar]]
+|[[Abdur Razzak Molla]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|102087
+|Abdur Rasid Gazi
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|83963
+|18124
+|-
+|149
+|[[Kasba, West Bengal Assembly constituency|Kasba]]
+|[[Javed Ahmed Khan]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|91679
+|Shatarup Ghosh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|79795
+|11884
+|-
+|150
+|[[Jadavpur Assembly constituency|Jadavpur]]
+|[[Sujan Chakraborty]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|98977
+|[[Manish Gupta (politician)|Manish Gupta]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84035
+|14942
+|-
+|151
+|[[Sonarpur Uttar Assembly constituency|Sonarpur Uttar]]
+|[[Firdousi Begum]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|101939
+|[[Jyotirmoyee Sikdar]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|77059
+|24880
+|-
+|152
+|[[Tollyganj Assembly constituency|Tollygunge]]
+|[[Aroop Biswas]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90603
+|Madhuja Sen Roy
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|80707
+|9896	
+|-
+|153
+|[[Behala Purba Assembly constituency|Behala Purba]]
+|[[Sovan Chatterjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96621
+|Ambikesh Mahapatra
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|72327
+|24294
+|-
+|154
+|[[Behala Paschim Assembly constituency|Behala Paschim]]
+|[[Partha Chatterjee (politician)|Partha Chatterjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|102114
+|Kaustav Chatterjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|93218
+|8896	
+|-
+|155
+|[[Maheshtala Assembly constituency|Maheshtala]]
+|[[Kasturi Das]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93675
+|[[Samik Lahiri]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|81223
+|12452
+|-
+|156
+|[[Budge Budge Assembly constituency|Budge Budge]]
+|[[Ashok Kumar Deb]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84058
+|Sk. Mujibar Rahaman
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|76899
+|7159	
+|-
+|157
+|[[Metiaburuz Assembly constituency|Metiaburuz]]
+|[[Abdul Khaleque Molla]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|79749
+|Monirul Islam
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|61773
+|17976
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Kolkata district|<span style="color:white;">'''Kolkata district'''</span>]]
+|-
+|158
+|[[Kolkata Port Assembly constituency|Kolkata Port]]
+|[[Firhad Hakim]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|73459
+|Rakesh Singh
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|46911
+|26548
+|-
+|159
+|[[Bhabanipur, West Bengal Assembly constituency|Bhabanipur]]
+|[[Mamata Banerjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|65520
+|[[Deepa Dasmunshi]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|40219
+|25301
+|-
+|160
+|[[Rashbehari Assembly constituency|Rashbehari]]
+|[[Sovandeb Chattopadhyay|Sobhandeb Chattopadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|60857
+|Ashutosh Chatterjee
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|46304
+|14553	
+|-
+|161
+|[[Ballygunge Assembly constituency|Ballygunge]]
+|[[Subrata Mukherjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|70083
+|Krishna Debnath
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|54858
+|15225
+|-
+|162
+|[[Chowrangee Assembly constituency|Chowrangee]]
+|[[Nayna Bandyopadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|55119
+|[[Somen Mitra]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|41903
+|13216	
+|-
+|163
+|[[Entally Assembly constituency|Entally]]
+|[[Swarna Kamal Saha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|75841
+|Debesh Das
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|47853
+|27988
+|-
+|164
+|[[Beleghata Assembly constituency|Beleghata]]
+|[[Paresh Paul]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84843
+|Rajib Biswas
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|58664
+|26179
+|-
+|165
+|[[Jorasanko Assembly constituency|Jorasanko]]
+|[[Smita Bakshi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|44766
+|Rahul Sinha
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|38476
+|6290	
+|-
+|166
+|[[Shyampukur Assembly constituency|Shyampukur]]
+|[[Shashi Panja]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|53507
+|Piyali Pal
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|40352
+|13155
+|-
+|167
+|[[Maniktala Assembly constituency|Maniktala]]
+|[[Sadhan Pande]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|73157
+|Rajib Majumder
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|47846
+|25311
+|-
+|168
+|[[Kashipur-Belgachhia Assembly constituency|Kashipur-Belgachia]]
+|[[Mala Saha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|72264 
+|Kaninika Bose (Ghosh)
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|46454
+|25810	
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Howrah district|<span style="color:white;">'''Howrah district'''</span>]]
+|-
+|169
+|[[Bally Assembly constituency|Bally]]
+|[[Baishali Dalmiya]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|52702
+|Saumendranath Bera
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|37299
+|15403
+|-
+|170
+|[[Howrah Uttar Assembly constituency|Howrah Uttar]]
+|[[Laxmi Ratan Shukla]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|61917
+|Santosh Kumar Pathak
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|34958
+|26959
+|-
+|171
+|[[Howrah Madhya Assembly constituency|Howrah Madhya]]
+|[[Arup Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|91800
+|Amitabha Dutta
+|bgcolor=#003366|
+|[[Janata Dal (United)|JD(U)]]
+|38806
+|52994
+|-
+|172
+|[[Shibpur Assembly constituency|Shibpur]]
+|[[Jatu Lahiri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|88076
+|Jagannath Bhattacharyya
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|61062
+|27014
+|-
+|173
+|[[Howrah Dakshin Assembly constituency|Howrah Dakshin]]
+|[[Brajamohan Mazumder]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93689
+|Arindam Basu
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|77495
+|16194
+|-
+|174
+|[[Sankrail Assembly constituency|Sankrail]]
+|[[Sital Kumar Sardar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|86212
+|Samir Malick
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|71455
+|14757
+|-
+|175
+|[[Panchla Assembly constituency|Panchla]]
+|[[Gulsan Mullick]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|101126
+|Doli Roy
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|69199
+|31927
+|-
+|176
+|[[Uluberia Purba Assembly constituency|Uluberia Purba]]
+|[[Haider Aziz Safwi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|72192
+|Sabiruddin Molla
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|55923
+|16269
+|-
+|177
+|[[Uluberia Uttar Assembly constituency|Uluberia Uttar]]
+|[[Nirmal Maji|Dr. Nirmal Maji]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|79390 
+|Amiya Kumar Mondal
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|65208
+|14182
+|-
+|178
+|[[Uluberia Dakshin Assembly constituency|Uluberia Dakshin]]
+|[[Pulak Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95902
+|Md.Nasiruddin
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|60558
+|35344
+|-
+|179
+|[[Shyampur Assembly constituency|Shyampur]]
+|[[Kalipada Mandal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|108619
+|Amitabha Chakraborty
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|82033
+|26586
+|-
+|180
+|[[Bagnan Assembly constituency|Bagnan]]
+|[[Arunava Sen (politician)|Arunava Sen]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97834
+|Mina Mukherjee Ghosh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67637 
+|30197
+|-
+|181
+|[[Amta Assembly constituency|Amta]]
+|[[Asit Mitra]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|89149
+|Tushar Kanti Sil
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84645
+|4504
+|-
+|182
+|[[Udaynarayanpur Assembly constituency|Udaynarayanpur]]
+|[[Samir Kumar Panja]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94828
+|Saroj Ranjan Karar 
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|71070
+|23758
+|-
+|183
+|[[Jagatballavpur Assembly constituency|Jagatballavpur]]
+|[[Abdul Ghani (Indian politician)|Muhammad Abdul Ghani]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103348 
+|Baidyanath Basu
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78667
+|24681
+|-
+|184
+|[[Domjur Assembly constituency|Domjur]]
+|[[Rajib Banerjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|148768
+|Pratima Dutta
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|41067
+|107701
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Hooghly district|<span style="color:white;">'''Hooghly district'''</span>]]
+|-
+|185
+|[[Uttarpara Assembly constituency|Uttarpara]]
+|[[Prabir Kumar Ghosal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84918
+|Srutinath Praharaj
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|72918
+|12000
+|-
+|186
+|[[Sreerampur Assembly constituency|Sreerampur]]
+|[[Sudipto Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|74995
+|Subhankar Sarkar
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|65088
+|9907
+|-
+|187
+|[[Champdani Assembly constituency|Champdani]]
+|[[Abdul Mannan (West Bengal politician)|Abdul Mannan]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|81330
+|Muzaffar Khan
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|74048
+|7282
+|-
+|188
+|[[Singur Assembly constituency|Singur]]
+|[[Rabindranath Bhattacharjee|Rabindranath Bhattacharya]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96212
+|[[Rabin Deb]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|75885
+|20327
+|-
+|189
+|[[Chandannagar Assembly constituency|Chandannagar]]
+|[[Indranil Sen]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|75727
+|Goutam Sarkar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|73613
+|2114
+|-
+|190
+|[[Chunchura Assembly constituency|Chunchura]]
+|[[Asit Mazumdar|Asit Mazumder]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|118501
+|Pranab Kumar Ghosh
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|88817
+|29684
+|-
+|191
+|[[Balagarh Assembly constituency|Balagarh]]
+|[[Ashim Kumar Majhi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|96472
+|Panchu Gopal Mondal
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78635
+|17837
+|-
+|192
+|[[Pandua Assembly constituency|Pandua]]
+|[[Sk. Amjad Hossain]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|91489
+|[[Syed Rahim Nabi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90097
+|1392	
+|-
+|193
+|[[Saptagram Assembly constituency|Saptagram]]
+|[[Tapan Dasgupta]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|88208
+|Dilip Nath
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|69641
+|18567
+|-
+|194
+|[[Chanditala Assembly constituency|Chanditala]]
+|[[Swati Khandoker]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|91874
+|Sk. Azim Ali
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|77698
+|14176	
+|-
+|195
+|[[Jangipara Assembly constituency|Jangipara]]
+|[[Snehasis Chakraborty]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|99324
+|Pobitra Singha Roy
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|75719
+|23605
+|-
+|196
+|[[Haripal Assembly constituency|Haripal]]
+|[[Becharam Manna]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|110899
+|Jogiyananda Mishra
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|79424
+|31475	
+|-
+|197
+|[[Dhanekhali Assembly constituency|Dhanekhali]]
+|[[Ashima Patra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|125298
+|Pradip Majumdar
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|66654
+|58644
+|-
+|198
+|[[Tarakeswar Assembly constituency|Tarakeswar]]
+|[[Rachhpal Singh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97588
+|Surajit Ghosh
+|bgcolor=#00B2B2|
+|[[Nationalist Congress Party|NCP]]
+|69898
+|27690	
+|-
+|199
+|[[Pursurah Assembly constituency|Pursurah]]
+|[[M Nuruzzaman|M. Nuruzzaman]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|105275
+|Pratim Singha Roy
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|76148
+|29127	
+|-
+|200
+|[[Arambag Assembly constituency|Arambagh]]
+|[[Krishna Chandra Santra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|107579
+|Asit Malik
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|71122
+|36457	
+|-
+|201
+|[[Goghat Assembly constituency|Goghat]]
+|[[Manas Majumdar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|102958 
+|Biswanath Karak
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|72072
+|30886	
+|-
+|202
+|[[Khanakul Assembly constituency|Khanakul]]
+|[[Iqbal Ahmed (politician)|Iqbal Ahmed]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|106878
+|Islam Ali Khan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|63391
+|43487
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Purba Medinipur district|<span style="color:white;">'''Purba Medinipur district'''</span>]]
+|-
+|203
+|[[Tamluk Assembly constituency|Tamluk]]
+|Ashok Dinda
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|95432
+|Nirbed Ray
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94912
+|520
+|-
+|204
+|[[Panskura Purba Assembly constituency|Panskura Purba]]
+|[[Sheikh Ibrahim Ali]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85334
+|Biplab Roy Chowdhury
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|80567
+|4767	
+|-
+|205
+|[[Panskura Paschim Assembly constituency|Panskura Paschim]]
+|[[Firoja Bibi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|92427
+|Chittaranjan Dasthakur
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|89282
+|3145
+|-
+|206
+|[[Moyna Assembly constituency|Moyna]]
+|[[Sangram Kumar Dolai]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|100980
+|Manik Bhowmik
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|88856
+|12124
+|-
+|207
+|[[Nandakumar Assembly constituency|Nandakumar]]
+|[[Sukumar De]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|98549
+|Siraj Khan
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|87683
+|10866
+|-
+|208
+|[[Mahisadal Assembly constituency|Mahisadal]]
+|[[Sudarshan Ghosh Dastidar|Sudarsan Ghosh Dastidar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94827
+|Subrata Maiti
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|78118
+|16709
+|-
+|209
+|[[Haldia Assembly constituency|Haldia]]
+|[[Tapasi Mondal]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|101330
+|Madhurima Mandal
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|79837
+|21493	
+|-
+|210
+|[[Nandigram Assembly constituency|Nandigram]]
+|[[Suvendu Adhikari]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|134623
+|Abdul Kabir Sheikh
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|53393
+|81230
+|-
+|211
+|[[Chandipur Assembly constituency|Chandipur]]
+|[[Amiya Kanti Bhattacharjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95982
+|Mangal Chand Pradhan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|86328
+|9654	
+|-
+|212
+|[[Patashpur Assembly constituency|Patashpur]]
+|[[Jyotirmoy Kar]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103567
+|Makhanlal Nayak
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|73679
+|29888
+|-
+|213
+|[[Kanthi Uttar Assembly constituency|Kanthi Uttar]]
+|[[Banasri Maity]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103783
+|Chakradhar Maikap
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85207
+|18576
+|-
+|214
+|[[Bhagabanpur Assembly constituency|Bhagabanpur]]
+|[[Ardhendu Maity]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|111201
+|Hemangshu Shekhar Mahapatra
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|79258
+|31943
+|-
+|215
+|[[Khejuri Assembly constituency|Khejuri]]
+|[[Ranajit Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103699
+|Asim Kumar Mandal
+|bgcolor=#939393|
+|[[Independent politician|IND]]
+|61214
+|42485	
+|-
+|216
+|[[Kanthi Dakshin Assembly constituency|Kanthi Dakshin]]
+|[[Dibyendu Adhikari]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93359
+|Uttam Pradhan
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|59469
+|33890
+|-
+|217
+|[[Ramnagar, Purba Medinipur Assembly constituency|Ramnagar]]
+|[[Akhil Giri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|107081
+|Tapas Sinha
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78828
+|28253
+|-
+|218
+|[[Egra Assembly constituency|Egra]]
+|[[Samares Das]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|113334
+|Shaikh Mahmud Hossain
+|bgcolor=#FF0000|
+|[[Democratic Socialist Party (Prabodh Chandra)|DSP]]
+|87378
+|25956
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Paschim Medinipur district|<span style="color:white;">'''Paschim Medinipur district'''</span>]]
+|-
+|219
+|[[Dantan Assembly constituency|Dantan]]
+|[[Bikram Chandra Pradhan]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95641
+|Sisir Kumar Patra
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|66381
+|29260	
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Jhargram district|<span style="color:white;">'''Jhargram district'''</span>]]
+|-
+|220
+|[[Nayagram Assembly constituency|Nayagram]]
+|[[Dulal Murmu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|98395
+|Bakul Murmu
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|55140
+|43255
+|-
+|221
+|[[Gopiballavpur Assembly constituency|Gopiballavpur]]
+|[[Churamani Mahato|Churamani Mahata]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|100323
+|[[Pulin Bihari Baske]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|50765
+|49558
+|-
+|222
+|[[Jhargram Assembly constituency|Jhargram]]
+|[[Sukumar Hansda]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|99233
+|Chunibala Hansda
+|bgcolor=#8A0000|
+|JP(N)
+|44005
+|55228
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Paschim Medinipur district|<span style="color:white;">'''Paschim Medinipur district'''</span>]]
+|-
+|223
+|[[Keshiary Assembly constituency|Keshiary]]
+|[[Paresh Murmu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|104890
+|Biram Mandi
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|64141
+|40749
+|-
+|224
+|[[Kharagpur Sadar Assembly constituency|Kharagpur Sadar]]
+|[[Dilip Ghosh (politician)|Dilip Ghosh]]
+|{{Party name with color|Bharatiya Janata Party}}
+|61,446
+|[[Gyan Singh Sohanpal]]
+|{{Party name with color|Indian National Congress}}
+|55,137 
+| style="background:{{party color|Bharatiya Janata Party}} ; color:white;" |6,308
+|-
+|225
+|[[Narayangarh Assembly constituency|Narayangarh]]
+|[[Prodyut Kumar Ghosh]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|99311
+|[[Surjya Kanta Mishra]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85722
+|13589
+|-
+|226
+|[[Sabang Assembly constituency|Sabang]]
+|[[Manas Bhunia]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|126987
+|Nirmal Ghosh
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|77820
+|49167
+|-
+|227
+|[[Pingla Assembly constituency|Pingla]]
+|[[Somen Mahapatra|Saumen Kumar Mahapatra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|104416
+|Prabodh Chandra Sinha
+|bgcolor=#FF0000|
+|[[Democratic Socialist Party (Prabodh Chandra)|DSP]]
+|80198
+|24218
+|-
+|228
+|[[Kharagpur Assembly constituency|Kharagpur]]
+|[[Dinen Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|85630
+|Sk Sajahan Ali
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|66531 
+|19099
+|-
+|229
+|[[Debra Assembly constituency|Debra]]
+|[[Selima Khatun]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90773
+|[[Sheikh Jahangir Karim]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78865
+|11908
+|-
+|230
+|[[Daspur Assembly constituency|Daspur]]
+|[[Mamata Bhunia]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|113603
+|Swapan Santra
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|84864
+|28739
+|-
+|231
+|[[Ghatal Assembly constituency|Ghatal]]
+|[[Shankar Dolai]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|107682
+|Kamal Chandra Dolui
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|88203
+|19479
+|-
+|232
+|[[Chandrakona Assembly constituency|Chandrakona]]
+|[[Chhaya Dolai]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|117172
+|Santinath Bodhuk
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|78791
+|38381
+|-
+|233
+|[[Garbeta Assembly constituency|Garbeta]]
+|[[Ashis Chakraborty]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|110501
+|Sorforaj Khan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|49344
+|61157
+|-
+|234
+|[[Salboni Assembly constituency|Salboni]]
+|[[Srikanta Mahata]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|120485
+|Shyam Sundar Pandey
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67583
+|52902
+|-
+|235
+|[[Keshpur Assembly constituency|Keshpur]]
+|[[Seuli Saha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|146579
+|Rameswar Doloi
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|45428
+|101151
+|-
+|236
+|[[Medinipur Assembly constituency|Medinipur]]
+|[[Mrigendra Nath Maiti]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|106774
+|[[Santosh Rana]]
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|73787
+|32987
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Jhargram district|<span style="color:white;">'''Jhargram district'''</span>]]
+|-
+|237
+|[[Binpur Assembly constituency|Binpur]]
+|[[Khagendranath Hembram]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95804
+|Dibakar Hansda
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|46481
+|49323	
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Purulia district|<span style="color:white;">'''Purulia district'''</span>]]
+|-
+|238
+|[[Bandwan Assembly constituency|Bandwan]]
+|[[Rajib Lochan Saren]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|104323
+|Besra Susanta
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|84016
+|20307
+|-
+|239
+|[[Balarampur, Purulia Assembly constituency|Balarampur]]
+|[[Santiram Mahato|Shantiram Mahato]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|82086
+|Jagadish Mahato
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|71882
+|10204
+|-
+|240
+|[[Baghmundi Assembly constituency|Baghmundi]]
+|[[Nepal Mahata]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|88707
+|Samir Mahato
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|80120
+|8587	
+|-
+|241
+|[[Joypur, Purulia Assembly constituency|Joypur]]
+|[[Shaktipada Mahato]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|85026
+|Dhirendra Nath Mahato
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|76263
+|8763
+|-
+|242
+|[[Purulia Assembly constituency|Purulia]]
+|[[Sudip Kumar Mukherjee]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|81365
+|Dibyajyoti Prasad Singh Deo
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76454
+|4911
+|-
+|243
+|[[Manbazar Assembly constituency|Manbazar]]
+|[[Sandhya Rani Tudu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|93642
+|Ipil Murmu
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|83967
+|9675
+|-
+|244
+|[[Kashipur, West Bengal Assembly constituency|Kashipur]]
+|[[Swapan Kumar Beltharia]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|87483
+|Sudin Kisku
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67905
+|19578
+|-
+|245
+|[[Para Assembly constituency|Para]]
+|[[Umapada Bauri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84337
+|Dinanath Bauri
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70459
+|13878	
+|-
+|246
+|[[Raghunathpur, West Bengal Assembly constituency|Raghunathpur]]
+|[[Purna Chandra Bauri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|83688
+|Satyanarayan Bauri
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67546
+|16142
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Bankura district|<span style="color:white;">'''Bankura district'''</span>]]
+|-
+|247
+|[[Saltora Assembly constituency|Saltora]]
+|[[Swapan Bauri|Swapan Bouri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84979
+|Sasthi Charan Bouri
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|72456 
+|12523
+|-
+|248
+|[[Chhatna Assembly constituency|Chhatna]]
+|[[Dhirendra Nath Layek]]
+|bgcolor=#FF3333|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|73648
+|Subhasis Batabyal
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|71231
+|2417
+|-
+|249
+|[[Ranibandh Assembly constituency|Ranibandh]]
+|[[Jyotsna Mandi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|92181
+|[[Deblina Hembram]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|68868
+|23313
+|-
+|250
+|[[Raipur, Bankura Assembly constituency|Raipur]]
+|[[Birendra Nath Tudu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89841
+|Dilip Kumar Hansda
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|63119
+|26722
+|-
+|251
+|[[Taldangra Assembly constituency|Taldangra]]
+|[[Samir Chakraborty]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|87236
+|Amiya Patra
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|73567
+|13669
+|-
+|252
+|[[Bankura Assembly constituency|Bankura]]
+|[[Shampa Daripa]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|83486
+|Minati Misra
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|82457
+|1029
+|-
+|253
+|[[Barjora Assembly constituency|Barjora]]
+|[[Sujit Chakraborty]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|86873
+|[[Soham Chakraborty]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|86257
+|616
+|-
+|254
+|[[Onda Assembly constituency|Onda]]
+|[[Arup Kumar Khan]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|80603
+|Manik Mukherjee
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|69755
+|10848
+|-
+|255
+|[[Bishnupur, Bankura Assembly constituency|Bishnupur, Bankura]]
+|[[Tushar Kanti Bhattacharya]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|76641
+|Shyamaprasad Mukherjee
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|75750
+|891	
+|-
+|256
+|[[Katulpur Assembly constituency|Katulpur]]
+|[[Shyamal Santra]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|98901
+|Akshay Santra
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|77653
+|21248	
+|-
+|257
+|[[Indas Assembly constituency|Indas]]
+|[[Gurupada Mete]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94940
+|Dilip Kumar Malik
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|76103
+|18837
+|-
+|258
+|[[Sonamukhi Assembly constituency|Sonamukhi]]
+|Ajit Ray
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|86125 
+|Dipali Saha
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|77406
+|8719
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Purba Bardhaman district|<span style="color:white;">'''Purba Bardhaman district'''</span>]]
+|-
+|259
+|[[Khandaghosh Assembly constituency|Khandaghosh]]
+|[[Nabin Chandra Bag]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90151
+|Asima Roy
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|86949
+|3202
+|-
+|260
+|[[Bardhaman Dakshin Assembly constituency|Bardhaman Dakshin]]
+|[[Rabiranjan Chattopadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|91882 
+|Ainul Haque
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|62444
+|29438
+|-
+|261
+|[[Raina Assembly constituency|Raina]]
+|[[Nepal Ghorui]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94323
+|Khan Basudeb
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|93875
+|448
+|-
+|262
+|[[Jamalpur, West Bengal Assembly constituency|Jamalpur]]
+|[[Samar Hazra]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85491
+|Ujjal Pramanick
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84068
+|1423
+|-
+|263
+|[[Monteswar Assembly constituency|Monteswar]]
+|[[Sajal Panja]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84134
+|Chaudhuri Md. Hedayatullah
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|83428
+|706
+|-
+|264
+|[[Kalna Assembly constituency|Kalna]]
+|[[Biswajit Kundu]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|97430
+|Sukul Chandra Sikdar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|72169
+|25261
+|-
+|265
+|[[Memari Assembly constituency|Memari]]
+|[[Nargis Begum|Begum Nargis]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94406
+|Debashis Ghosh
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|85523
+|8883
+|-
+|266
+|[[Bardhaman Uttar Assembly constituency|Bardhaman Uttar]]
+|[[Nisith Kumar Malik]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|102886
+|Aparna Saha
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|91381
+|11505
+|-
+|267
+|[[Bhatar Assembly constituency|Bhatar]]
+|[[Subhash Mondal]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|92544
+|Bamacharan Banerjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|86264
+|6280
+|-
+|268
+|[[Purbasthali Dakshin Assembly constituency|Purbasthali Dakshin]]
+|[[Swapan Debnath]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|104398
+|Abhijit Bhattacharyya
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|66732
+|37666
+|-
+|269
+|[[Purbasthali Uttar Assembly constituency|Purbasthali Uttar]]
+|[[Pradip Kumar Sahu|Pradip Kumar Saha]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|84549
+|Tapan Chatterjee
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|81721
+|2828
+|-
+|270
+|[[Katwa Assembly constituency|Katwa]]
+|[[Rabindranath Chatterjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|91489
+|Shyama Majumdar
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|90578
+|911	
+|-
+|271
+|[[Ketugram Assembly constituency|Ketugram]]
+|[[Sekh Sahonawez]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89441
+|Abul Kadar Syed
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|80712
+|8729
+|-
+|272
+|[[Mangalkot Assembly constituency|Mangalkot]]
+|[[Siddiqullah Chowdhury]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89812
+|Choudhury Sahajahan
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|77938
+|11874
+|-
+|273
+|[[Ausgram Assembly constituency|Ausgram]]
+|[[Abhedananda Thander]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|90450
+|Basudev Mete
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|84198
+|6252
+|-
+|274
+|[[Galsi Assembly constituency|Galsi]]
+|[[Alok Kumar Majhi]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|95203
+|Nandalal Pondit
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|84432
+|10771	
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Paschim Bardhaman district|<span style="color:white;">'''Paschim Bardhaman district'''</span>]]
+|-
+|275
+|[[Pandabeswar Assembly constituency|Pandabeswar]]
+|[[Jitendra Tiwari]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|68600
+|Gouranga Chatterjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|63130
+|5470
+|-
+|276
+|[[Durgapur Purba Assembly constituency|Durgapur Purba]]
+|[[Santosh Debray]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|84200
+|Pradip Mazumdar
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|75069
+|9131
+|-
+|277
+|[[Durgapur Paschim Assembly constituency|Durgapur Paschim]]
+|[[Biswanath Parial]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|108533
+|[[Apurba Mukherjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|63709
+|44824
+|-
+|278
+|[[Raniganj, West Bengal Assembly constituency|Raniganj]]
+|[[Runu Dutta]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|74995
+|Bano Nargis
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|62610
+|12385
+|-
+|279
+|[[Jamuria Assembly constituency|Jamuria]]
+|[[Jahanara Khan]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|67214
+|V. Sivadasan
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|59457
+|7757	
+|-
+|280
+|[[Asansol Dakshin Assembly constituency|Asansol	Dakshin]]
+|[[Tapas Banerjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|71515
+|Hemant Prabhakar
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|57232
+|14283
+|-
+|281
+|[[Asansol Uttar Assembly constituency|Asansol	Uttar]]
+|[[Moloy Ghatak]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|84715
+|Nirmal Karmakar
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|60818
+|23897
+|-
+|282
+|[[Kulti Assembly constituency|Kulti]]
+|[[Ujjal Chatterjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|68952
+|Ajay Kumar Poddar
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|49464
+|19488
+|-
+|283
+|[[Barabani Assembly constituency|Barabani]]
+|[[Bidhan Upadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|77464
+|Shipra Mukherjee
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|53415
+|24049
+|-
+| colspan="11" bgcolor="grey" align="center" | [[Birbhum district|<span style="color:white;">'''Birbhum district'''</span>]]
+|-
+|284
+|[[Dubrajpur Assembly constituency|Dubrajpur]]
+|[[Chandra Naresh Bauri]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94309
+|Bijoy Bagdi
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|54415
+|39894	
+|-
+|285
+|[[Suri Assembly constituency|Suri]]
+|[[Asok Kumar Chattopadhyay]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94036
+|[[Ram Chandra Dome]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|62228
+|31808
+|-
+|286
+|[[Bolpur Assembly constituency|Bolpur]]
+|[[Chandranath Sinha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|113258
+|Tapan Hore
+|bgcolor=#FF4A4A|
+|[[Revolutionary Socialist Party (India)|RSP]]
+|63231
+|50027
+|-
+|287
+|[[Nanoor Assembly constituency|Nanoor]]
+|[[Shyamali Pradhan]]
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|104374
+|Gadadhar Hazra
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|78644
+|25730
+|-
+|288
+|[[Labpur Assembly constituency|Labpur]]
+|[[Manirul Islam (Indian politician)|Manirul Islam]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|101138
+|Syed Mahfuzul Karim
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|70825
+|30313
+|-
+|289
+|[[Sainthia Assembly constituency|Sainthia]]
+|[[Nilabati Saha]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|103376
+|Dhiren Bagdi
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|64765
+|38611
+|-
+|290
+|[[Mayureswar Assembly constituency|Mayureswar]]
+|[[Abhijit Roy (politician)|Abhijit Roy]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|89210
+|Arup Bag
+|bgcolor=#FF0000|
+|[[Communist Party of India (Marxist)|CPI(M)]]
+|50440
+|38770
+|-
+|291
+|[[Rampurhat Assembly constituency|Rampurhat]]
+|[[Asish Banerjee]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|85435
+|Syed Siraj Jimmi
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|64236
+|21199
+|-
+|292
+|[[Hansan Assembly constituency|Hansan]]
+|[[Milton Rashid|Miltan Rasid]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|92619
+|Asit Kumar Mal
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|76465
+|16154
+|-
+|293
+|[[Nalhati Assembly constituency|Nalhati]]
+|[[Moinuddin Shams]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|83412
+|Dipak Chatterjee
+|bgcolor=#C24641|
+|[[All India Forward Bloc|AIFB]]
+|73084
+|10328	
+|-
+|294
+|[[Murarai Assembly constituency|Murarai]]
+|[[Abdur Rahaman Liton]]
+|bgcolor=#3CB371|
+|[[All India Trinamool Congress|TMC]]
+|94661
+|Ali Mortuza Khan
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|94381
+|280
+|}
+
+== 2016–2021 by-elections==
+{| class="wikitable sortable" style="text-align:center;"
+!S.No
+!Date
+!Constituency
+!Previous MLA
+! colspan="2" |Party before election
+!Elected MLA
+! colspan="2" |Party after election
+|-
+!263
+|19 November 2016
+|[[Monteswar Assembly constituency|Monteswar]]
+|[[Sajal Panja]]
+|{{Full party name with color|Trinamool Congress|rowspan=2}}
+|Saikat Panja
+|{{Full party name with color|Trinamool Congress|rowspan=6}}
+|-
+!216
+|9 April 2017
+|[[Kanthi Dakshin Assembly constituency|Kanthi Dakshin]]
+|[[Dibyendu Adhikari]]
+|[[Chandrima Bhattacharya]]
+|-
+!226
+|21 December 2017
+|[[Sabang Assembly constituency|Sabang]]
+|[[Manas Bhunia]]
+|{{Full party name with color|Indian National Congress|rowspan=2}}
+|Geeta Rani Bhunia
+|-
+!107
+|29 January 2018
+|[[Noapara Assembly constituency|Noapara]]
+|[[Madhusudan Ghose]]
+|[[Sunil Singh (politician)|Sunil Singh]]
+|-
+!155
+|28 May 2018
+|[[Maheshtala Assembly constituency|Maheshtala]]
+|[[Kasturi Das]]
+|{{Full party name with color|Trinamool Congress}}
+|[[Dulal Chandra Das]]
+|-
+!29
+| rowspan="2" |18 April 2019
+|[[Islampur, West Bengal Assembly constituency|Islampur]]
+|[[Kanaia Lal Agarwal]]
+|{{Full party name with color|Indian National Congress}}
+|[[Abdul Karim Chowdhury]]
+|-
+!23
+|[[Darjeeling Assembly constituency|Darjeeling]]
+|[[Amar Singh Rai]]
+|{{Full party name with color|Gorkha Janmukti Morcha}}
+|[[Neeraj Zimba]]
+|{{Full party name with color|Bharatiya Janata Party|rowspan=2}}
+|-
+!43
+|23 April 2019
+|[[Habibpur Assembly constituency|Habibpur]]
+|[[Khagen Murmu]]
+|{{Full party name with color|Communist Party of India (Marxist)|dab=yes}}
+|[[Joyel Murmu]]
+|-
+!74
+| rowspan="3" |29 April 2019
+|[[Naoda Assembly constituency|Naoda]]
+|[[Abu Taher Khan]]
+|{{Full party name with color|Indian National Congress|rowspan=2}}
+|[[Sahina Mumtaz Begum]]
+|{{Full party name with color|Trinamool Congress}}
+|-
+!68
+|[[Kandi Assembly constituency|Kandi]]
+|[[Apurba Sarkar]]
+|Shafiul Alam Khan
+|{{Full party name with color|Indian National Congress}}
+|-
+!88
+|[[Krishnaganj Assembly constituency|Krishnaganj]]
+|[[Satyajit Biswas]]
+|{{Full party name with color|Trinamool Congress|rowspan=4}}
+|[[Ashis Kumar Biswas|Ashish Kumar Biswas]]
+|{{Full party name with color|Bharatiya Janata Party|rowspan=2}}
+|-
+!105
+| rowspan="2" |6 May 2019
+|[[Bhatpara Assembly constituency|Bhatpara]]
+|[[Arjun Singh (politician, born 1962)|Arjun Singh]]
+|[[Pawan Singh (politician)|Pawan Kumar Singh]]
+|-
+!176
+|[[Uluberia Purba]]
+|[[Haider Aziz Safwi]]
+|[[Idris Ali (politician)|Idris Ali]]
+|{{Full party name with color|Trinamool Congress|rowspan=4}}
+|-
+!77
+| rowspan="3" |25 November 2019
+|[[Karimpur Assembly constituency|Karimpur]]
+|[[Mahua Moitra]]
+|[[Bimalendu Sinha Roy]]
+|-
+!34
+|[[Kaliaganj Assembly constituency|Kaliaganj]]
+|[[Pramatha Nath Ray|Pramatha Ray]]
+|{{Full party name with color|Indian National Congress}}
+|[[Tapan Deb Singha]]
+|-
+!224
+|[[Kharagpur Sadar Assembly constituency|Kharagpur]]
+|[[Dilip Ghosh (politician)|Dilip Ghosh]]
+|{{Full party name with color|Bharatiya Janata Party}}
+|[[Pradip Sarkar (West Bengal politician)|Pradip Sarkar]]
+|}
+
+== See also ==
+* [[Elections in India]]
+* [[2016 elections in India]]
+* [[List of constituencies of West Bengal Legislative Assembly]]
+* [[2019 Indian general election in West Bengal]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [https://eci.gov.in/files/category/94-west-bengal/ West Bangal General Legislative Election Results] at the ''[[Election Commission of India]]''
+
+{{West Bengal assembly elections}}
+
+{{DEFAULTSORT:West Bengal State Assembly Election, 2016}}
+[[Category:2016 State Assembly elections in India]]
+[[Category:State Assembly elections in West Bengal|2016]]
+[[Category:2010s in West Bengal]]
+[[Category:April 2016 in India]]
+[[Category:May 2016 in India]]
+[[Category:Mamata Banerjee]]

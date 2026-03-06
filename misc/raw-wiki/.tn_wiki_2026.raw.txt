@@ -1,0 +1,5088 @@
+{{Short description|Election to the legislative assembly of Tamil Nadu}}
+{{pp-extended|small=yes}}
+{{Use dmy dates|date=October 2025}}
+{{Infobox election
+| election_name = 2026 Tamil Nadu Legislative Assembly election
+| country = India
+| type = Legislative
+| ongoing = yes
+| vote_type = party
+| opinion_polls = 2026 Tamil Nadu Legislative Assembly election#Opinion polls
+| previous_election = 2021 Tamil Nadu Legislative Assembly election
+| previous_year = 2021
+| registered = 56,707,380 ({{decrease}} 9.91%)<ref name="Vote">{{cite web|url=https://www.thehindu.com/news/national/tamil-nadu/final-electoral-roll-tamil-nadu-live-updates-february-23-2026/article70665752.ece|title=Tamil Nadu SIR final electoral roll updates: 5.67 crore voters in State after deletion of nearly 70 lakh electors|work=[[The Hindu]]|access-date=23 February 2026}}</ref> 
+| turnout     = 
+| next_election = 
+| next_year = 2031
+| election_date = 
+| seats_for_election = All 234 elected seats in the [[Tamil Nadu Legislative Assembly]]
+| majority_seats = 118
+| map_image = File:Wahlkreise zur Vidhan Sabha von Tamil Nadu.svg
+| map_caption = Map of the assembly constituencies in Tamil Nadu
+| outgoing_members = 16th Tamil Nadu Assembly
+
+<!-- Leader 1: M. K. Stalin (DMK) -->| image1 = {{CSS image crop|Image=The Chief Minister of Tamil Nadu, Thiru MK Stalin.jpg|bSize=120|cWidth=100|cHeight=120|oLeft=12|oTop=8}}
+| leader1 = [[M. K. Stalin]]
+| leader_since1 = 2018
+| alliance1 = Secular Progressive Alliance
+| party1 = Dravida Munnetra Kazhagam
+| leaders_seat1 = [[Kolathur Assembly constituency|Kolathur]]
+| last_election1 = 37.70%, 133 seats
+| alliance_seats1 = 
+| seats_before1 = 133
+| seats_needed1 = {{steady}}
+<!-- Leader 2: Edappadi K. Palaniswami (AIADMK) -->| image2 = {{CSS image crop|Image=Palanisamy.jpg|bSize=120|cWidth=100|cHeight=120|oLeft=10|oTop=0}}
+| leader2 = [[Edappadi K. Palaniswami]]
+| leader_since2 = 2017
+| alliance2 = AIADMK-led Alliance
+| party2 = All India Anna Dravida Munnetra Kazhagam
+| leaders_seat2 = [[Edappadi Assembly constituency|Edappadi]]
+| last_election2 = 33.29%, 66 seats
+| Alliance_Seats2 = 
+| seats_before2 = 60
+| seats_needed2 = {{increase}} 58
+| 1blank = Current Alliance seats
+| 1data1 = 158
+| 1data2 = 67
+| 2blank = Alliance seats needed
+| 2data1 = {{steady}}
+| 2data2 = {{increase}} 51
+| 3blank = Seat change
+| 3data1 = 
+| 3data2 = 
+| title = [[Chief Minister of Tamil Nadu|Chief Minister]]
+| before_election = [[M. K. Stalin]]
+| before_party = Dravida Munnetra Kazhagam
+| after_election = 
+| after_party = 
+}}
+
+Legislative Assembly elections are expected to be held in [[Elections in Tamil Nadu|Tamil Nadu]] before 10 May 2026 to elect all [[List of constituencies of the Tamil Nadu Legislative Assembly|234 members]] of the [[Tamil Nadu Legislative Assembly]].
+
+== Background ==
+Elections to a [[State legislative assemblies of India|State Legislative Assembly]] in India are usually held once in five years, and the [[Member of the Legislative Assembly|members of the legislative assembly]] are directly elected to serve five year terms from [[Single-member district|single-member constituencies]]. The [[2021 Tamil Nadu Legislative Assembly election|previous assembly elections]] were held in April 2021 to elect the 234 members of the [[16th Tamil Nadu Assembly]], and the tenure of the [[Tamil Nadu Legislative Assembly|assembly]] ends on 10 May 2026.<ref>{{cite web |title=Term of the Houses |url=https://www.eci.gov.in/term-of-the-houses |url-status=live |archive-url=https://web.archive.org/web/20250807185225/https://www.eci.gov.in/term-of-the-houses |archive-date=7 August 2025 |access-date=13 October 2025 |work=[[Election Commission of India]] }}</ref> In the previous election, the [[Dravida Munnetra Kazhagam]] (DMK)-led [[Secular Progressive Alliance]] (SPA) formed the [[Government of Tamil Nadu|state government]] after winning 159 of the 234 seats, and [[M. K. Stalin]] sworn in as the [[Chief Minister of Tamil Nadu|chief minister]].<ref>{{cite news |date=5 May 2021 |title=Assembly elections 2021: DMK reclaims power in Tamil Nadu |url=https://www.thehindu.com/data/data-assembly-elections-2021-dmk-reclaims-power-in-tamil-nadu/article34490348.ece |access-date=1 June 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref><ref>{{cite news |date=7 May 2021 |title=DMK chief MK Stalin takes oath as Tamil Nadu Chief Minister |url=https://www.indiatoday.in/india/tamil-nadu/story/dmk-chief-mk-stalin-oath-tamil-nadu-chief-minister-cabinet-1799754-2021-05-07 |access-date=30 October 2025 |work=[[India Today]]}}</ref> The [[All India Anna Dravida Munnetra Kazhagam]] (AIADMK), which won 66 seats, became the principal opposition party and its leader [[Edappadi K. Palaniswami]] was elected and served as the [[List of leaders of the opposition in the Tamil Nadu Legislative Assembly|leader of the opposition]].<ref>{{cite news|date=10 May 2021|title=Edappadi Palaniswami elected as Leader of Opposition in Tamil Nadu Assembly|url=https://www.newindianexpress.com/states/tamil-nadu/2021/may/10/edappadi-palaniswami-elected-as-leader-of-opposition-in-tamil-nadu-assembly-2300755.html|work=[[The Indian Express]]|access-date=11 June 2021|archive-date=13 May 2021|archive-url=https://web.archive.org/web/20210513143613/https://www.newindianexpress.com/states/tamil-nadu/2021/may/10/edappadi-palaniswami-elected-as-leader-of-opposition-in-tamil-nadu-assembly-2300755.html|url-status=live}}</ref>
+
+In June 2022, three members&ndash;[[O. Panneerselvam]], [[P. H. Manoj Pandian]], and [[R. Vaithilingam]] were expelled from the AIADMK.<ref>{{cite news |title=AIADMK Expels OPS, His Supporters From Party; Defiant Leader Vows Action |url=https://www.ndtv.com/india-news/aiadmk-expels-ops-his-supporters-from-party-defiant-leader-vows-action-3146536 |archive-url=https://web.archive.org/web/20220712181227/https://www.ndtv.com/india-news/aiadmk-expels-ops-his-supporters-from-party-defiant-leader-vows-action-3146536 |archive-date=12 July 2022 |access-date=7 November 2025 |work=[[NDTV]]}}</ref> In August 2022, [[P. Ayyappan]] of the AIADMK also joined the expelled faction.<ref>{{cite news |date=27 August 2022 |title=Usilampatti MLA switches over to Panneerselvam camp |url=https://www.thehindu.com/news/national/tamil-nadu/usilampatti-mla-switches-over-to-panneerselvam-camp/article65819191.ece |access-date=7 November 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref> [[K. A. Sengottaiyan]] was expelled from AIADMK in October 2025,<ref>{{cite news |last=Jesudasan |first=Dennis S. |date=31 October 2025 |title=Tamil Nadu MLA Sengottaiyan expelled from AIADMK a day after his meeting with Panneerselvam, Dhinakaran, Sasikala |url=https://www.thehindu.com/news/national/tamil-nadu/tn-mla-ka-sengottaiyan-expelled-from-aiadmk-a-day-after-meeting-ops-dhinakaran-sasikala/article70225526.ece |access-date=7 November 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref> and subsequently resigned from his position as a member of the assembly in November 2025.<ref>{{cite news |date=27 November 2025 |title=Expelled AIADMK veteran Sengottaiyan joins Vijay's TVK |url=https://www.thehindu.com/news/national/tamil-nadu/ka-sengottaiyan-former-tn-minister-expelled-from-aiadmk-joins-tvk/article70329096.ece |access-date=7 December 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref> Manoj Pandian resigned as a member of the assembly in November 2025 and joined the DMK,<ref>{{cite news |date=5 November 2025 |title=AIADMK MLA Manoj Pandian joins DMK, resigns as MLA |url=https://timesofindia.indiatimes.com/city/chennai/aiadmk-mla-manoj-pandian-joins-dmk-resigns-as-mla/articleshow/125095599.cms |access-date=1 June 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref> with Vaithilingam following suit in January 2026.<ref>{{cite news |date=21 January 2026 |title=Former AIADMK Minister R. Vaithilingam joins DMK |url=https://www.thehindu.com/news/national/tamil-nadu/r-vaithilingam-resigns-aiadmk-dmk-january-21-2026/article70532054.ece |access-date=22 January 2026 |work=[[The Hindu]]}}</ref> In late 2025, the [[Pattali Makkal Katchi]] (PMK) split into two factions, with three members expressing support to [[Anbumani Ramadoss]] and two members supporting [[S. Ramadoss]].<ref>{{cite news |date=15 October 2025 |title=MLAs protest at Secretariat over PMK leadership dispute |url=https://timesofindia.indiatimes.com/city/chennai/mlas-protest-at-secretariat-over-pmk-leadership-dispute/articleshow/124561053.cms |access-date=7 November 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref><ref>{{cite news |date=26 September 2025 |title=Anbumani seeks replacement of G K Mani as party floor leader |url=https://timesofindia.indiatimes.com/city/chennai/anbumani-seeks-replacement-of-g-k-mani-as-party-floor-leader/articleshow/124131189.cms |access-date=7 November 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref> After Anbumani was recognised as the official leader of the PMK, Ramadoss formed a [[Pattali Makkal Katchi (S. Ramadoss faction)|splinter faction]] of the PMK.<ref>{{cite news |date=16 September 2025 |title=EC recognises Anbumani as PMK president; Ramadoss camp calls it a unilateral decision |url=https://timesofindia.indiatimes.com/city/chennai/ec-recognises-anbumani-as-pmk-president-ramadoss-camp-calls-it-a-unilateral-decision/articleshow/123908124.cms |access-date=7 November 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref> Two members&ndash;[[T. K. Amulkandasami]] (AIADMK) and [[K. Ponnusamy (DMK politician)|K. Ponnusamy]] (DMK) died on 21 June 2025 and 23 October 2025 respectively.<ref>{{cite news |date=21 June 2025|title=Valparai AIADMK MLA Amul Kandasamy passes away at 60 |url=https://www.thehindu.com/news/cities/Coimbatore/valparai-aiadmk-mla-amul-kandasamy-passes-away-at-60/article69721031.ece |access-date=21 June 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref><ref>{{cite news |date=23 October 2025 |title=Tamil Nadu: Senthamangalam DMK MLA K. Ponnusamy passes away |url=https://www.thehindu.com/news/national/tamil-nadu/senthamangalam-dmk-mla-k-ponnusamy-passes-away/article70192532.ece |access-date=26 November 2025 |work=[[The Hindu]] |issn=0971-751X}}</ref> On 27 February 2026, Pannerselvam and Ayyappan resigned from the assembly and joined the DMK.<ref>{{cite news |date=27 February 2026 |title=Tamil Nadu: OPS and Ayyappan joined DMK|url=https://www.thehindu.com/news/national/tamil-nadu/former-tamil-nadu-cm-o-panneerselvam-to-join-dmk-the-hindu-live-updates/article70682462.ece/amp/|access-date=27 February 2026 |work=[[The Hindu]]}}</ref>
+
+{| class="wikitable sortable" style="text-align:center;"
+|+Composition of the assembly
+! colspan="3" | [[2021 Tamil Nadu Legislative Assembly election|2021 election]] result
+! colspan="3"| As on 27 February 2026
+|-
+! colspan="2" | Party !! Seats !! colspan="2" | Party!! Seats 
+|-
+| {{Party name with colour|Dravida Munnetra Kazhagam}}
+| 133
+| {{Party name with colour|Dravida Munnetra Kazhagam}}
+| 133
+|-
+| {{Party name with colour|All India Anna Dravida Munnetra Kazhagam}}
+| 66
+| {{Party name with colour|All India Anna Dravida Munnetra Kazhagam}}
+| 60
+|-
+| {{Party name with colour|Indian National Congress}}
+| 18
+| {{Party name with colour|Indian National Congress}}
+| 17
+|-
+| {{Party name with colour|Pattali Makkal Katchi|rowspan=2}}
+| rowspan="2" |5
+| {{Party name with colour|Pattali Makkal Katchi}}
+| 3
+|-
+| {{Party color cell|Pattali Makkal Katchi}}
+| align=left|[[Pattali Makkal Katchi (S. Ramadoss faction)|PMK(R)]]
+| 2
+|-
+| {{Party name with colour|Bharatiya Janata Party}}
+| 4
+| {{Party name with colour|Bharatiya Janata Party}}
+| 4
+|-
+| {{Party name with colour|Viduthalai Chiruthaigal Katchi}}
+| 4
+| {{Party name with colour|Viduthalai Chiruthaigal Katchi}}
+| 4
+|-
+| {{Party name with colour|Communist Party of India (Marxist)}}
+| 2
+| {{Party name with colour|Communist Party of India (Marxist)}}
+| 2
+|-
+| {{Party name with colour|Communist Party of India}}
+| 2
+| {{Party name with colour|Communist Party of India}}
+| 2
+|-
+|
+|
+| 
+| {{Party name with colour|Casual vacancy}} 
+| 7
+|- 
+! colspan="2" |Total
+! 234
+! colspan="2" |-
+! 234
+|-
+|}
+
+== Schedule ==
+{| class="wikitable"
+|-
+!Poll event
+!Date
+|-
+|Notification
+|
+|-
+|Deadline for filing nomination
+|
+|-
+|Scrutiny of nominations
+| 
+|-
+|Deadline for withdrawal of nomination
+| 
+|-
+|Polling
+|  
+|-
+|Counting of votes
+|  
+|}
+
+==Voter statistics==
+According to the [[Election Commission of India]], 56,707,380 voters were eligible to vote in the assembly elections in Tamil Nadu. This includes 27,738,925 male, 28,960,838 female, and 7,617 [[third gender]] voters.<ref name="Vote"/>
+
+== Parties and alliances ==
+
+=== Secular Progressive Alliance ===
+On 9 March 2024, [[Kamal Haasan]]'s [[Makkal Needhi Maiam]] joined the Secular Progressive Alliance.<ref name="MNM">{{cite news |title=Actor Kamal Haasan's MNM joins DMK-led alliance; allotted one seat for 2025 Rajya Sabha polls |url=https://www.deccanherald.com/india/tamil-nadu/actor-kamal-haasans-mnm-joins-dmk-led-alliance-allotted-one-seat-for-2025-rajya-sabha-polls-2929362 |access-date=7 November 2025 |work=[[Deccan Herald]]}}</ref> Parties which formed part of the DMK-led alliance &ndash;[[Indian National Congress]], [[Communist Party of India (Marxist)]], [[Communist Party of India]], [[Marumalarchi Dravida Munnetra Kazhagam]], and [[Viduthalai Chiruthaigal Katchi]], that won all the 39 seats in the state in the [[2024 Indian general election in Tamil Nadu|2024 general election]], remained with the alliance.<ref>{{cite news |title=DMK alliance sweeps Tamil Nadu; trounces AIADMK, BJP |url=https://www.deccanherald.com/elections/india/lok-sabha-elections-2024-dmk-alliance-sweeps-tamil-nadu-trounces-aiadmk-bjp-3052740 |access-date=7 November 2025 |work=[[Deccan Herald]]}}</ref><ref name="SPA">{{cite news|url=https://www.thehindu.com/news/cities/Tiruchirapalli/secular-progressive-alliance-stages-demonstration/article70624672.ece|title=Secular Progressive Alliance stages demonstration|date=12 February 2026|access-date=12 February 2026|work=[[The Hindu]]}}</ref> On 19 February 2026, the [[Desiya Murpokku Dravida Kazhagam]] joined the DMK-led alliance.<ref name="DMDK">{{cite news|url=https://www.news18.com/politics/dmdk-forms-alliance-with-dmk-ahead-of-tamil-nadu-polls-aiadmk-objects-9917190.html|title=DMDK Forms Alliance With DMK Ahead Of Tamil Nadu Polls, AIADMK Objects|date=19 February 2026|access-date=19 February 2026|work=[[News 18]]}}</ref>
+
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" style="text-align:center;
+| colspan="8" {{Party color cell|Secular Progressive Alliance}}
+|-
+| colspan="8" | [[Secular Progressive Alliance]]
+|-
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! colspan="2" |Seats
+|-
+| {{Full party name with color|Dravida Munnetra Kazhagam}}<ref name="SPA"/>
+| [[File:Flag DMK.svg|50px]]
+| rowspan=4|[[File:Indian election symbol rising sun.svg|50px]]
+| align=left|[[M. K. Stalin]]
+|
+| rowspan=4|
+|-
+| {{Full party name with color|Manithaneya Makkal Katchi}}<ref>{{cite news |date=23 February 2026 |title=Manithaneya Makkal Katchi Decided to contest on DMK'S Rising Sun Symbol for upcoming 2026 election|url=https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-election-mmk-to-contest-on-dmks-rising-sun-symbol/article70665805.ece|access-date=23 February 2026 |work=[[The Hindu]]}}</ref>
+| [[File:Manithaneya Makkal Katchi flag.jpg|50px]]
+| align=left|[[M. H. Jawahirullah]]
+| 2<ref name="IUML">{{cite news |date=28 February 2026 |title=IUML AND MMK had given each 2 by DMK |url=https://www.thehindu.com/news/national/tamil-nadu/iuml-and-mmk-to-contest-in-2-seats-each-as-part-of-dmk-alliance/article70689123.ece |access-date=1 March 2026 |work=[[The Hindu]]}}</ref>
+|-
+| style="background-color: yellow;"| 
+| align=left|Mukkulathor Pulipadai<ref>{{cite news|url=https://tamil.oneindia.com/news/chennai/karunas-mukkulathor-pulipadai-leader-karunas-confirms-the-alliance-with-dmd-and-to-stand-in-udhayas-777513.html|title=Mukkulathor Pulipadai leader Karunas confirms alliance with DMK and to stand in Udhaya Suriyan symbol|lang=ta|date=28 February 2026|access-date=28 February 2026|work=[[One India]]}}</ref>
+|
+| align=left|[[Karunas]]
+|
+|-
+| {{Full party name with color|Social Democratic Party of India}}<ref>{{cite news|url=https://www.illustrateddailynews.com/amp/politics/tamil-nadu-sdpi-joins-dmk-alliance-ahead-of-assembly-polls-seeks-3-seats-859299|title=New Partner SDPI joins hands with DMK And Announced that it was contest on 'Rising Sun' Symbol ahead 26 election|date=28 February 2026|access-date=3 March 2026|work=Illustrated Daily News}}</ref>
+| [[File:SDPI Flag.jpg|50px]]
+| align=left|V. M. S. Mohamed Mubarak
+|-
+| {{Full party name with color|Indian National Congress}}<ref name="SPA"/>
+| [[File:Indian National Congress Flag.svg|50px]]
+| [[File:INC Hand.svg|50px]]
+| align=left|[[K. Selvaperunthagai]]<ref>{{cite news |date=17 February 2024 |title=Selvaperunthagai named State Congress president, Rajesh Kumar new floor leader |url=https://www.thehindu.com/news/national/tamil-nadu/selvaperunthagai-named-state-congress-president-rajesh-kumar-new-floor-leader/article67858665.ece |access-date=10 December 2025 |work=[[The Hindu]] |issn=0971-751X}}</ref>
+| colspan=2| 28<ref>{{cite news|url=https://www.thehindu.com/news/national/tamil-nadu/dmk-and-congress-finally-seal-pact-for-28-assembly-seat-one-rs-berth/article70704157.ece/amp/|title=Congress To Contest 28 Seats, Get 1 Rajya Sabha Spot As DMK Seals Pact For Tamil Nadu Polls|access-date=4 March 2026|work=[[The Hindu]] |date=4 March 2026}}</ref>
+|-
+| {{Full party name with color|Communist Party of India (Marxist)|dab=yes}}<ref name="SPA"/>
+| [[File:Communist Party of India (Marxist) flag.svg|50px]]
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| align=left|[[P. Shanmugam (CPIM)|P. Shanmugam]]
+| colspan=2| 
+|-
+| {{Full party name with color|Communist Party of India}}<ref name="SPA"/>
+| [[File:CPI-banner.svg|50px]]
+| [[File:CPI symbol.svg|50px]]
+| align=left|M. Veerapandian
+| colspan=2| 
+|-
+| {{Full party name with color|Indian Union Muslim League}}<ref>{{cite news|url=https://thefederal.com/elections-2026/tamil-nadu-assembly-polls-muslim-organisations-seat-sharing-talks-231072|title=TN polls: IUML seeks greater Muslim representation in DMK alliance, requests 5 seats|date=22 February 2026|access-date=28 February 2026|work=The Federal}}</ref>
+| [[File:Flag of the Indian Union Muslim League.svg|50px]]
+| [[File:Indian Election Symbol Lader.svg|50px]]
+| align=left|[[K. M. Kader Mohideen]]
+| colspan=2|2<ref name="IUML"/>
+|-
+| style="background:#3398cc" | 
+| align=left|Adhi Tamilar Peravai<ref name="SPA1">{{cite news|url=https://tamil.samayam.com/latest-news/state-news/how-many-constituencies-are-dmk-and-its-alliance-parties-contesting/articleshow/128606667.cms|title=How many constituencies are DMK and its alliance parties contesting|lang=ta|date=20 February 2026|access-date=28 February 2026|work=Samayam}}</ref> 
+| [[File:Flag of the Ta'ang National Party.svg|50px]]
+|
+| align=left|R. Athiyaman
+| colspan=2| 
+|-
+| {{Full party name with color|Desiya Murpokku Dravida Kazhagam}}<ref name="DMDK"/>
+| [[File:Flag DMDK.png|50px]]
+| [[File:Indian Election Symbol Nagara.svg|50px]]
+| align=left|Premallatha Vijayakant
+| colspan=2| 
+|-
+| {{Full party name with color|Kongunadu Makkal Desia Katchi}}<ref name="SPA1"/>
+| [[File:Kmdkflag.gif|50px]]
+|
+| align=left|[[E. R. Eswaran]]
+| colspan=2| 
+|-
+| {{Full party name with color|Makkal Needhi Maiam}}<ref name="MNM"/>
+| [[File:Makkal Needhi Maiam Party Logo.png|50px]]
+| [[File:Indian Election Symbol Battery-Torch.png|50px|Torch Light]]
+| align=left|[[Kamal Haasan]]
+| colspan=2| 
+|-
+| style="background:#006400" | 
+| align=left|Makkal Viduthalai Katchi<ref name="SPA1"/>
+| 
+|
+| align=left|S. K. Murugavel Rajan
+| colspan=2|
+|-
+| style="background-color: brown;"| 
+| align=left|Manithaneya Jananayaga Katchi<ref>{{cite news|url=https://thenewsmill.com/2026/02/mjk-president-urges-congress-to-discuss-governance-share-privately-amid-alliance-tensions/|title=MJK president urges Congress to discuss governance share privately amid alliance tensions|work=News Mill|date=12 February 2026|access-date=26 February 2026}}</ref>
+|
+|
+| align=left|[[Thamimum Ansari]]
+| colspan=2|
+|-
+| {{Full party name with color|Marumalarchi Dravida Munnetra Kazhagam}}<ref name="SPA"/>
+| [[File:MDMK.svg|50px]]
+| [[File:Indian Election Symbol Matchbox.png|50px]]
+| align=left|[[Vaiko]]
+| colspan=2|
+|-
+| {{Full party name with color|Moovendar Munnetra Kazhagam}}<ref name="SPA1"/>
+| 
+| 
+| align=left|Sreedhar Vandaiyar
+| colspan=2|
+|-
+| style="background-color: yellow;"| 
+| align=left|Samathuva Makkal Kazhagam<ref name="SPA1"/>
+| 
+| 
+| align=left|Ernavoor Narayanan
+| colspan=2|
+|-
+| style="background-color: maroon;"| 
+| align=left|[[Tamil Nadu Kongu Ilaingar Peravai]]<ref>{{cite news|url=https://tamil.samayam.com/latest-news/state-news/shock-twist-in-kongu-region-thaniyarasu-joins-hands-with-dmk/articleshow/128881677.cms|title=Thaniyarasu joins hands with DMK|lang=ta|date=28 February 2026|access-date=28 February 2026|work=Samayam}}</ref>
+|
+|
+| align=left|[[U. Thaniyarasu]]
+| colspan=2|
+|-
+| style="background-color: green;"| 
+| align=left|Tamil Nadu Vivasaya Tholilalar Katchi<ref name="SPA"/>
+|
+|
+| align=left|Pon. Kumar
+| colspan=2|
+|-
+| {{Full party name with color|Tamizhaga Vazhvurimai Katchi}}<ref>{{cite news |date=14 April 2025 |title=I am still part of DMK alliance despite differences: Tamizhaga Vazhvurimai Katchi leader Velmurugan |url=https://timesofindia.indiatimes.com/city/chennai/i-am-still-part-of-dmk-alliance-despite-differences-tamizhaga-vazhvurimai-katchi-leader-velmurugan/articleshow/120280084.cms |access-date=10 December 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref>
+| [[File:Tvk flag wikipedia.jpg|50px]]
+|
+| align=left|[[T. Velmurugan]]
+| colspan=2|
+|-
+| {{Full party name with color|Viduthalai Chiruthaigal Katchi}}<ref name="SPA"/>
+| [[File:Viduthalai Chiruthaigal Katchi banner.png|50px]]
+| [[File:Pot Symbol.png|50px]]
+| align=left|[[Thol. Thirumavalavan]]
+| colspan=2| 
+|-
+! colspan="5"| Total
+! colspan="2"| 
+|}
+
+=== AIADMK-led Alliance ===
+
+On 25 September 2023, the AIADMK withdrew from the [[National Democratic Alliance]] (NDA) led by the [[Bharatiya Janata Party]] (BJP).<ref>{{cite news |date=25 September 2023 |title=AIADMK severs ties with BJP-led NDA; to form front to fight 2024 LS polls |url=https://www.deccanherald.com/india/aiadmk-severs-ties-with-bjp-led-nda-to-form-front-to-fight-2024-ls-polls-2700089 |access-date=25 September 2023 |work=[[Deccan Herald]]}}</ref><ref>{{cite news|date=25 September 2023|title=AIADMK snaps ties with BJP-led NDA alliance ahead of 2024 Lok Sabha polls|url=https://indianexpress.com/article/india/aiadmk-snaps-ties-with-bjp-led-nda-alliance-ahead-of-2024-lok-sabha-polls-8955585/|access-date=25 September 2023|work=[[The Indian Express]]}}</ref> In the [[2024 Indian general election in Tamil Nadu|2024 general election]], the [[AIADMK-led Alliance]] and the BJP-led NDA contested separately and both did not win any seat in the state.<ref>{{cite news|date=4 June 2024|title=Tamil Nadu election results 2024: DMK alliance sweeps Cuddalore, Villupuram, and Kallakurichi|url=https://www.thehindu.com/news/national/tamil-nadu/dmk-alliance-sweeps-cuddalore-villupuram-and-kallakurichi/article68251459.ece|access-date=4 June 2024|work=[[The Hindu]]}}</ref><ref>{{cite news |date=4 June 2024 |title=India Bloc Scripts Clean Sweep In Tamil Nadu, BJP And AIADMK Suffer Rout |url=https://www.ndtv.com/india-news/lok-sabha-elections-2024-results-tamil-nadu-india-bloc-scripts-clean-sweep-in-tamil-nadu-bjp-and-aiadmk-suffer-rout-5815886 |access-date=30 October 2025 |work=[[NDTV]]}}</ref> On 11 April 2025, both the parties reunited to form an alliance,<ref name="NDA">{{cite news |title=BJP, AIADMK reunite forming alliance for 2026 Tamil Nadu Assembly election |url=https://www.thehindu.com/news/national/tamil-nadu/bjp-and-aiadmk-reunite-and-announce-alliance-for-2026-tamil-nadu-assembly-election/article69439389.ece |access-date=11 April 2025 |work=[[The Hindu]] |date=11 April 2025 |archive-url=https://web.archive.org/web/20250411125344/https://www.thehindu.com/news/national/tamil-nadu/bjp-and-aiadmk-reunite-and-announce-alliance-for-2026-tamil-nadu-assembly-election/article69439389.ece |archive-date=11 April 2025}}</ref><ref>{{cite news | title=BJP announces alliance with AIADMK in Tamil Nadu ahead of 2026 elections, EPS to be CM candidate | date=11 April 2025 | url=https://www.indiatvnews.com/tamil-nadu/chennai-bjp-announces-alliance-with-aiadmk-in-tamil-nadu-ahead-of-2026-elections-eps-to-be-cm-candidate-2025-04-11-985064 |work=India TV}}</ref> with Palaniswami as the chief ministerial candidate.<ref>{{cite news |date=19 April 2025 |title=Edappadi - Amit Shah will take all alliance decisions: BJP to cadre in fresh gag order |url=https://www.dtnext.in/news/tamilnadu/edappadi-amit-shah-will-take-all-alliance-decisions-bjp-to-cadre-in-fresh-gag-order-830514 |access-date=7 November 2025 |work=[[DT Next]]}}</ref><ref>{{cite news |date=27 June 2025 |title=EPS will be the NDA's CM face for 2026, coalition govt decision post-polls: Nainar Nagendran |url=https://www.dtnext.in/news/tamilnadu/eps-will-be-the-ndas-cm-face-for-2026-coalition-govt-decision-post-polls-nainar-nagendran-838403|access-date=7 November 2025 |work=[[DT Next]]}}</ref> On 7 January 2026, the PMK, led by Anbumani, formally joined the AIADMK-led front.<ref name="PMK">{{cite news |date=7 January 2026 |title=PMK joins NDA for 2026 Tamil Nadu polls, Edappadi Palaniswami calls it winning force|url=https://www.indiatoday.in/elections/assembly/story/pmk-joins-nda-for-2026-tamil-nadu-assembly-elections-eps-confirms-alliance-2847872-2026-01-07|access-date=7 January 2026 |work=[[India Today]]}}</ref> On 21 January 2026, [[T. T. V. Dhinakaran]]–led [[Amma Makkal Munnetra Kazhagam]] joined the alliance.<ref name="AMMK">{{cite news |date=21 January 2026 |title=Dhinakaran-led AMMK returns to NDA fold, Palaniswami welcomes leader|url=https://www.deccanherald.com/india/tamil-nadu/dhinakaran-led-ammk-returns-to-nda-fold-palaniswami-welcomes-leader-3869700|access-date=21 January 2026 |work=[[Deccan Herald]]}}</ref>
+
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" style="text-align:center;
+| colspan="7" {{Party color cell|AIADMK-led Alliance}}
+|-
+| colspan="7" | [[AIADMK-led Alliance|'''AIADMK-led Alliance''']]
+|-
+!colspan=2| Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|All India Anna Dravida Munnetra Kazhagam}}<ref name="NDA"/>
+| [[File:AIADMK Flag.svg|50px]]
+| [[File:Indian election symbol two leaves.svg|50px]]
+| align=left|[[Edappadi K. Palaniswami]]
+|
+|-
+| {{Full party name with color|Bharatiya Janata Party}}<ref name="NDA"/>
+| [[File:BJP Flag.svg|50px]]
+| [[File:Lotus flower symbol.svg|50px]]
+| align=left|[[Nainar Nagendran]]
+|
+|-
+| {{Full party name with color|All India Forward Bloc}}<ref>{{cite news|url=https://timesofindia.indiatimes.com/city/chennai/tn-unit-of-all-india-forward-bloc-switches-alliance-joins-aiadmk/articleshow/108280034.cms|title=TN unit of All India Forward Bloc switches alliance, joins AIADMK|work=[[The Times of India]]|date=7 March 2024|access-date=1 February 2026}}</ref>
+|
+| [[File:Indian Election Symbol Lion.svg|50px]]
+| align=left|[[P. V. Kathiravan]]
+|colspan=2|
+|-
+| {{Full party name with color|Amma Makkal Munnettra Kazagam}}<ref name="AMMK"/>
+| [[File:Flag AMMK.jpg|50px]]
+| [[File:AMMK SYMBOL PRESSURE COOKER.png|50px]]
+| align=left|[[T. T. V. Dhinakaran]]
+|
+|-
+| {{Full party name with color|Indhiya Jananayaga Katchi}}<ref>{{cite news|url=https://m.economictimes.com/news/politics-and-nation/ijk-initiates-seat-sharing-talks-with-aiadmk/amp_articleshow/128808639.cms|title=IJK initiates seat-sharing talks with AIADMK|date=26 February 2026|access-date=28 February 2026|work=[[The Economic Times]]}}</ref>
+| [[File:IJK Party Flag.jpg|50px]]
+|
+| align=left|[[T. R. Paarivendhar]]
+| 
+|-
+| {{Full party name with color|Pattali Makkal Katchi}}<ref name="PMK"/>
+| [[File:PMK.svg|50px]]
+| [[File:Indian Election Symbol Mango SVG.svg|50px]]
+| align=left|[[Anbumani Ramadoss]]
+|
+|-
+| style="background-color: yellow;"| 
+| align=left|Pasumpon Desiya Kazhagam<ref name="Bloc">{{cite web|url=https://www.oneindia.com/tamil-nadu-election-2026-alliance-seat-sharing-list/|title=Tamil Nadu election 2026 alliance seat sharing list|work=[[One India]]|access-date=28 February 2026}}</ref>
+|
+|
+| align=left|Muthiah
+| 
+|-
+| {{Full party name with color|Perunthalaivar Makkal Katchi}}<ref name="Bloc"/>
+| [[File:PTMK-Flag.png|75px]]
+|
+| align=left|N. R. Dhanapalan
+| 
+|-
+| {{Full party name with color|Puratchi Bharatham Katchi}}<ref name="NDA1">{{cite news|url=https://www.newindianexpress.com/states/tamil-nadu/2026/Jan/24/tn-will-have-double-engine-nda-govt-after-polls-says-pm-modi|title=TN will have ‘double engine’ NDA govt after polls, says PM Modi|date=24 January 2026|access-date=1 February 2026|work=[[The New Indian Express]]}}</ref>
+| [[File:PBK FLAG.png|50px]]
+|
+| align=left|[[M. Jagan Moorthy]]
+| 
+|-
+| {{Full party name with color|Puthiya Needhi Katchi}}<ref name="Week">{{cite news|url=https://www.theweek.in/news/india/2026/02/26/seat-sharing-talks-in-nda-to-begin-after-pm-modis-tamil-nadu-visit.html|title=Seat-sharing talks in NDA to begin after PM Modi’s Tamil Nadu visit|date=26 February 2026|access-date=26 February 2026|work=[[The Week (magazine)|The Week]]}}</ref>
+| [[File:Puthiya Needhi Katchi Flag.jpg|50px]]
+|
+| align=left|[[A. C. Shanmugam]]
+| 
+|-
+| style="background:#C30010" | 
+| align=left|South Indian Forward Bloc<ref name="NDA2">{{cite news|url=https://tamil.oneindia.com/news/chennai/vasantha-panchami-nda-public-meeting-on-january-23-why-the-alliance-launched-campaign-early-ahead-768021.html|title=NDA public meeting on January 23|work=[[One India]]|date=24 January 2026|access-date=1 February 2026}}</ref>
+| 
+|
+| align=left|K. C. Thirumaran
+| 
+|-
+| {{Full party name with color|Tamil Maanila Congress (Moopanar)|dab=yes}}<ref name="NDA1"/>
+|
+| [[File:Indian Election Symbol Cycle.png|50px]]
+| align=left|[[G. K. Vasan]]
+|
+|-
+| {{Full party name with color|Tamizhaga Makkal Munnetra Kazhagam}}<ref name="Week"/>
+| [[File:Tmmk flag.png|50px]]
+|
+| align=left|[[B. John Pandian]]
+| 
+|-
+| {{Full party name with color|Uzhavar Uzhaippalar Katchi}}<ref name="NDA2"/>
+| [[File:UUK-Tamil Nadu-banner.png|50px]]
+|
+| align=left|Vettavalam Manikandan
+| 
+|-
+!colspan="5"| Total
+! 
+|}
+
+=== Others ===
+On 2 February 2024, [[Vijay (actor)|Vijay]] announced the formation of his political party, [[Tamilaga Vettri Kazhagam]], stating that it would contest the 2026 elections.<ref name="TVK">{{cite news |title=Thalapathy Vijay Launches Political Party, Names it Tamizha Vetri Kazhagam - www.lokmattimes.com |url=https://www.lokmattimes.com/national/thalapathy-vijay-launches-political-party-names-it-tamizha-vetri-kazhagam-a505/ |archive-url=https://web.archive.org/web/20241006100939/https://www.lokmattimes.com/national/thalapathy-vijay-launches-political-party-names-it-tamizha-vetri-kazhagam-a505/ |archive-date=6 October 2024 |access-date=1 June 2025 |work=Lokmat Times}}</ref><ref>{{cite news |title=Thalapathy' Vijay Launches Political Party: Thamizhaga Vettri Kazhagam |url=https://www.deccanherald.com/india/thalapathy-vijay-announces-his-political-party-thamizaga-vettri-kazhagam-tvk-2876774 |access-date=30 October 2025 |work=[[Deccan Herald]]}}</ref> In February 2025, [[All India N.R. Congress]], the ruling party in the nearby [[union territory]] of [[Puducherry (union territory)|Puducherry]] announced its intention to contest in the Tamil Nadu state elections.<ref name="AINRC">{{cite news |date=7 February 2025 |title=AINRC to enter poll fray in Tamil Nadu during 2026 Assembly election |url=https://www.thehindu.com/news/cities/puducherry/ainrc-to-enter-the-poll-fray-in-tamil-nadu-in-2026/article69191862.ece |access-date=1 January 2026 |work=[[The Hindu]] |issn=0971-751X}}</ref> In February 2026, [[Naam Tamilar Katchi]] released its list of 234 candidates.<ref name="NTK">{{cite news |date=22 February 2026 |title=Seeman in Karaikudi; NTK candidates for 234 seats announced |url=https://www.newindianexpress.com/states/tamil-nadu/2026/Feb/22/seeman-in-karaikudi-ntk-candidates-for-234-seats-announced |access-date=5 March 2026 |work=[[The New Indian Express]] }}</ref>
+
+<!-- DON'T REMOVE THESE PARTIES FROM THESE TABLE UNTIL THEIR ANNOUNCEMENT TO JOIN ANY OF THE ABOVE ALLIANCES-->
+<!-- DON'T ADD IMPROPER SYMBOLS TO THE RESPECTIVE PARTIES-->
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" style="text-align:center;
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|Bahujan Samaj Party}}<ref>{{cite news|url=https://www.thehindu.com/news/national/tamil-nadu/eci-reviews-preparedness-for-the-coming-assembly-election-in-tamil-nadu/article70680832.ece|title=ECI reviews preparedness for the coming Assembly elections|work=[[The Hindu]]|date=27 February 2026|access-date=1 March 2026}}</ref>
+| [[File:Elephant Bahujan Samaj Party.svg|50px]]
+| [[File:Indian Election Symbol Elephant.png|50px]]
+| align=left|P. Anandan
+| 
+|-
+| {{Full party name with color|All India N.R. Congress}}<ref name="AINRC"/>
+| [[File:All India N.R. Congress.png|50px]]
+| [[File:Indian Election Symbol Jug.svg|50px]]
+| align=left|[[N. Rangasamy]]
+| 
+|-
+| {{Full party name with color|Naam Tamilar Katchi}}<ref>{{cite news|url=https://www.dtnext.in/news/tamilnadu/ntk-releases-first-list-of-100-candidates-seeman-yet-to-announce-his-constituency-855611|title=NTK releases first lits of candidates|date=5 December 2025|access-date=1 January 2026|work=[[DT Next]]}}</ref>
+| 
+| 
+| align=left|[[Seeman]]
+| 234<ref name="NTK" />
+|-
+| {{party color cell|Pattali Makkal Katchi}}
+| style="text-align: left;"| [[Pattali Makkal Katchi (S. Ramadoss)]]<ref>{{cite news|url=https://www.dtnext.in/news/tamilnadu/ramadoss-to-reveal-dravidian-alliance-choice|title=Ramadoss to reveal Dravidian alliance choice|date=27 February 2025|access-date=3 March 2025|work=[[DT Next]]}}</ref>
+| [[File:Pmk_flag.jpg|50px]]
+|
+| align=left|[[S. Ramadoss]]
+| 
+|-
+| {{Full party name with color|Puthiya Tamilagam}}<ref>{{cite news|url=https://www.dailythanthi.com/news/politics/puthiya-tamilagam-party-to-decide-on-assembly-election-alliance-soon|title=Puthiya Tamilagam party to decide on assembly election alliance soon|lang=ta|date=3 March 2025|access-date=3 March 2025|work=[[Daily Thanthi]]}}</ref>
+| [[File:Puthiya Tamilagam Party Flag.jpg|50px]]
+|
+| align=left|[[K. Krishnasamy]]
+| 
+|-
+| {{Full party name with color|Tamilaga Vettri Kazhagam}}<ref>{{cite news |date=25 January 2026 |title=Tamil Nadu set for 4-way battle after Vijay confirms solo contest|url=https://www.dtnext.in/amp/story/news/tamilnadu/tamil-nadu-set-for-4-way-battle-after-vijay-confirms-solo-contest-852096 |access-date=25 January 2026 |work=[[Daily Thanthi]]}}</ref>
+|
+| [[File:Indian Election Symbol Whistle.png|50px]]
+| align=left|[[Vijay (actor)|Vijay]]
+| 
+|-
+|}
+
+==Candidates==
+{|class="wikitable" style="text-align:center;"
+!rowspan="2"|District
+!colspan="2" rowspan="2"|Constituency{{efn|name=Reserved|SC and ST indicate constituencies reserved for [[Scheduled Castes]] and [[Scheduled Tribes]] respectively}}
+|colspan="3" style="background:{{party color|Secular Progressive Alliance}}"|
+|colspan="3" style="background:{{party color|AIADMK-led Alliance}}"|
+|-
+!colspan="3"| [[Secular Progressive Alliance|SPA]]
+!colspan="3"| [[AIADMK-led Alliance|AIADMK+]]
+|-
+|rowspan=6|[[Tiruvallur district|Tiruvallur]]
+!1
+|[[Gummidipoondi Assembly constituency|Gummidipoondi]]
+|-
+!2
+|[[Ponneri Assembly constituency|Ponneri]] (SC)
+|-
+!3
+|[[Tiruttani Assembly constituency|Tiruttani]]
+|-
+!4
+|[[Thiruvallur Assembly constituency|Thiruvallur]]
+|-
+!5
+|[[Poonamallee Assembly constituency|Poonamallee]] (SC)
+|-
+!6
+|[[Avadi Assembly constituency|Avadi]]
+|-
+|rowspan="22" |[[Chennai district|Chennai]]
+!7
+|[[Maduravoyal Assembly constituency|Maduravoyal]]
+|-
+!8
+|[[Ambattur Assembly constituency|Ambattur]]
+|-
+!9
+|[[Madavaram Assembly constituency|Madavaram]]
+|-
+!10
+|[[Thiruvottiyur Assembly constituency|Thiruvottiyur]]
+|-
+!11
+|[[Radhakrishnan Nagar Assembly constituency|Dr. Radhakrishnan Nagar]]
+|-
+!12
+|[[Perambur Assembly constituency|Perambur]]
+|-
+!13
+|[[Kolathur Assembly constituency|Kolathur]]
+|-
+!14
+|[[Villivakkam Assembly constituency|Villivakkam]]
+|-
+!15
+|[[Thiru. Vi. Ka. Nagar Assembly constituency|Thiru-Vi-Ka-Nagar]] (SC)
+|-
+!16
+|[[Egmore Assembly constituency|Egmore]] (SC)
+|-
+!17
+|[[Royapuram Assembly constituency|Royapuram]]
+|-
+!18
+|[[Harbour Assembly constituency|Harbour]]
+|-
+!19
+|[[Chepauk-Thiruvallikeni]]
+|-
+!20
+|[[Thousand Lights]]
+|-
+!21
+|[[Anna Nagar Assembly constituency|Anna Nagar]]
+|-
+!22
+|[[Virugampakkam Assembly constituency|Virugambakkam]]
+|-
+!23
+|[[Saidapet Assembly constituency|Saidapet]]
+|-
+!24
+|[[Thiyagarayanagar Assembly constituency|Thiyagarayanagar]]
+|-
+!25
+|[[Mylapore Assembly constituency|Mylapore]]
+|-
+!26
+|[[Velachery Assembly constituency|Velachery]]
+|-
+!27
+|[[Sholinganallur Assembly constituency|Shozhinganallur]]
+|-
+!28
+|[[Alandur Assembly constituency|Alandur]]
+|-
+|[[Kanchipuram district|Kanchipuram]]
+!29
+|[[Sriperumbudur Assembly constituency|Sriperumbudur]] (SC)
+|-
+| rowspan="6" |[[Chengalpattu district|Chengalpattu]]
+!30
+|[[Pallavaram Assembly constituency|Pallavaram]]
+|-
+!31
+|[[Tambaram Assembly constituency|Tambaram]]
+|-
+!32
+|[[Chengalpattu Assembly constituency|Chengalpattu]]
+|-
+!33
+|[[Thiruporur Assembly constituency|Thiruporur]]
+|-
+!34
+|[[Cheyyur Assembly constituency|Cheyyur]] (SC)
+|-
+!35
+|[[Maduranthakam Assembly constituency|Madurantakam]] (SC)
+|-
+| rowspan="2" |[[Kanchipuram district|Kanchipuram]]
+!36
+|[[Uthiramerur Assembly constituency|Uthiramerur]]
+|-
+!37
+|[[Kancheepuram Assembly constituency|Kancheepuram]]
+|-
+| rowspan="2" |[[Ranipet district|Ranipet]]
+!38
+|[[Arakkonam Assembly constituency|Arakkonam]] (SC)
+|-
+!39
+|[[Sholingur Assembly constituency|Sholinghur]]
+|-
+|[[Vellore district|Vellore]]
+!40
+|[[Katpadi Assembly constituency|Katpadi]]
+|-
+| rowspan="2" |[[Ranipet district|Ranipet]]
+!41
+|[[Ranipet Assembly constituency|Ranipet]]
+|-
+!42
+|[[Arcot Assembly constituency|Arcot]]
+|-
+| rowspan="4" |[[Vellore district|Vellore]]
+!43
+|[[Vellore Assembly constituency|Vellore]]
+|-
+!44
+|[[Anaicut Assembly constituency|Anaikattu]]
+|-
+!45
+|[[Kilvaithinankuppam Assembly constituency|Kilvaithinankuppam]] (SC)
+|-
+!46
+|[[Gudiyatham Assembly constituency|Gudiyattam]] (SC)
+|-
+| rowspan="4" |[[Tirupathur district|Tirupathur]]
+!47
+|[[Vaniyambadi Assembly constituency|Vaniyambadi]]
+|-
+!48
+|[[Ambur Assembly constituency|Ambur]]
+|-
+!49
+|[[Jolarpet Assembly constituency|Jolarpet]]
+|-
+!50
+|[[Tiruppattur, Vellore Assembly constituency|Tirupattur]]
+|-
+| rowspan="6" |[[Krishnagiri district|Krishnagiri]]
+!51
+|[[Uthangarai Assembly constituency|Uthangarai]] (SC)
+|-
+!52
+|[[Bargur Assembly constituency|Bargur]]
+|-
+!53
+|[[Krishnagiri Assembly constituency|Krishnagiri]]
+|-
+!54
+|[[Veppanahalli]]
+|-
+!55
+|[[Hosur Assembly constituency|Hosur]]
+|-
+!56
+|[[Thalli Assembly constituency|Thalli]]
+|-
+| rowspan="5" |[[Dharmapuri district|Dharmapuri]]
+!57
+|[[Palacode Assembly constituency|Palacode]]
+|-
+!58
+|[[Pennagaram Assembly constituency|Pennagaram]]
+|-
+!59
+|[[Dharmapuri, Tamil Nadu Assembly constituency|Dharmapuri]]
+|-
+!60
+|[[Pappireddipatti Assembly constituency|Pappireddippatti]]
+|-
+!61
+|[[Harur Assembly constituency|Harur]] (SC)
+|-
+| rowspan="8" |[[Tiruvannamalai district|Tiruvannamalai]]
+!62
+|[[Chengam Assembly constituency|Chengam]] (SC)
+|-
+!63
+|[[Tiruvannamalai Assembly constituency|Tiruvannamalai]]
+|-
+!64
+|[[Kilpennathur Assembly constituency|Kilpennathur]]
+|-
+!65
+|[[Kalasapakkam Assembly constituency|Kalasapakkam]]
+|-
+!66
+|[[Polur Assembly constituency|Polur]]
+|-
+!67
+|[[Arani Assembly constituency|Arani]]
+|-
+!68
+|[[Cheyyar Assembly constituency|Cheyyar]]
+|-
+!69
+|[[Vandavasi Assembly constituency|Vandavasi]] (SC)
+|-
+| rowspan="7" |[[Viluppuram district|Viluppuram]]
+!70
+|[[Gingee Assembly constituency|Gingee]]
+|-
+!71
+|[[Mailam Assembly constituency|Mailam]]
+|-
+!72
+|[[Tindivanam Assembly constituency|Tindivanam]]
+|-
+!73
+|[[Vanur Assembly constituency|Vanur]] (SC)
+|-
+!74
+|[[Villupuram Assembly constituency|Villupuram]]
+|-
+!75
+|[[Vikravandi Assembly constituency|Vikravandi]]
+|-
+!76
+|[[Tirukkoyilur Assembly constituency|Tirukkoyilur]]
+|-
+| rowspan="4" |[[Kallakurichi district|Kallakurichi]]
+!77
+|[[Ulundurpet Assembly constituency|Ulundurpettai]]
+|-
+!78
+|[[Rishivandiyam Assembly constituency|Rishivandiyam]]
+|-
+!79
+|[[Sankarapuram Assembly constituency|Sankarapuram]]
+|-
+!80
+|[[Kallakurichi Assembly constituency|Kallakurichi]] (SC)
+|-
+| rowspan="11" |[[Salem district|Salem]]
+!81
+|[[Gangavalli Assembly constituency|Gangavalli]] (SC)
+|-
+!82
+|[[Attur Assembly constituency|Attur]] (SC)
+|-
+!83
+|[[Yercaud Assembly constituency|Yercaud]] (ST)
+|-
+!84
+|[[Omalur Assembly constituency|Omalur]]
+|-
+!85
+|[[Mettur Assembly constituency|Mettur]]
+|-
+!86
+|[[Edappadi Assembly constituency|Edappadi]]
+|-
+!87
+|[[Sankari Assembly constituency|Sankari]]
+|-
+!88
+|[[Salem West|Salem (West)]]
+|-
+!89
+|[[Salem North|Salem (North)]]
+|-
+!90
+|[[Salem South|Salem (South)]]
+|-
+!91
+|[[Veerapandi Assembly constituency|Veerapandi]]
+|-
+| rowspan="6" |[[Namakkal district|Namakkal]]
+!92
+|[[Rasipuram Assembly constituency|Rasipuram]] (SC)
+|-
+!93
+|[[Senthamangalam Assembly constituency|Senthamangalam]] (ST)
+|-
+!94
+|[[Namakkal Assembly constituency|Namakkal]]
+|-
+!95
+|[[Paramathi-Velur Assembly constituency|Paramathi Velur]]
+|-
+!96
+|[[Tiruchengode Assembly constituency|Tiruchengodu]]
+|-
+!97
+|[[Kumarapalayam Assembly constituency|Kumarapalayam]]
+|-
+| rowspan="3" |[[Erode district|Erode]]
+!98
+|[[Erode East|Erode (East)]]
+|-
+!99
+|[[Erode West|Erode (West)]]
+|-
+!100
+|[[Modakkurichi]]
+|-
+| rowspan="2" |[[Tiruppur district|Tiruppur]]
+!101
+|[[Dharapuram Assembly constituency|Dharapuram]] (SC)
+|-
+!102
+|[[Kangayam Assembly constituency|Kangayam]]
+|-
+| rowspan="5" |[[Erode district|Erode]]
+!103
+|[[Perundurai Assembly constituency|Perundurai]]
+|-
+!104
+|[[Bhavani Assembly constituency|Bhavani]]
+|-
+!105
+|[[Anthiyur Assembly constituency|Anthiyur]]
+|-
+!106
+|[[Gobichettipalayam Assembly constituency|Gobichettipalayam]]
+|-
+!107
+|[[Bhavanisagar Assembly constituency|Bhavanisagar]] (SC)
+|-
+| rowspan="3" |[[Nilgiris district|Nilgiris]]
+!108
+|[[Udagamandalam Assembly constituency|Udhagamandalam]]
+|-
+!109
+|[[Gudalur Assembly constituency|Gudalur]] (SC)
+|-
+!110
+|[[Coonoor Assembly constituency|Coonoor]]
+|-
+|[[Coimbatore district|Coimbatore]]
+!111
+|[[Mettupalayam Assembly constituency|Mettupalayam]]
+|-
+| rowspan="4" |[[Tiruppur district|Tiruppur]]
+!112
+|[[Avanashi Assembly constituency|Avanashi]] (SC)
+|-
+!113
+|[[Tiruppur North Assembly constituency|Tiruppur (North)]]
+|-
+!114
+|[[Tiruppur South Assembly constituency|Tiruppur (South)]]
+|-
+!115
+|[[Palladam Assembly constituency|Palladam]]
+|-
+| rowspan="9" |[[Coimbatore district|Coimbatore]]
+!116
+|[[Sulur Assembly constituency|Sulur]]
+|-
+!117
+|[[Kaundampalayam|Kavundampalayam]]
+|-
+!118
+|[[Coimbatore North Assembly constituency|Coimbatore (North)]]
+|-
+!119
+|[[Thondamuthur Assembly constituency|Thondamuthur]]
+|-
+!120
+|[[Coimbatore South Assembly constituency|Coimbatore (South)]]
+|-
+!121
+|[[Singanallur]]
+|-
+!122
+|[[Kinathukadavu Assembly constituency|Kinathukadavu]]
+|-
+!123
+|[[Pollachi Assembly constituency|Pollachi]]
+|-
+!124
+|[[Valparai Assembly constituency|Valparai]] (SC)
+|-
+| rowspan="2" |[[Tiruppur district|Tiruppur]]
+!125
+|[[Udumalaipettai Assembly constituency|Udumalaipettai]]
+|-
+!126
+|[[Madathukulam Assembly constituency|Madathukulam]]
+|-
+| rowspan="7" |[[Dindigul district|Dindigul]]
+!127
+|[[Palani Assembly constituency|Palani]]
+|-
+!128
+|[[Oddanchatram Assembly constituency|Oddanchatram]]
+|-
+!129
+|[[Athoor Assembly constituency|Athoor]]
+|-
+!130
+|[[Nilakottai Assembly constituency|Nilakottai]] (SC)
+|-
+!131
+|[[Natham Assembly constituency|Natham]]
+|-
+!132
+|[[Dindigul Assembly constituency|Dindigul]]
+|-
+!133
+|[[Vedasandur Assembly constituency|Vedasandur]]
+|-
+| rowspan="4" |[[Karur district|Karur]]
+!134
+|[[Aravakurichi Assembly constituency|Aravakurichi]]
+|-
+!135
+|[[Karur Assembly constituency|Karur]]
+|-
+!136
+|[[Krishnarayapuram Assembly constituency|Krishnarayapuram]] (SC)
+|-
+!137
+|[[Kulithalai Assembly constituency|Kulithalai]]
+|-
+| rowspan="9" |[[Tiruchirappalli district|Tiruchirappalli]]
+!138
+|[[Manapaarai Assembly constituency|Manapaarai]]
+|-
+!139
+|[[Srirangam Assembly constituency|Srirangam]]
+|-
+!140
+|[[Tiruchirappalli West Assembly constituency|Tiruchirappalli (West)]]
+|-
+!141
+|[[Tiruchirappalli East Assembly constituency|Tiruchirappalli (East)]]
+|-
+!142
+|[[Thiruverumbur Assembly constituency|Thiruverumbur]]
+|-
+!143
+|[[Lalgudi Assembly constituency|Lalgudi]]
+|-
+!144
+|[[Manachanallur Assembly constituency|Manachanallur]]
+|-
+!145
+|[[Musiri Assembly constituency|Musiri]]
+|-
+!146
+|[[Thuraiyur Assembly constituency|Thuraiyur]] (SC)
+|-
+| rowspan="2" |[[Perambalur district|Perambalur]]
+!147
+|[[Perambalur Assembly constituency|Perambalur]] (SC)
+|-
+!148
+|[[Kunnam Assembly constituency|Kunnam]]
+|-
+| rowspan="2" |[[Ariyalur district|Ariyalur]]
+!149
+|[[Ariyalur Assembly constituency|Ariyalur]]
+|-
+!150
+|[[Jayankondam Assembly constituency|Jayankondam]]
+|-
+| rowspan="9" |[[Cuddalore district|Cuddalore]]
+!151
+|[[Tittakudi Assembly constituency|Tittakudi]] (SC)
+|-
+!152
+|[[Virudhachalam Assembly constituency|Virudhachalam]]
+|-
+!153
+|[[Neyveli Assembly constituency|Neyveli]]
+|-
+!154
+|[[Panruti Assembly constituency|Panruti]]
+|-
+!155
+|[[Cuddalore Assembly constituency|Cuddalore]]
+|-
+!156
+|[[Kurinjipadi Assembly constituency|Kurinjipadi]]
+|-
+!157
+|[[Bhuvanagiri Assembly constituency|Bhuvanagiri]]
+|-
+!158
+|[[Chidambaram Assembly constituency|Chidambaram]]
+|-
+!159
+|[[Kattumannarkoil Assembly constituency|Kattumannarkoil]] (SC)
+|-
+| rowspan="3" |[[Mayiladuthurai district|Mayiladuthurai]]
+!160
+|[[Sirkazhi Assembly constituency|Sirkazhi]] (SC)
+|-
+!161
+|[[Mayiladuturai Assembly constituency|Mayiladuturai]]
+|-
+!162
+|[[Poompuhar Assembly constituency|Poompuhar]]
+|-
+| rowspan="3" |[[Nagapattinam district|Nagapattinam]]
+!163
+|[[Nagapattinam Assembly constituency|Nagapattinam]]
+|-
+!164
+|[[Kilvelur Assembly constituency|Kilvelur]] (SC)
+|-
+!165
+|[[Vedaranyam Assembly constituency|Vedaranyam]]
+|-
+| rowspan="4" |[[Tiruvarur district|Tiruvarur]]
+!166
+|[[Thiruthuraipoondi Assembly constituency|Thiruthuraipoondi]] (SC)
+|-
+!167
+|[[Mannargudi Assembly constituency|Mannargudi]]
+|-
+!168
+|[[Tiruvarur Assembly constituency|Thiruvarur]]
+|-
+!169
+|[[Nannilam Assembly constituency|Nannilam]]
+|-
+| rowspan="8" |[[Thanjavur district|Thanjavur]]
+!170
+|[[Thiruvidamarudur|Thiruvidaimarudur]] (SC)
+|-
+!171
+|[[Kumbakonam Assembly constituency|Kumbakonam]]
+|-
+!172
+|[[Papanasam Assembly constituency|Papanasam]]
+|-
+!173
+|[[Tiruvaiyaru Assembly constituency|Thiruvaiyaru]]
+|-
+!174
+|[[Thanjavur Assembly constituency|Thanjavur]]
+|-
+!175
+|[[Orathanad Assembly constituency|Orathanadu]]
+|-
+!176
+|[[Pattukkottai Assembly constituency|Pattukkottai]]
+|-
+!177
+|[[Peravurani Assembly constituency|Peravurani]]
+|-
+| rowspan="6" |[[Pudukkottai district|Pudukkottai]]
+!178
+|[[Gandarvakottai Assembly constituency|Gandarvakottai]] (SC)
+|-
+!179
+|[[Viralimalai Assembly constituency|Viralimalai]]
+|-
+!180
+|[[Pudukkottai Assembly constituency|Pudukkottai]]
+|-
+!181
+|[[Tirumayam Assembly constituency|Thirumayam]]
+|-
+!182
+|[[Alangudi Assembly constituency|Alangudi]]
+|-
+!183
+|[[Arantangi Assembly constituency|Aranthangi]]
+|-
+| rowspan="4" |[[Sivaganga district|Sivaganga]]
+!184
+|[[Karaikudi Assembly constituency|Karaikudi]]
+|-
+!185
+|[[Tiruppattur, Sivaganga Assembly constituency|Tiruppattur]]
+|-
+!186
+|[[Sivaganga Assembly constituency|Sivaganga]]
+|-
+!187
+|[[Manamadurai Assembly constituency|Manamadurai]] (SC)
+|-
+| rowspan="10" |[[Madurai district|Madurai]]
+!188
+|[[Melur Assembly constituency|Melur]]
+|-
+!189
+|[[Madurai East Assembly constituency|Madurai East]]
+|-
+!190
+|[[Sholavandan Assembly constituency|Sholavandan]] (SC)
+|-
+!191
+|[[Madurai North Assembly constituency|Madurai North]]
+|-
+!192
+|[[Madurai South Assembly constituency|Madurai South]]
+|-
+!193
+|[[Madurai Central]]
+|-
+!194
+|[[Madurai West Assembly constituency|Madurai West]]
+|-
+!195
+|[[Thiruparankundram Assembly constituency|Thiruparankundram]]
+|-
+!196
+|[[Tirumangalam Assembly constituency|Thirumangalam]]
+|-
+!197
+|[[Usilampatti Assembly constituency|Usilampatti]]
+|-
+| rowspan="4" |[[Theni district|Theni]]
+!198
+|[[Andipatti Assembly constituency|Andipatti]]
+|-
+!199
+|[[Periyakulam Assembly constituency|Periyakulam]] (SC)
+|-
+!200
+|[[Bodinayakkanur Assembly constituency|Bodinayakanur]]
+|-
+!201
+|[[Cumbum Assembly constituency|Cumbum]]
+|-
+| rowspan="7" |[[Virudhunagar district|Virudhunagar]]
+!202
+|[[Rajapalayam Assembly constituency|Rajapalayam]]
+|-
+!203
+|[[Srivilliputhur Assembly constituency|Srivilliputhur]] (SC)
+|-
+!204
+|[[Sattur Assembly constituency|Sattur]]
+|-
+!205
+|[[Sivakasi Assembly constituency|Sivakasi]]
+|-
+!206
+|[[Virudhunagar Assembly constituency|Virudhunagar]]
+|-
+!207
+|[[Aruppukottai Assembly constituency|Aruppukkottai]]
+|-
+!208
+|[[Tiruchuli Assembly constituency|Tiruchuli]]
+|-
+| rowspan="4" |[[Ramanathapuram district|Ramanathapuram]]
+!209
+|[[Paramakudi Assembly constituency|Paramakudi]] (SC)
+|-
+!210
+|[[Tiruvadanai Assembly constituency|Tiruvadanai]]
+|-
+!211
+|[[Ramanathapuram Assembly constituency|Ramanathapuram]]
+|-
+!212
+|[[Mudukulathur Assembly constituency|Mudhukulathur]]
+|-
+| rowspan="6" |[[Thoothukudi district|Thoothukudi]]
+!213
+|[[Vilathikulam Assembly constituency|Vilathikulam]]
+|-
+!214
+|[[Thoothukkudi Assembly constituency|Thoothukkudi]]
+|-
+!215
+|[[Tiruchendur Assembly constituency|Tiruchendur]]
+|-
+!216
+|[[Srivaikuntam Assembly constituency|Srivaikuntam]]
+|-
+!217
+|[[Ottapidaram Assembly constituency|Ottapidaram]] (SC)
+|-
+!218
+|[[Kovilpatti Assembly constituency|Kovilpatti]]
+|-
+| rowspan="5" |[[Tenkasi district|Tenkasi]]
+!219
+|[[Sankarankoil Assembly constituency|Sankarankovil]] (SC)
+|-
+!220
+|[[Vasudevanallur Assembly constituency|Vasudevanallur]] (SC)
+|-
+!221
+|[[Kadayanallur Assembly constituency|Kadayanallur]]
+|-
+!222
+|[[Tenkasi Assembly constituency|Tenkasi]]
+|-
+!223
+|[[Alangulam Assembly constituency|Alangulam]]
+|-
+| rowspan="5" |[[Tirunelveli district|Tirunelveli]]
+!224
+|[[Tirunelveli Assembly constituency|Tirunelveli]]
+|-
+!225
+|[[Ambasamudram Assembly constituency|Ambasamudram]]
+|-
+!226
+|[[Palayamkottai Assembly constituency|Palayamkottai]]
+|-
+!227
+|[[Nanguneri Assembly constituency|Nanguneri]]
+|-
+!228
+|[[Radhapuram Assembly constituency|Radhapuram]]
+|-
+| rowspan="6" |[[Kanyakumari district|Kanyakumari]]
+!229
+|[[Kanyakumari Assembly constituency|Kanniyakumari]]
+|-
+!230
+|[[Nagercoil Assembly constituency|Nagercoil]]
+|-
+!231
+|[[Colachel Assembly constituency|Colachal]]
+|-
+!232
+|[[Padmanabhapuram Assembly constituency|Padmanabhapuram]]
+|-
+!233
+|[[Vilavancode Assembly constituency|Vilavancode]]
+|-
+!234
+|[[Killiyoor Assembly constituency|Killiyoor]]
+|}
+
+== Campaign ==
+On 1 June 2025, DMK president and chief minister [[M. K. Stalin]] launched 'Oraniyil Tamil Nadu' (Tamil Nadu as one team), an enrollment drive to add new party members and urged the party cadres to enroll at least 30% of voters in each polling booth to the party through a door-to-door outreach.<ref>{{cite news |date=2 June 2025 |title=DMK launched ‘Oraniyil Tamil Nadu’ enrolment drive |url=https://timesofindia.indiatimes.com/city/madurai/dmk-launched-oraniyil-tamil-nadu-enrolment-drive/articleshow/121555410.cms |access-date=1 January 2026 |work=[[The Times of India]] |issn=0971-8257}}</ref><ref>{{cite news |date=2 July 2025 |title=CM Stalin launches Oraniyil Tamil Nadu, does not rule out more parties joining DMK bloc |url=https://www.newindianexpress.com/states/tamil-nadu/2025/Jul/02/cm-stalin-launches-oraniyil-tamil-nadu-does-not-rule-out-more-parties-joining-dmk-bloc |access-date=1 January 2026 |work=[[The New Indian Express]] }}</ref>
+
+On 7 July 2025, AIADMK general secretary Palaniswami launched a statewide campaign with the slogan 'Let's Protect the People, Let's Save Tamil Nadu'.<ref>{{cite news |agency=ANI |date=5 July 2025 |title=EPS launches AIADMK campaign logo for 2026 TN polls, gives out call to ‘remove evil DMK govt’ |url=https://theprint.in/india/eps-launches-aiadmk-campaign-logo-for-2026-tn-polls-gives-out-call-to-remove-evil-dmk-govt/2680644/ |access-date=8 November 2025 |work=[[ThePrint]] }}</ref><ref>{{cite news |title=AIADMK General Secretary Edappadi K. Palaniswami launches 'Let's Protect the People, Let's Save Tamil Nadu' ahead of Tamil Nadu Assembly election |url=https://www.aninews.in/news/national/general-news/aiadmk-general-secretary-edappadi-k-palaniswami-launches-lets-protect-the-people-lets-save-tamil-nadu-ahead-of-tamil-nadu-assembly-election20250707112508/ |access-date=8 November 2025 |work=[[ANI News]] }}</ref>
+
+On 13 September 2025, TVK president Vijay launched his party's election campaign in [[Tiruchirappalli]], with subsequent rallies planned on weekends.<ref>{{cite news |date=14 September 2025 |title=‘Vijay is coming’: Tamil star kicks off Assembly poll campaign, targets DMK and BJP over broken promises |url=https://indianexpress.com/article/political-pulse/vijay-kicks-off-campaign-in-trichy-blasts-dmk-and-bjp-over-broken-promises-10248461/ |access-date=8 November 2025 |work=[[The Indian Express]]}}</ref><ref>{{cite news |date=13 September 2025 |title=Vijay launches election campaign in Trichy, says TVK will make only practical and implementable promises |url=https://timesofindia.indiatimes.com/city/trichy/vijay-launches-election-campaign-in-trichy-says-tvk-will-make-only-practical-and-implementable-promises/articleshow/123869217.cms |access-date=8 November 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref> However, following a [[2025 Karur crowd crush|crowd crush]] that resulted in the deaths of 41 people and injuries to 80-120 others, during a political rally hosted by he TVK in [[Karur]], he suspended the campaign temporarily.<ref>{{cite news |date=28 September 2025 |title=39 die in stampede during TVK leader Vijay's Karur campaign |url=https://timesofindia.indiatimes.com/city/chennai/10-die-in-stampede-like-situation-during-tvk-leader-vijays-karur-campaign/articleshow/124183777.cms |access-date=30 October 2025 |work=[[The Times of India]] |issn=0971-8257}}</ref><ref>{{cite news |date=27 September 2025 |title=TVK rally stampede highlights: Madurai Bench of Madras High Court to hear TVK's case on September 29 |url=https://www.thehindu.com/news/national/tamil-nadu/tvk-vijay-rally-karur-updates-on-september-27-2025/article70102676.ece |access-date=30 October 2025 |work=[[The Hindu]] }}</ref>
+
+Following an order of the [[Madras High Court]],<ref>{{cite news |url=https://www.ndtv.com/chennai-news/no-one-above-law-court-orders-making-rules-for-rallies-by-political-parties-9302892 |title=Court Orders Making Rules For Rallies By Political Parties |work=[[NDTV]] |date=18 September 2025 |access-date=30 October 2025}}</ref> the [[Government of Tamil Nadu]] announced new rules and guidelines for political rallies in the state in January 2026.<ref>{{cite news |url=https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-notifies-sop-for-political-meetings-rallies-other-large-public-gatherings/article70479181.ece |title=Tamil Nadu government notifies SOP for political meetings, rallies, other large public gatherings |work=[[The Hindu]] |date=7 January 2026 |access-date=10 January 2026}}</ref>
+
+== Surveys and polls ==
+=== Opinion polls ===
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Vote share projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of error
+| bgcolor="{{party color|Secular Progressive Alliance}}" |
+| bgcolor="{{party color|AIADMK-led Alliance}}" |
+| bgcolor="{{party color|Others}}"|
+! rowspan="2" | Lead
+|-
+! [[Secular Progressive Alliance|SPA]]
+! [[AIADMK-led Alliance|AIADMK+]]
+! Others
+|}
+
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Seat projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of error
+| bgcolor="{{party color|Secular Progressive Alliance}}" |
+| bgcolor="{{party color|AIADMK-led Alliance}}" |
+| bgcolor="{{party color|Others}}"|
+! rowspan="2" | Lead
+|-
+! [[Secular Progressive Alliance|SPA]]
+! [[AIADMK-led Alliance|AIADMK+]]
+! Others
+|}
+
+=== Exit polls ===
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Vote share projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of error
+| bgcolor="{{party color|Secular Progressive Alliance}}" |
+| bgcolor="{{party color|AIADMK-led Alliance}}" |
+| bgcolor="{{party color|Others}}"|
+! rowspan="2" | Lead
+|-
+! [[Secular Progressive Alliance|SPA]]
+! [[AIADMK-led Alliance|AIADMK+]]
+! Others
+|}
+
+==Results==
+===Results by alliance or party===
+{| class="wikitable sortable" style="text-align:left;"
+!colspan="4" rowspan="2"|Alliance/ Party
+!colspan="3"|Popular vote
+! colspan="3" |Seats
+|-
+!Votes
+!%
+!±[[Percentage point|pp]]
+!Contested 
+!Won
+!'''+/−'''
+|-
+|rowspan="10" {{Party color cell|Secular Progressive Alliance}}
+|rowspan="10" |[[Secular Progressive Alliance|SPA]]
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|[[Dravida Munnetra Kazhagam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Indian National Congress}}
+|[[Indian National Congress]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Desiya Murpokku Dravida Kazhagam}}
+|[[Desiya Murpokku Dravida Kazhagam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Communist Party of India (Marxist)}}
+|[[Communist Party of India (Marxist)]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Communist Party of India}}
+|[[Communist Party of India]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Indian Union Muslim League}}
+|[[Indian Union Muslim League]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Makkal Needhi Maiam}}
+|[[Makkal Needhi Maiam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Marumalarchi Dravida Munnetra Kazhagam}}
+|[[Marumalarchi Dravida Munnetra Kazhagam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Viduthalai Chiruthaigal Katchi}}
+|[[Viduthalai Chiruthaigal Katchi]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|colspan="2"style="background:#FFE6E6"|Total
+|style="color:inherit;background:#FFE6E6"|{{formatnum:}}
+|style="color:inherit;background:#FFE6E6"|
+|style="color:inherit;background:#FFE6E6"|
+|style="color:inherit;background:#FFE6E6"|
+|style="color:inherit;background:#FFE6E6"|
+|style="color:inherit;background:#FFE6E6"|
+|-
+|rowspan="6" {{Party color cell|AIADMK-led Alliance}}
+|rowspan="6" |[[AIADMK-led Alliance|AIADMK+]]
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Bharatiya Janata Party}}
+|[[Bharatiya Janata Party]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Pattali Makkal Katchi}}
+|[[Pattali Makkal Katchi]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Amma Makkal Munnetra Kazhagam}}
+|[[Amma Makkal Munnetra Kazhagam]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Tamil Maanila Congress (Moopanar)}}
+|[[Tamil Maanila Congress (Moopanar)]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|colspan="2"style="background:#cce6d8"|Total
+|style="color:inherit;background:#cce6d8"|{{formatnum:}}
+|style="color:inherit;background:#cce6d8"|
+|style="color:inherit;background:#cce6d8"|
+|style="color:inherit;background:#cce6d8"|
+|style="color:inherit;background:#cce6d8"|
+|style="color:inherit;background:#cce6d8"|
+|-
+|{{Party color cell|Other parties}}
+|colspan="3"|[[2026 Tamil Nadu Legislative Assembly election#Others|Other parties]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Independent (politician)}}
+|colspan="3"|[[Independent (politician)|Independents]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|style="background:Black; color:White"|
+|colspan="3"|[[None of the above (India)|NOTA]]
+|{{formatnum:}}
+|
+|
+! style="background-color:#E9E9E9" |
+! style="background-color:#E9E9E9" |
+|
+|-
+!colspan="4"|Total
+!{{formatnum:}}
+!%
+! — 
+!
+!
+! —
+|-
+|}
+
+===Results by district===
+{| class="wikitable" style="text-align:center;"
+! rowspan="2"|District
+! rowspan="2"|Seats
+| style="color:inherit;background:{{party color|Secular Progressive Alliance}}" |
+| style="color:inherit;background:{{party color|AIADMK-led Alliance}}" |
+| style="color:inherit;background:{{party color|Others}}"|
+|-
+![[Secular Progressive Alliance|SPA]]
+! [[AIADMK-led Alliance|AIADMK+]]
+!Others
+|-
+![[Thiruvallur district|Thiruvallur]]
+!6
+|
+|
+|
+|-
+![[Chennai district|Chennai]]
+!22
+|
+|
+|
+|-
+![[Kancheepuram district|Kancheepuram]]
+!3
+|
+|
+|
+|-
+![[Chengalpattu district|Chengalpattu]]
+!6
+|
+|
+|
+|-
+![[Ranipet district|Ranipet]]
+!4
+|
+|
+|
+|-
+![[Vellore district|Vellore]]
+!5
+|
+|
+|
+|-
+![[Tirupathur district|Thirupattur]]
+!4
+|
+|
+|
+|-
+![[Krishnagiri district|Krishnagiri]]
+!6
+|
+|
+|
+|-
+![[Dharmapuri district|Dharmapuri]]
+!5
+|
+|
+|
+|-
+![[Thiruvanamalai district|Thiruvanamalai]]
+!8
+|
+|
+|
+|-
+![[Villupuram district|Villupuram]]
+!7
+|
+|
+|
+|-
+![[Kallakurichi district|Kallakurichi]]
+!4
+|
+|
+|
+|-
+![[Salem district|Salem]]
+!11
+|
+|
+|
+|-
+![[Namakkal district|Namakkal]]
+!6
+|
+|
+|
+|-
+![[Erode district|Erode]]
+!8
+|
+|
+|
+|-
+![[Nilgiris district|Nilgiris]]
+!3
+|
+|
+|
+|-
+![[Thiruppur district|Thiruppur]]
+!8
+|
+|
+|
+|-
+![[Coimbatore district|Coimbatore]]
+!10
+|
+|
+|
+|-
+![[Dindigul district|Dindigal]]
+!7
+|
+|
+|
+|-
+![[Karur district|Karur]]
+!4
+|
+|
+|
+|-
+![[Tiruchirapalli district|Tiruchirapalli]]
+!9
+|
+|
+|
+|-
+![[Perambalur district|Perambalur]]
+!2
+|
+|
+|
+|-
+![[Ariyalur district|Ariyalur]]
+!2
+|
+|
+|
+|-
+![[Cuddalore district|Cuddalore]]
+!9
+|
+|
+|
+|-
+![[Mayiladuthurai district|Mayiladuthurai]]
+!3
+|
+|
+|
+|-
+![[Nagapattinam district|Nagapattinam]]
+!3
+|
+|
+|
+|-
+![[Thiruvarur district|Thiruvarur]]
+!4
+|
+|
+|
+|-
+![[Thanjavur district|Thanjavur]]
+!8
+|
+|
+|
+|-
+![[Pudukottai district|Pudukottai]]
+!6
+|
+|
+|
+|-
+![[Sivaganga district|Sivaganga]]
+!4
+|
+|
+|
+|-
+![[Madurai district|Madurai]]
+!10
+|
+|
+|
+|-
+![[Theni district|Theni]]
+!4
+|
+|
+|
+|-
+![[Virudhunagar district|Virudhunagar]]
+!7
+|
+|
+|
+|-
+![[Ramanathapuram district|Ramanathapuram]]
+!4
+|
+|
+|
+|-
+![[Thoothukudi district|Thoothukudi]]
+!6
+|
+|
+|
+|-
+![[Tenkasi district|Tenkasi]]
+!5
+|
+|
+|
+|-
+![[Tirunelveli district|Tirunelveli]]
+!5
+|
+|
+|
+|-
+![[Kanyakumari district|Kanyakumari]]
+!6
+|
+|
+|
+|-
+!Total
+!234
+!
+!
+!
+|}
+
+===Results by constituency===
+{| class="wikitable"
+! rowspan="2" |District
+! colspan="2" |Constituency
+! colspan="5" |Winner
+! colspan="5" |Runner Up
+! rowspan="2" |Margin
+|-
+! No.
+! Name{{efn|name=Reserved}}
+! Candidate
+! colspan="2" |Party
+! Votes
+! %
+! Candidate
+! colspan="2" |Party
+! Votes
+! %
+|-
+|rowspan=6|[[Tiruvallur district|Tiruvallur]]
+!1
+|[[Gummidipoondi Assembly constituency|Gummidipoondi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!2
+|[[Ponneri Assembly constituency|Ponneri]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!3
+|[[Tiruttani Assembly constituency|Tiruttani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!4
+|[[Thiruvallur Assembly constituency|Thiruvallur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!5
+|[[Poonamallee Assembly constituency|Poonamallee]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!6
+|[[Avadi Assembly constituency|Avadi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|rowspan="22" |[[Chennai district|Chennai]]
+!7
+|[[Maduravoyal Assembly constituency|Maduravoyal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!8
+|[[Ambattur Assembly constituency|Ambattur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!9
+|[[Madavaram Assembly constituency|Madavaram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!10
+|[[Thiruvottiyur Assembly constituency|Thiruvottiyur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!11
+|[[Radhakrishnan Nagar Assembly constituency|Dr. Radhakrishnan Nagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!12
+|[[Perambur Assembly constituency|Perambur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!13
+|[[Kolathur Assembly constituency|Kolathur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!14
+|[[Villivakkam Assembly constituency|Villivakkam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!15
+|[[Thiru. Vi. Ka. Nagar Assembly constituency|Thiru-Vi-Ka-Nagar]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!16
+|[[Egmore Assembly constituency|Egmore]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!17
+|[[Royapuram Assembly constituency|Royapuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!18
+|[[Harbour Assembly constituency|Harbour]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!19
+|[[Chepauk-Thiruvallikeni]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!20
+|[[Thousand Lights]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!21
+|[[Anna Nagar Assembly constituency|Anna Nagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!22
+|[[Virugampakkam Assembly constituency|Virugambakkam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!23
+|[[Saidapet Assembly constituency|Saidapet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!24
+|[[Thiyagarayanagar Assembly constituency|Thiyagarayanagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!25
+|[[Mylapore Assembly constituency|Mylapore]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!26
+|[[Velachery Assembly constituency|Velachery]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!27
+|[[Sholinganallur Assembly constituency|Shozhinganallur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!28
+|[[Alandur Assembly constituency|Alandur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Kanchipuram district|Kanchipuram]]
+!29
+|[[Sriperumbudur Assembly constituency|Sriperumbudur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Chengalpattu district|Chengalpattu]]
+!30
+|[[Pallavaram Assembly constituency|Pallavaram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!31
+|[[Tambaram Assembly constituency|Tambaram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!32
+|[[Chengalpattu Assembly constituency|Chengalpattu]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!33
+|[[Thiruporur Assembly constituency|Thiruporur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!34
+|[[Cheyyur Assembly constituency|Cheyyur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!35
+|[[Maduranthakam Assembly constituency|Madurantakam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Kanchipuram district|Kanchipuram]]
+!36
+|[[Uthiramerur Assembly constituency|Uthiramerur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!37
+|[[Kancheepuram Assembly constituency|Kancheepuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Ranipet district|Ranipet]]
+!38
+|[[Arakkonam Assembly constituency|Arakkonam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!39
+|[[Sholingur Assembly constituency|Sholinghur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Vellore district|Vellore]]
+!40
+|[[Katpadi Assembly constituency|Katpadi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Ranipet district|Ranipet]]
+!41
+|[[Ranipet Assembly constituency|Ranipet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!42
+|[[Arcot Assembly constituency|Arcot]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Vellore district|Vellore]]
+!43
+|[[Vellore Assembly constituency|Vellore]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!44
+|[[Anaicut Assembly constituency|Anaikattu]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!45
+|[[Kilvaithinankuppam Assembly constituency|Kilvaithinankuppam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!46
+|[[Gudiyatham Assembly constituency|Gudiyattam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Tirupathur district|Tirupathur]]
+!47
+|[[Vaniyambadi Assembly constituency|Vaniyambadi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!48
+|[[Ambur Assembly constituency|Ambur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!49
+|[[Jolarpet Assembly constituency|Jolarpet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!50
+|[[Tiruppattur, Vellore Assembly constituency|Tirupattur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Krishnagiri district|Krishnagiri]]
+!51
+|[[Uthangarai Assembly constituency|Uthangarai]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!52
+|[[Bargur Assembly constituency|Bargur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!53
+|[[Krishnagiri Assembly constituency|Krishnagiri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!54
+|[[Veppanahalli]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!55
+|[[Hosur Assembly constituency|Hosur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!56
+|[[Thalli Assembly constituency|Thalli]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" |[[Dharmapuri district|Dharmapuri]]
+!57
+|[[Palacode Assembly constituency|Palacode]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!58
+|[[Pennagaram Assembly constituency|Pennagaram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!59
+|[[Dharmapuri, Tamil Nadu Assembly constituency|Dharmapuri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!60
+|[[Pappireddipatti Assembly constituency|Pappireddippatti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!61
+|[[Harur Assembly constituency|Harur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="8" |[[Tiruvannamalai district|Tiruvannamalai]]
+!62
+|[[Chengam Assembly constituency|Chengam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!63
+|[[Tiruvannamalai Assembly constituency|Tiruvannamalai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!64
+|[[Kilpennathur Assembly constituency|Kilpennathur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!65
+|[[Kalasapakkam Assembly constituency|Kalasapakkam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!66
+|[[Polur Assembly constituency|Polur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!67
+|[[Arani Assembly constituency|Arani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!68
+|[[Cheyyar Assembly constituency|Cheyyar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!69
+|[[Vandavasi Assembly constituency|Vandavasi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="7" |[[Viluppuram district|Viluppuram]]
+!70
+|[[Gingee Assembly constituency|Gingee]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!71
+|[[Mailam Assembly constituency|Mailam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!72
+|[[Tindivanam Assembly constituency|Tindivanam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!73
+|[[Vanur Assembly constituency|Vanur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!74
+|[[Villupuram Assembly constituency|Villupuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!75
+|[[Vikravandi Assembly constituency|Vikravandi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!76
+|[[Tirukkoyilur Assembly constituency|Tirukkoyilur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Kallakurichi district|Kallakurichi]]
+!77
+|[[Ulundurpet Assembly constituency|Ulundurpettai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!78
+|[[Rishivandiyam Assembly constituency|Rishivandiyam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!79
+|[[Sankarapuram Assembly constituency|Sankarapuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!80
+|[[Kallakurichi Assembly constituency|Kallakurichi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="11" |[[Salem district|Salem]]
+!81
+|[[Gangavalli Assembly constituency|Gangavalli]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!82
+|[[Attur Assembly constituency|Attur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!83
+|[[Yercaud Assembly constituency|Yercaud]] (ST)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!84
+|[[Omalur Assembly constituency|Omalur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!85
+|[[Mettur Assembly constituency|Mettur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!86
+|[[Edappadi Assembly constituency|Edappadi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!87
+|[[Sankari Assembly constituency|Sankari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!88
+|[[Salem West|Salem (West)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!89
+|[[Salem North|Salem (North)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!90
+|[[Salem South|Salem (South)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!91
+|[[Veerapandi Assembly constituency|Veerapandi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Namakkal district|Namakkal]]
+!92
+|[[Rasipuram Assembly constituency|Rasipuram]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!93
+|[[Senthamangalam Assembly constituency|Senthamangalam]] (ST)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!94
+|[[Namakkal Assembly constituency|Namakkal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!95
+|[[Paramathi-Velur Assembly constituency|Paramathi Velur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!96
+|[[Tiruchengode Assembly constituency|Tiruchengodu]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!97
+|[[Kumarapalayam Assembly constituency|Kumarapalayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="3" |[[Erode district|Erode]]
+!98
+|[[Erode East|Erode (East)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!99
+|[[Erode West|Erode (West)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!100
+|[[Modakkurichi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Tiruppur district|Tiruppur]]
+!101
+|[[Dharapuram Assembly constituency|Dharapuram]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!102
+|[[Kangayam Assembly constituency|Kangayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" |[[Erode district|Erode]]
+!103
+|[[Perundurai Assembly constituency|Perundurai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!104
+|[[Bhavani Assembly constituency|Bhavani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!105
+|[[Anthiyur Assembly constituency|Anthiyur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!106
+|[[Gobichettipalayam Assembly constituency|Gobichettipalayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!107
+|[[Bhavanisagar Assembly constituency|Bhavanisagar]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="3" |[[Nilgiris district|Nilgiris]]
+!108
+|[[Udagamandalam Assembly constituency|Udhagamandalam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!109
+|[[Gudalur Assembly constituency|Gudalur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!110
+|[[Coonoor Assembly constituency|Coonoor]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Coimbatore district|Coimbatore]]
+!111
+|[[Mettupalayam Assembly constituency|Mettupalayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Tiruppur district|Tiruppur]]
+!112
+|[[Avanashi Assembly constituency|Avanashi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!113
+|[[Tiruppur North Assembly constituency|Tiruppur (North)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!114
+|[[Tiruppur South Assembly constituency|Tiruppur (South)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!115
+|[[Palladam Assembly constituency|Palladam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" |[[Coimbatore district|Coimbatore]]
+!116
+|[[Sulur Assembly constituency|Sulur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!117
+|[[Kaundampalayam|Kavundampalayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!118
+|[[Coimbatore North Assembly constituency|Coimbatore (North)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!119
+|[[Thondamuthur Assembly constituency|Thondamuthur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!120
+|[[Coimbatore South Assembly constituency|Coimbatore (South)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!121
+|[[Singanallur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!122
+|[[Kinathukadavu Assembly constituency|Kinathukadavu]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!123
+|[[Pollachi Assembly constituency|Pollachi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!124
+|[[Valparai Assembly constituency|Valparai]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Tiruppur district|Tiruppur]]
+!125
+|[[Udumalaipettai Assembly constituency|Udumalaipettai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!126
+|[[Madathukulam Assembly constituency|Madathukulam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="7" |[[Dindigul district|Dindigul]]
+!127
+|[[Palani Assembly constituency|Palani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!128
+|[[Oddanchatram Assembly constituency|Oddanchatram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!129
+|[[Athoor Assembly constituency|Athoor]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!130
+|[[Nilakottai Assembly constituency|Nilakottai]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!131
+|[[Natham Assembly constituency|Natham]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!132
+|[[Dindigul Assembly constituency|Dindigul]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!133
+|[[Vedasandur Assembly constituency|Vedasandur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Karur district|Karur]]
+!134
+|[[Aravakurichi Assembly constituency|Aravakurichi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!135
+|[[Karur Assembly constituency|Karur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!136
+|[[Krishnarayapuram Assembly constituency|Krishnarayapuram]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!137
+|[[Kulithalai Assembly constituency|Kulithalai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" |[[Tiruchirappalli district|Tiruchirappalli]]
+!138
+|[[Manapaarai Assembly constituency|Manapaarai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!139
+|[[Srirangam Assembly constituency|Srirangam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!140
+|[[Tiruchirappalli West Assembly constituency|Tiruchirappalli (West)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!141
+|[[Tiruchirappalli East Assembly constituency|Tiruchirappalli (East)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!142
+|[[Thiruverumbur Assembly constituency|Thiruverumbur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!143
+|[[Lalgudi Assembly constituency|Lalgudi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!144
+|[[Manachanallur Assembly constituency|Manachanallur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!145
+|[[Musiri Assembly constituency|Musiri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!146
+|[[Thuraiyur Assembly constituency|Thuraiyur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Perambalur district|Perambalur]]
+!147
+|[[Perambalur Assembly constituency|Perambalur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!148
+|[[Kunnam Assembly constituency|Kunnam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="2" |[[Ariyalur district|Ariyalur]]
+!149
+|[[Ariyalur Assembly constituency|Ariyalur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!150
+|[[Jayankondam Assembly constituency|Jayankondam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" |[[Cuddalore district|Cuddalore]]
+!151
+|[[Tittakudi Assembly constituency|Tittakudi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!152
+|[[Virudhachalam Assembly constituency|Virudhachalam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!153
+|[[Neyveli Assembly constituency|Neyveli]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!154
+|[[Panruti Assembly constituency|Panruti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!155
+|[[Cuddalore Assembly constituency|Cuddalore]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!156
+|[[Kurinjipadi Assembly constituency|Kurinjipadi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!157
+|[[Bhuvanagiri Assembly constituency|Bhuvanagiri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!158
+|[[Chidambaram Assembly constituency|Chidambaram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!159
+|[[Kattumannarkoil Assembly constituency|Kattumannarkoil]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="3" |[[Mayiladuthurai district|Mayiladuthurai]]
+!160
+|[[Sirkazhi Assembly constituency|Sirkazhi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!161
+|[[Mayiladuturai Assembly constituency|Mayiladuturai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!162
+|[[Poompuhar Assembly constituency|Poompuhar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="3" |[[Nagapattinam district|Nagapattinam]]
+!163
+|[[Nagapattinam Assembly constituency|Nagapattinam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!164
+|[[Kilvelur Assembly constituency|Kilvelur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!165
+|[[Vedaranyam Assembly constituency|Vedaranyam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Tiruvarur district|Tiruvarur]]
+!166
+|[[Thiruthuraipoondi Assembly constituency|Thiruthuraipoondi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!167
+|[[Mannargudi Assembly constituency|Mannargudi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!168
+|[[Tiruvarur Assembly constituency|Thiruvarur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!169
+|[[Nannilam Assembly constituency|Nannilam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="8" |[[Thanjavur district|Thanjavur]]
+!170
+|[[Thiruvidamarudur|Thiruvidaimarudur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!171
+|[[Kumbakonam Assembly constituency|Kumbakonam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!172
+|[[Papanasam Assembly constituency|Papanasam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!173
+|[[Tiruvaiyaru Assembly constituency|Thiruvaiyaru]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!174
+|[[Thanjavur Assembly constituency|Thanjavur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!175
+|[[Orathanad Assembly constituency|Orathanadu]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!176
+|[[Pattukkottai Assembly constituency|Pattukkottai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!177
+|[[Peravurani Assembly constituency|Peravurani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Pudukkottai district|Pudukkottai]]
+!178
+|[[Gandarvakottai Assembly constituency|Gandarvakottai]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!179
+|[[Viralimalai Assembly constituency|Viralimalai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!180
+|[[Pudukkottai Assembly constituency|Pudukkottai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!181
+|[[Tirumayam Assembly constituency|Thirumayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!182
+|[[Alangudi Assembly constituency|Alangudi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!183
+|[[Arantangi Assembly constituency|Aranthangi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Sivaganga district|Sivaganga]]
+!184
+|[[Karaikudi Assembly constituency|Karaikudi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!185
+|[[Tiruppattur, Sivaganga Assembly constituency|Tiruppattur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!186
+|[[Sivaganga Assembly constituency|Sivaganga]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!187
+|[[Manamadurai Assembly constituency|Manamadurai]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="10" |[[Madurai district|Madurai]]
+!188
+|[[Melur Assembly constituency|Melur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!189
+|[[Madurai East Assembly constituency|Madurai East]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!190
+|[[Sholavandan Assembly constituency|Sholavandan]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!191
+|[[Madurai North Assembly constituency|Madurai North]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!192
+|[[Madurai South Assembly constituency|Madurai South]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!193
+|[[Madurai Central]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!194
+|[[Madurai West Assembly constituency|Madurai West]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!195
+|[[Thiruparankundram Assembly constituency|Thiruparankundram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!196
+|[[Tirumangalam Assembly constituency|Thirumangalam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!197
+|[[Usilampatti Assembly constituency|Usilampatti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Theni district|Theni]]
+!198
+|[[Andipatti Assembly constituency|Andipatti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!199
+|[[Periyakulam Assembly constituency|Periyakulam]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!200
+|[[Bodinayakkanur Assembly constituency|Bodinayakanur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!201
+|[[Cumbum Assembly constituency|Cumbum]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="7" |[[Virudhunagar district|Virudhunagar]]
+!202
+|[[Rajapalayam Assembly constituency|Rajapalayam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!203
+|[[Srivilliputhur Assembly constituency|Srivilliputhur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!204
+|[[Sattur Assembly constituency|Sattur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!205
+|[[Sivakasi Assembly constituency|Sivakasi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!206
+|[[Virudhunagar Assembly constituency|Virudhunagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!207
+|[[Aruppukottai Assembly constituency|Aruppukkottai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!208
+|[[Tiruchuli Assembly constituency|Tiruchuli]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="4" |[[Ramanathapuram district|Ramanathapuram]]
+!209
+|[[Paramakudi Assembly constituency|Paramakudi]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!210
+|[[Tiruvadanai Assembly constituency|Tiruvadanai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!211
+|[[Ramanathapuram Assembly constituency|Ramanathapuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!212
+|[[Mudukulathur Assembly constituency|Mudhukulathur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Thoothukudi district|Thoothukudi]]
+!213
+|[[Vilathikulam Assembly constituency|Vilathikulam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!214
+|[[Thoothukkudi Assembly constituency|Thoothukkudi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!215
+|[[Tiruchendur Assembly constituency|Tiruchendur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!216
+|[[Srivaikuntam Assembly constituency|Srivaikuntam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!217
+|[[Ottapidaram Assembly constituency|Ottapidaram]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!218
+|[[Kovilpatti Assembly constituency|Kovilpatti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" |[[Tenkasi district|Tenkasi]]
+!219
+|[[Sankarankoil Assembly constituency|Sankarankovil]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!220
+|[[Vasudevanallur Assembly constituency|Vasudevanallur]] (SC)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!221
+|[[Kadayanallur Assembly constituency|Kadayanallur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!222
+|[[Tenkasi Assembly constituency|Tenkasi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!223
+|[[Alangulam Assembly constituency|Alangulam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" |[[Tirunelveli district|Tirunelveli]]
+!224
+|[[Tirunelveli Assembly constituency|Tirunelveli]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!225
+|[[Ambasamudram Assembly constituency|Ambasamudram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!226
+|[[Palayamkottai Assembly constituency|Palayamkottai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!227
+|[[Nanguneri Assembly constituency|Nanguneri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!228
+|[[Radhapuram Assembly constituency|Radhapuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" |[[Kanyakumari district|Kanyakumari]]
+!229
+|[[Kanyakumari Assembly constituency|Kanniyakumari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!230
+|[[Nagercoil Assembly constituency|Nagercoil]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!231
+|[[Colachel Assembly constituency|Colachal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!232
+|[[Padmanabhapuram Assembly constituency|Padmanabhapuram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!233
+|[[Vilavancode Assembly constituency|Vilavancode]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!234
+|[[Killiyoor Assembly constituency|Killiyoor]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|}
+
+== See also ==
+* {{anl|2026 elections in India}}
+* {{anl|2026 Puducherry Legislative Assembly election}}
+* {{anl|Elections in Tamil Nadu}}
+* {{anl|Politics of Tamil Nadu}}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{Reflist}}
+{{notelist}}
+
+{{Tamil Nadu elections}}
+
+[[Category:State Assembly elections in Tamil Nadu]]
+[[Category:Future elections in India|T]]
+[[Category:2026 State Assembly elections in India|Tamil Nadu]]

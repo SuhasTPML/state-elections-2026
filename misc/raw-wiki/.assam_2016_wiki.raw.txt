@@ -1,0 +1,2452 @@
+{{Short description|Indian state election}}
+{{Use dmy dates|date=September 2018}}
+{{Infobox election
+| election_name      = 2016 Assam Legislative Assembly election
+| country            = India
+| flag_year          = 
+| flag_image         = 
+| type               = legislative
+| vote_type          = Popular <!-- default -->
+| ongoing            = no
+| party_colour       = 
+| party_name         = no
+| alliance_name      = 
+| previous_election  = 2011 Assam Legislative Assembly election
+| previous_year      = 2011
+| outgoing_members   = 
+| election_date      = 4–11 April 2016
+| elected_members    = 
+| next_election      = Elections in Assamese
+| next_year          = '''[[2021 Assam Legislative Assembly election|2021]]'''
+| votes_for_election = 
+| needed_votes       = 
+| seats_for_election = All 126 seats in the [[Assam Legislative Assembly]]
+| majority_seats     = 64
+| opinion_polls      = 
+| turnout            = 84.72% ({{increase}} 8.68pp)
+<!-- BJP -->
+<!--MAP-->
+| map_image          = {{Switcher|[[File:2016 Assam Legislative Assembly Election Results Map.svg|300px]] | Results by constituency|[[File:2016 Assam Legislative Assembly Election Alliance Wise Result Map.svg|300px]] | Results by alliance}}
+| map2               = {{Switcher|[[File:India Assam Legislative Assembly Election 2016.svg|300px]] | Partywise structure|[[File:India Assam Legislative Assembly Election Alliance Wise 2016.svg|300px]] | Alliance wise structure}}
+<!-- bottom -->
+| title              = [[List of Chief Ministers of Assam|Chief Minister]]
+| before_election    = [[Tarun Gogoi]]
+| before_party       = [[Indian National Congress|INC]]
+| after_election     = [[Sarbananda Sonowal]]
+| after_party        = [[BJP]]
+| registered         = 
+| image1             = {{CSS image crop|Image=Sarbananda Sonowal with PM Modi (cropped).jpg|bSize=100|cWidth=80|cHeight=100|oLeft=10|oTop=06}}
+| leader1            = [[Sarbananda Sonowal]]
+| party1             = [[Bharatiya Janata Party|BJP]]
+| leader_since1      = 2016
+| leaders_seat1      = [[Majuli Assembly constituency|Majuli]]
+| alliance1          = National Democratic Alliance (India)
+| last_election1     = 27
+| seats1             = '''86'''
+| seat_change1       = {{increase}} 59
+| popular_vote1      = '''7,035,724''' <br />''([[National Democratic Alliance|NDA]])''
+| percentage1        = '''41.9%'''
+| swing1             = <!-- INC -->
+| image2             = {{CSS image crop|Image=Tarun Gogoi - Kolkata 2013-02-10 4891 Cropped.JPG|bSize=100|cWidth=80|cHeight=100|oLeft=10|oTop=06}}
+| leader2            = [[Tarun Gogoi]]
+| party2             = [[Indian National Congress|INC]]
+| alliance2          = [[United Progressive Alliance|UPA]]
+| leader_since2      = 1976
+| leaders_seat2      = [[Titabar Assembly constituency|Titabar]]
+| last_election2     = 78
+| seats2             = 26
+| seat_change2       = {{decrease}} 52
+| popular_vote2      = 5,238,655 <br />''(INC)''
+| percentage2        = 31.0%
+| swing2             = <!-- AIUDF -->
+| image3             = {{CSS image crop|Image=M-badruddin-ajmal.JPG|bSize=100|cWidth=80|cHeight=100|oLeft=10|oTop=05}}
+| leader3            = [[Badruddin Ajmal]]
+| party3             = [[All India United Democratic Front|AIUDF]]
+| leader_since3      = 2005
+| leaders_seat3      = [[Salmara South Assembly constituency|Salmara South]] <br /> ''(lost)''
+| alliance3          = [[-]]
+| last_election3     = 18
+| seats3             = 13
+| seat_change3       = {{decrease}} 5
+| popular_vote3      = 2,207,945 <br />''(AIUDF)''
+| percentage3        = 13.0%
+| swing3             = 
+}}
+
+The '''[[Assam Legislative Assembly]] Election of 2016''' was held in two phases, on 4 and 11 April 2016, to elect members of the 126 constituencies in [[Assam]], a state in North-eastern India.<ref>{{cite web |url=http://indianexpress.com/article/explained/election-year-in-assam-the-most-interesting-electoral-battle-of-2016/ |title=Assembly polls in Assam: Why it's the most interesting electoral battle of 2016 |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160109144311/http://indianexpress.com/article/explained/election-year-in-assam-the-most-interesting-electoral-battle-of-2016/ |archive-date=2016-01-09 |url-status=live }}</ref> The overall voter turnout was 84.72%, which set a new record for Assam.<ref>{{cite web |url=http://www.thehindubusinessline.com/news/national/heavy-polling-points-to-polarisation/article8476381.ece |title=Heavy polling points to polarisation |access-date=2016-04-15 |archive-url=https://web.archive.org/web/20160424145944/http://www.thehindubusinessline.com/news/national/heavy-polling-points-to-polarisation/article8476381.ece |archive-date=2016-04-24 |url-status=live }}</ref><ref>{{cite web |url=http://indianexpress.com/article/elections-2016/india/india-news-india/more-than-90-per-cent-turnouts-mark-aggressive-muslim-voting-in-assam/ |title=More than 90 per cent turnouts mark aggressive Muslim voting in Assam |access-date=2016-04-15 |archive-url=https://web.archive.org/web/20160416042013/http://indianexpress.com/article/elections-2016/india/india-news-india/more-than-90-per-cent-turnouts-mark-aggressive-muslim-voting-in-assam/ |archive-date=2016-04-16 |url-status=live }}</ref> The turnout was an increase from the [[2011 Assam Legislative Assembly election|2011 Assembly election]] figure of 75%.<ref>{{cite news |title=Over 78 percent votes cast in Assam polls first phase |url=http://www.abplive.in/india-news/over-78-percent-votes-cast-in-assam-polls-first-phase-316841 |publisher=ABP Live |date=4 April 2016 |access-date=2016-04-20 |archive-url=https://web.archive.org/web/20160419222747/http://www.abplive.in/india-news/over-78-percent-votes-cast-in-assam-polls-first-phase-316841 |archive-date=2016-04-19 |url-status=live }}</ref>
+
+The counting of votes and results declaration was completed on 19 May 2016. The election brought a change of power as the [[Indian National Congress]] (INC), which had formed the government under [[Tarun Gogoi]] since 2001, lost its majority to the [[Bharatiya Janata Party]] (BJP, lit "Indian People's Party") led by [[Sarbananda Sonowal]]. Sonowal became the first elected BJP chief minister in the Northeast, and his victory marked the start of other BJP victories in the Northeast, a region traditionally ruled by regional parties or the INC.
+
+== Background ==
+The term of the outgoing Assam assembly ended on 5 June 2016.<ref name="el1">{{Cite web |url=http://www.elections.in/upcoming-elections-in-india.html |title=Upcoming Elections in India |access-date=2015-11-09 |archive-url=https://web.archive.org/web/20151114083907/http://www.elections.in/upcoming-elections-in-india.html |archive-date=2015-11-14 |url-status=live }}</ref> The full bench of the [[Election Commission of India|Election Commission]] headed by [[Syed Nasim Ahmad Zaidi]] visited Assam on 21 December 2015.<ref>{{cite web |url=http://www.telegraphindia.com/1151223/jsp/northeast/story_59877.jsp#.VnqID_l97IU |title=Panel silent on Assam dates- Final electoral rolls on January 11: CEC |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151223190843/http://www.telegraphindia.com/1151223/jsp/northeast/story_59877.jsp#.VnqID_l97IU |archive-date=2015-12-23 |url-status=dead }}</ref> [[Voter-verified paper audit trail]]s were introduced in 10 constituencies (approximately 2400 polling booths) in Assam assembly polls.<ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-03-06/news/71246626_1_verifiable-paper-audit-trail-political-parties-vvpat |title=Assam Chief Electoral Officer meets political parties on poll preparedness |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417155112/http://articles.economictimes.indiatimes.com/2016-03-06/news/71246626_1_verifiable-paper-audit-trail-political-parties-vvpat |archive-date=2016-04-17 |url-status=dead }}</ref> These included the four assembly constituencies in [[Kamrup Metropolitan district|Kamrup Metro district]]: [[Dispur]], [[Jalukbari]], [[Gauhati]] East and Gauhati West.<ref>{{cite web |url=http://www.jagranjosh.com/current-affairs/vvpat-to-be-introduced-in-10-constituencies-in-assam-assembly-polls-1456293348-1 |title=vvpat were introduced in 10 constituencies in Assam assembly polls |work=Jagranjosh.com |access-date=2016-02-25 |archive-url=https://web.archive.org/web/20160225094908/http://www.jagranjosh.com/current-affairs/vvpat-to-be-introduced-in-10-constituencies-in-assam-assembly-polls-1456293348-1 |archive-date=2016-02-25 |url-status=live }}</ref> 250 polling stations were made model polling stations.<ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2015-12-23/news/69261462_1_assam-polls-assembly-polls-political-parties |title=Election Commission asked SPs to map vulnerable places for Assam polls |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417133718/http://articles.economictimes.indiatimes.com/2015-12-23/news/69261462_1_assam-polls-assembly-polls-political-parties |archive-date=2016-04-17 |url-status=dead }}</ref>
+
+=== Electoral process ===
+An update to the [[National Register of Citizens of India]] (NRC) was to be completed by 1 January 2016, monitored by the [[Supreme Court of India]].<ref>{{cite web |url=http://economictimes.indiatimes.com/news/politics-and-nation/national-register-of-citizens-in-assam-issue-of-illegal-foreigners-continues-to-be-a-major-political-one/articleshow/47657561.cms |title=National Register of Citizens in Assam: Issue of illegal foreigners continues to be a major political one |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20151101000555/http://economictimes.indiatimes.com/news/politics-and-nation/national-register-of-citizens-in-assam-issue-of-illegal-foreigners-continues-to-be-a-major-political-one/articleshow/47657561.cms |archive-date=2015-11-01 |url-status=live }}</ref><ref>{{cite web |url=http://www.hindustantimes.com/india/assam-overhaul-of-national-register-of-citizens-sparks-controversy/story-O082SAiZUXEc9ZRWfpsvDO.html |title=Assam: Overhaul of National Register of Citizens sparks controversy |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20160105231414/http://www.hindustantimes.com/india/assam-overhaul-of-national-register-of-citizens-sparks-controversy/story-O082SAiZUXEc9ZRWfpsvDO.html |archive-date=2016-01-05 |url-status=live }}</ref> By September 2015, the first phase was completed; over 66.90 lakh (6,690,000) households submitted forms linking themselves to either the NRC of 1951 or any of the electoral rolls prior to 24 March 1971. It was to be followed by verifying the applications.
+
+The effort was intended to detect and deport the illegal migrants who came from neighbouring Bangladesh on or after 25 March 1971.<ref>{{cite web |url=http://www.thehindu.com/opinion/lead/the-starkness-of-being-nowhere/article7633845.ece |title=The starkness of being nowhere}}</ref> Since 1985, Foreigners' Tribunals have declared over 38,000 persons in Assam as illegal migrants. Nearly 1.5 lakh (150,000) names in Assam's electoral rolls carry the prefix "D" for "Doubtful" citizenship status.<ref>{{cite web |url=http://indianexpress.com/article/explained/simply-put-in-assam-an-ongoing-effort-to-detect-illegal-bangladeshi-migrants/ |title=In Assam, an ongoing effort to detect illegal Bangladeshi migrants |date=17 June 2015 |work=The Indian Express |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20160107202935/http://indianexpress.com/article/explained/simply-put-in-assam-an-ongoing-effort-to-detect-illegal-bangladeshi-migrants/ |archive-date=2016-01-07 |url-status=live }}</ref> The Supreme Court directed the Assam Government to complete the final NRC by 1 March 2016.<ref>{{cite web |url=http://www.outlookindia.com/newswire/story/migrants-issue-sc-asks-assam-govt-to-upgrade-nrc-by-march-1/922345 |title=Migrants Issue: SC Asks Assam Govt to Upgrade NRC by March 1 |work=outlookindia.com |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160422113725/http://www.outlookindia.com/newswire/story/migrants-issue-sc-asks-assam-govt-to-upgrade-nrc-by-march-1/922345 |archive-date=2016-04-22 |url-status=live }}</ref><ref>{{cite web |url=http://www.business-standard.com/article/news-ians/complete-nrc-by-march-1-sc-to-assam-government-115120101455_1.html |title=Complete NRC by March 1: SC to Assam government |agency=Indo-Asian News Service |date=1 December 2015 |access-date=2015-12-29 |archive-url=https://web.archive.org/web/20160305163149/http://www.business-standard.com/article/news-ians/complete-nrc-by-march-1-sc-to-assam-government-115120101455_1.html |archive-date=2016-03-05 |url-status=live }}</ref> In May 2015, the historic [[India–Bangladesh enclaves|India–Bangladesh land swap deal]] was signed, exchanging long-standing territorial enclaves and simplifying the border.<ref>{{cite web |url=http://www.hindustantimes.com/india/bangladesh-india-in-historic-land-swap-after-nearly-4-decades/story-gHXVmfal3DFnFdyfObEz1L.html |title=Bangladesh, India in historic land swap after nearly 4 decades |work=Hindustan Times |access-date=2015-12-28 |archive-url=https://web.archive.org/web/20151229165317/http://www.hindustantimes.com/india/bangladesh-india-in-historic-land-swap-after-nearly-4-decades/story-gHXVmfal3DFnFdyfObEz1L.html |archive-date=2015-12-29 |url-status=live }}</ref>
+
+According to the draft electoral rolls published in October 2015, the total number of voters in Assam stood at 1.92 crores (19.2&nbsp; million). The Election Commission said that the final electoral rolls would be published by 11 January 2016.
+
+=== Religion data ===
+According to the [[2011 Census of India|2011 census]], 61.5% were Hindus, 34.22% were Muslims.<ref name="census2011">{{cite web |title=Population by religion community – 2011 |url=http://www.censusindia.gov.in/2011census/C-01/DDW00C-01%20MDDS.XLS |website=Census of India, 2011 |publisher=The Registrar General & Census Commissioner, India |archive-url=https://web.archive.org/web/20150825155850/http://www.censusindia.gov.in/2011census/C-01/DDW00C-01%20MDDS.XLS |archive-date=2015-08-25}}</ref><ref>{{cite web |url=http://www.hindustantimes.com/india-news/census-2011-religion-data-rekindles-demographic-invasion-fear-in-assam/article1-1384347.aspx |title=Census 2011 data rekindles 'demographic invasion' fear in Assam |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20150905104547/http://www.hindustantimes.com/india-news/census-2011-religion-data-rekindles-demographic-invasion-fear-in-assam/article1-1384347.aspx |archive-date=2015-09-05 |url-status=dead }}</ref> Christian minorities (3.7%) are mostly among some of the [[Scheduled Castes and Tribes]] (SC/ST) population.<ref>{{cite web |url=http://www.thehindu.com/news/national/religious-communities-census-2011-what-the-numbers-say/article7582284.ece |title=Religious communities Census 2011: What the numbers say |work=The Hindu |access-date=2016-04-17 |archive-url=https://web.archive.org/web/20160110201326/http://www.thehindu.com/news/national/religious-communities-census-2011-what-the-numbers-say/article7582284.ece |archive-date=2016-01-10 |url-status=live }}</ref> The Scheduled Tribe population (both ST(Plains) and ST(Hills) combined) in Assam is around 13% of which the [[Bodo people]](an indigenous Assamese community) account for 40% and the Scheduled Caste population is about 7.4% of which the [[Jalia Kaibarta|Kaibarta and Jal Keot]](both indigenous Assamese communities) combined account for about 36%.<ref>{{cite web |url=http://www.thehindu.com/opinion/lead/bodo-hopes-and-minority-rights/article5998693.ece |title=Bodos and their rights |access-date=2015-12-29 |archive-url=https://web.archive.org/web/20161201092705/http://www.thehindu.com/opinion/lead/bodo-hopes-and-minority-rights/article5998693.ece |archive-date=2016-12-01 |url-status=live }}</ref>
+
+Out of 32 districts of Assam, 11 are Muslim majority according to the 2011 census.<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Assembly-polls-Chasing-the-Muslim-vote/articleshow/51302289.cms |title=Assembly polls: Chasing the Muslim vote |access-date=2016-03-08 |archive-url=https://web.archive.org/web/20160308090448/http://timesofindia.indiatimes.com/india/Assembly-polls-Chasing-the-Muslim-vote/articleshow/51302289.cms |archive-date=2016-03-08 |url-status=live }}</ref> The districts are [[Dhubri district|Dhubri]], [[Goalpara district|Goalpara]], [[Barpeta district|Barpeta]], [[Morigaon district|Morigaon]], [[Nagaon district|Nagaon]], [[Hojai district|Hojai]], [[Karimganj district|Karimganj]], [[South Salmara-Mankachar district|South Salmara–Mankachar]], [[Hailakandi district|Hailakandi]], [[Darrang district|Darrang]] and [[Bongaigaon district|Bongaigaon]].<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Muslim-majority-districts-in-Assam-up/articleshow/48682463.cms |title=Muslim majority districts in Assam up |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20160104231940/http://timesofindia.indiatimes.com/india/Muslim-majority-districts-in-Assam-up/articleshow/48682463.cms |archive-date=2016-01-04 |url-status=live }}</ref><ref>{{cite web |url=http://indianexpress.com/article/india/india-others/assam-muslim-growth-is-higher-in-districts-away-from-border/ |title=Assam Muslim growth is higher in districts away from border |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151223192413/http://indianexpress.com/article/india/india-others/assam-muslim-growth-is-higher-in-districts-away-from-border/ |archive-date=2015-12-23 |url-status=live }}</ref><ref>{{cite web |url=http://www.hindustantimes.com/india/census-2011-data-rekindles-demographic-invasion-fear-in-assam/story-oZUhBaXPNupGBmGQirjV0I.html |title=Census 2011 data rekindles 'demographic invasion' fear in Assam |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20160104231940/http://www.hindustantimes.com/india/census-2011-data-rekindles-demographic-invasion-fear-in-assam/story-oZUhBaXPNupGBmGQirjV0I.html |archive-date=2016-01-04 |url-status=live }}</ref> Bodos have a population share of 12% and the Kaibarta and Jal Keot have a total share of about 10% (all of which are a part of the indigenous Assamese community).<ref>{{cite web |url=http://www.hindustantimes.com/india/assam-s-perfume-tycoon-badruddin-ajmal-smells-opportunity-to-be-kingmaker/story-mU6YQnS2XgfmARyh8CTmgL.html |title=Badruddin Ajmal: Businessman, AIUDF chief and Assam's next kingmaker? |work=Hindustan Times |access-date=2016-04-12 |archive-url=https://web.archive.org/web/20160422122027/http://www.hindustantimes.com/india/assam-s-perfume-tycoon-badruddin-ajmal-smells-opportunity-to-be-kingmaker/story-mU6YQnS2XgfmARyh8CTmgL.html |archive-date=2016-04-22 |url-status=live }}</ref> The share of the indigenous Assamese communities in Assam was about 47% in the 2001 census which has reduced to about 40-45% in 2016 as predicted by experts. Indigenous Assamese Muslims, also known as Khilonjia Muslims, include ethnic groups such as Goria and Moria, and are estimated to be around 40 lakhs in population out of a total 1 crore (4&nbsp;million out of 10&nbsp;million) Muslims in Assam.<ref>{{cite web |url=http://indianexpress.com/article/elections-2016/india/india-news-india/assam-elections-2016-bjp-congress-the-politics-around-the-two-ends-of-assams-complex-muslim-spectrum/ |title=The politics around the two ends of Assam's complex Muslim spectrum |date=8 April 2016 |work=The Indian Express |access-date=2016-04-12 |archive-url=https://web.archive.org/web/20160411012825/http://indianexpress.com/article/elections-2016/india/india-news-india/assam-elections-2016-bjp-congress-the-politics-around-the-two-ends-of-assams-complex-muslim-spectrum/ |archive-date=2016-04-11 |url-status=live }}</ref>
+
+== Parties and alliances ==
+
+=== National Democratic Alliance ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" width="60%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Contesting Seats
+|-
+| {{party color cell|Bharatiya Janata Party}}
+| [[Bharatiya Janata Party]]
+| [[File:BJP flag.svg|50px]]
+| [[File:Lotus flower symbol.svg|50px]]
+| [[Sarbananda Sonowal]]
+| 84
+|-
+| {{party color cell|Asom Gana Parishad}}
+| [[Asom Gana Parishad]]
+| 
+| [[File:Indian Election Symbol Elephant.png|50px]]
+| [[Brindaban Goswami]]
+| 24
+|-
+| {{party color cell|Bodoland People's Front}}
+| [[Bodoland People's Front]]
+| [[File:BPF-Flag.svg|50px]]
+| [[File:Indian Election Symbol Nangol.svg|50px]]
+| [[Hagrama Mohilary]]
+| 16
+|-
+|  style="background-color: lime;" | 
+| Rabha Jatiya Aikya Manch
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| 1
+|-
+|  style="background-color: yellow;" | 
+| Tiwa Jatiya Aikya Manch
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| 1
+|}
+
+=== United Progressive Alliance ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" width="60%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Contesting Seats
+|-
+| {{party color cell|Indian National Congress}}
+| [[Indian National Congress]]
+| [[File:Indian National Congress Flag.svg|50px]]
+| [[File:Hand INC.svg|50px]]
+| [[Tarun Gogoi]]
+| 122
+|-
+| {{party color cell|United People's Party Liberal}}
+| [[United People's Party Liberal]]
+|
+|
+| [[Pramod Boro]]
+| 4
+|}
+
+=== AIUDF-led alliance ===
+{| class="wikitable" width="60%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Contesting Seats
+|-
+| {{party color cell|All India United Democratic Front}}
+| [[All India United Democratic Front]]
+| [[File:AIUDF logo.webp|50px]]
+| [[File:Indian Election Symbol Lock And Key.svg|50px]]
+| [[Badruddin Ajmal]]
+| 76
+|-
+| {{party color cell|Janata Dal (United)}}
+| [[Janata Dal (United)]]
+| [[File:Janata Dal (United) Flag.svg|50px]]
+| [[File:Indian Election Symbol Arrow.svg|50px]]
+| [[Nitish Kumar]]
+| 12
+|-
+| {{party color cell|Rashtriya Janata Dal}}
+| [[Rashtriya Janata Dal]]
+| [[File:RJD Flag.svg|50px]]
+| [[File:Indian Election Symbol Hurricane Lamp.png|50px]]
+| [[Lalu Prasad Yadav]]
+| 12
+|}
+
+== Campaign ==
+In November 2015, [[Bharatiya Janata Party]] (BJP) President [[Amit Shah]] held a party workers' rally in [[Dibrugarh]] in [[Upper Assam Division]].<ref>{{cite web |url=http://www.business-standard.com/article/politics/bjp-blows-poll-bugle-in-assam-with-amit-shah-s-rally-115112700710_1.html |title=BJP blows poll bugle in Assam with Amit Shah's rally |author=Supratim Dey |date=27 November 2015 |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151224054046/http://www.business-standard.com/article/politics/bjp-blows-poll-bugle-in-assam-with-amit-shah-s-rally-115112700710_1.html |archive-date=2015-12-24 |url-status=live }}</ref> Union Minister and [[Lakhimpur Lok Sabha constituency|Lakhimpur]] MP [[Sarbananda Sonowal]] was made Assam BJP chief to head their election committee.<ref>{{cite web |url=http://www.tribuneindia.com/news/nation/regional-players-eye-key-role/176240.html |title=Regional players eye key role |access-date=2015-12-29 |archive-url=https://web.archive.org/web/20160304060428/http://www.tribuneindia.com/news/nation/regional-players-eye-key-role/176240.html |archive-date=2016-03-04 |url-status=live }}</ref> Sonowal found the situation of illegal immigration from Bangladesh "very alarming".<ref>{{cite web |url=http://www.business-standard.com/article/opinion/not-against-muslims-only-illegal-migrants-sarbananda-sonowal-115122600600_1.html |title=Not against Muslims, only illegal migrants: Sarbananda Sonowal |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20151227230843/http://www.business-standard.com/article/opinion/not-against-muslims-only-illegal-migrants-sarbananda-sonowal-115122600600_1.html |archive-date=2015-12-27 |url-status=live }}</ref> (Sonowal had led an effort to have the controversial [[Illegal Migrants (Determination by Tribunal) Act, 1983|Illegal Migrants (Determination by Tribunal)]] (IMDT) Act struck down by the [[Supreme court of India]] in December 2006, making deportations easier.)<ref>{{cite web |url=http://indiankanoon.org/doc/1436100/ |title=Sarbananda Sonowal vs Union Of India on 5 December, 2006 |access-date=2015-12-26 |archive-url=https://web.archive.org/web/20151227041923/http://indiankanoon.org/doc/1436100/ |archive-date=2015-12-27 |url-status=live }}</ref> [[Himanta Biswa Sarma]], a state Congress heavyweight joined BJP.<ref>{{cite web |url=https://www.indiatoday.in/mail-today/story/bjp-gets-battle-ready-in-assam-after-bihar-loss-273833-2015-11-22 |title=BJP gets battle ready in Assam after Bihar loss |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151223235915/http://indiatoday.intoday.in/story/bjp-gets-battle-ready-in-assam-after-bihar-loss/1/528648.html |archive-date=2015-12-23 |url-status=live }}</ref> BJP has aimed for 'Mission 84' in Assam.<ref>{{cite web |url=http://indianexpress.com/article/explained/in-fact-how-possible-is-the-bjps-mission-84-in-assam-next-year/ |title=In fact: How possible is the BJP's 'Mission 84' in Assam next year? |date=2 November 2015 |work=The Indian Express |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20160103012745/http://indianexpress.com/article/explained/in-fact-how-possible-is-the-bjps-mission-84-in-assam-next-year/ |archive-date=2016-01-03 |url-status=live }}</ref><ref>{{cite web |url=https://www.indiatoday.in/india/assam/story/bjp-gears-up-for-assam-election-unit-gets-28-lakh-new-members-275839-2015-12-06 |title=BJP gears up for Assam election, unit gets 28 lakh new members |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151223235919/http://indiatoday.intoday.in/story/bjp-gears-up-for-assam-election-unit-gets-28-lakh-new-members/1/539505.html |archive-date=2015-12-23 |url-status=live }}</ref> BJP led in 69 assembly constituencies in the [[2014 Indian general election|Lok Sabha elections 2014]] by winning 7 Lok Sabha seats in Assam.<ref>{{cite web |url=http://www.livemint.com/Opinion/UMNBp7JCKNWH5cMlkHB0bL/Assam-can-BJP-defy-history.html |title=Assam: can BJP defy history? |access-date=2016-03-16 |archive-url=https://web.archive.org/web/20160316083503/http://www.livemint.com/Opinion/UMNBp7JCKNWH5cMlkHB0bL/Assam-can-BJP-defy-history.html |archive-date=2016-03-16 |url-status=live }}</ref> For the first time, the BJP had contested the [[Bodoland Territorial Council]] elections, and won a seat.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Bodoland-drubbing-forces-Cong-BJP-to-rethink-poll-plan/articleshow/46890918.cms |title=Bodoland drubbing forces Cong, BJP to rethink poll plan |work=The Times of India |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20150421174315/http://timesofindia.indiatimes.com/city/guwahati/Bodoland-drubbing-forces-Cong-BJP-to-rethink-poll-plan/articleshow/46890918.cms |archive-date=2015-04-21 |url-status=live }}</ref>
+
+In December 2015, [[Indian National Congress]] (INC) Vice-President [[Rahul Gandhi]] visited Assam where he accused [[Rashtriya Swayamsevak Sangh]] (RSS, lit "National Volunteer Organisation") workers of not letting him enter [[Barpeta Satra]] temple in Barpeta district.<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/rss-workers-stopped-me-from-entering-assam-temple-rahul-gandhi/ |title=RSS workers 'stopped' me from entering Assam temple: Rahul Gandhi |date=15 December 2015 |work=The Indian Express |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20151223191923/http://indianexpress.com/article/india/india-news-india/rss-workers-stopped-me-from-entering-assam-temple-rahul-gandhi/ |archive-date=2015-12-23 |url-status=live }}</ref> RSS, widely regarded as the parent organisation of BJP, denied the charge. Gandhi announced that [[Tarun Gogoi]] would be the chief minister candidate of INC.<ref>{{cite web |url=http://www.hindustantimes.com/india/tarun-gogoi-to-be-cm-candidate-in-2016-assam-polls-rahul-gandhi/story-ttCcL8IZE4DfLcnO3tpSqK.html |title=Tarun Gogoi to be CM candidate in 2016 Assam polls: Rahul Gandhi |work=Hindustan Times |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20160105040718/http://www.hindustantimes.com/india/tarun-gogoi-to-be-cm-candidate-in-2016-assam-polls-rahul-gandhi/story-ttCcL8IZE4DfLcnO3tpSqK.html |archive-date=2016-01-05 |url-status=live }}</ref> Demand was growing for giving scheduled tribe (ST) status to six communities – [[Ahom people|Tai Ahoms]], [[Koch Rajbongshi people|Koch Rajbongshis]], Moran, Motok, Sootea and 36 [[Tea-tribes of Assam|tea tribes]] (the descendants of tea garden workers settled by British in the state from Chotanagpur plateau in the mid-19th century).<ref>{{cite web |url=http://www.ndtv.com/india-news/assam-tea-workers-await-tribal-status-as-congress-bjp-fight-for-their-vote-1274660 |title=Assam Tea Workers Await Tribal Status As Congress, BJP Fight For Their Vote |author=Sandeep Phukan |date=7 February 2016 |work=NDTV.com |access-date=2016-02-07 |archive-url=https://web.archive.org/web/20160207152432/http://www.ndtv.com/india-news/assam-tea-workers-await-tribal-status-as-congress-bjp-fight-for-their-vote-1274660 |archive-date=2016-02-07 |url-status=live }}</ref><ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Koch-royal-families-of-Assam-raise-the-ante-for-ST-status/articleshow/50267656.cms |title=Koch royal families of Assam raise the ante for ST status |work=The Times of India |access-date=2015-12-23 |archive-url=https://web.archive.org/web/20170102040208/http://timesofindia.indiatimes.com/city/guwahati/Koch-royal-families-of-Assam-raise-the-ante-for-ST-status/articleshow/50267656.cms |archive-date=2017-01-02 |url-status=live }}</ref><!--NDA government may bring an ordinance for the ST status before elections, which has been raised by ULFA initially.<ref>{{cite web |url=http://www.dnaindia.com/india/report-demographic-alarm-centre-speeds-up-process-to-make-assam-a-tribal-majority-state-2074435 |title=Demographic Alarm: Centre speeds up process to make Assam a tribal majority state |date=4 April 2015 |work=dna}}</ref>-->
+
+In November 2015, nine members of the legislative assembly left the INC and joined BJP.<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Nine-Assam-Cong-MLAs-to-join-BJP-today/articleshow/49681546.cms |title=Nine Assam Cong MLAs to join BJP today |work=The Times of India |access-date=2015-12-28 |archive-url=https://web.archive.org/web/20151109050822/http://timesofindia.indiatimes.com/india/Nine-Assam-Cong-MLAs-to-join-BJP-today/articleshow/49681546.cms |archive-date=2015-11-09 |url-status=live }}</ref> Assam Governor PB Acharya made a controversial statement that [[Hindustan]] is only for Hindus.<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Hindustan-is-for-Hindus-Assam-governor/articleshow/49876275.cms |title=Hindustan is for Hindus: Assam governor |work=The Times of India |access-date=2015-12-28 |archive-url=https://web.archive.org/web/20151127061829/http://timesofindia.indiatimes.com/india/Hindustan-is-for-Hindus-Assam-governor/articleshow/49876275.cms |archive-date=2015-11-27 |url-status=live }}</ref> Ex-[[United Liberation Front of Assam]] (ULFA) rebels announced that they would contest Assam polls.<ref>{{cite web |url=http://www.hindustantimes.com/india/ex-ulfa-rebels-to-contest-assam-polls/story-G5YqTkU1IAqMZBpyeK55OK.html |title=Ex-Ulfa rebels to contest Assam polls |work=Hindustan Times |access-date=2015-12-24 |archive-url=https://web.archive.org/web/20151225040416/http://www.hindustantimes.com/india/ex-ulfa-rebels-to-contest-assam-polls/story-G5YqTkU1IAqMZBpyeK55OK.html |archive-date=2015-12-25 |url-status=live }}</ref> On 26 December 2015, BJP's Assam unit launched its 'Assam Nirman' initiative, seeking public opinion to prepare a vision document for development in Assam.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/BJP-launches-Assam-Nirman-to-chart-roadmap-to-progress/articleshow/50339915.cms |title=BJP launches Assam Nirman to chart roadmap to progress |work=The Times of India |access-date=2015-12-27 |archive-url=https://web.archive.org/web/20160101204449/http://timesofindia.indiatimes.com/city/guwahati/BJP-launches-Assam-Nirman-to-chart-roadmap-to-progress/articleshow/50339915.cms |archive-date=2016-01-01 |url-status=live }}</ref>
+
+On 28 December 2015, [[Smriti Irani]] visited [[Barak Valley]] in Assam and accused the [[Tarun Gogoi]] government of not doing enough for women's safety.<ref>{{cite web |url=http://www.thehindu.com/news/national/other-states/rise-in-crimes-against-women-in-assam-irani/article8037682.ece |title=Rise in crimes against women in Assam: Irani |agency=Press Trust of India |work=The Hindu}}</ref><ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Top-BJP-leaders-to-visit-state-in-Dec/articleshow/50054128.cms |title=Top BJP leaders to visit state in Dec |work=The Times of India |access-date=2015-12-28 |archive-url=https://web.archive.org/web/20170102123740/http://timesofindia.indiatimes.com/city/guwahati/Top-BJP-leaders-to-visit-state-in-Dec/articleshow/50054128.cms |archive-date=2017-01-02 |url-status=live }}</ref> Gogoi accused the [[National Democratic Alliance (India)|National Democratic Alliance]] (NDA) government of stalling tactics on granting citizenship to refugees from Bangladesh, claiming that they had been persecuted there.<ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2015-12-29/news/69379511_1_citizenship-delay-assam-cm-tarun-gogoi-lip-service |title=Citizenship delay due to BJP: Assam CM Tarun Gogoi |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417131109/http://articles.economictimes.indiatimes.com/2015-12-29/news/69379511_1_citizenship-delay-assam-cm-tarun-gogoi-lip-service |archive-date=2016-04-17 |url-status=dead }}</ref> Gogoi said external affairs minister [[Sushma Swaraj]] met with businessmen in Assam during her visit instead of talking about the problems and issues confronting the state<!-- like the declared illegal immigrants from Bangladesh, reports of China constructing dams in the upper reaches of Brahmaputra and North-eastern insurgents in Myanmar-->.<ref>{{cite web |url=http://economictimes.indiatimes.com/news/politics-and-nation/bjp-trying-to-bring-goondaraj-to-assam-cm-tarun-gogoi/articleshow/50368994.cms |title=BJP trying to bring goondaraj to Assam: CM Tarun Gogoi |access-date=2015-12-30 |archive-url=https://web.archive.org/web/20160102031215/http://economictimes.indiatimes.com/news/politics-and-nation/bjp-trying-to-bring-goondaraj-to-assam-cm-tarun-gogoi/articleshow/50368994.cms |archive-date=2016-01-02 |url-status=live }}</ref>
+
+In January 2016, the Gogoi government announced rice prices at [[Indian rupee|Rs]] 2 per kilogramme and to build all-religion {{transliteration|hi|[[Place of worship|bhawans]]}}.<ref>{{cite web |url=http://economictimes.indiatimes.com/news/politics-and-nation/assam-cm-tarun-gogoi-doles-out-scheme-to-build-all-religion-bhawans/articleshow/50411606.cms |title=Assam CM Tarun Gogoi doles out scheme to build all-religion bhawans |access-date=2016-01-02 |archive-url=https://web.archive.org/web/20160106055449/http://economictimes.indiatimes.com/news/politics-and-nation/assam-cm-tarun-gogoi-doles-out-scheme-to-build-all-religion-bhawans/articleshow/50411606.cms |archive-date=2016-01-06 |url-status=live }}</ref><ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/four-months-to-assam-assembly-polls-cm-gogoi-to-provide-rice-at-rs-2kg-to-2-cr-people/ |title=Four months to Assam assembly polls, Gogoi govt to give rice at Rs 2 a kg |date=2 January 2016 |work=The Indian Express |access-date=2016-01-02 |archive-url=https://web.archive.org/web/20160102181407/http://indianexpress.com/article/india/india-news-india/four-months-to-assam-assembly-polls-cm-gogoi-to-provide-rice-at-rs-2kg-to-2-cr-people/ |archive-date=2016-01-02 |url-status=live }}</ref> The Assam INC President ruled-out any alliance with [[All India United Democratic Front]] (AIUDF) or [[Asom Gana Parishad]] (AGP, lit "Assam Peoples Association") parties.<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Assam-Congress-rules-out-truck-with-AIUDF-AGP/articleshow/50461435.cms |title=Assam Congress rules out truck with AIUDF, AGP |work=The Times of India |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160107034409/http://timesofindia.indiatimes.com/india/Assam-Congress-rules-out-truck-with-AIUDF-AGP/articleshow/50461435.cms |archive-date=2016-01-07 |url-status=live }}</ref><ref>{{cite web |url=http://www.thehindu.com/opinion/op-ed/the-state-in-the-states/article8069400.ece |title=The state in the States |author=Sanjay Kumar |work=The Hindu}}</ref> Union Home Minister [[Rajnath Singh]] visited Assam on 3 January 2016 and said the fencing along the Indo-Bangladesh border would be completed by December 2016.<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/rajnath-singh-promises-to-complete-bangladesh-border-fence-by-year-end/ |title=Bangladesh border fence in Assam to be completed this year: Rajnath Singh |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160107075255/http://indianexpress.com/article/india/india-news-india/rajnath-singh-promises-to-complete-bangladesh-border-fence-by-year-end/ |archive-date=2016-01-07 |url-status=live }}</ref><ref>{{cite web |url=http://www.telegraphindia.com/1160106/jsp/northeast/story_62357.jsp |title=Gogoi tirade against Rajnath, Modi |work=The Telegraph |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160110121222/http://www.telegraphindia.com/1160106/jsp/northeast/story_62357.jsp#.VpCtXrZ97IU |archive-date=2016-01-10 |url-status=dead }}</ref> A delegation of the [[All Assam Students Union]] (AASU) met Singh and visited the border areas. Rajnath Singh visited Dhubri district and expressed dissatisfaction with the fencing work there. He said that a feasibility study and two pilot projects were underway in the Dhubri sector of the riverine border.<ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-01-04/news/69511994_1_dhubri-fencing-work-rajnath-singh |title=Not satisfied with fencing work along Dhubri sector of India-Bangladesh border: Rajnath Singh |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417150508/http://articles.economictimes.indiatimes.com/2016-01-04/news/69511994_1_dhubri-fencing-work-rajnath-singh |archive-date=2016-04-17 |url-status=dead }}</ref> Gogoi said that 97.32% of the border fencing work in Karimganj and Dhubri was complete and asked the Central Government to take up a pilot project involving technological solutions to plug the riverine border.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Gogoi-Rajnath-shirked-duty-indulged-in-politics-in-Assam/articleshow/50464802.cms |title=Gogoi: Rajnath shirked duty, indulged in politics in Assam |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160321061152/http://timesofindia.indiatimes.com/city/guwahati/Gogoi-Rajnath-shirked-duty-indulged-in-politics-in-Assam/articleshow/50464802.cms |archive-date=2016-03-21 |url-status=live }}</ref><ref>{{cite web |url=http://www.ndtv.com/india-news/ground-report-from-dhubri-will-border-issues-polarise-voters-in-assam-1263720 |title=Ground Report From Dhubri: Will Border Issues Polarise Voters in Assam? |access-date=2016-01-09 |archive-url=https://web.archive.org/web/20160125134414/http://www.ndtv.com/india-news/ground-report-from-dhubri-will-border-issues-polarise-voters-in-assam-1263720 |archive-date=2016-01-25 |url-status=live }}</ref>
+
+Prime Minister [[Narendra Modi]] addressed a rally in [[Kokrajhar]] on 19 January 2016, after his visit to [[Sikkim]] on 18 January 2016.<ref>{{cite web |url=http://indianexpress.com/article/explained/why-modi-launched-his-assam-campaign-from-kokrajhar/ |title=Why PM Modi launched his Assam campaign from Kokrajhar |date=19 January 2016 |work=The Indian Express |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20160208030439/http://indianexpress.com/article/explained/why-modi-launched-his-assam-campaign-from-kokrajhar/ |archive-date=2016-02-08 |url-status=live }}</ref> Modi formally announced the alliance of [[Bodoland People's Front]] (BPF) with BJP in Assam.<ref>{{cite web |url=http://www.thehindu.com/news/national/pm-to-kick-off-bjps-assam-campaign/article8073591.ece |title=Prime Minister Narendra Modi to kick off BJP's Assam campaign}}</ref>
+
+On 28 January, the BJP Parliamentary Board announced [[Sarbananda Sonowal]] as their Chief Ministerial candidate of Assam.<ref>{{cite web |url=http://economictimes.indiatimes.com/news/politics-and-nation/bjp-departs-from-practice-names-sarbananda-sonowal-as-assam-cm-candidate/articleshow/50761663.cms |title=BJP departs from practice, names Sarbananda Sonowal as Assam CM candidate |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20160131113702/http://economictimes.indiatimes.com/news/politics-and-nation/bjp-departs-from-practice-names-sarbananda-sonowal-as-assam-cm-candidate/articleshow/50761663.cms |archive-date=2016-01-31 |url-status=live }}</ref> Union minister of state for commerce and industry [[Nirmala Sitharaman]] accused Gogoi of spreading misinformation on the suspension of the North East Industrial and Investment Promotion Policy (NEIIPP), 2007.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Sitharaman-Gogoi-spreading-misinformation-about-NEIIPP/articleshow/50783683.cms |title=Sitharaman: Gogoi spreading misinformation about NEIIPP |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20160825211702/http://timesofindia.indiatimes.com/city/guwahati/Sitharaman-Gogoi-spreading-misinformation-about-NEIIPP/articleshow/50783683.cms |archive-date=2016-08-25 |url-status=live }}</ref> Ethnic groups of Assam sought ULFA pro-talks faction headed by founding general secretary [[Anup Chetia]] to help them receive ST designation.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Ethnic-groups-seek-Ulfa-help-to-get-ST-tag/articleshow/50683104.cms |title=Ethnic groups seek Ulfa help to get ST tag |work=The Times of India}}</ref><ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-01-24/news/70036465_1_anup-chetia-bangladesh-jail-assam-assembly |title=Why the militant group ULFA matters ahead of Assam Assembly Polls |work=The Economic Times |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20160130034118/http://articles.economictimes.indiatimes.com/2016-01-24/news/70036465_1_anup-chetia-bangladesh-jail-assam-assembly |archive-date=2016-01-30 |url-status=dead }}</ref>
+
+Modi arrived on 5 February to first attend the 85th conference of the [[Srimanta Sankaradeva Sangha]] at the erstwhile Ahom capital of [[Sivasagar]]. Then he addressed a rally at Moran.<ref>{{cite web |url=http://scroll.in/article/802810/a-political-map-of-assam-congress-vs-bjp-vs-aiudf-vs-bpf-vs-agp |title=A political map of Assam: Congress vs BJP vs AIUDF vs BPF vs AGP |author=Ipsita Chakravarty |work=Scroll.in |access-date=2016-02-07 |archive-url=https://web.archive.org/web/20160207124451/http://scroll.in/article/802810/a-political-map-of-assam-congress-vs-bjp-vs-aiudf-vs-bpf-vs-agp |archive-date=2016-02-07 |url-status=live }}</ref><ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Assembly-polls-BJP-Congress-fight-to-woo-tea-garden-workers/articleshow/50783150.cms |title=Assembly polls: BJP, Congress fight to woo tea garden workers |work=The Times of India |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20160131085010/http://timesofindia.indiatimes.com/city/guwahati/Assembly-polls-BJP-Congress-fight-to-woo-tea-garden-workers/articleshow/50783150.cms |archive-date=2016-01-31 |url-status=live }}</ref><ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/NaMo-to-inaugurate-gas-cracker-project-in-Dibrugarh-on-February-5/articleshow/50611195.cms |title=NaMo to inaugurate gas cracker project in Dibrugarh on February 5 |work=The Times of India |access-date=2016-02-01 |archive-url=https://web.archive.org/web/20160123224542/http://timesofindia.indiatimes.com/city/guwahati/NaMo-to-inaugurate-gas-cracker-project-in-Dibrugarh-on-February-5/articleshow/50611195.cms |archive-date=2016-01-23 |url-status=live }}</ref> Modi dedicated the Assam gas cracker project at Dibrugarh<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/rs-9965-cr-assam-gas-cracker-sees-light-of-day-after-31-years/ |title=After 31 years, Rs 9,965 cr Assam gas cracker project sees light of day |date=6 February 2016 |work=The Indian Express |access-date=2016-02-07 |archive-url=https://web.archive.org/web/20160207223907/http://indianexpress.com/article/india/india-news-india/rs-9965-cr-assam-gas-cracker-sees-light-of-day-after-31-years/ |archive-date=2016-02-07 |url-status=live }}</ref> and inaugurated the [[2016 South Asian Games]] in [[Guwahati]] on 5 February.<ref>{{cite web |url=http://www.tribuneindia.com/news/sport/south-asian-games-budget-up-because-of-terror-threat/182590.html |title=South Asian Games budget up because of terror threat |access-date=2016-01-31 |archive-url=https://web.archive.org/web/20161011201753/http://www.tribuneindia.com/news/sport/south-asian-games-budget-up-because-of-terror-threat/182590.html |archive-date=2016-10-11 |url-status=live }}</ref>
+
+On 2 March, the BJP announced its alliance with AGP.<ref>{{cite web |url=http://www.business-standard.com/article/news-ians/agp-bjp-to-fight-assam-assembly-polls-together-116030200876_1.html |title=AGP, BJP to fight Assam assembly polls together |agency=Indo-Asian News Service |date=2 March 2016 |access-date=2016-03-05 |archive-url=https://web.archive.org/web/20160306132826/http://www.business-standard.com/article/news-ians/agp-bjp-to-fight-assam-assembly-polls-together-116030200876_1.html |archive-date=2016-03-06 |url-status=live }}</ref> AGP was given 24 seats.<ref>{{cite web |url=http://www.firstpost.com/politics/assam-elections-bjp-offers-a-five-party-coalition-alternative-to-congress-2668924.html |title=Assam elections: BJP offers a five-party coalition alternative to Congress |author=Firstpost |date=11 March 2016 |work=Firstpost |access-date=2016-03-13 |archive-url=https://web.archive.org/web/20160313082758/http://www.firstpost.com/politics/assam-elections-bjp-offers-a-five-party-coalition-alternative-to-congress-2668924.html |archive-date=2016-03-13 |url-status=live }}</ref> Gogoi announced a special package of Rs 3,000 cr (Rs 30&nbsp;billion) for Barak Valley.<ref>[http://www.assamtribune.com/scripts/detailsnew.asp?id=mar0516/state053 CM announces Rs 3,000 cr for Barak Valley]  {{webarchive|url=https://web.archive.org/web/20160306093036/http://www.assamtribune.com/scripts/detailsnew.asp?id=mar0516%2Fstate053 |date=6 March 2016 }}</ref> Gandhi visited Assam for two days, 4–5 March 2016, and addressed public meetings in [[Silchar]] and [[Nagaon]].<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/rahul-gandhi-narendra-modi-india-news/ |title=Rahul in Assam: PM Modi didn't answer my questions |date=5 March 2016 |work=The Indian Express |access-date=2016-03-05 |archive-url=https://web.archive.org/web/20160305010943/http://indianexpress.com/article/india/india-news-india/rahul-gandhi-narendra-modi-india-news/ |archive-date=2016-03-05 |url-status=live }}</ref> On 6 March 2016, INC allied with Bodo-heartland-based United People's Party in a strategy to counter BJP's alliance with BPF.<ref>{{cite web |url=http://timesofindia.indiatimes.com/india/Assam-polls-Congress-ties-up-with-United-Peoples-Party/articleshow/51283565.cms |title=Assam polls: Congress ties up with United People's Party |author=Prabin Kalita |date=7 March 2016 |work=The Times of India |access-date=2016-03-07 |archive-url=https://web.archive.org/web/20160307153214/http://timesofindia.indiatimes.com/india/Assam-polls-Congress-ties-up-with-United-Peoples-Party/articleshow/51283565.cms |archive-date=2016-03-07 |url-status=live }}</ref>
+
+On 10 March, BJP declared candidates for the first phase of Assam elections.<ref>{{cite web |url=http://www.hindustantimes.com/assembly-elections/bjp-declares-candidates-for-1st-phase-of-assam-assembly-elections/story-qAosRu4Mf7lAvy2Y4n7eeL.html |title=BJP declares candidates for 1st phase of Assam elections |work=Hindustan Times |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160322013719/http://www.hindustantimes.com/assembly-elections/bjp-declares-candidates-for-1st-phase-of-assam-assembly-elections/story-qAosRu4Mf7lAvy2Y4n7eeL.html |archive-date=2016-03-22 |url-status=live }}</ref> Out of 126 Assembly constituencies, BJP contested 84 constituencies and left 42 to its four [[National Democratic Alliance (India)|National Democratic Alliance]] (NDA) allies: AGP (24), BPF (16), Rabha Jatiya Aikya Manch (1) and Tiwa Jatiya Aikya Manch (1). BJP gave tickets to two ex-militants including Bhaskar Sarma (who was accused of secret killings). On 16 March 2016, [[Sarbananda Sonowal]] filed his nomination for the [[Majuli]] (ST) assembly seat.<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/assam-kerala-elections-2016-ballotin-eye-on-dispur/ |title=Ballotin: Eye on Dispur |access-date=2016-03-17 |archive-url=https://web.archive.org/web/20160323195002/http://indianexpress.com/article/india/india-news-india/assam-kerala-elections-2016-ballotin-eye-on-dispur/ |archive-date=2016-03-23 |url-status=live }}</ref><ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-03-20/news/71678687_1_majuli-sarbananda-sonowal-bridge-ceremony |title=Assam polls 2016: How the world's largest inhabited island – Majuli – figures in BJP's game plan |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417132006/http://articles.economictimes.indiatimes.com/2016-03-20/news/71678687_1_majuli-sarbananda-sonowal-bridge-ceremony |archive-date=2016-04-17 |url-status=dead }}</ref> Modi addressed a rally in Majuli on 23 March 2016.<ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-03-17/news/71602699_1_election-meeting-prime-minister-narendra-modi-chief-minister-tarun-gogoi |title=PM Narendra Modi to campaign for BJP's Assam CM nominee Sarbananda Sonowal |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417183337/http://articles.economictimes.indiatimes.com/2016-03-17/news/71602699_1_election-meeting-prime-minister-narendra-modi-chief-minister-tarun-gogoi |archive-date=2016-04-17 |url-status=dead }}</ref> INC released its first list of 65 candidates on 15 March 2016;<ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/first-list-of-congress-candidates-for-assam-polls-announced/ |title=First list of Congress candidates for Assam polls announced |date=15 March 2016 |work=The Indian Express |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160321071646/http://indianexpress.com/article/india/india-news-india/first-list-of-congress-candidates-for-assam-polls-announced/ |archive-date=2016-03-21 |url-status=live }}</ref> the second list of 57 candidates was announced on 21 March 2016.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Assam-polls-Congress-releases-list-of-57-candidates-for-second-phase/articleshow/51496517.cms |title=Assam polls: Congress releases list of 57 candidates for second phase |date=21 March 2016 |work=The Times of India |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160322113439/http://timesofindia.indiatimes.com/city/guwahati/Assam-polls-Congress-releases-list-of-57-candidates-for-second-phase/articleshow/51496517.cms |archive-date=2016-03-22 |url-status=live }}</ref><ref>{{cite web |url=http://www.ibnlive.com/news/politics/congress-releases-second-list-of-candidates-for-assam-assembly-elections-1219483.html |title=Congress releases second list of candidates for Assam Assembly elections |publisher=CNN-IBN |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160325075339/http://www.ibnlive.com/news/politics/congress-releases-second-list-of-candidates-for-assam-assembly-elections-1219483.html |archive-date=2016-03-25 |url-status=live }}</ref> INC contested 122 seats while its ally United People's Party contested the remaining 4 seats.<ref>{{cite web |url=http://www.telegraphindia.com/1160322/jsp/northeast/story_75767.jsp |title=For phase 2, old is gold for Cong- Four fresh faces in final list |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160403053503/http://www.telegraphindia.com/1160322/jsp/northeast/story_75767.jsp#.VvFqdOJ97IU |archive-date=2016-04-03 |url-status=dead }}</ref> BJP's Himanta Biswa Sarma filed nomination papers from Jalukbari on 21 March 2016.<ref>{{cite web |url=http://www.hindustantimes.com/assembly-elections/bjp-s-himanta-files-nomination-papers-from-jalukbari/story-qxIBRIu7yq2SDXd7S0ASWO.html |title=BJP's Himanta files nomination papers from Jalukbari |work=Hindustan Times |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160322191627/http://www.hindustantimes.com/assembly-elections/bjp-s-himanta-files-nomination-papers-from-jalukbari/story-qxIBRIu7yq2SDXd7S0ASWO.html |archive-date=2016-03-22 |url-status=live }}</ref> AIUDF contested around 76 seats while its allies in Assam – [[Rashtriya Janata Dal]] (RJD) and [[Janata Dal (United)]] (JD[U]) – contest 12 seats each.<ref>{{cite web |url=http://www.firstpost.com/india/assam-election-2016-aiudf-rjd-jdu-form-grand-alliance-against-bjp-invite-congress-to-join-2681616.html |title=Assam Election 2016: AIUDF, RJD, JD(U) form grand alliance against BJP, invite Congress to join |author=Firstpost |date=17 March 2016 |work=Firstpost |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160318185016/http://www.firstpost.com/india/assam-election-2016-aiudf-rjd-jdu-form-grand-alliance-against-bjp-invite-congress-to-join-2681616.html |archive-date=2016-03-18 |url-status=live }}</ref> AIUDF chief Badruddin Ajmal ran for South Salmara seat, while Gogoi ran for the Titabar seat against BJP MP Kamakhya Prasad Tasa.<ref>{{cite web |url=http://timesofindia.indiatimes.com/city/guwahati/Ajmal-and-his-son-in-Assam-assembly-poll-fray/articleshow/51496287.cms |title=Ajmal and his son in Assam assembly poll fray |author=Naresh Mitra |date=21 March 2016 |work=The Times of India |access-date=2016-03-22 |archive-url=https://web.archive.org/web/20160331214018/http://timesofindia.indiatimes.com/city/guwahati/Ajmal-and-his-son-in-Assam-assembly-poll-fray/articleshow/51496287.cms |archive-date=2016-03-31 |url-status=live }}</ref><ref>{{cite web |url=http://articles.economictimes.indiatimes.com/2016-03-22/news/71732538_1_chief-minister-tarun-gogoi-titabar-tasa |title=Assam: BJP MP Kamakhya Prasad Tasa pitted against CM Tarun Gogoi in upcoming assembly polls |work=The Economic Times |access-date=2016-04-05 |archive-url=https://web.archive.org/web/20160417145612/http://articles.economictimes.indiatimes.com/2016-03-22/news/71732538_1_chief-minister-tarun-gogoi-titabar-tasa |archive-date=2016-04-17 |url-status=dead }}</ref>
+
+On 12 February 2016, the [[Election Commission of India]] announced that 10 assembly constituencies in Assam will have 2300 [[voter-verified paper audit trail]] (VVPAT) machines attached along with [[Electronic voting in India|electronic voting machines]] (EVMs).<ref>{{cite web |url=http://www.telegraphindia.com/1160305/jsp/frontpage/story_72928.jsp |title=Pre-Bihu date with elections |work=The Telegraph |access-date=2016-03-05 |archive-url=https://web.archive.org/web/20160305104923/http://www.telegraphindia.com/1160305/jsp/frontpage/story_72928.jsp#.VtprYn197IU |archive-date=2016-03-05 |url-status=dead }}</ref>
+
+== Schedule ==
+The dates of the election were announced on 4 March 2016. (In previous elections, all 140 constituencies went to polls on the same day.)<ref>{{cite web |url=http://infoelections.com/infoelection/index.php/assam-news/6169-assam-assembly-election-schedule.html |title=Assam Assembly Election Schedule 2016 |work=infoelections |access-date=2015-12-29 |archive-url=https://web.archive.org/web/20160105042253/http://infoelections.com/infoelection/index.php/assam-news/6169-assam-assembly-election-schedule.html |archive-date=2016-01-05 |url-status=live }}</ref>
+
+The polling was held in two phases, on 4 and 11 April 2016. The counting was scheduled for 19 May 2016 for both phases.<ref name="ECI_VVPAT" />
+
+{| class="wikitable" | align="center"
+|-
+! colspan="2" | Schedule of polling and results<ref name="ECI_VVPAT" />
+|-
+| Phase 1 || 4 April 2016
+|-
+| Phase 2 || 11 April 2016
+|-
+| Counting of votes and result || 19 May 2016
+|}
+
+{| class="wikitable" | align="center"
+|-
+! colspan="3" | Assembly constituencies of Assam having [[Voter-verified paper audit trail|VVPAT]] facility with [[Indian voting machines|EVMs]]<ref name="ECI_VVPAT">{{cite web |url=http://eci.nic.in/eci_main1/current/PN16_04032016.pdf |title=VVPAT usage in 64 seats in 5 states Schedule for the General Elections to the Legislative Assemblies of Assam, Kerala, Tamil Nadu, West Bengal and Puducherry. |access-date=2016-03-04 |archive-url=https://web.archive.org/web/20160322012359/http://eci.nic.in/eci_main1/current/PN16_04032016.pdf |archive-date=2016-03-22 |url-status=live }}</ref>
+|-
+| Silchar || Dhubri || Bongaigaon
+|-
+| Goalpara East || Jalukbari || [[Dispur Assembly constituency|Dispur]]
+|-
+| [[Gauhati East Assembly constituency|Gauhati East]] || [[Gauhati West Assembly constituency|Guahati West]] || [[Tezpur Assembly constituency|Tezpur]]
+|-
+| Jorhat || ||
+|}
+
+== Opinion polls ==
+{| class="wikitable" style="text-align:center;font-size:85%;width:95%;line-height:20px;"
+|-
+! class="wikitable" rowspan="2" width="100px"| When conducted
+! class="wikitable" rowspan="2" width="10px"| Ref
+! class="wikitable" rowspan="2" width="180px"| Polling organisation/Agency
+! class="wikitable" rowspan="2" width="100px"| Sample size
+| bgcolor={{party color|United Progressive Alliance}} |
+| bgcolor={{party color|National Democratic Alliance (India)}} |
+| bgcolor={{party color|All India United Democratic Front}}  |
+| style="background:violet;" | 
+|-
+! class="wikitable" width="65px"|  [[Indian National Congress|INC]]
+! class="wikitable" width="65px"| [[Bharatiya Janata Party|BJP]]+
+! class="wikitable" width="65px"| [[All India United Democratic Front|AIUDF]]
+! class="wikitable" width="55px"| [[List of political parties in India|Other]]
+|- class="hintergrundfarbe2" style="text-align:center"
+
+|-
+! April 2016
+! <ref name="IndiaTVnews">{{cite news |url=http://timesofindia.indiatimes.com/elections-2016/assam-elections-2016/Congress-BJP-neck-and-neck-in-Assam-opinion-poll-projects/articleshow/51651280.cms |title=Congress, BJP neck and neck in Assam, opinion poll projects |date=1 April 2016 |work=The Times of India |access-date=2016-04-01 |archive-url=https://web.archive.org/web/20160403032251/http://timesofindia.indiatimes.com/elections-2016/assam-elections-2016/Congress-BJP-neck-and-neck-in-Assam-opinion-poll-projects/articleshow/51651280.cms |archive-date=2016-04-03 |url-status=live }}</ref>
+! India TV-C Voter
+| NA
+| 53 <br />
+| 55 <br />
+| 12 <br />
+| 6
+|-
+! March 2016
+! <ref name="ABPNielsen">{{cite news |url=http://abpnews.abplive.in/india-news/bjp-to-win-assam-assembly-elections-abp-news-nielsen-survey-350650/ |title=BJP to win Assam Assembly elections |date=29 March 2016 |publisher=abpnews.abplive.in |access-date=2016-03-30 |archive-url=https://web.archive.org/web/20160331104158/http://abpnews.abplive.in/india-news/bjp-to-win-assam-assembly-elections-abp-news-nielsen-survey-350650/ |archive-date=2016-03-31 |url-status=live }}</ref>
+! [[ACNielsen|Nielsen]]
+| NA
+| 36 <br />
+| 78 <br />
+| 10 <br />
+| 2
+|-
+! March 2016
+! <ref name="IndiaCom">{{cite news |url=http://www.india.com/news/india/assam-assembly-elections-2016-opinion-poll-congress-to-win-40-seats-bjp-agp-lag-behind-aiudf-will-be-the-kingmaker-1056601/ |title=Assam Assembly Elections 2016 opinion poll: Congress to win 40 seats, BJP-AGP lag behind, AIUDF will be the kingmaker! |date=25 March 2016 |publisher=india.com |access-date=2016-03-29 |archive-url=https://archive.today/20160521024408/http://www.india.com/news/india/assam-assembly-elections-2016-opinion-poll-congress-to-win-40-seats-bjp-agp-lag-behind-aiudf-will-be-the-kingmaker-1056601/ |archive-date=2016-05-21 |url-status=live }}</ref>
+! AVC
+| NA
+| 40 <br />
+| 48-54 <br />
+| 25 <br />
+| 0
+|-
+! January 2016
+! <ref name="Leadtech2016">{{cite news |url=http://www.firstpost.com/politics/wins-for-tmc-in-west-bengal-left-in-kerala-india-tv-cvoter-predict-tough-polls-ahead-for-nda-2658218.html |title=Assam Election Opinion Poll: 2016 India Today C Voter |date=25 January 2016 |publisher=infoelections.com |access-date=2016-01-25 |archive-url=https://web.archive.org/web/20160307133338/http://www.firstpost.com/politics/wins-for-tmc-in-west-bengal-left-in-kerala-india-tv-cvoter-predict-tough-polls-ahead-for-nda-2658218.html |archive-date=2016-03-07 |url-status=live }}</ref><ref>{{cite web |url=http://www.dnaindia.com/india/report-opinion-poll-says-ldf-may-stage-a-comeback-in-kerala-while-tmc-to-retain-power-in-bengal-2185695 |title=Opinion Poll says LDF may stage a comeback in Kerala while TMC to retain power in Bengal |date=4 March 2016 |work=dna |access-date=2016-03-06 |archive-url=https://web.archive.org/web/20160306191832/http://www.dnaindia.com/india/report-opinion-poll-says-ldf-may-stage-a-comeback-in-kerala-while-tmc-to-retain-power-in-bengal-2185695 |archive-date=2016-03-06 |url-status=live }}</ref><ref>{{cite web |url=http://indianexpress.com/article/india/india-news-india/cpm-led-ldf-to-storm-to-power-in-kerala-bjp-led-alliance-short-of-majority-in-assam-cvoter-poll/ |title=CPM-led LDF to storm to power in Kerala, BJP-led alliance short of majority in Assam: CVoter poll |date=5 March 2016 |work=The Indian Express |access-date=2016-03-06 |archive-url=https://web.archive.org/web/20160306104828/http://indianexpress.com/article/india/india-news-india/cpm-led-ldf-to-storm-to-power-in-kerala-bjp-led-alliance-short-of-majority-in-assam-cvoter-poll/ |archive-date=2016-03-06 |url-status=live }}</ref>
+! [[India TV]]-C-Voter
+| NA
+| 44 <br />
+| 57 <br />
+| 19 <br />
+| 6
+|}
+
+=== Exit polls ===
+{| class="wikitable"
+! Agency
+! INC+
+! BJP+
+! AIUDF
+! Others
+! Ref.<ref>{{Cite web |url=https://www.indiatoday.in/assembly-elections-2016/tamil-nadu-election/story/india-today-axis-my-india-exit-poll-live-who-will-win-bengal-tamil-nadu-kerala-and-assam-323824-2016-05-16 |title=India Today-Axis Exit Poll: Jaya to lose Tamil Nadu, BJP sweeps Assam, Mamata to retain Bengal |website=India Today |access-date=2016-05-18 |archive-url=https://web.archive.org/web/20160517103014/http://indiatoday.intoday.in/story/india-today-axis-my-india-exit-poll-live-who-will-win-bengal-tamil-nadu-kerala-and-assam/1/669454.html |archive-date=2016-05-17 |url-status=live }}</ref>
+|-
+| News Nation
+| 47-51
+| '''63-67'''
+| 7-11
+| NA
+| <ref>{{Cite web |url=http://indianexpress.com/article/elections-2016/india/india-news-india/exit-polls-west-bengal-tamil-nadu-kerala-assam-puducherry-latest-updates-live/ |title=Exit polls: BJP unseats Congress in Assam, LDF ousts UDF in Kerala; Mamata retains WB, Jaya goes from TN |date=16 May 2016 |website=The Indian Express |access-date=2016-05-18 |archive-url=https://web.archive.org/web/20160517111104/http://indianexpress.com/article/elections-2016/india/india-news-india/exit-polls-west-bengal-tamil-nadu-kerala-assam-puducherry-latest-updates-live/ |archive-date=2016-05-17 |url-status=live }}</ref>
+|-
+| C Voter
+| 41
+| '''57'''
+| 18
+| 10
+| <ref name=":0">{{Cite web |url=http://www.ndtv.com/india-news/poll-of-polls-show-assam-wants-bjp-throws-out-congress-after-15-years-1406839 |title=Tarun Gogoi Out As Chief Minister, Assam Turns To BJP, Show Exit Polls |publisher=NDTV |access-date=2016-05-18 |archive-url=https://web.archive.org/web/20160517095335/http://www.ndtv.com/india-news/poll-of-polls-show-assam-wants-bjp-throws-out-congress-after-15-years-1406839 |archive-date=2016-05-17 |url-status=live }}</ref>
+|-
+| Chanakya
+| 27
+| '''90'''
+| 9
+| NA
+| <ref name=":0" />
+|-
+| ABP Nielsen
+| 33
+| '''81'''
+| 10
+| 2
+| <ref name=":0" />
+|-
+| NDTV Poll of Polls
+| 37
+| '''73'''
+| 12
+| 4
+| <ref name=":0" />
+|}
+
+== Voting ==
+Voter turnout was 84.72%.<ref>{{cite web |url=http://www.telegraphindia.com/1160413/jsp/northeast/story_79826.jsp |title=Assam records its highest voter turnout |access-date=2016-04-15 |archive-url=https://web.archive.org/web/20160421012727/http://www.telegraphindia.com/1160413/jsp/northeast/story_79826.jsp |archive-date=2016-04-21 |url-status=dead }}</ref> 87.03% polling was recorded in the second phase, the highest in Assam's history.<ref>{{cite web |url=http://timesofindia.indiatimes.com/elections-2016/assam-elections-2016/news/Assam-records-highest-ever-polling-in-its-history-surprise-results-likely/articleshow/51786815.cms |title=Assam records highest-ever polling in its history, surprise results likely |author=Prabin Kalita |date=12 April 2016 |work=The Times of India |access-date=2016-04-17 |archive-url=https://web.archive.org/web/20160414215056/http://timesofindia.indiatimes.com/elections-2016/assam-elections-2016/news/Assam-records-highest-ever-polling-in-its-history-surprise-results-likely/articleshow/51786815.cms |archive-date=2016-04-14 |url-status=live }}</ref><ref>{{cite web |url=http://www.thehindu.com/news/national/other-states/assams-85-has-pollsters-riveted/article8462872.ece |title=Assam's 85% has pollsters riveted |author= |work=[[The Hindu]] | access-date=2016-04-17}}</ref> One person was killed by police in Assam.<ref>{{cite web |url=http://indianexpress.com/article/elections-2016/india/india-news-india/elections-assam-west-bengal-tmc-polls-second-phase-assembly-turnout-pollings/ |title=High turnout in Assam, West Bengal in second phase; one dead in police firing, FIR against Tarun Gogoi |date=11 April 2016 |work=The Indian Express |access-date=2016-04-17 |archive-url=https://web.archive.org/web/20160417103346/http://indianexpress.com/article/elections-2016/india/india-news-india/elections-assam-west-bengal-tmc-polls-second-phase-assembly-turnout-pollings/ |archive-date=2016-04-17 |url-status=live }}</ref> 189 EVMs were replaced in the final phase due to technical issues.<ref>{{cite web |url=http://indianexpress.com/article/elections-2016/india/india-news-india/assam-assembly-polls-189-evms-replaced-final-phase/ |title=Assam polls: 189 EVMs replaced during final phase |date=11 April 2016 |work=The Indian Express |access-date=2016-04-17 |archive-url=https://web.archive.org/web/20160413185659/http://indianexpress.com/article/elections-2016/india/india-news-india/assam-assembly-polls-189-evms-replaced-final-phase/ |archive-date=2016-04-13 |url-status=live }}</ref> A total of 1,064 candidates contested the elections – 122 from INC, 89 from BJP, 74 from AIUDF, 30 from AGP, 13 from the BPF, 15 from CPI, 19 from CPM, 205 others and 497 Independents. The total number of polling stations in Assam was 24,890, spread across 50 election districts.
+
+== Result ==
+<section begin=Results />
+{{election table|sortable=yes}}
+! colspan="2" rowspan="2" | Alliance
+! colspan="2" rowspan="2" | Party
+! colspan="3" | Popular vote
+! colspan="3" | Seats
+|-
+! Vote
+! %
+! ±[[Percentage point|pp]]
+! Contested
+! Won
+! +/-
+|-
+| rowspan=4 bgcolor={{party color|National Democratic Alliance (India)}}|
+! rowspan=4 align=left | [[National Democratic Alliance (India)|NDA]]
+| bgcolor={{party color|Bharatiya Janata Party}}"|
+| [[Bharatiya Janata Party]]
+| {{formatnum:4992185}}
+| 29.51
+| {{up}}18.04
+| 84
+| 60
+| {{increase}}55
+|-
+| bgcolor={{party color|Asom Gana Parishad}}|
+| [[Asom Gana Parishad]]
+| {{formatnum:1377482}}
+| 8.14
+| {{decrease}}8.15
+| 24
+| 14
+| {{increase}}4
+|-
+| bgcolor={{party color|Bodoland People's Front}}"|
+| [[Bodoland People's Front]]
+| {{formatnum:666057}}
+| 3.94
+| {{decrease}}2.19
+| 16
+| 12
+| {{steady}}
+|-
+| bgcolor={{party color|National Democratic Alliance (India)}}|
+| style="background:#FAD6A5;" | Total
+| style="background:#FAD6A5;" | '''{{formatnum:7035724}}'''
+| style="background:#FAD6A5;" | '''41.59'''
+| style="background:#FAD6A5;" | {{increase}}7.70
+| style="background:#FAD6A5;" | 126
+| style="background:#FAD6A5;" | '''86'''
+| style="background:#FAD6A5;" | {{increase}}59
+|-
+| rowspan=1 bgcolor={{party color|Indian National Congress}}|
+! rowspan=1 align=left | [[United Progressive Alliance|UPA]]
+| bgcolor={{party color|Indian National Congress}}|
+| [[Indian National Congress]]
+| {{formatnum:5238655}}
+| 30.96
+| {{decrease}}8.43
+| 122
+| 26
+| {{decrease}}52
+|-
+! colspan="2" rowspan=3 align=left | None
+| bgcolor={{party color|All India United Democratic Front}}|
+| [[All India United Democratic Front]]
+| {{formatnum:2207945}}
+| 13.05
+| {{up}}0.48
+| 74
+| 13
+| {{decrease}}5
+|-
+| bgcolor={{party color|Independent politician}}|
+| [[Independent politician|Independents]]
+| {{formatnum:1867531}}
+| 11.04
+| {{up}}1.90
+| 496
+| 1
+| {{decrease}}2
+|-
+| bgcolor={{party color|others}}|
+| others
+| {{formatnum:569509}}
+| 3.36
+|
+|
+| 0
+|
+|- class="unsortable" style="background-color:#E9E9E9"
+! colspan = 4|Total
+| '''{{formatnum:16919364}}'''
+! 100
+! colspan="2" | N/A
+! 126
+!
+|-
+! colspan="10" |
+|-
+| style="text-align:left;" colspan="4" | Valid votes
+| align="right" | {{formatnum:1699364}}
+| align="right" | 99.95
+| colspan="5" rowspan="5" style="background-color:#E9E9E9"  |
+|-
+| style="text-align:left;" colspan="4" | Invalid votes
+| align="right" | {{formatnum:7597}}
+| align="right" | 0.05
+|-
+| style="text-align:left;" colspan="4" | '''Votes cast / turnout'''
+| align="right" | '''{{formatnum:16926961}}'''
+| align="right" | 84.67
+|-
+| style="text-align:left;" colspan="4" | Abstentions
+| align="right" | {{formatnum:3063794}}
+| align="right" | 15.33
+|-
+| style="text-align:left;" colspan="4" | '''Registered voters'''
+| align="right" | '''{{formatnum:19990755}}'''
+| colspan="5" style="background-color:#E9E9E9"|
+|}
+<section end=Results />
+=== Results by Constituency ===
+{| class="wikitable sortable" style="text-align:center;"
+|+ Results (from Election Commission of India)<ref>{{Cite web|title=Assam General Legislative Election 2016|url=https://old.eci.gov.in/files/file/4017-assam-general-legislative-election-2016/|access-date=2021-01-08|website=Election Commission of India|language=en-IN}}</ref>
+! colspan="2" | Assembly Constituency
+! colspan="5" | Winner
+! colspan="5" | Runner Up
+! rowspan="2" | Margin
+|-
+! #
+! Name
+! Candidate
+! colspan="2" | Party
+! Votes
+! %
+! Candidate
+! colspan="2" | Party
+! Votes
+! %
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Karimganj district|<span style="color:white;">'''Karimganj District'''</span>]]
+|-
+| 1
+| [[Ratabari Assembly constituency|Ratabari]]
+| [[Kripanath Mallah]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 59375
+| 47.93
+| Akhil Ranjan Talukdar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 29449
+| 26.15
+| 24526
+|-
+| 2
+| [[Patharkandi Assembly constituency|Patharkandi]]
+| [[Krishnendu Paul]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 46544
+| 37.94
+| Debendra Kumar Sinha
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 32726
+| 30.38
+| 9268
+|-
+| 3
+| [[Karimganj North Assembly constituency|Karimganj North]]
+| Kamalakhya Dey Purkayastha
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 45289
+| 34.63
+| Mission Ranjan Das
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 44821
+| 34.27
+| 468
+|-
+| 4
+| [[Karimganj South Assembly constituency|Karimganj South]]
+| [[Aziz Ahmed Khan]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 58060
+| 45.20
+| Siddeque Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 53644
+| 41.77
+| 4416
+|-
+| 5
+| [[Badarpur (Assam Vidhan Sabha constituency)|Badarpur]]
+| Jamal Uddin Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 38266
+| 34.01
+| Abdul Aziz
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 36178
+| 32.15
+| 2088
+|-
+| colspan="16" bgcolor="grey" align="center" " |  [[Hailakandi district|<span style="color:white;">'''Hailakandi District'''</span>]]
+|-
+| 6
+| [[Hailakandi Assembly constituency|Hailakandi]]
+| [[Anwar Hussain Laskar]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 41647
+| 36.86
+| Soumyajit Dutta Choudhury
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 39039
+| 34.55
+| 2608
+|-
+| 7
+| [[Katlicherra Assembly constituency|Katlicherra]]
+| [[Suzam Uddin Laskar]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 50676
+| 40.60
+| Gautam Roy
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 35592
+| 28.51
+| 15084
+|-
+| 8
+| [[Algapur Assembly constituency|Algapur]]
+| [[Nizam Uddin Choudhury]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 50531
+| 42.32
+| Kaushik Rai
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 32777
+| 27.45
+| 17754
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Cachar district|<span style="color:white;">'''Cachar District'''</span>]]
+|-
+| 9
+| [[Silchar Assembly constituency|Silchar]]
+| [[Dilip Kumar Paul]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 94787
+| 60.53
+| Bithika Dev
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 54867
+| 35.04
+| 39920
+|-
+| 10
+| [[Sonai Assembly constituency|Sonai]]
+| [[Aminul Haque Laskar]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 44236
+| 35.83
+| Anamul Haque
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36683
+| 29.71
+| 7553
+|-
+| 11
+| [[Dholai Assembly constituency|Dholai]]
+| [[Parimal Suklabaidya]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 68694
+| 53.54
+| Girindra Mallik
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 41857
+| 32.62
+| 26837
+|-
+| 12
+| [[Udharbond Assembly constituency|Udharbond]]
+| [[Mihir Kanti Shome]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 54204
+| 48.33
+| Ajit Singh
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 45598
+| 40.65
+| 8606
+|-
+| 13
+| [[Lakhipur Assembly constituency|Lakhipur]]
+| Rajdeep Goala
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 60135
+| 55.00
+| Thoiba Singha
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 35768
+| 32.71
+| 24367
+|-
+| 14
+| [[Barkhola Assembly constituency|Barkhola]]
+| [[Kishor Nath]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 36482
+| 34.90
+| Misbahul Islam Laskar
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 36440
+| 34.86
+| 48
+|-
+| 15
+| [[Katigorah Assembly constituency|Katigorah]]
+| [[Amar Chand Jain]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 59764
+| 44.04
+| Khalil Uddin Mazumde
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 50956
+| 37.55
+| 8808
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Dima Hasao district|<span style="color:white;">'''Dima Hasao District'''</span>]]
+|-
+| 16
+| [[Haflong Assembly constituency|Haflong]]
+| [[Bir Bhadra Hagjer]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 52037
+| 50.77
+| Nirmal Langthasa
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 43731
+| 42.67
+| 8306
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Karbi Anglong district|<span style="color:white;">'''Karbi Anglong District'''</span>]]
+|-
+| 17
+| [[Bokajan Assembly constituency|Bokajan]]
+| [[Numal Momin]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 40170
+| 37.49
+| Klengdoon Engt
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 35426
+| 33.06
+| 4744
+|-
+| 18
+| [[Howraghat Assembly constituency|Howraghat]]
+| [[Joyram Engleng]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 43378
+| 44.19
+| Khorsing Engt
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36987
+| 37.68
+| 6391
+|-
+| 19
+| [[Diphu Assembly constituency|Diphu]]
+| [[Sum Ronghang]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 64421
+| 46.59
+| Bidya Sing Engleng
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36185
+| 26.17
+| 28236
+|-
+| colspan="16" bgcolor="grey" align="center" | [[West Karbi Anglong district|<span style="color:white;">'''West Karbi Anglong District'''</span>]]
+|-
+| 20
+| [[Baithalangso Assembly constituency|Baithalangso]]
+| [[Mansing Rongpi]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 62596
+| 42.84
+| Arun Terang
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 53077
+| 36.33
+| 9519
+|-
+| colspan="16" bgcolor="grey" align="center" | [[South Salmara district|<span style="color:white;">'''South Salmara District'''</span>]]
+|-
+| 21
+| [[Mankachar Assembly constituency|Mankachar]]
+| [[Dr. Motiur Rohman Mondal]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 54181
+| 31.57
+| [[Aminul Islam (Indian politician)|Adv. Aminul Islam]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 49868
+| 29.06
+| 4313
+|-
+| 22
+| [[Salmara South Assembly constituency|Salmara South]]
+| Wazed Ali Choudhury
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 80066
+| 54.43
+| [[Badruddin Ajmal]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 63343
+| 43.06
+| 16723
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Dhubri district|<span style="color:white;">'''Dhubri District'''</span>]]
+|-
+| 23
+| [[Dhubri Assembly constituency|Dhubri]]
+| [[Najrul Hoque]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 60933
+| 40.08
+| Nazibul Umar
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 36847
+| 24.24
+| 24086
+|-
+| 24
+| [[Gauripur Assembly constituency|Gauripur]]
+| [[Nijanur Rahman]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 73423
+| 45.66
+| [[Banendra Mushahary|Banendra Kumar Mushahary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 53512
+| 33.28
+| 19911
+|-
+| 25
+| [[Golakganj Assembly constituency|Golakganj]]
+| [[Ashwini Roy Sarkar]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 76444
+| 46.20
+| Abdus Sobahan Ali Sarkar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 68253
+| 42.25
+| 6391
+|-
+| 26
+| [[Bilasipara West Assembly constituency|Bilasipara West]]
+| [[Hafiz Bashir Ahmed]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 44407
+| 32.29
+| Ali Akbar Miah
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 33205
+| 24.15
+| 11202
+|-
+| 27
+| [[Bilasipara East Assembly constituency|Bilasipara East]]
+| [[Ashok Kumar Singhi]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 59206
+| 35.30
+| Amrit Badsha
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 54110
+| 32.26
+| 5096
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Kokrajhar district|<span style="color:white;">'''Kokrajhar District'''</span>]]
+|-
+| 28
+| [[Gossaigaon Assembly constituency|Gossaigaon]]
+| [[Majendra Narzary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 45516
+| 31.93
+| Ravi Sankar Kasireddy
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 39476
+| 27.69
+| 6041
+|-
+| 29
+| [[Kokrajhar West]]
+| [[Rabiram Narzary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 64423
+| 45.71
+| Dahit Chandra Brahma
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 47083
+| 33.41
+| 17340
+|-
+| 30
+| [[Kokrajhar East]]
+| [[Pramila Rani Brahma]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 76496
+| 55.34
+| Pratibha Brahma
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 36405
+| 26.34
+| 40091
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Chirang district|<span style="color:white;">'''Chirang District'''</span>]]
+|-
+| 31
+| [[Sidli Assembly constituency|Sidli]]
+| [[Chandan Brahm]]a
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 66037
+| 42.00
+| Rwngwra Nazary
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 57049
+| 36.28
+| 8988
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Bongaigaon district|<span style="color:white;">'''Bongaigaon District'''</span>]]
+|-
+| 32
+| [[Bongaigaon Assembly constituency|Bongaigaon]]
+| [[Phani Bhusan Choudhury]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 77292
+| 56.03
+| Shankar Prasad Ray
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 45972
+| 33.33
+| 31320
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Chirang district|<span style="color:white;">'''Chirang District'''</span>]]
+|-
+| 33
+| [[Bijni Assembly constituency|Bijni]]
+| [[Kamal Singh Narzary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 29240
+| 24.50
+| [[Ajoy Kumar Ray]]
+| bgcolor=#FFFF46 | 
+| BGP
+| 27562
+| 23.09
+| 1678
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Bongaigaon district|<span style="color:white;">'''Bongaigaon District'''</span>]]
+|-
+| 34
+| [[Abhayapuri North Assembly constituency|Abhayapuri North]]
+| Abdul Hai Nagori
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 48354
+| 35.38
+| Bhupen Roy
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 46211
+| 33.81
+| 2143
+|-
+| 35
+| [[Abhayapuri South Assembly constituency|Abhayapuri South]]
+| [[Ananta Kumar Malo]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 51525
+| 32.50
+| Chandan Kumar Sarkar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 51334
+| 32.38
+| 191
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Goalpara district|<span style="color:white;">'''Goalpara District'''</span>]]
+|-
+| 36
+| [[Dudhnai Assembly constituency|Dudhnai]]
+| [[Dipak Rabha]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 79993
+| 49.97
+| Sibcharan Basumatary
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 51316
+| 32.06
+| 28667
+|-
+| 37
+| [[Goalpara East Assembly constituency|Goalpara East]]
+| Abdul Kalam Rasheed Alam
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 57374
+| 33.51
+| Gauranga Prasad Das
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 54793
+| 32.00
+| 2581
+|-
+| 38
+| [[Goalpara West Assembly constituency|Goalpara West]]
+| Abdur Rasheed Mandal
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 61007
+| 44.77
+| Sheikh Shah Alam
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 36668
+| 26.91
+| 24339
+|-
+| 39
+| [[Jaleswar (Assam Vidhan Sabha constituency)|Jaleswar]]
+| [[Sahab Uddin Ahmed]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 56003
+| 43.95
+| Aftab Uddin Mollah
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 49341
+| 38.45
+| 6662
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Barpeta district|<span style="color:white;">'''Barpeta District'''</span>]]
+|-
+| 40
+| [[Sorbhog Assembly constituency|Sorbhog]]
+| [[Ranjit Kumar Das]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 56454
+| 33.34
+| Anurupa Hannan
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36928
+| 21.81
+| 19526
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Bajali district|<span style="color:white;">'''Bajali District'''</span>]]
+|-
+| 41
+| [[Bhabanipur (Assam Vidhan Sabha constituency)|Bhabanipur]]
+| [[Abul Kalam Azad (Indian politician)|Abul Kalam Azad]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 28383
+| 25.74
+| Phanihdar Talukdar
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 25944
+| 23.53
+| 2439
+|-
+| 42
+| [[Patacharkuchi Assembly constituency|Patacharkuchi]]
+| [[Pabindra Deka]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 64558
+| 61.72
+| Sailen Kalita
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 12582
+| 12.03
+| 51976
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Barpeta district|<span style="color:white;">'''Barpeta District'''</span>]]
+|-
+| 43
+| [[Barpeta Assembly constituency|Barpeta]]
+| [[Gunindra Nath Das]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 63563
+| 38.96
+| A.Rahim Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 57753
+| 35.40
+| 5810
+|-
+| 44
+| [[Jania Assembly constituency|Jania]]
+| Abdul Khaleque
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 86930
+| 56.40
+| Rafiqul Islam
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 57194
+| 37.11
+| 29736
+|-
+| 45
+| [[Baghbar Assembly constituency|Baghbor]]
+| Sherman Ali Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 73340
+| 57.58
+| Sheikh Abdul Hamid
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 29907
+| 23.48
+| 43433
+|-
+| 46
+| [[Sarukhetri Assembly constituency|Sarukhetri]]
+| Jakir Hussain Sikdar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 70062
+| 45.06
+| Chittaranjan Barman
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 45815
+| 29.46
+| 24247
+|-
+| 47
+| [[Chenga Assembly constituency|Chenga]]
+| Sukur Ali Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 51882
+| 47.25
+| Monowara Khatun
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 28525
+| 25.98
+| 23357
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Kamrup district|<span style="color:white;">'''Kamrup District'''</span>]]
+|-
+| 48
+| [[Boko Assembly constituency|Boko]]
+| Nandita Das
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 69986
+| 39.66
+| Jyoti Prasad Das
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 52392
+| 29.69
+| 17594
+|-
+| 49
+| [[Chaygaon Assembly constituency|Chaygaon]]
+| Rekibuddin Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 72211
+| 49.66
+| Kamala Kanta Kalita
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 64390
+| 44.28
+| 7821
+|-
+| 50
+| [[Palasbari Assembly constituency|Palasbari]]
+| [[Pranab Kalita]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 75210
+| 61.93
+| Nabajyoti Talukdar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 26468
+| 21.80
+| 48742
+|-
+| colspan="16" bgcolor="grey" align="center" | <span style="color:white;">'''[[Kamrup Metropolitan district|Kamrup Metropolitan District]]'''</span>
+|-
+| 51
+| [[Jalukbari Assembly constituency|Jalukbari]]
+| [[Himanta Biswa Sarma]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 118390
+| 76.62
+| Niren Deka
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 32455
+| 21.01
+| 85935
+|-
+| 52
+| [[Dispur Assembly constituency|Dispur]]
+| [[Atul Bora Sr.|Atul Bora]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 198378
+| 71.14
+| Akon Bora
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 68181
+| 24.45
+| 130197
+|-
+| 53
+| [[Gauhati East Assembly constituency|Gauhati East]]
+| [[Siddhartha Bhattacharya]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 127602
+| 78.49
+| Bobbeeta Sharma
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 30965
+| 19.05
+| 96637
+|-
+| 54
+| [[Gauhati West Assembly constituency|Gauhati West]]
+| [[Ramendra Narayan Kalita]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 132184
+| 64.07
+| Jury Sharma Bordoloi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 42274
+| 20.49
+| 89910
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Kamrup district|<span style="color:white;">'''Kamrup District'''</span>]]
+|-
+| 55
+| [[Hajo Assembly constituency|Hajo]]
+| [[Suman Haripriya]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 55096
+| 40.76
+| Dulu Ahmed
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 46188
+| 34.17
+| 8908
+|-
+| 56
+| [[Kamalpur, Assam Assembly constituency|Kamalpur]]
+| [[Satyabrat Kalita]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 78170
+| 57.70
+| Pranjit Choudhury
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 41261
+| 30.46
+| 36909
+|-
+| 57
+| [[Rangiya Assembly constituency|Rangia]]
+| [[Bhabesh Kalita]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 58353
+| 40.72
+| Ghanashyam Kalita
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 26286
+| 18.34
+| 32067
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Baksa district|<span style="color:white;">'''Baksa District'''</span>]]
+|-
+| 58
+| [[Tamulpur Assembly constituency|Tamulpur]]
+| [[Emmanuel Mosahary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 63031
+| 42.87
+| Rabindra Biswas
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 43084
+| 29.30
+| 19947
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Nalbari district|<span style="color:white;">'''Nalbari District'''</span>]]
+|-
+| 59
+| [[Nalbari Assembly constituency|Nalbari]]
+| [[Ashok Sarma]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 99131
+| 62.93
+| Pradyut Kumar Bhuyan
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 46087
+| 29.26
+| 53044
+|-
+| 60
+| [[Barkhetry Assembly constituency|Barkhetry]]
+| [[Narayan Deka]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 69223
+| 47.15
+| Diganta Barman
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 60610
+| 41.29
+| 8613
+|-
+| 61
+| [[Dharmapur Assembly constituency|Dharmapur]]
+| [[Chandra Mohan Patowary]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 70503
+| 63.55
+| Nilamani Sen Deka
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36560
+| 32.95
+| 33943
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Baksa district|<span style="color:white;">'''Baksa District'''</span>]]
+|-
+| 62
+| [[Barama Assembly constituency|Barama]]
+| [[Maneswar Brahma]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 45289
+| 37.90
+| Rekha Rani Das Boro
+| bgcolor=#DDDDDD | 
+| [[Independent politician|IND]]
+| 35493
+| 29.70
+| 9796
+|-
+| 63
+| [[Chapaguri Assembly constituency|Chapaguri]]
+| [[Thaneswar Basumatary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 43250
+| 37.80
+| Sujan Das
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 41769
+| 36.51
+| 1481
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Udalguri district|<span style="color:white;">'''Udalguri District'''</span>]]
+|-
+| 64
+| [[Panery Assembly constituency|Panery]]
+| [[Kamali Basumatari]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 38668
+| 35.93
+| Nanda Ram Baro
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 22866
+| 21.25
+| 15802
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Darrang district|<span style="color:white;">'''Darrang District'''</span>]]
+|-
+| 65
+| [[Kalaigaon Assembly constituency|Kalaigaon]]
+| [[Maheswar Baro]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 47206
+| 35.54
+| Nathu Ram Boro
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 29585
+| 22.28
+| 17621
+|-
+| 66
+| [[Sipajhar Assembly constituency|Sipajhar]]
+| [[Binanda Kumar Saikia]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 65487
+| 41.31
+| Zoii Nath Sarmah
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 53312
+| 28.91
+| 12175
+|-
+| 67
+| [[Mangaldoi Assembly constituency|Mangaldoi]]
+| [[Gurujyoti Das]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 73423
+| 42.48
+| Basanta Das
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 51378
+| 41.20
+| 22045
+|-
+| 68
+| [[Dalgaon Assembly constituency|Dalgaon]]
+| [[Ilias Ali (Indian politician)|Ilias Ali]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 76607
+| 42.48
+| Mazibur Rahman
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 74287
+| 41.20
+| 2320
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Udalguri district|<span style="color:white;">'''Udalguri District'''</span>]]
+|-
+| 69
+| [[Udalguri Assembly constituency|Udalguri]]
+| [[Rihon Daimary]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 45037
+| 40.94
+| Anjali Prabha Daimari
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 20663
+| 18.79
+| 24374
+|-
+| 70
+| [[Majbat Assembly constituency|Majbat]]
+| [[Charan Boro]]
+| bgcolor=#FF6600 | 
+| [[Bodoland People's Front|BPF]]
+| 48351
+| 43.16
+| Teharu Gour
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 22133
+| 19.76
+| 26218
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Sonitpur district|<span style="color:white;">'''Sonitpur District'''</span>]]
+|-
+| 71
+| [[Dhekiajuli Assembly constituency|Dhekiajuli]]
+| [[Ashok Singhal (politician)|Ashok Singhal]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 71425
+| 49.57
+| Habul Chakraborty
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36430
+| 25.28
+| 34995
+|-
+| 72
+| [[Barchalla Assembly constituency|Barchalla]]
+| [[Ganesh Kumar Limbu]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 53912
+| 45.00
+| Tanka Bahadur Rai
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 30230
+| 25.23
+| 23682
+|-
+| 73
+| [[Tezpur Assembly constituency|Tezpur]]
+| [[Brindaban Goswami]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 71170
+| 52.56
+| Hiranya Bhuyan
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36507
+| 26.96
+| 34663
+|-
+| 74
+| [[Rangapara Assembly constituency|Rangapara]]
+| [[Pallab Lochan Das]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 51597
+| 43.92
+| Bhimananda Tanti
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 28606
+| 24.35
+| 22991
+|-
+| 75
+| [[Sootea Assembly constituency|Sootea]]
+| [[Padma Hazarika]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 60440
+| 45.89
+| Praneswar Basumatary
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 58622
+| 44.51
+| 1818
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Biswanath district|<span style="color:white;">'''Biswanath District'''</span>]]
+|-
+| 76
+| [[Biswanath Assembly constituency|Biswanath]]
+| [[Promod Borthakur]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 64225
+| 52.33
+| Nurjamal Sarkar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 54105
+| 44.09
+| 10120
+|-
+| 77
+| [[Behali Assembly constituency|Behali]]
+| [[Ranjit Dutta]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 52152
+| 56.20
+| Rupak Sarma
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 28551
+| 30.77
+| 23601
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Sonitpur district|<span style="color:white;">'''Sonitpur District'''</span>]]
+|-
+| 78
+| [[Gohpur Assembly constituency|Gohpur]]
+| [[Utpal Borah]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 85424
+| 58.26
+| Monika Bora
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 56489
+| 38.53
+| 28935
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Morigaon district|<span style="color:white;">'''Morigaon District'''</span>]]
+|-
+| 79
+| [[Jagiroad Assembly constituency|Jagiroad]]
+| [[Pijush Hazarika]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 94550
+| 54.98
+| Bibekananda Dalai
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 66224
+| 38.51
+| 28326
+|-
+| 80
+| [[Marigaon Assembly constituency|Marigaon]]
+| [[Rama Kanta Dewri]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 80669
+| 57.09
+| Jonjonali Baruah
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 51046
+| 36.13
+| 26923
+|-
+| 81
+| [[Laharighat Assembly constituency|Laharighat]]
+| Nazrul Islam
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 57904
+| 41.40
+| Siddique Ahmed
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 52098
+| 37.25
+| 5806
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Nagaon district|<span style="color:white;">'''Nagaon District'''</span>]]
+|-
+| 82
+| [[Raha Assembly constituency|Raha]]
+| [[Dimbeswar Das]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 76941
+| 47.60
+| Sashi Kanta Das
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 43867
+| 27.14
+| 33074
+|-
+| 83
+| [[Dhing Assembly constituency|Dhing]]
+| [[Aminul Islam (Indian politician, born 1975)|Aminul Islam]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 82786
+| 47.78
+| Anwar Hussain
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 58233
+| 33.61
+| 24553
+|-
+| 84
+| [[Batadroba Assembly constituency|Batadroba]]
+| [[Angoorlata Deka]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 46343
+| 37.61
+| Gautam Bora
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 40458
+| 32.83
+| 5885
+|-
+| 85
+| [[Rupohihat Assembly constituency|Rupohihat]]
+| Nurul Huda
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 72627
+| 47.50
+| Nurul Amin Chowdhury
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 50783
+| 33.21
+| 21844
+|-
+| 86
+| [[Nowgong Assembly constituency|Nowgong]]
+| [[Rupak Sarmah]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 66706
+| 47.43
+| Durlav Chamua
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 53442
+| 38.00
+| 13264
+|-
+| 87
+| [[Barhampur Assembly constituency|Barhampur]]
+| [[Prafulla Kumar Mahanta]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 65768
+| 48.43
+| Suresh Bora
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 60599
+| 44.63
+| 5169
+|-
+| 88
+| [[Samaguri Assembly constituency|Samaguri]]
+| Rakibul Hussain
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 66364
+| 51.95
+| Jitu Goswami
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 51849
+| 40.59
+| 14515
+|-
+| 89
+| [[Kaliabor Assembly constituency|Kaliabor]]
+| [[Keshab Mahanta]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 64759
+| 62.03
+| Bindu Ganju
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 26769
+| 25.64
+| 37990
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Hojai district|<span style="color:white;">'''Hojai District'''</span>]]
+|-
+| 90
+| [[Jamunamukh Assembly constituency|Jamunamukh]]
+| [[Abdur Rahim Ajmal]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 65599
+| 42.57
+| Rejaul Karim Chowdhury
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 52195
+| 33.87
+| 13404
+|-
+| 91
+| [[Hojai Assembly constituency|Hojai]]
+| [[Shiladitya Dev]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 105615
+| 54.40
+| Dhaniram Thousen
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 49756
+| 25.63
+| 55849
+|-
+| 92
+| [[Lumding Assembly constituency|Lumding]]
+| [[Sibu Misra]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 72072
+| 46.05
+| Netra Ranjan Mahanta
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 41672
+| 26.62
+| 30400
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Golaghat district|<span style="color:white;">'''Golaghat District'''</span>]]
+|-
+| 93
+| [[Bokakhat Assembly constituency|Bokakhat]]
+| [[Atul Bora]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 62962
+| 59.71
+| Arun Phukan
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 22769
+| 21.59
+| 40193
+|-
+| 94
+| [[Sarupathar Assembly constituency|Sarupathar]]
+| Roselina Tirkey
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 67150
+| 36.05
+| Binod Gowalla
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 64223
+| 34.48
+| 2927
+|-
+| 95
+| [[Golaghat Assembly constituency|Golaghat]]
+| Ajanta Neog
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 73862
+| 50.17
+| Bitupan Saikia
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 68649
+| 46.63
+| 5213
+|-
+| 96
+| [[Khumtai Assembly constituency|Khumtai]]
+| [[Mrinal Saikia]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 57637
+| 55.28
+| Bismita Gogoi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 40763
+| 39.09
+| 16874
+|-
+| 97
+| [[Dergaon Assembly constituency|Dergaon]]
+| [[Bhabendra Nath Bharali]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 63079
+| 52.30
+| Aroti Hazarika Kachari
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 46807
+| 38.81
+| 16272
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Jorhat district|<span style="color:white;">'''Jorhat District'''</span>]]
+|-
+| 98
+| [[Jorhat Assembly constituency|Jorhat]]
+| [[Hitendra Nath Goswami]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 69209
+| 52.91
+| Rana Goswami
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 55571
+| 42.48
+| 13638
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Majuli district|<span style="color:white;">'''Majuli District'''</span>]]
+|-
+| 99
+| [[Majuli Assembly constituency|Majuli]]
+| [[Sarbananda Sonowal]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 49602
+| 50.74
+| Rajib Lochan Pegu
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 30679
+| 31.38
+| 18923
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Jorhat district|<span style="color:white;">'''Jorhat District'''</span>]]
+|-
+| 100
+| [[Titabar Assembly constituency|Titabar]]
+| [[Tarun Gogoi]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 62025
+| 54.65
+| [[Kamakhya Prasad Tasa]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 44530
+| 39.23
+| 17495
+|-
+| 101
+| [[Mariani Assembly constituency|Mariani]]
+| Rupjyoti Kurmi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36701
+| 40.53
+| Alok Kumar Ghosh
+| bgcolor=#00B2B2 | 
+| [[Nationalist Congress Party|NCP]]
+| 34908
+| 38.55
+| 1793
+|-
+| 102
+| [[Teok Assembly constituency|Teok]]
+| [[Renupoma Rajkhowa]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 40928
+| 42.88
+| Pallabi Saikia Gogoi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 35879
+| 37.59
+| 5049
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Sivasagar district|<span style="color:white;">'''Sibsagar District'''</span>]]
+|-
+| 103
+| [[Amguri Assembly constituency|Amguri]]
+| [[Prodip Hazarika]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 42010
+| 43.75
+| Angkita Dutta
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 40390
+| 42.07
+| 1620
+|-
+| 104
+| [[Nazira Assembly constituency|Nazira]]
+| [[Debabrata Saikia]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 52869
+| 53.77
+| Prohlad Gowala
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 38014
+| 38.66
+| 14855
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Charaideo district|<span style="color:white;">'''Charaideo District'''</span>]]
+|-
+| 105
+| [[Mahmara Assembly constituency|Mahmara]]
+| [[Jogen Mohan]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 49036
+| 47.50
+| Suruj Dehingia
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 34711
+| 33.63
+| 14325
+|-
+| 106
+| [[Sonari Assembly constituency|Sonari]]
+| [[Topon Kumar Gogoi]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 73327
+| 55.83
+| Sarat Barkataky
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 49210
+| 37.47
+| 24117
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Sivasagar district|<span style="color:white;">'''Sibsagar District'''</span>]]
+|-
+| 107
+| [[Thowra Assembly constituency|Thowra]]
+| [[Kushal Dowari]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 41560
+| 48.42
+| Sushanta Borgohain
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 40334
+| 46.99
+| 1226
+|-
+| 108
+| [[Sibsagar Assembly constituency|Sibsagar]]
+| [[Pranab Kumar Gogoi]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 48584
+| 42.87
+| Surabhi Rajkonwar
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 48042
+| 42.39
+| 542
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Lakhimpur district|<span style="color:white;">'''Lakhimpur District'''</span>]]
+|-
+| 109
+| [[Bihpuria Assembly constituency|Bihpuria]]
+| [[Debananda Hazarika]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 66563
+| 60.68
+| Bhupen Kumar Borah
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 40376
+| 36.81
+| 26187
+|-
+| 110
+| [[Naoboicha Assembly constituency|Naoboicha]]
+| [[Mamun Imdadul Haque Chawdhury]]
+| bgcolor=#348017 | 
+| [[All India United Democratic Front|AIUDF]]
+| 56003
+| 34.52
+| Rao Gajendra Singh
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 54770
+| 33.76
+| 1233
+|-
+| 111
+| [[Lakhimpur, Assam Assembly constituency|Lakhimpur]]
+| [[Utpal Dutta]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 45917
+| 33.88
+| Joy Prakash Das
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 41762
+| 30.82
+| 4155
+|-
+| 112
+| [[Dhakuakhana Assembly constituency|Dhakuakhana]]
+| [[Naba Kumar Doley]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 81556
+| 55.45
+| Bharat Chandra Narah
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 57014
+| 38.77
+| 24542
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Dhemaji district|<span style="color:white;">'''Dhemaji District'''</span>]]
+|-
+| 113
+| [[Dhemaji Assembly constituency|Dhemaji]]
+| [[Pradan Baruah]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 69592
+| 40.90
+| Sumitra Doley Patir
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 50471
+| 29.66
+| 19121
+|-
+| 114
+| [[Jonai Assembly constituency|Jonai]]
+| [[Bhubon Pegu]]
+| bgcolor=#dddddd | 
+| [[Independent politician|IND]]
+| 88441
+| 42.89
+| Aswini Pait
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 39148
+| 18.98
+| 49293
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Dibrugarh district|<span style="color:white;">'''Dibrugarh District'''</span>]]
+|-
+| 115
+| [[Moran Assembly constituency|Moran]]
+| [[Chakradhar Gogoi]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 54571
+| 54.13
+| [[Paban Singh Ghatowar]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 38340
+| 38.03
+| 16231
+|-
+| 116
+| [[Dibrugarh Assembly constituency|Dibrugarh]]
+| [[Prasanta Phukan]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 63985
+| 61.02
+| Chandra Kanta Barua
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 36611
+| 34.91
+| 27374
+|-
+| 117
+| [[Lahowal Assembly constituency|Lahowal]]
+| [[Rituparna Baruah]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 59013
+| 53.86
+| Prithibi Majhi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 39414
+| 35.97
+| 19599
+|-
+| 118
+| [[Duliajan Assembly constituency|Duliajan]]
+| [[Terash Gowalla]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 58450
+| 51.13
+| Dhruba Jyoti Gogoi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 41364
+| 36.18
+| 17086
+|-
+| 119
+| [[Tingkhong Assembly constituency|Tingkhong]]
+| [[Bimal Bora]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 57072
+| 54.61
+| Atuwa Munda
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 38734
+| 37.07
+| 18338
+|-
+| 120
+| [[Naharkatia Assembly constituency|Naharkatia]]
+| [[Naren Sonowal]]
+| bgcolor=#99CCFF | 
+| [[Asom Gana Parishad|AGP]]
+| 46051
+| 46.75
+| Pranatee Phukan
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 42520
+| 43.17
+| 3531
+|-
+| 121
+| [[Chabua Assembly constituency|Chabua]]
+| [[Binod Hazarika]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 69351
+| 59.76
+| Raju Sahu
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 38597
+| 33.26
+| 30754
+|-
+| colspan="16" bgcolor="grey" align="center" | [[Tinsukia district|<span style="color:white;">'''Tinsukia District'''</span>]]
+|-
+| 122
+| [[Tinsukia Assembly constituency|Tinsukia]]
+| [[Sanjoy Kishan]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 70937
+| 61.24
+| Rajendra Prasad Singh
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 35868
+| 30.96
+| 35069
+|-
+| 123
+| [[Digboi Assembly constituency|Digboi]]
+| [[Suren Phukan]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 49167
+| 51.47
+| Gautam Dhanowar
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 34874
+| 36.51
+| 14293
+|-
+| 124
+| [[Margherita Assembly constituency|Margherita]]
+| [[Bhaskar Sharma]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 76365
+| 55.85
+| Pradyut Bordoloi
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 53621
+| 39.21
+| 22744
+|-
+| 125
+| [[Doomdooma Assembly constituency|Doomdooma]]
+| [[Durga Bhumij]]
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 46938
+| 45.40
+| Dilip Moran
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 46156
+| 44.64
+| 782
+|-
+| 126
+| [[Sadiya Assembly constituency|Sadiya]]
+| [[Bolin Chetia]]
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party|BJP]]
+| 38845
+| 32.14
+| Birinchi Neog
+| bgcolor=#00BFFF | 
+| [[Indian National Congress|INC]]
+| 32279
+| 26.71
+| 6566
+|}
+
+== Share ==
+=== Seat Share ===
+{{Pie chart
+| thumb = left
+| label1 = [[National Democratic Alliance|NDA]]
+| value1 = 68.26
+| color1 = Orange
+| label2 = [[United Progressive Alliance|UPA]]
+| value2 = 20.63
+| color2 = #00CCFF
+| label3 = [[All India United Democratic Front|AIUDF]]
+| value3 = 10.32
+| color3 = Green
+| label4 = [[Independent politician|IND]]
+| value4 = 0.79
+| color4 = #C0C0C0
+}}
+
+{{Pie chart
+| thumb = right
+| label1 = [[National Democratic Alliance|NDA]]
+| value1 = 41.90
+| color1 = Orange
+| label2 = [[United Progressive Alliance|UPA]]
+| value2 = 31.00
+| color2 = #00CCFF
+| label3 = [[All India United Democratic Front|AIUDF]]
+| value3 = 13.00
+| color3 = Green
+| label4 = [[Communist Party of India (Marxist)|CPM]]
+| value4 = 0.55
+| color4 = Red
+| label5 = [[Communist Party of India|CPI]]
+| value5 = 0.22
+| color5 = Pink
+| label6 = Others
+| value6 = 13.33
+| color6 = Grey
+}}
+{{clear}}
+
+== Bypolls (2016–2021) ==
+{| class="wikitable sortable" style="text-align:center;"
+! S.No
+! Date
+! Constituency
+! MLA before election
+! colspan="2" | Party before election
+! Elected MLA
+! colspan="2" | Party after election
+|-
+! 20
+| 19 November 2016
+| [[Baithalangso Assembly constituency|Baithalangso]]
+| [[Mansing Rongpi]]
+| {{Full party name with color|Indian National Congress}}
+| [[Mansing Rongpi]]
+| {{Full party name with color|Bharatiya Janata Party|rowspan=5}}
+|-
+! 113
+| 9 April 2017
+| [[Dhemaji Assembly constituency|Dhemaji]]
+| [[Pradan Baruah]]
+| {{Full party name with color|Bharatiya Janata Party|rowspan=4}}
+| [[Ranoj Pegu]]
+|-
+! 1
+| rowspan="4" | 21 October 2019
+| [[Ratabari (Vidhan Sabha constituency)|Ratabari]]
+| [[Kripanath Mallah]]
+| [[Bijoy Malakar]]
+|-
+! 74
+| [[Rangapara (Vidhan Sabha constituency)|Rangapara]]
+| [[Pallab Lochan Das]]
+| [[Rajen Borthakur]]
+|-
+! 106
+| [[Sonari (Vidhan Sabha constituency)|Sonari]]
+| [[Topon Kumar Gogoi]]
+| [[Nabanita Handique]]
+|-
+! 126
+| [[Jania (Vidhan Sabha constituency)|Jania]]
+| [[Abdul Khaleque]]
+| {{Full party name with color|Indian National Congress}}
+| [[Rafiqul Islam (Indian politician)|Rafiqul Islam]]
+| {{Full party name with color|All India United Democratic Front}}
+|}
+
+== See also ==
+* [[2016 elections in India]]
+* [[2011 Assam Legislative Assembly election]]
+* [[Bangladeshis in India]]
+* [[Illegal Migrants (Determination by Tribunal) Act, 1983]]
+* [[National Register of Citizens of India]]
+
+== References ==
+{{Reflist|2}}
+
+== External links ==
+* [http://eci.nic.in/eci/eci.html Election Commission of India]
+
+{{Assam elections|state=collapsed}}
+
+[[Category:2016 State Assembly elections in India|Assam]]
+[[Category:State Assembly elections in Assam|2016]]
+[[Category:2010s in Assam|2016]]

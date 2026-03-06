@@ -1,0 +1,1425 @@
+{{Short description|Indian union territory election}}
+{{Use dmy dates|date=February 2020}}
+{{Use Indian English|date=February 2020}}
+{{Infobox election
+| election_name = 2021 Puducherry Legislative Assembly election
+| country = India
+| flag_year = 
+| flag_image = 
+| type = legislative
+| vote_type = Popular <!-- default -->
+| ongoing = no
+| party_colour = 
+| party_name = 
+| alliance_name = 
+| previous_election = 2016 Puducherry Legislative Assembly election
+| registered = 1,004,507<ref>{{cite web|url=https://old.eci.gov.in/files/file/13417-puducherry-general-legislative-election-2021/|title=General Election to the Legislative Assembly of Puducherry, 2021|work=Election Commission of India|accessdate=18 February 2026}}</ref>
+| turnout = 83.42%({{decrease}}1.66[[percentage points|pp]])
+| previous_year = 2016
+| outgoing_members = 
+| election_date = 6 April 2021
+| elected_members = 
+| next_election = 2026 Puducherry Legislative Assembly election
+| next_year = 2026
+| votes_for_election = 
+| needed_votes = 
+| seats_for_election = All 30 seats in the [[Puducherry Legislative Assembly]]
+| majority_seats = 16
+| opinion_polls = 
+| image_size = 100px
+| map_image = 
+| map_size = 
+| map_caption = <!-- bottom -->
+| title = [[List of Chief Ministers of Puducherry|Chief Minister]]
+| before_election = [[V. Narayanasamy]]
+| before_party = Indian National Congress
+| after_election = [[N. Rangaswamy]]
+| after_party = [[AINRC]]
+| image1 = {{CSS image crop|Image=N_Rangaswamy.jpg|bSize=100|cWidth=100|cHeight=120|oLeft=0|oTop=0}}
+| leader1 = [[N. Rangaswamy]]
+| party1 = All India N.R. Congress
+| alliance1 = National Democratic Alliance
+| leader_since1 = 2011
+| leaders_seat1 = [[Thattanchavady Assembly constituency|Thattanchavady]] (''won'')<br />[[Yanam Assembly constituency|Yanam]] (''lost'')
+| last_election1 = 8
+| seats1 = '''10'''
+| seat_change1 = {{up}} 2
+| popular_vote1 = '''216,249'''
+| percentage1 = '''25.85%'''
+| swing1 = {{down}} 2.25[[percentage points|pp]]
+| image2 =  {{eppt|Dravida Munnetra Kazhagam|height=120|width=100}}
+| leader2 = [[R. Siva]]
+| party2 = Dravida Munnetra Kazhagam
+| leader_since2 = 2021
+| leaders_seat2 = [[Villianur Assembly constituency|Villianur]] (''won'')
+| alliance2 = [[Secular Progressive Alliance|SPA]]+[[United Progressive Alliance|UPA]]
+| last_election2 = 2
+| seats2 = 6
+| seat_change2 = {{up}} 4
+| popular_vote2 = 154,858
+| percentage2 = 18.51%
+| swing2 = {{up}} 9.61[[percentage points|pp]]
+| image4 = {{CSS image crop|Image=A. Namassivayam.png|bSize=100|cWidth=100|cHeight=120|oLeft=0|oTop=0}} 
+| leader4 = [[A. Namassivayam]]
+| party4 = Bharatiya Janata Party
+| leader_since4 = 2021
+| leaders_seat4 = [[Mannadipet Assembly constituency|Mannadipet]] (''won'')
+| alliance4 = National Democratic Alliance
+| last_election4 = 0
+| seats_before4 = 
+| seats4 = 6
+| seat_change4 = {{up}} 6
+| popular_vote4 = 114,298
+| percentage4 = 13.66%
+| swing4 = {{up}} 11.26[[percentage points|pp]]
+| image5 = {{CSS image crop|Image=V. Narayanasamy with Ambassador Kenneth I. Juster (cropped).jpg|bSize=100|cWidth=100|cHeight=120|oLeft=0|oTop=0}} 
+| leader5 = [[V. Narayanasamy]]
+| party5 = Indian National Congress
+| leader_since5 = 2016
+| leaders_seat5 = ''Did not contest''
+| alliance5 = [[Secular Progressive Alliance|SPA]]+[[United Progressive Alliance|UPA]]
+| last_election5 = 15
+| seats5 = 2
+| seat_change5 = {{down}} 13
+| popular_vote5 = 131,393
+| percentage5 = 15.71%
+| swing5 = {{down}} 14.89[[percentage points|pp]]
+| map = [[File:2021 Puducherry Legislative Assembly election result.png|300px]]
+| votes_counted = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| reporting = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| declared = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| last_update = 
+}}
+The elections to elect the members of the [[15th Puducherry Assembly]] was held on 6 April 2021. The elections were held for all the [[List of constituencies of the Puducherry Legislative Assembly|30 constituencies]] of the [[Puducherry Legislative Assembly]]. 
+
+The [[National Democratic Alliance]] won a simple majority in the elections, and [[N. Rangaswamy]] of the [[All India N.R. Congress]] was sworn in as the [[Chief Minister of Puducherry|chief minister]] for the fourth time.
+
+==Background==
+Elections to a [[State legislative assemblies of India|legislative assembly]] in India are usually held once in five years, and the [[Member of the Legislative Assembly|members of the legislative assembly]] are directly elected to serve five year terms from [[Single-member district|single-member constituencies]]. The [[2016 Puducherry Legislative Assembly election|previous assembly elections]] were held in May 2021 to elect the 30 members of the [[14th Puducherry Assembly]].
+
+In the previous election, the [[Indian National Congress]]-led [[United Progressive Alliance]] formed the [[Government of Puducherry|government]] after winning 17 of the 30 seats, and [[V. Narayanasamy]] sworn in as the [[Chief Minister of Puducherry|chief minister]].<ref>{{cite news|url=https://timesofindia.indiatimes.com/elections-2016/puducherry-elections-2016/news/congress-emerges-as-the-single-largest-party-with-15-seats-in-30-member-puducherry-assembly/articleshow/52343485.cms|title=Congress emerges as the single largest party in Puducherry|work=[[The Times of India]]|date=20 May 2016|access-date=20 March 2021|archive-date=28 September 2021|archive-url=https://web.archive.org/web/20210928042522/https://timesofindia.indiatimes.com/elections-2016/puducherry-elections-2016/news/congress-emerges-as-the-single-largest-party-with-15-seats-in-30-member-puducherry-assembly/articleshow/52343485.cms|url-status=live}}</ref><ref>{{cite news|url=https://timesofindia.indiatimes.com/elections-2016/puducherry-elections-2016/news/congress-dmk-front-regains-power-in-pondy/articleshow/52355802.cms|title=Congress-DMK front regains power in Pondy|work=[[The Times of India]]|date=20 May 2016|access-date=20 March 2021|archive-date=28 September 2021|archive-url=https://web.archive.org/web/20210928053200/https://timesofindia.indiatimes.com/elections-2016/puducherry-elections-2016/news/congress-dmk-front-regains-power-in-pondy/articleshow/52355802.cms|url-status=live}}</ref> [[All India N.R. Congress]] (AINRC), which had formed the government under [[N. Rangaswamy]] after the [[2011 Puducherry Legislative Assembly election|2011 elections]], won eight seats, and Rangaswamy became the [[List of leaders of the opposition in the Puducherry Legislative Assembly|leader of the opposition]] in the assembly.<ref>{{cite news|url=https://www.thehindu.com/elections/puducherry2016/Live-Puducherry-Assembly-election-results-2016/article60512135.ece|title=Puducherry CM Rangasamy resigns|date=6 June 2016|access-date=1 June 2025|work=[[The Hindu]]}}</ref>
+
+In February 2021, a [[trust vote]] was called by the [[Lieutenant Governor of Puducherry|lieutenant governor]] after five members of the Congress including two ministers, and one member of the [[Dravida Munnetra Kazhagam]] (DMK) resigned from the assembly.<ref>{{cite web|url=https://indianexpress.com/article/explained/puducherry-congress-v-narayanasamy-confidence-motion-kiran-bedi-7198641/|title=Explained: The trust vote in Puducherry|date=21 February 2021|access-date=1 June 2025|work=[[The Indian Express]]}}</ref> With the strength of the house reduced to 27, which included the three nominated members, the government had the support of only 11 members. After the government lost the trust vote, Narayanasamy resigned as chief minister on 22 February. Later, Narayanasamy stated that the government lost because the speaker accepted the votes from nominated members on equal standing to the elected ones, and the lieutenant governor, who was a former member of the [[Bharatiya Janata Party]] (BJP), had appointed members of the same party for all the nominated seats.<ref>{{cite news|url=https://www.thehindubusinessline.com/news/national/congress-loses-puducherry-narayanasamy-blames-bjp/article33901435.ece|work=[[Business Line]]|date=22 February 2021|title=Congress loses Puducherry|access-date=13 May 2023|archive-date=13 May 2023|archive-url=https://web.archive.org/web/20230513204654/https://www.thehindubusinessline.com/news/national/congress-loses-puducherry-narayanasamy-blames-bjp/article33901435.ece|url-status=live}}</ref> 
+
+==Schedule==
+{| class="wikitable"
+|-
+!Event
+!Date
+|-
+| Beginning of nominations
+| 12 March 2021
+|-
+| Deadline for filing Nominations
+| 19 March 2021
+|-
+| Scrutiny of nominations
+| 20 March 2021
+|-
+| Deadline for withdrawal of candidatures
+| 22 March 2021
+|-
+| Polling
+| 6 April 2021
+|-
+| Counting
+| 2 May 2021
+|}
+
+== Parties and alliances ==
+=== United Progressive Alliance ===
+[[File:Puducherry 2021 SPA.png|thumb|Seat sharing amongst the members of [[United Progressive Alliance]]]]
+
+The Congress led United Progressive Alliance contested the elections in alliance with the DMK.<ref>{{cite news | url=https://www.newindianexpress.com/states/tamil-nadu/2020/jan/19/puducherry-cm-narayanasamy-brokers-truce-between-dmk-congress-2091391.html | title=Puducherry CM Narayanasamy brokers truce between DMK, Congress | date=19 January 2020 | work=[[The New Indian Express]] | access-date=17 February 2020 | archive-date=27 January 2020 | archive-url=https://web.archive.org/web/20200127084741/https://www.newindianexpress.com/states/tamil-nadu/2020/jan/19/puducherry-cm-narayanasamy-brokers-truce-between-dmk-congress-2091391.html | url-status=live }}</ref> The [[Communist Party of India (Marxist)]] contested the [[Muthialpet Assembly constituency|Muthialpet]] seat and supported the alliance in all other seats.<ref>{{cite news|url=https://economictimes.indiatimes.com/news/elections/assembly-elections/puducherry/cpim-announces-candidate-for-seat-in-puducherry-to-support-allies-in-other-constituencies/articleshow/81583518.cms?from=mdr|title=CPI(M) announces candidate for seat in Puducherry, to support allies in other constituencies|date=19 March 2021|access-date=1 June 2024|work=[[The Economic Times]]}}</ref>
+
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable"
+! colspan="3" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| bgcolor="{{party color|Indian National Congress}}"|
+| [[Indian National Congress]]
+| INC
+| [[File:Hand INC.svg|50x50px]]
+| [[V. Narayanasamy]]
+| 14
+|-
+| bgcolor="{{party color|Dravida Munnetra Kazhagam}}"|
+| [[Dravida Munnetra Kazhagam]]
+| DMK
+| [[File:Indian election symbol rising sun.svg|41x41px]]
+| [[R. Siva]]
+| 13
+|-
+| bgcolor="{{party color|Communist Party of India}}"|
+| [[Communist Party of India]]
+| CPI
+| [[File:CPI symbol.svg|50px]]
+| A. M. Saleem
+| 1
+|-
+| bgcolor="{{party color|Viduthalai Chiruthaigal Katchi}}"|
+| [[Viduthalai Chiruthaigal Katchi]]
+| VCK
+| [[File:Pot Symbol.png|40x40px]]
+| [[Thol. Thirumavalavan]]
+| 1
+|-
+| bgcolor=#757575 | 
+| Independent
+| IND
+|
+| [[Gollapalli Srinivas Ashok]]
+| 1{{refn|group=note|Congress did not contest in [[Yanam Assembly constituency|Yanam]] and extended support to the independent.<ref>{{cite web|url=https://telugu.samayam.com/elections/assembly-elections/puducherry/news/independent-candidate-gollapalli-srinivas-ashok-defeats-nr-rangaswamy-in-yanam-elections/articleshow/82364009.cms|title=Independent candidate Gollapalli Srinivas Ashok defeats Rangaswamy in Yanam|date=3 May 2021|work=Samayam Telugu|access-date=30 June 2022|archive-date=26 March 2023|archive-url=https://web.archive.org/web/20230326214235/https://telugu.samayam.com/elections/assembly-elections/puducherry/news/independent-candidate-gollapalli-srinivas-ashok-defeats-nr-rangaswamy-in-yanam-elections/articleshow/82364009.cms|url-status=live|lang=te}}</ref>}}
+|}
+
+[[File:Puducherry 2021 NDA.png|thumb|Constituency sharing of NDA allies for the 2021 Puducherry Legislative Assembly election]]
+
+=== National Democratic Alliance ===
+The [[National Democratic Alliance]] led by the BJP, consisted of AINRC and [[All India Anna Dravida Munnetra Kazhagam]].
+<ref>{{cite news|url=https://www.hindustantimes.com/elections/puducherry-assembly-election/bjp-alliance-to-sweep-puducherry-assembly-polls-asianet-c-fore-pre-poll-survey-101615908388517.html|title=BJP alliance to sweep Puducherry assembly polls: Asianet-C fore pre-poll survey|date=16 March 2021|work=[[The Hindustan Times]]|access-date=17 March 2021|archive-date=17 March 2021|archive-url=https://web.archive.org/web/20210317102155/https://www.hindustantimes.com/elections/puducherry-assembly-election/bjp-alliance-to-sweep-puducherry-assembly-polls-asianet-c-fore-pre-poll-survey-101615908388517.html|url-status=live}}</ref> The [[Pattali Makkal Katchi]], which initially announced candidates to nine seats, later withdrew from competition, and supported the alliance without contesting in any seat.<ref>{{cite news|url=https://www.newindianexpress.com/states/tamil-nadu/2021/Mar/22/puducherry-polls-pmk-makes-about-turn-withdraws-nominations-to-support-nda-candidates-2280036.html|title=Puducherry polls: PMK makes about-turn, withdraws nominations, to support NDA candidates|date=23 March 2021|access-date=1 June 2025|work=[[The New Indian Express]]}}</ref>
+
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable"
+! colspan="3" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| bgcolor="{{party color|All India N.R. Congress}}"|
+| [[All India N.R. Congress]]
+| AINRC
+| [[File:Indian Election Symbol Jug.svg|30px|Jug]]
+| [[N. Rangaswamy]]
+| 16
+|-
+| bgcolor="{{party color|Bharatiya Janata Party}}"|
+| [[Bharatiya Janata Party]]
+| BJP
+| [[File:Lotos flower symbol.svg|50px]]
+| [[A. Namassivayam]]
+| 9
+|-
+| bgcolor="{{party color|All India Anna Dravida Munnetra Kazhagam}}"|
+| [[All India Anna Dravida Munnetra Kazhagam]]
+| AIADMK
+| [[File:Indian election symbol two leaves.svg|41x41px]]
+| A. Anbalagan
+| 5
+|}
+
+=== Other parties ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable"
+! colspan="3" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| bgcolor="{{party color|Makkal Needhi Maiam}}" |
+| [[Makkal Needhi Maiam]]
+| MNM
+| [[File:Indian Election Symbol Battery-Torch.png|80px]]
+| [[Kamal Haasan]]
+| 22
+|-
+| bgcolor="{{party color|Naam Tamilar Katchi}}"|
+| [[Naam Tamilar Katchi]]
+| NTK
+| [[File:Indian Election Symbol sugarcane farmer.svg|80px]]
+| [[Seeman]]
+| 28
+|-
+| bgcolor="{{party color|Desiya Murpokku Dravida Kazhagam}}"|
+| [[Desiya Murpokku Dravida Kazhagam]]
+| DMDK
+|
+[[File:Indian Election Symbol Nagara.svg|34x34px]]
+| [[Vijayakanth]]
+| 26
+|-
+| bgcolor="{{party color|Indhiya Jananayaga Katchi}}" |
+| [[Indhiya Jananayaga Katchi]]
+| IJK
+|
+| [[T. R. Paarivendhar]]
+| 21
+|-
+| bgcolor="{{party color|Communist Party of India (Marxist)}}"|
+| [[Communist Party of India (Marxist)]]
+| CPI(M)
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50x50px]]
+| [[K. Balakrishnan (CPI-M)|K. Balakrishnan]]
+| 1
+|-
+| bgcolor="{{party color|Communist Party of India (Marxist-Leninist) Liberation}}"|
+| [[Communist Party of India (Marxist-Leninist) Liberation]]
+| CPI(ML)L
+| [[File:Flag Logo of CPIML.png|50x50px]]
+| [[Dipankar Bhattacharya]]
+| 1
+|}
+
+==Candidates==
+{| class="wikitable sortable mw-collapsible" style="line-height:20px;text-align:center;"
+|+ List Of Candidates<ref>{{cite web|url=https://affidavit.eci.gov.in/|title=Candidates affidavits|access-date=26 March 2021|work=[[Election Commission of India]]|archive-date=19 March 2021|archive-url=https://web.archive.org/web/20210319031708/http://www.affidavit.eci.gov.in/|url-status=live}}</ref>
+! colspan="2" | Constituency
+! colspan="3" style="background:{{party color|United Progressive Alliance}}" |[[United Progressive Alliance|<span style="color:white;">UPA</span>]]
+! colspan="3" style="background:{{party color|National Democratic Alliance}}" |[[National Democratic Alliance|<span style="color:white;">NDA</span>]]
+|-
+! No.
+! Name
+! colspan="2" | Party ||Candidate
+! colspan="2" | Party ||Candidate
+|-
+| colspan="8" align="center" bgcolor="grey" | [[Puducherry district|<span style="color:white;">'''Puducherry District'''</span>]]
+|-
+| 1
+| [[Mannadipet Assembly constituency|Mannadipet]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|A. Krishnan
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|[[A. Namassivayam]]
+|-
+| 2
+| [[Thirubuvanai Assembly constituency|Thirubuvanai (SC)]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|A. Mugilan
+|{{Party name with color|All India N.R. Congress}}
+|B.Gobika
+|-
+| 3
+| [[Ossudu Assembly constituency|Ossudu (SC)]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|P. Karthikeyan 
+| bgcolor=#FF9933|
+| [[Bharatiya Janata Party|BJP]]
+|J. Saravana Kumar
+|-
+|4
+| [[Mangalam Assembly constituency|Mangalam]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|Sankumaravel
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|C. Jayakumar
+|-
+| 5
+| [[Villianur Assembly constituency|Villianur]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+| [[R. Siva]]
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|S.V.Sugumaran
+|-
+| 6
+| [[Ozhukarai Assembly constituency|Ozhukarai]]
+| bgcolor=#1E90FF|
+| [[Viduthalai Chiruthaigal Katchi|VCK]]
+|D.Angalane
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|G.Pannirselvam
+|-
+| 7
+| [[Kadirkamam Assembly constituency|Kadirkamam]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|P. Selvanathan
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|S.Ramesh
+|-
+| 8
+| [[Indira Nagar Assembly constituency|Indira Nagar]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|M. Kannan
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|V. Arumugam A.K.D.
+|-
+|9
+| [[Thattanchavady Assembly constituency|Thattanchavady]]
+|bgcolor={{party color|Communist Party of India}} |
+|[[Communist Party of India|CPI]]
+|K. Sethu Selvam
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|[[N. Rangaswamy]]
+|-
+|10
+| [[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+| [[M. O. H. F. Shahjahan]]
+| bgcolor=#FF9933|
+| [[Bharatiya Janata Party|BJP]]
+|[[A. Johnkumar]]
+|-
+| 11
+| [[Lawspet Assembly constituency|Lawspet]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+| [[M. Vaithianathan]]
+| bgcolor=#FF9933|
+| [[Bharatiya Janata Party|BJP]]
+|[[V. Saminathan]]
+|-
+| 12 
+| [[Kalapet Assembly constituency|Kalapet]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|S. Muthuvel
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|P. M. L. Kalyanasundaram
+|-
+| 13
+| [[Muthialpet Assembly constituency|Muthialpet]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|S. Senthil Kumaran 
+|{{Party name with color|All India Anna Dravida Munnetra Kazhagam}}
+|Vaiyapuri Manikandan
+|-
+| 14
+| [[Raj Bhavan Assembly constituency|Raj Bhavan]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|S.P. Sivakumar
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|K. Lakshminarayanan
+|-
+| 15
+| [[Oupalam Assembly constituency|Oupalam]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|[[Annibal Kennedy|V. Annibal Kennedy]]
+|{{Party name with color|All India Anna Dravida Munnetra Kazhagam}}
+|A. Anbalagan
+|-
+| 16
+| [[Orleampeth Assembly constituency|Orleampeth]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|S. Gopal
+|{{Party name with color|All India Anna Dravida Munnetra Kazhagam}}
+|Omsakthi Sekar
+|-
+| 17
+| [[Nellithope Assembly constituency|Nellithope]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|V. Karthikeyan
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|Vivilian Richards Johnkumar
+|-
+| 18
+| [[Mudaliarpet Assembly constituency|Mudaliarpet]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|L. Sampath
+|{{Party name with color|All India Anna Dravida Munnetra Kazhagam}}
+|A. Baskar
+|-
+| 19
+| [[Ariankuppam Assembly constituency|Ariankuppam]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|T. Jayamurthy
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|R.Datchanamourtty
+|-
+| 20
+| [[Manavely Assembly constituency|Manavely]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|R. K. R. Anantharaman
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|Embalam R. Selvam
+|-
+| 21
+| [[Embalam Assembly constituency|Embalam (SC)]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|M. kandassamy
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|U.LakshmiKandhan
+|-
+| 22
+| [[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|V.Vijayaveny
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|P.Rajavelu
+|-
+| 23
+| [[Bahour Assembly constituency|Bahour]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|R. Senthil Kumar
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|N.Danavelu 
+|-
+| colspan="8" align="center" bgcolor="grey" | [[Karaikal district|<span style="color:white;">'''Karaikal District'''</span>]]
+|-
+| 24
+| [[Nedungadu Assembly constituency|Nedungadu (SC)]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|A. Marimuthu 
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|S.ChandraPriyanga
+|-
+| 25
+| [[Thirunallar Assembly constituency|Thirunallar]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|[[R. Kamalakannan]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|G. N. S. Rajasekaran
+|-
+| 26
+| [[Karaikal North Assembly constituency|Karaikal North]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|A. V. Subramanian
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|P.R.N Thirumurugan 
+|-
+| 27
+| [[Karaikal South Assembly constituency|Karaikal South]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|[[A.M.H. Nazeem]]
+|{{Party name with color|All India Anna Dravida Munnetra Kazhagam}}
+|K. A. U. Asana
+|-
+| 28
+| [[Neravy T R Pattinam Assembly constituency|Neravy T R Pattinam]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|[[M. Nagathiyagarajan]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|V. M. C. S. Manokaran
+|-
+| colspan="8" align="center" bgcolor="grey" | [[Mahé district|<span style="color:white;">'''Mahe District'''</span>]]
+|-
+| 29
+|  [[Mahe Assembly constituency|Mahe]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+| Ramesh Parambath
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+| V. P. Abdul Rahman 
+|-
+|-
+| colspan="8" align="center" bgcolor="grey" | [[Yanam district|<span style="color:white;">'''Yanam District'''</span>]]
+|-
+| 30
+| [[Yanam Assembly constituency|Yanam]]
+|bgcolor=#757575|
+|[[Independent politician|IND]]
+|[[Gollapalli Srinivas Ashok]]
+|bgcolor=#FFC000|
+|[[All India N.R. Congress|AINRC]]
+|[[N. Rangaswamy]]
+|-
+|}
+
+==Polls and surveys==
+=== Opinion polls ===
+{| class="wikitable sortable" style="text-align:center;font-size:95%;line-height:16px"
+|+
+! rowspan="2" width="100px" |Date
+! rowspan="2" width="175px" |Polling agency
+! style="background:{{party color|Bharatiya Janata Party}}" |
+! style="background:{{party color|Indian National Congress}}" |
+! style="background:{{party color|AITC}}" |
+! rowspan="2" width="75px" |Lead
+|-
+! style="width:75px;" |[[National Democratic Alliance|NDA]]
+! style="width:75px;" |[[United Progressive Alliance|UPA]]
+! style="width:75px;" | Others
+|-
+|3 April 2021
+|[[Thanthi TV]]<ref>{{cite web|title=Thanthi TV Opinion Poll 2021|work=[[YouTube]]|url=https://www.youtube.com/watch?v=xeG0FYF4EY4&list=LL&index=3|language=en|access-date=9 April 2021|archive-date=20 August 2023|archive-url=https://web.archive.org/web/20230820232648/https://www.youtube.com/watch?v=xeG0FYF4EY4&list=LL&index=3|url-status=live}}</ref>
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|21-27}}'''
+|3-9
+|0
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|12-24}}'''
+|-
+|24 March 2021
+|Patriotic Voter<ref name="PV">{{cite web|url=https://www.sites.google.com/view/patvot/surveys/puducherry-2020|title=Puducherry 2020|access-date=7 September 2021|archive-date=7 September 2021|archive-url=https://web.archive.org/web/20210907185018/https://www.sites.google.com/view/patvot/surveys/puducherry-2020|url-status=live|work=Patriotic Voter}}</ref>
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|17-18}}'''
+|10-12
+|0-3
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|6}}'''
+|-
+|15 March 2021
+|[[ABP News]]&ndash;[[CVoter]]<ref>{{cite web|title=ABP CVoter Opinion Poll 2021: Voters' Mood Not In Favour Of Congress-Led Alliance In Puducherry, NDA Likely To Form Govt|date=15 March 2021|url=https://news.abplive.com/news/india/abp-news-cvoter-opinion-poll-2021-results-puducherry-opinion-poll-results-2021-ainrc-congress-bjp-vote-share-seat-wise-details-1448619|work=[[ABP News]]|access-date=16 March 2021|archive-date=15 March 2021|archive-url=https://web.archive.org/web/20210315222210/https://news.abplive.com/news/india/abp-news-cvoter-opinion-poll-2021-results-puducherry-opinion-poll-results-2021-ainrc-congress-bjp-vote-share-seat-wise-details-1448619|url-status=live}}</ref>
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|16-20}}'''
+|10-14
+|0
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|2-10}}'''
+|-
+| 8 March 2021
+| [[Times Now]]&ndash;[[CVoter]]<ref>{{cite web|url=https://www.timesnownews.com/india/puducherry/article/puducherry-pre-poll-survey/729729|title=Puducherry pre-poll survey 2021: 'Congress likely to lose its grip; NDA projected to form govt'|work=[[Times Now]]|access-date=12 March 2021|archive-date=11 March 2021|archive-url=https://web.archive.org/web/20210311032603/https://www.timesnownews.com/india/puducherry/article/puducherry-pre-poll-survey/729729|url-status=live}}</ref>
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|18}}'''
+|12
+|0
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|6}}'''
+|-
+|1 March 2021
+|Patriotic Voter<ref name="PV"/>
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|19}}'''
+|11
+|0
+| style="background:{{party color|Bharatiya Janata Party}};" |'''{{font color|white|8}}'''
+|}
+
+=== Exit polls ===
+{| class="wikitable sortable" style="text-align:center;font-size:95%;line-height:16px"
+|+
+! rowspan="2" width="100px" |Date published
+! rowspan="2" width="175px" |Polling agency
+! style="background:{{party color|Bharatiya Janata Party}}" |
+! style="background:{{party color|Indian National Congress}}" |
+! style="background:{{party color|AITC}}" |
+! rowspan="2" width="75px" |Lead
+|-
+! style="width:75px;" |[[National Democratic Alliance|NDA]]
+! style="width:75px;" |[[United Progressive Alliance|UPA]]
+! style="width:75px;" | Others
+|-
+|29 April 2021
+|[[Republic TV]]&ndash;CNX<ref name="Rep">{{cite web|date=29 April 2021|title=Elections Exit Poll Results 2021 Live Updates: Exit polls show Mamata, Pinarayi and Sonowal holding on to power|url=https://indianexpress.com/elections/elections-exit-poll-results-2021-bengal-tamil-nadu-kerala-assam-live-updates-7293961/|access-date=2021-04-29|work=[[The Indian Express]]|archive-date=29 April 2021|archive-url=https://web.archive.org/web/20210429144719/https://indianexpress.com/elections/elections-exit-poll-results-2021-bengal-tamil-nadu-kerala-assam-live-updates-7293961/|url-status=live}}</ref>
+| {{Party shading/BJP}} |'''{{font color|white|16-20}}'''
+|11-13
+| -
+| {{Party shading/BJP}} |'''{{font color|white|5-7}}'''
+|-
+|29 April 2021
+|Patriotic Voter<ref name="PV"/>
+| {{Party shading/BJP}} |'''{{font color|white|18}}'''
+| 12
+| -
+| {{Party shading/BJP}} |'''{{font color|white|6}}'''
+|-
+|29 April 2021
+|[[ABP News]]&ndash;[[CVoter]]<ref name="Rep"/>
+| {{Party shading/BJP}} |'''{{font color|white|19-23}}'''
+|6-10
+|1-2
+| {{Party shading/BJP}} |'''{{font color|white|9-17}}'''
+|}
+
+== Voter Turnout ==
+{| class="wikitable sortable"
+|+Turnout<ref>{{cite web|url=https://www.firstpost.com/politics/puducherry-election-2021-ut-registers-81-64-polling-as-congress-led-sda-locks-horns-with-nda-in-bid-to-regain-turf-9502581.html|title=Puducherry Election 2021: UT registers 81.64% polling as Congress-led SDA locks horns with NDA in bid to regain turf|website=Firstpost|date=6 April 2021|access-date=11 August 2022|archive-date=11 August 2022|archive-url=https://web.archive.org/web/20220811151409/https://www.firstpost.com/politics/puducherry-election-2021-ut-registers-81-64-polling-as-congress-led-sda-locks-horns-with-nda-in-bid-to-regain-turf-9502581.html|url-status=live}}</ref><ref>{{cite news|url = https://www.thehindu.com/elections/assembly-elections-peaceful-polling-in-tn-kerala-puducherry-assam-and-bengal/article34256847.ece|title = Assembly elections &#124; Peaceful polling in T.N., Kerala, Puducherry, Assam and Bengal|work=[[The Hindu]]|date = 6 April 2021|access-date = 6 April 2021|archive-date = 6 April 2021|archive-url = https://web.archive.org/web/20210406174918/https://www.thehindu.com/elections/assembly-elections-peaceful-polling-in-tn-kerala-puducherry-assam-and-bengal/article34256847.ece|url-status = live}}</ref>
+! District
+! Vote %
+|-
+|[[Karaikal]] 
+|80.07
+|-
+|[[Mahé]]
+|73.53
+|-
+|[[Puducherry district|Puducherry]]
+|82.01
+|-
+|[[Yanam]]
+|91.27
+|-
+!Total
+!83.42
+|}
+
+==Result==
+{| style="width:100%; text-align:center;"
+|+
+|- style="color:white;"
+| style="background:{{party color|Bharatiya Janata Party}}; width:53.33%;" | '''16'''
+| style="background:{{party color|Indian National Congress}}; width:30.00%;" | '''9'''
+| style="background:{{party color|Independent politician}}; width:16.67;" | '''5'''
+|-
+| <span style="color:{{party color|Bharatiya Janata Party}};">'''NDA'''</span>
+| <span style="color:{{party color|Indian National Congress}};">'''UPA'''</span>
+| <span style="color:{{party color|Independent politician}};">'''IND'''</span>
+|}
+
+{{Pie chart
+|thumb = right
+|caption='''Vote share by alliance'''
+|label1 = [[National Democratic Alliance|NDA]]
+|value1 = 43.6
+|color1 = Orange
+|label2 = [[United Progressive Alliance|UPA]]
+|value2 = 37.9
+|color2 = #00BFFF
+|label3 = Others
+|value3 = 18.5
+|color3 = #C1C1C1
+}}
+
+{{Pie chart
+|thumb = right
+|caption='''Seat share by alliance'''
+|label1 = [[National Democratic Alliance|NDA]]
+|value1 = 53.33
+|color1 = Orange
+|label2 = [[United Progressive Alliance|UPA]]
+|value2 = 30.00
+|color2 = #00BFFF
+|label3 = [[Independent politician|IND]]
+|value3 = 16.67
+|color3 = #C1C1C1
+}}
+
+{| class="wikitable sortable"
+! colspan="9" |[[File:India Puducherry Legislative Assembly 2021.svg]]
+|- valign="top"
+!colspan="2" |Party
+! Votes 
+! Vote % 
+! Swing
+! Conts
+! Won
+! Change
+|-
+| style="background-color:{{party color|All India N.R. Congress}}"|
+|[[All India N.R. Congress]]
+| {{formatnum:216249}}
+| 25.85
+|{{decrease}} 2.3
+| 16 
+| 10
+|{{increase}} 2 
+|-
+| style="background-color:{{party color|Dravida Munnetra Kazhagam}}"|
+| style="text-align:left;"|[[Dravida Munnetra Kazhagam]] 
+| {{formatnum:154858}}
+| 18.51
+|{{increase}} 9.6 
+| 13
+| 6
+|{{increase}} 4
+|-
+| style="background-color:{{party color|Indian National Congress}}"|
+|[[Indian National Congress]]
+| {{formatnum:131393}}
+| 15.71
+|{{decrease}} 14.9
+| 14 
+| 2
+|{{decrease}} 13
+|-
+| style="background-color:{{party color|Bharatiya Janata Party}}"|
+|[[Bharatiya Janata Party]]
+| {{formatnum:114298}}
+| 13.66
+|{{increase}} 11.3
+| 9 
+| 6
+|{{increase}} 6 
+|-
+| style="background-color:{{party color|Independent politician}}"|
+|[[Independent politician|Independents]]
+| {{formatnum:106098}}
+| 12.68
+| 
+| 
+| 6
+|{{increase}} 5
+|-
+
+| style="background-color:{{party color|All India Anna Dravida Munnetra Kazhagam}}"|
+|[[All India Anna Dravida Munnetra Kazhagam]]
+| {{formatnum:34623}}
+| 4.14
+|{{decrease}} 12.7
+|5
+|0
+|{{decrease}} 4 
+|-
+| style="background-color:{{party color|Naam Tamilar Katchi}}"|
+|[[Naam Tamilar Katchi]]
+| {{formatnum:28189}}
+| 3.37
+|{{increase}} 2.9
+|28
+|0
+|{{steady}}
+|-
+| style="background-color:{{party color|Makkal Needhi Maiam}}"|
+|[[Makkal Needhi Maiam]]
+| {{formatnum:15825}}
+| 1.89
+|{{increase}} 1.89
+|22
+|0
+|''New Party''
+|-
+| style="background-color:{{party color|Communist Party of India}}"|
+|[[Communist Party of India]]
+| {{formatnum:7522}}
+| 0.90
+|{{decrease}} 0.2
+|1
+|0
+|{{steady}} 
+|-
+| style="background-color:{{party color|[[None of the above]]}}"|
+|[[None of the above]]
+| {{formatnum:10803}}
+| 1.29
+| {{decrease}} 0.4
+| colspan="3" style="background-color:#E9E9E9" |
+|-
+| colspan=2|'''Total'''
+|'''{{formatnum:836562}}'''
+| 100
+| 
+| '''30'''
+| '''30'''
+|
+|-
+|-
+! colspan="8" |
+|-
+| style="text-align:left;" colspan="2" |Valid votes
+|{{formatnum:836562}}
+|99.88
+| colspan="4" rowspan="5" style="background-color:#E9E9E9" |
+|-
+| style="text-align:left;" colspan="2" |Invalid votes
+|{{formatnum:981}}
+|0.12
+|-
+| style="text-align:left;" colspan="2" |'''Votes cast / turnout'''
+|'''{{formatnum:837543}}'''
+|'''83.42'''
+|-
+| style="text-align:left;" colspan="2" |'''Registered voters'''
+| '''{{formatnum:1004507}}'''
+|colspan="1" style="background-color:#E9E9E9"|
+|-
+| colspan="8" align="left" |Source:[[Election Commission of India]]<ref>{{cite web|url=https://results.eci.gov.in/Result2021/partywiseresult-U07.htm?st=U07|title=General election to Vidhan Sabha May-2021|work=[[Election Commission of India]]|date=2 May 2021|access-date=2 May 2021|archive-date=2 May 2021|archive-url=https://web.archive.org/web/20210502195200/https://results.eci.gov.in/Result2021/partywiseresult-U07.htm?st=U07|url-status=live}}</ref>
+|}
+
+===Results by party and alliance===
+{| class="wikitable" width="35%" style="text-align:center; border: 2px #000000 solid; font-size: x-big"
+|+Source<ref>{{cite web|title=Party wise results|work=[[Election Commission of India]]|url=https://results.eci.gov.in/Result2021/partywiseresult-U07.htm?st=U07|access-date=8 May 2021|archive-date=2 May 2021|archive-url=https://web.archive.org/web/20210502195200/https://results.eci.gov.in/Result2021/partywiseresult-U07.htm?st=U07|url-status=live}}</ref>
+
+! colspan="2" style="background:{{party color|Bharatiya Janata Party}} ; color:white;"|NDA
+! style="background:{{party color|Bharatiya Janata Party}} ; color:white;"|Seats
+! colspan="2" style="background:{{party color|Indian National Congress}}; color:white;"|UPA
+! style="background:{{party color|Indian National Congress}}; color:white;"|Seats
+! colspan="2" style="background:#757575; color:white;"|Others
+! style="background:#757575; color:white;"|Seats
+|-
+|[[All India N.R. Congress|AINRC]]
+|width="3px" style="background-color: {{party color|All India N.R. Congress}}"|
+|10
+|[[Indian National Congress|INC]]
+|width="3px" style="background-color: {{party color|Indian National Congress}}"|
+|2
+|[[Independent politician|IND]]
+|width="3px" style="background-color: #C1C1C1" |
+|6
+|-
+|[[Bharatiya Janata Party|BJP]]
+|width="3px" style="background-color: {{party color|Bharatiya Janata Party}}"|
+|6
+|[[Dravida Munnetra Kazhagam|DMK]]
+|width="3px" style="background-color: {{party color|Dravida Munnetra Kazhagam}}"|
+|6
+|
+|
+|
+|-
+! colspan="2" style="background:#FAD6A5;" |Total
+! style="background:#FF9933 ; color:white;"|16
+! colspan="2" style="background:#ADD8E6" |Total
+! style="background:#00BFFF; color:white;"|8
+! colspan="2" style="background:#CDCDCD" |Total
+! style="background:#757575; color:white;"|6
+|-
+! colspan="2" style="background:#FAD6A5;" |Change
+! style="background:#FF9933 ; color:white;"| {{increase}} 5
+! colspan="2" style="background:#ADD8E6" |Change
+! style="background:#00BFFF; color:white;"|{{decrease}} 9
+! colspan="2" style="background:#CDCDCD" |Change
+! style="background:#757575; color:white;"|{{increase}} 4
+|}
+
+===Results by district===
+{| class="wikitable sortable"
+! rowspan ="2"|District
+! rowspan ="2"|Seats
+! style="background:#FF9933;"|
+! style="background:#00BFFF;"|
+! style="background:#939393;"|
+|-
+!NDA
+!UPA
+!Others
+|-
+|[[Puducherry district|Puducherry]]
+|23
+|14
+|5
+|4
+|-
+|[[Karaikal]]
+|5
+|2
+|2
+|1
+|-
+|[[Mahe, India|Mahe]]
+|1
+|0
+|1
+|0
+|-
+|[[Yanam]]
+|1
+|0
+|1
+|0
+|-
+!Total
+!30
+!16
+!9
+!5
+|}
+
+=== Results by constituency ===
+{| class="wikitable sortable" style="text-align:center;"
+|+ Results<ref>{{cite web|title=Puducherry General Legislative Election 2021|url=https://old.eci.gov.in/files/file/13417-puducherry-general-legislative-election-2021/|access-date=9 November 2021|work=[[Election Commission of India]]}}</ref><ref>{{cite web|url=https://www.ndtv.com/india-news/puducherry-election-results-2021-check-full-list-of-winners-2426742|title=Puducherry Election Results 2021: Check Full List of Winners|work=[[NDTV]]|date=3 May 2021|access-date=2 January 2024|archiveurl=https://web.archive.org/web/20240102115622/https://www.ndtv.com/india-news/puducherry-election-results-2021-check-full-list-of-winners-2426742|archivedate=2 January 2024}}</ref>
+! colspan="3" |Constituency & Turnout
+! colspan="5" |Winner
+! colspan="5" |Runner-up
+! rowspan="2" |Margin
+|-
+! #
+! Name
+!%
+! Candidate
+! colspan="2" | Party
+! Votes
+!'''%'''
+! Candidate
+! colspan="2" | Party
+! Votes
+!'''%'''
+|-
+| colspan="14" align="center" bgcolor="grey" | [[Puducherry district|<span style="color:white;">'''Puducherry District'''</span>]]
+|-
+| 1
+| [[Mannadipet Assembly constituency|Mannadipet]]
+|89.10
+|[[A. Namassivayam]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|14,939
+|51.82
+|A. Krishnan
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|12,189
+|42.28
+|style="background:#FF9933;color:white" |'''2,750'''
+|-
+| 2
+| [[Thirubuvanai Assembly constituency|Thirubuvanai (SC)]]
+|87.61
+|[[P. Angalane]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|10,597
+|36.78
+|B. Kobiga
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|8,238
+|28.60
+|style="background:#DDDDDD;color:white" |'''2,359'''
+|-
+| 3
+| [[Ossudu Assembly constituency|Ossudu (SC)]]
+|89.50
+|[[A.K. Sai J Saravanan Kumar|A. K. Saravanankumar]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|14,121
+|48.78
+|P. Karthikeyan
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|12,241
+|42.29
+|style="background:#FF9933;color:white" |'''1,880'''
+|-
+|4
+| [[Mangalam Assembly constituency|Mangalam]]
+|87.75
+|[[C. Djeacoumar]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|16,972
+|50.89
+|Sun. Kumaravel
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|14,221
+|42.64
+|style="background:#FFCC00;color:white" |'''2,751'''
+|-
+| 5
+| [[Villianur Assembly constituency|Villianur]]
+|83.08
+|[[R. Siva]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|19,653
+|55.73
+|S.V. Sugumaran
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|12,703
+|36.02
+|style="background:#DD1100;color:white" |'''6,950'''
+|-
+| 6
+| [[Ozhukarai Assembly constituency|Ozhukarai]]
+|77.83
+|[[M. Sivasankar]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|11,940
+|36.50
+|N.G. Pannir Selvam
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|11,121
+|34.00
+|style="background:#DDDDDD;color:white" |'''819'''
+|-
+| 7
+| [[Kadirkamam Assembly constituency|Kadirkamam]]
+|78.04
+|[[S. Ramesh]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|17,775
+|65.82
+|P. Selvanadane
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|5,529
+|20.47
+|style="background:#FFCC00;color:white" |'''12,246'''
+|-
+| 8
+| [[Indira Nagar Assembly constituency|Indira Nagar]]
+|82.04
+|[[A.K.D. Arumugam|A. K. D. Arumugam]]
+| bgcolor="#FFCC00" |
+|[[All India N.R. Congress|AINRC]]
+|21,841
+|74.77
+|M. Kannan
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|3,310
+|11.33
+|style="background:#FFCC00;color:white" |'''18,531'''
+|-
+|9
+| [[Thattanchavady Assembly constituency|Thattanchavady]]
+|76.89
+|[[N. Rangasamy]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|12,978
+|55.02
+|K. Sethu Selvam
+|bgcolor=#FF0000|
+|[[Communist Party of India|CPI]]
+|7,522
+|31.89
+|style="background:#FFCC00;color:white" |'''5,456'''
+|-
+|10
+| [[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+|78.65
+|[[A. Johnkumar]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|16,687
+|56.11
+|[[M. O. H. F. Shahjahan]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|9,458
+|31.80
+|style="background:#FF9933;color:white" |'''7,229'''
+|-
+| 11
+| [[Lawspet Assembly constituency|Lawspet]]
+|80.67
+|[[M. Vaithianathan]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|14,592
+|55.60
+|[[V. Saminathan]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|8,891
+|33.88
+|style="background:#00BFFF;color:white" |'''5,701'''
+|-
+|12
+| [[Kalapet Assembly constituency|Kalapet]]
+|85.87
+|[[P.M.L. Kalyanasundaram|P. M. L. Kalyanasundaram]]
+| bgcolor="#FF9933" |
+|[[Bharatiya Janata Party|BJP]]
+|13,277
+|44.63
+|A. Senthil Ramesh
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|9,769
+|32.84
+|style="background:#FF9933;color:white" |'''3,508'''
+|-
+| 13
+| [[Muthialpet Assembly constituency|Muthialpet]]
+|78.64
+|[[J. Prakash Kumar]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|8,778
+|37.48
+|Vaiyapuri Manikandan
+|bgcolor=#007500|
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|7,844
+|33.49
+|style="background:#DDDDDD;color:white" |'''934'''
+|-
+| 14
+| [[Raj Bhavan Assembly constituency|Raj Bhavan]]
+|73.93
+|[[K. Lakshminarayanan]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|10,096
+|51.86
+|S.P. Sivakumar
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|6,364
+|32.69
+|style="background:#FFCC00;color:white" |'''3,732'''
+|-
+| 15
+| [[Oupalam Assembly constituency|Oupalam]]
+|85.06
+|[[Annibal Kennedy]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|13,433
+|56.64
+|A. Anbalagan
+|bgcolor=#007500|
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|8,653
+|36.48
+|style="background:#DD1100;color:white" |'''4,780'''
+|-
+| 16
+| [[Orleampeth Assembly constituency|Orleampeth]]
+|81.95
+|[[G. Nehru Kuppusamy]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|9,580
+|47.29
+|S. Gopal
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|7,487
+|36.96
+|style="background:#DDDDDD;color:white" |'''2,093'''
+|-
+| 17
+| [[Nellithope Assembly constituency|Nellithope]]
+|82.56
+|[[Richards Johnkumar|V. R. Johnkumar]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|11,757
+|42.26
+|V. Karthikeyan
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|11,261
+|40.47
+|style="background:#FF9933;color:white" |'''496'''
+|-
+| 18
+| [[Mudaliarpet Assembly constituency|Mudaliarpet]]
+|83.01
+|[[L. Sambath]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|15,151
+|51.30
+|A. Baskar
+|bgcolor=#007500|
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|10,972
+|37.15
+|style="background:#DD1100;color:white" |'''4,179'''
+|-
+| 19
+| [[Ariankuppam Assembly constituency|Ariankuppam]]
+|84.23
+|[[R. Baskar Datchanamourtty]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|17,858
+|54.32
+|T. Jayamoorthy
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|11,440
+|34.80
+|style="background:#FFCC00;color:white" |'''6,418'''
+|-
+| 20
+| [[Manavely Assembly constituency|Manavely]]
+|86.74
+|[[Embalam R. Selvam]]
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|17,225
+|57.54
+|R. K. R. Anantharaman
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|9,093
+|30.37
+|style="background:#FF9933;color:white" |'''8,132'''
+|-
+| 21
+| [[Embalam Assembly constituency|Embalam (SC)]]
+|88.76
+|[[U. Lakshmikandhan]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|15,624
+|50.85
+|M. Candassamy
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|13,384
+|43.56
+|style="background:#FFCC00;color:white" |'''2,240'''
+|-
+| 22
+| [[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+|86.93
+|[[P. Rajavelu]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|15,978
+|56.82
+|V. Vijayaveny
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|9,340
+|33.21
+|style="background:#FFCC00;color:white" |'''6,638'''
+|-
+| 23
+| [[Bahour Assembly constituency|Bahour]]
+|89.60
+|[[R. Senthilkumar]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|11,789
+|44.56
+|N. Dhanavelou
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|11,578
+|43.76
+|style="background:#DD1100;color:white" |'''201'''
+|-
+| colspan="14" align="center" bgcolor="grey" | [[Karaikal district|<span style="color:white;">'''Karaikal District'''</span>]]
+|-
+| 24
+| [[Nedungadu Assembly constituency|Nedungadu (SC)]]
+|84.92
+|[[Chandira Priyanga|S. Chandra Priyanga]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|10,774
+|40.20
+|A. Marimuthu
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|8,560
+|31.94
+|style="background:#FFCC00;color:white" |'''2,214'''
+|-
+| 25
+| [[Thirunallar Assembly constituency|Thirunallar]]
+|85.93
+|[[P. R. Siva]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|9,551
+|36.45
+|S. Rajasekaran
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|8,416
+|31.32
+|style="background:#DDDDDD;color:white" |'''1,380'''
+|-
+| 26
+| [[Karaikal North Assembly constituency|Karaikal North]]
+|79.43
+|[[P. R. N. Thirumurugan]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|12,704
+|44.85
+|A. V. Subramanian
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|12,569
+|44.38
+|style="background:#FFCC00;color:white" |'''135'''
+|-
+| 27
+| [[Karaikal South Assembly constituency|Karaikal South]]
+|76.54
+|[[A.M.H. Nazeem|A. M. H. Nazeem]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|17,401
+|71.15
+|K. A. U. Asana
+|bgcolor=#007500|
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|5,367
+|21.95
+|style="background:#DD1100;color:white" |'''12,034'''
+|-
+| 28
+| [[Neravy T R Pattinam Assembly constituency|Neravy T R Pattinam]]
+|83.40
+|[[M. Nagathiyagarajan]]
+|bgcolor=#DD1100|
+|[[Dravida Munnetra Kazhagam|DMK]]
+|14,496
+|55.74
+|V. M. C. S. Manokaran
+|bgcolor=#FF9933|
+|[[Bharatiya Janata Party|BJP]]
+|8,985
+|34.55
+|style="background:#DD1100;color:white" |'''5,511'''
+|-
+| colspan="14" align="center" bgcolor="grey" | [[Mahé district|<span style="color:white;">'''Mahe District'''</span>]]
+|-
+| 29
+|  [[Mahe Assembly constituency|Mahe]]
+|75.29
+|[[Ramesh Parambath]]
+|bgcolor=#00BFFF|
+|[[Indian National Congress|INC]]
+|9,744
+|41.63
+|N. Haridasan Master
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|9,444
+|40.35
+|style="background:#00BFFF;color:white" |'''300'''
+|-
+| colspan="14" align="center" bgcolor="grey" | [[Yanam district|<span style="color:white;">'''Yanam District'''</span>]]
+|-
+| 30
+| [[Yanam Assembly constituency|Yanam]]
+|92.31
+|[[Gollapalli Srinivas Ashok]]
+|bgcolor=#DDDDDD|
+|[[Independent politician|IND]]
+|17,131
+|49.04
+|[[N. Rangasamy]]
+|bgcolor=#FFCC00|
+|[[All India N.R. Congress|AINRC]]
+|16,475
+|47.17
+|style="background:#DDDDDD;color:white" |'''655'''
+|-
+|}
+
+==Government formation==
+{{see|Fourth Rangaswamy ministry}}
+
+As the NDA achieved a majority in the elections, the AINRC&ndash;BJP combine formed the next government.<ref>{{cite news|url=https://www.indiatoday.in/elections/puducherry-assembly-polls-2021/story/puducherry-election-results-2021-full-list-of-winners-1798043-2021-05-02|title=Puducherry Election Results 2021: NDA wins in Pondy by bagging 16 seats, here's the list of winners|work=[[India Today]]|date=3 May 2021|access-date=1 June 2025}}</ref> The lieutenant governor appointed three members to the assembly, all of whom belonged to the BJP, raising its count to nine in the assembly.<ref>{{cite news |url=https://www.newindianexpress.com/states/tamil-nadu/2021/may/11/three-nominated-mlas-take-bjps-tally-in-puducherry-to-9-2301057.html |work=[[The New Indian Express]] |date=11 May 2021 |title=Three nominated MLAs take BJP's tally to nine  |access-date=13 May 2023 |archive-date=13 May 2023 |archive-url=https://web.archive.org/web/20230513205708/https://www.newindianexpress.com/states/tamil-nadu/2021/may/11/three-nominated-mlas-take-bjps-tally-in-puducherry-to-9-2301057.html |url-status=live }}</ref> Furthermore, the six independent members pledged support to the government, increasing its strength to 25 in the 33-member assembly. Rangaswamy was sworn in as the chief minister of Puducherry for the fourth time on 7 May 2021.<ref>{{cite news|url=https://www.thehindu.com/news/cities/puducherry/ainrcs-rangasamy-sworn-in-as-puducherry-chief-minister-for-fourth-time/article34506931.ece|title=AINRC’s Rangasamy sworn-in as Puducherry Chief Minister for fourth time|date=7 May 2021|access-date=1 June 2025|work=[[The Hindu]]}}</ref> On 8 June, the alliance announced that the BJP would get two ministers and the post of the assembly speaker, while AIRNC got three ministers.<ref>{{cite news|url=https://timesofindia.indiatimes.com/city/puducherry/bjp-keeps-rangasamy-on-tenterhooks-in-puducherry/articleshow/95607301.cms|title=BJP keeps Rangasamy on tenterhooks in Puducherry|date=18 November 2022|access-date=1 June 2025|work=[[The Times of India]]}}</ref>
+
+==See also==
+*[[2021 elections in India]]
+*[[2021 Tamil Nadu Legislative Assembly election]]
+*[[2019 Indian general election in Puducherry]]
+
+==References==
+{{reflist}}
+
+== Notes ==
+{{notelist}}
+{{reflist|group=note}}
+
+{{Puducherry elections}}
+
+[[Category:2021 State Assembly elections in India|Puducherry]]
+[[Category:State Assembly elections in Puducherry]]
+[[Category:2020s in Puducherry]]

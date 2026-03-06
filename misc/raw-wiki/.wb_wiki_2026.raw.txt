@@ -1,0 +1,5680 @@
+{{Short description|Elections for the 18th Legislative assembly of West Bengal}}
+{{pp-move-dispute|small=yes}}
+{{Use dmy dates|date=August 2024}}
+{{Infobox election
+| election_name = 2026 West Bengal Legislative Assembly election
+| country = India
+| type = Legislative
+| ongoing = yes
+| vote_type = party
+| previous_election = 2021 West Bengal Legislative Assembly election
+| previous_year = 2021
+| next_election = 
+| registered  = 70,459,284 ({{decrease}} 4.03%)<ref name="Vote">{{cite web|url=https://indianexpress.com/article/cities/kolkata/west-bengal-sir-final-voter-list-names-deleted-10557359/|title=West Bengal Voter List: Over 63 Lakh Names Deleted in Final Roll|work=[[The Indian Express]]|access-date=28 February 2026}}</ref> 
+| next_year = 2031
+| election_date = On or before 7 May 2026
+| seats_for_election = All 294 elected seats in the [[West Bengal Legislative Assembly]]
+| majority_seats = 148
+| map_image = [[File:Wahlkreise zur Vidhan Sabha von Westbengalen.svg|300px]]
+| map_caption = Map of the assembly constituencies in West Bengal
+| turnout = 
+| outgoing_members = 17th West Bengal Assembly
+| elected_members = 
+| image1 = {{CSS image crop|Image =Ms. Mamata Banerjee, in Kolkata on July 17, 2018 (cropped) (cropped).JPG|bSize = 135 |cWidth = 110 |cHeight = 140|oTop = 5|oLeft = 10}}
+| leader1 = [[Mamata Banerjee]]
+| leader_since1 = 1998
+| party1 = Trinamool Congress
+| alliance1 = [[Trinamool Congress|AITC+]]
+| leaders_seat1 = [[TBD]]
+| last_election1 = 48.02%, 215 seats
+| seats1 = 
+| seat_change1 = 
+| popular_vote1 = 
+| percentage1 = 
+| swing1 = 
+| seats_before1 = 223
+| seats_needed1 = {{steady}}
+| image2 = {{CSS image crop|Image = Shri Suvendu Adhikari BJP.jpg|bSize = 125 |cWidth = 110 |cHeight = 140|oTop = 0|oLeft = 6}}
+| leader2 = [[Suvendu Adhikari]]
+| leader_since2 = 2021
+| leaders_seat2 = [[TBD]]
+| last_election2 = 38.15%, 77 seats
+| party2 = Bharatiya Janata Party
+| alliance2 = -
+| seats2 = 
+| seat_change2 = 
+| popular_vote2 = 
+| percentage2 = 
+| swing2 = 
+| title = [[Chief Minister of West Bengal|Chief Minister]]
+| seats_before2 = 65
+| seats_needed2 = {{increase}} 83
+| before_election = [[Mamata Banerjee]]
+| before_party = Trinamool Congress
+| after_election = 
+| after_party = 
+}}
+
+Legislative Assembly elections are expected to be held in [[Elections in West Bengal|West Bengal]] in [[2026 elections in India|April–May 2026]] to elect all [[List of constituencies of the West Bengal Legislative Assembly|294 members]] of the [[West Bengal Legislative Assembly]].<ref>{{Cite web |title=BJP hopeful of turnaround in Bengal in 2026 Assembly elections|url=https://www.telegraphindia.com/west-bengal/bjp-hopeful-of-turnaround-in-bengal-in-2026-assembly-elections/cid/2031854 |access-date=2024-06-07 |website=The Telegraph India}}</ref><ref>{{Cite web |title='Govt change in Bengal possible only if BJP remains in power in Delhi... Poll a semi-final for 2026': Dilip Ghosh|url=https://indianexpress.com/article/cities/kolkata/govt-change-in-bengal-possible-only-if-bjp-remains-in-power-in-delhi-poll-a-semi-final-for-2026-ghosh-9322999/ |access-date=2024-05-12|website=The New Indian Express|date=12 May 2024 }}</ref><ref>{{Cite news |title='No room for complacency': TMC sets agenda for State poll|url=https://www.thehindu.com/news/cities/kolkata/no-room-for-complacency-tmc-sets-agenda-for-state-poll/article68429531.ece |access-date=2024-07-22|website=The Hindu|date=21 July 2024 }}</ref><ref>{{Cite web |title=West Bengal: Mamata cocks a snook at Modi, gets ready for strong showing in 2026 Assembly polls |url=https://www.moneycontrol.com/elections/lok-sabha-election/west-bengal-mamata-banerjee-cocks-a-snook-at-narendra-modi-article-12741066.html|access-date=2024-06-05|website=Money Control}}</ref><ref>{{Cite news |title=TMC govt won't last till 2026 if BJP gets even one more seat than them in LS polls: Sukanta Majumdar|url=https://economictimes.indiatimes.com/news/elections/lok-sabha/west-bengal/tmc-govt-wont-last-till-2026-if-bjp-gets-even-one-more-seat-than-them-in-ls-polls-sukanta-majumdar/articleshow/108747002.cms?from=mdr|access-date=2024-03-24|website=The Economic Times| date=24 March 2024 }}</ref>
+
+== Background ==
+The tenure of [[West Bengal Legislative Assembly]] is scheduled to end on 7 May 2026.<ref>{{Cite web |title=Term of the Houses |url=https://www.eci.gov.in/term-of-the-houses |archive-url=https://web.archive.org/web/20250807185225/https://www.eci.gov.in/term-of-the-houses |archive-date=7 August 2025 |access-date=2025-10-13 |website=www.eci.gov.in |language=en |url-status=live }}</ref> The [[2021 West Bengal Legislative Assembly election|previous assembly elections]] were held in March–April 2021. After the election, the incumbent [[Trinamool Congress]] formed the [[Government of West Bengal|state government]] again after winning 215 out of 294 seats in the assembly, with [[Mamata Banerjee]] sworn in as the [[Chief Minister of West Bengal|Chief Minister]].<ref>{{Cite news |date=2021-05-03 |title=West Bengal elections {{!}} In final tally, TMC bags 213, BJP 77, ISF and Independent 1 each |url=https://www.thehindu.com/news/cities/kolkata/west-bengal-elections-in-final-tally-tmc-bags-213-bjp-77-isf-and-independent-1-each/article34471551.ece |archive-url=https://web.archive.org/web/20250915014240/https://www.thehindu.com/news/cities/kolkata/west-bengal-elections-in-final-tally-tmc-bags-213-bjp-77-isf-and-independent-1-each/article34471551.ece |archive-date=2025-09-15 |access-date=2025-11-02 |work=The Hindu |language=en-IN |issn=0971-751X}}</ref><ref>{{Cite web |date=2021-10-03 |title=Bhabanipur, Jangipur, Samserganj: TMC adds more to its tally in West Bengal Assembly |url=https://www.timesnownews.com/india/west-bengal/article/bhabanipur-jangipur-samserganj-rampant-tmc-adds-more-to-its-tally-in-west-bengal-assembly/819802 |access-date=2025-11-02 |website=www.timesnownews.com |language=en}}</ref><ref>{{Cite news |date=2021-05-05 |title=Mamata Banerjee sworn-in as West Bengal chief minister for 3rd time, takes oath in Bengali |url=https://timesofindia.indiatimes.com/india/mamata-banerjee-sworn-in-as-bengal-cm-for-3rd-time-takes-oath-in-bengali/articleshow/82400020.cms |access-date=2025-11-02 |work=The Times of India |issn=0971-8257}}</ref>
+
+== Schedule ==
+{| class="wikitable"
+|-
+! Poll event
+! Schedule
+|-
+| Notification date
+| '''Mid-March'''
+|-
+| Last date for filing nomination
+| '''Mid-April'''
+|-
+| Scrutiny of nomination
+| '''Mid-April'''
+|-
+| Last date for withdrawal of nomination
+| '''Mid-April'''
+|-
+| Date of poll
+|  '''2nd part of April'''
+|-
+| Date of counting of votes
+|  '''2nd part of April or 1st week of May'''
+|}
+
+==Voter statistics==
+According to the [[Election Commission of India]], 70,459,284 voters were eligible to vote in the assembly elections in West Bengal. This includes 36,022,642 male, 34,435,260 female, and 1,382 [[third gender]].<ref name="Vote"/>
+
+== Parties and alliances ==
+
+=== AITC+ ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable" width="60%" style="text-align:center;
+| colspan="5" {{party color cell|Trinamool Congress}}
+|-
+| colspan="5" | [[Trinamool Congress|AITC+]]<ref>{{Cite web |date=2025-12-16 |title=বিধানসভা ভোটে পাহাড়ের ৩ আসনে অনীতকে সমর্থন তৃণমূলের, প্রার্থী নিয়ে বিপাকে বিজেপি |url=https://www.etvbharat.com/bn/politics/bengal-assembly-elections-2026-tmc-supporting-anit-thapa-party-and-bjp-facing-difficulties-in-selecting-candidates-wbs25121603684 |access-date=2025-12-22 |website=ETV Bharat News |language=bn}}</ref>
+|-
+! colspan="2" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| {{Full party name with color|Trinamool Congress}}
+| [[File:All India Trinamool Congress symbol 2021.svg|50px]]
+| [[Mamata Banerjee]]
+| TBD
+|-
+| {{Full party name with color|Bharatiya Gorkha Prajatantrik Morcha}}
+|
+| [[Anit Thapa]]<ref>{{Cite web |date=2025-09-10 |title=Anit Thapa shifts gears, broaches identity: BGPM celebrates fifth foundation day |url=https://www.telegraphindia.com/west-bengal/anit-thapa-shifts-gears-broaches-identity-bharatiya-gorkha-prajatantrik-morcha-celebrates-fifth-foundation-day-prnt/cid/2122203 |access-date=2025-12-22 |website=The Telegraph}}</ref>
+| TBD
+|-
+!colspan="4"| Total
+! 294
+|}
+
+=== Bharatiya Janata Party ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable" width="60%" style="text-align:center;
+| colspan="5" {{party color cell|Bharatiya Janata Party}}
+|-
+! colspan="2" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| {{Full party name with color|Bharatiya Janata Party}}
+| [[File:Lotus flower symbol.svg|50px]]
+| [[Suvendu Adhikari]]
+| 294
+|-
+|}
+
+=== Left Front+ ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable" width="75%" style="text-align:center;
+| colspan="5" {{party color cell|Left Front (West Bengal)}}
+|-
+| colspan="5" | [[Left Front-led Alliance|Left Front+]]
+|-
+! colspan="2" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+|colspan="5"|'''[[Left Front (West Bengal)|Left Front]]'''
+|-
+| {{Full party name with color|Communist Party of India (Marxist)|dab=yes}}
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| [[Mohammed Salim (politician)|Mohammed Salim]]<ref>{{Cite news |date=2025-02-25 |title=CPI(M) re-elects Md Salim as West Bengal secretary |url=https://www.thehindu.com/news/national/west-bengal/cpim-re-elects-md-salim-as-west-bengal-secretary/article69262629.ece |access-date=2025-12-10 |work=The Hindu |language=en-IN |issn=0971-751X}}</ref>
+| ''TBD''
+|-
+| {{Full party name with color|All India Forward Bloc}}
+| [[File:Indian Election Symbol Lion.svg|50px]]
+| Naren Chatterjee<ref>{{Cite web |date=2025-01-24 |title=Forward Bloc announces rally on Jan 29 |url=https://indianexpress.com/article/cities/kolkata/forward-bloc-announces-rally-on-jan-29-9796202/ |access-date=2025-12-22 |website=The Indian Express |language=en}}</ref>
+| ''TBD''
+|-
+| {{Full party name with color|Communist Party of India}}
+| [[File:CPI symbol.svg|50px]]
+| Swapan Banerjee<ref>{{Cite web |date=2025-08-21 |title=State polls: Left Front allies push for no Cong tie-up |url=https://www.thestatesman.com/bengal/state-polls-left-front-allies-push-for-no-cong-tie-up-1503474445.html |access-date=2025-12-22 |website=The Statesman |language=en}}</ref>
+| ''TBD''
+|-
+| {{Full party name with color|Revolutionary Socialist Party (India)|dab=yes}}
+| [[File:Indian Election Symbol Spade and Stoker.png|50px]]
+| [[Tapan Hore]]<ref>{{Cite web |date=2025-11-20 |title=Bengal becomes RSS research laboratory, crush it: Md Salim |url=https://www.thestatesman.com/bengal/bengal-becomes-rss-research-laboratory-crush-it-md-salim-1503514738.html |access-date=2025-12-22 |website=The Statesman |language=en}}</ref>
+| ''TBD''
+|-
+| {{Full party name with color|Marxist Forward Bloc}}
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| Ashish Chakraborty
+| ''TBD''
+|-
+| {{Full party name with color|Revolutionary Communist Party of India}}
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| Subhash Roy
+| ''TBD''
+|-
+|colspan="5"|'''[[Left Front (West Bengal)|Left Front]] allies'''
+|-
+| {{Full party name with color|Communist Party of India (Marxist–Leninist) Liberation|dab=yes}}
+| [[File:Flag Logo of CPIML.png|50px]]
+| Abhijit Majumder<ref>{{Cite web |date=2025-10-31 |title=Tribal rights protest sparks potential third-front alliance in Bengal |url=https://thefederal.com/category/states/east/west-bengal/deocha-pachami-protest-sparks-potential-third-front-alliance-in-bengal-214022 |access-date=2025-12-22 |website=thefederal.com |language=en}}</ref>
+| ''TBD''
+|-
+|colspan="5"|'''Others'''
+|-
+|{{Full party name with color|Indian Secular Front}}
+|[[File:Indian Election Symbol Envelope.jpg|50px|centre]]
+|[[Nawsad Siddiqui]]
+|''TBD''
+|-
+!colspan="4"| Total
+! TBD
+|}
+
+=== Others ===
+
+{| class="wikitable" width="75%" style="text-align:center;
+! colspan="2" | Party
+! Symbol
+! Leader
+! Seats contested
+|-
+| {{Full party name with color|Indian National Congress}}
+| [[File:INC Hand.svg|50px]]
+| [[Subhankar Sarkar]]<ref>{{Cite news |date=2024-09-21 |title=Congress appoints Subhankar Sarkar as president of West Bengal unit |url=https://timesofindia.indiatimes.com/india/congress-appoints-subhankar-sarkar-as-president-of-west-bengal-unit/articleshow/113557402.cms |access-date=2025-12-10 |work=The Times of India |issn=0971-8257}}</ref>
+| TBD
+|-
+| {{Full party name with color|Bahujan Samaj Party}}
+| [[File:Indian Election Symbol Elephant.png|50px]]
+| Achintya Kumar Biswas
+| ''TBD''
+|-
+| {{Full party name with color|Aam Aadmi Party}}
+|  [[File:AAP Symbol.png|50px]]
+| Sanjoy Basu
+| TBD
+|-
+| {{Full party name with color|Aam Janata Unnayan Party|color=#8AB800}}
+| 
+| [[Humayun Kabir (West Bengal politician)|Humayun Kabir]]<ref>{{Cite news |date=2025-12-23 |title=Suspended TMC MLA Humayun Kabir launches Janata Unnayan Party, to contest Murshidabad seats in 2026 |url=https://economictimes.indiatimes.com/news/politics-and-nation/suspended-tmc-mla-humayun-kabir-launches-janata-unnayan-party-to-contest-murshidabad-seats-in-2026/articleshow/126128092.cms |access-date=2025-12-22 |work=The Economic Times |issn=0013-0389}}</ref>
+| TBD
+|-
+| {{Full party name with color|Socialist Unity Centre of India (Communist)|dab=yes}}
+| [[File:Indian Election Symbol Battery Torch.svg|50px]]
+| Chandidas Bhattacharya<ref>{{Cite web |date=2025-10-26 |title=Will Left Front Be Able To Find Back Winning Ways In 2026 Bengal Assembly Polls? |url=https://www.etvbharat.com/en/bharat/will-left-front-be-able-to-find-back-winning-ways-in-2026-bengal-assembly-polls-enn25102601978 |access-date=2025-12-22 |website=ETV Bharat News |language=en}}</ref>
+| ''TBD''
+|-
+|}
+
+==Candidates==
+{| class="wikitable" style="text-align:center;"
+! rowspan="2" | District
+! colspan="2" rowspan="2" | Constituency
+| colspan="3" style="background:{{party color|Trinamool Congress}}"|
+| colspan="3" style="background:{{party color|Bharatiya Janata Party}}"|
+|-
+! colspan="3" | [[Trinamool Congress|AITC+]]
+! colspan="3" | [[Bharatiya Janata Party|BJP]]
+|-
+| rowspan="9" | [[Cooch Behar district|Cooch Behar]]
+!1
+|[[Mekliganj Assembly constituency|Mekliganj (SC)]]
+|-
+!2
+|[[Mathabhanga Assembly constituency|Mathabhanga (SC)]]
+|-
+!3
+|[[Cooch Behar Uttar|Cooch Behar Uttar (SC)]]
+|-
+!4
+|[[Cooch Behar Dakshin]]
+|-
+!5
+|[[Sitalkuchi Assembly constituency|Sitalkuchi (SC)]]
+|-
+!6
+|[[Sitai Assembly constituency|Sitai (SC)]]
+|-
+!7
+|[[Dinhata Assembly constituency|Dinhata]]
+|-
+!8
+|[[Natabari Assembly constituency|Natabari]]
+|-
+!9
+|[[Tufanganj Assembly constituency|Tufanganj]]
+|-
+| rowspan="5" | [[Alipurduar district|Alipurduar]]
+!10
+|[[Kumargram Assembly constituency|Kumargram (ST)]]
+|-
+!11
+|[[Kalchini Assembly constituency|Kalchini (ST)]]
+|-
+!12
+|[[Alipurduars Assembly constituency|Alipurduars]]
+|-
+!13
+|[[Falakata Assembly constituency|Falakata]]
+|-
+!14
+|[[Madarihat Assembly constituency|Madarihat]]
+|-
+| rowspan="7" | [[Jalpaiguri district|Jalpaiguri]]
+!15
+|[[Dhupguri Assembly constituency|Dhupguri (SC)]]
+|-
+!16
+|[[Maynaguri Assembly constituency|Maynaguri (SC)]]
+|-
+!17
+|[[Jalpaiguri Assembly constituency|Jalpaiguri (SC)]]
+|-
+!18
+|[[Rajganj Assembly constituency|Rajganj (SC)]]
+|-
+!19
+|[[Dabgram-Phulbari Assembly constituency|Dabgram-Phulbari]]
+|-
+!20
+|[[Mal Assembly constituency|Mal (ST)]]
+|-
+!21
+|[[Nagrakata Assembly constituency|Nagrakata (ST)]]
+|-
+|[[Kalimpong district|Kalimpong]]
+!22
+|[[Kalimpong Assembly constituency|Kalimpong]]
+|-
+| rowspan="5" | [[Darjeeling district|Darjeeling]]
+!23
+|[[Darjeeling Assembly constituency|Darjeeling]]
+|-
+!24
+|[[Kurseong Assembly constituency|Kurseong]]
+|-
+!25
+|[[Matigara-Naxalbari|Matigara-Naxalbari (SC)]]
+|-
+!26
+|[[Siliguri Assembly constituency|Siliguri]]
+|-
+!27
+|[[Phansidewa Assembly constituency|Phansidewa (ST)]]
+|-
+| rowspan="9" | [[Uttar Dinajpur district|Uttar Dinajpur]]
+!28
+|[[Chopra Assembly constituency|Chopra]]
+|-
+!29
+|[[Islampur, West Bengal Assembly constituency|Islampur]]
+|-
+!30
+|[[Goalpokhar Assembly constituency|Goalpokhar]]
+|-
+!31
+|[[Chakulia Assembly constituency|Chakulia]]
+|-
+!32
+|[[Karandighi Assembly constituency|Karandighi]]
+|-
+!33
+|[[Hemtabad Assembly constituency|Hemtabad (SC)]]
+|-
+!34
+|[[Kaliaganj Assembly constituency|Kaliaganj (SC)]]
+|-
+!35
+|[[Raiganj Assembly constituency|Raiganj]]
+|-
+!36
+|[[Itahar Assembly constituency|Itahar]]
+|-
+| rowspan="6" | [[Dakshin Dinajpur district|Dakshin Dinajpur]]
+!37
+|[[Kushmandi Assembly constituency|Kushmandi (SC)]]
+|-
+!38
+|[[Kumarganj Assembly constituency|Kumarganj]]
+|-
+!39
+|[[Balurghat Assembly constituency|Balurghat]]
+|-
+!40
+|[[Tapan Assembly constituency|Tapan (ST)]]
+|-
+!41
+|[[Gangarampur Assembly constituency|Gangarampur (SC)]]
+|-
+!42
+|[[Harirampur Assembly constituency|Harirampur]]
+|-
+| rowspan="12" | [[Malda district|Malda]]
+!43
+|[[Habibpur Assembly constituency|Habibpur (ST)]]
+|-
+!44
+|[[Gazole Assembly constituency|Gazole (SC)]]
+|-
+!45
+|[[Chanchal Assembly constituency|Chanchal]]
+|-
+!46
+|[[Harishchandrapur Assembly constituency|Harishchandrapur]]
+|-
+!47
+|[[Malatipur Assembly constituency|Malatipur]]
+|-
+!48
+|[[Ratua Assembly constituency|Ratua]]
+|-
+!49
+|[[Manikchak Assembly constituency|Manikchak]]
+|-
+!50
+|[[Maldaha Assembly constituency|Maldaha]]
+|-
+!51
+|[[English Bazar Assembly constituency|English Bazar]]
+|-
+!52
+|[[Mothabari Assembly constituency|Mothabari]]
+|-
+!53
+|[[Sujapur Assembly constituency|Sujapur]]
+|-
+!54
+|[[Baisnabnagar Assembly constituency|Baisnabnagar]]
+|-
+| rowspan="22" | [[Murshidabad district|Murshidabad]]
+!55
+|[[Farakka Assembly constituency|Farakka]]
+|-
+!56
+|[[Samserganj Assembly constituency|Samserganj]]
+|-
+!57
+|[[Suti Assembly constituency|Suti]]
+|-
+!58
+|[[Jangipur, West Bengal Assembly constituency|Jangipur]]
+|-
+!59
+|[[Raghunathganj Assembly constituency|Raghunathganj]]
+|-
+!60
+|[[Sagardighi Assembly constituency|Sagardighi]]
+|-
+!61
+|[[Lalgola Assembly constituency|Lalgola]]
+|-
+!62
+|[[Bhagabangola Assembly constituency|Bhagabangola]]
+|-
+!63
+|[[Raninagar Assembly constituency|Raninagar]]
+|-
+!64
+|[[Murshidabad Assembly constituency|Murshidabad]]
+|-
+!65
+|[[Nabagram Assembly constituency|Nabagram (SC)]]
+|-
+!66
+|[[Khargram Assembly constituency|Khargram (SC)]]
+|-
+!67
+|[[Burwan Assembly constituency|Burwan (SC)]]
+|-
+!68
+|[[Kandi Assembly constituency|Kandi]]
+|-
+!69
+|[[Bharatpur, West Bengal Assembly constituency|Bharatpur]]
+|-
+!70
+|[[Rejinagar Assembly constituency|Rejinagar]]
+|-
+!71
+|[[Beldanga Assembly constituency|Beldanga]]
+|-
+!72
+|[[Baharampur Assembly constituency|Baharampur]]
+|-
+!73
+|[[Hariharpara Assembly constituency|Hariharpara]]
+|-
+!74
+|[[Naoda Assembly constituency|Naoda]]
+|-
+!75
+|[[Domkal Assembly constituency|Domkal]]
+|-
+!76
+|[[Jalangi Assembly constituency|Jalangi]]
+|-
+| rowspan="17" | [[Nadia district|Nadia]]
+!77
+|[[Karimpur Assembly constituency|Karimpur]]
+|-
+!78
+|[[Tehatta Assembly constituency|Tehatta]]
+|-
+!79
+|[[Palashipara Assembly constituency|Palashipara]]
+|-
+!80
+|[[Kaliganj Assembly constituency|Kaliganj]]
+|-
+!81
+|[[Nakashipara Assembly constituency|Nakashipara]]
+|-
+!82
+|[[Chapra, West Bengal Assembly constituency|Chapra]]
+|-
+!83
+|[[Krishnanagar Uttar Assembly constituency|Krishnanagar Uttar]]
+|-
+!84
+|[[Nabadwip Assembly constituency|Nabadwip]]
+|-
+!85
+|[[Krishnanagar Dakshin Assembly constituency|Krishnanagar Dakshin]]
+|-
+!86
+|[[Santipur Assembly constituency|Santipur]]
+|-
+!87
+|[[Ranaghat Uttar Paschim Assembly constituency|Ranaghat Uttar Paschim]]
+|-
+!88
+|[[Krishnaganj Assembly constituency|Krishnaganj (SC)]]
+|-
+!89
+|[[Ranaghat Uttar Purba Assembly constituency|Ranaghat Uttar Purba (SC)]]
+|-
+!90
+|[[Ranaghat Dakshin Assembly constituency|Ranaghat Dakshin (SC)]]
+|-
+!91
+|[[Chakdaha Assembly constituency|Chakdaha]]
+|-
+!92
+|[[Kalyani Assembly constituency|Kalyani (SC)]]
+|-
+!93
+|[[Haringhata Assembly constituency|Haringhata (SC)]]
+|-
+|rowspan="33" | [[North 24 Parganas district|North 24 Parganas]]
+!94
+|[[Bagdah Assembly constituency|Bagdah (SC)]]
+|-
+!95
+|[[Bangaon Uttar Assembly constituency|Bangaon Uttar (SC)]]
+|-
+!96
+|[[Bangaon Dakshin Assembly constituency|Bangaon Dakshin (SC)]]
+|-
+!97
+|[[Gaighata Assembly constituency|Gaighata (SC)]]
+|-
+!98
+|[[Swarupnagar Assembly constituency|Swarupnagar (SC)]]
+|-
+!99
+|[[Baduria Assembly constituency|Baduria]]
+|-
+!100
+|[[Habra Assembly constituency|Habra]]
+|-
+!101
+|[[Ashoknagar Assembly constituency|Ashokenagar]]
+|-
+!102
+|[[Amdanga Assembly constituency|Amdanga]]
+|-
+!103
+|[[Bijpur Assembly constituency|Bijpur]]
+|-
+!104
+|[[Naihati Assembly constituency|Naihati]]
+|-
+!105
+|[[Bhatpara Assembly constituency|Bhatpara]]
+|-
+!106
+|[[Jagatdal Assembly constituency|Jagatdal]]
+|-
+!107
+|[[Noapara Assembly constituency|Noapara]]
+|-
+!108
+|[[Barrackpur Assembly constituency|Barrackpur]]
+|-
+!109
+|[[Khardaha Assembly constituency|Khardaha]]
+|-
+!110
+|[[Dum Dum Uttar Assembly constituency|Dum Dum Uttar]]
+|-
+!111
+|[[Panihati Assembly constituency|Panihati]]
+|-
+!112
+|[[Kamarhati Assembly constituency|Kamarhati]]
+|-
+!113
+|[[Baranagar Assembly constituency|Baranagar]]
+|-
+!114
+|[[Dum Dum Assembly constituency|Dum Dum]]
+|-
+!115
+|[[Rajarhat New Town Assembly constituency|Rajarhat New Town]]
+|-
+!116
+|[[Bidhannagar Assembly constituency|Bidhannagar]]
+|-
+!117
+|[[Rajarhat Gopalpur Assembly constituency|Rajarhat Gopalpur]]
+|-
+!118
+|[[Madhyamgram Assembly constituency|Madhyamgram]]
+|-
+!119
+|[[Barasat Assembly constituency|Barasat]]
+|-
+!120
+|[[Deganga Assembly constituency|Deganga]]
+|-
+!121
+|[[Haroa Assembly constituency|Haroa]]
+|-
+!122
+|[[Minakhan Assembly constituency|Minakhan (SC)]]
+|-
+!123
+|[[Sandeshkhali Assembly constituency|Sandeshkhali (ST)]]
+|-
+!124
+|[[Basirhat Dakshin Assembly constituency|Basirhat Dakshin]]
+|-
+!125
+|[[Basirhat Uttar Assembly constituency|Basirhat Uttar]]
+|-
+!126
+|[[Hingalganj Assembly constituency|Hingalganj (SC)]]
+|-
+| rowspan="31" |[[South 24 Parganas district|South 24 Parganas]]
+!127
+|[[Gosaba Assembly constituency|Gosaba (SC)]]
+|-
+!128
+|[[Basanti Assembly constituency|Basanti (SC)]]
+|-
+!129
+|[[Kultali Assembly constituency|Kultali (SC)]]
+|-
+!130
+|[[Patharpratima Assembly constituency|Patharpratima]]
+|-
+!131
+|[[Kakdwip Assembly constituency|Kakdwip]]
+|-
+!132
+|[[Sagar, West Bengal Assembly constituency|Sagar]]
+|-
+!133
+|[[Kulpi Assembly constituency|Kulpi]]
+|-
+!134
+|[[Raidighi Assembly constituency|Raidighi]]
+|-
+!135
+|[[Mandirbazar Assembly constituency|Mandirbazar (SC)]]
+|-
+!136
+|[[Jaynagar Assembly constituency|Jaynagar (SC)]]
+|-
+!137
+|[[Baruipur Purba Assembly constituency|Baruipur Purba (SC)]]
+|-
+!138
+|[[Canning Paschim Assembly constituency|Canning Paschim (SC)]]
+|-
+!139
+|[[Canning Purba Assembly constituency|Canning Purba]]
+|-
+!140
+|[[Baruipur Paschim Assembly constituency|Baruipur Paschim]]
+|-
+!141
+|[[Magrahat Purba Assembly constituency|Magrahat Purba (SC)]]
+|-
+!142
+|[[Magrahat Paschim Assembly constituency|Magrahat Paschim]]
+|-
+!143
+|[[Diamond Harbour Assembly constituency|Diamond Harbour]]
+|-
+!144
+|[[Falta Assembly constituency|Falta]]
+|-
+!145
+|[[Satgachhia Assembly constituency|Satgachia]]
+|-
+!146
+|[[Bishnupur, South 24 Parganas Assembly constituency|Bishnupur (SC)]]
+|-
+!147
+|[[Sonarpur Dakshin Assembly constituency|Sonarpur Dakshin]]
+|-
+!148
+|[[Bhangar Assembly constituency|Bhangar]]
+|-
+!149
+|[[Kasba, West Bengal Assembly constituency|Kasba]]
+|-
+!150
+|[[Jadavpur Assembly constituency|Jadavpur]]
+|-
+!151
+|[[Sonarpur Uttar Assembly constituency|Sonarpur Uttar]]
+|-
+!152
+|[[Tollyganj Assembly constituency|Tollygunge]]
+|-
+!153
+|[[Behala Purba Assembly constituency|Behala Purba]]
+|-
+!154
+|[[Behala Paschim]]
+|-
+!155
+|[[Maheshtala Assembly constituency|Maheshtala]]
+|-
+!156
+|[[Budge Budge Assembly constituency|Budge Budge]]
+|-
+!157
+|[[Metiaburuz Assembly constituency|Metiaburuz]]
+|-
+| rowspan="11" | [[Kolkata district|Kolkata]]
+!158
+|[[Kolkata Port Assembly constituency|Kolkata Port]]
+|-
+!159
+|[[Bhabanipur, West Bengal Assembly constituency|Bhabanipur]]
+|-
+!160
+|[[Rashbehari Assembly constituency|Rashbehari]]
+|-
+!161
+|[[Ballygunge Assembly constituency|Ballygunge]]
+|-
+!162
+|[[Chowrangee Assembly constituency|Chowrangee]]
+|-
+!163
+|[[Entally Assembly constituency|Entally]]
+|-
+!164
+|[[Beleghata Assembly constituency|Beleghata]]
+|-
+!165
+|[[Jorasanko Assembly constituency|Jorasanko]]
+|-
+!166
+|[[Shyampukur Assembly constituency|Shyampukur]]
+|-
+!167
+|[[Maniktala Assembly constituency|Maniktala]]
+|-
+!168
+|[[Kashipur-Belgachhia]]
+|-
+|rowspan="16" | [[Howrah district|Howrah]]
+!169
+|[[Bally Assembly constituency|Bally]]
+|-
+!170
+|[[Howrah Uttar]]
+|-
+!171
+|[[Howrah Madhya]]
+|-
+!172
+|[[Shibpur Assembly constituency|Shibpur]]
+|-
+!173
+|[[Howrah Dakshin]]
+|-
+!174
+|[[Sankrail Assembly constituency|Sankrail (SC)]]
+|-
+!175
+|[[Panchla Assembly constituency|Panchla]]
+|-
+!176
+|[[Uluberia Purba]]
+|-
+!177
+|[[Uluberia Uttar|Uluberia Uttar (SC)]]
+|-
+!178
+|[[Uluberia Dakshin]]
+|-
+!179
+|[[Shyampur Assembly constituency|Shyampur]]
+|-
+!180
+|[[Bagnan Assembly constituency|Bagnan]]
+|-
+!181
+|[[Amta Assembly constituency|Amta]]
+|-
+!182
+|[[Udaynarayanpur Assembly constituency|Udaynarayanpur]]
+|-
+!183
+|[[Jagatballavpur Assembly constituency|Jagatballavpur]]
+|-
+!184
+|[[Domjur Assembly constituency|Domjur]]
+|-
+| rowspan="18" | [[Hooghly district|Hooghly]]
+!185
+|[[Uttarpara Assembly constituency|Uttarpara]]
+|-
+!186
+|[[Sreerampur Assembly constituency|Sreerampur]]
+|-
+!187
+|[[Champdani Assembly constituency|Champdani]]
+|-
+!188
+|[[Singur Assembly constituency|Singur]]
+|-
+!189
+|[[Chandannagar Assembly constituency|Chandannagar]]
+|-
+!190
+|[[Chunchura Assembly constituency|Chunchura]]
+|-
+!191
+|[[Balagarh Assembly constituency|Balagarh (SC)]]
+|-
+!192
+|[[Pandua Assembly constituency|Pandua]]
+|-
+!193
+|[[Saptagram Assembly constituency|Saptagram]]
+|-
+!194
+|[[Chanditala Assembly constituency|Chanditala]]
+|-
+!195
+|[[Jangipara Assembly constituency|Jangipara]]
+|-
+!196
+|[[Haripal Assembly constituency|Haripal]]
+|-
+!197
+|[[Dhanekhali Assembly constituency|Dhanekhali (SC)]]
+|-
+!198
+|[[Tarakeswar Assembly constituency|Tarakeswar]]
+|-
+!199
+|[[Pursurah Assembly constituency|Pursurah]]
+|-
+!200
+|[[Arambag Assembly constituency|Arambagh (SC)]]
+|-
+!201
+|[[Goghat Assembly constituency|Goghat (SC)]]
+|-
+!202
+|[[Khanakul Assembly constituency|Khanakul]]
+|-
+| rowspan="16" | [[Purba Medinipur district|Purba Medinipur]]
+!203
+|[[Tamluk Assembly constituency|Tamluk]]
+|-
+!204
+|[[Panskura Purba]]
+|-
+!205
+|[[Panskura Paschim]]
+|-
+!206
+|[[Moyna Assembly constituency|Moyna]]
+|-
+!207
+|[[Nandakumar Assembly constituency|Nandakumar]]
+|-
+!208
+|[[Mahisadal Assembly constituency|Mahisadal]]
+|-
+!209
+|[[Haldia Assembly constituency|Haldia (SC)]]
+|-
+!210
+|[[Nandigram Assembly constituency|Nandigram]]
+|-
+!211
+|[[Chandipur Assembly constituency|Chandipur]]
+|-
+!212
+|[[Patashpur Assembly constituency|Patashpur]]
+|-
+!213
+|[[Kanthi Uttar Assembly constituency|Kanthi Uttar]]
+|-
+!214
+|[[Bhagabanpur Assembly constituency|Bhagabanpur]]
+|-
+!215
+|[[Khejuri Assembly constituency|Khejuri (SC)]]
+|-
+!216
+|[[Kanthi Dakshin Assembly constituency|Kanthi Dakshin]]
+|-
+!217
+|[[Ramnagar, Purba Medinipur Assembly constituency|Ramnagar]]
+|-
+!218
+|[[Egra Assembly constituency|Egra]]
+|-
+|[[Paschim Medinipur district|Paschim Medinipur]]
+!219
+|[[Dantan Assembly constituency|Dantan]]
+|-
+| rowspan="3" | [[Jhargram district|Jhargram]]
+!220
+|[[Nayagram Assembly constituency|Nayagram (ST)]]
+|-
+!221
+|[[Gopiballavpur Assembly constituency|Gopiballavpur]]
+|-
+!222
+|[[Jhargram Assembly constituency|Jhargram]]
+|-
+| rowspan="14" | [[Paschim Medinipur district|Paschim Medinipur]]
+!223
+|[[Keshiary Assembly constituency|Keshiary (ST)]]
+|-
+!224
+|[[Kharagpur Sadar Assembly constituency|Kharagpur Sadar]]
+|-
+!225
+|[[Narayangarh Assembly constituency|Narayangarh]]
+|-
+!226
+|[[Sabang Assembly constituency|Sabang]]
+|-
+!227
+|[[Pingla Assembly constituency|Pingla]]
+|-
+!228
+|[[Kharagpur Assembly constituency|Kharagpur]]
+|-
+!229
+|[[Debra Assembly constituency|Debra]]
+|-
+!230
+|[[Daspur Assembly constituency|Daspur]]
+|-
+!231
+|[[Ghatal Assembly constituency|Ghatal]]
+|-
+!232
+|[[Chandrakona Assembly constituency|Chandrakona (SC)]]
+|-
+!233
+|[[Garbeta Assembly constituency|Garbeta]]
+|-
+!234
+|[[Salboni Assembly constituency|Salboni]]
+|-
+!235
+|[[Keshpur Assembly constituency|Keshpur]]
+|-
+!236
+|[[Medinipur Assembly constituency|Medinipur]]
+|-
+|[[Jhargram district|Jhargram]]
+!237
+|[[Binpur Assembly constituency|Binpur (ST)]]
+|-
+| rowspan="9" | [[Purulia district|Purulia]]
+!238
+|[[Bandwan Assembly constituency|Bandwan (ST)]]
+|-
+!239
+|[[Balarampur, Purulia Assembly constituency|Balarampur]]
+|-
+!240
+|[[Baghmundi Assembly constituency|Baghmundi]]
+|-
+!241
+|[[Joypur, Purulia Assembly constituency|Joypur]]
+|-
+!242
+|[[Purulia Assembly constituency|Purulia]]
+|-
+!243
+|[[Manbazar Assembly constituency|Manbazar (ST)]]
+|-
+!244
+|[[Kashipur, West Bengal Assembly constituency|Kashipur]]
+|-
+!245
+|[[Para Assembly constituency|Para (SC)]]
+|-
+!246
+|[[Raghunathpur, West Bengal Assembly constituency|Raghunathpur (SC)]]
+|-
+| rowspan="12" | [[Bankura district|Bankura]]
+!247
+|[[Saltora Assembly constituency|Saltora (SC)]]
+|-
+!248
+|[[Chhatna Assembly constituency|Chhatna]]
+|-
+!249
+|[[Ranibandh Assembly constituency|Ranibandh (ST)]]
+|-
+!250
+|[[Raipur, Bankura Assembly constituency|Raipur (ST)]]
+|-
+!251
+|[[Taldangra Assembly constituency|Taldangra]]
+|-
+!252
+|[[Bankura Assembly constituency|Bankura]]
+|-
+!253
+|[[Barjora Assembly constituency|Barjora]]
+|-
+!254
+|[[Onda Assembly constituency|Onda]]
+|-
+!255
+|[[Bishnupur, Bankura Assembly constituency|Bishnupur]]
+|-
+!256
+|[[Katulpur|Katulpur (SC)]]
+|-
+!257
+|[[Indas Assembly constituency|Indas (SC)]]
+|-
+!258
+|[[Sonamukhi Assembly constituency|Sonamukhi (SC)]]
+|-
+| rowspan="16" |[[Purba Bardhaman district|Purba Bardhaman]]
+!259
+|[[Khandaghosh Assembly constituency|Khandaghosh (SC)]]
+|-
+!260
+|[[Bardhaman Dakshin]]
+|-
+!261
+|[[Raina Assembly constituency|Raina (SC)]]
+|-
+!262
+|[[Jamalpur, West Bengal Assembly constituency|Jamalpur (SC)]]
+|-
+!263
+|[[Monteswar Assembly constituency|Monteswar]]
+|-
+!264
+|[[Kalna Assembly constituency|Kalna (SC)]]
+|-
+!265
+|[[Memari Assembly constituency|Memari]]
+|-
+!266
+|[[Bardhaman Uttar|Bardhaman Uttar (SC)]]
+|-
+!267
+|[[Bhatar Assembly constituency|Bhatar]]
+|-
+!268
+|[[Purbasthali Dakshin]]
+|-
+!269
+|[[Purbasthali Uttar]]
+|-
+!270
+|[[Katwa Assembly constituency|Katwa]]
+|-
+!271
+|[[Ketugram Assembly constituency|Ketugram]]
+|-
+!272
+|[[Mangalkot Assembly constituency|Mangalkot]]
+|-
+!273
+|[[Ausgram Assembly constituency|Ausgram (SC)]]
+|-
+!274
+|[[Galsi Assembly constituency|Galsi (SC)]]
+|-
+| rowspan="9" | [[Paschim Bardhaman district|Paschim Bardhaman]]
+!275
+|[[Pandabeswar Assembly constituency|Pandabeswar]]
+|-
+!276
+|[[Durgapur Purba]]
+|-
+!277
+|[[Durgapur Paschim]]
+|-
+!278
+|[[Raniganj, West Bengal Assembly constituency|Raniganj]]
+|-
+!279
+|[[Jamuria Assembly constituency|Jamuria]]
+|-
+!280
+|[[Asansol Dakshin Assembly constituency|Asansol Dakshin]]
+|-
+!281
+|[[Asansol Uttar Assembly constituency|Asansol Uttar]]
+|-
+!282
+|[[Kulti Assembly constituency|Kulti]]
+|-
+!283
+|[[Barabani Assembly constituency|Barabani]]
+|-
+| rowspan="11" | [[Birbhum district|Birbhum]]
+!284
+|[[Dubrajpur Assembly constituency|Dubrajpur (SC)]]
+|-
+!285
+|[[Suri Assembly constituency|Suri]]
+|-
+!286
+|[[Bolpur Assembly constituency|Bolpur]]
+|-
+!287
+|[[Nanoor Assembly constituency|Nanoor (SC)]]
+|-
+!288
+|[[Labpur Assembly constituency|Labpur]]
+|-
+!289
+|[[Sainthia Assembly constituency|Sainthia (SC)]]
+|-
+!290
+|[[Mayureswar Assembly constituency|Mayureswar]]
+|-
+!291
+|[[Rampurhat Assembly constituency|Rampurhat]]
+|-
+!292
+|[[Hansan Assembly constituency|Hansan]]
+|-
+!293
+|[[Nalhati Assembly constituency|Nalhati]]
+|-
+!294
+|[[Murarai Assembly constituency|Murarai]]
+|}
+
+== Surveys and polls ==
+
+=== Opinion polls ===
+{{Empty section|date=December 2025}}
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Vote share projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of Error
+| bgcolor="{{party color|Trinamool Congress}}"|
+| bgcolor="{{party color|Bharatiya Janata Party}}"|
+| bgcolor="{{party color|Left Front (West Bengal)}}"|
+| bgcolor="{{party color|Indian National Congress}}"|
+| bgcolor="{{party color|Others}}"|
+! rowspan="2" | Lead
+|-
+! [[Trinamool Congress|AITC+]]
+! [[Bharatiya Janata Party|BJP]]
+! [[Left Front (West Bengal)|LF]]
+! [[Indian National Congress|INC]]
+! Others
+|-
+|}
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Seat projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of Error
+| bgcolor="{{party color|Trinamool Congress}}"|
+| bgcolor="{{party color|Bharatiya Janata Party}}"|
+| bgcolor="{{party color|Left Front (West Bengal)}}"|
+| bgcolor="{{party color|Indian National Congress}}"|
+| bgcolor="{{party color|Others}}"|
+! rowspan="2" | Lead
+|-
+! [[Trinamool Congress|AITC+]]
+! [[Bharatiya Janata Party|BJP]]
+! [[Left Front (West Bengal)|LF]]
+! [[Indian National Congress|INC]]
+! Others
+|-
+|}
+
+== Results ==
+===Results by alliance or party===
+{| class="wikitable sortable" style="text-align:center;"
+!colspan="4" rowspan="2"|Alliance/ Party
+!colspan="3"|Popular vote
+!colspan="3" |Seats
+|-
+!Votes
+!%
+!±[[Percentage point|pp]]
+!Contested 
+!Won
+!'''+/−'''
+|-
+|rowspan=3 {{Party color cell|Trinamool Congress}}
+|rowspan=3 |[[Trinamool Congress|AITC+]]
+|{{Full party name with color|Trinamool Congress}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|Bharatiya Gorkha Prajatantrik Morcha}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|colspan="2"style="background:#d2f3da"|'''Total'''
+|style="color:inherit;background:#d2f3da"|
+|style="color:inherit;background:#d2f3da"|
+|style="color:inherit;background:#d2f3da"|
+|style="color:inherit;background:#d2f3da"|
+|style="color:inherit;background:#d2f3da"|
+|style="color:inherit;background:#d2f3da"|
+|-
+|{{Party color cell|Bharatiya Janata Party}}
+|colspan="3" align="left|[[Bharatiya Janata Party]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|rowspan=7 {{Party color cell|Left Front (West Bengal)}}
+| rowspan="7" |[[Left Front (West Bengal)|LF]]
+|{{Full party name with color|Communist Party of India (Marxist)|dab=yes}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|All India Forward Bloc}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|Revolutionary Socialist Party (India)|dab=yes}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|Communist Party of India}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|Communist Party of India (Marxist-Leninist) Liberation|dab=yes}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Full party name with color|Marxist Forward Bloc}}
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|colspan="2"style="background:#ffcccc"|'''Total'''
+|style="color:inherit;background:#ffcccc"|
+|style="color:inherit;background:#ffcccc"|
+|style="color:inherit;background:#ffcccc"|
+|style="color:inherit;background:#ffcccc"|
+|style="color:inherit;background:#ffcccc"|
+|style="color:inherit;background:#ffcccc"|
+|-
+|{{Party color cell|Indian National Congress}}
+|colspan="3" align="left|[[Indian National Congress]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Others}}
+|colspan="3" align=left|[[2026 West Bengal Legislative Assembly election#Others|Other parties]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|Independent (politician)}}
+|colspan="3" align=left|[[Independent (politician)|Independents]]
+|{{formatnum:}}
+|
+|
+|
+|
+|
+|-
+|{{Party color cell|None of the above (India)}}
+|colspan="3" align=left|[[None of the above (India)|NOTA]]
+|{{formatnum:}}
+|
+|
+! style="background-color:#E9E9E9" |
+!
+|
+|-
+!colspan="4"|Total
+!
+!100%
+! — 
+!
+!294
+! —
+|-
+|}
+
+===Results by district===
+{| class="wikitable" style="text-align:center;"
+! rowspan="2"|District
+! rowspan="2"|Seats
+| style="color:inherit;background:{{party color|Trinamool Congress}}"|
+| style="color:inherit;background:{{party color|Bharatiya Janata Party}}" |
+| style="color:inherit;background:{{party color|Others}}" |
+|-
+![[Trinamool Congress|AITC+]]
+![[Bharatiya Janata Party|BJP]]
+!Others
+|-
+![[Cooch Behar district|Cooch Behar]]
+!9
+|
+|
+|
+|-
+![[Alipurduar district|Alipurduar]]
+!5
+|
+|
+|
+|-
+![[Jalpaiguri district|Jalpaiguri]]
+!7
+|
+|
+|
+|-
+![[Kalimpong district|Kalimpong]]
+!1
+|
+|
+|
+|-
+![[Darjeeling district|Darjeeling]]
+!5
+|
+|
+|
+|-
+![[Uttar Dinajpur district|Uttar Dinajpur]]
+!9
+|
+|
+|
+|-
+![[Dakshin Dinajpur district|Dakshin Dinajpur]]
+!6
+|
+|
+|
+|-
+![[Malda district|Malda]]
+!12
+|
+|
+|
+|-
+![[Murshidabad district|Murshidabad]]
+!22
+|
+|
+|
+|-
+![[Nadia district|Nadia]]
+!17
+|
+|
+|
+|-
+![[North 24 Parganas district|North 24 Parganas]]
+!33
+|
+|
+|
+|-
+![[South 24 Parganas district|South 24 Parganas]]
+!31
+|
+|
+|
+|-
+![[Kolkata district|Kolkata]]
+!11
+|
+|
+|
+|-
+![[Howrah district|Howrah]]
+!16
+|
+|
+|
+|-
+![[Hooghly district|Hooghly]]
+!18
+|
+|
+|
+|-
+![[Purba Medinipur district|Purba Medinipur]]
+!16
+|
+|
+|
+|-
+![[Paschim Medinipur district|Paschim Medinipur]]
+!15
+|
+|
+|
+|-
+![[Jhargram district|Jhargram]]
+!4
+|
+|
+|
+|-
+![[Purulia district|Purulia]]
+!9
+|
+|
+|
+|-
+![[Bankura district|Bankura]]
+!12
+|
+|
+|
+|-
+![[Purba Bardhaman district|Purba Bardhaman]]
+!16
+|
+|
+|
+|-
+![[Paschim Bardhaman district|Paschim Bardhaman]]
+!9
+|
+|
+|
+|-
+![[Birbhum district|Birbhum]]
+!11
+|
+|
+|
+|-
+!Total
+!294
+!
+!
+!
+|}
+
+===Results by constituency===
+{| class="wikitable"
+! rowspan="2" |District
+! colspan="2" |Constituency
+! colspan="5" |Winner
+! colspan="5" |Runner Up
+! rowspan="2" |Margin
+|-
+! No.
+! Name
+! Candidate
+! colspan="2" |Party
+! Votes
+! %
+! Candidate
+! colspan="2" |Party
+! Votes
+! %
+|-
+| rowspan="9" | [[Cooch Behar district|Cooch Behar]]
+!1
+|[[Mekliganj Assembly constituency|Mekliganj (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!2
+|[[Mathabhanga Assembly constituency|Mathabhanga (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!3
+|[[Cooch Behar Uttar|Cooch Behar Uttar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!4
+|[[Cooch Behar Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!5
+|[[Sitalkuchi Assembly constituency|Sitalkuchi (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!6
+|[[Sitai Assembly constituency|Sitai (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!7
+|[[Dinhata Assembly constituency|Dinhata]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!8
+|[[Natabari Assembly constituency|Natabari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!9
+|[[Tufanganj Assembly constituency|Tufanganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" | [[Alipurduar district|Alipurduar]]
+!10
+|[[Kumargram Assembly constituency|Kumargram (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!11
+|[[Kalchini Assembly constituency|Kalchini (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!12
+|[[Alipurduars Assembly constituency|Alipurduars]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!13
+|[[Falakata Assembly constituency|Falakata]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!14
+|[[Madarihat Assembly constituency|Madarihat]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="7" | [[Jalpaiguri district|Jalpaiguri]]
+!15
+|[[Dhupguri Assembly constituency|Dhupguri (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!16
+|[[Maynaguri Assembly constituency|Maynaguri (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!17
+|[[Jalpaiguri Assembly constituency|Jalpaiguri (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!18
+|[[Rajganj Assembly constituency|Rajganj (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!19
+|[[Dabgram-Phulbari Assembly constituency|Dabgram-Phulbari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!20
+|[[Mal Assembly constituency|Mal (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!21
+|[[Nagrakata Assembly constituency|Nagrakata (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Kalimpong district|Kalimpong]]
+!22
+|[[Kalimpong Assembly constituency|Kalimpong]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" | [[Darjeeling district|Darjeeling]]
+!23
+|[[Darjeeling Assembly constituency|Darjeeling]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!24
+|[[Kurseong Assembly constituency|Kurseong]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!25
+|[[Matigara-Naxalbari|Matigara-Naxalbari (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!26
+|[[Siliguri Assembly constituency|Siliguri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!27
+|[[Phansidewa Assembly constituency|Phansidewa (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" | [[Uttar Dinajpur district|Uttar Dinajpur]]
+!28
+|[[Chopra Assembly constituency|Chopra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!29
+|[[Islampur, West Bengal Assembly constituency|Islampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!30
+|[[Goalpokhar Assembly constituency|Goalpokhar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!31
+|[[Chakulia Assembly constituency|Chakulia]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!32
+|[[Karandighi Assembly constituency|Karandighi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!33
+|[[Hemtabad Assembly constituency|Hemtabad (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!34
+|[[Kaliaganj Assembly constituency|Kaliaganj (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!35
+|[[Raiganj Assembly constituency|Raiganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!36
+|[[Itahar Assembly constituency|Itahar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="6" | [[Dakshin Dinajpur district|Dakshin Dinajpur]]
+!37
+|[[Kushmandi Assembly constituency|Kushmandi (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!38
+|[[Kumarganj Assembly constituency|Kumarganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!39
+|[[Balurghat Assembly constituency|Balurghat]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!40
+|[[Tapan Assembly constituency|Tapan (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!41
+|[[Gangarampur Assembly constituency|Gangarampur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!42
+|[[Harirampur Assembly constituency|Harirampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="12" | [[Malda district|Malda]]
+!43
+|[[Habibpur Assembly constituency|Habibpur (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!44
+|[[Gazole Assembly constituency|Gazole (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!45
+|[[Chanchal Assembly constituency|Chanchal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!46
+|[[Harishchandrapur Assembly constituency|Harishchandrapur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!47
+|[[Malatipur Assembly constituency|Malatipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!48
+|[[Ratua Assembly constituency|Ratua]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!49
+|[[Manikchak Assembly constituency|Manikchak]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!50
+|[[Maldaha Assembly constituency|Maldaha]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!51
+|[[English Bazar Assembly constituency|English Bazar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!52
+|[[Mothabari Assembly constituency|Mothabari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!53
+|[[Sujapur Assembly constituency|Sujapur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!54
+|[[Baisnabnagar Assembly constituency|Baisnabnagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="22" | [[Murshidabad district|Murshidabad]]
+!55
+|[[Farakka Assembly constituency|Farakka]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!56
+|[[Samserganj Assembly constituency|Samserganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!57
+|[[Suti Assembly constituency|Suti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!58
+|[[Jangipur, West Bengal Assembly constituency|Jangipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!59
+|[[Raghunathganj Assembly constituency|Raghunathganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!60
+|[[Sagardighi Assembly constituency|Sagardighi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!61
+|[[Lalgola Assembly constituency|Lalgola]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!62
+|[[Bhagabangola Assembly constituency|Bhagabangola]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!63
+|[[Raninagar Assembly constituency|Raninagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!64
+|[[Murshidabad Assembly constituency|Murshidabad]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!65
+|[[Nabagram Assembly constituency|Nabagram (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!66
+|[[Khargram Assembly constituency|Khargram (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!67
+|[[Burwan Assembly constituency|Burwan (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!68
+|[[Kandi Assembly constituency|Kandi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!69
+|[[Bharatpur, West Bengal Assembly constituency|Bharatpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!70
+|[[Rejinagar Assembly constituency|Rejinagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!71
+|[[Beldanga Assembly constituency|Beldanga]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!72
+|[[Baharampur Assembly constituency|Baharampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!73
+|[[Hariharpara Assembly constituency|Hariharpara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!74
+|[[Naoda Assembly constituency|Naoda]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!75
+|[[Domkal Assembly constituency|Domkal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!76
+|[[Jalangi Assembly constituency|Jalangi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="17" | [[Nadia district|Nadia]]
+!77
+|[[Karimpur Assembly constituency|Karimpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!78
+|[[Tehatta Assembly constituency|Tehatta]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!79
+|[[Palashipara Assembly constituency|Palashipara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!80
+|[[Kaliganj Assembly constituency|Kaliganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!81
+|[[Nakashipara Assembly constituency|Nakashipara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!82
+|[[Chapra, West Bengal Assembly constituency|Chapra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!83
+|[[Krishnanagar Uttar Assembly constituency|Krishnanagar Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!84
+|[[Nabadwip Assembly constituency|Nabadwip]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!85
+|[[Krishnanagar Dakshin Assembly constituency|Krishnanagar Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!86
+|[[Santipur Assembly constituency|Santipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!87
+|[[Ranaghat Uttar Paschim Assembly constituency|Ranaghat Uttar Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!88
+|[[Krishnaganj Assembly constituency|Krishnaganj (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!89
+|[[Ranaghat Uttar Purba Assembly constituency|Ranaghat Uttar Purba (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!90
+|[[Ranaghat Dakshin Assembly constituency|Ranaghat Dakshin (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!91
+|[[Chakdaha Assembly constituency|Chakdaha]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!92
+|[[Kalyani Assembly constituency|Kalyani (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!93
+|[[Haringhata Assembly constituency|Haringhata (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|rowspan="33" | [[North 24 Parganas district|North 24 Parganas]]
+!94
+|[[Bagdah Assembly constituency|Bagdah (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!95
+|[[Bangaon Uttar Assembly constituency|Bangaon Uttar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!96
+|[[Bangaon Dakshin Assembly constituency|Bangaon Dakshin (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!97
+|[[Gaighata Assembly constituency|Gaighata (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!98
+|[[Swarupnagar Assembly constituency|Swarupnagar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!99
+|[[Baduria Assembly constituency|Baduria]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!100
+|[[Habra Assembly constituency|Habra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!101
+|[[Ashoknagar Assembly constituency|Ashokenagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!102
+|[[Amdanga Assembly constituency|Amdanga]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!103
+|[[Bijpur Assembly constituency|Bijpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!104
+|[[Naihati Assembly constituency|Naihati]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!105
+|[[Bhatpara Assembly constituency|Bhatpara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!106
+|[[Jagatdal Assembly constituency|Jagatdal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!107
+|[[Noapara Assembly constituency|Noapara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!108
+|[[Barrackpur Assembly constituency|Barrackpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!109
+|[[Khardaha Assembly constituency|Khardaha]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!110
+|[[Dum Dum Uttar Assembly constituency|Dum Dum Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!111
+|[[Panihati Assembly constituency|Panihati]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!112
+|[[Kamarhati Assembly constituency|Kamarhati]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!113
+|[[Baranagar Assembly constituency|Baranagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!114
+|[[Dum Dum Assembly constituency|Dum Dum]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!115
+|[[Rajarhat New Town Assembly constituency|Rajarhat New Town]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!116
+|[[Bidhannagar Assembly constituency|Bidhannagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!117
+|[[Rajarhat Gopalpur Assembly constituency|Rajarhat Gopalpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!118
+|[[Madhyamgram Assembly constituency|Madhyamgram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!119
+|[[Barasat Assembly constituency|Barasat]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!120
+|[[Deganga Assembly constituency|Deganga]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!121
+|[[Haroa Assembly constituency|Haroa]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!122
+|[[Minakhan Assembly constituency|Minakhan (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!123
+|[[Sandeshkhali Assembly constituency|Sandeshkhali (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!124
+|[[Basirhat Dakshin Assembly constituency|Basirhat Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!125
+|[[Basirhat Uttar Assembly constituency|Basirhat Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!126
+|[[Hingalganj Assembly constituency|Hingalganj (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="31" |[[South 24 Parganas district|South 24 Parganas]]
+!127
+|[[Gosaba Assembly constituency|Gosaba (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!128
+|[[Basanti Assembly constituency|Basanti (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!129
+|[[Kultali Assembly constituency|Kultali (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!130
+|[[Patharpratima Assembly constituency|Patharpratima]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!131
+|[[Kakdwip Assembly constituency|Kakdwip]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!132
+|[[Sagar, West Bengal Assembly constituency|Sagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!133
+|[[Kulpi Assembly constituency|Kulpi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!134
+|[[Raidighi Assembly constituency|Raidighi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!135
+|[[Mandirbazar Assembly constituency|Mandirbazar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!136
+|[[Jaynagar Assembly constituency|Jaynagar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!137
+|[[Baruipur Purba Assembly constituency|Baruipur Purba (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!138
+|[[Canning Paschim Assembly constituency|Canning Paschim (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!139
+|[[Canning Purba Assembly constituency|Canning Purba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!140
+|[[Baruipur Paschim Assembly constituency|Baruipur Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!141
+|[[Magrahat Purba Assembly constituency|Magrahat Purba (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!142
+|[[Magrahat Paschim Assembly constituency|Magrahat Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!143
+|[[Diamond Harbour Assembly constituency|Diamond Harbour]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!144
+|[[Falta Assembly constituency|Falta]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!145
+|[[Satgachhia Assembly constituency|Satgachia]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!146
+|[[Bishnupur, South 24 Parganas Assembly constituency|Bishnupur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!147
+|[[Sonarpur Dakshin Assembly constituency|Sonarpur Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!148
+|[[Bhangar Assembly constituency|Bhangar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!149
+|[[Kasba, West Bengal Assembly constituency|Kasba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!150
+|[[Jadavpur Assembly constituency|Jadavpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!151
+|[[Sonarpur Uttar Assembly constituency|Sonarpur Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!152
+|[[Tollyganj Assembly constituency|Tollygunge]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!153
+|[[Behala Purba Assembly constituency|Behala Purba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!154
+|[[Behala Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!155
+|[[Maheshtala Assembly constituency|Maheshtala]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!156
+|[[Budge Budge Assembly constituency|Budge Budge]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!157
+|[[Metiaburuz Assembly constituency|Metiaburuz]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="11" | [[Kolkata district|Kolkata]]
+!158
+|[[Kolkata Port Assembly constituency|Kolkata Port]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!159
+|[[Bhabanipur, West Bengal Assembly constituency|Bhabanipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!160
+|[[Rashbehari Assembly constituency|Rashbehari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!161
+|[[Ballygunge Assembly constituency|Ballygunge]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!162
+|[[Chowrangee Assembly constituency|Chowrangee]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!163
+|[[Entally Assembly constituency|Entally]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!164
+|[[Beleghata Assembly constituency|Beleghata]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!165
+|[[Jorasanko Assembly constituency|Jorasanko]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!166
+|[[Shyampukur Assembly constituency|Shyampukur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!167
+|[[Maniktala Assembly constituency|Maniktala]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!168
+|[[Kashipur-Belgachhia]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|rowspan="16" | [[Howrah district|Howrah]]
+!169
+|[[Bally Assembly constituency|Bally]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!170
+|[[Howrah Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!171
+|[[Howrah Madhya]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!172
+|[[Shibpur Assembly constituency|Shibpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!173
+|[[Howrah Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!174
+|[[Sankrail Assembly constituency|Sankrail (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!175
+|[[Panchla Assembly constituency|Panchla]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!176
+|[[Uluberia Purba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!177
+|[[Uluberia Uttar|Uluberia Uttar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!178
+|[[Uluberia Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!179
+|[[Shyampur Assembly constituency|Shyampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!180
+|[[Bagnan Assembly constituency|Bagnan]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!181
+|[[Amta Assembly constituency|Amta]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!182
+|[[Udaynarayanpur Assembly constituency|Udaynarayanpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!183
+|[[Jagatballavpur Assembly constituency|Jagatballavpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!184
+|[[Domjur Assembly constituency|Domjur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="18" | [[Hooghly district|Hooghly]]
+!185
+|[[Uttarpara Assembly constituency|Uttarpara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!186
+|[[Sreerampur Assembly constituency|Sreerampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!187
+|[[Champdani Assembly constituency|Champdani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!188
+|[[Singur Assembly constituency|Singur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!189
+|[[Chandannagar Assembly constituency|Chandannagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!190
+|[[Chunchura Assembly constituency|Chunchura]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!191
+|[[Balagarh Assembly constituency|Balagarh (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!192
+|[[Pandua Assembly constituency|Pandua]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!193
+|[[Saptagram Assembly constituency|Saptagram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!194
+|[[Chanditala Assembly constituency|Chanditala]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!195
+|[[Jangipara Assembly constituency|Jangipara]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!196
+|[[Haripal Assembly constituency|Haripal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!197
+|[[Dhanekhali Assembly constituency|Dhanekhali (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!198
+|[[Tarakeswar Assembly constituency|Tarakeswar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!199
+|[[Pursurah Assembly constituency|Pursurah]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!200
+|[[Arambag Assembly constituency|Arambagh (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!201
+|[[Goghat Assembly constituency|Goghat (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!202
+|[[Khanakul Assembly constituency|Khanakul]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="16" | [[Purba Medinipur district|Purba Medinipur]]
+!203
+|[[Tamluk Assembly constituency|Tamluk]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!204
+|[[Panskura Purba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!205
+|[[Panskura Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!206
+|[[Moyna Assembly constituency|Moyna]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!207
+|[[Nandakumar Assembly constituency|Nandakumar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!208
+|[[Mahisadal Assembly constituency|Mahisadal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!209
+|[[Haldia Assembly constituency|Haldia (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!210
+|[[Nandigram Assembly constituency|Nandigram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!211
+|[[Chandipur Assembly constituency|Chandipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!212
+|[[Patashpur Assembly constituency|Patashpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!213
+|[[Kanthi Uttar Assembly constituency|Kanthi Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!214
+|[[Bhagabanpur Assembly constituency|Bhagabanpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!215
+|[[Khejuri Assembly constituency|Khejuri (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!216
+|[[Kanthi Dakshin Assembly constituency|Kanthi Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!217
+|[[Ramnagar, Purba Medinipur Assembly constituency|Ramnagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!218
+|[[Egra Assembly constituency|Egra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Paschim Medinipur district|Paschim Medinipur]]
+!219
+|[[Dantan Assembly constituency|Dantan]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="3" | [[Jhargram district|Jhargram]]
+!220
+|[[Nayagram Assembly constituency|Nayagram (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!221
+|[[Gopiballavpur Assembly constituency|Gopiballavpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!222
+|[[Jhargram Assembly constituency|Jhargram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="14" | [[Paschim Medinipur district|Paschim Medinipur]]
+!223
+|[[Keshiary Assembly constituency|Keshiary (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!224
+|[[Kharagpur Sadar Assembly constituency|Kharagpur Sadar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!225
+|[[Narayangarh Assembly constituency|Narayangarh]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!226
+|[[Sabang Assembly constituency|Sabang]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!227
+|[[Pingla Assembly constituency|Pingla]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!228
+|[[Kharagpur Assembly constituency|Kharagpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!229
+|[[Debra Assembly constituency|Debra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!230
+|[[Daspur Assembly constituency|Daspur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!231
+|[[Ghatal Assembly constituency|Ghatal]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!232
+|[[Chandrakona Assembly constituency|Chandrakona (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!233
+|[[Garbeta Assembly constituency|Garbeta]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!234
+|[[Salboni Assembly constituency|Salboni]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!235
+|[[Keshpur Assembly constituency|Keshpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!236
+|[[Medinipur Assembly constituency|Medinipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|[[Jhargram district|Jhargram]]
+!237
+|[[Binpur Assembly constituency|Binpur (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" | [[Purulia district|Purulia]]
+!238
+|[[Bandwan Assembly constituency|Bandwan (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!239
+|[[Balarampur, Purulia Assembly constituency|Balarampur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!240
+|[[Baghmundi Assembly constituency|Baghmundi]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!241
+|[[Joypur, Purulia Assembly constituency|Joypur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!242
+|[[Purulia Assembly constituency|Purulia]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!243
+|[[Manbazar Assembly constituency|Manbazar (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!244
+|[[Kashipur, West Bengal Assembly constituency|Kashipur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!245
+|[[Para Assembly constituency|Para (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!246
+|[[Raghunathpur, West Bengal Assembly constituency|Raghunathpur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="12" | [[Bankura district|Bankura]]
+!247
+|[[Saltora Assembly constituency|Saltora (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!248
+|[[Chhatna Assembly constituency|Chhatna]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!249
+|[[Ranibandh Assembly constituency|Ranibandh (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!250
+|[[Raipur, Bankura Assembly constituency|Raipur (ST)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!251
+|[[Taldangra Assembly constituency|Taldangra]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!252
+|[[Bankura Assembly constituency|Bankura]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!253
+|[[Barjora Assembly constituency|Barjora]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!254
+|[[Onda Assembly constituency|Onda]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!255
+|[[Bishnupur, Bankura Assembly constituency|Bishnupur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!256
+|[[Katulpur|Katulpur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!257
+|[[Indas Assembly constituency|Indas (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!258
+|[[Sonamukhi Assembly constituency|Sonamukhi (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="16" |[[Purba Bardhaman district|Purba Bardhaman]]
+!259
+|[[Khandaghosh Assembly constituency|Khandaghosh (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!260
+|[[Bardhaman Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!261
+|[[Raina Assembly constituency|Raina (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!262
+|[[Jamalpur, West Bengal Assembly constituency|Jamalpur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!263
+|[[Monteswar Assembly constituency|Monteswar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!264
+|[[Kalna Assembly constituency|Kalna (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!265
+|[[Memari Assembly constituency|Memari]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!266
+|[[Bardhaman Uttar|Bardhaman Uttar (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!267
+|[[Bhatar Assembly constituency|Bhatar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!268
+|[[Purbasthali Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!269
+|[[Purbasthali Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!270
+|[[Katwa Assembly constituency|Katwa]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!271
+|[[Ketugram Assembly constituency|Ketugram]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!272
+|[[Mangalkot Assembly constituency|Mangalkot]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!273
+|[[Ausgram Assembly constituency|Ausgram (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!274
+|[[Galsi Assembly constituency|Galsi (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="9" | [[Paschim Bardhaman district|Paschim Bardhaman]]
+!275
+|[[Pandabeswar Assembly constituency|Pandabeswar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!276
+|[[Durgapur Purba]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!277
+|[[Durgapur Paschim]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!278
+|[[Raniganj, West Bengal Assembly constituency|Raniganj]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!279
+|[[Jamuria Assembly constituency|Jamuria]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!280
+|[[Asansol Dakshin Assembly constituency|Asansol Dakshin]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!281
+|[[Asansol Uttar Assembly constituency|Asansol Uttar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!282
+|[[Kulti Assembly constituency|Kulti]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!283
+|[[Barabani Assembly constituency|Barabani]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="11" | [[Birbhum district|Birbhum]]
+!284
+|[[Dubrajpur Assembly constituency|Dubrajpur (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!285
+|[[Suri Assembly constituency|Suri]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!286
+|[[Bolpur Assembly constituency|Bolpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!287
+|[[Nanoor Assembly constituency|Nanoor (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!288
+|[[Labpur Assembly constituency|Labpur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!289
+|[[Sainthia Assembly constituency|Sainthia (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!290
+|[[Mayureswar Assembly constituency|Mayureswar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!291
+|[[Rampurhat Assembly constituency|Rampurhat]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!292
+|[[Hansan Assembly constituency|Hansan]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!293
+|[[Nalhati Assembly constituency|Nalhati]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+!294
+|[[Murarai Assembly constituency|Murarai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|}
+
+== References ==
+{{Reflist}}
+{{notelist}}
+==External links==
+*[https://ceowestbengal.wb.gov.in/ State Election Commission of West Bengal]
+
+{{West Bengal elections}}
+
+[[Category:State Assembly elections in West Bengal]]
+[[Category:Future elections in India]]
+[[Category:2026 State Assembly elections in India|West Bengal]]

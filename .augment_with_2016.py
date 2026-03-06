@@ -4,13 +4,19 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\suhas.bhandari\Downloads\Claude\Experiments\Elections")
 RESULTS_DIR = ROOT / "hosted-json" / "results"
+RAW_DIR = ROOT / "misc" / "raw-wiki"
+
+
+def raw_file(name: str) -> Path:
+    root_path = ROOT / name
+    return root_path if root_path.exists() else (RAW_DIR / name)
 
 STATE_2016_FILES = {
-    "ASSAM": ROOT / ".assam_2016_wiki.raw.txt",
-    "KERALA": ROOT / ".kerala_2016_wiki.raw.txt",
-    "PUDUCHERRY": ROOT / ".puducherry_2016_wiki.raw.txt",
-    "TAMIL_NADU": ROOT / ".tamil_nadu_2016_wiki.raw.txt",
-    "WEST_BENGAL": ROOT / ".west_bengal_2016_wiki.raw.txt",
+    "ASSAM": raw_file(".assam_2016_wiki.raw.txt"),
+    "KERALA": raw_file(".kerala_2016_wiki.raw.txt"),
+    "PUDUCHERRY": raw_file(".puducherry_2016_wiki.raw.txt"),
+    "TAMIL_NADU": raw_file(".tamil_nadu_2016_wiki.raw.txt"),
+    "WEST_BENGAL": raw_file(".west_bengal_2016_wiki.raw.txt"),
 }
 
 PARTY_NORMALIZE = {

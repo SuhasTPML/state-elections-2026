@@ -1,0 +1,1159 @@
+{{Short description|Union territory election in India}}
+{{Use dmy dates|date=February 2020}}
+{{Use Indian English|date=February 2020}}
+{{Infobox election
+| election_name = 2016 Puducherry Legislative Assembly election
+| country = India
+| flag_year = 
+| flag_image = 
+| type = legislative
+| vote_type = Popular <!-- default -->
+| ongoing = no
+| party_colour = 
+| party_name = 
+| alliance_name = 
+| previous_election = 2011 Puducherry Legislative Assembly election
+| previous_year = 2011
+| outgoing_members = 
+| election_date = {{Start date|df=yes|2016|5|16}}
+| elected_members = 
+| next_election = 2021 Puducherry Legislative Assembly election
+| next_year = 2021
+| votes_for_election = 
+| needed_votes = 
+| seats_for_election = All 30 seats in the [[Puducherry Legislative Assembly]]
+| majority_seats = 16
+| opinion_polls = 
+| turnout = 85.08%({{decrease}} 1.11%)
+| image1 = {{CSS image crop|Image=V. Narayanasamy with Ambassador Kenneth I. Juster (cropped).jpg|bSize=100|cWidth=100|cHeight=120|oLeft=0|oTop=0}} 
+| leader1 = [[V. Narayanasamy]]
+| party1 = Indian National Congress
+| alliance1 = [[United Progressive Alliance|UPA]]+[[Democratic Progressive Alliance|DPA]]
+| leaders_seat1 = [[Nellithope Assembly constituency|Nellithope]]<ref name=ibt>{{cite news |author=Prakash Upadhyaya & S V Krishnamachari |date=19 May 2016 |title=Pondicherry (Puducherry) Assembly elections 2016 result: Congress emerges single largest party |url=http://www.ibtimes.co.in/puducherry-assembly-elections-2016-result-live-updates-679282 |newspaper=[[International Business Times]] |access-date=20 May 2016 }}</ref>(''by-poll'')
+| last_election1 = 7 seats, 25.06%
+| seats1 = 15
+| seat_change1 = {{up}} 8
+| popular_vote1 = 244,886
+| percentage1 = 30.6%
+| swing1 = {{up}} 5.54%
+| map_image = 
+| map_size = 
+| map_caption = <!-- Seats -->
+[[File:Puducherry 2016 assembly Parliament 2021.svg|Puducherry Election Results from 2016]]
+
+<!-- Chief Minister -->| title = [[List of Chief Ministers of Puducherry|Chief Minister]]
+| before_election = [[N. Rangaswamy]]
+| before_party = All India N.R. Congress
+| after_election = [[V. Narayanasamy]]
+| after_party = [[Indian National Congress|INC]]
+| registered = 
+| image2 = {{CSS image crop|Image=N. Rangaswamy.jpg|bSize=100|cWidth=100|cHeight=120|oLeft=0|oTop=0}}
+| leader2 = [[N. Rangaswamy]]
+| leaders_seat2 = [[Indira Nagar Assembly constituency|Indira Nagar]]<ref name=ibt />
+| party2 = All India N.R. Congress
+| alliance2 = Independent
+| last_election2 = 15 seats, 31.75%
+| seats2 = 8
+| seat_change2 = {{down}} 7
+| popular_vote2 = 225,082
+| percentage2 = 28.1%
+| swing2 = {{down}} 3.65%
+| image5 =  <div style="width:100px;"><span style="line-height:80px; vertical-align:center; text-align:center; color:{{party color|Dravida Munnetra Kazhagam}}; font-size:30px;"> '''DMK'''</span></div>
+| leader5 = [[R. Siva]]
+| party5 = Dravida Munnetra Kazhagam
+| leader_since5 = 
+| leaders_seat5 = [[Orleampeth Assembly constituency|Orleampeth]]
+| alliance5 = [[Democratic Progressive Alliance|DPA]]+[[United Progressive Alliance|UPA]]
+| last_election5 = 2 seats, 10.68%
+| seats_before5 = 
+| seats5 = 2
+| seat_change5 = {{steady}} 
+| popular_vote5 = 70,836 
+| percentage5 = 8.9%
+| swing5 = {{decrease}} 1.78%
+| image4 =  <div style="width:100px;"><span style="line-height:80px; vertical-align:center; text-align:center; color:{{party color|All India Anna Dravida Munnetra Kazhagam}}; font-size:25px;"> '''AIADMK'''</span></div>
+| leader4 = A. Anbazhagan
+| party4 = All India Anna Dravida Munnetra Kazhagam
+| leader_since4 = 
+| leaders_seat4 = [[Oupalam Assembly constituency|Oupalam]]
+| alliance4 = -
+| last_election4 = 5 seats, 13.65%
+| seats_before4 = 
+| seats4 = 4
+| seat_change4 = {{decrease}} 1
+| popular_vote4 = 134,597		
+| percentage4 = 16.8%
+| swing4 = {{Increase}} 3.05%
+<!-- bottom -->}}
+The legislative assembly election in the Indian union territory of [[Puducherry (union territory)|Puducherry]] was held on 16 May 2016 to elect members of the 30 constituencies in the non-contiguous territory to constitute the [[Fourteenth Assembly of Puducherry|Fourteenth Puducherry Legislative Assembly]].<ref name="th"/>
+
+== Background ==
+
+It is a legal requirement that the election must be held at an interval of five years, or earlier if the assembly is dissolved by the [[President of India|President]]. The [[2011 Tamil Nadu Legislative Assembly election|previous election]] was conducted on 13 April 2011 and its term would have naturally expired on 2 June 2016. The election was organised and conducted by the [[Election Commission of India]] (ECI).
+
+The [[Dravida Munnetra Kazhagam]] and the [[Indian National Congress]] were in an alliance and contested 9 and 21 seats respectively. Ruling AINRC, BJP & ADMK will contest separately.
+
+The polling booths in three Assembly constituencies in Puducherry (out of total 30 segments) were equipped with [[Voter-verified paper audit trail]] (VVPAT) machines along with EVMs.<ref>{{cite web|url=http://eci.nic.in/eci_main1/current/PN16_04032016.pdf|title=VVPAT usage in 64 seats in 5 states Schedule for the General Elections to the Legislative Assemblies of Assam, Kerala, Tamil Nadu, West Bengal and Puducherry.}}</ref><ref>{{Cite web|url=https://www.thehindu.com/news/cities/puducherry/ec-holds-first-phase-of-training-programme/article8319611.ece|title=EC holds first phase of training programme|author=Staff Reporter|date=6 March 2016|via=www.thehindu.com}}</ref><ref>{{Cite web|url=https://www.business-standard.com/article/pti-stories/around-20-000-vvpat-machines-to-be-used-in-assly-polls-cec-116021001047_1.html|title=Around 20,000 VVPAT machines to be used in assly polls: CEC|agency=Press Trust of India|date=10 February 2016|via=Business Standard}}</ref><ref>{{Cite web|url=https://www.thehindu.com/news/cities/puducherry/cec-asks-poll-officials-to-remain-neutral/article8221669.ece|title=CEC asks poll officials to remain neutral|first=R.|last=Sivaraman|date=11 February 2016|via=www.thehindu.com}}</ref><ref>{{Cite web|url=https://www.deccanchronicle.com/nation/politics/110216/parties-seek-single-phase-polls.html|title=Parties seek single phase polls|date=11 February 2016|website=Deccan Chronicle}}</ref>
+
+{| class="wikitable" | align="center"
+|-
+! colspan="3" | Assembly constituencies of Puducherry having [[Voter-verified paper audit trail|VVPAT]] facility with [[Indian voting machines|EVM]]s<ref>{{Cite web|url=https://www.thehindu.com/todays-paper/tp-national/tp-tamilnadu/ec-to-tighten-grip-on-cash-for-votes/article8225776.ece|title=EC to tighten grip on cash for votes|date=12 February 2016|via=www.thehindu.com}}</ref>
+|-
+| [[Oupalam Assembly constituency|Oupalam]]
+|-
+| [[Orleampeth Assembly constituency|Orleampeth]]
+|-
+| [[Karaikal South Assembly constituency|Karaikal South]]
+|}
+
+== Parties and alliances==
+
+==={{legend2|{{party color|United Progressive Alliance}}|[[United Progressive Alliance]]}} ===
+
+{| class="wikitable"
+! colspan="3" |Party
+!Symbol
+!Leader
+!Contesting Seats
+|-
+|bgcolor="{{party color|Indian National Congress}}"|
+| [[Indian National Congress]]
+| INC
+| [[File:Hand INC.svg|50x50px]]
+| [[V. Narayanasamy]]
+| 21
+|-
+| bgcolor="{{party color|Dravida Munnetra Kazhagam}}"|
+|[[Dravida Munnetra Kazhagam]]
+|DMK
+|[[File:Indian election symbol rising sun.svg|41x41px]] 
+|[[R. Siva]]
+|9
+|}
+
+==={{legend2|{{party color|All India N.R. Congress}}|[[All India N. R. Congress]]}} ===
+{|class="wikitable"
+!colspan=3|Party
+!Symbol
+!Leader
+!Contesting Seats
+|-
+|bgcolor="{{party color|All India N.R. Congress}}"|
+|[[All India N.R. Congress]]
+|AINRC 
+|[[File:Indian Election Symbol Jug.svg|50x50px]]
+|[[N. Rangasamy]] 
+|30
+|-
+|}
+
+==={{legend2|{{party color|All India Anna Dravida Munnetra Kazhagam}}|[[All India Anna Dravida Munnetra Kazhagam|All India Anna DMK]]}} ===
+{|class="wikitable"
+!colspan=3|Party
+!Symbol
+!Leader
+!Contesting Seats
+|-
+|bgcolor="{{party color|All India Anna Dravida Munnetra Kazhagam}}"|
+|[[All India Anna Dravida Munnetra Kazhagam]]
+|AIADMK
+|[[File:AIADMK_Two_Leaves.png|50x50px]]
+|A. Anbalagan
+|30
+|}
+==List of Candidates==
+{| class="wikitable sortable mw-collapsible" style="line-height:20px;text-align:center;"
+! colspan="2" | Constituency
+! colspan="3" style="background:{{party color|United Progressive Alliance}}" |[[United Progressive Alliance|<span style="color:white;">UPA</span>]]
+! colspan="3" style="background:{{party color|All India N.R. Congress}}" |[[All India N.R. Congress|<span style="color:white;">AINRC</span>]]
+! colspan="3" style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}}" |[[All India Anna Dravida Munnetra Kazhagam|<span style="color:white;">AIADMK</span>]]
+|-
+! No.
+! Name
+! colspan="2" | Party ||Candidate
+! colspan="2" | Party ||Candidate
+! colspan="2" | Party ||Candidate
+|-
+| colspan="11" align="center" bgcolor="grey"| [[Puducherry district|<span style="color:white;">'''Puducherry District'''</span>]]
+|-
+| 1
+| [[Mannadipet Assembly constituency|Mannadipet]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| A. Krishnan
+| {{party name with color|All India N.R. Congress}}
+| [[T. P. R. Selvame]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| Mahadevi
+|-
+
+| 2
+| [[Thirubuvanai Assembly constituency|Thirubhuvanai (SC)]]
+| {{party name with color|Indian National Congress}}
+| [[P. Angalane]]
+| {{party name with color|All India N.R. Congress}}
+| B. Kobiga
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| M. Sankar  Vadivelan
+|-
+
+| 3
+| [[Ossudu Assembly constituency|Oussudu (SC)]]
+| {{party name with color|Indian National Congress}}
+| E. Theeppainthan
+| {{party name with color|All India N.R. Congress}}
+| [[M. Vaithianathan]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| M. Selvarassou
+|-
+
+| 4
+| [[Mangalam Assembly constituency|Mangalam]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| S. Kumaravel
+| {{party name with color|All India N.R. Congress}}
+| S. V. Sugumaran
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| K. Natarajan
+|-
+
+| 5
+| [[Villianur Assembly constituency|Villianur]]
+| {{party name with color|Indian National Congress}}
+| [[A. Namassivayam]]
+| {{party name with color|All India N.R. Congress}}
+| Jayakumar
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| V. Subramanian
+|-
+
+| 6
+| [[Ozhukarai Assembly constituency|Ozhukarai]]
+| {{party name with color|Indian National Congress}}
+| [[M. N. R. Balan]]
+| {{party name with color|All India N.R. Congress}}
+| N. G. Pannirselvam
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| M. Sivasankar
+|-
+
+| 7
+| [[Kadirgamam Assembly constituency|Kadirgamam]]
+| {{party name with color|Indian National Congress}}
+| A. Sivashanmugam
+| {{party name with color|All India N.R. Congress}}
+| N. S. J. Jayabal  Ayyanar
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| M. R. Govindan
+|-
+
+| 8
+| [[Indira Nagar Assembly constituency|Indira Nagar]]
+| {{party name with color|Indian National Congress}}
+| [[A. K. D. Arumugam]]
+| {{party name with color|All India N.R. Congress}}
+| [[N. Rangasamy]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| T. Gunasegaran
+|-
+
+| 9
+| [[Thattanchavady Assembly constituency|Thattanchavady]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| N. Kaliaperumal
+| {{party name with color|All India N.R. Congress}}
+| Ashok Anand
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| S. Cassinadin
+|-
+
+| 10
+| [[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+| {{party name with color|Indian National Congress}}
+| [[V. Vaithilingam]]
+| {{party name with color|All India N.R. Congress}}
+| B. Thayalan
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| P. Ganesan
+|-
+
+| 11
+| [[Lawspet Assembly constituency|Lawspet]]
+| {{party name with color|Indian National Congress}}
+| [[V. P. Sivakolundhu]]
+| {{party name with color|All India N.R. Congress}}
+| Nandha T. Saravanan
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| G. Anbanandam 
+|-
+
+| 12
+| [[Kalapet Assembly constituency|Kalapet]]
+| {{party name with color|Indian National Congress}}
+| [[M. O. H. F. Shahjahan]]
+| {{party name with color|All India N.R. Congress}}
+| N. Viswanathan
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| V. C. Ezhumalai  Kasilingam
+|-
+
+| 13
+| [[Muthialpet Assembly constituency|Muthialpet]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| S. P. Sivakumar
+| {{party name with color|All India N.R. Congress}}
+| J. Pregash Kumar
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| Vaiyapuri Manikandan
+|-
+
+| 14
+| [[Raj Bhavan Assembly constituency|Raj Bhavan]]
+| {{party name with color|Indian National Congress}}
+| [[K. Lakshminarayanan]]
+| {{party name with color|All India N.R. Congress}}
+| A. Annibal Nehru
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| P. Kannan
+|-
+
+| 15
+| [[Oupalam Assembly constituency|Oupalam]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| Annibal Kennedy
+| {{party name with color|All India N.R. Congress}}
+| N. Anand
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| A. Anbalagan
+|-
+
+| 16
+| [[Orleampeth Assembly constituency|Orleampeth]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| [[R. Siva]]
+| {{party name with color|All India N.R. Congress}}
+| G. Nehru  Kuppusamy
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| A. Ravindran
+|-
+
+| 17
+| [[Nellithope Assembly constituency|Nellithope]]
+| {{party name with color|Indian National Congress}}
+| [[A. Johnkumar]]
+| {{party name with color|All India N.R. Congress}}
+| D. Balaji 
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| Omsakthi Sekar
+|-
+
+| 18
+| [[Mudaliarpet Assembly constituency|Mudaliarpet]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| Suresh
+| {{party name with color|All India N.R. Congress}}
+| V. Balan
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| A. Baskar
+|-
+
+| 19
+| [[Ariankuppam Assembly constituency|Ariankuppam]]
+| {{party name with color|Indian National Congress}}
+| T. Djeamourthy
+| {{party name with color|All India N.R. Congress}}
+| V. Sabapathy  Kothandaraman
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| Dr. M. A. S. Subramanian
+|-
+
+| 20
+| [[Manavely Assembly constituency|Manavely]]
+| {{party name with color|Indian National Congress}}
+| R. K. R. Anantharaman
+| {{party name with color|All India N.R. Congress}}
+| G. Suresh
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| P. Purushothaman
+|-
+
+| 21
+| [[Embalam Assembly constituency|Embalam (SC)]]
+| {{party name with color|Indian National Congress}}
+| M. Candassamy
+| {{party name with color|All India N.R. Congress}}
+| [[U. Lakshmikandhan]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| K. Govindharasu
+|-
+
+| 22
+| [[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+| {{party name with color|Indian National Congress}}
+| V. Vizeaveny
+| {{party name with color|All India N.R. Congress}}
+| P. Rajavelu
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| L. Periasamy
+|-
+
+| 23
+| [[Bahour Assembly constituency|Bahour]]
+| {{party name with color|Indian National Congress}}
+| N. Danavelou
+| {{party name with color|All India N.R. Congress}}
+| T. Thiagarajan
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| P. Velmurugan
+|-
+| colspan="11" align="center" bgcolor="grey"| [[Karaikal district|<span style="color:white;">'''Karaikal District'''</span>]]
+|-
+| 24
+| [[Nedungadu Assembly constituency|Nedungadu (SC)]]
+| {{party name with color|Indian National Congress}}
+| A. Marimottou
+| {{party name with color|All India N.R. Congress}}
+| [[Chandira Priyanga]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| G. Panneer Selvam
+|-
+
+| 25
+| [[Thirunallar Assembly constituency|Thirunallar]]
+| {{party name with color|Indian National Congress}}
+| [[R. Kamalakannan]]
+| {{party name with color|All India N.R. Congress}}
+| P. R. Siva  Sivasakthi
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| G. Murugaiyan
+|-
+
+| 26
+| [[Karaikal North Assembly constituency|Karaikal North]]
+| {{party name with color|Indian National Congress}}
+| R. P. Chandramohan
+| {{party name with color|All India N.R. Congress}}
+| [[P. R. N. Thirumurugan]]
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| M. V. Omalingam
+|-
+
+| 27
+| [[Karaikal South Assembly constituency|Karaikal South]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| [[A. M. H. Nazeem]]
+| {{party name with color|All India N.R. Congress}}
+| A. Suresh
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| K. A. U. Asana
+|-
+
+| 28
+| [[Neravy T R Pattinam Assembly constituency|Neravy T.R. Pattinam]]
+| {{party name with color|Dravida Munnetra Kazhagam}}
+| A. Geetha
+| {{party name with color|All India N.R. Congress}}
+| K. R. Udayakumar
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| [[V. M. C. Sivakumar]]
+|-
+| colspan="11" align="center" bgcolor="grey"| [[Mahé district|<span style="color:white;">'''Mahe District'''</span>]]
+|-
+| 29
+| [[Mahe Assembly constituency|Mahe]]
+| {{party name with color|Indian National Congress}}
+| E. Valsaraj
+| {{party name with color|All India N.R. Congress}}
+| V. P. Abdul Rahman 
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| C. K. Bhaskaran 
+|-
+| colspan="11" align="center" bgcolor="grey"| [[Yanam district|<span style="color:white;">'''Yanam District'''</span>]]
+|-
+| 30
+| [[Yanam Assembly constituency|Yanam]]
+| {{party name with color|Indian National Congress}}
+| Malladi Krishna Rao
+| {{party name with color|All India N.R. Congress}}
+| Tirikoty Bairava Swamy
+| {{party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| Manchala Satya Sai Kumar
+|-
+
+|}
+
+== Voting ==
+The election was held on 16 May 2016 in a single phase and 84.11% voting was recorded.<ref>{{Cite web|url=https://www.thehindu.com/elections/puducherry2016/Brisk-voting-in-Union-Territory/article14324525.ece|title=Brisk voting in Union Territory|first=S.|last=Prasad|date=17 May 2016|via=www.thehindu.com}}</ref> The votes were counted on 19 May and results were declared on same day.<ref name="th">{{cite news|url=http://www.thehindu.com/news/national/election-dates-for-five-states-announced/article8313813.ece |title=4 States, Puducherry to go to polls between April 4 and May 16 |work=The Hindu |date=4 March 2016}}</ref>
+
+==Result==
+
+<section begin=Results />{{election table|sortable=yes}}
+!colspan=10|[[File:Puducherry 2016 assembly Parliament 2021.svg]]
+|- valign="top"
+!Colspan=2|Parties and Coalitions 
+! Votes 
+! Vote % 
+! Vote swing
+! Contested
+! Won
+! Change
+|-
+| style="background-color:{{party color|Indian National Congress}}"|
+|[[Indian National Congress]] 
+| 2,44,886
+| 30.60
+| {{increase}} 5.54
+|21 
+|15
+|{{increase}}8 
+|-
+| style="background-color:{{party color|All India N.R. Congress}}"|
+|[[All India N.R. Congress]]
+| 2,25,082
+| 28.1
+| {{decrease}} 3.65
+| 30 
+| 8
+|{{decrease}}7 
+|-
+| style="background-color:{{party color|All India Anna Dravida Munnetra Kazhagam}}"|
+|[[All India Anna Dravida Munnetra Kazhagam]] 
+| 134,597
+| 16.8
+| {{increase}} 3.05
+| 30
+| 4
+|{{decrease}}1
+|-
+| style="background-color:{{party color|Dravida Munnetra Kazhagam}}"|
+|[[Dravida Munnetra Kazhagam]]
+| 70,836
+| 8.9
+| {{decrease}} 1.78
+| 9
+| 2
+|{{steady}}
+|-
+| style="background-color:{{party color|Bharatiya Janata Party}}"|
+|[[Bharatiya Janata Party]]
+| 19,303
+| 2.4
+| {{increase}} 1.08
+| 30 
+| 0
+|{{steady}}
+|-
+| style="background-color:{{party color|Independent politician}}"|
+|[[Independent politician|Independents]]
+| 62,884
+| 7.9
+| –
+| 
+|1
+|{{steady}} 
+|-
+| style="background-color:{{party color|None of the above}}"|
+|[[None of the above]]
+| 13,240
+| 1.7
+| –
+| –
+| –
+| –
+|-
+| colspan=2|'''Total'''
+| '''8,00,343'''
+|
+| 
+|
+| '''30'''
+|
+|-
+|-
+! colspan="9" |
+|-
+| style="text-align:left;" colspan="2" |Valid votes
+|8,00,343
+|99.86
+| colspan="4" rowspan="5" style="background-color:#E9E9E9"  |
+|-
+| style="text-align:left;" colspan="2" |Invalid votes
+|1,099
+|0.14
+|-
+| style="text-align:left;" colspan="2" |'''Votes cast / turnout'''
+|'''8,01,442'''
+|'''85.08'''
+|-
+| style="text-align:left;" colspan="2" |Abstentions
+| 1,43,490
+| 14.92
+|-
+| style="text-align:left;" colspan="2" |'''Registered voters'''
+| '''9,41,935'''
+|colspan="1" style="background-color:#E9E9E9"|
+|-
+|align=left colspan=8|Source: [http://www.ibtimes.co.in/puducherry-assembly-elections-2016-result-live-updates-679282 International Business Times]
+|}<section end=Results />
+
+== Results by constituency ==
+{|class="wikitable sortable" style="text-align:center;"
+!colspan="2" rowspan="2"|Constituency
+! colspan="5" |Winner
+! colspan="5" |Runner-up
+! colspan="2" |Margin
+|-
+!Candidate
+! colspan="2" |Party
+! data-sort-type=number | Votes
+! data-sort-type=number | %
+!Candidate
+! colspan="2" |Party
+!data-sort-type=number | Votes
+!data-sort-type=number | %
+!data-sort-type=number | Votes
+!data-sort-type=number | %
+|-
+| colspan="14" align="center" bgcolor="grey"| [[Puducherry district|<span style="color:white;">'''Puducherry District'''</span>]]
+|-
+!1
+|[[Mannadipet Assembly constituency|Mannadipet]]
+|[[T. P. R. Selvame]]
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|7,679
+|27.86
+|A. Krishnan
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|[[Dravida Munnetra Kazhagam|DMK]]
+|7,260
+|26.34
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|419
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|1.52
+|-
+
+!2
+|[[Thirubuvanai Assembly constituency|Thirubhuvanai (SC)]]
+|B. Kobiga
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|12,143
+|44.73
+|[[P. Angalane]]
+|{{Party color cell|Indian National Congress}}
+|[[Indian National Congress|INC]]
+|10,711
+|39.45
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|1,432
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|5.28
+|-
+
+!3
+|[[Ossudu Assembly constituency|Oussudu (SC)]]
+|E. Theeppainthan
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|8,675
+|33.02
+|[[A. K. Sai J. Saravanan Kumar]]
+|{{Party color cell|Bharatiya Janata Party}}
+|[[Bharatiya Janata Party|BJP]]
+|6,345
+|24.15
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2,330
+!style="background:{{party color|Indian National Congress}} ; color:white;"|8.87
+|-
+
+!4
+|[[Mangalam Assembly constituency|Mangalam]]
+|S. V. Sugumaran
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|13,955
+|44.61
+|S. Kumaravel
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|[[Dravida Munnetra Kazhagam|DMK]]
+|8,392
+|26.83
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|5,563
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|17.78
+|-
+
+!5
+|[[Villianur Assembly constituency|Villianur]]
+|[[A. Namassivayam]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|18,009
+|57.11
+|Jayakumar
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|9,728
+|30.85
+!style="background:{{party color|Indian National Congress}} ; color:white;"|8,281
+!style="background:{{party color|Indian National Congress}} ; color:white;"|26.26
+|-
+
+!6
+|[[Ozhukarai Assembly constituency|Ozhukarai]]
+|[[M. N. R. Balan]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|14,703
+|47.68
+|N. G. Pannirselvam
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|7,596
+|24.63
+!style="background:{{party color|Indian National Congress}} ; color:white;"|7,107
+!style="background:{{party color|Indian National Congress}} ; color:white;"|23.05
+|-
+
+!7
+|[[Kadirgamam Assembly constituency|Kadirgamam]]
+|N. S. J. Jayabal  Ayyanar
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|11,690
+|43.28
+|S. Ramesh
+|{{Party color cell|Independent}}
+|[[Independent politician|IND]]
+|7,888
+|29.20
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|3,802
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|14.08
+|-
+
+!8
+|[[Indira Nagar Assembly constituency|Indira Nagar]]
+|[[N. Rangaswamy]]
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|15,463
+|52.69
+|[[A. K. D. Arumugam]]
+|{{Party color cell|Indian National Congress}}
+|[[Indian National Congress|INC]]
+|12,059
+|41.09
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|3,404
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|11.60
+|-
+
+!9
+|[[Thattanchavady Assembly constituency|Thattanchavady]]
+|[[Ashok Anand]]
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|12,754
+|53.90
+|K. Sethu  Sethuselvam
+|{{Party color cell|Communist Party of India}}
+|[[Communist Party of India|CPI]]
+|5,296
+|22.38
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|7,458
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|31.52
+|-
+
+!10
+|[[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+|[[V. Vaithilingam]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|11,618
+|45.09
+|P. Ganesan
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|6,512
+|25.27
+!style="background:{{party color|Indian National Congress}} ; color:white;"|5,106
+!style="background:{{party color|Indian National Congress}} ; color:white;"|19.82
+|-
+
+!11
+|[[Lawspet Assembly constituency|Lawspet]]
+|[[V. P. Sivakolundhu]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|12,144
+|46.92
+|[[M. Vaithianathan]]
+|{{Party color cell|Independent}}
+|[[Independent politician|IND]]
+|5,695
+|22.00
+!style="background:{{party color|Indian National Congress}} ; color:white;"|6,449
+!style="background:{{party color|Indian National Congress}} ; color:white;"|24.92
+|-
+
+!12
+|[[Kalapet Assembly constituency|Kalapet]]
+|[[M. O. H. F. Shahjahan]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|9,839
+|35.09
+|[[P. M. L. Kalyanasundaram]]
+|{{Party color cell|Independent}}
+|[[Independent politician|IND]]
+|9,205
+|32.83
+!style="background:{{party color|Indian National Congress}} ; color:white;"|634
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2.26
+|-
+
+!13
+|[[Muthialpet Assembly constituency|Muthialpet]]
+|Vaiyapuri Manikandan
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|9,257
+|39.21
+|[[J. Prakash Kumar]]
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|7,093
+|30.04
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|2,164
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|9.17
+|-
+
+!14
+|[[Raj Bhavan Assembly constituency|Raj Bhavan]]
+|[[K. Lakshminarayanan]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|9,445
+|47.23
+|P. Kannan
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|7,220
+|36.11
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2,225
+!style="background:{{party color|Indian National Congress}} ; color:white;"|11.12
+|-
+
+!15
+|[[Oupalam Assembly constituency|Oupalam]]
+|A. Anbalagan
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|9,411
+|39.97
+|[[Annibal Kennedy]]
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|[[Dravida Munnetra Kazhagam|DMK]]
+|8,503
+|36.11
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|908
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|3.86
+|-
+
+!16
+|[[Orleampeth Assembly constituency|Orleampeth]]
+|[[R. Siva]]
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[Dravida Munnetra Kazhagam|DMK]]
+|11,110
+|53.82
+|[[G. Nehru Kuppusamy]]
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|8,130
+|39.38
+!style="background:{{party color|Dravida Munnetra Kazhagam}} ; color:white;"|2,980
+!style="background:{{party color|Dravida Munnetra Kazhagam}} ; color:white;"|14.44
+|-
+
+!17
+|[[Nellithope Assembly constituency|Nellithope]]
+|[[A. Johnkumar]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|18,506
+|69.16
+|Omsakthi Sekar
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|6,365
+|23.79
+!style="background:{{party color|Indian National Congress}} ; color:white;"|12,141
+!style="background:{{party color|Indian National Congress}} ; color:white;"|45.37
+|-
+
+!18
+|[[Mudaliarpet Assembly constituency|Mudaliarpet]]
+|A. Baskar
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|14,321
+|49.79
+|V. Balan
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|8,934
+|31.06
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|5,387
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|18.73
+|-
+
+!19
+|[[Ariankuppam Assembly constituency|Ariankuppam]]
+|T. Djeamourthy
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|14,029
+|45.29
+|Dr. M. A. S. Subramanian
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|7,458
+|24.08
+!style="background:{{party color|Indian National Congress}} ; color:white;"|6,571
+!style="background:{{party color|Indian National Congress}} ; color:white;"|21.21
+|-
+
+!20
+|[[Manavely Assembly constituency|Manavely]]
+|R.K.R. Anantharaman
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|9,326
+|34.03
+|G. Suresh
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|6,611
+|24.12
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2,715
+!style="background:{{party color|Indian National Congress}} ; color:white;"|9.91
+|-
+
+!21
+|[[Embalam Assembly constituency|Embalam (SC)]]
+|M. Candassamy
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|18,945
+|66.08
+|[[U. Lakshmikandhan]]
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|7,745
+|27.02
+!style="background:{{party color|Indian National Congress}} ; color:white;"|11,200
+!style="background:{{party color|Indian National Congress}} ; color:white;"|39.06
+|-
+
+!22
+|[[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+|V. Vizeaveny
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|10,577
+|38.96
+|P. Rajavelu 
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|9,109
+|33.56
+!style="background:{{party color|Indian National Congress}} ; color:white;"|1,468
+!style="background:{{party color|Indian National Congress}} ; color:white;"|5.40
+|-
+
+!23
+|[[Bahour Assembly constituency|Bahour]]
+|N. Danavelou
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|11,278
+|45.70
+|T. Thiagarajan 
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|8,471
+|34.32
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2,807
+!style="background:{{party color|Indian National Congress}} ; color:white;"|11.38
+|-
+| colspan="14" align="center" bgcolor="grey"| [[Karaikal district|<span style="color:white;">'''Karaikal District'''</span>]]
+|-
+!24
+|[[Nedungadu Assembly constituency|Nedungadu (SC)]]
+|[[Chandira Priyanga]]
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|8,789
+|34.48
+|A. Marimottou
+|{{Party color cell|Indian National Congress}}
+|[[Indian National Congress|INC]]
+|7,695
+|30.19
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|1,094
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|4.29
+|-
+
+!25
+|[[Thirunallar Assembly constituency|Thirunallar]]
+|[[R. Kamalakannan]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|13,138
+|51.30
+|P. R. Siva  Sivasakthi
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|10,263
+|40.07
+!style="background:{{party color|Indian National Congress}} ; color:white;"|2,875
+!style="background:{{party color|Indian National Congress}} ; color:white;"|11.23
+|-
+
+!26
+|[[Karaikal North Assembly constituency|Karaikal North]]
+|[[P. R. N. Thirumurugan]]
+|{{Party color cell|All India N.R. Congress}}
+|scope="row" style="text-align: center;" |[[All India N.R. Congress|AINRC]]
+|13,139
+|49.39
+|M. V. Omalingam
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|9,841
+|36.99
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|3,298
+!style="background:{{party color|All India N.R. Congress}} ; color:white;"|12.40
+|-
+
+!27
+|[[Karaikal South Assembly constituency|Karaikal South]]
+|K. A. U. Asana
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|11,104
+|46.66
+|[[A. M. H. Nazeem]]
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|[[Dravida Munnetra Kazhagam|DMK]]
+|11,084
+|46.57
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|20
+!style="background:{{party color|All India Anna Dravida Munnetra Kazhagam}} ; color:white;"|0.09
+|-
+
+!28
+|[[Neravy T R Pattinam Assembly constituency|Neravy T.R. Pattinam]]
+|A. Geetha
+|{{Party color cell|Dravida Munnetra Kazhagam}}
+|scope="row" style="text-align: center;" |[[Dravida Munnetra Kazhagam|DMK]]
+|14,993
+|60.19
+|[[V. M. C. Sivakumar]]
+|{{Party color cell|All India Anna Dravida Munnetra Kazhagam}}
+|[[All India Anna Dravida Munnetra Kazhagam|AIADMK]]
+|8,057
+|32.34
+!style="background:{{party color|Dravida Munnetra Kazhagam}} ; color:white;"|6,936
+!style="background:{{party color|Dravida Munnetra Kazhagam}} ; color:white;"|27.85
+|-
+| colspan="14" align="center" bgcolor="grey"| [[Mahé district|<span style="color:white;">'''Mahe District'''</span>]]
+|-
+!29
+|[[Mahe Assembly constituency|Mahe]]
+|Dr. V. Ramachandran
+|{{Party color cell|Independent}}
+|[[Independent politician|IND]]
+|10,797
+|45.99
+|E. Valsaraj
+|{{Party color cell|Indian National Congress}}
+|[[Indian National Congress|INC]]
+|8,658
+|36.88
+!style="background:{{party color|Independent}} ; color:black;"|2,139
+!style="background:{{party color|Independent}} ; color:black;"|9.11
+|-
+| colspan="14" align="center" bgcolor="grey"| [[Yanam district|<span style="color:white;">'''Yanam District'''</span>]]
+|-
+!30
+|[[Yanam Assembly constituency|Yanam]]
+|[[Malladi Krishna Rao]]
+|{{Party color cell|Indian National Congress}}
+|scope="row" style="text-align: center;" |[[Indian National Congress|INC]]
+|20,801
+|61.36
+|Tirikoty Bairava Swamy
+|{{Party color cell|All India N.R. Congress}}
+|[[All India N.R. Congress|AINRC]]
+|12,047
+|35.54
+!style="background:{{party color|Indian National Congress}} ; color:white;"|8,754
+!style="background:{{party color|Indian National Congress}} ; color:white;"|25.82
+|-
+
+|}
+
+== Bypolls (2016-2021) ==
+{| class="wikitable sortable" style="text-align:center;"
+!S.No
+!Date
+!Constituency
+!MLA before election
+! colspan="2" |Party before election
+!Elected MLA
+! colspan="2" |Party after election
+|-
+!17
+|19 November 2016
+|[[Nellithope Assembly constituency|Nellithope]]
+|[[A. Johnkumar]]
+|bgcolor="{{party color|Indian National Congress}}" |
+|[[Indian National Congress]]
+|[[V. Narayanasamy]]
+| bgcolor="{{party color|Indian National Congress }}"|
+| [[Indian National Congress]]
+|-
+!09
+|18 April 2019
+|[[Thattanchavady (Union Territory Assembly constituency)|Thattanchavady]]
+|[[Ashok Anand]]
+|bgcolor="{{party color|All India N.R. Congress}}"|
+|[[All India N.R. Congress]]
+|[[K. Venkatesan]]
+|bgcolor="{{party color|Dravida Munnetra Kazhagam}}"|
+|[[Dravida Munnetra Kazhagam]]
+|-
+!10
+|21 October 2019
+|[[Kamaraj Nagar (Union Territory Assembly constituency)|Kamraj Nagar]]
+|[[V. Vaithilingam]]
+| bgcolor="{{party color|Indian National Congress}}"|
+|[[Indian National Congress]]
+|[[A. Johnkumar]]
+| bgcolor="{{party color|Indian National Congress}}"|
+|[[Indian National Congress]]
+|}
+
+== See also ==
+* [[Elections in India]]
+* [[2016 elections in India]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://eci.nic.in/eci/eci.html Election Commission of India]
+{{Puducherry elections}}
+{{Indian elections |state=collapsed}}
+
+{{DEFAULTSORT:Puducherry Legislative Assembly Election, 2016}}
+[[Category:2016 State Assembly elections in India]]
+[[Category:State Assembly elections in Puducherry|2016]]
+[[Category:2010s in Puducherry]]

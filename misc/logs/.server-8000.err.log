@@ -1,0 +1,230 @@
+127.0.0.1 - - [05/Mar/2026 15:14:58] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:00] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:15:00] "GET /Bihar%20elections/widget-embeds-json%20hosted/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:15:00] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:15:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:15:00] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:15:00] "GET /Bihar%20elections/widget-embeds-json%20hosted/bihar_ac_all.geojson HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:15:00] "GET /Bihar%20elections/archive/bihar_ac_all.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:04] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:13] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:16] "GET /data/geojson/PUDUCHERRY_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:18] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:21] "GET /data/geojson/WEST_BENGAL_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:15:34] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:17:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:17:24] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:20:11] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=TAMIL_NADU HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:11] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:20:11] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:20:12] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:26] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:32] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=ASSAM HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:32] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:20:32] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:20:33] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:36] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:20:36] "GET /Bihar%20elections/widget-embeds-json%20hosted/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:20:36] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:20:36] "GET /Bihar%20elections/widget-embeds-json%20hosted/bihar_ac_all.geojson HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:20:36] "GET /Bihar%20elections/archive/bihar_ac_all.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:20:39] "GET /data/geojson/PUDUCHERRY_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:22] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:22] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:22] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:26] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:26] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:26] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:26] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:27] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:27] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:27] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:27] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:27] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:31] "GET /data/geojson/PUDUCHERRY_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:31] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:36] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:41] "GET /data/geojson/PUDUCHERRY_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:44] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:44] "GET /Bihar%20elections/widget-embeds-json%20hosted/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:44] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:21:44] "GET /Bihar%20elections/widget-embeds-json%20hosted/bihar_ac_all.geojson HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:21:44] "GET /Bihar%20elections/archive/bihar_ac_all.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:21:46] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:34:37] "GET /Bihar%20elections/widget-embeds-json%20hosted/map.html?state=PUDUCHERRY HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:34:37] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:34:37] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:34:54] "GET /data/geojson/PUDUCHERRY_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:35:01] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:45:00] "GET /map-non-bihar.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:45:02] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:45:14] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:45:35] "GET /map-non-bihar.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:45:41] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:45:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:45:44] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:48:16] "GET /map-non-bihar.html?state=ASSAM HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:48:18] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:48:18] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:48:22] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:48:35] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:48:45] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:51:29] "GET /map-non-bihar.html?state=TAMIL_NADU HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:51:31] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:51:33] "GET /map-non-bihar.html?state=TAMIL_NADU HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:51:35] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 15:51:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 15:51:35] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:52:23] "GET /map-non-bihar.html?state=TAMIL_NADU HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:52:25] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:53:07] "GET /map-non-bihar.html?state=TAMIL_NADU&ac=086&name=Edappadi HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:53:10] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:53:49] "GET /map-non-bihar.html?state=TAMIL_NADU&ac=165&name=Vedaranyam HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:53:51] "GET /data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 15:54:42] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:03:55] "GET /map-non-bihar.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:03:55] "GET /data/geojson/ASSAM_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:03:55] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:03:55] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:03:55] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:03:55] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:03:55] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:03:55] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:27:03] "HEAD /map-non-bihar.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:27:04] "GET /map-non-bihar.html?state=ASSAM&ac=062&name=Barama HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:27:04] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:27:07] "GET /map-non-bihar.html?state=ASSAM HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:27:07] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:28:41] "GET /map-non-bihar.html?state=ASSAM HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:28:43] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:28:43] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:43] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:43] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:43] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:43] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:43] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:43] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:58] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:28:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:58] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:58] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:28:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:28:58] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:29:47] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:29:47] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:29:47] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:29:47] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:29:47] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:29:47] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:29:47] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:32] "GET /map-non-bihar.html?state=ASSAM HTTP/1.1" 304 -
+127.0.0.1 - - [05/Mar/2026 16:41:32] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:41:32] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:32] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:32] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:32] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:32] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:32] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:45] "GET /map-non-bihar.html?state=ASSAM&ac=043&name=TAMULPUR+%28ST%29 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:41:45] "GET /data/svg/ASSAM_2023.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:41:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:45] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:45] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:41:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:41:45] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:09] "GET /map-non-bihar.html?state=ASSAM&ac=043&name=TAMULPUR+%28ST%29 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:09] "GET /data/svg/ASSAM_2023_keyed.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:09] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:09] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:09] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:09] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:09] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:09] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /map-non-bihar.html?state=ASSAM&ac=108&name=BOKAJAN+%28ST%29 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /data/svg/ASSAM_2023_keyed.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:24] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:41] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:41] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:41] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:41] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:41] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:41] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:41] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:45] "GET /data/svg/ASSAM_2023_keyed.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 16:45:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:45] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:45] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 16:45:45] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 16:45:45] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:54] "GET /map-non-bihar.html?state=ASSAM HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:22:54] "GET /data/svg/ASSAM_2023_keyed.svg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:22:54] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:54] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:54] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:54] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:54] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:54] "GET /hosted-json/results/ASSAM_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:58] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:22:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:58] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:58] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:22:58] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:22:58] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:24:24] "GET /map-non-bihar.html?state=KERALA&ac=087&name=Kothamangalam HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:24:24] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:24:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:24:24] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:24:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:24:24] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:24:24] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:24:24] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:28:28] "GET /map-non-bihar.html?state=KERALA&ac=087&name=Kothamangalam HTTP/1.1" 304 -
+127.0.0.1 - - [05/Mar/2026 17:28:28] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:28:28] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:28:28] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:28:28] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:28:28] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:28:28] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:28:28] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:30:16] "GET /map-non-bihar.html?state=KERALA&ac=087&name=Kothamangalam HTTP/1.1" 304 -
+127.0.0.1 - - [05/Mar/2026 17:30:16] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:30:16] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:30:16] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:30:16] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:30:16] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:30:16] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:30:16] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /map-non-bihar.html?state=KERALA HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 17:58:53] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 17:58:53] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 18:12:27] "GET /map-non-bihar.html?state=KERALA HTTP/1.1" 304 -
+127.0.0.1 - - [05/Mar/2026 18:12:27] "GET /data/geojson/KERALA_ASSEMBLY_optimized.geojson HTTP/1.1" 200 -
+127.0.0.1 - - [05/Mar/2026 18:12:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 18:12:27] "GET /hosted-json/parties.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 18:12:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 18:12:27] "GET /hosted-json/alliances.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Mar/2026 18:12:27] code 404, message File not found
+127.0.0.1 - - [05/Mar/2026 18:12:27] "GET /hosted-json/results/KERALA_results.json HTTP/1.1" 404 -

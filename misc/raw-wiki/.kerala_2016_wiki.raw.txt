@@ -1,0 +1,3448 @@
+{{short description|Elections for the 14th Legislative Assembly of Kerala}}
+{{Use dmy dates|date=October 2025}}
+{{Use Indian English|date=August 2019}}{{Infobox election
+| election_name = 2016 Kerala Legislative Assembly election
+| seats2 = 22
+| seat_change2 = {{decrease}} 16
+| popular_vote2 = 7,741,293
+| percentage2 = 38.81%
+| swing2 = {{decrease}} 6.97 [[Percentage point|pp]]
+| last_election2 = 45.83%, 38 seats
+| map_caption = 
+| title = [[Chief Minister of Kerala|Chief Minister]]
+| posttitle = Elected [[Chief Minister of Kerala|Chief Minister]]
+| before_election = [[Oommen Chandy]]
+| before_party = Indian National Congress
+| after_election = [[Pinarayi Vijayan]]
+| after_party = Communist Party of India (Marxist)
+| party_colour = 
+| seats_needed2 = 
+| leaders_seat2 = [[Puthuppally Assembly constituency|Puthuppally]]
+| country = India
+| leader_since1 = 2016
+| type = parliamentary
+| ongoing = no
+| previous_election = 2011 Kerala State legislative assembly election
+| previous_year = 2011
+| next_election = 2021 Kerala Legislative Assembly election
+| next_year = 2021
+| election_date = {{Start date|df=yes|2016|05|16}}
+| seats_for_election = All 140 seats in the [[Kerala Legislative Assembly]]
+| majority_seats = 71
+| turnout = 77.53% ({{increase}} 2.27 [[Percentage point|pp]])
+| image1 = {{CSS image crop|Image=Pinarayi.JPG|bSize=100|cWidth=80|cHeight=100|oLeft=10|oTop=05}}
+| leader1 = '''[[Pinarayi Vijayan]]'''<ref>{{cite news |title=Pinarayi Vijayan kicks off election campaign |url=https://timesofindia.indiatimes.com/elections-2016/kerala-elections-2016/news/pinarayi-vijayan-kicks-off-election-campaign/articleshow/51627483.cms |website=The Times of India}}</ref>
+| last_election1 = 44.94%, 45 seats
+| alliance2 = United Democratic Front (Kerala)
+| alliance1 = Left Democratic Front (Kerala)
+| leaders_seat1 = [[Dharmadam Assembly constituency|Dharmadam]]
+| seats_needed1 = 
+| seats1 = '''58'''
+| seat_change1 = {{increase}} 13
+| popular_vote1 = '''8,945,005'''
+| percentage1 = '''43.48%'''
+| swing1 = {{decrease}} 1.63 [[Percentage point|pp]]
+| image2 = {{CSS image crop|Image=The Chief Minister of Kerala, Shri Oommen Chandy calling on the Union Minister for Housing and Urban Poverty Alleviation and Culture, Kum. Selja, in New Delhi on September 23, 2011 (cropped).jpg|bSize=100|cWidth=80|cHeight=100|oLeft=10|oTop=03}}
+| leader2 = '''[[Oommen Chandy]]'''
+| leader_since2 = 2004
+| colour1 = EE0000
+| colour2 = 0078FF
+| map_image = {{Switcher|[[File:2016 Kerala election result.svg|300px]]|Partywise result|[[File:2016 Kerala Legislative Assembly Election Alliance Wise Result Map.svg|300px]]|Alliance wise result}}
+| map2_image = [[File:Kerala Assembly 2016 Seat Status.svg|300px]]
+| vote_type = Coalition
+| outgoing_members = 13th Kerala Assembly#Members of Legislative Assembly of Kerala
+| elected_members = 14th Kerala Assembly#Members of Legislative Assembly of Kerala
+| party1 = Communist Party of India (Marxist)
+| party2 = Indian National Congress
+}}
+
+The '''2016 Kerala Legislative Assembly election''' was held on 16 May 2016 to elect 140 [[MLA (India)|MLAs]] to the 14th [[Kerala Legislative Assembly]]. [[File:Legislative assembly constituencies in Kerala.svg|thumbnail|The constituencies to which election was held]] Voter turnout was 77.53%, up from 75.12% in the previous election.<ref>{{cite news |title=Final voter turnout in Kerala is 77.53 percent |url=http://www.abplive.in/india-news/final-voter-turnout-in-kerala-is-77-35-percent-343482 |publisher=ABP Live |date=17 May 2016 |access-date=17 May 2016 |archive-date=19 May 2016 |archive-url=https://web.archive.org/web/20160519005804/http://www.abplive.in/india-news/final-voter-turnout-in-kerala-is-77-35-percent-343482 |url-status=dead}}</ref> The result was declared on 19 May 2016. The [[Left Democratic Front (Kerala)|Left Democratic Front (LDF)]], led by [[Communist Party of India (Marxist)]] (CPI(M)), won the election, defeating the incumbent [[United Democratic Front (Kerala)|United Democratic Front (UDF)]], led by the [[Indian National Congress]] (INC), which could only win 47 seats in the election.<ref>{{cite news |url=https://www.hindustantimes.com/assembly-elections/live-assembly-poll-results-counting-of-votes-in-tamil-nadu-kerala-assam-west-bengal-puducherry/story-nmYc0zJVdyQ25jUFRZsGrN.html |title=As it happened: TMC, AIADMK retain power; BJP takes Assam, Left Kerala |date=19 May 2016 |newspaper=Hindustan Times |access-date=11 August 2019}}</ref> [[Pinarayi Vijayan]] was sworn in as the Chief Minister on 25 May.
+
+== Background ==
+The tenure of the members of the Legislative Assembly in the state was to end on 31 May 2016.<ref>{{cite web |url=http://www.elections.in/upcoming-elections-in-india.html |title=Upcoming Elections in India |access-date=9 November 2015}}</ref>
+As per the voters list published on 14 January 2016, there were around 2.60 crore (26&nbsp;million) eligible voters including 6.18 lakh (618,000) new voters in the age group 18–21. Elections to the 140-member assembly were held in 21,498 polling stations set up at 12,038 locations.<ref>{{Cite web |url=https://www.thehindubusinessline.com/news/national/model-code-of-conduct-comes-into-force-in-kerala/article8314579.ece |title=Model code of conduct comes into force in Kerala |website=@businessline |date=4 March 2016}}</ref> There were 500 model polling stations.<ref name="Business Standard 2016">{{Cite web |url=https://www.business-standard.com/article/news-ians/2-56-crore-voters-to-cast-ballot-in-kerala-ec-116020401247_1.html |title=2.56 crore voters to cast ballot in Kerala: EC |date=4 February 2016 |via=Business Standard}}</ref> Systematic Voters' Education and Electoral Participation (SVEEP) programme was undertaken in Kerala to raise voter awareness.<ref>{{cite web |url=https://www.thehindu.com/news/cities/Kochi/higher-turnout-attributed-to-sveep/article8609546.ece |title=Higher turnout attributed to SVEEP |date=17 May 2016 |access-date=23 April 2019 |website=The Hindu}}</ref>
+{| class="wikitable" |
+|+ Final voters list for Kerala Legislative Assembly election 2016
+|-
+! Group of voters !! Voters population
+|-
+| Male || 12,510,580
+|-
+| Female || 13,508,702
+|-
+| Third gender
+| 2
+|-
+| '''Total voters'''||'''26,019,284'''
+|}
+
+2,065 [[Voter-verified paper audit trail]] (VVPAT) units were used by the Election Commission in 1,650 polling stations in 12 constituencies. VVPAT were not used in Idukki, Pathanamthitta, Wayanad and Kasaragod districts.<ref name="The Times of India 2016" /><ref>{{cite web |url=https://www.thehindu.com/news/national/kerala/paper-trail-for-voting-in-select-segments/article8319907.ece |title=Paper trail for voting in select segments |first=R. Ramabhadran |last=Pillai |date=6 March 2016 |access-date=23 April 2019 |website=The Hindu}}</ref><ref>{{Cite web |url=http://eci.nic.in/eci_main1/current/PN16_04032016.pdf |title=VVPAT usage in 64 seats in 5 states Schedule for the General Elections to the Legislative Assemblies of Assam, Kerala, Tamil Nadu, West Bengal and Puducherry.}}</ref>
+The Election Commission launched several mobile apps.<ref name="Business Standard 2016" />
+
+{| class="wikitable" | align="center"
+|-
+! colspan="3" | Assembly constituencies of Kerala having [[Voter-verified paper audit trail|VVPAT]] facility with [[Indian voting machines|EVMs]]<ref name="The Times of India 2016">{{Cite news |url=https://timesofindia.indiatimes.com/city/thiruvananthapuram/eci-introduces-voter-audit-trail-for-first-time-in-kerala/articleshow/51102710.cms |title=ECI introduces voter audit trail for first time in Kerala &#124; Thiruvananthapuram News – Times of India |website=The Times of India |date=23 February 2016}}</ref>
+|-
+| [[Kannur Assembly constituency|Kannur]]||[[Kozhikode North Assembly constituency|Kozhikode North]]||[[Malappuram Assembly constituency|Malappuram]]
+|-
+| [[Palakkad Assembly constituency|Palakkad]]||[[Thrissur Assembly constituency|Thrissur]]||[[Kottayam Assembly constituency|Kottayam]]
+|-
+| [[Alappuzha Assembly constituency|Alappuzha]]||[[Kollam Assembly constituency|Kollam]]||[[Vattiyoorkavu Assembly constituency|Vattiyoorkkavu]]
+|-
+| [[Nemom Assembly constituency|Nemom]]||[[Ernakulam Assembly constituency|Ernakulam]]||[[Thrikkakara Assembly constituency|Thrikkakkara]]
+|}
+
+== Parties and coalitions ==
+There are two major political coalitions in Kerala. The [[Left Democratic Front (Kerala)|Left Democratic Front]] (LDF) is the coalition of the left-wing and far-left parties, led by the [[Communist Party of India (Marxist)]] (CPI(M)). The [[United Democratic Front (Kerala)|United Democratic Front]] (UDF) is the coalition of centrist and centre-left parties led by the [[Indian National Congress]].
+
+=== Left Democratic Front (Kerala) ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{{legend2|{{party color|Left Democratic Front (Kerala)}}|[[Left Democratic Front (Kerala)]]}}
+{| class="wikitable" width="50%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Photo
+! Leader
+! Seats contested
+! Male
+! Female
+|-
+| {{party color cell|Communist Party of India (Marxist)}}
+| [[Communist Party of India (Marxist)]]
+| [[File:CPI-M-flag.svg|50px]]
+| [[File:CPIM election symbol.png|50px]]
+| [[File:Kodiyeri.JPG|alt=|center|frameless|75px]]
+| [[Kodiyeri Balakrishnan]]
+| 90
+| 78
+| 12
+|-
+| {{party color cell|Communist Party of India}}
+| [[Communist Party of India]]
+| [[File:CPI-banner.svg|50px]]
+| [[File:CPI symbol.svg|50px]]
+| [[File:KANAM RAJENDRAN DSC 0121.A.JPG|alt=|center|frameless|50px]]
+| [[Kanam Rajendran]]
+| 25
+| 21
+| 4
+|-
+| {{party color cell|Janata Dal (Secular)}}
+| [[Janata Dal (Secular)]]
+| [[File:Janata Dal (Secular) flag (1).svg|50px]]
+| [[File:Indian election symbol female farmer.svg|Janata Dal Election Symbol|50px]]
+| [[File:Mathew-T-Thomas.jpg|alt=|center|frameless|50px]]
+| [[Mathew T. Thomas]]
+| 5
+| 4
+| 1
+|-
+| {{party color cell|Janathipathiya Samrakshana Samithy}}
+| [[Janathipathiya Samrakshana Samithy]]
+| [[File:Janathipathiya samrakshana samithy Flag.jpg|50px]]
+| [[File:Indian Election Symbol Bus.png|60px]]
+|
+|
+| 4
+| 4
+| 0
+|-
+| {{party color cell|Nationalist Congress Party}}
+| [[Nationalist Congress Party]]
+| [[File:NCP-flag.svg|50px]]
+| [[File:Clock symbol of NCP.png|50px]]
+| [[File:T.P. Peethambaran.jpg|alt=|center|frameless|50px]]
+| [[T. P. Peethambaran]]
+| 4
+| 4
+| 0
+|-
+| {{party color cell|Janadhipathya Kerala Congress}}
+| [[Janadhipathya Kerala Congress]]
+| [[File:Kerala-Congress-flag.svg|50px|border]]
+|
+| [[File:Francis George at Arakuzha.JPG|alt=|center|frameless|111x111px]]
+| [[Francis George (politician)|Francis George]]
+| 4
+| 4
+| 0
+|-
+| {{party color cell|Indian National League}}
+| [[Indian National League]]
+| [[File:INL FLAG.png|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| S. A. Puthiya Valappil
+| 3
+| 3
+| 0
+|-
+| {{party color cell|Kerala Congress (B)}}
+| [[Kerala Congress (B)]]
+| [[File:Kerala-Congress-flag.svg|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| [[R. Balakrishna Pillai]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Kerala Congress (Skaria Thomas)}}
+| [[Kerala Congress (Skaria Thomas)]]
+| [[File:Kerala-Congress-flag.svg|50px]]
+|
+| [[File:Scariah Thomas.jpg|alt=|center|frameless|111x111px]]
+| [[Skariah Thomas]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Communist Marxist Party}}
+| [[Communist Marxist Party (Aravindakshan)]]
+| [[File:CMP-banner.svg|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| |[[K. R. Aravindakshan]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Revolutionary Socialist Party (Leninist)}}
+| [[Revolutionary Socialist Party (Leninist)]]
+| [[File:RSP-flag.svg|50px|border]]
+|
+|
+| [[Kovoor Kunjumon]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Congress (Secular)}}
+| [[Congress (Secular)]]
+| [[File:Congress (Secular) Flag.png|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+| [[File:Kadannappally Ramachandran.jpg|alt=|center|frameless|50px]]
+| [[Kadannappalli Ramachandran]]
+| 1
+| 1
+| 0
+|}
+
+=== United Democratic Front (Kerala) ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{{legend2|{{party color|United Democratic Front (Kerala)}}|[[United Democratic Front (Kerala)]]}}
+{| class="wikitable" width="40%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Photo
+! Leader
+! Contesting Seats
+! Male Candidates
+! Female Candidates
+|-
+| {{party color cell|Indian National Congress}}
+| [[Indian National Congress]] (Indira)
+| [[File:INC Flag Official.jpg|50px]]
+| [[File:INC Hand.svg|50px]]
+| [[File:Vm sudeeranDSC 8810.JPG|center|thumb|50px]]
+| [[V. M. Sudheeran]]
+| 87
+| 78
+| 9
+|-
+| {{party color cell|Indian Union Muslim League}}
+| [[Indian Union Muslim League]]
+| [[File:Flag of the Indian Union Muslim League.svg|50px]]
+| [[File:Indian Election Symbol Lader.svg|50px]]
+| [[File:Sayed Hyderali Shihab Thangal BNC.jpg|alt=|center|frameless|50px]]
+|
+[[Sayed Hyderali Shihab Thangal]]
+| 24
+| 24
+| 0
+|-
+| {{party color cell|Kerala Congress (Mani)}}
+| [[Kerala Congress (Mani)]]
+| [[File:Kerala-Congress-flag.svg|50px]]
+| [[File:Indian election symbol two leaves.svg|50px]]
+| [[File:K. M. Mani Minister.jpg|alt=|center|frameless|50px]]
+| [[K. M. Mani]]
+| 15
+| 15
+| 0
+|-
+| {{party color cell|Janata Dal (United)}}
+| [[Janata Dal (United)]]
+| [[File:Janata Dal (United) Flag.svg|border|50px]]
+| [[File:Indian Election Symbol Arrow.svg|50px]]
+| [[File:M. P. Veerendra Kumar DS.jpg|50px]]
+| [[M. P. Veerendra Kumar]]
+| 7
+| 7
+| 0
+|-
+| {{party color cell|Revolutionary Socialist Party (India)}}
+| [[Revolutionary Socialist Party (India)|Revolutionary Socialist Party]]
+| [[File:RSP-flag.svg|50px]]
+| [[File:Indian Election Symbol Spade and Stoker.png|50px]]
+| [[File:A A Azeez.JPG|alt=|center|frameless|50px]]
+| [[A. A. Aziz]]
+| 5
+| 5
+| 0
+|-
+| {{party color cell|Communist Marxist Party}}
+| [[Communist Marxist Party]]
+| [[File:CMP-banner.svg|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| [[C. P. John]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Kerala Congress (Jacob)}}
+| [[Kerala Congress (Jacob)]]
+| [[File:Kerala-Congress-flag.svg|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| [[Anoop Jacob]]
+| 1
+| 1
+| 0
+|}
+
+=== National Democratic Alliance ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{{legend2|{{party color|National Democratic Alliance}}|[[National Democratic Alliance]]}}
+{| class="wikitable" width="40%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Photo
+! Leader
+! Contesting Seats
+! Male Candidates
+! Female Candidates
+|-
+| {{party color cell|Bharatiya Janata Party}}
+| [[Bharatiya Janata Party]]
+| [[File:BJP flag.svg|50px]]
+| [[File:Lotos flower symbol.svg|50px]]
+| [[File:PS Sreedharan Pillai.jpg|alt=|center|frameless|111x111px]]
+| [[P. S. Sreedharan Pillai]]
+| 98
+| 88
+| 10
+|-
+| {{party color cell|[[Bharath Dharma Jana Sena]]}}
+| [[Bharath Dharma Jana Sena]]
+| [[File:Bharath Dharma Jana Sena Flag.png|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+| [[File:Thushar Vellapally.png|alt=|center|frameless|111x111px]]
+| Thushar Vellappally
+| 36
+| 35
+| 1
+|-
+| {{party color cell|Kerala Congress (Thomas)}}
+| [[Kerala Congress (Thomas)]]
+| [[File:Kerala-Congress-flag.svg|50px]]
+| [[File:Chair (Indian Election Symbol).svg|50px]]
+| [[File:P C Thomas.jpg|alt=|center|frameless|111x111px]]
+| [[P. C. Thomas]]
+| 4
+| 4
+| 0
+|-
+| {{party color cell|Janathipathiya Samrakshana Samithy}}
+| [[Janadhipathya Samrakshana Samithi]] (Rajan Babu)
+|
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+|
+| [[A. N. Rajan Babu]]
+| 1
+| 1
+| 0
+|-
+| {{party color cell|Janadhipathya Rashtriya Sabha}}
+| [[Janadhipathya Rashtriya Sabha]]
+| [[File:JRS color.jpg|50px]]
+| [[File:Blank.svg|50px]]<!-- Do not use image placeholders here per WP:IPH -->
+| [[File:CK janu.jpg|alt=|center|frameless|111x111px]]
+| [[C. K. Janu]]
+| 1
+| 0
+| 1
+|}
+
+=== Left United Front ===
+{| class="wikitable collapsible"
+|-
+! Party !! Flag
+! Symbol
+! Photo!!Leader
+! Seats contested
+! Male
+! Female
+|-
+| [[Revolutionary Marxist Party]]||
+|
+| ||
+N. Venu
+| 10
+| 9
+| 1
+|-
+| [[Socialist Unity Centre of India (Communist)]]<ref>{{cite web |url=http://kerala.sucicommunist.org/%E0%B4%8E%E0%B4%B8%E0%B5%8D%E2%80%8C%E0%B4%AF%E0%B5%81%E0%B4%B8%E0%B4%BF%E0%B4%90%E0%B4%95%E0%B4%AE%E0%B5%8D%E0%B4%AE%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%A3%E0%B4%BF%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B5%8D/ |title=എസ്യുസിഐ(കമ്മ്യൂണിസ്റ്റ്) കേരളത്തിൽ 32 മണ്ഡലങ്ങളിൽ മത്സരിക്കും |website=Kerala.sucicommunist.org}}</ref>
+| [[File:SUCI flag.svg|frameless|50x50px]]
+|
+|
+| C. K. Lukose
+| 32
+| 27
+| 5
+|-
+| [[Marxist Communist Party of India (United)]]||
+|
+| ||
+M. Rajan
+|
+|
+|
+|}
+
+=== Parties not in any coalition ===
+{| class="wikitable" width="40%" style="text-align:center"
+! colspan="2" | Party
+! Flag
+! Symbol
+! Photo
+! Leader
+! Contested Seats
+|-
+| {{party color cell|Social Democratic Party of India}}
+| [[Social Democratic Party of India]]<ref>{{cite web |url=http://www.mangalam.com/print-edition/keralam/415991 |title=SDPI. 34 സ്ഥാനാര്ഥികളെ പ്രഖ്യാപിച്ചു {{!}} mangalam.com |last=alantechnologies.net |website=Mangalam.com |access-date=21 March 2016}}</ref>
+| [[File:SDPI Flag.jpg|frameless|50px]]
+| [[File:INLD1.svg|50px]]
+|
+| K. M. Ashraf
+| 88
+|-
+| {{party color cell|Bahujan Samaj Party}}
+| [[Bahujan Samaj Party]]
+| [[File:Elephant Bahujan Samaj Party.svg|50px]]
+| [[File:Indian Election Symbol Elephant.png|50px]]
+|
+| J. Sudhakaran
+| 74
+|-
+| {{party color cell|Peoples Democratic Party (India)}}
+| [[Peoples Democratic Party (India)|Peoples Democratic Party]]
+|
+| [[File:Indian election symbol rising sun.svg|70x70px]]
+|
+| [[Abdul Nazer Mahdani|Abdul Nasar Madani]]
+| 60
+|-
+| {{party color cell|Welfare Party of India}}
+| [[Welfare Party of India]]<ref>{{cite web |url=http://digitalpaper.mathrubhumi.com/c/9233808 |title=Clipping of Mathrubhumi Printing and Publishing – Palakkad |website=Digitalpaper.mathrubhumi.com |access-date=21 March 2016}}</ref><ref>{{cite web |url=http://www.madhyamam.com/kerala/2016/mar/06/182269 |title=21 മണ്ഡലങ്ങളില് വെല്ഫെയര് പാര്ട്ടി സ്ഥാനാര്ഥികളായി |website=Madhyamam.com |date=6 March 2016 |access-date=21 March 2016}}</ref>
+|
+| [[File:Gas Cylinder.jpg|frameless|53x53px]]<ref>{{cite web |url=http://eci.nic.in/eci_main/ElectoralLaws/OrdersNotifications/year2016/CEO,%20Kerala%2005-01-2016.pdf |title=Common Symbol for Welfare Party in Kerala Legislative Assembly Election – 2016 |website=Eci.nic.in}}</ref>
+|
+| Hameed Vaniyambalam
+| 41
+|-
+| {{party color cell|Communist Party of India (Marxist-Leninist) Red Star}}
+| [[Communist Party of India (Marxist-Leninist) Red Star]]
+| [[File:CPI(ML).svg|50px]]
+|
+|
+| M. K. Dasan
+| 18
+|-
+| {{party color cell|Shiv Sena}}
+| [[Shiv Sena]]
+|
+| [[File:Indian Election Symbol Bow And Arrow.svg|70x70px]]
+|
+| M.S. Bhuvanachandran
+| 16
+|-
+| {{party color cell|Samajwadi Party}}
+| [[Samajwadi Party]]
+| [[File:SP Flag.png|50px]]
+| [[File:Indian Election Symbol Cycle.png|50px]]
+|
+| N. O. Kuttappan
+| 9
+|-
+| {{party color cell|All India Anna Dravida Munnetra Kazhagam}}
+| [[All India Anna Dravida Munnetra Kazhagam]]
+| [[File:AIADMK Flag.svg|50px]]
+| [[File:Indian election symbol two leaves.svg|70x70px]]
+|
+| A. L. Pradeep
+| 7
+|-
+| {{party color cell|Ambedkarite Party of India}}
+| [[Ambedkarite Party of India]]
+|
+|
+|
+|
+| 5
+|-
+| {{party color cell|Indian Gandhiyan Party}}
+| [[Indian Gandhiyan Party]]
+|
+|
+|
+|
+| 3
+|-
+| {{party color cell|Kerala Janatha Party}}
+| Kerala Janatha Party
+|
+|
+|
+|
+| 3
+|-
+| {{party color cell|Communist Party of India (Marxist-Leninist) Liberation}}
+| [[Communist Party of India (Marxist-Leninist) Liberation]]
+| [[File:CPIML LIBERATION FLAG.png|50px]]
+| [[File:Flag Logo of CPIML.png|50 px]]
+|
+| [[Dipankar Bhattacharya]]
+| 1
+|}
+
+== Opinion polls ==
+{| class="wikitable collapsible" style="text-align:center;font-size:85%;width:95%;line-height:20px;"
+|-
+! rowspan="3" class="wikitable" style="width:100px;" | When conducted
+! rowspan="3" class="wikitable" style="width:10px;" | Ref
+! rowspan="3" class="wikitable" style="width:220px;" | Polling organisation/Agency
+! rowspan="3" class="wikitable" style="width:100px;" | Sample size
+| colspan="2" style="background:{{party color|United Democratic Front (Kerala)}}; width:70px;" |
+| colspan="2" style="background:{{party color|Left Democratic Front (Kerala)}}; width:70px;" |
+| colspan="2" style="background:gray; width:70px;" |
+|-
+! colspan="2" class="wikitable" style="width:70px;" | UDF
+! colspan="2" class="wikitable" style="width:70px;" | LDF
+! colspan="2" class="wikitable" style="width:70px;" | OTH
+|-
+! Seats
+! Vote %
+! Seats
+! Vote %
+! seats
+! Vote %
+|- class="hintergrundfarbe2" style="text-align:center"
+! March 2016
+!<ref>{{Cite news |url=http://www.asianetnews.tv/news/kerala/ASIANET-NEWS-CFOR-SURVEY-44639 |title=Asianet News: ഏഷ്യാനെറ്റ് ന്യൂസ് സീഫോര് സര്വ്വേ, സംസ്ഥാനത്ത് ഭരണത്തുടര്ച്ച ഉണ്ടാവില്ലെന്ന വ്യക്തമായ സൂചന |last=Ltd |first=Asianet News Network Pvt |newspaper=Asianet News Network Pvt Ltd |access-date=18 November 2016 |archive-url=https://web.archive.org/web/20160220044326/http://www.asianetnews.tv/news/kerala/ASIANET-NEWS-CFOR-SURVEY-44639 |archive-date=20 February 2016 |url-status=dead}}</ref>
+! C-FORE for Asianet News<ref>{{Cite news |url=http://indianexpress.com/article/india/india-news-india/bjp-kerala-election-pre-poll-survey-congress-cpm-amit-shah-oommen-chandy/ |title=Kerala pre-poll survey: BJP to get 3–5 seats with 18% vote-share |date=19 February 2016 |newspaper=The Indian Express |access-date=18 November 2016}}</ref>
+| 15778
+| 55–62
+| 37%
+| 75–82
+| 41%
+| 3–5
+| 18%
+|-
+! March 2016
+!<ref>{{cite web |url=http://infoelections.com/infoelection/index.php/kerala/7224-kerala-india-tv-cvoter-opinion-poll.html |title=Assembly Election Result 2016, Assembly Election Schedule Candidate List, Assembly Election Opinion/Exit Poll Latest News 2016 |website=Infoelections.com |language=en-US |access-date=18 November 2016}}</ref>
+! India TV C-Voter
+| ''N/A''
+| 49
+| ''N/A''
+| 89
+| ''N/A''
+| 2
+| ''N/A''
+|-
+! April 2016
+!<ref>{{cite web |url=http://english.mathrubhumi.com/election/2016/kerala-assembly-polls/mathrubhumi-news-survey-predicts-slender-majority-for-ldf-english-news-1.967725 |title=Mathrubhumi News survey predicts slender majority for LDF – Kerala Assembly Polls |access-date=7 April 2016 |archive-url=https://web.archive.org/web/20160504213104/http://english.mathrubhumi.com/election/2016/kerala-assembly-polls/mathrubhumi-news-survey-predicts-slender-majority-for-ldf-english-news-1.967725 |archive-date=4 May 2016 |url-status=dead}}</ref>
+! Mathrbhumi News – Axis My India
+| ''N/A''
+| 66–72
+| 42%
+| 68–74
+| 45%
+| 0–2
+| 10%
+|-
+! 23 April 2016
+!<ref>{{Cite news |url=http://www.asianetnews.tv/election2016/asianet-news-c-fore-survey |title=കേരളത്തില് ഇടതുമുന്നണി അധികാരത്തിലെത്തുമെന്ന് ഏഷ്യാനെറ്റ് ന്യൂസ്, സി ഫോര് സര്വ്വേ |newspaper=Asianet News Network Pvt Ltd |access-date=18 November 2016}}</ref>
+! Asianet News – C4 Election Survey
+| 50000
+| 56–62
+| 37%
+| 75–81
+| 40%
+| 3–5
+| 18%
+|-
+! May 2016
+!<ref>{{cite web |url=http://english.manoramaonline.com/news/just-in/udf-will-retain-power-in-kerala-predicts-survey.html |title=UDF will retain power in Kerala, predicts survey |access-date=4 May 2016 |archive-url=https://web.archive.org/web/20160503112144/http://english.manoramaonline.com/news/just-in/udf-will-retain-power-in-kerala-predicts-survey.html |archive-date=3 May 2016 |url-status=dead}}</ref>
+! Mars agency
+| 7020
+| 70–75
+| ''N/A''
+| 63–67
+| ''N/A''
+| 0
+| ''N/A''
+|-
+! May 2016
+!<ref>{{cite web |url=http://www.imegkerala.org/Home/kerala_assembly_election_opinion_poll_imeg_kerala |title=2016 Kerala Assembly Election – IMEG Opinion Poll Results – Institute for Monitoring Economic Growth |website=Imegkerala.org |access-date=18 November 2016}}</ref>
+! IMEG Opinion Poll
+| 60000
+| 50–57
+| ''N/A''
+| 83–90
+| ''N/A''
+| 0
+| ''N/A''
+|-
+! May 2016
+!<ref>{{cite web |url=http://www.kairalinewsonline.com/2016/05/13/50914.html |title=കേരളം ചുവപ്പിനെ വരിക്കുമെന്ന് പീപ്പിൾ ടിവി-സെന്റർ ഫോർ ഇലക്ടറൽ സ്റ്റഡീസ് അഭിപ്രായ സർവേ; എൽഡിഎഫിന് 81–89 സീറ്റ്; യുഡിഎഫിന് 51–59; എൻഡിഎയ്ക്ക് മൂന്നു സീറ്റ് വരെ കിട്ടാം |website=Kairalinewsonline.com |access-date=18 November 2016 |archive-url=https://web.archive.org/web/20160516134957/http://www.kairalinewsonline.com/2016/05/13/50914.html |archive-date=16 May 2016 |url-status=dead}}</ref>
+! People TV – CES Survey
+| 17460
+| 51–59
+| 40.6%
+| 81–89
+| 43.1%
+| 0–3
+| 14.1%
+|}
+
+=== Exit polls ===
+{| class="wikitable collapsible"
+|-
+! Agency
+! LDF
+! UDF
+! Others
+! Ref.
+|-
+| Times Now-C Voter
+| 74–82
+| 54–62
+| 0–8
+|<ref>{{cite news |url=http://indianexpress.com/article/elections-2016/india/india-news-india/exit-polls-west-bengal-tamil-nadu-kerala-assam-puducherry-latest-updates-live/ |title=Exit polls: BJP unseats Congress in Assam, LDF ousts UDF in Kerala; Mamata retains WB, Jaya goes from TN |date=16 May 2016 |newspaper=[[The Indian Express]] |access-date=16 May 2016}}</ref>
+|-
+| India Today-Axis
+| 88–101
+| 38–48
+| 1–7
+|<ref>{{cite web |url=https://www.indiatoday.in/assembly-elections-2016/tamil-nadu-election/story/india-today-axis-my-india-exit-poll-live-who-will-win-bengal-tamil-nadu-kerala-and-assam-323824-2016-05-16 |title=India Today-Axis Exit Poll: Jaya to lose Tamil Nadu, BJP sweeps Assam, Mamata to retain Bengal |website=India Today |date=16 May 2016 |access-date=16 May 2016}}</ref>
+|-
+| News Nation
+| 67–71
+| 68–72
+| 0–2
+|<ref>{{cite web |url=http://www.newsnation.in/article/131205-live-exit-polls-2016-assembly-elections-west-bengal-assam-kerala-tamil-nadu.html |title=NN Exit Poll predicts win for Mamata in WB, Jaya 1st choice for CM in TN; BJP to take Assam, close fight between UDF-LDF in Kerala |date=16 May 2016 |website=Newsnation.in |language=en-US |access-date=16 May 2016}}</ref>
+|-
+| Today's Chanakya
+| 75±9
+| 57±9
+| 8±5
+|<ref>{{cite web |url=http://www.todayschanakya.com/kerala-exit-poll-2016.html |archive-url=https://web.archive.org/web/20160518020033/http://www.todayschanakya.com/kerala-exit-poll-2016.html |url-status=dead |archive-date=18 May 2016 |title=Kerala Elections 2016 – Exit Poll |date=18 May 2016 |access-date=23 April 2019}}</ref>
+|}
+
+== Election Day ==
+Voting took place on 16 May 2016 in all 140 Legislative Assembly Constituencies. The final turnout was 77.35%.<ref>{{cite web |url=http://www.indiancrux.info/2016/02/2016-kerala-assembly-constituency-wise-election-results.html |archive-url=https://web.archive.org/web/20160306091412/http://www.indiancrux.info/2016/02/2016-kerala-assembly-constituency-wise-election-results.html |url-status=usurped |archive-date=6 March 2016 |title=2016 Kerala Legislative Assembly Election Results Constituency Wise |website=Indiancrux.info}}</ref>
+{| class="wikitable"
+|+
+! Districts
+! colspan="4" | Voter Turnout
+|-
+! {{nowrap|District wise map of Kerala}}
+! District
+! colspan="2" | %
+|-
+| rowspan ="14"| [[File:Political map of Kerala.svg|300px]]
+| Kasaragod || 78.51
+|-
+| Kannur || 80.63
+|-
+| Wayanad || 78.22
+|-
+| Kozhikode || 81.89
+|-
+| Malappuram || 75.83
+|-
+| Palakkad || 78.37
+|-
+| Thrissur || 77.74
+|-
+| Ernakulam || 79.77
+|-
+| Idukki || 73.59
+|-
+| Kottayam || 76.90
+|-
+| Alappuzha || 79.88
+|-
+| Pathanamthitta || 71.66
+|-
+| Kollam || 75.07
+|-
+| Thiruvananthapuram || 72.53
+|-
+| '''Total'''
+| colspan="2" | '''77.35'''
+|}
+
+== Results ==
+{{Pie chart|caption='''Vote Share by alliance'''|other=yes|value1=43.48|label1=[[Left Democratic Front (Kerala)|LDF]] | color1={{party color|Left Democratic Front (Kerala)}}|value2=38.81|label2=[[United Democratic Front (Kerala)|UDF]] | color2={{party color|United Democratic Front (Kerala)}}|value3=14.96|label3=[[National Democratic Alliance|NDA]] | color3={{party color|National Democratic Alliance}}}}
+
+{{Pie chart
+| caption = '''Seat Share by alliance'''
+| other = yes
+| value1 = 65
+| label1 = [[Left Democratic Front (Kerala)|LDF]]
+| color1 = {{party color|Left Democratic Front (Kerala)}}
+| value2 = 33.57
+| label2 = [[United Democratic Front (Kerala)|UDF]]
+| color2 = {{party color|United Democratic Front (Kerala)}}
+| value3 = 0.71
+| label3 = [[National Democratic Alliance|NDA]]
+| color3 = {{party color|National Democratic Alliance}}
+}}
+
+The Left Democratic Front won in a landslide in terms of seats, winning 91 out of 140 seats in the legislature. The incumbent UDF front was defeated and was reduced to 47 seats. The NDA, and independent [[P. C. George]] won one seat each.
+
+=== By alliance ===
+{| class="wikitable collapsible" width="35%" style="text-align:center; border: 2px #000000 solid; font-size: x-big"
+! colspan="2" style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |LDF
+! style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |SEATS
+! colspan="2" style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |UDF
+! style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |SEATS
+! colspan="2" style="background:#FF9933; color:white;" |NDA
+! style="background:#FF9933; color:white;" |SEATS
+! colspan="2" style="background:grey; color:white;" |Other
+! style="background:grey; color:white;" |SEATS
+|-
+| [[Communist Party of India (Marxist)|CPI(M)]]
+| width="3px" style="background-color: {{party color|Communist Party of India (Marxist)}}" |
+| ''58''
+| [[Indian National Congress|INC]]
+| width="3px" style="background-color: {{party color|Indian National Congress}}" |
+| ''22''
+| [[Bharatiya Janata Party|BJP]]
+| width="3px" style="background-color: {{party color|Bharatiya Janata Party}}" |
+| ''1''
+| [[P. C. George]] (IND)
+| width="3px" style="background-color: {{party color|Independent politician}}" |
+| ''1''
+|-
+| [[Communist Party of India|CPI]]
+| width="3px" style="background-color: {{party color|Communist Party of India}}" |
+| ''19''
+| [[Indian Union Muslim League|IUML]]
+| width="3px" style="background-color: {{party color|Indian Union Muslim League}}" |
+| ''18''
+| [[Bharath Dharma Jana Sena|BDJS]]
+| width="3px" style="background-color: {{party color|Bharath Dharma Jana Sena}}" |
+| ''0''
+|
+|
+|
+|-
+| [[Janata Dal (Secular)|JD(S)]]
+| width="3px" style="background-color: {{party color|Janata Dal (Secular)}}" |
+| ''3''
+| [[Kerala Congress (M)|KC(M)]]
+| width="3px" style="background-color: {{party color|Kerala Congress (M)}}" |
+| ''6''
+| [[Kerala Congress (Thomas)|KEC]]
+| width="3px" style="background-color: {{party color|Kerala Congress}}" |
+| ''0''
+|
+|
+|
+|-
+| [[Nationalist Congress Party|NCP]]
+| width="3px" style="background-color: {{party color|Nationalist Congress Party}}" |
+| ''2''
+| [[Kerala Congress (Jacob)|KC(J)]]
+| width="3px" style="background-color: {{party color|Kerala Congress (Jacob)}}" |
+| ''1''
+| [[Janadhipathya Rashtriya Sabha|JRS]]
+| width="3px" style="background-color: {{party color|Janadhipathya Rashtriya Sabha}}" |
+| ''0''
+|
+|
+|
+|-
+| [[Independent politician|IND]]
+| width="3px" style="background-color: {{party color|Independent politician}}" |
+| ''5''
+| [[Janata Dal (United)|JD(U)]]
+| width="3px" style="background-color: {{party color|Janata Dal (United)}}" |
+| ''0''
+| [[Janadhipathya Samrakshana Samithi|JSS (Rajan Babu)]]
+| width="3px" style="background-color: {{party color|Janathipathiya Samrakshana Samithy}}" |
+| ''0''
+|
+|
+|
+|-
+| [[Congress (Secular)|C(S)]]
+| width="3px" style="background-color: {{party color|Congress (Secular)}}" |
+| ''1''
+| [[Revolutionary Socialist Party (India)|RSP]]
+| width="3px" style="background-color: {{party color|Revolutionary Socialist Party (India)}}" |
+| ''0''
+|
+|
+|
+|
+|
+|
+|-
+| [[Kerala Congress (B)|KC(B)]]
+| width="3px" style="background-color: {{party color|Kerala Congress (B)}}" |
+| ''1''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[National Secular Conference|NSC]]
+| width="3px" style="background-color: {{party color|National Secular Conference}}" |
+| ''1''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Communist Marxist Party|CMP]]
+| width="3px" style="background-color: {{party color|Communist Marxist Party}}" |
+| ''1''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Kerala Congress (Anti-merger Group)|KC]]
+| width="3px" style="background-color: {{party color|Kerala Congress}}" |
+| ''0''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Janadhipathya Kerala Congress|JKC]]
+| width="3px" style="background-color: {{party color|Janadhipathya Kerala Congress}}" |
+| ''0''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Indian National League|INL]]
+| width="3px" style="background-color: {{party color|Indian National League}}" |
+| ''0''
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| colspan="2" style="background:#ffe6e6;" |Total
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |91
+| colspan="2" style="background:#ADD8E6" | Total
+| style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |47
+| colspan="2" style="background:#FAD6A5" | Total
+| style="background:#FF9933; color:white;" |1
+| colspan="2" style="background:#EBECF0" | Total
+| style="background:grey; color:white;" |1
+|-
+| colspan="2" style="background:#ffe6e6;" |Change
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |+23
+| colspan="2" style="background:#ADD8E6" | Change
+| style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |-25
+| colspan="2" style="background:#FAD6A5" | Change
+| style="background:#FF9933; color:white;" |+1
+| colspan="2" style="background:#EBECF0 | Change
+| style="background:grey; color:white;" |+1
+|}
+[[P. C. George|P.C. George]], who contested as an independent candidate from Poonjar, joined the [[National Democratic Alliance|NDA]] on a later date.<!-- This being an article representing the outcomes of the 2016 elections, shows the seat-share at the time of declaration of the results, i.e., 91-47-1-1 (LDF-UDF-NDA-Independent). -->
+
+=== By region ===
+{| class="wikitable sortable" style="text-align:centre;"
+! {{nowrap|Region wise map of Kerala}}
+! Region
+! Total Seats
+! style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |UDF
+! style="background:{{party color|Left Democratic Front (Kerala)}}; color:white;" |LDF
+! style="background:#FF9933; color:white;" |NDA
+! style="background:grey; color:white;" |OTH
+|-
+| rowspan="3" | [[File:Regions of Kerala.svg|416x416px]]
+| North Kerala
+| 32
+| 8
+| style="background:#FFE6E6 | '''24'''
+| 0
+| 0
+|-
+| Central Kerala
+| 55
+| 25
+| style="background:#FFE6E6 | '''30'''
+| 0
+| 0
+|-
+| South Kerala
+| 53
+| 14
+| style="background:#FFE6E6 | '''37'''
+| 1
+| 1
+|}
+
+=== By district ===
+{| class="wikitable sortable" style="text-align:centre;"
+! {{nowrap|District wise map of Kerala}}
+! District
+! Total Seats
+! style="background:{{party color|United Democratic Front (Kerala)}}; color:white;" |UDF
+! style="background:{{party color|Left Democratic Front (Kerala)}}; color:white;" |LDF
+! style="background:#FF9933; color:white;" |NDA
+! style="background:grey; color:white;" |OTH
+|-
+| rowspan="14" | [[File:Political map of Kerala.svg|416x416px]]
+| [[Kasaragod district|Kasaragod]]
+|
+5
+| 2|| style="background:#FFE6E6 | '''3'''|| 0 || 0
+
+|-
+| [[Kannur district|Kannur]]
+|
+11
+| 3|| style="background:#FFE6E6 | '''8'''|| 0 || 0
+|-
+| [[Wayanad district|Wayanad]]
+|
+3
+| 1|| style="background:#FFE6E6 | '''2'''|| 0 || 0
+|-
+| [[Kozhikode district|Kozhikode]]
+|
+13
+| 2||style="background:#FFE6E6 | '''11''' || 0 || 0
+
+|-
+| [[Malappuram district|Malappuram]]
+|
+16
+| style="background:#ADD8E6" | '''12'''|| 4|| 0 || 0
+
+|-
+| [[Palakkad district|Palakkad]]
+|
+12
+|| 3|| style="background:#FFE6E6 | '''9'''|| 0 || 0
+
+|-
+| [[Thrissur district|Thrissur]]
+|
+13
+|| 1||style="background:#FFE6E6 | '''12'''|| 0 || 0
+
+|-
+| [[Ernakulam district|Ernakulam]]
+|
+14
+| style="background:#ADD8E6" | '''9'''|| 5|| 0 || 0
+|-
+| [[Idukki district|Idukki]]
+|
+5
+| 2|| style="background:#FFE6E6 | '''3'''|| 0 || 0
+|-
+| [[Kottayam district|Kottayam]]
+|
+9
+| style="background:#ADD8E6" | '''6'''|| 2|| 0 || 1
+
+|-
+| [[Alappuzha district|Alappuzha]]
+|
+9
+| 1|| style="background:#FFE6E6 | '''8'''|| 0 || 0
+
+|-
+| [[Pathanamthitta district|Pathanamthitta]]
+|
+5
+| 1 || style="background:#FFE6E6 | '''4''' ||0 || 0
+
+|-
+| [[Kollam district|Kollam]]
+|
+11
+| 0|| style="background:#FFE6E6 | '''11'''|| 0 || 0
+
+|-
+| [[Thiruvananthapuram district|Thiruvananthapuram]]
+| 14
+| 4|| style="background:#FFE6E6 | '''9'''|| 1 || 0
+
+|-
+| colspan="2" | ''' Total '''
+|
+''' 140 '''
+| ''' 47 '''|| style="background:#FFE6E6 | ''' 91 ''' || ''' 1''' || '''1'''
+|}
+
+=== Results by party ===
+<section begin="Results" />{{election table}}
+|-
+! colspan="2" rowspan="2" | Parties and coalitions
+! colspan="2" | Popular vote
+! colspan="2" | Seats
+|-
+! Votes
+! %
+! Candidates
+! Won
+|-
+| bgcolor={{party color|Communist Party of India (Marxist)}}|
+| [[Communist Party of India (Marxist)]]
+| 5,365,472
+| 26.7
+| 84
+| 59
+|-
+| bgcolor=#00BFFF | 
+| [[Indian National Congress]]
+| 4,794,793
+| 23.8
+| 87
+| 21
+|-
+| bgcolor=#FF9933 | 
+| [[Bharatiya Janata Party]]
+| 2,129,726
+| 10.6
+| 98
+| 1
+|-
+| bgcolor={{party color|Communist Party of India}}|
+| [[Communist Party of India]]
+| 1,643,878
+| 8.2
+| 25
+| 19
+|-
+| bgcolor={{party color|Indian Union Muslim League}}|
+| [[Indian Union Muslim League]]
+| 1,496,864
+| 7.4
+| 23
+| 18
+|-
+| bgcolor={{party color|Kerala Congress (Mani)}}|
+| [[Kerala Congress (Mani)]]
+| 807,718
+| 4.0
+| 15
+| 5
+|-
+| bgcolor={{party color|Bharath Dharma Jana Sena}}|
+| [[Bharath Dharma Jana Sena]]
+| 795,797
+| 4.0
+| 36
+| 0
+|-
+| bgcolor={{party color|Communist Party of India}}|
+| Independents<br />(LDF)
+| 487,510
+| 2.4
+| 8
+| 4
+|-
+| bgcolor={{party color|Janata Dal (United)}}|
+| [[Janata Dal (United)]]
+| 296,585
+| 1.5
+| 7
+| 0
+|-
+| bgcolor={{party color|Janata Dal (Secular)}}|
+| [[Janata Dal (Secular)]]
+| 293,274
+| 1.5
+| 5
+| 3
+|-
+| bgcolor={{party color|Nationalist Congress Party}}|
+| [[Nationalist Congress Party]]
+| 237,408
+| 1.2
+| 4
+| 2
+|-
+| bgcolor={{party color|Independent (politician)}}|
+| [[Independent (politician)|Independents]] (IND)
+| 220,797
+| 1.1
+| 420
+| 1
+|-
+| bgcolor={{party color|Revolutionary Socialist Party (India)}}|
+| [[Revolutionary Socialist Party (India)|Revolutionary Socialist Party]]
+| 216,071
+| 1.1
+| 5
+| 0
+|-
+| bgcolor={{party color|Kerala Congress (Mani)}}|
+| [[Kerala Congress (Democratic)]]
+| 157,584
+| 0.78
+| 4
+| 0
+|-
+| bgcolor={{party color|National Secular Conference}}|
+| [[National Secular Conference]]
+| 130,843
+| 0.65
+| 2
+| 1
+|-
+| bgcolor={{party color|Revolutionary Socialist Party (Leninist)}}|
+| [[Revolutionary Socialist Party (Leninist)]]
+| 75,725
+| 0.38
+| 1
+| 1
+|-
+| bgcolor={{party color|Kerala Congress (Mani)}}|
+| [[Kerala Congress (Balakrishna Pillai)]]
+| 74,429
+| 0.37
+| 1
+| 1
+|-
+| bgcolor={{party color|Kerala Congress (Jacob)}}|
+| [[Kerala Congress (Jacob)]]
+| 73,770
+| 0.37
+| 1
+| 1
+|-
+| bgcolor={{party color|Communist Marxist Party}}|
+| [[Communist Marxist Party]] (Aravindakshan)
+| 64,666
+| 0.32
+| 1
+| 1
+|-
+| bgcolor={{party color|Congress (Secular)}}|
+| [[Congress (Secular)]]
+| 54,347
+| 0.27
+| 1
+| 1
+|-
+| colspan="2" | '''Total'''
+| '''20,232,718'''||'''100.00'''||'''1,203'''||'''140'''
+|-
+! colspan="9" | 
+|-
+| style="text-align:left;" colspan="2" | Valid votes
+| align="right" | 20,232,718
+| align="right" | 99.97
+| colspan="4" rowspan="5" style="background-color:#E9E9E9"|
+|-
+| style="text-align:left;" colspan="2" | Invalid votes
+| align="right" | 6,107
+| align="right" | 0.03
+|-
+| style="text-align:left;" colspan="2" | '''Votes cast / turnout'''
+| align="right" | '''20,238,825'''
+| align="right" | '''77.53'''
+|-
+| style="text-align:left;" colspan="2" | Abstentions
+| align="right" | 5,866,244
+| align="right" | 22.47
+|-
+| style="text-align:left;" colspan="2" | '''Registered voters'''
+| align="right" | '''26,105,069'''
+| colspan="1" style="background-color:#E9E9E9"|
+|}<section end="Results" />
+
+=== Results by constituency ===
+{| class="wikitable sortable"
+! colspan="2" | Constituency
+! colspan="7" | Winner
+! colspan="7" | Runner-up
+! rowspan="2" data-sort-type=number|Margin
+|-
+! No.
+! Name
+! Candidate
+! colspan="2" | Party
+! colspan="2" | Alliance
+! data-sort-type=number|Votes
+! %
+! Candidate
+! colspan="2" | Party
+! colspan="2" | Alliance
+! data-sort-type=number|Votes
+! %
+|-
+! colspan="17" | [[Kasaragod district]]
+|-
+! 1
+| [[Manjeshwar Assembly constituency|Manjeshwar]]
+| [[P. B. Abdul Razak]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,870
+| 35.79
+| [[K. Surendran]]
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 56,781
+| 35.74
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |89
+|-
+! 2
+| [[Kasaragod Assembly constituency|Kasaragod]]
+| [[N. A. Nellikkunnu]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 64,727
+| 44.72
+| Ravisha Tantri Kuntar
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 56,120
+| 38.77
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |8,607
+|-
+! 3
+| [[Udma Assembly constituency|Udma]]
+| [[K. Kunhiraman]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,679
+| 43.94
+| [[K. Sudhakaran]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 66,847
+| 41.55
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |3,832
+|-
+! 4
+| [[Kanhangad Assembly constituency|Kanhangad]]
+| [[E. Chandrasekharan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 80,558
+| 49.98
+| Dhanya Suresh
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 54,547
+| 33.84
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |26,011
+|-
+! 5
+| [[Thrikaripur Assembly constituency|Thrikaripur]]
+| [[M. Rajagopalan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 79,286
+| 50.93
+| K. P. Kunhikannan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 62,327
+| 40.04
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |16,959
+|-
+! colspan="17" | [[Kannur district]]
+|-
+! 6
+| [[Payyanur Assembly constituency|Payyanur]]
+| [[C. Krishnan (CPI-M)|C. Krishnan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 83,226
+| 58.02
+| Sajid Mavval
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 42,963
+| 29.95
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |40,263
+|-
+! 7
+| [[Kalliasseri Assembly constituency|Kalliasseri]]
+| [[T. V. Rajesh]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 83,006
+| 59.83
+| Amritha Ramakrishnan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 40,115
+| 28.91
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |42,891
+|-
+! 8
+| [[Taliparamba Assembly constituency|Taliparamba]]
+| [[James Mathew]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 91,106
+| 56.95
+| Rajesh Nambiar
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,489
+| 31.56
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |40,617
+|-
+! 9
+| [[Irikkur Assembly constituency|Irikkur]]
+| [[K. C. Joseph (Irikkur politician)|K. C. Joseph]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 72,548
+| 49.00
+| K. T. Jose
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 62,901
+| 42.48
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |9,647
+|-
+! 10
+| [[Azhikode Assembly constituency|Azhikode]]
+| [[K. M. Shaji]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 63,082
+| 44.58
+| M. V. Nikesh Kumar
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 60,795
+| 42.97
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |2,287
+|-
+! 11
+| [[Kannur Assembly constituency|Kannur]]
+| [[Kadannappalli Ramachandran]]
+| {{Party name with color|Congress (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 54,347
+| 43.06
+| Satheesan Pacheni
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 53,151
+| 42.11
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |1,196
+|-
+! 12
+| [[Dharmadam Assembly constituency|Dharmadam]]
+| [[Pinarayi Vijayan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 87,329
+| 56.84
+| Mambaram Divakaran
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,424
+| 32.82
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |36,905
+|-
+! 13
+| [[Thalassery Assembly constituency|Thalassery]]
+| [[A. N. Shamseer]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,741
+| 53.32
+| [[A. P. Abdullakutty]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 36,624
+| 27.61
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |34,117
+|-
+! 14
+| [[Kuthuparamba Assembly constituency|Kuthuparamba]]
+| [[K. K. Shailaja]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,013
+| 45.64
+| [[K. P. Mohanan]]
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 54,722
+| 37.27
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |12,891
+|-
+! 15
+| [[Mattanur Assembly constituency|Mattanur]]
+| [[E. P. Jayarajan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 84,030
+| 56.52
+| K. P. Prashanth
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 40,649
+| 27.34
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |43,381
+|-
+! 16
+| [[Peravoor Assembly constituency|Peravoor]]
+| [[Sunny Joseph (politician)|Sunny Joseph]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 65,659
+| 48.10
+| Binoy Kurian
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,670
+| 42.25
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |7,989
+|-
+! colspan="17" | [[Wayanad district]]
+|-
+! 17
+| [[Mananthavady Assembly constituency|Mananthavady]] (ST)
+| [[O. R. Kelu]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 62,436
+| 42.88
+| [[P. K. Jayalakshmi]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 61,129
+| 41.99
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |1,307
+|-
+! 18
+| [[Sulthan Bathery Assembly constituency|Sulthan Bathery]] (ST)
+| [[I. C. Balakrishnan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 75,747
+| 44.04
+| Rugmini Subrahmanian
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,549
+| 37.53
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |11,198
+|-
+! 19
+| [[Kalpetta Assembly constituency|Kalpetta]]
+| [[C. K. Saseendran]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 72,959
+| 48.35
+| [[M. V. Shreyams Kumar]]
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 59,876
+| 39.68
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |13,083
+|-
+! colspan="17" | [[Kozhikode district]]
+|-
+! 20
+| [[Vadakara Assembly constituency|Vadakara]]
+| [[C. K. Nanu]]
+| {{Party name with color|Janata Dal (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 49,211
+| 37.98
+| Manayath Chandran
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 39,700
+| 30.64
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |9,511
+|-
+! 21
+| [[Kuttiady Assembly constituency|Kuttiady]]
+| [[Parakkal Abdulla]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 71,809
+| 45.50
+| [[K. K. Lathika]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,652
+| 44.77
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |1,157
+|-
+! 22
+| [[Nadapuram Assembly constituency|Nadapuram]]
+| [[E. K. Vijayan]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 74,742
+| 45.87
+| Praveen Kumar
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,983
+| 42.95
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |4,759
+|-
+! 23
+| [[Quilandy Assembly constituency|Quilandy]]
+| [[K. Dasan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,593
+| 45.94
+| N. Subramanian
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 57,224
+| 37.24
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |13,369
+|-
+! 24
+| [[Perambra Assembly constituency|Perambra]]
+| [[T. P. Ramakrishnan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 72,359
+| 47.14
+| Mohammad Ikbal
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 68,258
+| 44.46
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |4,101
+|-
+! 25
+| [[Balussery Assembly constituency|Balussery]] (SC)
+| [[Purushan Kadalundi]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 82,914
+| 47.50
+| U. C. Raman Padanilam
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 67,450
+| 38.64
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |15,464
+|-
+! 26
+| [[Elathur Assembly constituency|Elathur]]
+| [[A. K. Saseendran]]
+| {{Party name with color|Nationalist Congress Party}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 76,387
+| 48.65
+| Kishen Chand
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 47,330
+| 30.15
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |29,057
+|-
+! 27
+| [[Kozhikode North Assembly constituency|Kozhikode North]]
+| [[A. Pradeep Kumar]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,192
+| 48.40
+| P. M. Suresh Babu
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 36,319
+| 27.39
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |27,873
+|-
+! 28
+| [[Kozhikode South Assembly constituency|Kozhikode South]]
+| [[M. K. Muneer]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 49,863
+| 43.13
+| A. P. Abdul Wahab
+| {{Party name with color|Indian National League}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 43,536
+| 37.66
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |6,327
+|-
+! 29
+| [[Beypore Assembly constituency|Beypore]]
+| [[V. K. C. Mammed Koya]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 69,114
+| 44.39
+| Adam Mulsi M.P.
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 54,751
+| 42.69
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |14,363
+|-
+! 30
+| [[Kunnamangalam Assembly constituency|Kunnamangalam]]
+| [[P. T. A. Rahim]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 77,410
+| 42.92
+| [[T. Siddique]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 66,205
+| 36.71
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |11,205
+|-
+! 31
+| [[Koduvally Assembly constituency|Koduvally]]
+| [[Karat Razack]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 61,033
+| 44.42
+| M. A. Razack Master
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 60,460
+| 44.01
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |573
+|-
+! 32
+| [[Thiruvambady Assembly constituency|Thiruvambady]]
+| [[George M. Thomas (Indian politician)|George M. Thomas]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 62,324
+| 45.93
+| V. M. Ummer Master
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 59,316
+| 43.72
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |3,008
+|-
+! colspan="17" | [[Malappuram district]]
+|-
+! 33
+| [[Kondotty Assembly constituency|Kondotty]]
+| [[T. V. Ibrahim]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,668
+| 46.58
+| K. P. Beerankutty
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 59,014
+| 39.46
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |10,654
+|-
+! 34
+| [[Eranad Assembly constituency|Eranad]]
+| [[P. K. Basheer]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,048
+| 50.83
+| K. T. Abdurahiman
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 56,155
+| 41.34
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |12,893
+|-
+! 35
+| [[Nilambur Assembly constituency|Nilambur]]
+| [[P. V. Anvar]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 77,858
+| 47.91
+| [[Aryadan Shoukath]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 66,354
+| 40.83
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |11,504
+|-
+! 36
+| [[Wandoor Assembly constituency|Wandoor]] (SC)
+| [[A. P. Anil Kumar]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 81,964
+| 52.59
+| K. Nishanth
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 58,100
+| 37.28
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |23,864
+|-
+! 37
+| [[Manjeri Assembly constituency|Manjeri]]
+| [[M. Ummer]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,779
+| 50.22
+| K. Mohandas
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 50,163
+| 36.10
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |19,616
+|-
+! 38
+| [[Perinthalmanna Assembly constituency|Perinthalmanna]]
+| [[Manjalamkuzhi Ali]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 70,990
+| 46.89
+| V. Sasikumar
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,411
+| 46.50
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |579
+|-
+! 39
+| [[Mankada Assembly constituency|Mankada]]
+| [[T. A. Ahmed Kabeer]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,165
+| 46.08
+| T. K. Rasheed Ali
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,657
+| 45.07
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |1,508
+|-
+! 40
+| [[Malappuram Assembly constituency|Malappuram]]
+| [[P. Ubaidulla]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 81,072
+| 57.16
+| K. P. Sumathi
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 45,400
+| 32.01
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |36,672
+|-
+! 41
+| [[Vengara Assembly constituency|Vengara]]
+| [[P. K. Kunhalikutty]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 72,181
+| 60.01
+| P. P. Basheer
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 34,124
+| 28.37
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |38,057
+|-
+! 42
+| [[Vallikunnu Assembly constituency|Valikunnu]]
+| [[Abdul Hameed Master]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 59,720
+| 43.44
+| O. K. Thangal
+| {{Party name with color|Indian National League}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 47,110
+| 34.27
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |12,610
+|-
+! 43
+| [[Tirurangadi Assembly constituency|Tirurangadi]]
+| [[P. K. Abdu Rabb]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 62,927
+| 46.53
+| Niyas Pulikkalakath
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 56,884
+| 42.06
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |6,043
+|-
+! 44
+| [[Tanur Assembly constituency|Tanur]]
+| [[V. Abdurahiman]]
+| {{Party name with color|National Secular Conference}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,772
+| 45.78
+| [[Abdurahiman Randathani]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 59,554
+| 42.29
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |5,018
+|-
+! 45
+| [[Tirur Assembly constituency|Tirur]]
+| [[C. Mammootty]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 73,432
+| 46.85
+| Gafoor P. Lillis
+| {{Party name with color|National Secular Conference}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 66,371
+| 42.34
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |7,061
+|-
+! 46
+| [[Kottakkal Assembly constituency|Kottakkal]]
+| [[Abid Hussain Thangal]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 71,768
+| 48.34
+| N. A. Mohammed Kutty
+| {{Party name with color|Nationalist Congress Party}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 56,726
+| 38.21
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |15,042
+|-
+! 47
+| [[Thavanur Assembly constituency|Thavanur]]
+| [[K. T. Jaleel]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 68,179
+| 47.97
+| Ifthiquarudeen Master
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,115
+| 35.96
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |17,064
+|-
+! 48
+| [[Ponnani Assembly constituency|Ponnani]]
+| [[P. Sreeramakrishnan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 69,332
+| 48.91
+| P. T. Ajay Mohan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 53,692
+| 37.87
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |15,540
+|-
+! colspan="17" | [[Palakkad district]]
+|-
+! 49
+| [[Thrithala Assembly constituency|Thrithala]]
+| [[V. T. Balram]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 66,505
+| 47.16
+| Subaida Ishac
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 55,958
+| 39.68
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |10,547
+|-
+! 50
+| [[Pattambi Assembly constituency|Pattambi]]
+| [[Muhammad Muhassin]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,025
+| 45.69
+| [[C. P. Mohammed]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,621
+| 40.41
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,404
+|-
+! 51
+| [[Shornur Assembly constituency|Shornur]]
+| [[P. K. Sasi]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 66,165
+| 46.71
+| C. Sangeetha
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 41,618
+| 29.38
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |25,447
+|-
+! 52
+| [[Ottapalam Assembly constituency|Ottapalam]]
+| [[P. Unni]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,161
+| 44.71
+| [[Shanimol Usman]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,073
+| 34.00
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |16,088
+|-
+! 53
+| [[Kongad Assembly constituency|Kongad]] (SC)
+| [[K. V. Vijayadas]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 60,790
+| 45.35
+| Pandalam Sudhakaran
+| {{party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 47,519
+| 35.45
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |13,271
+|-
+! 54
+| [[Mannarkkad Assembly constituency|Mannarkkad]]
+| [[N. Samsudheen]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 73,163
+| 49.27
+| K. P. Suresh Raj
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 60,838
+| 40.97
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |12,325
+|-
+! 55
+| [[Malampuzha Assembly constituency|Malampuzha]]
+| [[V. S. Achuthanandan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 73,299
+| 45.90
+| C. Krishnakumar
+| {{party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 46,157
+| 28.90
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |27,142
+|-
+! 56
+| [[Palakkad Assembly constituency|Palakkad]]
+| [[Shafi Parambil]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 57,559
+| 41.77
+| [[Sobha Surendran]]
+| {{party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 40,076
+| 29.08
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |17,383
+|-
+! 57
+| [[Tarur Assembly constituency|Tarur]] (SC)
+| [[A. K. Balan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,047
+| 52.25
+| C. Prakash
+| {{Party name with color|Kerala Congress (Jacob)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 43,979
+| 34.28
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |23,068
+|-
+! 58
+| [[Chittur Assembly constituency|Chittur]]
+| [[K. Krishnankutty]]
+| {{Party name with color|Janata Dal (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 69,270
+| 44.90
+| [[K. Achuthan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 61,985
+| 40.18
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,285
+|-
+! 59
+| [[Nenmara Assembly constituency|Nenmara]]
+| [[K. Babu (CPI-M politician)|K. Babu]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 66,316
+| 42.90
+| A. V. Gopinathan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 58,908
+| 38.11
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |8,108
+|-
+! 60
+| [[Alathur Assembly constituency|Alathur]]
+| [[K. D. Prasenan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 71,206
+| 55.35
+| K. Kusala Kumar
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 35,146
+| 27.32
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |36,060
+|-
+! colspan="17" | [[Thrissur district]]
+|-
+! 61
+| [[Chelakkara Assembly constituency|Chelakkara]] (SC)
+| [[U. R. Pradeep]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,771
+| 44.81
+| Thulasi
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 57,571
+| 38.07
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |10,200
+|-
+! 62
+| [[Kunnamkulam Assembly constituency|Kunnamkulam]]
+| [[A. C. Moideen]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 63,274
+| 41.92
+| C. P. John
+| bgcolor="{{party color|Communist Marxist Party Kerala State Committee}}"|
+| [[Communist Marxist Party Kerala State Committee|CMPKSC]]
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 55,492
+| 36.77
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,782
+|-
+! 63
+| [[Guruvayur Assembly constituency|Guruvayur]]
+| [[K. V. Abdul Khader]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 66,088
+| 44.76
+| P. M. Sadiqali
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,990
+| 40.75
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |15,098
+|-
+! 64
+| [[Manalur Assembly constituency|Manalur]]
+| [[Murali Perunelly]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,422
+| 43.30
+| O. Abdu Rahimankutty
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,097
+| 31.42
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |19,325
+|-
+! 65
+| [[Wadakkanchery Assembly constituency|Wadakkanchery]]
+| [[Anil Akkara]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 65,535
+| 41.02
+| Mary Thomas
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 65,492
+| 40.99
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |43
+|-
+! 66
+| [[Ollur Assembly constituency|Ollur]]
+| [[K. Rajan (politician)|K. Rajan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 71,666
+| 47.55
+| [[M. P. Vincent]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 58,418
+| 38.76
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |13,248
+|-
+! 67
+| [[Thrissur Assembly constituency|Thrissur]]
+| [[V. S. Sunil Kumar]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 53,664
+| 42.19
+| [[Padmaja Venugopal]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 46,677
+| 36.70
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |6,987
+|-
+! 68
+| [[Nattika Assembly constituency|Nattika]] (SC)
+| [[Geetha Gopi]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,218
+| 46.65
+| K. V. Dasan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 43,441
+| 28.86
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |26,777
+|-
+! 69
+| [[Kaipamangalam Assembly constituency|Kaipamangalam]]
+| [[E. T. Taison Master]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 66,824
+| 49.60
+| M. T. Muhammad Nahas
+| {{Party name with color|Revolutionary Socialist Party (India)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 33,384
+| 24.78
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |33,440
+|-
+! 70
+| [[Irinjalakuda Assembly constituency|Irinjalakuda]]
+| [[K. U. Arunan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 59,730
+| 40.00
+| [[Thomas Unniyadan]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 57,019
+| 42.33
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |2,711
+|-
+! 71
+| [[Puthukkad Assembly constituency|Puthukkad]]
+| [[C. Raveendranath]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 79,464
+| 50.07
+| Sundaran Kunnathully
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 40,986
+| 25.82
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |38,478
+|-
+! 72
+| [[Chalakudy Assembly constituency|Chalakudy]]
+| [[B. D. Devassy]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 74,251
+| 49.37
+| T. U. Radhakrishnan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 47,603
+| 31.65
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |26,648
+|-
+! 73
+| [[Kodungallur Assembly constituency|Kodungallur]]
+| [[V. R. Sunil Kumar]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,909
+| 45.71
+| K. P. Dhanapalan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 45,118
+| 30.37
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |22,791
+|-
+! colspan="17" | [[Ernakulam district]]
+|-
+! 74
+| [[Perumbavoor Assembly constituency|Perumbavoor]]
+| [[Eldhose Kunnappilly]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 64,285
+| 44.11
+| Mammikutty P.
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,197
+| 39.25
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |7,288
+|-
+! 75
+| [[Angamaly Assembly constituency|Angamaly]]
+| [[Roji M. John]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 66,666
+| 48.96
+| Benny Moonjely
+| {{Party name with color|Janata Dal (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,480
+| 42.22
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |9,186
+|-
+! 76
+| [[Aluva Assembly constituency|Aluva]]
+| [[Anwar Sadath]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 69,568
+| 47.39
+| V. Saleem
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 50,733
+| 34.56
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |18,835
+|-
+! 77
+| [[Kalamassery Assembly constituency|Kalamassery]]
+| [[V. K. Ebrahim Kunju]]
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 68,726
+| 44.37
+| A. M. Yousaf
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 56,608
+| 36.55
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |12,118
+|-
+! 78
+| [[Paravur Assembly constituency|Paravur]]
+| [[V. D. Satheesan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 74,985
+| 46.70
+| Sarada Mohan
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 54,351
+| 33.85
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |20,634
+|-
+! 79
+| [[Vypen Assembly constituency|Vypen]]
+| [[S. Sharma]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 68,526
+| 52.24
+| K. R. Subhash
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 49,173
+| 37.49
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |19,353
+|-
+! 80
+| [[Kochi Assembly constituency|Kochi]]
+| [[K. J. Maxi]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 47,967
+| 38.70
+| [[Dominic Presentation]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 46,881
+| 37.82
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |1,086
+|-
+! 81
+| [[Thrippunithura Assembly constituency|Thrippunithura]]
+| [[M. Swaraj]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 62,697
+| 40.53
+| [[K. Babu]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 58,230
+| 37.64
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |4,467
+|-
+! 82
+| [[Ernakulam Assembly constituency|Ernakulam]]
+| [[Hibi Eden]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 57,819
+| 52.32
+| M. Anil Kumar
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 35,870
+| 32.46
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |21,949
+|-
+! 83
+| [[Thrikkakara Assembly constituency|Thrikkakara]]
+| [[P. T. Thomas]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 61,451
+| 45.42
+| Sebastian Paul
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 49,455
+| 36.87
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |11,996
+|-
+! 84
+| [[Kunnathunad Assembly constituency|Kunnathunad]] (SC)
+| [[V. P. Sajeendran]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 65,445
+| 44.13
+| Shiji Shivaji
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 62,766
+| 42.32
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |2,679
+|-
+! 85
+| [[Piravom Assembly constituency|Piravom]]
+| [[Anoop Jacob]]
+| {{Party name with color|Kerala Congress (Jacob)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 73,770
+| 45.77
+| M. J. Jacob
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,575
+| 41.93
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |6,195
+|-
+! 86
+| [[Muvattupuzha Assembly constituency|Muvattupuzha]]
+| [[Eldho Abraham]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,269
+| 49.27
+| [[Joseph Vazhackkan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 60,894
+| 42.70
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |9,375
+|-
+! 87
+| [[Kothamangalam Assembly constituency|Kothamangalam]]
+| [[Antony John]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 65,467
+| 49.26
+| [[T. U. Kuruvilla]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 46,185
+| 37.88
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |19,282
+|-
+! colspan="17" | [[Idukki district]]
+|-
+! 88
+| [[Devikulam Assembly constituency|Devikulam]] (SC)
+| [[S. Rajendran (CPI(M) politician)|S. Rajendran]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 49,510
+| 42.18
+| A. K. Moni
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 43,728
+| 37.25
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |5,782
+|-
+! 89
+| [[Udumbanchola Assembly constituency|Udumbanchola]]
+| [[M. M. Mani]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 50,813
+| 40.32
+| Senapathy Venu
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 49,704
+| 39.44
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |1,109
+|-
+! 90
+| [[Thodupuzha Assembly constituency|Thodupuzha]]
+| [[P. J. Joseph]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 76,564
+| 54.08
+| Roy Varicattu
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 30,977
+| 21.88
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |46,587
+|-
+! 91
+| [[Idukki Assembly constituency|Idukki]]
+| [[Roshy Augustine]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 60,556
+| 42.86
+| [[K. Francis George]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 51,223
+| 36.26
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |9,333
+|-
+! 92
+| [[Peerumade Assembly constituency|Peerumade]]
+| [[E. S. Bijimol]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 56,584
+| 43.94
+| Syriac Thomas
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,270
+| 43.70
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |314
+|-
+! colspan="17" | [[Kottayam district]]
+|-
+! 93
+| [[Pala Assembly constituency|Pala]]
+| [[K. M. Mani]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,884
+| 42.13
+| [[Mani C. Kappan]]
+| {{Party name with color|Nationalist Congress Party}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 54,181
+| 38.76
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |2,603
+|-
+! 94
+| [[Kaduthuruthy Assembly constituency|Kaduthurthy]]
+| [[Mons Joseph]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 73,393
+| 58.03
+| [[Skaria Thomas]]
+| bgcolor="{{party color|Kerala Congress (Skaria Thomas)}}"|
+| [[Kerala Congress (Skaria Thomas)|KC(ST)]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 31,537
+| 24.80
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |42,256
+|-
+! 95
+| [[Vaikom Assembly constituency|Vaikom]] (SC)
+| [[C. K. Asha]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 61,997
+| 46.95
+| A. Saneeshkumar
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 37,413
+| 28.33
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |24,584
+|-
+! 96
+| [[Ettumanoor Assembly constituency|Ettumanoor]]
+| [[K. Suresh Kurup]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 53,805
+| 40.67
+| [[Thomas Chazhikadan]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 44,906
+| 33.94
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |8,899
+|-
+! 97
+| [[Kottayam Assembly constituency|Kottayam]]
+| [[Thiruvanchoor Radhakrishnan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 73,894
+| 57.46
+| Reji Sakhariya
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 40,262
+| 31.31
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |33,632
+|-
+! 98
+| [[Puthuppally Assembly constituency|Puthuppally]]
+| [[Oommen Chandy]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 71,597
+| 53.42
+| Jaick C. Thomas
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 44,505
+| 33.20
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |27,092
+|-
+! 99
+| [[Changanassery Assembly constituency|Changanassery]]
+| [[C. F. Thomas]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,371
+| 40.04
+| K. C. Joseph
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 48,522
+| 38.57
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |1,849
+|-
+! 100
+| [[Kanjirappally Assembly constituency|Kanjirappally]]
+| [[N. Jayaraj]]
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 53,126
+| 38.86
+| V. B. Binu
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 49,236
+| 36.02
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |3,890
+|-
+! 101
+| [[Poonjar Assembly constituency|Poonjar]]
+| [[P. C. George]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+|
+| N/A
+| 63,621
+| 43.65
+| Georgekutty Augusty
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 35,800
+| 24.56
+| style="background:{{party color|Independent politician}} ; color:black;" |27,821
+|-
+! colspan="17" | [[Alappuzha district]]
+|-
+! 102
+| [[Aroor Assembly constituency|Aroor]]
+| [[A. M. Ariff]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 84,720
+| 52.34
+| C. R. Jayaprakash
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 46,201
+| 28.54
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |38,519
+|-
+! 103
+| [[Cherthala Assembly constituency|Cherthala]]
+| [[P. Thilothaman]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 81,197
+| 45.70
+| S. Sarath
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 74,001
+| 41.65
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,196
+|-
+! 104
+| [[Alappuzha Assembly constituency|Alappuzha]]
+| [[T. M. Thomas Issac]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 83,219
+| 53.29
+| Laly Vincent
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 52,719
+| 33.42
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |31,032
+|-
+! 105
+| [[Ambalappuzha Assembly constituency|Ambalappuzha]]
+| [[G. Sudhakaran]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 63,069
+| 47.32
+| Shaik P. Harriz
+| {{Party name with color|Janata Dal (United)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 40,448
+| 33.42
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |22,621
+|-
+! 106
+| [[Kuttanad Assembly constituency|Kuttanad]]
+| [[Thomas Chandy]]
+| {{Party name with color|Nationalist Congress Party}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 50,114
+| 38.52
+| Jacob Abraham
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 45,223
+| 34.76
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |4,891
+|-
+! 107
+| [[Haripad Assembly constituency|Haripad]]
+| [[Ramesh Chennithala]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 75,980
+| 51.05
+| P. Prasad
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,359
+| 38.54
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |18,621
+|-
+! 108
+| [[Kayamkulam Assembly constituency|Kayamkulam]]
+| [[U. Prathibha Hari]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 72,956
+| 46.53
+| M. Liju
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 61,099
+| 38.96
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |11,757
+|-
+! 109
+| [[Mavelikara Assembly constituency|Mavelikara]] (SC)
+| [[R. Rajesh]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 74,455
+| 49.81
+| Baiju Kalasala
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 43,013
+| 28.74
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |31,542
+|-
+! 110
+| [[Chengannur Assembly constituency|Chengannur]]
+| [[K. K. Ramachandran Nair]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 52,880
+| 36.34
+| [[P. C. Vishnunath]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 44,897
+| 30.85
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,983
+|-
+! colspan="17" | [[Pathanamthitta district]]
+|-
+! 111
+| [[Thiruvalla Assembly constituency|Thiruvalla]]
+| [[Mathew T. Thomas]]
+| {{Party name with color|Janata Dal (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 59,660
+| 41.28
+| Joseph M. Puthussery
+| {{Party name with color|Kerala Congress (Mani)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,398
+| 35.56
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |8,462
+|-
+! 112
+| [[Ranni Assembly constituency|Ranni]]
+| [[Raju Abrham]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 58,749
+| 43.87
+| Mariamma Cherian
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 44,153
+| 32.97
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |14,596
+|-
+! 113
+| [[Aranmula Assembly constituency|Aranmula]]
+| [[Veena George]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,523
+| 39.97
+| [[K. Sivadasan Nair]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,877
+| 35.23
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,646
+|-
+! 114
+| [[Konni Assembly constituency|Konni]]
+| [[Adoor Prakash]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 72,800
+| 50.81
+| R. Sanal Kumar
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 52,052
+| 36.33
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |20,748
+|-
+! 115
+| [[Adoor Assembly constituency|Adoor]] (SC)
+| [[Chittayam Gopakumar]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 76,034
+| 49.05
+| K. K. Shaju
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,574
+| 32.62
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |25,460
+|-
+! colspan="17" | [[Kollam district]]
+|-
+! 116
+| [[Karunagappally Assembly constituency|Karunagappally]]
+| [[R. Ramachandran (politician)|R. Ramachandran]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 69,902
+| 43.06
+| [[C. R. Mahesh]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 68,143
+| 41.97
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |1,759
+|-
+! 117
+| [[Chavara Assembly constituency|Chavara]]
+| [[N. Vijayan Pillai]]
+| bgcolor="{{party color|Communist Marxist Party (Aravindakshan)}}"|
+| [[Communist Marxist Party (Aravindakshan)|CMP(A)]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,666
+| 46.80
+| [[Shibu Baby John]]
+| {{Party name with color|Revolutionary Socialist Party (India)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 58,477
+| 42.32
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |8,189
+|-
+! 118
+| [[Kunnathur Assembly constituency|Kunnathur]] (SC)
+| [[Kovoor Kunjumon]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 75,725
+| 47.38
+| Ullas Kovur
+| {{Party name with color|Revolutionary Socialist Party (India)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 55,196
+| 34.54
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |20,529
+|-
+! 119
+| [[Kottarakkara Assembly constituency|Kottarakkara]]
+| [[P. Aisha Potty]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 83,443
+| 55.44
+| Savin Sathyan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 40,811
+| 27.11
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |42,632
+|-
+! 120
+| [[Pathanapuram Assembly constituency|Pathanapuram]]
+| [[K. B. Ganesh Kumar]]
+| {{Party name with color|Kerala Congress (B)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 74,429
+| 52.39
+| P. V. Jagadish Kumar
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 49,867
+| 35.10
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |24,562
+|-
+! 121
+| [[Punalur Assembly constituency|Punalur]]
+| [[K. Raju]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 82,136
+| 56.85
+| A. Younus Kunju
+| {{Party name with color|Indian Union Muslim League}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 48,554
+| 33.61
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |33,582
+|-
+! 122
+| [[Chadayamangalam Assembly constituency|Chadayamangalam]]
+| [[Mullakkara Ratnakaran]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 71,262
+| 49.10
+| M. M. Hassan
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 49,334
+| 33.99
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |21,928
+|-
+! 123
+| [[Kundara Assembly constituency|Kundara]]
+| [[J. Mercy Kutty Amma]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 79,047
+| 51.81
+| [[Rajmohan Unnithan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 48,587
+| 31.85
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |30,460
+|-
+! 124
+| [[Kollam Assembly constituency|Kollam]]
+| [[Mukesh (actor)|M. Mukesh]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 63,103
+| 48.81
+| Sooraj Ravi
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 45,492
+| 35.19
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |17,611
+|-
+! 125
+| [[Eravipuram Assembly constituency|Eravipuram]]
+| [[M. Noushad]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 65,392
+| 52.33
+| [[A. A. Azeez]]
+| {{Party name with color|Revolutionary Socialist Party (India)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 36,589
+| 29.28
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |28,803
+|-
+! 126
+| [[Chathannoor Assembly constituency|Chathanoor]]
+| [[G. S. Jayalal]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 67,606
+| 50.76
+| B. B. Gopakumar
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 33,199
+| 24.92
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |34,407
+|-
+! colspan="17" | [[Thiruvananthapuram district]]
+|-
+! 127
+| [[Varkala Assembly constituency|Varkala]]
+| [[V. Joy]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 53,102
+| 41.43
+| [[Varkala Kahar]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,716
+| 39.57
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |2,386
+|-
+! 128
+| [[Attingal Assembly constituency|Attingal]] (SC)
+| [[B. Satyan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 72,808
+| 52.71
+| K. Chandrababu
+| {{Party name with color|Revolutionary Socialist Party (India)}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 32,425
+| 23.47
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |40,383
+|-
+! 129
+| [[Chirayinkeezhu Assembly constituency|Chirayinkeezhu]] (SC)
+| [[V. Sasi]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 64,692
+| 46.75
+| K. S. Ajith Kumar
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,370
+| 36.40
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |14,322
+|-
+! 130
+| [[Nedumangad Assembly constituency|Nedumangad]]
+| [[C. Divakaran]]
+| {{Party name with color|Communist Party of India}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,745
+| 38.16
+| [[Palode Ravi]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 54,124
+| 35.76
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |3,621
+|-
+! 131
+| [[Vamanapuram Assembly constituency|Vamanapuram]]
+| [[D. K. Murali]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 65,848
+| 46.56
+| T. Sarathchandra Prasad
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 56,252
+| 39.77
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |9,596
+|-
+! 132
+| [[Kazhakootam Assembly constituency|Kazhakootam]]
+| [[Kadakampally Surendran]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 50,079
+| 37.38
+| [[V. Muraleedharan]]
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 42,732
+| 31.90
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |7,347
+|-
+! 133
+| [[Vattiyoorkavu Assembly constituency|Vattiyoorkavu]]
+| [[K. Muraleedharan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,322
+| 37.43
+| [[Kummanam Rajasekharan]]
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 43,700
+| 31.87
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |7,522
+|-
+! 134
+| [[Thiruvananthapuram Assembly constituency|Thiruvananthapuram]]
+| [[V. S. Sivakumar]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 46,474
+| 36.82
+| [[Antony Raju]]
+| bgcolor="{{party color|Independent politician}}"|
+| [[Independent politician|IND]]
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 35,569
+| 28.18
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |10,905
+|-
+! 135
+| [[Nemom Assembly constituency|Nemom]]
+| [[O. Rajagopal]]
+| {{Party name with color|Bharatiya Janata Party}}
+| {{Party name with color|National Democratic Alliance}}
+| 67,813
+| 47.46
+| [[V. Sivankutty]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 59,142
+| 41.39
+| style="background:{{party color|Bharatiya Janata Party}} ; color:white;" |8,613
+|-
+! 136
+| [[Aruvikkara Assembly constituency|Aruvikkara]]
+| [[K. S. Sabarinathan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 70,910
+| 49.32
+| A. A. Rasheed
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 49,596
+| 34.50
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |21,314
+|-
+! 137
+| [[Parassala Assembly constituency|Parassala]]
+| [[C. K. Hareendrakumar]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 70,156
+| 44.41
+| [[A. T. George]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 51,590
+| 32.66
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |18,566
+|-
+! 138
+| [[Kattakada Assembly constituency|Kattakada]]
+| [[I. B. Satheesh]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 51,614
+| 35.93
+| [[N. Sakthan]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 50,765
+| 35.34
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |849
+|-
+! 139
+| [[Kovalam Assembly constituency|Kovalam]]
+| [[M. Vincent]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 60,268
+| 47.60
+| [[Jameela Prakasam]]
+| {{Party name with color|Janata Dal (Secular)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 57,653
+| 37.45
+| style="background:{{party color|United Democratic Front (Kerala)}} ; color:white;" |3,415
+|-
+! 140
+| [[Neyyattinkara Assembly constituency|Neyyatinkara]]
+| [[K. Ansalan]]
+| {{Party name with color|Communist Party of India (Marxist)}}
+| {{Party name with color|Left Democratic Front (Kerala)}}
+| 63,559
+| 47.20
+| [[R. Selvaraj (politician)|R. Selvaraj]]
+| {{Party name with color|Indian National Congress}}
+| {{Party name with color|United Democratic Front (Kerala)}}
+| 54,016
+| 40.12
+| style="background:{{party color|Left Democratic Front (Kerala)}} ; color:white;" |9,543
+|}
+
+'''Notable performances of other candidates'''
+
+01.P.C.George won from Poonjar Constituency with a margion 27821 votes<ref>{{Cite web |url=https://www.india.com/assembly-election-2016/kerala/poonjar/ |title=Poonjar Assembly Election 2016 Latest News & Results |website=India.com}}</ref>
+
+== By-elections ==
+* [[2019 Kerala Legislative Assembly by-elections]]
+
+{| class="wikitable sortable collapsible" cellpadding="5" style="width:85%; font-size:95%;"
+|-
+! Year
+! Constituency
+! District
+! scope="col" class="unsortable" style="background:#0087BD; color:black;" | UDF candidate
+! Party
+! Votes
+! scope="col" class="unsortable" style="background:#ED1C24; color:black;" | LDF candidate
+! Party
+! Votes
+! scope="col" class="unsortable" style="background:#F97D09; color:black;" | NDA candidate
+! Party
+! Votes
+! Winner
+! Margin
+! Previous Winning Alliance
+! Winning Alliance
+! Winning party
+|-
+| 2017
+| [[Vengara Assembly constituency|Vengara]]
+| [[Malappuram]]
+| style="background:lightgreen;" | K.N.A. Khader
+| IUML
+| 65227
+| P.P.Basheer
+| CPI(M)
+| 41917
+| K Janachandran
+| BJP
+| 5728
+| K.N.A. Khader
+| 24123
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#347C17; color:white;" | IUML
+|-
+| 2018
+| [[Chengannur Assembly constituency|Chengannur]]
+| [[Alappuzha]]
+| D.Vijayakumar
+| INC
+| 46347
+| style="background:lightgreen;" |[[Saji Cherian]]
+| CPI(M)
+| 67303
+| [[P. S. Sreedharan Pillai]]
+| BJP
+| 35270
+| Saji Cherian
+| 20956
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#FF0000; color:black;" | CPI(M)
+|-
+| 2019
+| [[Manjeshwaram Assembly constituency|Manjeshwaram]]
+| [[Kasaragod]]
+| style="background:lightgreen;" |[[M. C. Kamaruddin]]
+| IUML
+| 65407
+| M Shankara Rai
+| CPI(M)
+| 38233
+| Ravisha Thanthri Kuntar
+| BJP
+| 57484
+| M. C. Kamaruddin<ref>{{Cite web |url=https://www.youtube.com/watch?v=xXVnbHvo7uk |title=Manjeshwaram Bypolls: UDF Candidate MC Kamarudheen Kick-starts Election Campaign&#124; Mathrubhumi News |via=YouTube}}</ref>
+| 7923
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#347C17; color:white;" | IUML
+|-
+| 2019
+| [[Pala Assembly constituency|Pala]]
+| [[Kottayam]]
+| Jose Tom Pulikunnel<ref>{{Cite web |url=https://www.thenewsminute.com/article/pala-bye-election-udf-candidate-contest-under-pineapple-symbol-not-two-leaves-108557 |title=Pala bye-election: UDF candidate to contest under 'pineapple' symbol, not 'two leaves' |date=8 September 2019 |website=The News Minute}}</ref>
+| UDF Independent
+| 51194
+| style="background:lightgreen;" |[[Mani C. Kappan]]
+| NCP
+| 54137
+| N.Hari
+| BJP
+| 18044
+| Mani C. Kappan<ref>{{Cite web |url=https://timesofindia.indiatimes.com/city/lucknow/byelection-results-hamirpur-pala-dantewada-badharghat-counting-live-updates/liveblog/71322514.cms |title=By Election results live: Election results of Hamirpur, Pala, Dantewada, Badarghat |website=The Times of India |date=27 September 2019}}</ref><ref>{{Cite web |url=https://www.firstpost.com/politics/pala-election-results-updates-kerala-by-poll-2019-vote-counting-elections-latest-news-cpm-congress-hamirpur-dantewada-up-chunav-ayog-bypoll-assembly-vidhan-sabha-bjp-congress-winner-party-candida-7411601.html |title=Pala, Dantewada, Hamirpur Election Results Updates: LDF wins in Kerala Congress bastion after 54 years; BJP secures win in UP bypoll |date=27 September 2019 |website=Firstpost}}</ref><ref>{{Cite web |url=https://www.ndtv.com/kerala-news/by-election-result-2019-left-wins-kerala-assembly-seat-after-decades-of-congress-led-udf-rule-2108140 |title=By-Election Result 2019: Left Wins Kerala Assembly Seat After Decades Of Congress-Led UDF Rule |website=NDTV.com}}</ref>
+| 2943
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#008080; color:white;" | NCP
+|-
+| 2019
+| [[Vattiyoorkavu Assembly constituency|Vattiyoorkavu]]
+| [[Thiruvananthapuram]]
+| K. Mohan Kumar<ref>{{Cite web |url=https://www.youtube.com/watch?v=bIapHcTTdIA |title=K Mohan Kumar to contest for congress from Vattiyoorkavu |date=26 September 2019 |via=YouTube}}</ref>
+| INC
+| 40365
+| style="background:lightgreen;" |[[V. K. Prasanth]]
+| CPI(M)
+| 54830
+| Adv S Suresh
+| BJP
+| 27453
+| V. K. Prasanth
+| 14465
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#FF0000; color:black;" | CPI(M)
+|-
+| 2019
+| [[Konni Assembly constituency|Konni]]
+| [[Pathanamthitta]]
+| P Mohanraj
+| INC
+| 44146
+| style="background:lightgreen;" |[[K. U. Jenish Kumar]]
+| CPI(M)
+| 54099
+| K. Surendran
+| BJP
+| 39786
+| K. U. Jenish Kumar
+| 9953
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#FF0000; color:black;" | CPI(M)
+|-
+| 2019
+| [[Aroor Assembly constituency|Aroor]]
+| [[Alappuzha]]
+| style="background:lightgreen;" |[[Shanimol Usman]]
+| INC
+| 69356
+| Manu C. Pulikkal
+| CPI(M)
+| 67277
+| K.P.Prakash Babu
+| BJP
+| 16289
+| Shanimol Usman
+| 2079
+| style="background:#ED1C24; color:white;" | LDF
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#00BFFF; color:white;" | INC
+|-
+| 2019
+| [[Ernakulam Assembly constituency|Ernakulam]]
+| [[Ernakulam]]
+| style="background:lightgreen;" | [[T. J. Vinod]]
+| INC
+| 37891
+| Adv. Manu Roy
+| LDF Independent
+| 34141
+| C.G.Rajagopal
+| BJP
+| 13351
+| T. J. Vinod
+| 3750
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#0087BD; color:white;" | UDF
+| style="background:#00BFFF; color:white;" | INC
+|}
+
+No by-election is conducted for Kuttanad and Chavara
+
+Assembly seat sharing post – bye election results:
+
+{| class="wikitable" style="text-align:center; width:300px; height:50px"
+|-
+! [[United Democratic Front (Kerala)|UDF]] !! [[Left Democratic Front (Kerala)|LDF]]!! [[National Democratic Alliance|NDA]]!! Vacant Seats
+|-
+| style="background:{{party color|United_Democratic_Front_(Kerala)}}; width:25%"|45
+| style="background:{{party color|Left_Democratic_Front_(Kerala)}}; width:25%"|91
+| style="background:{{party color|National_Democratic_Alliance_(India)}}; width:25%|1
+| 2
+|}
+
+== See also ==
+* [[2015 Kerala local body elections]]
+* [[2020 Kerala local body elections]]
+* [[GoBackModi]]<ref>{{cite web |url=https://indianexpress.com/article/india/india-news-india/pomonemodi-trends-across-india-as-kerala-twitterati-vent-ire-at-pm/ |title=#PoMoneModi: Angry Kerala responds to PM Modi's Somalia comparision |date=12 May 2016}}</ref>
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://ceo.kerala.gov.in/ Chief Electoral Officer, Kerala]
+* [http://eci.nic.in/eci/eci.html Election Commission of India]
+* [http://www.keralaassembly.com/results Kerala Assembly Election 2016 Results] {{Webarchive|url=https://web.archive.org/web/20200216105433/http://www.keralaassembly.com/results |date=16 February 2020 }}
+* [http://udfkerala.org/ UDF Kerala]
+* [http://ldfkeralam.org/ LDF Keralam]
+* [https://web.archive.org/web/20160517184033/http://election.keralabjp.org/ NDA Kerala]
+
+{{Kerala elections}}
+
+[[Category:2010s in Kerala|2016]]
+[[Category:2016 State Assembly elections in India|Kerala]]
+[[Category:State Assembly elections in Kerala|2016]]

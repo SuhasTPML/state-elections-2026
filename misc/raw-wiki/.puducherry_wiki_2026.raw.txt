@@ -1,0 +1,1009 @@
+{{Short description|Upcoming Indian union territory election}}
+{{Use dmy dates|date=October 2025}}
+{{Use Indian English|date=October 2025}}
+{{Infobox election
+| election_name      = 2026 Puducherry Legislative Assembly election
+| country            = India
+| flag_year          = 
+| flag_image         = 
+| type               = legislative
+| vote_type          = Popular <!-- default -->
+| ongoing            = yes
+| party_colour       = 
+| party_name         = 
+| alliance_name      = 
+| previous_election  = 2021 Puducherry Legislative Assembly election
+| registered         = 944,211 ({{down}} 6.01%)<ref>{{cite web|url=https://ceopuducherry.py.gov.in/ac_wise_electrol.php|title=Assembly wise electors for Puducherry Assembly Elections, 2026|work=Chief Electoral Officer, Puducherry|access-date=18 February 2026}}</ref>
+| turnout            = 
+| previous_year      = 2021
+| outgoing_members   = [[15th Puducherry Assembly#Members of 15th Legislative Assembly|outgoing members]]
+| election_date      = April–May 2026
+| elected_members    = 
+| next_election      = 
+| next_year          = 2031
+| votes_for_election = 
+| needed_votes       = 
+| seats_for_election = All 30 seats in the [[Puducherry Legislative Assembly]]
+| majority_seats     = 16
+| opinion_polls      = 
+| image_size         = 
+| map_image          = [[File:Wahlkreise zur Vidhan Sabha von Puducherry.svg|300px]]
+| map_size           = 
+| map_caption        = Map of the assembly constituencies in Puducherry
+| title              = [[List of Chief Ministers of Puducherry|Chief Minister]]
+| before_election    = [[N. Rangaswamy]]
+| before_party       = [[All India N.R. Congress|AINRC]]
+| image1             = {{CSS image crop|Image=The Chief Minister of Puducherry, Shri N. Rangaswamy calling on the Prime Minister, Shri Narendra Modi, in New Delhi on March 16, 2015 (N. Rangaswamy) (cropped).jpg|bSize=160|cWidth=100|cHeight=140|oLeft=35|oTop=5}}
+| leader1            = [[N. Rangaswamy]]
+| party1             = All India N.R. Congress
+| alliance1          = National Democratic Alliance
+| leader_since1      = 2011
+| leaders_seat1      = 
+| last_election1     = 25.85%, 10 seats
+| image2             = {{eppt|Dravida Munnetra Kazhagam|height=120|width=100}}
+| leader2            = [[R. Siva]]
+| party2             = Dravida Munnetra Kazhagam
+| leader_since2      = 2021
+| leaders_seat2      = 
+| alliance2          = [[Secular Progressive Alliance|SPA]]
+| last_election2     = 18.51%, 6 seats
+| image4             = {{eppt|Bharatiya Janata Party|height=120|width=100}}
+| leader4            = [[V. P. Ramalingam]]
+| party4             = Bharatiya Janata Party
+| leader_since4      = 2023
+| leaders_seat4      = 
+| alliance4          = National Democratic Alliance
+| last_election4     = 13.66%, 6 seats
+| image5             = {{CSS image crop|Image=Vaithilingam.jpg|bSize=150|cWidth=100|cHeight=120|oLeft=30|oTop=45}}
+| leader5            = [[V. Vaithilingam]]
+| party5             = Indian National Congress
+| leader_since5      = 2023
+| leaders_seat5      = '
+| alliance5          = [[Secular Progressive Alliance|SPA]]
+| last_election5     = 15.71%, 2 seats
+| map                = 
+| votes_counted      = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| reporting          = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| declared           = <!-- Use ONE out of votes_counted, reporting or declared, do not include percentage (%) sign-->
+| last_update        = 
+| seats_needed1      = {{increase}} 6
+| seats_needed2      = {{increase}} 10
+| seats_needed3      = 
+| seats_needed4      = {{increase}} 9
+| seats_needed5      = {{increase}} 13
+}}
+
+Legislative Assembly elections are expected to be held in [[Puducherry (union territory)|Puducherry]] before 15 June 2026 to elect [[List of constituencies of the Puducherry Legislative Assembly|30 members]] of the [[Puducherry Legislative Assembly]].
+
+== Background ==
+Elections to a [[State legislative assemblies of India|Legislative Assembly]] in India are usually held once in five years, and the [[Member of the Legislative Assembly|members of the legislative assembly]] are directly elected to serve five year terms from [[Single-member district|single-member constituencies]]. The tenure of [[Puducherry Legislative Assembly]] is scheduled to end on 15 June 2026.<ref>{{cite web |title=Term of the Houses |url=https://www.eci.gov.in/term-of-the-houses |archive-url=https://web.archive.org/web/20250807185225/https://www.eci.gov.in/term-of-the-houses |archive-date=7 August 2025 |access-date=1 June 2025|work=[[Election Commission of India]] |url-status=live }}</ref> In the [[2021 Puducherry Legislative Assembly election|previous assembly elections]] held in April 2021, the [[All India N.R. Congress]]-led [[National Democratic Alliance]] formed the [[Government of Puducherry|state government]] after winning 16 out of 30 seats in the assembly, with [[N. Rangaswamy]] sworn in as the [[Chief Minister of Puducherry|Chief Minister]].<ref>{{cite news |date=3 May 2021 |title=NR Congress-BJP alliance emerges victorious in Puducherry assembly polls |url=https://www.business-standard.com/article/elections/nr-congress-bjp-alliance-emerges-victorious-in-puducherry-assembly-polls-121050300106_1.html |archive-url=https://web.archive.org/web/20221206233900/https://www.business-standard.com/article/elections/nr-congress-bjp-alliance-emerges-victorious-in-puducherry-assembly-polls-121050300106_1.html |archive-date=6 December 2022 |work=[[Business Standard]] |access-date=1 June 2025}}</ref> In the later part of 2025, the [[Election Commission of India]] conducted a [[Special Intensive Revision]] after 24 years, to revise the electoral rolls.<ref>{{cite news |date=29 October 2025 |title=SIR rollout schedule announced in Puducherry |url=https://www.thehindu.com/news/cities/puducherry/sir-rollout-schedule-announced-in-puducherry/article70215905.ece |access-date=2 November 2025 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref>
+
+== Schedule ==
+{| class="wikitable"
+|-
+!Poll event
+!Date
+|-
+|Notification
+|
+|-
+|Deadline for filing nomination
+|
+|-
+|Scrutiny of nominations
+| 
+|-
+|Deadline for withdrawal of nomination
+| 
+|-
+|Polling
+|  
+|-
+|Counting of votes
+|  
+|}
+
+== Parties and alliances ==
+=== National Democratic Alliance ===
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+
+{| class="wikitable" width="60%" style="text-align:center;"
+| colspan="6" {{Party color cell|National Democratic Alliance}}
+|-
+| colspan="6" | [[National Democratic Alliance]]
+|-
+! colspan=2 | Party
+! Flag
+! Symbol
+! Leader
+! Seats
+|-
+| {{Full party name with color|All India N.R. Congress}}
+| [[File:All India N.R. Congress.png|50px]]
+| [[File:Indian Election Symbol Jug.svg|50px]]
+| [[N. Rangasamy]]<ref>{{cite news|url=https://www.theweek.in/news/india/2026/02/14/puducherry-bjp-draws-clear-strategy-to-fight-the-election-in-alliance-with-cm-rangaswamys-ainrc.html|title=Puducherry: BJP draws clear strategy to fight the election in alliance with CM Rangaswamy’s AINRC|date=14 February 2026|access-date=14 February 2026|work=[[The Week (magazine)|The Week]]}}</ref>
+| 
+|-
+| {{Full party name with color|Bharatiya Janata Party}}
+| [[File:BJP flag.svg|50px]]
+| [[File:Lotus flower symbol.svg|50px]]
+| [[V. P. Ramalingam]]<ref>{{cite news |date=19 April 2025 |title=Mansukh Mandaviya appointed BJP in-charge for Puducherry ahead of 2026 polls |url=https://economictimes.indiatimes.com/news/politics-and-nation/mansukh-mandaviya-appointed-bjp-in-charge-for-puducherry-ahead-of-2026-polls/articleshow/120434534.cms?from=mdr |access-date=1 June 2025 |work=[[The Economic Times]] |issn=0013-0389}}</ref>
+|
+|-
+| {{Full party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| [[File:AIADMK Flag.svg|50px]]
+| [[File:Indian election symbol two leaves.svg|50px]]
+| A. Anbalagan<ref>{{cite news|title=AIADMK seeks reshuffle of police officers working in suburban and rural areas in Puducherry|url=https://www.thehindu.com/news/cities/puducherry/aiadmk-seeks-reshuffle-of-police-officers-working-in-suburban-and-rural-areas-in-puducherry/article69772570.ece|work=[[The Hindu]]|date=4 July 2025|access-date=18 November 2025|issn=0971-751X|language=en-IN}}</ref>
+| 
+|-
+| style="background-color:#002395;" |
+| align="left" | Latchiya Jananayaga Katchi
+| [[File:LJK Puducherry Logo.jpg|50px]]
+|
+| Jose Charles Martin<ref>{{cite news |date=14 December 2025 |title=Businessman Jose Charles Martin floats new party in Puducherry |url=https://www.thehindu.com/news/cities/puducherry/businessman-jose-charles-martin-floats-new-party-in-puducherry/article70395118.ece |access-date=15 February 2026 |work=[[The Hindu]] |language=en-IN |issn=0971-751X}}</ref>
+|
+|-
+! colspan="5" | Total
+! 
+|}
+
+=== Secular Progressive Alliance ===
+
+<!-- Per [[MOS:NOSECTIONLINKS]]: for technical reasons, section headings should, among other things, not contain links, citations, or template transclusions. -->
+{| class="wikitable" width="60%" style="text-align:center;
+| colspan="6" {{Party color cell|Secular Progressive Alliance}}
+|-
+| colspan="6" | [[Secular Progressive Alliance]]
+|-
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats contested
+|-
+| {{Full party name with color|Dravida Munnetra Kazhagam}}
+| [[File:Flag DMK.svg|50px]]
+| [[File:Indian election symbol rising sun.svg|50px]]
+| [[R. Siva]]<ref name="SPA">{{cite news |date=7 July 2025 |title=Congress Working to Strengthen INDIA bloc in Puducherry: Former CM Vaithilingam |url=https://www.newindianexpress.com/states/tamil-nadu/2025/Jul/07/congress-working-to-strengthen-india-bloc-in-puducherry-former-cm-vaithilingam |access-date=2 November 2025 |work=[[The New Indian Express]]}}</ref>
+| 
+|-
+| {{Full party name with color|Indian National Congress}}
+| [[File:Indian National Congress Flag.svg|50px]]
+| [[File:INC Hand.svg|30px]]
+| [[V. Vaithilingam]]<ref name="SPA"/>
+| 
+|-
+| {{Full party name with color|Communist Party of India (Marxist)|dab=yes}}
+| [[File:Communist Party of India (Marxist) flag.svg|50px]]
+| [[File:CPI(M) election symbol - Hammer Sickle and Star.svg|50px]]
+| S. Ramachandran<ref>{{cite news|title=CPM urges Puducherry govt to revise SC reservation criteria, enforce Supreme Court ruling|url=https://www.newindianexpress.com/states/tamil-nadu/2025/May/09/cpm-urges-puducherry-govt-to-revise-sc-reservation-criteria-enforce-supreme-court-ruling|work=[[The New Indian Express]]|date=9 September 2025|access-date=28 September 2025}}</ref>
+| 2
+|-
+| {{Full party name with color|Communist Party of India}}
+| [[File:CPI-banner.svg|50px]]
+| [[File:CPI symbol.svg|50px]]
+| A. M. Saleem<ref>{{cite news|title=Saleem re-elected secretary of CPI’s Puducherry unit|url=https://www.thehindu.com/news/cities/puducherry/saleem-re-elected-secretary-of-cpis-puducherry-unit/article70008704.ece|work=[[The Hindu]]|date=3 September 2025|access-date=11 September 2025|issn=0971-751X|language=en-IN}}</ref>
+| 
+|-
+| {{Full party name with color|Viduthalai Chiruthaigal Katchi}}
+| [[File:Viduthalai Chiruthaigal Katchi banner.png|50px]]
+| [[File:Pot Symbol.png|50px]]
+| Deva Pozhilan<ref>{{cite news|title=VCK workers stage demonstration|url=https://www.thehindu.com/news/cities/puducherry/vck-workers-stage-demonstration/article69293830.ece|work=[[The Hindu]]|date=5 March 2025|access-date=28 November 2025|issn=0971-751X|language=en-IN}}</ref>
+| 
+|-
+!colspan="5"|Total
+!
+|}
+
+=== Others ===
+{| class="wikitable" width="60%" style="text-align:center;
+! colspan="2" | Party
+! Flag
+! Symbol
+! Leader
+! Seats contested
+|-
+| {{Full party name with color|Naam Tamilar Katchi}}<ref name="Contest">{{cite news|url=https://timesofindia.indiatimes.com/city/chennai/puducherry-polls-tvk-to-fly-solo-as-ainrc-tie-up-talks-fail-multi-cornered-contest-looms/articleshow/125778169.cms|title=Puducherry polls: TVK to fly solo as AINRC tie-up talks fail|date=5 December 2025|access-date=1 January 2026|work=[[The Times of India]]}}</ref>
+|
+|
+| [[Seeman]]
+| 
+|-
+| {{Full party name with color| Tamilaga Vettri Kazhagam}}<ref name="Contest"/>
+|
+|[[File:Indian Election Symbol Whistle.png|50px]]
+| [[N. Anand]]
+| 
+|}
+
+== Candidates ==
+{| class="wikitable" style="text-align:center;"
+! rowspan="2" | District
+! colspan="2" rowspan="2" | Constituency
+| colspan="3" style="background:{{party color|National Democratic Alliance}}"|
+| colspan="3" style="background:{{party color|Secular Progressive Alliance}}"|
+|-
+! colspan="3" | [[National Democratic Alliance|NDA]]
+! colspan="3" | [[Secular Progressive Alliance|SPA]]
+|-
+| rowspan="23" | [[Puducherry district|Puducherry]]
+! 1
+| [[Mannadipet Assembly constituency|Mannadipet]]
+|-
+! 2
+| [[Thirubuvanai Assembly constituency|Thirubuvanai (SC)]]
+|-
+! 3
+| [[Ossudu Assembly constituency|Ossudu (SC)]]
+|-
+! 4
+| [[Mangalam Assembly constituency|Mangalam]]
+|-
+! 5
+| [[Villianur Assembly constituency|Villianur]]
+|-
+! 6
+| [[Ozhukarai Assembly constituency|Ozhukarai]]
+|-
+! 7
+| [[Kadirkamam Assembly constituency|Kadirkamam]]
+|-
+! 8
+| [[Indira Nagar Assembly constituency|Indira Nagar]]
+|-
+! 9
+| [[Thattanchavady Assembly constituency|Thattanchavady]]
+|-
+! 10
+| [[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+|-
+! 11
+| [[Lawspet Assembly constituency|Lawspet]]
+|-
+! 12
+| [[Kalapet Assembly constituency|Kalapet]]
+|-
+! 13
+| [[Muthialpet Assembly constituency|Muthialpet]]
+|-
+! 14
+| [[Raj Bhavan Assembly constituency|Raj Bhavan]]
+|-
+! 15
+| [[Oupalam Assembly constituency|Oupalam]]
+|-
+! 16
+| [[Orleampeth Assembly constituency|Orleampeth]]
+|-
+! 17
+| [[Nellithope Assembly constituency|Nellithope]]
+|-
+! 18
+| [[Mudaliarpet Assembly constituency|Mudaliarpet]]
+|-
+! 19
+| [[Ariankuppam Assembly constituency|Ariankuppam]]
+|-
+! 20
+| [[Manavely Assembly constituency|Manavely]]
+|-
+! 21
+| [[Embalam Assembly constituency|Embalam (SC)]]
+|-
+! 22
+| [[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+|-
+! 23
+| [[Bahour Assembly constituency|Bahour]]
+|-
+| rowspan="5" | [[Karaikal district|Karaikal]]
+! 24
+| [[Nedungadu Assembly constituency|Nedungadu (SC)]]
+|-
+! 25
+| [[Thirunallar Assembly constituency|Thirunallar]]
+|-
+! 26
+| [[Karaikal North Assembly constituency|Karaikal North]]
+|-
+! 27
+| [[Karaikal South Assembly constituency|Karaikal South]]
+|-
+! 28
+| [[Neravy T. R. Pattinam Assembly constituency|Neravy T.R. Pattinam]]
+|-
+| [[Mahé district|Mahe]]
+! 29
+| [[Mahe Assembly constituency|Mahe]]
+|-
+| [[Yanam district|Yanam]]
+! 30
+| [[Yanam Assembly constituency|Yanam]]
+|}
+
+== Surveys and polls ==
+
+=== Opinion polls ===
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Vote share projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of error
+| bgcolor="{{party color|National Democratic Alliance}}"|
+| bgcolor="{{party color|Secular Progressive Alliance}}"|
+| bgcolor="{{party color|Other}}"|
+! rowspan="2" | Lead
+|-
+! [[National Democratic Alliance|NDA]]
+! [[Secular Progressive Alliance|SPA]]
+! Others
+|}
+
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+|+ Seat projections
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+! rowspan="2" | Sample size
+! rowspan="2" | Margin of error
+| bgcolor="{{party color|National Democratic Alliance}}"|
+| bgcolor="{{party color|Secular Progressive Alliance}}"|
+| bgcolor="{{party color|Other}}"|
+! rowspan="2" | Lead
+|-
+! [[National Democratic Alliance|NDA]]
+! [[Secular Progressive Alliance|SPA]]
+! Others
+|}
+
+=== Exit polls ===
+{| class="wikitable" style="text-align:center;font-size:95%;line-height:16px;"
+! rowspan="2" | Polling agency
+! rowspan="2" | Date published
+| bgcolor="{{party color|National Democratic Alliance}}"|
+| bgcolor="{{party color|Secular Progressive Alliance}}"|
+| bgcolor="{{party color|Other}}"|
+! rowspan="2" | Lead
+|-
+! [[National Democratic Alliance|NDA]]
+! [[Secular Progressive Alliance|SPA]]
+! Others
+|}
+
+== Results ==
+
+=== By alliance or party ===
+{| class="wikitable sortable" style="text-align:center;"
+! colspan="4" rowspan="2" | Alliance/ Party
+! colspan="3" | Popular vote
+! colspan="3" | Seats
+|-
+! Votes
+! %
+! ±[[Percentage point|pp]]
+! Contested
+! Won
+! '''+/−'''
+|-
+| {{Party name with color|National Democratic Alliance|rowspan=5}}
+| {{Full party name with color|All India N.R. Congress}}
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Full party name with color|Bharatiya Janata Party}}
+| {{formatnum:}}
+|
+|
+| 
+|
+|
+|-
+| {{Full party name with color|All India Anna Dravida Munnetra Kazhagam}}
+| {{formatnum:}}
+|
+|
+| 
+|
+|
+|-
+| style="background-color:#002395; width: 2px;" |
+| align="left" | Latchiya Jananayaka Katchi
+| {{formatnum:}}
+|
+|
+| 
+|
+|
+|-
+| colspan="2" style="background:#fde8d2" | '''Total'''
+| style="color:inherit;background:#fde8d2" | '''{{formatnum:}}'''
+| style="color:inherit;background:#fde8d2" | 
+| style="color:inherit;background:#fde8d2" | 
+| style="color:inherit;background:#fde8d2" | 
+| style="color:inherit;background:#fde8d2" | 
+| style="color:inherit;background:#fde8d2" | 
+|-
+| {{Party name with color|Secular Progressive Alliance|rowspan=6}}
+| {{Full party name with color|Dravida Munnetra Kazhagam}}
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Full party name with color|Indian National Congress}}
+| {{formatnum:}}
+| 
+|
+|
+|
+|
+|-
+| {{Full party name with color|Communist Party of India}}
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Full party name with color|Viduthalai Chiruthaigal Katchi}}
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Full party name with color|Makkal Needhi Maiam}}
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| colspan="2"style="background:#f8cfcc" | '''Total'''
+| style="color:inherit;background:#f8cfcc" | '''{{formatnum:}}'''
+| style="color:inherit;background:#f8cfcc" | 
+| style="color:inherit;background:#f8cfcc" | 
+| style="color:inherit;background:#f8cfcc" | 
+| style="color:inherit;background:#f8cfcc" | 
+| style="color:inherit;background:#f8cfcc" | 
+|-
+| {{Party color cell|Others}}
+| colspan="3" align=left| Other parties
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Party color cell|Independent politician}}
+| colspan="3" align=left| [[Independent (politician)|Independents]]
+| {{formatnum:}}
+|
+|
+|
+|
+|
+|-
+| {{Party color cell|None of the above (India)}}
+| colspan="3" | [[None of the above (India)|NOTA]]
+| {{formatnum:}}
+|
+|
+! style="background-color:#E9E9E9" |
+!
+|
+|-
+! colspan="4" | '''Total'''
+! {{formatnum:}}
+! 100%
+! —
+!
+! 30
+! —
+|}
+
+=== By district ===
+{| class="wikitable" style="text-align:center;"
+! rowspan="2" | District
+! rowspan="2" | Seats
+| style="color:inherit;background:{{party color|National Democratic Alliance}}" |
+| style="color:inherit;background:{{party color|Secular Progressive Alliance}}" |
+| style="color:inherit;background:{{party color|Others}}"|
+|-
+! [[National Democratic Alliance|NDA]]
+! [[Secular Progressive Alliance|SPA]]
+! Others
+|-
+! [[Puducherry district|Puducherry]]
+! 23
+|
+|
+|
+|-
+! [[Karaikal district|Karaikal]]
+! 5
+|
+|
+|
+|-
+! [[Mahe district|Mahe]]
+! 1
+|
+|
+|
+|-
+! [[Yanam district|Yanam]]
+! 1
+|
+|
+|
+|-
+! Total
+! 30
+!
+!
+!
+|}
+
+=== By constituency ===
+{| class="wikitable"
+! rowspan="2" | District
+! colspan="2" | Constituency
+! colspan="5" | Winner
+! colspan="5" | Runner-up
+! rowspan="2" | Margin
+|-
+! No.
+! Name
+! Candidate
+! colspan="2" | Party
+! Votes
+! %
+! Candidate
+! colspan="2" | Party
+! Votes
+! %
+|-
+| rowspan="23" | [[Puducherry district|Puducherry]]
+! 1
+| [[Mannadipet Assembly constituency|Mannadipet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 2
+| [[Thirubuvanai Assembly constituency|Thirubuvanai (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 3
+| [[Ossudu Assembly constituency|Ossudu (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 4
+| [[Mangalam Assembly constituency|Mangalam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 5
+| [[Villianur Assembly constituency|Villianur]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 6
+| [[Ozhukarai Assembly constituency|Ozhukarai]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 7
+| [[Kadirkamam Assembly constituency|Kadirkamam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 8
+| [[Indira Nagar Assembly constituency|Indira Nagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 9
+| [[Thattanchavady Assembly constituency|Thattanchavady]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 10
+| [[Kamaraj Nagar Assembly constituency|Kamaraj Nagar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 11
+| [[Lawspet Assembly constituency|Lawspet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 12
+| [[Kalapet Assembly constituency|Kalapet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 13
+| [[Muthialpet Assembly constituency|Muthialpet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 14
+| [[Raj Bhavan Assembly constituency|Raj Bhavan]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 15
+| [[Oupalam Assembly constituency|Oupalam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 16
+| [[Orleampeth Assembly constituency|Orleampeth]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 17
+| [[Nellithope Assembly constituency|Nellithope]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 18
+| [[Mudaliarpet Assembly constituency|Mudaliarpet]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 19
+| [[Ariankuppam Assembly constituency|Ariankuppam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 20
+| [[Manavely Assembly constituency|Manavely]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 21
+| [[Embalam Assembly constituency|Embalam (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 22
+| [[Nettapakkam Assembly constituency|Nettapakkam (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 23
+| [[Bahour Assembly constituency|Bahour]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| rowspan="5" | [[Karaikal district|Karaikal]]
+! 24
+| [[Nedungadu Assembly constituency|Nedungadu (SC)]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 25
+| [[Thirunallar Assembly constituency|Thirunallar]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 26
+| [[Karaikal North Assembly constituency|Karaikal North]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 27
+| [[Karaikal South Assembly constituency|Karaikal South]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! 28
+| [[Neravy T. R. Pattinam Assembly constituency|Neravy T. R. Pattinam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Mahé district|Mahé]]
+! 29
+| [[Mahe Assembly constituency|Mahe]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Yanam district|Yanam]]
+! 30
+| [[Yanam Assembly constituency|Yanam]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|}
+
+== References ==
+{{Reflist}}
+
+{{Puducherry elections}}
+
+[[Category:State Assembly elections in Puducherry]]
+[[Category:Future elections in India|P]]
+[[Category:2026 State Assembly elections in India|Puducherry]]
