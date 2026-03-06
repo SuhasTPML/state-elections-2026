@@ -1,8 +1,8 @@
 # Assam GeoJSON vs Wikipedia (2026) Verification
 
-## Finalized Status Update (2026-03-05)
+## Finalized Status Update (2026-03-06)
 
-This project now uses finalized Assam and Kerala constituency map data aligned to Wikipedia naming/reference for 2026 workflow.
+This project now uses finalized Assam, Kerala, Tamil Nadu, and West Bengal constituency map data aligned to Wikipedia naming/reference for the 2026 workflow.
 
 ### Assam (Finalized)
 
@@ -19,6 +19,30 @@ This project now uses finalized Assam and Kerala constituency map data aligned t
 - `AC_NO -> AC_NAME` mapping aligned to the 2026 Kerala wiki candidate constituency ordering.
 - AC 87 geometry was dissolved into a single polygon (internal split removed), and district kept as `ERNAKULAM`.
 - Reference: https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election
+
+### Tamil Nadu (Finalized)
+
+- Finalized files:
+  - `data/geojson/TAMIL_NADU_ASSEMBLY.geojson`
+  - `data/geojson/TAMIL_NADU_ASSEMBLY_optimized.geojson`
+- `AC_NO -> AC_NAME` mapping aligned to the 2026 Tamil Nadu wiki constituency table.
+- AC 169 was merged into a single polygon and duplicate AC numbering was removed.
+- Reference: https://en.wikipedia.org/wiki/2026_Tamil_Nadu_Legislative_Assembly_election
+
+### West Bengal (Finalized)
+
+- Finalized files:
+  - `data/geojson/WEST_BENGAL_ASSEMBLY.geojson`
+  - `data/geojson/WEST_BENGAL_ASSEMBLY_optimized.geojson`
+- `AC_NO -> AC_NAME` mapping aligned to the 2026 West Bengal wiki constituency table.
+- No duplicate AC numbers were found during verification.
+- Reference: https://en.wikipedia.org/wiki/2026_West_Bengal_Legislative_Assembly_election
+
+### Shared GeoJSON Cleanup
+
+- Active non-Bihar GeoJSON files were normalized to title case for `AC_NAME` and `DIST_NAME`.
+- Reserved seat suffixes such as `(SC)` and `(ST)` were preserved.
+- Backup snapshot GeoJSON files were left unchanged.
 - Generated on: 2026-03-05 10:40 UTC
 - Wikipedia source: https://en.wikipedia.org/wiki/2026_Assam_Legislative_Assembly_election
 - Local GeoJSON: `C:\Users\suhas.bhandari\Downloads\Claude\Experiments\Elections\data\geojson\ASSAM_ASSEMBLY_optimized.geojson`
@@ -498,3 +522,13 @@ Notes:
 | Titabar | Titabor | High | Spelling variant |
 
 
+
+## Puducherry finalized
+
+- Compared against the 2026 Puducherry Legislative Assembly election candidates list on Wikipedia.
+- Updated AC_NAME values to match Wikipedia spellings exactly.
+- Verified AC_NO -> AC_NAME mismatches: 0.
+- Verified features: 30, unique AC numbers: 30, duplicate AC numbers: 0.
+
+Source:
+- https://en.wikipedia.org/wiki/2026_Puducherry_Legislative_Assembly_election

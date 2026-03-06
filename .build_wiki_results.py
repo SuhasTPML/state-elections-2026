@@ -6,11 +6,19 @@ ROOT = Path(r"C:\Users\suhas.bhandari\Downloads\Claude\Experiments\Elections")
 OUT_BASE = ROOT / "hosted-json"
 OUT_RESULTS = OUT_BASE / "results"
 RAW_DIR = ROOT / "misc" / "raw-wiki"
+ASSET_ROOT = ROOT / "root"
 
 
 def raw_file(name: str) -> Path:
     root_path = ROOT / name
     return root_path if root_path.exists() else (RAW_DIR / name)
+
+
+def asset_file(name: str, legacy_subdir: str) -> Path:
+    p = ASSET_ROOT / name
+    if p.exists():
+        return p
+    return ROOT / "data" / legacy_subdir / name
 
 STATE_FILES = {
     "ASSAM": raw_file(".assam_2021_wiki.raw.txt"),
@@ -22,12 +30,12 @@ STATE_FILES = {
 
 # Canonical seat list from your active map sources
 GEO_CANON = {
-    "KERALA": ROOT / "data" / "geojson" / "KERALA_ASSEMBLY_optimized.geojson",
-    "PUDUCHERRY": ROOT / "data" / "geojson" / "PUDUCHERRY_ASSEMBLY_optimized.geojson",
-    "TAMIL_NADU": ROOT / "data" / "geojson" / "TAMIL_NADU_ASSEMBLY_optimized.geojson",
-    "WEST_BENGAL": ROOT / "data" / "geojson" / "WEST_BENGAL_ASSEMBLY_optimized.geojson",
+    "KERALA": asset_file("KERALA_ASSEMBLY_optimized.geojson", "geojson"),
+    "PUDUCHERRY": asset_file("PUDUCHERRY_ASSEMBLY_optimized_compact.geojson", "geojson"),
+    "TAMIL_NADU": asset_file("TAMIL_NADU_ASSEMBLY_optimized.geojson", "geojson"),
+    "WEST_BENGAL": asset_file("WEST_BENGAL_ASSEMBLY_optimized.geojson", "geojson"),
 }
-ASSAM_SVG = ROOT / "data" / "svg" / "ASSAM_2023_keyed.svg"
+ASSAM_SVG = asset_file("ASSAM_2023_keyed.svg", "svg")
 
 ALLIANCE_COLORS = {
     "NDA": "#FF9933",

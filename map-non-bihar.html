@@ -303,6 +303,8 @@
       const standard = `${fileStem}.geojson`;
       const origin = (location.protocol === 'http:' || location.protocol === 'https:')
         ? [
+            `${location.origin}/root/${optimized}`,
+            `${location.origin}/root/${standard}`,
             `${location.origin}/data/geojson/${optimized}`,
             `${location.origin}/data/geojson/${standard}`,
             `${location.origin}/${optimized}`,
@@ -312,6 +314,10 @@
 
       return uniqueCandidates([
         ...origin,
+        './root/' + optimized,
+        './root/' + standard,
+        'root/' + optimized,
+        'root/' + standard,
         './data/geojson/' + optimized,
         './data/geojson/' + standard,
         'data/geojson/' + optimized,
@@ -328,12 +334,15 @@
     function buildStateSvgCandidates(fileName, remoteUrl){
       const origin = (location.protocol === 'http:' || location.protocol === 'https:')
         ? [
+            `${location.origin}/root/${fileName}`,
             `${location.origin}/data/svg/${fileName}`,
             `${location.origin}/${fileName}`
           ]
         : [];
       return uniqueCandidates([
         ...origin,
+        './root/' + fileName,
+        'root/' + fileName,
         './data/svg/' + fileName,
         'data/svg/' + fileName,
         '../data/svg/' + fileName,
