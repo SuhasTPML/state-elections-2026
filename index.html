@@ -292,9 +292,20 @@
     @media (max-width: 768px) {
       #mapwrap { min-height: 320px; }
       #controls { padding: 6px 12px; gap: 4px; }
+      #searchRow {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      #searchRow .controls-search,
+      #searchRow .controls-options {
+        width: 100%;
+      }
+      #searchRow .controls-options {
+        justify-content: stretch;
+      }
       /* Hide labels on mobile — selects are self-descriptive */
       .controls-options label { display: none; }
-      .controls-options select { font-size: 12px; padding: 4px 6px; }
+      .controls-options select { width: 100%; font-size: 16px; padding: 6px 10px; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
       /* Change 2: Mobile — 50→40px, 24→18px font */
