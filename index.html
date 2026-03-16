@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive assembly constituency maps with search, selection, and election color modes for multiple Indian states." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
@@ -10,6 +11,7 @@
   <style>
     html, body { height: 100%; margin: 0; font-family: 'Roboto Slab', serif; }
     body { display: flex; flex-direction: column; min-height: 100vh; }
+    main { display: flex; flex: 1; flex-direction: column; min-height: 100vh; }
     h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
     input, select, textarea, button { font-family: 'Roboto Slab', serif; }
     /* Change 1: Compact controls — reduced padding and gap */
@@ -40,7 +42,13 @@
     }
     .map-section-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
     /* Change 1: Hide description — redundant with search placeholder */
-    .controls-description { display: none; }
+    .controls-description {
+      display: block;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #4b5563;
+      margin-bottom: 2px;
+    }
     .controls-disclaimer {
       font-family: 'Roboto Slab', serif;
       font-size: 12px;
@@ -304,7 +312,6 @@
         justify-content: stretch;
       }
       /* Hide labels on mobile — selects are self-descriptive */
-      .controls-options label { display: none; }
       .controls-options select { width: 100%; font-size: 16px; padding: 6px 10px; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
@@ -327,6 +334,7 @@
   </style>
 </head>
 <body>
+  <main>
   <div id="controls">
     <!-- Change 1: Title in header only; color-by moved next to search -->
     <div class="controls-header">
@@ -342,12 +350,12 @@
     <div id="mapDisclaimer" class="controls-disclaimer"></div>
     <div id="searchRow">
       <div class="controls-search">
-        <input id="acSearch" type="search" placeholder="Search constituency by number, name, or district..." />
+        <input id="acSearch" type="search" placeholder="Search constituency" />
         <div id="dropdown" class="dropdown"></div>
       </div>
       <div id="colorModeWrap" class="controls-options" style="display:none;">
         <label for="colorMode">Color by:</label>
-        <select id="colorMode"></select>
+        <select id="colorMode" aria-label="Color by"></select>
       </div>
     </div>
     <div id="legend" class="controls-legend"></div>
@@ -366,6 +374,7 @@
 
   <div id="bottomSheet"></div>
   <div id="mapTooltip"></div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script>
@@ -1382,6 +1391,8 @@
       }
       bottomSheetEl.style.display = 'none';
       document.body.classList.remove('bottom-sheet-active');
+      searchEl.value = '';
+      dropdownEl.style.display = 'none';
       removeQueryParam('ac');
       removeQueryParam('name');
       updateCrossButton();
