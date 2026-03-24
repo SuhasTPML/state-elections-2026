@@ -4,16 +4,40 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Interactive assembly constituency maps with search, selection, and election color modes for multiple Indian states." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Assembly Constituency Map (Non-Bihar)</title>
   <style>
-    html, body { height: 100%; margin: 0; font-family: 'Roboto Slab', serif; }
+    @font-face {
+      font-family: 'PvHeadlineSemiBold';
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PvHeadlineSemibold3.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextSemiBold';
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextSemibold.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextRegular';
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextRegular.woff2') format('woff2');
+    }
+    :root {
+      --pv-fallback: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+      --pv-headline: "PvHeadlineSemiBold", var(--pv-fallback);
+      --pv-text: "PvTextRegular", var(--pv-fallback);
+      --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
+    }
+    html, body { height: 100%; margin: 0; font-family: var(--pv-text); }
     body { display: flex; flex-direction: column; min-height: 100vh; }
     main { display: flex; flex: 1; flex-direction: column; min-height: 100vh; }
-    h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
-    input, select, textarea, button { font-family: 'Roboto Slab', serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--pv-headline); }
+    input, select, textarea, button { font-family: var(--pv-text); }
     /* Change 1: Compact controls — reduced padding and gap */
     #controls { padding: 6px 12px; display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
 
@@ -40,7 +64,7 @@
       min-width: 0;
       margin-bottom: 0;
     }
-    .map-section-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
+    .map-section-title { font-family: var(--pv-headline); font-size: 18px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
     /* Change 1: Hide description — redundant with search placeholder */
     .controls-description {
       display: block;
@@ -50,7 +74,7 @@
       margin-bottom: 2px;
     }
     .controls-disclaimer {
-      font-family: 'Roboto Slab', serif;
+      font-family: var(--pv-text);
       font-size: 12px;
       line-height: 1.4;
       color: #7c2d12;
@@ -295,6 +319,39 @@
       border-top: 1px solid #f0f0f0;
       margin: 4px 0;
     }
+    html[lang="kn"] .state-tab {
+      padding-top: 5px;
+      padding-bottom: 0px;
+      line-height: 1.15;
+    }
+    html[lang="kn"] .controls-search input {
+      padding-top: 7px;
+      padding-bottom: 4px;
+      line-height: 1.2;
+    }
+    html[lang="kn"] .controls-options select {
+      padding-top: 6px;
+      padding-bottom: 3px;
+      line-height: 1.2;
+    }
+    html[lang="kn"] .legend-chip {
+      padding-top: 1px;
+      line-height: 1.15;
+    }
+    html[lang="kn"] .info-chip {
+      display: inline-flex;
+      align-items: center;
+      padding-top: 1px;
+      line-height: 1.15;
+    }
+    html[lang="kn"] .map-control-btn {
+      line-height: 1;
+    }
+    html[lang="kn"] #crossBtn,
+    html[lang="kn"] #zoomInBtn,
+    html[lang="kn"] #zoomOutBtn {
+      padding-bottom: 1px;
+    }
 
 
     @media (max-width: 768px) {
@@ -313,6 +370,7 @@
       }
       /* Hide labels on mobile — selects are self-descriptive */
       .controls-options select { width: 100%; font-size: 16px; padding: 6px 10px; }
+      html[lang="kn"] .controls-options select { padding-top: 7px; padding-bottom: 4px; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
       /* Change 2: Mobile — 50→40px, 24→18px font */
@@ -324,6 +382,7 @@
     @media (max-width: 480px) {
       #controls { padding: 5px 10px; gap: 4px; }
       .controls-search input { font-size: 16px; }
+      html[lang="kn"] .controls-search input { padding-top: 7px; padding-bottom: 4px; }
       #mapControls { top: 10px; left: 10px; gap: 6px; }
       #crossBtn { top: 10px; right: 10px; }
       /* Change 2: Small mobile — 44→36px, 20→16px font */
@@ -385,6 +444,8 @@
     const DATA_BASE_URL = new URL(DATA_BASE + '/', location.href).toString();
     const PARTIES_URL = new URL('parties.json', DATA_BASE_URL).toString();
     const ALLIANCES_URL = new URL('alliances.json', DATA_BASE_URL).toString();
+    const KANNADA_I18N_URL = new URL('i18n.kn.json', DATA_BASE_URL).toString();
+    const LANGUAGE_QUERY_PARAM = 'lang';
     const ENABLE_2026_MODES = (() => {
       try {
         const p = new URLSearchParams(location.search).get('enable2026');
@@ -395,6 +456,150 @@
       } catch {}
       return false;
     })();
+
+    const UI_TEXT = {
+      en: {
+        pageTitle: 'Assembly Constituency Map (Non-Bihar)',
+        searchPlaceholder: 'Search constituency',
+        colorBy: 'Color by',
+        clearSelectionAndResetView: 'Clear selection and reset view',
+        zoomIn: 'Zoom in',
+        zoomOut: 'Zoom out',
+        noResultsFound: 'No results found',
+        unknown: 'Unknown',
+        unknownConstituency: 'Unknown Constituency',
+        notAvailable: 'Not available',
+        currentMla: 'Current MLA',
+        party: 'Party',
+        alliance: 'Alliance',
+        reserved: 'Reserved',
+        noElectionData: 'No election data available for this constituency.',
+        mapDescription: 'Tap on a constituency to view details, or search by number/name/district.',
+        assamDisclaimer: 'Assam only: some seats show no data because constituency names/boundaries changed after 2021.',
+        modeLabels: {
+          'alliance-2026': '2026 Alliance',
+          'party-2026': '2026 Party',
+          'alliance-2020': '2020 Alliance',
+          'party-2020': '2020 Party',
+          'alliance-2016': '2016 Alliance',
+          'party-2016': '2016 Party',
+          'alliance-2015': '2015 Alliance',
+          'party-2015': '2015 Party',
+          'alliance-2010': '2010 Alliance',
+          'party-2010': '2010 Party',
+          reserved: 'Reserved Category'
+        },
+        stateLabels: {
+          TAMIL_NADU: 'Tamil Nadu',
+          KERALA: 'Kerala',
+          WEST_BENGAL: 'West Bengal',
+          ASSAM: 'Assam',
+          PUDUCHERRY: 'Puducherry'
+        },
+        winner: (year) => `Winner (${year})`,
+        title: (stateLabel) => `${stateLabel} Assembly Constituency Map`,
+        loadingMap: (stateLabel) => `Loading ${stateLabel} map...`,
+        failedToLoad: (stateLabel, message) => `Failed to load ${stateLabel}: ${message}`
+      },
+      kn: {
+        pageTitle: 'ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ ನಕ್ಷೆ',
+        searchPlaceholder: 'ಕ್ಷೇತ್ರವನ್ನು ಹುಡುಕಿ',
+        colorBy: 'ಬಣ್ಣ ವರ್ಗೀಕರಣ',
+        clearSelectionAndResetView: 'ಆಯ್ಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ ಮತ್ತು ನೋಟವನ್ನು ಮರುಹೊಂದಿಸಿ',
+        zoomIn: 'ಜೂಮ್ ಇನ್',
+        zoomOut: 'ಜೂಮ್ ಔಟ್',
+        noResultsFound: 'ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ',
+        unknown: 'ಅಜ್ಞಾತ',
+        unknownConstituency: 'ಅಜ್ಞಾತ ಕ್ಷೇತ್ರ',
+        notAvailable: 'ಲಭ್ಯವಿಲ್ಲ',
+        currentMla: 'ಹಾಲಿ ಶಾಸಕ',
+        party: 'ಪಕ್ಷ',
+        alliance: 'ಒಕ್ಕೂಟ',
+        reserved: 'ಮೀಸಲು',
+        noElectionData: 'ಈ ಕ್ಷೇತ್ರಕ್ಕೆ ಚುನಾವಣಾ ಮಾಹಿತಿ ಲಭ್ಯವಿಲ್ಲ.',
+        mapDescription: 'ವಿವರಗಳನ್ನು ನೋಡಲು ಕ್ಷೇತ್ರದ ಮೇಲೆ ತಟ್ಟಿರಿ ಅಥವಾ ಸಂಖ್ಯೆ, ಹೆಸರು ಅಥವಾ ಜಿಲ್ಲೆ ಮೂಲಕ ಹುಡುಕಿ.',
+        assamDisclaimer: 'ಅಸ್ಸಾಂ ಮಾತ್ರ: 2021 ನಂತರ ಕ್ಷೇತ್ರಗಳ ಹೆಸರುಗಳು ಅಥವಾ ಗಡಿಗಳು ಬದಲಾಗಿರುವುದರಿಂದ ಕೆಲವು ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ಡೇಟಾ ಕಾಣಿಸದೇ ಇರಬಹುದು.',
+        modeLabels: {
+          'alliance-2026': '2026 ಒಕ್ಕೂಟ',
+          'party-2026': '2026 ಪಕ್ಷ',
+          'alliance-2020': '2020 ಒಕ್ಕೂಟ',
+          'party-2020': '2020 ಪಕ್ಷ',
+          'alliance-2016': '2016 ಒಕ್ಕೂಟ',
+          'party-2016': '2016 ಪಕ್ಷ',
+          'alliance-2015': '2015 ಒಕ್ಕೂಟ',
+          'party-2015': '2015 ಪಕ್ಷ',
+          'alliance-2010': '2010 ಒಕ್ಕೂಟ',
+          'party-2010': '2010 ಪಕ್ಷ',
+          reserved: 'ಮೀಸಲು ವರ್ಗ'
+        },
+        stateLabels: {
+          TAMIL_NADU: 'ತಮಿಳುನಾಡು',
+          KERALA: 'ಕೇರಳ',
+          WEST_BENGAL: 'ಪಶ್ಚಿಮ ಬಂಗಾಳ',
+          ASSAM: 'ಅಸ್ಸಾಂ',
+          PUDUCHERRY: 'ಪುಡುಚೇರಿ'
+        },
+        winner: (year) => `ವಿಜೇತ (${year})`,
+        title: (stateLabel) => `${stateLabel} ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ ನಕ್ಷೆ`,
+        loadingMap: (stateLabel) => `${stateLabel} ನಕ್ಷೆ ಲೋಡ್ ಆಗುತ್ತಿದೆ...`,
+        failedToLoad: (stateLabel, message) => `${stateLabel} ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಯಿತು: ${message}`
+      }
+    };
+
+    function normalizeLangKey(lang){
+      const raw = String(lang || '').trim().toLowerCase();
+      if (raw === 'kn' || raw === 'kannada') return 'kn';
+      return 'en';
+    }
+
+    function initialLangFromQuery(){
+      return normalizeLangKey(getQueryParam(LANGUAGE_QUERY_PARAM));
+    }
+
+    function uiText(){
+      return UI_TEXT[currentLang] || UI_TEXT.en;
+    }
+
+    function localizeText(value){
+      const raw = String(value || '').trim();
+      if (!raw) return '';
+      if (currentLang !== 'kn') return raw;
+      return i18nStrings.get(raw) || raw;
+    }
+
+    function localizeReserved(value){
+      const raw = String(value || '').trim().toUpperCase();
+      if (!raw) return '';
+      if (currentLang !== 'kn') return raw;
+      return i18nReserved[raw] || raw;
+    }
+
+    function localizedStateLabel(stateKey){
+      const text = uiText();
+      return text.stateLabels[stateKey]
+        || (STATE_CONFIG[stateKey] && STATE_CONFIG[stateKey].label)
+        || stateKey;
+    }
+
+    function localizedValue(value, fallbackKey){
+      const raw = String(value || '').trim();
+      if (!raw) return uiText()[fallbackKey] || '';
+      return localizeText(raw);
+    }
+
+    function mapTitleForState(stateKey){
+      return uiText().title(localizedStateLabel(stateKey));
+    }
+
+    function mapDescriptionForState(){
+      return uiText().mapDescription;
+    }
+
+    function mapDisclaimerForState(stateKey){
+      if (stateKey === 'ASSAM' && currentLang === 'kn') return uiText().assamDisclaimer;
+      const cfg = STATE_CONFIG[stateKey] || STATE_CONFIG[DEFAULT_STATE];
+      return String(cfg.disclaimer || '').trim();
+    }
 
     function uniqueCandidates(list){
       const seen = new Set();
@@ -522,6 +727,7 @@
     const dropdownEl = document.getElementById('dropdown');
     const colorModeWrapEl = document.getElementById('colorModeWrap');
     const colorModeEl = document.getElementById('colorMode');
+    const colorModeLabelEl = document.querySelector('label[for="colorMode"]');
     const legendEl = document.getElementById('legend');
     const wrapEl = document.getElementById('mapwrap');
     const bottomSheetEl = document.getElementById('bottomSheet');
@@ -537,6 +743,7 @@
     let path = null;
     let currentGeoData = null;
     let currentState = DEFAULT_STATE;
+    let currentLang = initialLangFromQuery();
     let selectedKey = null;
     let resizeDebounce = null;
     let searchData = [];
@@ -546,6 +753,8 @@
     let allianceOriginalColors = new Map();
     let partyToAlliance = new Map();
     let partyData = new Map();
+    let i18nStrings = new Map();
+    let i18nReserved = {};
     let colorCache = new Map();
     let activeColorModes = [];
     let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2020';
@@ -604,11 +813,44 @@
       svg.attr('viewBox', `0 0 ${mapWidth} ${mapHeight}`);
     }
 
+    function applyStaticUiText(){
+      const text = uiText();
+      document.documentElement.lang = currentLang;
+      document.title = text.pageTitle;
+      searchEl.placeholder = text.searchPlaceholder;
+      if (colorModeLabelEl) colorModeLabelEl.textContent = `${text.colorBy}:`;
+      colorModeEl.setAttribute('aria-label', text.colorBy);
+      crossBtn.title = text.clearSelectionAndResetView;
+      zoomInBtn.title = text.zoomIn;
+      zoomOutBtn.title = text.zoomOut;
+    }
+
+    async function loadLanguageData(langKey){
+      currentLang = normalizeLangKey(langKey);
+      i18nStrings = new Map();
+      i18nReserved = {};
+
+      if (currentLang === 'kn') {
+        const data = await loadJson(KANNADA_I18N_URL, 'Kannada translations', true);
+        if (data && data.strings && typeof data.strings === 'object') {
+          i18nStrings = new Map(Object.entries(data.strings));
+          i18nReserved = (data.reserved && typeof data.reserved === 'object') ? data.reserved : {};
+          setQueryParam(LANGUAGE_QUERY_PARAM, currentLang);
+        } else {
+          currentLang = 'en';
+          removeQueryParam(LANGUAGE_QUERY_PARAM);
+        }
+      } else {
+        removeQueryParam(LANGUAGE_QUERY_PARAM);
+      }
+
+      applyStaticUiText();
+    }
+
     function setMapHeadingForState(stateKey){
-      const cfg = STATE_CONFIG[stateKey] || STATE_CONFIG[DEFAULT_STATE];
-      mapTitleEl.textContent = cfg.title;
-      mapDescriptionEl.textContent = cfg.description;
-      const disclaimerText = String(cfg.disclaimer || '').trim();
+      mapTitleEl.textContent = mapTitleForState(stateKey);
+      mapDescriptionEl.textContent = mapDescriptionForState();
+      const disclaimerText = mapDisclaimerForState(stateKey);
       if (mapDisclaimerEl) {
         mapDisclaimerEl.textContent = disclaimerText;
         mapDisclaimerEl.style.display = disclaimerText ? 'block' : 'none';
@@ -622,7 +864,7 @@
         const btn = document.createElement('button');
         btn.className = 'state-tab';
         btn.dataset.key = key;
-        btn.textContent = cfg.label;
+        btn.textContent = localizedStateLabel(key);
         btn.addEventListener('click', async () => {
           if (key === currentState) return;
           removeQueryParam('ac');
@@ -880,20 +1122,7 @@
     }
 
     function modeLabel(mode){
-      const labels = {
-        'alliance-2026': '2026 Alliance',
-        'party-2026': '2026 Party',
-        'alliance-2020': '2020 Alliance',
-        'party-2020': '2020 Party',
-        'alliance-2016': '2016 Alliance',
-        'party-2016': '2016 Party',
-        'alliance-2015': '2015 Alliance',
-        'party-2015': '2015 Party',
-        'alliance-2010': '2010 Alliance',
-        'party-2010': '2010 Party',
-        'reserved': 'Reserved Category'
-      };
-      return labels[mode] || mode;
+      return uiText().modeLabels[mode] || mode;
     }
 
     function preComputeColors(){
@@ -970,7 +1199,7 @@
         const reservedColors = { GEN: '#f9fafb', SC: '#dbeafe', ST: '#dcfce7', NA: '#f3f4f6' };
         legendItems = Array.from(counts.entries()).sort((a,b) => b[1]-a[1]).map(([status, count]) => ({
           color: reservedColors[status] || reservedColors.GEN,
-          label: `${status} (${count})`
+          label: `${localizeReserved(status)} (${count})`
         }));
       } else if (mode.includes('alliance')) {
         const year = parseInt(mode.split('-')[1] || '2020', 10);
@@ -997,7 +1226,7 @@
         }
         legendItems = Array.from(allianceCount.entries()).sort((a,b)=> b[1]-a[1]).map(([a,count]) => ({
           color: (a === 'NA') ? '#e5e7eb' : (allianceColors.get(normalizeAllianceKey(a)) || '#e5e7eb'),
-          label: `${a} (${count})`
+          label: `${a === 'NA' ? uiText().notAvailable : localizeText(a)} (${count})`
         }));
       } else if (mode.includes('party')) {
         const partyCount = new Map();
@@ -1012,7 +1241,7 @@
         legendItems = Array.from(partyCount.entries())
           .sort((a,b) => b[1]-a[1])
           .slice(0, 6)
-          .map(([party, count]) => ({ color: partyColors.get(party) || '#f3f4f6', label: `${party} (${count})` }));
+          .map(([party, count]) => ({ color: partyColors.get(party) || '#f3f4f6', label: `${localizeText(party)} (${count})` }));
       }
 
       if (!legendItems.length) {
@@ -1213,13 +1442,15 @@
         const key = featureKey(f.properties);
         const name = featureName(f.properties);
         const dist = featureDistrict(f.properties);
-        const label = `${name}${dist ? ` (${dist})` : ''}`;
+        const localizedName = localizeText(name);
+        const localizedDist = localizeText(dist);
+        const label = `${localizedName || name}${localizedDist ? ` (${localizedDist})` : ''}`;
         return {
           key,
           name,
           dist,
           label,
-          searchText: `${key} ${name} ${dist}`.toLowerCase()
+          searchText: `${key} ${name} ${dist} ${localizedName} ${localizedDist}`.toLowerCase()
         };
       }).sort((a, b) => a.key.localeCompare(b.key, undefined, { numeric: true }));
     }
@@ -1228,7 +1459,7 @@
     function showDropdown(matches, query){
       if (!matches.length) {
         if (query && query.trim()) {
-          dropdownEl.innerHTML = '<div class="dropdown-note">No results found</div>';
+          dropdownEl.innerHTML = `<div class="dropdown-note">${uiText().noResultsFound}</div>`;
           dropdownEl.style.display = 'block';
         } else {
           dropdownEl.style.display = 'none';
@@ -1255,9 +1486,9 @@
       if (!tooltipEl || selectedKey) return;
       const props = (feature && feature.properties) || {};
       const key = featureKey(props);
-      const name = featureName(props);
-      const dist = featureDistrict(props);
-      tooltipEl.textContent = `AC ${key} · ${name || 'NA'}${dist ? ' · ' + dist : ''}`;
+      const name = localizeText(featureName(props));
+      const dist = localizeText(featureDistrict(props));
+      tooltipEl.textContent = `AC ${key} · ${name || uiText().notAvailable}${dist ? ' · ' + dist : ''}`;
       tooltipEl.style.opacity = '1';
       tooltipEl.style.left = `${ev.clientX}px`;
       tooltipEl.style.top = `${ev.clientY - 8}px`;
@@ -1304,73 +1535,79 @@
       const key = featureKey(props);
       const name = featureName(props);
       const district = featureDistrict(props);
-      const stateLabel = (STATE_CONFIG[currentState] && STATE_CONFIG[currentState].label) || '';
+      const stateLabel = localizedStateLabel(currentState);
       const row = electionData.get(key);
+      const text = uiText();
+      const displayName = localizeText(name) || text.unknownConstituency;
+      const displayDistrict = localizeText(district) || stateLabel;
 
       let content = `
         <div class="sheet-header">
           <span class="ac-number">AC ${key}</span>
-          <span class="ac-name">${name || 'Unknown Constituency'}</span>
-          <span class="district-name">${district || stateLabel}</span>
+          <span class="ac-name">${displayName}</span>
+          <span class="district-name">${displayDistrict}</span>
         </div>
       `;
 
       if (row) {
-        let label = 'Current MLA';
-        let person = row.current_mla_name || 'Not available';
-        let party = row.current_mla_party || 'Unknown';
-        let alliance = row.current_mla_alliance || 'Unknown';
+        let label = text.currentMla;
+        let person = row.current_mla_name || '';
+        let party = row.current_mla_party || '';
+        let alliance = row.current_mla_alliance || '';
         let year = 2020;
 
         if (currentColorMode.includes('2026')) {
-          label = 'Winner (2026)';
+          label = text.winner(2026);
           person = row.y2026_winner_name || person;
           party = row.y2026_winner_party || party;
           alliance = row.y2026_winner_alliance || alliance;
           year = 2026;
         } else if (currentColorMode.includes('2016')) {
-          label = 'Winner (2016)';
+          label = text.winner(2016);
           person = row.y2016_winner_name || person;
           party = row.y2016_winner_party || party;
           alliance = row.y2016_winner_alliance || alliance;
           year = 2016;
         } else if (currentColorMode.includes('2015')) {
-          label = 'Winner (2015)';
+          label = text.winner(2015);
           person = row.y2015_winner_name || person;
           party = row.y2015_winner_party || party;
           year = 2015;
         } else if (currentColorMode.includes('2010')) {
-          label = 'Winner (2010)';
+          label = text.winner(2010);
           person = row.y2010_winner_name || person;
           party = row.y2010_winner_party || party;
           year = 2010;
         } else if (currentColorMode === 'reserved') {
-          label = 'Current MLA';
+          label = text.currentMla;
           year = 2020;
         }
 
-        if (!alliance || alliance === 'Unknown' || (year !== 2020 && year !== 2016 && year !== 2026)) {
+        if (!alliance || (year !== 2020 && year !== 2016 && year !== 2026)) {
           const resolved = resolveAllianceForYear(party, year);
           alliance = (resolved && resolved !== 'NA')
             ? resolved
-            : (year === 2026 ? (row.y2026_winner_alliance || 'Unknown')
-            : (year === 2016 ? (row.y2016_winner_alliance || 'Unknown') : (row.current_mla_alliance || 'Unknown')));
+            : (year === 2026 ? (row.y2026_winner_alliance || '')
+            : (year === 2016 ? (row.y2016_winner_alliance || '') : (row.current_mla_alliance || '')));
         }
 
         const partyColor = partyColors.get(party) || '#f3f4f6';
         const allianceColor = allianceColors.get(normalizeAllianceKey(alliance)) || '#f3f4f6';
         const reserved = row.reserved ? String(row.reserved).toUpperCase() : null;
+        const displayPerson = localizedValue(person, 'notAvailable');
+        const displayParty = localizedValue(party, 'unknown');
+        const displayAlliance = localizedValue(alliance, 'unknown');
 
         content += `<div class="info-band">`;
-        content += `<span class="info-chip"><strong>${label}:</strong> ${person}</span>`;
-        content += `<span class="info-chip"><strong>Party:</strong> <span class="swatch" style="background:${partyColor};"></span>${party}</span>`;
-        content += `<span class="info-chip"><strong>Alliance:</strong> <span class="swatch" style="background:${allianceColor};"></span>${alliance}</span>`;
+        content += `<span class="info-chip"><strong>${label}:</strong> ${displayPerson}</span>`;
+        content += `<span class="info-chip"><strong>${text.party}:</strong> <span class="swatch" style="background:${partyColor};"></span>${displayParty}</span>`;
+        content += `<span class="info-chip"><strong>${text.alliance}:</strong> <span class="swatch" style="background:${allianceColor};"></span>${displayAlliance}</span>`;
         if (reserved) {
-          content += `<span class="info-chip"><strong>Reserved:</strong> ${reserved}</span>`;
+          content += `<span class="info-chip"><strong>${text.reserved}:</strong> ${localizeReserved(reserved)}</span>`;
         }
         content += `</div>`;
       } else {
-        content += `<div class="info-band" style="color:#6b7280;font-style:italic;">No election data available for this constituency.</div>`;
+        content += `<div class="info-band" style="color:#6b7280;font-style:italic;">${text.noElectionData}</div>`;
       }
 
       bottomSheetEl.innerHTML = content;
@@ -1524,12 +1761,13 @@
     async function loadState(stateKey){
       const normalizedState = normalizeStateKey(stateKey);
       const cfg = STATE_CONFIG[normalizedState];
+      const stateLabel = localizedStateLabel(normalizedState);
       currentState = normalizedState;
       setMapHeadingForState(normalizedState);
       setActiveTab(normalizedState);
 
       try {
-        statusEl.textContent = `Loading ${cfg.label} map...`;
+        statusEl.textContent = uiText().loadingMap(stateLabel);
         selectedKey = null;
         searchEl.value = '';
         dropdownEl.style.display = 'none';
@@ -1587,7 +1825,7 @@
           }
         }
       } catch (e) {
-        statusEl.textContent = `Failed to load ${cfg.label}: ${e && e.message ? e.message : 'unknown error'}`;
+        statusEl.textContent = uiText().failedToLoad(stateLabel, e && e.message ? e.message : 'unknown error');
         colorModeWrapEl.style.display = 'none';
         legendEl.style.display = 'none';
       }
@@ -1649,6 +1887,7 @@
     });
 
     async function init(){
+      await loadLanguageData(initialLangFromQuery());
       populateStateTabs();
       bindSearch();
       bindControls();
