@@ -24,8 +24,8 @@
     width: 100%;
     border: none;
     overflow: hidden;
-    /* start at 0; JS sets the height once postMessage arrives */
-    height: 0;
+    /* fallback height in case postMessage never fires (e.g. script stripped by CMS) */
+    height: 600px;
     transition: height 0.2s ease;
   }
 </style>
@@ -33,11 +33,11 @@
 <body>
 
 <div class="embed-wrapper">
-  <!-- Map widget -->
+  <!-- Map widget — src baked in so it works even if the CMS strips <script> -->
   <iframe
     id="iframe-map"
     class="auto-height"
-    src="/"
+    src="https://suhastpml.github.io/state-elections-2026/"
     scrolling="no"
     referrerpolicy="no-referrer-when-downgrade"
     title="Assembly Election Map"
@@ -48,7 +48,7 @@
   <iframe
     id="iframe-results"
     class="auto-height"
-    src="/parliament-widget"
+    src="https://suhastpml.github.io/state-elections-2026/parliament-widget.html"
     scrolling="no"
     referrerpolicy="no-referrer-when-downgrade"
     title="Election Results"
@@ -58,13 +58,12 @@
 
 <script>
 (function () {
-  // Build src URLs from this page's own query params so the embeds inherit
-  // ?state=KERALA, ?lang=kn, etc. when the consumer page passes them.
+  // Optionally forward ?state= and ?lang= from this page's URL into both iframes.
   var params = new URLSearchParams(location.search);
   var state = params.get('state') || '';
   var lang  = params.get('lang')  || '';
 
-  function buildSrc(base) {
+  function addParams(base) {
     var q = new URLSearchParams();
     if (state) q.set('state', state);
     if (lang)  q.set('lang',  lang);
@@ -75,10 +74,12 @@
   var mapIframe     = document.getElementById('iframe-map');
   var resultsIframe = document.getElementById('iframe-results');
 
-  mapIframe.src     = buildSrc('https://suhastpml.github.io/state-elections-2026/');
-  resultsIframe.src = buildSrc('https://suhastpml.github.io/state-elections-2026/parliament-widget.html');
+  if (state || lang) {
+    mapIframe.src     = addParams('https://suhastpml.github.io/state-elections-2026/');
+    resultsIframe.src = addParams('https://suhastpml.github.io/state-elections-2026/parliament-widget.html');
+  }
 
-  // Map iframe origin → element
+  // Auto-size iframes via postMessage height reports from the widgets.
   var iframeByWindow = new Map();
 
   function registerIframe(el) {
@@ -91,14 +92,11 @@
 
   window.addEventListener('message', function (e) {
     if (!e.data || e.data.type !== 'parliament-embed-size') return;
-
     var height = e.data.height;
     if (!height || height < 1) return;
 
-    // Find which iframe sent the message
     var target = iframeByWindow.get(e.source);
     if (!target) {
-      // Fallback: check both iframes by trying contentWindow
       [mapIframe, resultsIframe].forEach(function (el) {
         try { if (el.contentWindow === e.source) target = el; } catch (_) {}
       });
