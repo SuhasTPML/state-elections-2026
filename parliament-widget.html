@@ -553,6 +553,7 @@ function render() {
 
   renderLegend(display);
   renderTable(display);
+  postEmbedSize('render');
 }
 
 // ─────────────────────────────────────────────
@@ -616,6 +617,19 @@ window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => { if (currentStateKey) render(); }, 200);
 });
+
+function postEmbedSize(reason = 'manual') {
+  try {
+    const root = document.querySelector('.widget') || document.body;
+    const height = Math.ceil(root.getBoundingClientRect().height);
+    const width  = Math.ceil(root.getBoundingClientRect().width);
+    parent.postMessage({ type: 'parliament-embed-size', height, width, reason }, '*');
+  } catch (e) {}
+}
+try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
+window.addEventListener('load',   () => postEmbedSize('load'));
+window.addEventListener('resize', () => postEmbedSize('window-resize'));
+setTimeout(() => postEmbedSize('init'), 0);
 
 init();
 </script>

@@ -1820,6 +1820,7 @@
         svg.call(zoom.transform, d3.zoomIdentity);
         setQueryParam('state', normalizedState);
         statusEl.textContent = '';
+        postEmbedSize('map-loaded');
 
         const initialAc = getQueryParam('ac');
         if (initialAc && featureByKey.has(initialAc)) {
@@ -1901,6 +1902,19 @@
       updateMapDimensions();
       await loadState(initialStateFromQuery());
     }
+
+    function postEmbedSize(reason = 'manual') {
+      try {
+        const root = document.querySelector('main') || document.body;
+        const height = Math.ceil(root.getBoundingClientRect().height);
+        const width  = Math.ceil(root.getBoundingClientRect().width);
+        parent.postMessage({ type: 'parliament-embed-size', height, width, reason }, '*');
+      } catch (e) {}
+    }
+    try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
+    window.addEventListener('load',   () => postEmbedSize('load'));
+    window.addEventListener('resize', () => postEmbedSize('window-resize'));
+    setTimeout(() => postEmbedSize('init'), 0);
 
     init();
   </script>

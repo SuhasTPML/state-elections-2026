@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elections Embed</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f9fafb;
+    color: #1f2937;
+  }
+
+  .embed-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  iframe.auto-height {
+    display: block;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    /* start at 0; JS sets the height once postMessage arrives */
+    height: 0;
+    transition: height 0.2s ease;
+  }
+</style>
+</head>
+<body>
+
+<div class="embed-wrapper">
+  <!-- Map widget -->
+  <iframe
+    id="iframe-map"
+    class="auto-height"
+    src="/"
+    scrolling="no"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Assembly Election Map"
+    loading="lazy"
+  ></iframe>
+
+  <!-- Parliament / results widget -->
+  <iframe
+    id="iframe-results"
+    class="auto-height"
+    src="/parliament-widget"
+    scrolling="no"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Election Results"
+    loading="lazy"
+  ></iframe>
+</div>
+
+<script>
+(function () {
+  // Build src URLs from this page's own query params so the embeds inherit
+  // ?state=KERALA, ?lang=kn, etc. when the consumer page passes them.
+  var params = new URLSearchParams(location.search);
+  var state = params.get('state') || '';
+  var lang  = params.get('lang')  || '';
+
+  function buildSrc(base) {
+    var q = new URLSearchParams();
+    if (state) q.set('state', state);
+    if (lang)  q.set('lang',  lang);
+    var qs = q.toString();
+    return qs ? base + '?' + qs : base;
+  }
+
+  var mapIframe     = document.getElementById('iframe-map');
+  var resultsIframe = document.getElementById('iframe-results');
+
+  mapIframe.src     = buildSrc('/');
+  resultsIframe.src = buildSrc('/parliament-widget');
+
+  // Map iframe origin → element
+  var iframeByWindow = new Map();
+
+  function registerIframe(el) {
+    el.addEventListener('load', function () {
+      try { iframeByWindow.set(el.contentWindow, el); } catch (_) {}
+    });
+  }
+  registerIframe(mapIframe);
+  registerIframe(resultsIframe);
+
+  window.addEventListener('message', function (e) {
+    if (!e.data || e.data.type !== 'parliament-embed-size') return;
+
+    var height = e.data.height;
+    if (!height || height < 1) return;
+
+    // Find which iframe sent the message
+    var target = iframeByWindow.get(e.source);
+    if (!target) {
+      // Fallback: check both iframes by trying contentWindow
+      [mapIframe, resultsIframe].forEach(function (el) {
+        try { if (el.contentWindow === e.source) target = el; } catch (_) {}
+      });
+    }
+    if (!target) return;
+
+    target.style.height = height + 'px';
+  });
+})();
+</script>
+
+</body>
+</html>
