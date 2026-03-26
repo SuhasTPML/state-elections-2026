@@ -6,11 +6,30 @@
   <title>Parliament Results | ಸಂಸತ್ ಫಲಿತಾಂಶ</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
+    @font-face {
+      font-family: 'PvHeadlineSemiBold'; font-weight: 600; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PvHeadlineSemibold3.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextSemiBold'; font-weight: 600; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextSemibold.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextRegular'; font-weight: 400; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextRegular.woff2') format('woff2');
+    }
+    :root {
+      --pv-fallback: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+      --pv-headline: "PvHeadlineSemiBold", var(--pv-fallback);
+      --pv-text: "PvTextRegular", var(--pv-fallback);
+      --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
+    }
     * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: var(--pv-text);
       background: #f0f2f5; color: #333; margin: 0; padding: 16px;
     }
+    input, select, textarea, button { font-family: inherit; }
     .widget {
       max-width: 720px; margin: 0 auto;
       background: #fff; border-radius: 10px;
@@ -24,9 +43,10 @@
     }
     .tab-row::-webkit-scrollbar { display: none; }
     .tab-btn {
-      flex-shrink: 0; padding: 4px 13px;
+      flex-shrink: 0; padding: 4px 12px;
       border: 1px solid #ccc; border-radius: 20px;
       background: #fff; color: #374151; font-size: 13px;
+      font-family: inherit;
       cursor: pointer; white-space: nowrap;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
@@ -98,9 +118,9 @@
     .num { text-align: right; }
     #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; }
 
-    /* Kannada font adjustments */
-    html[lang="kn"] .tab-btn,
-    html[lang="kn"] .toggle-label,
+    /* Kannada padding adjustments (Prajavani glyphs sit lower) */
+    html[lang="kn"] .tab-btn { padding-top: 5px; padding-bottom: 0px; }
+    html[lang="kn"] .toggle-label { position: relative; top: 1px; }
     html[lang="kn"] table { font-size: 14px; }
   </style>
 </head>
