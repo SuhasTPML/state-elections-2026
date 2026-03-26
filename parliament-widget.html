@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parliament Results</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f0f2f5; color: #333; margin: 0; padding: 16px;
+    }
+    .widget {
+      max-width: 720px; margin: 0 auto;
+      background: #fff; border-radius: 10px;
+      padding: 16px 20px 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    /* ── Pill tabs ── */
+    .tab-row {
+      display: flex; gap: 4px; flex-wrap: wrap;
+      overflow-x: auto; scrollbar-width: none; margin-bottom: 10px;
+    }
+    .tab-row::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0; padding: 4px 13px;
+      border: 1px solid #ccc; border-radius: 20px;
+      background: #fff; color: #374151; font-size: 13px;
+      cursor: pointer; white-space: nowrap;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .tab-btn:hover { background: #f3f4f6; border-color: #999; }
+    .tab-btn.active { background: #1f2937; color: #fff; border-color: #1f2937; }
+
+    /* ── Controls row ── */
+    .controls-row {
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap;
+      gap: 8px; margin-bottom: 4px;
+    }
+    .year-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+
+    /* ── Toggle switch ── */
+    .toggle-wrap {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: #374151; cursor: pointer;
+      user-select: none;
+    }
+    .toggle-wrap .toggle-label { font-weight: 500; }
+    .toggle-wrap .toggle-label.inactive { color: #9CA3AF; }
+    .switch { position: relative; display: inline-block; width: 40px; height: 22px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer; inset: 0;
+      background: #D1D5DB; border-radius: 22px; transition: background 0.2s;
+    }
+    .slider::before {
+      content: ""; position: absolute;
+      height: 16px; width: 16px; left: 3px; bottom: 3px;
+      background: #fff; border-radius: 50%; transition: transform 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    input:checked + .slider { background: #1f2937; }
+    input:checked + .slider::before { transform: translateX(18px); }
+
+    /* ── Chart ── */
+    #chart-svg-container { width: 100%; }
+    #chart-svg-container svg { display: block; width: 100%; }
+    .parliament-seat {
+      stroke: #fff; stroke-width: 1px;
+      transition: opacity 0.25s, stroke 0.15s, stroke-width 0.15s;
+    }
+    .parliament-seat.dimmed { opacity: 0.15; }
+
+    /* ── Legend ── */
+    #legend {
+      display: flex; flex-wrap: wrap; gap: 8px 14px;
+      justify-content: center; margin-top: 12px; font-size: 12px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 5px;
+      cursor: pointer; transition: opacity 0.2s;
+    }
+    .legend-swatch {
+      width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
+    }
+
+    /* ── Table ── */
+    #table-container { margin-top: 14px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { background: #f8f8f8; font-weight: 600; padding: 8px 10px; text-align: left; border-bottom: 2px solid #e5e7eb; }
+    td { padding: 7px 10px; border-bottom: 1px solid #e5e7eb; }
+    tbody tr { transition: background 0.15s, opacity 0.2s; cursor: default; }
+    tbody tr:hover { background: #f9fafb; }
+    .cell-name { display: flex; align-items: center; gap: 8px; }
+    .color-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+    .num { text-align: right; }
+    #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+<div class="widget">
+  <!-- State tabs -->
+  <div id="state-tabs" class="tab-row"></div>
+
+  <!-- Year tabs + toggle -->
+  <div class="controls-row">
+    <div id="year-tabs" class="year-tabs"></div>
+    <label class="toggle-wrap" id="toggle-wrap">
+      <span class="toggle-label" id="lbl-party">Party</span>
+      <span class="switch">
+        <input type="checkbox" id="view-toggle">
+        <span class="slider"></span>
+      </span>
+      <span class="toggle-label inactive" id="lbl-alliance">Alliance</span>
+    </label>
+  </div>
+
+  <!-- Chart -->
+  <div id="chart-svg-container"></div>
+
+  <!-- Legend -->
+  <div id="legend"></div>
+
+  <!-- Table -->
+  <div id="table-container"></div>
+  <div id="error-msg"></div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────
+//  State
+// ─────────────────────────────────────────────
+let DATA = null;              // full parliament-data.json
+let currentStateKey = null;
+let currentYear = null;
+let viewMode = 'party';       // 'party' | 'alliance'
+
+// D3 selections
+let svg, chartGroup, labelsGroup;
+
+// ─────────────────────────────────────────────
+//  Load data
+// ─────────────────────────────────────────────
+async function init() {
+  try {
+    DATA = await fetch('hosted-json/parliament-data.json').then(r => { if (!r.ok) throw r.status; return r.json(); });
+    buildStateTabs();
+    loadState(DATA.states[0].key);
+  } catch(e) {
+    document.getElementById('error-msg').textContent = 'Could not load parliament-data.json. Serve this page via a local server.';
+  }
+}
+
+// ─────────────────────────────────────────────
+//  Tabs
+// ─────────────────────────────────────────────
+function buildStateTabs() {
+  const el = document.getElementById('state-tabs');
+  DATA.states.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.key = s.key;
+    btn.textContent = s.label;
+    btn.addEventListener('click', () => { if (s.key !== currentStateKey) loadState(s.key); });
+    el.appendChild(btn);
+  });
+}
+
+function setActiveStateTab(key) {
+  document.querySelectorAll('#state-tabs .tab-btn').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+}
+
+function buildYearTabs(state) {
+  const el = document.getElementById('year-tabs');
+  el.innerHTML = '';
+  state.years.forEach(y => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.year = y;
+    btn.textContent = y;
+    btn.addEventListener('click', () => { if (y !== currentYear) { currentYear = y; setActiveYearTab(y); render(); } });
+    el.appendChild(btn);
+  });
+}
+
+function setActiveYearTab(year) {
+  document.querySelectorAll('#year-tabs .tab-btn').forEach(b => b.classList.toggle('active', b.dataset.year === year));
+}
+
+// ─────────────────────────────────────────────
+//  Toggle
+// ─────────────────────────────────────────────
+document.getElementById('view-toggle').addEventListener('change', function() {
+  viewMode = this.checked ? 'alliance' : 'party';
+  document.getElementById('lbl-party').classList.toggle('inactive', this.checked);
+  document.getElementById('lbl-alliance').classList.toggle('inactive', !this.checked);
+  render();
+});
+
+// ─────────────────────────────────────────────
+//  Load state
+// ─────────────────────────────────────────────
+function loadState(key) {
+  currentStateKey = key;
+  const state = DATA.states.find(s => s.key === key);
+  currentYear = state.years[state.years.length - 1];
+  setActiveStateTab(key);
+  buildYearTabs(state);
+  setActiveYearTab(currentYear);
+  initSvg();
+  render();
+}
+
+// ─────────────────────────────────────────────
+//  SVG init
+// ─────────────────────────────────────────────
+function initSvg() {
+  const container = document.getElementById('chart-svg-container');
+  container.innerHTML = '';
+  svg = d3.select(container).append('svg');
+  labelsGroup = svg.append('g').attr('class', 'labels-group');
+  chartGroup  = svg.append('g').attr('class', 'chart-group');
+}
+
+// ─────────────────────────────────────────────
+//  Data helpers
+// ─────────────────────────────────────────────
+function getDisplayData(stateData, year) {
+  if (viewMode === 'alliance') {
+    const allianceMap = {};
+    stateData.parties.forEach(p => {
+      const a = (p.alliance && p.alliance[year]) || 'OTH';
+      const wins  = (p.results[year] && p.results[year].wins)  || 0;
+      const leads = (p.results[year] && p.results[year].leads) || 0;
+      if (!allianceMap[a]) {
+        allianceMap[a] = { name: a, color: (DATA.alliance_colors && DATA.alliance_colors[a]) || '#9CA3AF', wins: 0, leads: 0 };
+      }
+      allianceMap[a].wins  += wins;
+      allianceMap[a].leads += leads;
+    });
+    return Object.values(allianceMap)
+      .filter(a => a.wins + a.leads > 0)
+      .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+  } else {
+    return stateData.parties
+      .map(p => ({
+        name:  p.name || p.code,
+        color: p.color || '#9CA3AF',
+        wins:  (p.results[year] && p.results[year].wins)  || 0,
+        leads: (p.results[year] && p.results[year].leads) || 0
+      }))
+      .filter(p => p.wins + p.leads > 0)
+      .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+  }
+}
+
+// ─────────────────────────────────────────────
+//  Layout (ported from Dynamicchart.html)
+// ─────────────────────────────────────────────
+const ARC_DEGREES = 180;
+const INNER_RADIUS_RATIO = 0.3;
+
+function getLayoutCapacity(seatRadius, chartHeight) {
+  if (seatRadius < 0.5) return 0;
+  const spacing = seatRadius * 0.15;
+  const footprint = seatRadius * 2 + spacing;
+  const arcRadians = ARC_DEGREES * Math.PI / 180;
+  let capacity = 0;
+  let rowRadius = chartHeight - seatRadius;
+  while (rowRadius > chartHeight * INNER_RADIUS_RATIO) {
+    capacity += Math.floor(rowRadius * arcRadians / footprint);
+    rowRadius -= footprint;
+  }
+  return capacity;
+}
+
+function calculateLayout(totalSeats, chartHeight) {
+  if (totalSeats === 0) return { positions: [], seatRadius: 0 };
+  let lo = 0.1, hi = 50, best = 1;
+  for (let i = 0; i < 30; i++) {
+    const mid = (lo + hi) / 2;
+    if (getLayoutCapacity(mid, chartHeight) >= totalSeats) { best = mid; lo = mid; }
+    else hi = mid;
+  }
+  const seatRadius = best;
+  const spacing = seatRadius * 0.15;
+  const footprint = seatRadius * 2 + spacing;
+  const arcRadians = ARC_DEGREES * Math.PI / 180;
+  const rows = [];
+  let rowRadius = chartHeight - seatRadius;
+  while (rowRadius > chartHeight * INNER_RADIUS_RATIO) {
+    const capacity = Math.floor(rowRadius * arcRadians / footprint);
+    if (capacity <= 0) break;
+    rows.push({ radius: rowRadius, capacity });
+    rowRadius -= footprint;
+  }
+  const totalArcLength = rows.reduce((s, r) => s + r.radius * arcRadians, 0);
+  const seatsPerRow = [];
+  let assigned = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const inRow = i < rows.length - 1
+      ? (totalArcLength > 0 ? Math.round(arcRadians * rows[i].radius * totalSeats / totalArcLength) : 0)
+      : totalSeats - assigned;
+    seatsPerRow.push(Math.min(rows[i].capacity, inRow));
+    assigned += seatsPerRow[seatsPerRow.length - 1];
+  }
+  let diff = totalSeats - seatsPerRow.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < Math.abs(diff); i++) seatsPerRow[i % seatsPerRow.length] += Math.sign(diff);
+  const positions = [];
+  const startAngle = (Math.PI - arcRadians) / 2;
+  for (let i = 0; i < rows.length; i++) {
+    const radius = rows[i].radius;
+    const n = seatsPerRow[i];
+    const step = n > 1 ? arcRadians / (n - 1) : 0;
+    for (let j = 0; j < n; j++) {
+      const angle = Math.PI - startAngle - j * step;
+      positions.push({ x: Math.cos(angle) * radius, y: Math.sin(angle) * -radius, angle, radius });
+    }
+  }
+  positions.sort((a, b) => b.angle - a.angle);
+  return { positions: positions.slice(0, totalSeats), seatRadius };
+}
+
+// ─────────────────────────────────────────────
+//  Highlight / reset
+// ─────────────────────────────────────────────
+function highlight(name, color) {
+  const darker  = d3.color(color).darker(0.7);
+  const lighter = d3.color(color).brighter(1.5).copy({ opacity: 0.3 });
+  chartGroup.selectAll('.parliament-seat').classed('dimmed', true);
+  chartGroup.selectAll('.parliament-seat').filter(d => d.name === name)
+    .classed('dimmed', false)
+    .style('stroke', d => d.type === 'lead' ? d.color : darker)
+    .style('stroke-width', '2px')
+    .style('fill',   d => d.type === 'lead' ? lighter : d.color);
+  d3.selectAll('.legend-item').style('opacity', 0.25);
+  d3.selectAll('.legend-item').filter(d => d.name === name).style('opacity', 1).style('font-weight', 'bold');
+  d3.selectAll('#table-container tbody tr').style('opacity', 0.25);
+  d3.selectAll('#table-container tbody tr').filter(function() { return d3.select(this).datum()?.name === name; })
+    .style('opacity', 1).style('background', '#f0f8ff');
+}
+
+function resetHighlight() {
+  chartGroup.selectAll('.parliament-seat').classed('dimmed', false)
+    .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
+    .style('stroke-width', '1px')
+    .style('fill', d => d.type === 'seat' ? d.color : 'transparent');
+  d3.selectAll('.legend-item').style('opacity', 1).style('font-weight', 'normal');
+  d3.selectAll('#table-container tbody tr').style('opacity', 1).style('background', 'transparent');
+}
+
+// ─────────────────────────────────────────────
+//  Render
+// ─────────────────────────────────────────────
+function render() {
+  const stateData = DATA.states.find(s => s.key === currentStateKey);
+  const display   = getDisplayData(stateData, currentYear);
+
+  // Build seat data array
+  const seatData = [];
+  display.forEach(d => {
+    for (let i = 0; i < d.wins;  i++) seatData.push({ name: d.name, color: d.color, type: 'seat' });
+    for (let i = 0; i < d.leads; i++) seatData.push({ name: d.name, color: d.color, type: 'lead' });
+  });
+
+  const totalSeats = seatData.length;
+  const container  = document.getElementById('chart-svg-container');
+  const width      = container.getBoundingClientRect().width || 600;
+  const chartHeight = width / 2;
+  const { positions, seatRadius } = calculateLayout(totalSeats, chartHeight);
+
+  // ViewBox
+  const pad = 30;
+  let minX = -width/2, maxX = width/2, minY = -chartHeight - pad, maxY = pad + 20;
+  if (positions.length) {
+    const xs = positions.map(p => p.x), ys = positions.map(p => p.y);
+    minX = Math.min(...xs) - seatRadius - pad;
+    maxX = Math.max(...xs) + seatRadius + pad;
+    minY = Math.min(...ys) - seatRadius - pad;
+    maxY = Math.max(...ys) + seatRadius + 10;
+  }
+  svg.attr('viewBox', `${minX} ${minY} ${maxX - minX} ${maxY - minY}`)
+     .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  // Total label
+  labelsGroup.selectAll('.total-label').remove();
+  if (totalSeats > 0) {
+    labelsGroup.append('text').attr('class', 'total-label')
+      .attr('x', 0).attr('y', 0)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .style('font-size', Math.max(18, Math.round(chartHeight * 0.1)) + 'px')
+      .style('font-weight', 'bold').style('fill', '#333')
+      .text(totalSeats);
+    // Majority indicator
+    const maj = stateData.majority;
+    if (maj) {
+      labelsGroup.append('text').attr('class', 'total-label')
+        .attr('x', 0).attr('y', Math.max(18, Math.round(chartHeight * 0.1)) * 1.2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .style('font-size', Math.max(10, Math.round(chartHeight * 0.055)) + 'px')
+        .style('fill', '#6B7280')
+        .text('Majority ' + maj);
+    }
+  }
+
+  // Majority line
+  labelsGroup.selectAll('.majority-line, .majority-line-text').remove();
+  if (totalSeats >= 2 && stateData.majority) {
+    const majRatio = stateData.majority / totalSeats;
+    const targetIdx = Math.min(totalSeats - 1, Math.floor(totalSeats * majRatio));
+    const targetAngle = positions[targetIdx] ? positions[targetIdx].angle : Math.PI / 2;
+    const outerR = Math.max(...positions.map(p => p.radius));
+    const innerR = Math.min(...positions.map(p => p.radius));
+    const x1 = Math.cos(targetAngle) * (innerR - 20);
+    const y1 = Math.sin(targetAngle) * -(innerR - 20);
+    const x2 = Math.cos(targetAngle) * (outerR + 30);
+    const y2 = Math.sin(targetAngle) * -(outerR + 30);
+    labelsGroup.append('line').attr('class', 'majority-line')
+      .attr('x1', x1).attr('y1', y1).attr('x2', x2).attr('y2', y2)
+      .attr('stroke', '#555').attr('stroke-width', 1.5).attr('stroke-dasharray', '5,4');
+  }
+
+  // Hit areas
+  chartGroup.selectAll('.seat-hit').data(seatData, (d, i) => `${d.name}-hit-${i}`).join(
+    e => e.append('circle').attr('class','seat-hit')
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', 0)
+          .call(e => e.transition().duration(350).attr('r', seatRadius + 2)),
+    u => u.transition().duration(350)
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', seatRadius + 2),
+    x => x.transition().duration(350).attr('r', 0).remove()
+  ).attr('fill', 'transparent').attr('stroke', 'none')
+   .style('pointer-events', 'all').style('cursor', 'pointer')
+   .on('mouseover', (ev, d) => highlight(d.name, d.color))
+   .on('mouseout', resetHighlight);
+
+  // Seats
+  chartGroup.selectAll('.parliament-seat').data(seatData, (d, i) => `${d.name}-${d.type}-${i}`).join(
+    e => e.append('circle').attr('class', 'parliament-seat')
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', 0)
+          .call(e => e.transition().duration(350).attr('r', seatRadius - 0.5)),
+    u => u.transition().duration(350)
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', seatRadius - 0.5),
+    x => x.transition().duration(350).attr('r', 0).remove()
+  ).attr('fill', d => d.type === 'seat' ? d.color : 'transparent')
+   .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
+   .style('stroke-width', '1px')
+   .style('pointer-events', 'none');
+
+  renderLegend(display);
+  renderTable(display);
+}
+
+// ─────────────────────────────────────────────
+//  Legend
+// ─────────────────────────────────────────────
+function renderLegend(display) {
+  const el = d3.select('#legend');
+  el.selectAll('.legend-item').data(display, d => d.name).join(
+    e => e.append('div').attr('class','legend-item'),
+    u => u,
+    x => x.remove()
+  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${d.name}</span>`)
+   .style('cursor','pointer')
+   .on('mouseover', (ev, d) => highlight(d.name, d.color))
+   .on('mouseout', resetHighlight);
+}
+
+// ─────────────────────────────────────────────
+//  Table
+// ─────────────────────────────────────────────
+function renderTable(display) {
+  const container = document.getElementById('table-container');
+  container.innerHTML = '';
+  const table = document.createElement('table');
+
+  // Header
+  const thead = table.createTHead();
+  const hrow = thead.insertRow();
+  const label = viewMode === 'alliance' ? 'Alliance' : 'Party';
+  [label, 'Wins', 'Leads', 'Total'].forEach((h, i) => {
+    const th = document.createElement('th');
+    th.textContent = h;
+    if (i > 0) th.style.textAlign = 'right';
+    hrow.appendChild(th);
+  });
+
+  const tbody = table.createTBody();
+  display.forEach(d => {
+    const tr = tbody.insertRow();
+    d3.select(tr).datum(d)
+      .on('mouseover', () => highlight(d.name, d.color))
+      .on('mouseout', resetHighlight);
+
+    const nameTd = tr.insertCell();
+    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${d.name}</div>`;
+
+    const winsTd  = tr.insertCell(); winsTd.textContent  = d.wins;  winsTd.className = 'num';
+    const leadsTd = tr.insertCell(); leadsTd.textContent = d.leads; leadsTd.className = 'num';
+    const totTd   = tr.insertCell(); totTd.textContent   = d.wins + d.leads; totTd.className = 'num';
+    totTd.style.fontWeight = '600';
+  });
+
+  container.appendChild(table);
+}
+
+// ─────────────────────────────────────────────
+//  Resize
+// ─────────────────────────────────────────────
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => { if (currentStateKey) render(); }, 200);
+});
+
+init();
+</script>
+</body>
+</html>
