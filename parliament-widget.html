@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parliament Results</title>
+  <title>Parliament Results | ಸಂಸತ್ ಫಲಿತಾಂಶ</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     * { box-sizing: border-box; }
@@ -97,6 +97,11 @@
     .color-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
     .num { text-align: right; }
     #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; }
+
+    /* Kannada font adjustments */
+    html[lang="kn"] .tab-btn,
+    html[lang="kn"] .toggle-label,
+    html[lang="kn"] table { font-size: 14px; }
   </style>
 </head>
 <body>
@@ -108,12 +113,12 @@
   <div class="controls-row">
     <div id="year-tabs" class="year-tabs"></div>
     <label class="toggle-wrap" id="toggle-wrap">
-      <span class="toggle-label" id="lbl-party">Party</span>
+      <span class="toggle-label" id="lbl-party"></span>
       <span class="switch">
         <input type="checkbox" id="view-toggle">
         <span class="slider"></span>
       </span>
-      <span class="toggle-label inactive" id="lbl-alliance">Alliance</span>
+      <span class="toggle-label inactive" id="lbl-alliance"></span>
     </label>
   </div>
 
@@ -130,6 +135,57 @@
 
 <script>
 // ─────────────────────────────────────────────
+//  i18n
+// ─────────────────────────────────────────────
+const LANG = (() => {
+  const raw = new URLSearchParams(location.search).get('lang') || '';
+  return raw.trim().toLowerCase() === 'kn' ? 'kn' : 'en';
+})();
+
+document.documentElement.lang = LANG;
+
+const UI = {
+  en: {
+    party: 'Party', alliance: 'Alliance',
+    wins: 'Wins', leads: 'Leads', total: 'Total',
+    majority: 'Majority',
+  },
+  kn: {
+    party: 'ಪಕ್ಷ', alliance: 'ಮೈತ್ರಿ',
+    wins: 'ಗೆಲುವು', leads: 'ಮುನ್ನಡೆ', total: 'ಒಟ್ಟು',
+    majority: 'ಬಹುಮತ',
+  }
+};
+
+// State labels
+const STATE_LABELS_KN = {
+  KERALA: 'ಕೇರಳ', TAMIL_NADU: 'ತಮಿಳುನಾಡು',
+  WEST_BENGAL: 'ಪಶ್ಚಿಮ ಬಂಗಾಳ', ASSAM: 'ಅಸ್ಸಾಂ', PUDUCHERRY: 'ಪುದುಚೇರಿ'
+};
+
+// Party / alliance name translations
+const NAME_KN = {
+  // Parties
+  'BJP': 'ಬಿಜೆಪಿ', 'INC': 'ಐಎನ್‌ಸಿ', 'CPI(M)': 'ಸಿಪಿಐ(ಎಂ)', 'CPI': 'ಸಿಪಿಐ',
+  'IUML': 'ಐಯುಎಂಎಲ್', 'DMK': 'ಡಿಎಂಕೆ', 'AIADMK': 'ಎಐಎಡಿಎಂಕೆ', 'TMC': 'ಟಿಎಂಸಿ',
+  'PMK': 'ಪಿಎಂಕೆ', 'VCK': 'ವಿಸಿಕೆ', 'KMDK': 'ಕೆಎಂಡಿಕೆ', 'NCP': 'ಎನ್‌ಸಿಪಿ',
+  'GJM': 'ಜಿಜೆಎಂ', 'ISF': 'ಐಎಸ್‌ಎಫ್', 'AGP': 'ಎಜಿಪಿ', 'AIUDF': 'ಎಐಯುಡಿಎಫ್',
+  'BPF': 'ಬಿಪಿಎಫ್', 'UPPL': 'ಯುಪಿಪಿಎಲ್', 'AINRC': 'ಎಐಎನ್‌ಆರ್‌ಸಿ',
+  'AIFB': 'ಎಐಎಫ್‌ಬಿ', 'RSP': 'ಆರ್‌ಎಸ್‌ಪಿ', 'IND': 'ಪಕ್ಷೇತರ',
+  'JD(S)': 'ಜೆಡಿ(ಎಸ್)', 'KC(M)': 'ಕೆಸಿ(ಎಂ)', 'KC(J)': 'ಕೆಸಿ(ಜೆ)', 'KC(B)': 'ಕೆಸಿ(ಬಿ)',
+  'Con(S)': 'ಕಾಂ(ಎಸ್)', 'NSC': 'ಎನ್‌ಎಸ್‌ಸಿ', 'NCK': 'ಎನ್‌ಸಿಕೆ', 'INL': 'ಐಎನ್‌ಎಲ್',
+  'LJD': 'ಎಲ್‌ಜೆಡಿ', 'JKC': 'ಜೆಕೆಸಿ', 'RMPI': 'ಆರ್‌ಎಂಪಿಐ', 'CMP(A)': 'ಸಿಎಂಪಿ(ಎ)',
+  'UDF': 'ಯುಡಿಎಫ್',
+  // Alliances
+  'LDF': 'ಎಲ್‌ಡಿಎಫ್', 'NDA': 'ಎನ್‌ಡಿಎ', 'UPA': 'ಯುಪಿಎ', 'SPA': 'ಎಸ್‌ಪಿಎ',
+  'SM': 'ಎಸ್‌ಎಂ', 'MAHAJOT': 'ಮಹಾಜೋಟ್', 'OTH': 'ಇತರರು'
+};
+
+function t(key)      { return (LANG === 'kn' ? UI.kn : UI.en)[key] || key; }
+function tName(name) { return LANG === 'kn' ? (NAME_KN[name] || name) : name; }
+function tState(key, fallback) { return LANG === 'kn' ? (STATE_LABELS_KN[key] || fallback) : fallback; }
+
+// ─────────────────────────────────────────────
 //  State
 // ─────────────────────────────────────────────
 let DATA = null;              // full parliament-data.json
@@ -144,6 +200,10 @@ let svg, chartGroup, labelsGroup;
 //  Load data
 // ─────────────────────────────────────────────
 async function init() {
+  // Set toggle labels from i18n
+  document.getElementById('lbl-party').textContent    = t('party');
+  document.getElementById('lbl-alliance').textContent = t('alliance');
+
   try {
     DATA = await fetch('hosted-json/parliament-data.json').then(r => { if (!r.ok) throw r.status; return r.json(); });
     buildStateTabs();
@@ -162,7 +222,7 @@ function buildStateTabs() {
     const btn = document.createElement('button');
     btn.className = 'tab-btn';
     btn.dataset.key = s.key;
-    btn.textContent = s.label;
+    btn.textContent = tState(s.key, s.label);
     btn.addEventListener('click', () => { if (s.key !== currentStateKey) loadState(s.key); });
     el.appendChild(btn);
   });
@@ -194,7 +254,7 @@ function setActiveYearTab(year) {
 // ─────────────────────────────────────────────
 document.getElementById('view-toggle').addEventListener('change', function() {
   viewMode = this.checked ? 'alliance' : 'party';
-  document.getElementById('lbl-party').classList.toggle('inactive', this.checked);
+  document.getElementById('lbl-party').classList.toggle('inactive',    this.checked);
   document.getElementById('lbl-alliance').classList.toggle('inactive', !this.checked);
   render();
 });
@@ -401,7 +461,7 @@ function render() {
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .style('font-size', Math.max(10, Math.round(chartHeight * 0.055)) + 'px')
         .style('fill', '#6B7280')
-        .text('Majority ' + maj);
+        .text(t('majority') + ' ' + maj);
     }
   }
 
@@ -461,7 +521,7 @@ function renderLegend(display) {
     e => e.append('div').attr('class','legend-item'),
     u => u,
     x => x.remove()
-  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${d.name}</span>`)
+  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${tName(d.name)}</span>`)
    .style('cursor','pointer')
    .on('mouseover', (ev, d) => highlight(d.name, d.color))
    .on('mouseout', resetHighlight);
@@ -478,8 +538,8 @@ function renderTable(display) {
   // Header
   const thead = table.createTHead();
   const hrow = thead.insertRow();
-  const label = viewMode === 'alliance' ? 'Alliance' : 'Party';
-  [label, 'Wins', 'Leads', 'Total'].forEach((h, i) => {
+  const label = viewMode === 'alliance' ? t('alliance') : t('party');
+  [label, t('wins'), t('leads'), t('total')].forEach((h, i) => {
     const th = document.createElement('th');
     th.textContent = h;
     if (i > 0) th.style.textAlign = 'right';
@@ -494,7 +554,7 @@ function renderTable(display) {
       .on('mouseout', resetHighlight);
 
     const nameTd = tr.insertCell();
-    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${d.name}</div>`;
+    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${tName(d.name)}</div>`;
 
     const winsTd  = tr.insertCell(); winsTd.textContent  = d.wins;  winsTd.className = 'num';
     const leadsTd = tr.insertCell(); leadsTd.textContent = d.leads; leadsTd.className = 'num';
