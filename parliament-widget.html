@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parliament Results | ಸಂಸತ್ ಫಲಿತಾಂಶ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     @font-face {
@@ -19,7 +22,12 @@
       src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextRegular.woff2') format('woff2');
     }
     :root {
-      --pv-fallback: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+      --pv-fallback: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --pv-headline: "Playfair Display", Georgia, serif;
+      --pv-text: "Roboto Slab", var(--pv-fallback);
+      --pv-text-semibold: "Roboto Slab", var(--pv-fallback);
+    }
+    html[lang="kn"] {
       --pv-headline: "PvHeadlineSemiBold", var(--pv-fallback);
       --pv-text: "PvTextRegular", var(--pv-fallback);
       --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
@@ -27,44 +35,59 @@
     * { box-sizing: border-box; }
     body {
       font-family: var(--pv-text);
-      background: #fff; color: #333; margin: 0; padding: 16px;
+      background: #fff; color: #333; margin: 0; padding: 4px;
     }
     input, select, textarea, button { font-family: inherit; }
     .widget {
       max-width: 720px; margin: 0 auto;
-      padding: 16px 20px 20px;
+      padding: 4px 6px 8px;
     }
 
-    /* ── Pill tabs ── */
+    /* ── State tabs (grey-fill chips) ── */
     .tab-row {
-      display: flex; gap: 4px; flex-wrap: wrap;
-      overflow-x: auto; scrollbar-width: none; margin-bottom: 10px;
+      display: flex; gap: 4px; flex-wrap: nowrap;
+      overflow-x: auto; scrollbar-width: none; margin-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
     }
     .tab-row::-webkit-scrollbar { display: none; }
     .tab-btn {
       flex-shrink: 0; padding: 4px 12px;
-      border: 1px solid #ccc; border-radius: 20px;
-      background: #fff; color: #374151; font-size: 13px;
+      border: none; border-radius: 20px;
+      background: #f3f4f6; color: #374151; font-size: 13px;
       font-family: inherit;
       cursor: pointer; white-space: nowrap;
-      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      transition: background 0.15s, color 0.15s;
     }
-    .tab-btn:hover { background: #f3f4f6; border-color: #999; }
-    .tab-btn.active { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .tab-btn:hover { background: #e5e7eb; }
+    .tab-btn.active { background: #1f2937; color: #fff; }
 
     /* ── Controls row ── */
     .controls-row {
       display: flex; align-items: center;
-      justify-content: space-between; flex-wrap: wrap;
-      gap: 8px; margin-bottom: 4px;
+      justify-content: space-between;
+      gap: 8px; margin-bottom: 6px;
+      border-top: 1px solid #f3f4f6; padding-top: 6px;
     }
-    .year-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+    .year-tabs { display: flex; gap: 2px; }
+
+    /* ── Year tabs (underline style) ── */
+    .year-btn {
+      flex-shrink: 0; padding: 3px 8px;
+      border: none; border-bottom: 2px solid transparent;
+      background: transparent; color: #6B7280; font-size: 13px;
+      font-family: inherit; cursor: pointer; white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .year-btn:hover { color: #1f2937; }
+    .year-btn.active { color: #1f2937; border-bottom-color: #1f2937; font-weight: 600; }
 
     /* ── Toggle switch ── */
     .toggle-wrap {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; color: #374151; cursor: pointer;
+      display: flex; align-items: center; gap: 7px;
+      font-size: 12px; color: #374151; cursor: pointer;
       user-select: none;
+      background: #f9fafb; border: 1px solid #e5e7eb;
+      border-radius: 20px; padding: 3px 10px;
     }
     .toggle-wrap .toggle-label { font-weight: 500; }
     .toggle-wrap .toggle-label.inactive { color: #9CA3AF; }
@@ -108,8 +131,8 @@
     /* ── Table ── */
     #table-container { margin-top: 14px; overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th { background: #f8f8f8; font-weight: 600; padding: 8px 10px; text-align: left; border-bottom: 2px solid #e5e7eb; }
-    td { padding: 7px 10px; border-bottom: 1px solid #e5e7eb; }
+    th { background: #f8f8f8; font-weight: 600; padding: 4px 6px; text-align: left; border-bottom: 2px solid #e5e7eb; }
+    td { padding: 3px 6px; border-bottom: 1px solid #e5e7eb; }
     tbody tr { transition: background 0.15s, opacity 0.2s; cursor: default; }
     tbody tr:hover { background: #f9fafb; }
     .cell-name { display: flex; align-items: center; gap: 8px; }
@@ -118,7 +141,8 @@
     #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; }
 
     /* Kannada padding adjustments (Prajavani glyphs sit lower) */
-    html[lang="kn"] .tab-btn { padding-top: 5px; padding-bottom: 0px; }
+    html[lang="kn"] .tab-btn  { padding-top: 5px; padding-bottom: 0px; }
+    html[lang="kn"] .year-btn { padding-top: 5px; padding-bottom: 0px; }
     html[lang="kn"] .toggle-label { position: relative; top: 1px; }
     html[lang="kn"] table { font-size: 14px; }
   </style>
@@ -256,7 +280,7 @@ function buildYearTabs(state) {
   el.innerHTML = '';
   state.years.forEach(y => {
     const btn = document.createElement('button');
-    btn.className = 'tab-btn';
+    btn.className = 'year-btn';
     btn.dataset.year = y;
     btn.textContent = y;
     btn.addEventListener('click', () => { if (y !== currentYear) { currentYear = y; setActiveYearTab(y); render(); } });
@@ -265,7 +289,7 @@ function buildYearTabs(state) {
 }
 
 function setActiveYearTab(year) {
-  document.querySelectorAll('#year-tabs .tab-btn').forEach(b => b.classList.toggle('active', b.dataset.year === year));
+  document.querySelectorAll('#year-tabs .year-btn').forEach(b => b.classList.toggle('active', b.dataset.year === year));
 }
 
 // ─────────────────────────────────────────────
