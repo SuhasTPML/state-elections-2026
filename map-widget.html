@@ -452,6 +452,13 @@
     const PARTIES_URL = new URL('parties.json', DATA_BASE_URL).toString();
     const ALLIANCES_URL = new URL('alliances.json', DATA_BASE_URL).toString();
     const KANNADA_I18N_URL = new URL('i18n.kn.json', DATA_BASE_URL).toString();
+    const SHEET_ID_PARAM = new URLSearchParams(location.search).get('sheetId');
+    const SHEET_URL_PARAM = new URLSearchParams(location.search).get('sheetUrl');
+    const RESULTS_TAB_NAME = (new URLSearchParams(location.search).get('resultsTab') || 'statewise_party_results').trim();
+    const MAPPING_TAB_NAME = (new URLSearchParams(location.search).get('mappingTab') || 'statewise_party_alliance_mapping').trim();
+    const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || '').trim();
+    const RESULTS_SHEET_URL = SHEET_ID ? buildGoogleSheetCsvUrl(SHEET_ID, RESULTS_TAB_NAME) : '';
+    const MAPPING_SHEET_URL = SHEET_ID ? buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_TAB_NAME) : '';
     const LANGUAGE_QUERY_PARAM = 'lang';
     const ENABLE_2026_MODES = (() => {
       try {
@@ -608,70 +615,19 @@
       return String(cfg.disclaimer || '').trim();
     }
 
-    function uniqueCandidates(list){
-      const seen = new Set();
-      const out = [];
-      for (const item of list) {
-        if (!item || seen.has(item)) continue;
-        seen.add(item);
-        out.push(item);
-      }
-      return out;
+    function extractGoogleSheetId(sheetUrl){
+      const raw = String(sheetUrl || '').trim();
+      if (!raw) return '';
+      const match = raw.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
     }
 
-    function buildStateGeoCandidates(fileStem){
-      const optimized = `${fileStem}_optimized.geojson`;
-      const standard = `${fileStem}.geojson`;
-      const origin = (location.protocol === 'http:' || location.protocol === 'https:')
-        ? [
-            `${location.origin}/root/${optimized}`,
-            `${location.origin}/root/${standard}`,
-            `${location.origin}/data/geojson/${optimized}`,
-            `${location.origin}/data/geojson/${standard}`,
-            `${location.origin}/${optimized}`,
-            `${location.origin}/${standard}`
-          ]
-        : [];
-
-      return uniqueCandidates([
-        ...origin,
-        './root/' + optimized,
-        './root/' + standard,
-        'root/' + optimized,
-        'root/' + standard,
-        './data/geojson/' + optimized,
-        './data/geojson/' + standard,
-        'data/geojson/' + optimized,
-        'data/geojson/' + standard,
-        '../data/geojson/' + optimized,
-        '../data/geojson/' + standard,
-        '../../data/geojson/' + optimized,
-        '../../data/geojson/' + standard,
-        optimized,
-        standard
-      ]);
+    function buildGoogleSheetCsvUrl(sheetId, tabName){
+      return `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
     }
 
-    function buildStateSvgCandidates(fileName, remoteUrl){
-      const origin = (location.protocol === 'http:' || location.protocol === 'https:')
-        ? [
-            `${location.origin}/root/${fileName}`,
-            `${location.origin}/data/svg/${fileName}`,
-            `${location.origin}/${fileName}`
-          ]
-        : [];
-      return uniqueCandidates([
-        ...origin,
-        './root/' + fileName,
-        'root/' + fileName,
-        './data/svg/' + fileName,
-        'data/svg/' + fileName,
-        '../data/svg/' + fileName,
-        '../../data/svg/' + fileName,
-        './' + fileName,
-        fileName,
-        remoteUrl
-      ]);
+    function stateRootUrl(fileName){
+      return new URL(`root/${fileName}`, location.href).toString();
     }
 
     const DEFAULT_RESULTS_DISCLAIMER = '';
@@ -681,8 +637,7 @@
         label: 'Tamil Nadu',
         title: 'Tamil Nadu Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('TAMIL_NADU_ASSEMBLY'),
-        resultsUrl: new URL('results/TAMIL_NADU_results.json', DATA_BASE_URL).toString(),
+        geoUrl: stateRootUrl('TAMIL_NADU_ASSEMBLY_optimized.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
 
@@ -690,16 +645,14 @@
         label: 'Kerala',
         title: 'Kerala Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('KERALA_ASSEMBLY'),
-        resultsUrl: new URL('results/KERALA_results.json', DATA_BASE_URL).toString(),
+        geoUrl: stateRootUrl('KERALA_ASSEMBLY_optimized.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
       WEST_BENGAL: {
         label: 'West Bengal',
         title: 'West Bengal Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('WEST_BENGAL_ASSEMBLY'),
-        resultsUrl: new URL('results/WEST_BENGAL_results.json', DATA_BASE_URL).toString(),
+        geoUrl: stateRootUrl('WEST_BENGAL_ASSEMBLY_optimized.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
       ASSAM: {
@@ -707,16 +660,14 @@
         title: 'Assam Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
         mapType: 'svg',
-        svgCandidates: buildStateSvgCandidates('ASSAM_2023_keyed.svg'),
-        resultsUrl: new URL('results/ASSAM_results.json', DATA_BASE_URL).toString(),
+        svgUrl: stateRootUrl('ASSAM_2023_keyed.svg'),
         disclaimer: 'Assam only: some seats show no data because constituency names/boundaries changed after 2021.'
       },
       PUDUCHERRY: {
         label: 'Puducherry',
         title: 'Puducherry Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoCandidates: buildStateGeoCandidates('PUDUCHERRY_ASSEMBLY_compact'),
-        resultsUrl: new URL('results/PUDUCHERRY_results.json', DATA_BASE_URL).toString(),
+        geoUrl: stateRootUrl('PUDUCHERRY_ASSEMBLY_optimized_compact.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       }
     };
@@ -765,6 +716,8 @@
     let colorCache = new Map();
     let activeColorModes = [];
     let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2020';
+    let cachedResultsRows = null;
+    let cachedMappingRows = null;
     const featureByKey = new Map();
 
     function buildProjectionForState(stateKey, geoData){
@@ -1301,6 +1254,99 @@
       return String(raw || '').trim().toUpperCase();
     }
 
+    function normalizeSheetStateKey(value){
+      const raw = String(value || '').trim().toUpperCase().replace(/[-\s]+/g, '_');
+      if (!raw) return '';
+      const compact = raw.replace(/_/g, '');
+      const aliases = {
+        TAMILNADU: 'TAMIL_NADU',
+        TAMIL_NADU: 'TAMIL_NADU',
+        KERALA: 'KERALA',
+        WESTBENGAL: 'WEST_BENGAL',
+        WEST_BENGAL: 'WEST_BENGAL',
+        ASSAM: 'ASSAM',
+        PUDUCHERRY: 'PUDUCHERRY',
+        PONDICHERRY: 'PUDUCHERRY'
+      };
+      return aliases[raw] || aliases[compact] || raw;
+    }
+
+    function getStateKeyFromRow(row){
+      return normalizeSheetStateKey(
+        row && (
+          row.state_key ??
+          row.state ??
+          row.state_name ??
+          row.State ??
+          row.STATE ??
+          row.STATE_KEY ??
+          row.STATE_NAME
+        )
+      );
+    }
+
+    function getRowsForState(rows, stateKey){
+      if (!Array.isArray(rows) || !rows.length) return [];
+      const normalized = normalizeStateKey(stateKey);
+      const rowsWithState = rows.filter(r => getStateKeyFromRow(r));
+      if (!rowsWithState.length) return rows;
+      return rowsWithState.filter(r => getStateKeyFromRow(r) === normalized);
+    }
+
+    function extractYearFromAllianceColumn(columnName){
+      const key = String(columnName || '').trim().toLowerCase().replace(/\s+/g, '_');
+      let match = key.match(/alliance[_-]?(\d{4})/);
+      if (match && match[1]) return match[1];
+      match = key.match(/(\d{4})[_-]?alliance/);
+      if (match && match[1]) return match[1];
+      return '';
+    }
+
+    function parsePartyAllianceMappingRows(rows, stateKey){
+      const out = new Map();
+      const normalizedState = normalizeStateKey(stateKey);
+      for (const row of (rows || [])) {
+        const rowState = getStateKeyFromRow(row);
+        if (rowState && rowState !== normalizedState) continue;
+
+        const party = String(
+          row.party_code ??
+          row.party ??
+          row.PARTY_CODE ??
+          row.PARTY ??
+          row.code ??
+          row.Code ??
+          ''
+        ).trim();
+        if (!party) continue;
+
+        const existing = out.get(party) || { alliances: {}, defaultAlliance: '' };
+        const allianceRaw = String(
+          row.alliance ??
+          row.ALLIANCE ??
+          row.alliance_name ??
+          row.ALLIANCE_NAME ??
+          ''
+        ).trim();
+        const yearRaw = String(row.year ?? row.YEAR ?? '').trim();
+
+        if (yearRaw && allianceRaw) {
+          existing.alliances[yearRaw] = allianceRaw;
+        } else if (allianceRaw) {
+          existing.defaultAlliance = allianceRaw;
+        }
+
+        for (const [key, value] of Object.entries(row || {})) {
+          const year = extractYearFromAllianceColumn(key);
+          const alliance = String(value || '').trim();
+          if (!year || !alliance) continue;
+          existing.alliances[year] = alliance;
+        }
+        out.set(party, existing);
+      }
+      return out;
+    }
+
     async function loadJson(url, description, optional = false){
       try {
         const response = await fetch(url, { cache: 'no-store' });
@@ -1312,13 +1358,33 @@
       }
     }
 
-    async function loadElectionDataForState(cfg){
+    async function loadCsv(url, description, optional = false){
+      try {
+        const response = await fetch(url, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`${description} HTTP ${response.status}`);
+        const text = await response.text();
+        return d3.csvParse(text);
+      } catch (e) {
+        if (optional) return null;
+        throw e;
+      }
+    }
+
+    async function loadElectionDataForState(stateKey, cfg){
       resetElectionCaches();
-      if (!cfg.resultsUrl) return false;
+      if (!RESULTS_SHEET_URL) return false;
 
       const partiesData = await loadJson(PARTIES_URL, 'parties', true);
       const alliancesOverride = await loadJson(ALLIANCES_URL, 'alliances', true);
-      const resultsData = await loadJson(cfg.resultsUrl, `${cfg.label} results`, true);
+      if (!cachedResultsRows) {
+        cachedResultsRows = await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true);
+      }
+      if (!cachedMappingRows && MAPPING_SHEET_URL) {
+        cachedMappingRows = await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true);
+      }
+
+      const resultsData = getRowsForState(cachedResultsRows || [], stateKey);
+      const allianceMap = parsePartyAllianceMappingRows(cachedMappingRows || [], stateKey);
 
       if (!Array.isArray(resultsData) || !resultsData.length) {
         return false;
@@ -1338,10 +1404,37 @@
         }
       }
 
+      for (const [party, mapping] of allianceMap) {
+        const existing = partyData.get(party) || { code: party };
+        const existingAlliances = (existing.alliances && typeof existing.alliances === 'object') ? existing.alliances : {};
+        const mergedAlliances = { ...existingAlliances, ...(mapping.alliances || {}) };
+        const merged = { ...existing, alliances: mergedAlliances };
+        if (mapping.defaultAlliance) merged.alliance = mapping.defaultAlliance;
+        partyData.set(party, merged);
+        const a2020 = mergedAlliances['2020'] || mergedAlliances[2020] || merged.alliance || existing.alliance || '';
+        if (a2020) {
+          partyToAlliance.set(party, a2020);
+          ensureAllianceColor(a2020, '');
+        }
+      }
+
       for (const row of resultsData) {
         const ac = normalizeResultKey(row);
         if (!ac) continue;
-        electionData.set(ac, row);
+        const normalizedRow = { ...row };
+        if (!normalizedRow.current_mla_alliance && normalizedRow.current_mla_party) {
+          const resolved = resolveAllianceForYear(normalizedRow.current_mla_party, 2020);
+          if (resolved && resolved !== 'NA') normalizedRow.current_mla_alliance = resolved;
+        }
+        if (!normalizedRow.y2026_winner_alliance && normalizedRow.y2026_winner_party) {
+          const resolved = resolveAllianceForYear(normalizedRow.y2026_winner_party, 2026);
+          if (resolved && resolved !== 'NA') normalizedRow.y2026_winner_alliance = resolved;
+        }
+        if (!normalizedRow.y2016_winner_alliance && normalizedRow.y2016_winner_party) {
+          const resolved = resolveAllianceForYear(normalizedRow.y2016_winner_party, 2016);
+          if (resolved && resolved !== 'NA') normalizedRow.y2016_winner_alliance = resolved;
+        }
+        electionData.set(ac, normalizedRow);
       }
 
       activeColorModes = inferColorModes(resultsData);
@@ -1665,18 +1758,10 @@
       updateCrossButton();
     }
 
-    async function loadFromCandidates(candidates, description = 'data') {
-      let lastError = null;
-      for (const url of candidates) {
-        try {
-          const response = await fetch(url, { cache: 'no-store' });
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          return response;
-        } catch (err) {
-          lastError = err;
-        }
-      }
-      throw new Error(`Failed to load ${description} from all candidates. Last error: ${lastError ? lastError.message : 'unknown'}`);
+    async function loadText(url, description){
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`${description} HTTP ${response.status}`);
+      return response.text();
     }
 
     function parseSvgPointPairs(pointsText){
@@ -1784,20 +1869,18 @@
 
         let geoData = null;
         if (cfg.mapType === 'svg') {
-          const response = await loadFromCandidates(cfg.svgCandidates, `${cfg.label} SVG`);
-          const svgText = await response.text();
+          const svgText = await loadText(cfg.svgUrl, `${cfg.label} SVG`);
           const features = buildFeaturesFromKeyedSvg(svgText);
           geoData = { type: 'FeatureCollection', features };
           currentReflectY = false;
         } else {
-          const response = await loadFromCandidates(cfg.geoCandidates, `${cfg.label} GeoJSON`);
-          geoData = await response.json();
+          geoData = await loadJson(cfg.geoUrl, `${cfg.label} GeoJSON`);
           currentReflectY = true;
         }
         if (!geoData || !Array.isArray(geoData.features) || !geoData.features.length) {
           throw new Error(`Invalid map data for ${cfg.label}`);
         }
-        const hasElectionData = await loadElectionDataForState(cfg);
+        const hasElectionData = await loadElectionDataForState(normalizedState, cfg);
 
         currentGeoData = geoData;
         updateMapDimensions();

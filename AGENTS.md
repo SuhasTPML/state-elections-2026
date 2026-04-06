@@ -71,19 +71,41 @@ From that base, `map-widget.html` loads:
 - `hosted-json/alliances.json`
 - `hosted-json/i18n.kn.json`
 
-### Results data
+### Results data (Google Sheet)
 
-Per-state election results are loaded from:
+`map-widget.html` reads constituency-level results from a Google Sheet (CSV over gviz), not from local JSON result files.
 
-- `hosted-json/results/TAMIL_NADU_results.json`
-- `hosted-json/results/KERALA_results.json`
-- `hosted-json/results/WEST_BENGAL_results.json`
-- `hosted-json/results/ASSAM_results.json`
-- `hosted-json/results/PUDUCHERRY_results.json`
+Required query params:
 
-Note:
+- `sheetId=<google-sheet-id>` (or `sheetUrl=<full-google-sheet-url>`)
+- optional `resultsTab=<tab-name>` (default: `statewise_party_results`)
+- optional `mappingTab=<tab-name>` (default: `statewise_party_alliance_mapping`)
 
-- `hosted-json/results/ASSAM_2021_legacy_results.json` exists in the repo but is not used by `map-widget.html`.
+Example:
+
+```text
+http://127.0.0.1:8000/map-widget.html?state=KERALA&sheetId=YOUR_SHEET_ID&resultsTab=statewise_party_results&mappingTab=statewise_party_alliance_mapping
+```
+
+Expected `resultsTab` columns (minimum):
+
+- `state` or `state_key` (e.g. `KERALA`)
+- `no` (constituency number)
+- party/winner fields used by the widget, such as:
+  - `current_mla_name`, `current_mla_party`
+  - `y2016_winner_name`, `y2016_winner_party`
+  - `y2026_winner_name`, `y2026_winner_party`
+  - optional alliance fields (`current_mla_alliance`, `y2016_winner_alliance`, `y2026_winner_alliance`)
+
+Expected `mappingTab` columns:
+
+- `state` or `state_key`
+- `party` or `party_code`
+- either:
+  - `year` + `alliance` rows, or
+  - per-year columns like `alliance_2016`, `alliance_2020`, `alliance_2026`
+
+Alliance values are auto-resolved from this mapping tab when alliance fields are missing in results rows.
 
 ### Map geometry data
 
@@ -94,8 +116,6 @@ Per-state map shapes are loaded from `root/`:
 - `root/WEST_BENGAL_ASSEMBLY_optimized.geojson`
 - `root/PUDUCHERRY_ASSEMBLY_optimized_compact.geojson`
 - `root/ASSAM_2023_keyed.svg`
-
-Fallback candidates also exist in code for non-optimized or alternate relative paths, but the above are the primary local files the page uses from repo root.
 
 ### External runtime assets
 
