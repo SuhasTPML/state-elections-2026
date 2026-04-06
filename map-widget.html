@@ -149,21 +149,86 @@
       transition: opacity 0.08s ease;
     }
 
-    .controls-options {
+    .controls-row {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 8px;
+      padding-top: 2px;
+      border-top: 1px solid #f3f4f6;
     }
-    .controls-options label {
-      font-weight: 500;
+    .year-tabs {
+      display: flex;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .year-tabs::-webkit-scrollbar { display: none; }
+    .year-btn {
+      flex-shrink: 0;
+      padding: 3px 8px;
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: #6B7280;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
       white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
     }
-    .controls-options select {
-      padding: 5px 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
+    .year-btn:hover { color: #1f2937; }
+    .year-btn.active { color: #1f2937; border-bottom-color: #1f2937; font-weight: 600; }
+    .toggle-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: #374151;
+      cursor: pointer;
+      user-select: none;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 3px 10px;
+      flex-shrink: 0;
     }
+    .toggle-wrap .toggle-label { font-weight: 500; }
+    .toggle-wrap .toggle-label.inactive { color: #9CA3AF; }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: #D1D5DB;
+      border-radius: 22px;
+      transition: background 0.2s;
+    }
+    .slider::before {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      bottom: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    #viewToggle:checked + .slider { background: #1f2937; }
+    #viewToggle:checked + .slider::before { transform: translateX(18px); }
     .controls-legend {
       display: none;
       flex-direction: row;
@@ -336,10 +401,14 @@
       padding-bottom: 4px;
       line-height: 1.2;
     }
-    html[lang="kn"] .controls-options select {
-      padding-top: 6px;
-      padding-bottom: 3px;
-      line-height: 1.2;
+    html[lang="kn"] .year-btn {
+      padding-top: 5px;
+      padding-bottom: 0px;
+      line-height: 1.15;
+    }
+    html[lang="kn"] .toggle-label {
+      position: relative;
+      top: 1px;
     }
     html[lang="kn"] .legend-chip {
       padding-top: 1px;
@@ -368,16 +437,10 @@
         flex-direction: column;
         align-items: stretch;
       }
-      #searchRow .controls-search,
-      #searchRow .controls-options {
-        width: 100%;
-      }
-      #searchRow .controls-options {
-        justify-content: stretch;
-      }
-      /* Hide labels on mobile — selects are self-descriptive */
-      .controls-options select { width: 100%; font-size: 16px; padding: 6px 10px; }
-      html[lang="kn"] .controls-options select { padding-top: 7px; padding-bottom: 4px; }
+      #searchRow .controls-search { width: 100%; }
+      .controls-row { flex-wrap: wrap; }
+      .year-tabs { width: 100%; }
+      .toggle-wrap { margin-left: auto; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
       /* Change 2: Mobile — 50→40px, 24→18px font */
@@ -419,10 +482,17 @@
         <input id="acSearch" type="search" placeholder="Search constituency" />
         <div id="dropdown" class="dropdown"></div>
       </div>
-      <div id="colorModeWrap" class="controls-options" style="display:none;">
-        <label for="colorMode">Color by:</label>
-        <select id="colorMode" aria-label="Color by"></select>
-      </div>
+    </div>
+    <div id="modeControlsRow" class="controls-row" style="display:none;">
+      <div id="yearTabs" class="year-tabs"></div>
+      <label class="toggle-wrap" id="viewToggleWrap">
+        <span class="toggle-label" id="lblParty"></span>
+        <span class="switch">
+          <input type="checkbox" id="viewToggle">
+          <span class="slider"></span>
+        </span>
+        <span class="toggle-label inactive" id="lblAlliance"></span>
+      </label>
     </div>
     <div id="legend" class="controls-legend"></div>
   </div>
@@ -447,18 +517,49 @@
     const DEFAULT_MAP_WIDTH = 1200;
     const DEFAULT_MAP_HEIGHT = 900;
 
-    const DATA_BASE = (new URLSearchParams(location.search).get('dataBase') || './hosted-json').replace(/\/+$/,'');
-    const DATA_BASE_URL = new URL(DATA_BASE + '/', location.href).toString();
-    const PARTIES_URL = new URL('parties.json', DATA_BASE_URL).toString();
-    const ALLIANCES_URL = new URL('alliances.json', DATA_BASE_URL).toString();
-    const KANNADA_I18N_URL = new URL('i18n.kn.json', DATA_BASE_URL).toString();
-    const SHEET_ID_PARAM = new URLSearchParams(location.search).get('sheetId');
-    const SHEET_URL_PARAM = new URLSearchParams(location.search).get('sheetUrl');
-    const RESULTS_TAB_NAME = (new URLSearchParams(location.search).get('resultsTab') || 'statewise_party_results').trim();
-    const MAPPING_TAB_NAME = (new URLSearchParams(location.search).get('mappingTab') || 'statewise_party_alliance_mapping').trim();
+    const QUERY_PARAMS = new URLSearchParams(location.search);
+
+    // Fallback source so sheet data works even without query params.
+    // Query params continue to take precedence when provided.
+    const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
+    const DEFAULT_PUBLISHED_SHEET_URL = '';
+
+    const SHEET_ID_PARAM = QUERY_PARAMS.get('sheetId');
+    const SHEET_URL_PARAM = QUERY_PARAMS.get('sheetUrl');
+    const PUBLISHED_SHEET_URL_PARAM =
+      (QUERY_PARAMS.get('publishedSheetUrl') || QUERY_PARAMS.get('publishedUrl') || DEFAULT_PUBLISHED_SHEET_URL).trim();
+    const PUBLISHED_SHEET_KEY_PARAM = (QUERY_PARAMS.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
+
+    const RESULTS_TAB_NAME = (QUERY_PARAMS.get('resultsTab') || 'statewise_party_results').trim();
+    const PARTY_WISE_TAB_NAME = (QUERY_PARAMS.get('partyWiseTab') || 'statewise_party_wise').trim();
+    const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'statewise_party_alliance_mapping').trim();
+    const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'party_master').trim();
+    const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'alliance_master').trim();
+    const I18N_TAB_NAME = (QUERY_PARAMS.get('i18nTab') || 'i18n_kn').trim();
+
+    const RESULTS_CSV_URL_PARAM = (QUERY_PARAMS.get('resultsCsvUrl') || '').trim();
+    const PARTY_WISE_CSV_URL_PARAM = (QUERY_PARAMS.get('partyWiseCsvUrl') || '').trim();
+    const MAPPING_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingCsvUrl') || '').trim();
+    const PARTIES_CSV_URL_PARAM = (QUERY_PARAMS.get('partiesCsvUrl') || '').trim();
+    const ALLIANCES_CSV_URL_PARAM = (QUERY_PARAMS.get('alliancesCsvUrl') || '').trim();
+    const I18N_CSV_URL_PARAM = (QUERY_PARAMS.get('i18nCsvUrl') || '').trim();
+
+    const RESULTS_GID_PARAM = (QUERY_PARAMS.get('resultsGid') || '').trim();
+    const PARTY_WISE_GID_PARAM = (QUERY_PARAMS.get('partyWiseGid') || '').trim();
+    const MAPPING_GID_PARAM = (QUERY_PARAMS.get('mappingGid') || '').trim();
+    const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
+    const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
+    const I18N_GID_PARAM = (QUERY_PARAMS.get('i18nGid') || '').trim();
+
     const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || '').trim();
-    const RESULTS_SHEET_URL = SHEET_ID ? buildGoogleSheetCsvUrl(SHEET_ID, RESULTS_TAB_NAME) : '';
-    const MAPPING_SHEET_URL = SHEET_ID ? buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_TAB_NAME) : '';
+    const PUBLISHED_SHEET_KEY = (PUBLISHED_SHEET_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_SHEET_URL_PARAM) || '').trim();
+
+    let RESULTS_SHEET_URL = RESULTS_CSV_URL_PARAM;
+    let PARTY_WISE_SHEET_URL = PARTY_WISE_CSV_URL_PARAM;
+    let MAPPING_SHEET_URL = MAPPING_CSV_URL_PARAM;
+    let PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
+    let ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
+    let I18N_SHEET_URL = I18N_CSV_URL_PARAM;
     const LANGUAGE_QUERY_PARAM = 'lang';
     const ENABLE_2026_MODES = (() => {
       try {
@@ -493,8 +594,10 @@
         modeLabels: {
           'alliance-2026': '2026 Alliance',
           'party-2026': '2026 Party',
-          'alliance-2020': '2020 Alliance',
-          'party-2020': '2020 Party',
+          'alliance-2021': '2021 Alliance',
+          'party-2021': '2021 Party',
+          'alliance-2020': '2021 Alliance',
+          'party-2020': '2021 Party',
           'alliance-2016': '2016 Alliance',
           'party-2016': '2016 Party',
           'alliance-2015': '2015 Alliance',
@@ -536,8 +639,10 @@
         modeLabels: {
           'alliance-2026': '2026 ಒಕ್ಕೂಟ',
           'party-2026': '2026 ಪಕ್ಷ',
-          'alliance-2020': '2020 ಒಕ್ಕೂಟ',
-          'party-2020': '2020 ಪಕ್ಷ',
+          'alliance-2021': '2021 ಒಕ್ಕೂಟ',
+          'party-2021': '2021 ಪಕ್ಷ',
+          'alliance-2020': '2021 ಒಕ್ಕೂಟ',
+          'party-2020': '2021 ಪಕ್ಷ',
           'alliance-2016': '2016 ಒಕ್ಕೂಟ',
           'party-2016': '2016 ಪಕ್ಷ',
           'alliance-2015': '2015 ಒಕ್ಕೂಟ',
@@ -622,8 +727,133 @@
       return match && match[1] ? match[1] : '';
     }
 
+    function extractGooglePublishedSheetKey(sheetUrl){
+      const raw = String(sheetUrl || '').trim();
+      if (!raw) return '';
+      const match = raw.match(/\/spreadsheets\/d\/e\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
+    }
+
     function buildGoogleSheetCsvUrl(sheetId, tabName){
       return `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+    }
+
+    function buildGooglePublishedCsvUrl(publishedKey, gid){
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pub?gid=${encodeURIComponent(gid)}&single=true&output=csv`;
+    }
+
+    function buildGooglePublishedHtmlUrl(publishedKey){
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+    }
+
+    function normalizeTabLookupKey(value){
+      return String(value || '').trim().toLowerCase().replace(/[\s-]+/g, '_');
+    }
+
+    function parsePublishedSheetTabGids(html){
+      const out = new Map();
+      const text = String(html || '');
+      const regex = /items\.push\(\{name:\s*"([^"]+)"[\s\S]*?gid:\s*"(-?\d+)"/g;
+      let match = null;
+      while ((match = regex.exec(text)) !== null) {
+        const tabName = normalizeTabLookupKey(match[1]);
+        const gid = String(match[2] || '').trim();
+        if (!tabName || !gid || out.has(tabName)) continue;
+        out.set(tabName, gid);
+      }
+      return out;
+    }
+
+    function findPublishedTabGid(tabMap, names){
+      for (const name of (names || [])) {
+        const key = normalizeTabLookupKey(name);
+        if (!key) continue;
+        const gid = tabMap.get(key);
+        if (gid) return gid;
+      }
+      return '';
+    }
+
+    function normalizePublishedGid(value){
+      const raw = String(value || '').trim();
+      if (!raw) return '';
+      const m = raw.match(/-?\d+/);
+      return m && m[0] ? m[0] : '';
+    }
+
+    let sheetCsvUrlsReadyPromise = null;
+    async function ensureSheetCsvUrlsReady(){
+      if (sheetCsvUrlsReadyPromise) return sheetCsvUrlsReadyPromise;
+
+      sheetCsvUrlsReadyPromise = (async () => {
+        // Explicit per-tab CSV URL params always win.
+        if (RESULTS_CSV_URL_PARAM) RESULTS_SHEET_URL = RESULTS_CSV_URL_PARAM;
+        if (PARTY_WISE_CSV_URL_PARAM) PARTY_WISE_SHEET_URL = PARTY_WISE_CSV_URL_PARAM;
+        if (MAPPING_CSV_URL_PARAM) MAPPING_SHEET_URL = MAPPING_CSV_URL_PARAM;
+        if (PARTIES_CSV_URL_PARAM) PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
+        if (ALLIANCES_CSV_URL_PARAM) ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
+        if (I18N_CSV_URL_PARAM) I18N_SHEET_URL = I18N_CSV_URL_PARAM;
+
+        // Legacy/default mode: sheetId + gviz per tab name.
+        if (SHEET_ID) {
+          if (!RESULTS_SHEET_URL) RESULTS_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, RESULTS_TAB_NAME);
+          if (!PARTY_WISE_SHEET_URL) PARTY_WISE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTY_WISE_TAB_NAME);
+          if (!MAPPING_SHEET_URL) MAPPING_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_TAB_NAME);
+          if (!PARTIES_SHEET_URL) PARTIES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTIES_TAB_NAME);
+          if (!ALLIANCES_SHEET_URL) ALLIANCES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, ALLIANCES_TAB_NAME);
+          if (!I18N_SHEET_URL) I18N_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, I18N_TAB_NAME);
+          return;
+        }
+
+        // Published mode: resolve tab gid from /d/e/.../pubhtml, then use /pub?gid=...&output=csv.
+        if (!PUBLISHED_SHEET_KEY) return;
+
+        const explicitGids = {
+          results: normalizePublishedGid(RESULTS_GID_PARAM),
+          partyWise: normalizePublishedGid(PARTY_WISE_GID_PARAM),
+          mapping: normalizePublishedGid(MAPPING_GID_PARAM),
+          parties: normalizePublishedGid(PARTIES_GID_PARAM),
+          alliances: normalizePublishedGid(ALLIANCES_GID_PARAM),
+          i18n: normalizePublishedGid(I18N_GID_PARAM)
+        };
+
+        const needLookup =
+          ((!RESULTS_SHEET_URL) && !explicitGids.results) ||
+          ((!PARTY_WISE_SHEET_URL) && !explicitGids.partyWise) ||
+          ((!MAPPING_SHEET_URL) && !explicitGids.mapping) ||
+          ((!PARTIES_SHEET_URL) && !explicitGids.parties) ||
+          ((!ALLIANCES_SHEET_URL) && !explicitGids.alliances) ||
+          ((!I18N_SHEET_URL) && !explicitGids.i18n);
+
+        let tabMap = new Map();
+        if (needLookup) {
+          try {
+            const response = await fetch(buildGooglePublishedHtmlUrl(PUBLISHED_SHEET_KEY), { cache: 'no-store' });
+            if (response.ok) {
+              const html = await response.text();
+              tabMap = parsePublishedSheetTabGids(html);
+            }
+          } catch (e) {
+            console.warn('[map-widget] Failed to resolve published sheet tabs:', e);
+          }
+        }
+
+        const resultsGid = explicitGids.results || findPublishedTabGid(tabMap, [RESULTS_TAB_NAME, 'statewise_party_results']);
+        const partyWiseGid = explicitGids.partyWise || findPublishedTabGid(tabMap, [PARTY_WISE_TAB_NAME, 'statewise_party_wise']);
+        const mappingGid = explicitGids.mapping || findPublishedTabGid(tabMap, [MAPPING_TAB_NAME, 'statewise_party_alliance_mapping', 'statewise_party_alliance_map']);
+        const partiesGid = explicitGids.parties || findPublishedTabGid(tabMap, [PARTIES_TAB_NAME, 'party_master']);
+        const alliancesGid = explicitGids.alliances || findPublishedTabGid(tabMap, [ALLIANCES_TAB_NAME, 'alliance_master']);
+        const i18nGid = explicitGids.i18n || findPublishedTabGid(tabMap, [I18N_TAB_NAME, 'i18n_kn']);
+
+        if (!RESULTS_SHEET_URL && resultsGid) RESULTS_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, resultsGid);
+        if (!PARTY_WISE_SHEET_URL && partyWiseGid) PARTY_WISE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyWiseGid);
+        if (!MAPPING_SHEET_URL && mappingGid) MAPPING_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingGid);
+        if (!PARTIES_SHEET_URL && partiesGid) PARTIES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partiesGid);
+        if (!ALLIANCES_SHEET_URL && alliancesGid) ALLIANCES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, alliancesGid);
+        if (!I18N_SHEET_URL && i18nGid) I18N_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, i18nGid);
+      })();
+
+      return sheetCsvUrlsReadyPromise;
     }
 
     function stateRootUrl(fileName){
@@ -683,9 +913,12 @@
     const mapDisclaimerEl = document.getElementById('mapDisclaimer');
     const searchEl = document.getElementById('acSearch');
     const dropdownEl = document.getElementById('dropdown');
-    const colorModeWrapEl = document.getElementById('colorModeWrap');
-    const colorModeEl = document.getElementById('colorMode');
-    const colorModeLabelEl = document.querySelector('label[for="colorMode"]');
+    const modeControlsRowEl = document.getElementById('modeControlsRow');
+    const yearTabsEl = document.getElementById('yearTabs');
+    const viewToggleWrapEl = document.getElementById('viewToggleWrap');
+    const viewToggleEl = document.getElementById('viewToggle');
+    const partyLabelEl = document.getElementById('lblParty');
+    const allianceLabelEl = document.getElementById('lblAlliance');
     const legendEl = document.getElementById('legend');
     const wrapEl = document.getElementById('mapwrap');
     const bottomSheetEl = document.getElementById('bottomSheet');
@@ -715,9 +948,15 @@
     let i18nReserved = {};
     let colorCache = new Map();
     let activeColorModes = [];
-    let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2020';
+    let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2021';
+    let currentModeYear = '';
+    let currentModeView = 'alliance';
     let cachedResultsRows = null;
+    let cachedPartyWiseRows = null;
     let cachedMappingRows = null;
+    let cachedPartyRows = null;
+    let cachedAllianceRows = null;
+    let cachedI18nRows = null;
     const featureByKey = new Map();
 
     function buildProjectionForState(stateKey, geoData){
@@ -778,23 +1017,32 @@
       document.documentElement.lang = currentLang;
       document.title = text.pageTitle;
       searchEl.placeholder = text.searchPlaceholder;
-      if (colorModeLabelEl) colorModeLabelEl.textContent = `${text.colorBy}:`;
-      colorModeEl.setAttribute('aria-label', text.colorBy);
+      if (partyLabelEl) partyLabelEl.textContent = text.party;
+      if (allianceLabelEl) allianceLabelEl.textContent = text.alliance;
+      if (viewToggleWrapEl) {
+        viewToggleWrapEl.setAttribute('aria-label', `${text.party}/${text.alliance}`);
+      }
       crossBtn.title = text.clearSelectionAndResetView;
       zoomInBtn.title = text.zoomIn;
       zoomOutBtn.title = text.zoomOut;
+      updateViewToggleLabelState();
+      renderYearTabs();
     }
 
     async function loadLanguageData(langKey){
+      await ensureSheetCsvUrlsReady();
       currentLang = normalizeLangKey(langKey);
       i18nStrings = new Map();
       i18nReserved = {};
 
       if (currentLang === 'kn') {
-        const data = await loadJson(KANNADA_I18N_URL, 'Kannada translations', true);
-        if (data && data.strings && typeof data.strings === 'object') {
-          i18nStrings = new Map(Object.entries(data.strings));
-          i18nReserved = (data.reserved && typeof data.reserved === 'object') ? data.reserved : {};
+        if (!cachedI18nRows && I18N_SHEET_URL) {
+          cachedI18nRows = await loadCsv(I18N_SHEET_URL, `${I18N_TAB_NAME} sheet`, true);
+        }
+        const parsed = parseI18nRows(cachedI18nRows || []);
+        if (parsed.strings.size || Object.keys(parsed.reserved).length) {
+          i18nStrings = parsed.strings;
+          i18nReserved = parsed.reserved;
           setQueryParam(LANGUAGE_QUERY_PARAM, currentLang);
         } else {
           currentLang = 'en';
@@ -925,12 +1173,41 @@
       return (a == null) ? null : String(a).trim().toUpperCase();
     }
 
+    function rowPartyForYear(row, year){
+      if (!row) return '';
+      if (year === 2026) return row.y2026_winner_party || '';
+      if (year === 2021 || year === 2020) return row.y2021_winner_party || row.current_mla_party || '';
+      if (year === 2016) return row.y2016_winner_party || '';
+      if (year === 2015) return row.y2015_winner_party || '';
+      if (year === 2010) return row.y2010_winner_party || '';
+      return '';
+    }
+
+    function rowAllianceForYear(row, year){
+      if (!row) return '';
+      if (year === 2026) return row.y2026_winner_alliance || '';
+      if (year === 2021 || year === 2020) return row.y2021_winner_alliance || row.current_mla_alliance || '';
+      if (year === 2016) return row.y2016_winner_alliance || '';
+      return '';
+    }
+
+    function rowNameForYear(row, year){
+      if (!row) return '';
+      if (year === 2026) return row.y2026_winner_name || '';
+      if (year === 2021 || year === 2020) return row.y2021_winner_name || row.current_mla_name || '';
+      if (year === 2016) return row.y2016_winner_name || '';
+      if (year === 2015) return row.y2015_winner_name || '';
+      if (year === 2010) return row.y2010_winner_name || '';
+      return '';
+    }
+
     function resolveAllianceForYear(partyCode, year){
       const info = partyData.get(partyCode);
       if (!info) return 'NA';
       const alliances = info.alliances || null;
       const value = (alliances && (alliances[String(year)] || alliances[year]))
         || info[`alliance_${year}`]
+        || info.alliance_2021
         || info.alliance_2020
         || info.alliance
         || 'NA';
@@ -1019,11 +1296,13 @@
                || allianceColors.get(normalizeAllianceKey(row.y2026_winner_alliance))
                || getHistoricalAllianceColor(row.y2026_winner_party, '2026');
           break;
+        case 'alliance-2021':
         case 'alliance-2020':
-          color = allianceColors.get(normalizeAllianceKey(row.current_mla_alliance)) || '#f3f4f6';
+          color = allianceColors.get(normalizeAllianceKey(rowAllianceForYear(row, 2021))) || '#f3f4f6';
           break;
+        case 'party-2021':
         case 'party-2020':
-          color = partyColors.get(row.current_mla_party) || allianceColors.get(normalizeAllianceKey(row.current_mla_alliance)) || '#f3f4f6';
+          color = partyColors.get(rowPartyForYear(row, 2021)) || allianceColors.get(normalizeAllianceKey(rowAllianceForYear(row, 2021))) || '#f3f4f6';
           break;
         case 'alliance-2016':
           color = allianceColors.get(normalizeAllianceKey(row.y2016_winner_alliance))
@@ -1063,8 +1342,8 @@
       if (ENABLE_2026_MODES && (has('y2026_winner_party') || has('y2026_winner_alliance'))) {
         modes.push('alliance-2026', 'party-2026');
       }
-      if (has('current_mla_party') || has('current_mla_alliance')) {
-        modes.push('alliance-2020', 'party-2020');
+      if (has('y2021_winner_party') || has('y2021_winner_alliance') || has('current_mla_party') || has('current_mla_alliance')) {
+        modes.push('alliance-2021', 'party-2021');
       }
       if (has('y2016_winner_party') || has('y2016_winner_alliance')) {
         modes.push('alliance-2016', 'party-2016');
@@ -1081,8 +1360,153 @@
       return modes;
     }
 
-    function modeLabel(mode){
-      return uiText().modeLabels[mode] || mode;
+    function parseMode(mode){
+      const match = String(mode || '').trim().match(/^(alliance|party)-(\d{4})$/);
+      if (!match) return null;
+      return { view: match[1], year: match[2] };
+    }
+
+    function inferAvailableYears(modes){
+      const years = [];
+      for (const mode of (modes || [])) {
+        const parsed = parseMode(mode);
+        if (!parsed || years.includes(parsed.year)) continue;
+        years.push(parsed.year);
+      }
+      return years;
+    }
+
+    function hasMode(view, year){
+      return activeColorModes.includes(`${view}-${year}`);
+    }
+
+    function fallbackModeForYear(year){
+      if (hasMode('alliance', year)) return `alliance-${year}`;
+      if (hasMode('party', year)) return `party-${year}`;
+      return '';
+    }
+
+    function resolveModeForControls(){
+      if (currentModeYear === 'reserved') {
+        return activeColorModes.includes('reserved') ? 'reserved' : '';
+      }
+      if (!currentModeYear) return '';
+
+      const preferred = `${currentModeView}-${currentModeYear}`;
+      if (activeColorModes.includes(preferred)) return preferred;
+
+      const alternateView = currentModeView === 'alliance' ? 'party' : 'alliance';
+      const alternate = `${alternateView}-${currentModeYear}`;
+      if (activeColorModes.includes(alternate)) return alternate;
+
+      return fallbackModeForYear(currentModeYear);
+    }
+
+    function syncControlsFromCurrentMode(){
+      const parsed = parseMode(currentColorMode);
+      if (parsed) {
+        currentModeView = parsed.view;
+        currentModeYear = parsed.year;
+        return;
+      }
+
+      if (currentColorMode === 'reserved' && activeColorModes.includes('reserved')) {
+        currentModeYear = 'reserved';
+        return;
+      }
+
+      if (ENABLE_2026_MODES && activeColorModes.includes('alliance-2026')) {
+        currentColorMode = 'alliance-2026';
+        currentModeView = 'alliance';
+        currentModeYear = '2026';
+        return;
+      }
+
+      const firstYearMode = activeColorModes.find((mode) => !!parseMode(mode));
+      if (firstYearMode) {
+        const first = parseMode(firstYearMode);
+        currentColorMode = firstYearMode;
+        currentModeView = first.view;
+        currentModeYear = first.year;
+        return;
+      }
+
+      if (activeColorModes.includes('reserved')) {
+        currentColorMode = 'reserved';
+        currentModeYear = 'reserved';
+      }
+    }
+
+    function updateViewToggleLabelState(){
+      if (!partyLabelEl || !allianceLabelEl || !viewToggleEl) return;
+      const allianceActive = !!viewToggleEl.checked;
+      partyLabelEl.classList.toggle('inactive', allianceActive);
+      allianceLabelEl.classList.toggle('inactive', !allianceActive);
+    }
+
+    function updateViewToggleState(){
+      if (!viewToggleEl || !viewToggleWrapEl) return;
+      const isReserved = currentModeYear === 'reserved';
+      const hasAlliance = hasMode('alliance', currentModeYear);
+      const hasParty = hasMode('party', currentModeYear);
+      const canToggle = !isReserved && hasAlliance && hasParty;
+
+      if (!hasAlliance && hasParty) currentModeView = 'party';
+      if (hasAlliance && !hasParty) currentModeView = 'alliance';
+
+      viewToggleEl.checked = currentModeView === 'alliance';
+      viewToggleEl.disabled = !canToggle;
+      viewToggleWrapEl.style.opacity = canToggle ? '1' : '0.65';
+      viewToggleWrapEl.style.pointerEvents = canToggle ? 'auto' : 'none';
+      viewToggleWrapEl.style.visibility = isReserved ? 'hidden' : 'visible';
+      updateViewToggleLabelState();
+    }
+
+    function renderYearTabs(){
+      if (!yearTabsEl) return;
+
+      const years = inferAvailableYears(activeColorModes);
+      const hasReservedMode = activeColorModes.includes('reserved');
+      yearTabsEl.innerHTML = '';
+
+      for (const year of years) {
+        const btn = document.createElement('button');
+        btn.className = 'year-btn';
+        btn.type = 'button';
+        btn.dataset.modeYear = year;
+        btn.textContent = year;
+        btn.classList.toggle('active', currentModeYear === year);
+        btn.addEventListener('click', () => {
+          if (currentModeYear === year) return;
+          currentModeYear = year;
+          const nextMode = resolveModeForControls();
+          if (!nextMode) return;
+          currentColorMode = nextMode;
+          syncControlsFromCurrentMode();
+          renderYearTabs();
+          updateViewToggleState();
+          applyCurrentColorMode();
+        });
+        yearTabsEl.appendChild(btn);
+      }
+
+      if (hasReservedMode) {
+        const reservedBtn = document.createElement('button');
+        reservedBtn.className = 'year-btn';
+        reservedBtn.type = 'button';
+        reservedBtn.dataset.modeYear = 'reserved';
+        reservedBtn.textContent = uiText().reserved;
+        reservedBtn.classList.toggle('active', currentModeYear === 'reserved');
+        reservedBtn.addEventListener('click', () => {
+          if (currentModeYear === 'reserved' && currentColorMode === 'reserved') return;
+          currentModeYear = 'reserved';
+          currentColorMode = 'reserved';
+          renderYearTabs();
+          updateViewToggleState();
+          applyCurrentColorMode();
+        });
+        yearTabsEl.appendChild(reservedBtn);
+      }
     }
 
     function preComputeColors(){
@@ -1101,11 +1525,13 @@
                    || allianceColors.get(normalizeAllianceKey(row.y2026_winner_alliance))
                    || getHistoricalAllianceColor(row.y2026_winner_party, '2026');
               break;
+            case 'alliance-2021':
             case 'alliance-2020':
-              color = allianceColors.get(normalizeAllianceKey(row.current_mla_alliance)) || '#f3f4f6';
+              color = allianceColors.get(normalizeAllianceKey(rowAllianceForYear(row, 2021))) || '#f3f4f6';
               break;
+            case 'party-2021':
             case 'party-2020':
-              color = partyColors.get(row.current_mla_party) || allianceColors.get(normalizeAllianceKey(row.current_mla_alliance)) || '#f3f4f6';
+              color = partyColors.get(rowPartyForYear(row, 2021)) || allianceColors.get(normalizeAllianceKey(rowAllianceForYear(row, 2021))) || '#f3f4f6';
               break;
             case 'alliance-2016':
               color = allianceColors.get(normalizeAllianceKey(row.y2016_winner_alliance))
@@ -1162,11 +1588,11 @@
           label: `${localizeReserved(status)} (${count})`
         }));
       } else if (mode.includes('alliance')) {
-        const year = parseInt(mode.split('-')[1] || '2020', 10);
+        const year = parseInt(mode.split('-')[1] || '2021', 10);
         const allianceCount = new Map();
         for (const [, row] of electionData) {
           let alliance = null;
-          if (year === 2020) alliance = row.current_mla_alliance || null;
+          if (year === 2021 || year === 2020) alliance = rowAllianceForYear(row, 2021) || null;
           if (year === 2026) alliance = row.y2026_winner_alliance || null;
           if (year === 2016) alliance = row.y2016_winner_alliance || null;
           if (!alliance) {
@@ -1174,12 +1600,12 @@
                       : (year === 2016) ? row.y2016_winner_party
                       : (year === 2015) ? row.y2015_winner_party
                       : (year === 2010) ? row.y2010_winner_party
-                      : row.current_mla_party;
+                      : rowPartyForYear(row, 2021);
             const info = partyData.get(party);
             const alliances = info && (info.alliances || null);
             alliance = (alliances && (alliances[String(year)] || alliances[year]))
-                    || (info && (info[`alliance_${year}`] || info.alliance_2020 || info.alliance))
-                    || row.current_mla_alliance
+                    || (info && (info[`alliance_${year}`] || info.alliance_2021 || info.alliance_2020 || info.alliance))
+                    || rowAllianceForYear(row, 2021)
                     || 'NA';
           }
           allianceCount.set(alliance, (allianceCount.get(alliance) || 0) + 1);
@@ -1192,7 +1618,7 @@
         const partyCount = new Map();
         for (const [, row] of electionData) {
           const party = mode === 'party-2026' ? row.y2026_winner_party
-                     : mode === 'party-2020' ? row.current_mla_party
+                     : mode === 'party-2021' || mode === 'party-2020' ? rowPartyForYear(row, 2021)
                      : mode === 'party-2016' ? row.y2016_winner_party
                      : mode === 'party-2015' ? row.y2015_winner_party
                      : mode === 'party-2010' ? row.y2010_winner_party : null;
@@ -1229,22 +1655,31 @@
 
     function configureColorModes(){
       if (!activeColorModes.length) {
-        colorModeEl.innerHTML = '';
-        colorModeWrapEl.style.display = 'none';
+        if (modeControlsRowEl) modeControlsRowEl.style.display = 'none';
+        if (yearTabsEl) yearTabsEl.innerHTML = '';
         legendEl.style.display = 'none';
         return;
       }
-      colorModeWrapEl.style.display = '';
-      colorModeEl.innerHTML = activeColorModes.map(mode => `<option value="${mode}">${modeLabel(mode)}</option>`).join('');
-      if (ENABLE_2026_MODES && activeColorModes.includes('alliance-2026')) {
-        currentColorMode = 'alliance-2026';
+
+      if (!activeColorModes.includes(currentColorMode)) {
+        if (ENABLE_2026_MODES && activeColorModes.includes('alliance-2026')) {
+          currentColorMode = 'alliance-2026';
+        } else {
+          const firstAllianceMode = activeColorModes.find((mode) => /^alliance-\d{4}$/.test(mode));
+          const firstPartyMode = activeColorModes.find((mode) => /^party-\d{4}$/.test(mode));
+          currentColorMode = firstAllianceMode || firstPartyMode || (activeColorModes.includes('reserved') ? 'reserved' : activeColorModes[0]);
+        }
       }
-      if (!activeColorModes.includes(currentColorMode)) currentColorMode = activeColorModes[0];
-      colorModeEl.value = currentColorMode;
-      colorModeEl.onchange = () => {
-        currentColorMode = colorModeEl.value;
-        applyCurrentColorMode();
-      };
+
+      syncControlsFromCurrentMode();
+      renderYearTabs();
+      updateViewToggleState();
+
+      if (modeControlsRowEl) {
+        const hasYearModes = inferAvailableYears(activeColorModes).length > 0;
+        const hasReservedMode = activeColorModes.includes('reserved');
+        modeControlsRowEl.style.display = (hasYearModes || hasReservedMode) ? '' : 'none';
+      }
     }
 
     function normalizeResultKey(row){
@@ -1290,7 +1725,10 @@
       const normalized = normalizeStateKey(stateKey);
       const rowsWithState = rows.filter(r => getStateKeyFromRow(r));
       if (!rowsWithState.length) return rows;
-      return rowsWithState.filter(r => getStateKeyFromRow(r) === normalized);
+      return rows.filter(r => {
+        const rowState = getStateKeyFromRow(r);
+        return !rowState || rowState === normalized;
+      });
     }
 
     function extractYearFromAllianceColumn(columnName){
@@ -1347,6 +1785,159 @@
       return out;
     }
 
+    function pickRowValue(row, keys){
+      for (const key of keys) {
+        if (!Object.prototype.hasOwnProperty.call(row || {}, key)) continue;
+        const value = String(row[key] ?? '').trim();
+        if (value) return value;
+      }
+      return '';
+    }
+
+    function extractYearFromAllianceKey(columnName){
+      const key = String(columnName || '').trim().toLowerCase().replace(/\s+/g, '_');
+      let match = key.match(/^alliance[_-]?(\d{4})$/);
+      if (match && match[1]) return match[1];
+      match = key.match(/^(\d{4})[_-]?alliance$/);
+      if (match && match[1]) return match[1];
+      return '';
+    }
+
+    function parsePartiesFromRows(rows, stateKey){
+      const out = new Map();
+      for (const row of getRowsForState(rows || [], stateKey)) {
+        const code = pickRowValue(row, ['party_code', 'party', 'code', 'PARTY_CODE', 'PARTY', 'CODE']);
+        if (!code) continue;
+        const existing = out.get(code) || { code, name: code, color: '', alliances: {} };
+        const next = { ...existing };
+        const name = pickRowValue(row, ['party_name', 'name', 'party', 'PARTY_NAME', 'NAME']);
+        if (name) next.name = name;
+        const color = pickRowValue(row, ['color', 'party_color', 'PARTY_COLOR', 'COLOR']);
+        if (color) next.color = color;
+        const alliance = pickRowValue(row, ['alliance', 'ALLIANCE']);
+        if (alliance) next.alliance = alliance;
+        const allianceColor = pickRowValue(row, ['alliance_color', 'alliance_colour', 'alliance_colour_code', 'ALLIANCE_COLOR']);
+        if (allianceColor) next.alliance_color = allianceColor;
+        const alliances = { ...(next.alliances || {}) };
+        for (const [key, value] of Object.entries(row || {})) {
+          const year = extractYearFromAllianceKey(key);
+          const allianceForYear = String(value || '').trim();
+          if (!year || !allianceForYear) continue;
+          alliances[year] = allianceForYear;
+        }
+        const alliance2021 = pickRowValue(row, ['alliance_2021', 'ALLIANCE_2021']);
+        const alliance2020 = pickRowValue(row, ['alliance_2020', 'ALLIANCE_2020']);
+        if (alliance2021 && !alliances['2021']) alliances['2021'] = alliance2021;
+        if (alliance2020 && !alliances['2020']) alliances['2020'] = alliance2020;
+        next.alliances = alliances;
+        out.set(code, next);
+      }
+      return Array.from(out.values());
+    }
+
+    function parseAllianceColorsFromRows(rows, stateKey){
+      const out = {};
+      for (const row of getRowsForState(rows || [], stateKey)) {
+        const alliance = pickRowValue(row, ['alliance', 'alliance_code', 'name', 'ALLIANCE', 'ALLIANCE_CODE', 'NAME', 'code', 'CODE']);
+        const color = pickRowValue(row, ['color', 'hex', 'alliance_color', 'ALLIANCE_COLOR', 'COLOR']);
+        if (!alliance || !color) continue;
+        out[alliance] = color;
+      }
+      return out;
+    }
+
+    function parseI18nRows(rows){
+      const strings = new Map();
+      const reserved = {};
+      for (const row of (rows || [])) {
+        const key = pickRowValue(row, ['key', 'source', 'en', 'KEY', 'SOURCE', 'EN']);
+        const kn = pickRowValue(row, ['kn', 'kannada', 'value', 'target', 'KN', 'KANNADA', 'VALUE', 'TARGET']);
+        if (!key || !kn) continue;
+        const type = pickRowValue(row, ['type', 'category', 'TYPE', 'CATEGORY']).toLowerCase();
+        const isReserved = type === 'reserved' && ['GEN', 'SC', 'ST', 'NA'].includes(key.toUpperCase());
+        if (isReserved) {
+          reserved[key.toUpperCase()] = kn;
+        } else {
+          strings.set(key, kn);
+        }
+      }
+      return { strings, reserved };
+    }
+
+    function mergePartyWiseIntoResultsRows(resultRows, partyRows){
+      const base = Array.isArray(resultRows) ? resultRows : [];
+      const overlays = Array.isArray(partyRows) ? partyRows : [];
+      if (!base.length || !overlays.length) return base;
+
+      const byAc = new Map();
+      for (const row of overlays) {
+        const key = normalizeResultKey(row);
+        if (!key) continue;
+        byAc.set(key, row);
+      }
+
+      const partyFields = [
+        'y2026_winner_party',
+        'y2026_winner_alliance',
+        'y2021_winner_party',
+        'y2021_winner_alliance',
+        'y2016_winner_party',
+        'y2016_winner_alliance',
+        'current_mla_party',
+        'current_mla_alliance',
+        'y2015_winner_party',
+        'y2010_winner_party'
+      ];
+
+      return base.map((row) => {
+        const key = normalizeResultKey(row);
+        const overlay = byAc.get(key);
+        if (!overlay) return row;
+        const merged = { ...row };
+        for (const field of partyFields) {
+          const value = String(overlay[field] ?? '').trim();
+          if (!value) continue;
+          merged[field] = value;
+        }
+        return merged;
+      });
+    }
+
+    function normalizeCellValue(value){
+      if (value == null) return '';
+      return String(value)
+        .replace(/\u00a0/g, ' ')
+        .replace(/\r\n?/g, '\n')
+        .replace(/\n+/g, ' ')
+        .trim();
+    }
+
+    function normalizeCsvRows(rows){
+      return (rows || []).map((row) => {
+        const cleaned = {};
+        for (const [rawKey, rawValue] of Object.entries(row || {})) {
+          const key = normalizeCellValue(rawKey);
+          if (!key) continue;
+          const value = normalizeCellValue(rawValue);
+          if (Object.prototype.hasOwnProperty.call(cleaned, key) && cleaned[key] && !value) continue;
+          cleaned[key] = value;
+        }
+        return cleaned;
+      });
+    }
+
+    async function loadCsv(url, description, optional = false){
+      try {
+        const response = await fetch(url, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`${description} HTTP ${response.status}`);
+        const text = await response.text();
+        return normalizeCsvRows(d3.csvParse(text));
+      } catch (e) {
+        if (optional) return null;
+        throw e;
+      }
+    }
+
     async function loadJson(url, description, optional = false){
       try {
         const response = await fetch(url, { cache: 'no-store' });
@@ -1358,33 +1949,33 @@
       }
     }
 
-    async function loadCsv(url, description, optional = false){
-      try {
-        const response = await fetch(url, { cache: 'no-store' });
-        if (!response.ok) throw new Error(`${description} HTTP ${response.status}`);
-        const text = await response.text();
-        return d3.csvParse(text);
-      } catch (e) {
-        if (optional) return null;
-        throw e;
-      }
-    }
-
     async function loadElectionDataForState(stateKey, cfg){
       resetElectionCaches();
+      await ensureSheetCsvUrlsReady();
       if (!RESULTS_SHEET_URL) return false;
 
-      const partiesData = await loadJson(PARTIES_URL, 'parties', true);
-      const alliancesOverride = await loadJson(ALLIANCES_URL, 'alliances', true);
       if (!cachedResultsRows) {
         cachedResultsRows = await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true);
+      }
+      if (!cachedPartyWiseRows && PARTY_WISE_SHEET_URL) {
+        cachedPartyWiseRows = await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true);
       }
       if (!cachedMappingRows && MAPPING_SHEET_URL) {
         cachedMappingRows = await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true);
       }
+      if (!cachedPartyRows && PARTIES_SHEET_URL) {
+        cachedPartyRows = await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true);
+      }
+      if (!cachedAllianceRows && ALLIANCES_SHEET_URL) {
+        cachedAllianceRows = await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true);
+      }
 
-      const resultsData = getRowsForState(cachedResultsRows || [], stateKey);
+      const baseResultsData = getRowsForState(cachedResultsRows || [], stateKey);
+      const partyWiseData = getRowsForState(cachedPartyWiseRows || [], stateKey);
+      const resultsData = mergePartyWiseIntoResultsRows(baseResultsData, partyWiseData);
       const allianceMap = parsePartyAllianceMappingRows(cachedMappingRows || [], stateKey);
+      const partiesData = parsePartiesFromRows(cachedPartyRows || [], stateKey);
+      const alliancesOverride = parseAllianceColorsFromRows(cachedAllianceRows || [], stateKey);
 
       if (!Array.isArray(resultsData) || !resultsData.length) {
         return false;
@@ -1395,12 +1986,13 @@
       if (Array.isArray(partiesData)) {
         for (const party of partiesData) {
           if (!party || !party.code) continue;
-          partyColors.set(party.code, pastelizeColor(party.color));
+          const basePartyColor = isValidHexColor(to6Hex(party.color || '')) ? to6Hex(party.color) : deterministicColorFor(party.code);
+          partyColors.set(party.code, pastelizeColor(basePartyColor));
           const alliances = party.alliances || {};
-          const a2020 = alliances['2020'] || alliances[2020] || party.alliance_2020 || party.alliance;
-          partyToAlliance.set(party.code, a2020);
+          const a2021 = alliances['2021'] || alliances[2021] || alliances['2020'] || alliances[2020] || party.alliance_2021 || party.alliance_2020 || party.alliance;
+          partyToAlliance.set(party.code, a2021);
           partyData.set(party.code, party);
-          ensureAllianceColor(a2020, party.alliance_colour_code || party.alliance_color || party.color);
+          ensureAllianceColor(a2021, party.alliance_colour_code || party.alliance_color || party.color || basePartyColor);
         }
       }
 
@@ -1411,10 +2003,13 @@
         const merged = { ...existing, alliances: mergedAlliances };
         if (mapping.defaultAlliance) merged.alliance = mapping.defaultAlliance;
         partyData.set(party, merged);
-        const a2020 = mergedAlliances['2020'] || mergedAlliances[2020] || merged.alliance || existing.alliance || '';
-        if (a2020) {
-          partyToAlliance.set(party, a2020);
-          ensureAllianceColor(a2020, '');
+        if (!partyColors.has(party)) {
+          partyColors.set(party, pastelizeColor(deterministicColorFor(party)));
+        }
+        const a2021 = mergedAlliances['2021'] || mergedAlliances[2021] || mergedAlliances['2020'] || mergedAlliances[2020] || merged.alliance || existing.alliance || '';
+        if (a2021) {
+          partyToAlliance.set(party, a2021);
+          ensureAllianceColor(a2021, '');
         }
       }
 
@@ -1422,8 +2017,18 @@
         const ac = normalizeResultKey(row);
         if (!ac) continue;
         const normalizedRow = { ...row };
+        if (!normalizedRow.y2021_winner_name && normalizedRow.current_mla_name) normalizedRow.y2021_winner_name = normalizedRow.current_mla_name;
+        if (!normalizedRow.y2021_winner_party && normalizedRow.current_mla_party) normalizedRow.y2021_winner_party = normalizedRow.current_mla_party;
+        if (!normalizedRow.y2021_winner_alliance && normalizedRow.current_mla_alliance) normalizedRow.y2021_winner_alliance = normalizedRow.current_mla_alliance;
+        if (!normalizedRow.current_mla_name && normalizedRow.y2021_winner_name) normalizedRow.current_mla_name = normalizedRow.y2021_winner_name;
+        if (!normalizedRow.current_mla_party && normalizedRow.y2021_winner_party) normalizedRow.current_mla_party = normalizedRow.y2021_winner_party;
+        if (!normalizedRow.current_mla_alliance && normalizedRow.y2021_winner_alliance) normalizedRow.current_mla_alliance = normalizedRow.y2021_winner_alliance;
+        if (!normalizedRow.y2021_winner_alliance && normalizedRow.y2021_winner_party) {
+          const resolved = resolveAllianceForYear(normalizedRow.y2021_winner_party, 2021);
+          if (resolved && resolved !== 'NA') normalizedRow.y2021_winner_alliance = resolved;
+        }
         if (!normalizedRow.current_mla_alliance && normalizedRow.current_mla_party) {
-          const resolved = resolveAllianceForYear(normalizedRow.current_mla_party, 2020);
+          const resolved = resolveAllianceForYear(normalizedRow.current_mla_party, 2021);
           if (resolved && resolved !== 'NA') normalizedRow.current_mla_alliance = resolved;
         }
         if (!normalizedRow.y2026_winner_alliance && normalizedRow.y2026_winner_party) {
@@ -1650,11 +2255,11 @@
       `;
 
       if (row) {
-        let label = text.currentMla;
-        let person = row.current_mla_name || '';
-        let party = row.current_mla_party || '';
-        let alliance = row.current_mla_alliance || '';
-        let year = 2020;
+        let label = text.winner(2021);
+        let person = rowNameForYear(row, 2021);
+        let party = rowPartyForYear(row, 2021);
+        let alliance = rowAllianceForYear(row, 2021);
+        let year = 2021;
 
         if (currentColorMode.includes('2026')) {
           label = text.winner(2026);
@@ -1679,16 +2284,16 @@
           party = row.y2010_winner_party || party;
           year = 2010;
         } else if (currentColorMode === 'reserved') {
-          label = text.currentMla;
-          year = 2020;
+          label = text.winner(2021);
+          year = 2021;
         }
 
-        if (!alliance || (year !== 2020 && year !== 2016 && year !== 2026)) {
+        if (!alliance || (year !== 2021 && year !== 2016 && year !== 2026)) {
           const resolved = resolveAllianceForYear(party, year);
           alliance = (resolved && resolved !== 'NA')
             ? resolved
             : (year === 2026 ? (row.y2026_winner_alliance || '')
-            : (year === 2016 ? (row.y2016_winner_alliance || '') : (row.current_mla_alliance || '')));
+            : (year === 2016 ? (row.y2016_winner_alliance || '') : rowAllianceForYear(row, 2021)));
         }
 
         const partyColor = partyColors.get(party) || '#f3f4f6';
@@ -1917,7 +2522,7 @@
         }
       } catch (e) {
         statusEl.textContent = uiText().failedToLoad(stateLabel, e && e.message ? e.message : 'unknown error');
-        colorModeWrapEl.style.display = 'none';
+        if (modeControlsRowEl) modeControlsRowEl.style.display = 'none';
         legendEl.style.display = 'none';
       }
     }
@@ -1958,6 +2563,21 @@
       crossBtn.onclick = () => clearSelection(true);
       zoomInBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1.3);
       zoomOutBtn.onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.3);
+      if (viewToggleEl) {
+        viewToggleEl.addEventListener('change', () => {
+          currentModeView = viewToggleEl.checked ? 'alliance' : 'party';
+          const nextMode = resolveModeForControls();
+          if (!nextMode) {
+            updateViewToggleState();
+            return;
+          }
+          currentColorMode = nextMode;
+          syncControlsFromCurrentMode();
+          renderYearTabs();
+          updateViewToggleState();
+          applyCurrentColorMode();
+        });
+      }
     }
 
     window.addEventListener('resize', () => {
