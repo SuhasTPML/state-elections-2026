@@ -1,0 +1,73 @@
+state_key,state,party_code,party,year,alliance,source_rows,notes
+ASSAM,Assam,AGP,AGP,2026,NDA,6,from_2021
+ASSAM,Assam,AIUDF,AIUDF,2026,MAHAJOT,8,from_2021
+ASSAM,Assam,BJP,BJP,2026,NDA,45,from_2021
+ASSAM,Assam,BPF,BPF,2026,MAHAJOT,1,from_2021
+ASSAM,Assam,INC,INC,2026,MAHAJOT,14,from_2021
+ASSAM,Assam,IND,IND,2026,OTH,1,from_2021
+ASSAM,Assam,UPPL,UPPL,2026,NDA,2,from_2021
+KERALA,Kerala,BJP,BJP,2026,NDA,1,from_2016
+KERALA,Kerala,CMP(A),CMP(A),2026,OTH,1,from_2016
+KERALA,Kerala,CPI,CPI,2026,LDF,17,from_2021
+KERALA,Kerala,CPI(M),CPI(M),2026,LDF,62,from_2021
+KERALA,Kerala,Con(S),Con(S),2026,LDF,1,from_2021
+KERALA,Kerala,Congress (Secular),Congress (Secular),2026,OTH,1,from_2016
+KERALA,Kerala,INC,INC,2026,UDF,21,from_2021
+KERALA,Kerala,IND,IND,2026,LDF,5,from_2021
+KERALA,Kerala,INL,INL,2026,LDF,1,from_2021
+KERALA,Kerala,IUML,IUML,2026,UDF,15,from_2021
+KERALA,Kerala,JD(S),JD(S),2026,LDF,2,from_2021
+KERALA,Kerala,JKC,JKC,2026,LDF,1,from_2021
+KERALA,Kerala,KC(B),KC(B),2026,LDF,1,from_2021
+KERALA,Kerala,KC(J),KC(J),2026,UDF,1,from_2021
+KERALA,Kerala,KC(M),KC(M),2026,LDF,5,from_2021
+KERALA,Kerala,Kerala Congress (B),Kerala Congress (B),2026,OTH,1,from_2016
+KERALA,Kerala,Kerala Congress (Jacob),Kerala Congress (Jacob),2026,OTH,1,from_2016
+KERALA,Kerala,Kerala Congress (Mani),Kerala Congress (Mani),2026,OTH,6,from_2016
+KERALA,Kerala,LJD,LJD,2026,LDF,1,from_2021
+KERALA,Kerala,NCK,NCK,2026,UDF,1,from_2021
+KERALA,Kerala,NCP,NCP,2026,LDF,2,from_2021
+KERALA,Kerala,NSC,NSC,2026,LDF,1,from_2021
+KERALA,Kerala,National Secular Conference,National Secular Conference,2026,OTH,1,from_2016
+KERALA,Kerala,RMPI,RMPI,2026,UDF,1,from_2021
+KERALA,Kerala,UDF,UDF,2026,UDF,2,from_2021
+PUDUCHERRY,Puducherry,A. K. D. Arumugam,A. K. D. Arumugam,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,A. Krishnan,A. Krishnan,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,A. M. H. Nazeem,A. M. H. Nazeem,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,A. Marimottou,A. Marimottou,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,AINRC,AINRC,2026,NDA,10,from_2021
+PUDUCHERRY,Puducherry,Annibal Kennedy,Annibal Kennedy,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,BJP,BJP,2026,NDA,6,from_2021
+PUDUCHERRY,Puducherry,DMK,DMK,2026,UPA,6,from_2021
+PUDUCHERRY,Puducherry,G. Nehru Kuppusamy,G. Nehru Kuppusamy,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,INC,INC,2026,UPA,2,from_2021
+PUDUCHERRY,Puducherry,IND,IND,2026,OTH,6,from_2021
+PUDUCHERRY,Puducherry,J. Prakash Kumar,J. Prakash Kumar,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,K. Sethu Sethuselvam,K. Sethu Sethuselvam,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,M. V. Omalingam,M. V. Omalingam,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,P. Angalane,P. Angalane,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,Party color cell Independent,Party color cell Independent,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,S. Kumaravel,S. Kumaravel,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,S. Ramesh,S. Ramesh,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,V. Balan,V. Balan,2026,OTH,1,from_2016
+PUDUCHERRY,Puducherry,V. M. C. Sivakumar,V. M. C. Sivakumar,2026,OTH,1,from_2016
+TAMIL_NADU,Tamil Nadu,AIADMK,AIADMK,2026,NDA,66,from_2021
+TAMIL_NADU,Tamil Nadu,BJP,BJP,2026,NDA,4,from_2021
+TAMIL_NADU,Tamil Nadu,CPI,CPI,2026,SPA,2,from_2021
+TAMIL_NADU,Tamil Nadu,CPI(M),CPI(M),2026,SPA,2,from_2021
+TAMIL_NADU,Tamil Nadu,DMK,DMK,2026,SPA,132,from_2021
+TAMIL_NADU,Tamil Nadu,INC,INC,2026,SPA,18,from_2021
+TAMIL_NADU,Tamil Nadu,IUML,IUML,2026,SPA,1,from_2016
+TAMIL_NADU,Tamil Nadu,KMDK,KMDK,2026,SPA,1,from_2021
+TAMIL_NADU,Tamil Nadu,PMK,PMK,2026,NDA,5,from_2021
+TAMIL_NADU,Tamil Nadu,VCK,VCK,2026,SPA,4,from_2021
+WEST_BENGAL,West Bengal,AIFB,AIFB,2026,SM,2,from_2016
+WEST_BENGAL,West Bengal,BJP,BJP,2026,NDA,77,from_2021
+WEST_BENGAL,West Bengal,CPI,CPI,2026,SM,1,from_2016
+WEST_BENGAL,West Bengal,CPI(M),CPI(M),2026,SM,26,from_2016
+WEST_BENGAL,West Bengal,GJM,GJM,2026,NDA,1,from_2021
+WEST_BENGAL,West Bengal,INC,INC,2026,SM,44,from_2016
+WEST_BENGAL,West Bengal,IND,IND,2026,OTH,1,from_2016
+WEST_BENGAL,West Bengal,ISF,ISF,2026,SM,1,from_2021
+WEST_BENGAL,West Bengal,RSP,RSP,2026,SM,3,from_2016
+WEST_BENGAL,West Bengal,TMC,TMC,2026,TMC,215,from_2021

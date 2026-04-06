@@ -6,7 +6,7 @@ Use these steps when you need to host the widgets locally for QA or browser test
 
 ### What to host
 
-- Serve the repository root so the widgets can load relative assets from `root/`, `hosted-json/`, and `data/`.
+- Serve the repository root so the widgets can load relative assets from `root/`.
 - Map widget entry point: `map-widget.html`
 - Seat results widget entry point: `seat-results-widget.html`
 
@@ -56,46 +56,67 @@ http://127.0.0.1:8000/map-widget.html?state=KERALA
 
 `map-widget.html` loads its runtime data from these sources.
 
-### Base data directory
+### Google Sheet Tabs
 
-- Default JSON base: `./hosted-json`
-- Override supported via query param:
-
-```text
-?dataBase=/some/other/base/path
-```
-
-From that base, `map-widget.html` loads:
-
-- `hosted-json/parties.json`
-- `hosted-json/alliances.json`
-- `hosted-json/i18n.kn.json`
-
-### Results data (Google Sheet)
-
-`map-widget.html` reads constituency-level results from a Google Sheet (CSV over gviz), not from local JSON result files.
+`map-widget.html` reads all non-geometry runtime data from a Google Sheet (CSV over gviz).
 
 Required query params:
 
 - `sheetId=<google-sheet-id>` (or `sheetUrl=<full-google-sheet-url>`)
 - optional `resultsTab=<tab-name>` (default: `statewise_party_results`)
+- optional `partyWiseTab=<tab-name>` (default: `statewise_party_wise`)
+- optional `resultsLiveTab=<tab-name>` (default: none)
+- optional `partyWiseLiveTab=<tab-name>` (default: mirrors `resultsLiveTab` when provided)
+- optional `mappingLiveTab=<tab-name>` (default: none)
 - optional `mappingTab=<tab-name>` (default: `statewise_party_alliance_mapping`)
+- optional `partiesTab=<tab-name>` (default: `party_master`)
+- optional `alliancesTab=<tab-name>` (default: `alliance_master`)
+- optional `i18nTab=<tab-name>` (default: `i18n_kn`)
 
 Example:
 
 ```text
-http://127.0.0.1:8000/map-widget.html?state=KERALA&sheetId=YOUR_SHEET_ID&resultsTab=statewise_party_results&mappingTab=statewise_party_alliance_mapping
+http://127.0.0.1:8000/map-widget.html?state=KERALA&sheetId=YOUR_SHEET_ID&resultsTab=statewise_party_results&partyWiseTab=statewise_party_wise&mappingTab=statewise_party_alliance_mapping&partiesTab=party_master&alliancesTab=alliance_master&i18nTab=i18n_kn
+```
+
+Split static/live example:
+
+```text
+http://127.0.0.1:8000/map-widget.html?state=KERALA&sheetId=YOUR_SHEET_ID&resultsTab=statewise_combined_results_static&resultsLiveTab=statewise_live_2026&partyWiseLiveTab=statewise_live_2026&mappingTab=statewise_party_alliance_mapping&partiesTab=party_master&alliancesTab=alliance_master&i18nTab=i18n_kn
 ```
 
 Expected `resultsTab` columns (minimum):
 
 - `state` or `state_key` (e.g. `KERALA`)
 - `no` (constituency number)
-- party/winner fields used by the widget, such as:
-  - `current_mla_name`, `current_mla_party`
-  - `y2016_winner_name`, `y2016_winner_party`
-  - `y2026_winner_name`, `y2026_winner_party`
-  - optional alliance fields (`current_mla_alliance`, `y2016_winner_alliance`, `y2026_winner_alliance`)
+- constituency/detail fields, for example:
+  - `constituency_name`
+  - `reserved`
+  - `y2021_winner_name`
+  - `y2016_winner_name`
+  - `y2026_winner_name`
+  - `status`
+  - `updated_at`
+
+Expected `partyWiseTab` columns:
+
+- `state` or `state_key`
+- `no`
+- party/alliance fields used by the widget, such as:
+  - `y2021_winner_party`, `y2021_winner_alliance`
+  - `y2016_winner_party`, `y2016_winner_alliance`
+  - `y2026_winner_party`, `y2026_winner_alliance`
+
+Expected `resultsLiveTab` / `partyWiseLiveTab` columns (for live split mode):
+
+- `state` or `state_key`
+- `no`
+- mutable 2026 fields only, for example:
+  - `y2026_winner_name`
+  - `y2026_winner_party`
+  - `y2026_winner_alliance`
+  - `status`
+  - `updated_at`
 
 Expected `mappingTab` columns:
 
@@ -103,9 +124,33 @@ Expected `mappingTab` columns:
 - `party` or `party_code`
 - either:
   - `year` + `alliance` rows, or
-  - per-year columns like `alliance_2016`, `alliance_2020`, `alliance_2026`
+  - per-year columns like `alliance_2016`, `alliance_2021`, `alliance_2026`
 
 Alliance values are auto-resolved from this mapping tab when alliance fields are missing in results rows.
+
+Expected `mappingLiveTab` columns (optional, for live override):
+
+- same shape as `mappingTab`, typically only 2026 rows that should override static mapping.
+
+Expected `partiesTab` columns:
+
+- `party_code` (or `party`)
+- `color`
+- optional `state` or `state_key`
+- optional `alliance`
+- optional per-year alliance columns (for example `alliance_2016`, `alliance_2021`, `alliance_2026`)
+- optional `alliance_color`
+
+Expected `alliancesTab` columns:
+
+- `alliance`
+- `color`
+
+Expected `i18nTab` columns:
+
+- `key`
+- `kn`
+- optional `type` (`string` or `reserved`)
 
 ### Map geometry data
 

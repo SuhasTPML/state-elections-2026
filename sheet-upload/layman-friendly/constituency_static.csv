@@ -1,0 +1,825 @@
+state_key,state,no,constituency_name,reserved,y2021_winner_name,y2016_winner_name,y2021_winner_party,y2016_winner_party
+ASSAM,Assam,1,GOSSAIGAON,GEN,Majendra Narzary,Majendra Narzary,BPF,BPF
+ASSAM,Assam,2,DOTMA (ST),ST,,,,
+ASSAM,Assam,3,KOKRAJHAR (ST),ST,,,,
+ASSAM,Assam,4,BAOKHUNGRI,GEN,,,,
+ASSAM,Assam,5,PARBATJHORA,GEN,,,,
+ASSAM,Assam,6,GOLAKGANJ,GEN,Abdus Sobahun Ali Sarkar,Ashwini Roy Sarkar,INC,BJP
+ASSAM,Assam,7,GAURIPUR,GEN,Nijanur Rahman,Nijanur Rahman,AIUDF,AIUDF
+ASSAM,Assam,8,DHUBRI,GEN,Nazrul Hoque,Najrul Hoque,AIUDF,AIUDF
+ASSAM,Assam,9,BIRSING JARUA,GEN,,,,
+ASSAM,Assam,10,BILASIPARA,GEN,,,,
+ASSAM,Assam,11,MANKACHAR,GEN,Adv. Aminul Islam,Dr. Motiur Rohman Mondal,AIUDF,INC
+ASSAM,Assam,12,JALESHWAR,GEN,,,,
+ASSAM,Assam,13,GOALPARA WEST (ST),ST,Md. Abdur Rashid Mandal,Abdur Rasheed Mandal,INC,INC
+ASSAM,Assam,14,GOALPARA EAST,GEN,Abdul Kalam Rasheed Alam,Abdul Kalam Rasheed Alam,INC,INC
+ASSAM,Assam,15,DUDHNAI (ST),ST,Jadab Sawargiary,Dipak Rabha,INC,BJP
+ASSAM,Assam,16,ABHAYAPURI,GEN,,,,
+ASSAM,Assam,17,SRIJANGRAM,GEN,,,,
+ASSAM,Assam,18,BONGAIGAON,GEN,Phani Bhusan Choudhury,Phani Bhusan Choudhury,AGP,AGP
+ASSAM,Assam,19,SIDLI CHIRANG (ST),ST,,,,
+ASSAM,Assam,20,BIJNI,GEN,Ajoy Kumar Ray,Kamal Singh Narzary,BJP,BPF
+ASSAM,Assam,21,BHOWANIPUR-SORBHOG,GEN,,,,
+ASSAM,Assam,22,MANDIA,GEN,,,,
+ASSAM,Assam,23,CHENGA,GEN,Ashraful Hussain,Sukur Ali Ahmed,AIUDF,INC
+ASSAM,Assam,24,BARPETA (SC),SC,Abdur Rahim Ahmed,Gunindra Nath Das,INC,AGP
+ASSAM,Assam,25,PAKABETBARI,GEN,,,,
+ASSAM,Assam,26,BAJALI,GEN,,,,
+ASSAM,Assam,27,CHAMARIA,GEN,,,,
+ASSAM,Assam,28,BOKO-CHAYGAON (ST),ST,,,,
+ASSAM,Assam,29,PALASBARI,GEN,Hemanga Thakuria,Pranab Kalita,BJP,BJP
+ASSAM,Assam,30,HAJO-SUALKUCHI (SC),SC,,,,
+ASSAM,Assam,31,RANGIA,GEN,Bhabesh Kalita,Bhabesh Kalita,BJP,BJP
+ASSAM,Assam,32,KAMALPUR,GEN,Diganta Kalita,Satyabrat Kalita,BJP,AGP
+ASSAM,Assam,33,DISPUR,GEN,Atul Bora,Atul Bora,BJP,BJP
+ASSAM,Assam,34,DIMORIA (SC),SC,,,,
+ASSAM,Assam,35,NEW GUWAHATI,GEN,,,,
+ASSAM,Assam,36,GUWAHATI CENTRAL,GEN,,,,
+ASSAM,Assam,37,JALUKBARI,GEN,Himanta Biswa Sarma,Himanta Biswa Sarma,BJP,BJP
+ASSAM,Assam,38,BARKHETRI,GEN,,,,
+ASSAM,Assam,39,NALBARI,GEN,Jayanta Malla Baruah,Ashok Sarma,BJP,BJP
+ASSAM,Assam,40,TIHU,GEN,,,,
+ASSAM,Assam,41,MANAS,GEN,,,,
+ASSAM,Assam,42,BAKSA (ST),ST,,,,
+ASSAM,Assam,43,TAMULPUR (ST),ST,Leho Ram Boro,Emmanuel Mosahary,UPPL,BPF
+ASSAM,Assam,44,GORESWAR,GEN,,,,
+ASSAM,Assam,45,BHERGAON,GEN,,,,
+ASSAM,Assam,46,UDALGURI (ST),ST,Gobinda Chandra Basumatary,Rihon Daimary,UPPL,BPF
+ASSAM,Assam,47,MAZBAT,GEN,,,,
+ASSAM,Assam,48,TANGLA,GEN,,,,
+ASSAM,Assam,49,SIPAJHAR,GEN,Parmananda Rajbongshi,Binanda Kumar Saikia,BJP,BJP
+ASSAM,Assam,50,MANGALDAI,GEN,,,,
+ASSAM,Assam,51,DALGAON,GEN,Mazibur Rahman,Ilias Ali,AIUDF,INC
+ASSAM,Assam,52,JAGIROAD (SC),SC,Pijush Hazarika,Pijush Hazarika,BJP,BJP
+ASSAM,Assam,53,LAHARIGHAT,GEN,Dr. Asif Mohammad Nazar,Nazrul Islam,INC,INC
+ASSAM,Assam,54,MORIGAON,GEN,,,,
+ASSAM,Assam,55,DHING,GEN,Aminul Islam,Aminul Islam,AIUDF,AIUDF
+ASSAM,Assam,56,RUPAHIHAT,GEN,,,,
+ASSAM,Assam,57,KALIABOR,GEN,Keshab Mahanta,Keshab Mahanta,AGP,AGP
+ASSAM,Assam,58,SAMAGURI,GEN,Rakibul Hussain,Rakibul Hussain,INC,INC
+ASSAM,Assam,59,BARHAMPUR,GEN,Jitu Goswami,Prafulla Kumar Mahanta,BJP,AGP
+ASSAM,Assam,60,NAGAON-BATADRABA,GEN,,,,
+ASSAM,Assam,61,RAHA (SC),SC,Sashi Kanta Das,Dimbeswar Das,INC,BJP
+ASSAM,Assam,62,BINNAKANDI,GEN,,,,
+ASSAM,Assam,63,HOJAI,GEN,Ramkrishna Ghosh,Shiladitya Dev,BJP,BJP
+ASSAM,Assam,64,LUMDING,GEN,Sibu Misra,Sibu Misra,BJP,BJP
+ASSAM,Assam,65,DHEKIAJULI,GEN,Ashok Singhal,Ashok Singhal,BJP,BJP
+ASSAM,Assam,66,BARCHALLA,GEN,Ganesh Kumar Limbu,Ganesh Kumar Limbu,BJP,BJP
+ASSAM,Assam,67,TEZPUR,GEN,Prithiraj Rava,Brindaban Goswami,AGP,AGP
+ASSAM,Assam,68,RANGAPARA,GEN,Krishna Kamal Tanti,Pallab Lochan Das,BJP,BJP
+ASSAM,Assam,69,NADUAR,GEN,,,,
+ASSAM,Assam,70,BISWANATH,GEN,Promod Borthakur,Promod Borthakur,BJP,BJP
+ASSAM,Assam,71,BEHALI (SC),SC,Ranjit Dutta,Ranjit Dutta,BJP,BJP
+ASSAM,Assam,72,GOHPUR,GEN,Utpal Borah,Utpal Borah,BJP,BJP
+ASSAM,Assam,73,BIHPURIA,GEN,Amiya Kumar Bhuyan,Debananda Hazarika,BJP,BJP
+ASSAM,Assam,74,RONGONADI,GEN,,,,
+ASSAM,Assam,75,NOWBOICHA (SC),SC,,,,
+ASSAM,Assam,76,LAKHIMPUR,GEN,Manab Deka,Utpal Dutta,BJP,AGP
+ASSAM,Assam,77,DHAKUAKHANA (ST),ST,Naba Kumar Doley,Naba Kumar Doley,BJP,BJP
+ASSAM,Assam,78,DHEMAJI (ST),ST,Ranoj Pegu,Pradan Baruah,BJP,BJP
+ASSAM,Assam,79,SISSIBARGAON,GEN,,,,
+ASSAM,Assam,80,JONAI (ST),ST,Bhubon Pegu,Bhubon Pegu,BJP,IND
+ASSAM,Assam,81,SADIYA,GEN,Bolin Chetia,Bolin Chetia,BJP,BJP
+ASSAM,Assam,82,DOOMDOOMA,GEN,Rupesh Gowala,Durga Bhumij,BJP,INC
+ASSAM,Assam,83,MARGHERITA,GEN,Bhaskar Sharma,Bhaskar Sharma,BJP,BJP
+ASSAM,Assam,84,DIGBOI,GEN,Suren Phukan,Suren Phukan,BJP,BJP
+ASSAM,Assam,85,MAKUM,GEN,,,,
+ASSAM,Assam,86,TINSUKIA,GEN,Sanjoy Kishan,Sanjoy Kishan,BJP,BJP
+ASSAM,Assam,87,CHABUA-LAHOWAL,GEN,,,,
+ASSAM,Assam,88,DIBRUGRAH,GEN,,,,
+ASSAM,Assam,89,KHOWANG,GEN,,,,
+ASSAM,Assam,90,DULIAJAN,GEN,Terash Gowalla,Terash Gowalla,BJP,BJP
+ASSAM,Assam,91,TINGKHONG,GEN,Bimal Borah,Bimal Bora,BJP,BJP
+ASSAM,Assam,92,NAHARKATIA,GEN,Taranga Gogoi,Naren Sonowal,BJP,AGP
+ASSAM,Assam,93,SONARI,GEN,Dharmeswar Konwar,Topon Kumar Gogoi,BJP,BJP
+ASSAM,Assam,94,MAHMORA,GEN,,,,
+ASSAM,Assam,95,DEMOW,GEN,,,,
+ASSAM,Assam,96,SIBSAGAR,GEN,"Akhil Gogoi{{efn|Akhil Gogoi is the president of Raijor Dal, but he contested the election as an independent candidate.}}",Pranab Kumar Gogoi,IND,INC
+ASSAM,Assam,97,NAZIRA,GEN,Debabrata Saikia,Debabrata Saikia,INC,INC
+ASSAM,Assam,98,MAJULI (ST),ST,Sarbananda Sonowal,Sarbananda Sonowal,BJP,BJP
+ASSAM,Assam,99,TEOK,GEN,Renupoma Rajkhowa,Renupoma Rajkhowa,AGP,AGP
+ASSAM,Assam,100,JORHAT,GEN,Hitendra Nath Goswami,Hitendra Nath Goswami,BJP,BJP
+ASSAM,Assam,101,MARIANI,GEN,Rupjyoti Kurmi,Rupjyoti Kurmi,INC,INC
+ASSAM,Assam,102,TITABOR,GEN,,,,
+ASSAM,Assam,103,GOLAGHAT,GEN,Ajanta Neog,Ajanta Neog,BJP,INC
+ASSAM,Assam,104,DERGAON,GEN,Bhabendra Nath Bharali,Bhabendra Nath Bharali,AGP,AGP
+ASSAM,Assam,105,BOKAKHAT,GEN,Atul Bora,Atul Bora,AGP,AGP
+ASSAM,Assam,106,KHUMTAI,GEN,Mrinal Saikia,Mrinal Saikia,BJP,BJP
+ASSAM,Assam,107,SARUPATHAR,GEN,Biswajit Phukan,Roselina Tirkey,BJP,INC
+ASSAM,Assam,108,BOKAJAN (ST),ST,Numal Momin,Numal Momin,BJP,BJP
+ASSAM,Assam,109,HOWARGHAT (ST),ST,,,,
+ASSAM,Assam,110,DIPHU (ST),ST,Bidya Sing Engleng,Sum Ronghang,BJP,BJP
+ASSAM,Assam,111,RONGKHANG (ST),ST,,,,
+ASSAM,Assam,112,AMRI (ST),ST,,,,
+ASSAM,Assam,113,HAFLONG (ST),ST,Nandita Garlosa,Bir Bhadra Hagjer,BJP,BJP
+ASSAM,Assam,114,LAKHIPUR,GEN,Kaushik Rai,Rajdeep Goala,BJP,INC
+ASSAM,Assam,115,UDHARBOND,GEN,Mihir Kanti Shome,Mihir Kanti Shome,BJP,BJP
+ASSAM,Assam,116,KATIGORAH,GEN,Khalil Uddin Mazumder,Amar Chand Jain,INC,BJP
+ASSAM,Assam,117,BARKHOLA,GEN,Misbahul Islam Laskar,Kishor Nath,INC,BJP
+ASSAM,Assam,118,SILCHAR,GEN,Dipayan Chakraborty,Dilip Kumar Paul,BJP,BJP
+ASSAM,Assam,119,SONAI,GEN,Karim Uddin Barbhuiya,Aminul Haque Laskar,AIUDF,BJP
+ASSAM,Assam,120,DHOLAI (SC),SC,Parimal Suklabaidya,Parimal Suklabaidya,BJP,BJP
+ASSAM,Assam,121,HAILAKANDI,GEN,Zakir Hussain Laskar,Anwar Hussain Laskar,AIUDF,AIUDF
+ASSAM,Assam,122,ALGAPUR-KATLICHERRA,GEN,,,,
+ASSAM,Assam,123,KARIMGANJ NORTH,GEN,Kamalakhya Dey Purkayastha,Kamalakhya Dey Purkayastha,INC,INC
+ASSAM,Assam,124,KARIMGANJ SOUTH,GEN,Siddique Ahmed,Aziz Ahmed Khan,INC,AIUDF
+ASSAM,Assam,125,PATHARKANDI,GEN,Krishnendu Paul,Krishnendu Paul,BJP,BJP
+ASSAM,Assam,126,RAM KRISHANA NAGAR (SC),SC,,,,
+KERALA,Kerala,1,Manjeshwaram,GEN,A. K. M. Ashraf,P. B. Abdul Razak,IUML,IUML
+KERALA,Kerala,2,Kasaragod,GEN,N. A. Nellikkunnu,N. A. Nellikkunnu,IUML,IUML
+KERALA,Kerala,3,Udma,GEN,C. H. Kunhambu,K. Kunhiraman,CPI(M),CPI(M)
+KERALA,Kerala,4,Kanhangad,GEN,E. Chandrasekharan,E. Chandrasekharan,CPI,CPI(M)
+KERALA,Kerala,5,Thrikaripur,GEN,M. Rajagopalan,M. Rajagopalan,CPI(M),CPI(M)
+KERALA,Kerala,6,Payyanur,GEN,TI. Madhusoodanan,C. Krishnan,CPI(M),CPI(M)
+KERALA,Kerala,7,Kalliasseri,GEN,M. Vijin,T. V. Rajesh,CPI(M),CPI(M)
+KERALA,Kerala,8,Taliparamba,GEN,M. V. Govindan,James Mathew,CPI(M),CPI(M)
+KERALA,Kerala,9,Irikkur,GEN,Sajeev Joseph,K. C. Joseph,INC,INC
+KERALA,Kerala,10,Azhikode,GEN,K. V. Sumesh,K. M. Shaji,CPI(M),IUML
+KERALA,Kerala,11,Kannur,GEN,Kadannappalli Ramachandran,Kadannappalli Ramachandran,Con(S),Congress (Secular)
+KERALA,Kerala,12,Dharmadom,GEN,Pinarayi Vijayan,Pinarayi Vijayan,CPI(M),CPI(M)
+KERALA,Kerala,13,Thalassery,GEN,A. N. Shamseer,A. N. Shamseer,CPI(M),CPI(M)
+KERALA,Kerala,14,Kuthuparamba,GEN,K. P. Mohanan,K. K. Shailaja,LJD,CPI(M)
+KERALA,Kerala,15,Mattanur,GEN,K. K. Shailaja,E. P. Jayarajan,CPI(M),CPI(M)
+KERALA,Kerala,16,Peravoor,GEN,Sunny Joseph,Sunny Joseph,INC,INC
+KERALA,Kerala,17,Mananthavady,ST,O. R. Kelu,O. R. Kelu,CPI(M),CPI(M)
+KERALA,Kerala,18,Sulthan Bathery,ST,I. C. Balakrishnan,I. C. Balakrishnan,INC,INC
+KERALA,Kerala,19,Kalpetta,GEN,T. Siddique,C. K. Saseendran,INC,CPI(M)
+KERALA,Kerala,20,Vatakara,GEN,K. K. Rema,C. K. Nanu,RMPI,JD(S)
+KERALA,Kerala,21,Kuttiady,GEN,K. P. Kunhammadkutty,Parakkal Abdulla,CPI(M),IUML
+KERALA,Kerala,22,Nadapuram,GEN,E. K. Vijayan,E. K. Vijayan,CPI,CPI
+KERALA,Kerala,23,Koyilandy,GEN,Kanathil Jameela,K. Dasan,CPI(M),CPI(M)
+KERALA,Kerala,24,Perambra,GEN,T. P. Ramakrishnan,T. P. Ramakrishnan,CPI(M),CPI(M)
+KERALA,Kerala,25,Balussery,SC,K. M. Sachin Dev,Purushan Kadalundi,CPI(M),CPI(M)
+KERALA,Kerala,26,Elathur,GEN,A. K. Saseendran,A. K. Saseendran,NCP,NCP
+KERALA,Kerala,27,Kozhikode North,GEN,Thottathil Raveendran,A. Pradeep Kumar,CPI(M),CPI(M)
+KERALA,Kerala,28,Kozhikode South,GEN,Ahamed Devarkovil,M. K. Muneer,INL,IUML
+KERALA,Kerala,29,Beypore,GEN,P. A. Mohammed Riyas,V. K. C. Mammed Koya,CPI(M),CPI(M)
+KERALA,Kerala,30,Kunnamangalam,GEN,P. T. A. Rahim,P. T. A. Rahim,IND,IND
+KERALA,Kerala,31,Koduvally,GEN,M. K. Muneer,Karat Razack,IUML,IND
+KERALA,Kerala,32,Thiruvambady,GEN,Linto Joseph,George M. Thomas,CPI(M),CPI(M)
+KERALA,Kerala,33,Kondotty,GEN,T. V. Ibrahim,T. V. Ibrahim,IUML,IUML
+KERALA,Kerala,34,Eranad,GEN,P. K. Basheer,P. K. Basheer,IUML,IUML
+KERALA,Kerala,35,Nilambur,GEN,P. V. Anvar,P. V. Anvar,IND,IND
+KERALA,Kerala,36,Wandoor,SC,A. P. Anil Kumar,A. P. Anil Kumar,INC,INC
+KERALA,Kerala,37,Manjeri,GEN,U. A. Latheef,M. Ummer,IUML,IUML
+KERALA,Kerala,38,Perinthalmanna,GEN,Najeeb Kanthapuram,Manjalamkuzhi Ali,IUML,IUML
+KERALA,Kerala,39,Mankada,GEN,Manjalamkuzhi Ali,T. A. Ahmed Kabeer,IUML,IUML
+KERALA,Kerala,40,Malappuram,GEN,P. Ubaidulla,P. Ubaidulla,IUML,IUML
+KERALA,Kerala,41,Vengara,GEN,P. K. Kunhalikutty,P. K. Kunhalikutty,IUML,IUML
+KERALA,Kerala,42,Vallikkunnu,GEN,P. Abdul Hameed,Abdul Hameed Master,IUML,IUML
+KERALA,Kerala,43,Tirurangadi,GEN,K. P. A. Majeed,P. K. Abdu Rabb,IUML,IUML
+KERALA,Kerala,44,Tanur,GEN,V. Abdurahman,V. Abdurahiman,NSC,National Secular Conference
+KERALA,Kerala,45,Tirur,GEN,Kurukkoli Moideen,C. Mammootty,IUML,IUML
+KERALA,Kerala,46,Kottakkal,GEN,K. K. Abid Hussain Thangal,Abid Hussain Thangal,IUML,IUML
+KERALA,Kerala,47,Thavanur,GEN,K. T. Jaleel,K. T. Jaleel,IND,IND
+KERALA,Kerala,48,Ponnani,GEN,P. Nandakumar,P. Sreeramakrishnan,CPI(M),CPI(M)
+KERALA,Kerala,49,Thrithala,GEN,M. B. Rajesh,V. T. Balram,CPI(M),INC
+KERALA,Kerala,50,Pattambi,GEN,Muhammed Muhsin,Muhammad Muhassin,CPI,CPI
+KERALA,Kerala,51,Shornur,GEN,P. Mammikutty,P. K. Sasi,CPI(M),CPI(M)
+KERALA,Kerala,52,Ottapalam,GEN,K. Premkumar,P. Unni,CPI(M),CPI(M)
+KERALA,Kerala,53,Kongad,SC,K. Shanthakumari,K. V. Vijayadas,CPI(M),CPI(M)
+KERALA,Kerala,54,Mannarkkad,GEN,N. Shamsudheen,N. Samsudheen,IUML,IUML
+KERALA,Kerala,55,Malampuzha,GEN,A. Prabhakaran,V. S. Achuthanandan,CPI(M),CPI(M)
+KERALA,Kerala,56,Palakkad,GEN,Shafi Parambil,Shafi Parambil,INC,INC
+KERALA,Kerala,57,Tarur,SC,P. P. Sumod,A. K. Balan,CPI(M),CPI(M)
+KERALA,Kerala,58,Chittur,GEN,K. Krishnankutty,K. Krishnankutty,JD(S),JD(S)
+KERALA,Kerala,59,Nenmara,GEN,K. Babu,K. Babu,CPI(M),CPI(M)
+KERALA,Kerala,60,Alathur,GEN,K. D. Prasenan,K. D. Prasenan,CPI(M),CPI(M)
+KERALA,Kerala,61,Chelakkara,SC,K. Radhakrishnan,U. R. Pradeep,CPI(M),CPI(M)
+KERALA,Kerala,62,Kunnamkulam,GEN,A. C. Moideen,A. C. Moideen,CPI(M),CPI(M)
+KERALA,Kerala,63,Guruvayur,GEN,N. K. Akbar,K. V. Abdul Khader,CPI(M),CPI(M)
+KERALA,Kerala,64,Manalur,GEN,Murali Perunelly,Murali Perunelly,CPI(M),CPI(M)
+KERALA,Kerala,65,Wadakkanchery,GEN,Xavier Chittilappilly,Anil Akkara,CPI(M),INC
+KERALA,Kerala,66,Ollur,GEN,K. Rajan,K. Rajan,CPI,CPI(M)
+KERALA,Kerala,67,Thrissur,GEN,P. Balachandran,V. S. Sunil Kumar,CPI,CPI
+KERALA,Kerala,68,Nattika,SC,C. C. Mukundan,Geetha Gopi,CPI,CPI
+KERALA,Kerala,69,Kaipamangalam,GEN,E. T. Taison,E. T. Taison Master,CPI,CPI
+KERALA,Kerala,70,Irinjalakuda,GEN,R. Bindu,K. U. Arunan,CPI(M),CPI(M)
+KERALA,Kerala,71,Puthukkad,GEN,K. K. Ramachandran,C. Raveendranath,CPI(M),CPI(M)
+KERALA,Kerala,72,Chalakudy,GEN,T. J. Saneesh Kumar Joseph,B. D. Devassy,INC,CPI(M)
+KERALA,Kerala,73,Kodungallur,GEN,V. R. Sunil Kumar,V. R. Sunil Kumar,CPI,CPI
+KERALA,Kerala,74,Perumbavoor,GEN,Eldhose Kunnappilly,Eldhose Kunnappilly,INC,INC
+KERALA,Kerala,75,Angamaly,GEN,Roji M. John,Roji M. John,INC,INC
+KERALA,Kerala,76,Aluva,GEN,Anwar Sadath,Anwar Sadath,INC,INC
+KERALA,Kerala,77,Kalamassery,GEN,P. Rajeev,V. K. Ebrahim Kunju,CPI(M),IUML
+KERALA,Kerala,78,Paravur,GEN,V. D. Satheesan,V. D. Satheesan,INC,INC
+KERALA,Kerala,79,Vypin,GEN,K. N. Unnikrishnan,S. Sharma,CPI(M),CPI(M)
+KERALA,Kerala,80,Kochi,GEN,K. J. Maxi,K. J. Maxi,CPI(M),CPI(M)
+KERALA,Kerala,81,Thrippunithura,GEN,K. Babu,M. Swaraj,INC,CPI(M)
+KERALA,Kerala,82,Ernakulam,GEN,T. J. Vinod,Hibi Eden,INC,INC
+KERALA,Kerala,83,Thrikkakara,GEN,P. T. Thomas,P. T. Thomas,INC,INC
+KERALA,Kerala,84,Kunnathunad,SC,P. V. Sreenijin,V. P. Sajeendran,CPI(M),INC
+KERALA,Kerala,85,Piravom,GEN,Anoop Jacob,Anoop Jacob,KC(J),Kerala Congress (Jacob)
+KERALA,Kerala,86,Muvattupuzha,GEN,Mathew Kuzhalnadan,Eldho Abraham,INC,CPI
+KERALA,Kerala,87,Kothamangalam,GEN,Antony John,Antony John,CPI(M),CPI(M)
+KERALA,Kerala,88,Devikulam,SC,A. Raja,S. Rajendran,CPI(M),CPI(M)
+KERALA,Kerala,89,Udumbanchola,GEN,M. M. Mani,M. M. Mani,CPI(M),CPI(M)
+KERALA,Kerala,90,Thodupuzha,GEN,P. J. Joseph,P. J. Joseph,UDF,Kerala Congress (Mani)
+KERALA,Kerala,91,Idukki,GEN,Roshy Augustine,Roshy Augustine,KC(M),Kerala Congress (Mani)
+KERALA,Kerala,92,Peerumade,GEN,Vazhoor Soman,E. S. Bijimol,CPI,CPI
+KERALA,Kerala,93,Pala,GEN,Mani C. Kappan,K. M. Mani,NCK,Kerala Congress (Mani)
+KERALA,Kerala,94,Kaduthuruthy,GEN,Monce Joseph,Mons Joseph,UDF,Kerala Congress (Mani)
+KERALA,Kerala,95,Vaikom,SC,C. K. Asha,C. K. Asha,CPI,CPI
+KERALA,Kerala,96,Ettumanoor,GEN,V. N. Vasavan,K. Suresh Kurup,CPI(M),CPI(M)
+KERALA,Kerala,97,Kottayam,GEN,Thiruvanchoor Radhakrishnan,Thiruvanchoor Radhakrishnan,INC,INC
+KERALA,Kerala,98,Puthuppally,GEN,Oommen Chandy,Oommen Chandy,INC,INC
+KERALA,Kerala,99,Changanassery,GEN,Job Michael,C. F. Thomas,KC(M),Kerala Congress (Mani)
+KERALA,Kerala,100,Kanjirappally,GEN,N. Jayaraj,N. Jayaraj,KC(M),Kerala Congress (Mani)
+KERALA,Kerala,101,Poonjar,GEN,Sebastian Kulathunkal,P. C. George,KC(M),IND
+KERALA,Kerala,102,Aroor,GEN,Daleema Jojo,A. M. Ariff,CPI(M),CPI(M)
+KERALA,Kerala,103,Cherthala,GEN,P. Prasad,P. Thilothaman,CPI,CPI
+KERALA,Kerala,104,Alappuzha,GEN,P. P. Chitharanjan,T. M. Thomas Issac,CPI(M),CPI(M)
+KERALA,Kerala,105,Ambalappuzha,GEN,H. Salam,G. Sudhakaran,CPI(M),CPI(M)
+KERALA,Kerala,106,Kuttanad,GEN,Thomas K. Thomas,Thomas Chandy,NCP,NCP
+KERALA,Kerala,107,Haripad,GEN,Ramesh Chennithala,Ramesh Chennithala,INC,INC
+KERALA,Kerala,108,Kayamkulam,GEN,U. Prathibha,U. Prathibha Hari,CPI(M),CPI(M)
+KERALA,Kerala,109,Mavelikara,SC,M. S. Arun Kumar,R. Rajesh,CPI(M),CPI(M)
+KERALA,Kerala,110,Chengannur,GEN,Saji Cherian,K. K. Ramachandran Nair,CPI(M),CPI(M)
+KERALA,Kerala,111,Thiruvalla,GEN,Mathew T. Thomas,Mathew T. Thomas,JD(S),JD(S)
+KERALA,Kerala,112,Ranni,GEN,Pramod Narayan,Raju Abrham,KC(M),CPI(M)
+KERALA,Kerala,113,Aranmula,GEN,Veena George,Veena George,CPI(M),CPI(M)
+KERALA,Kerala,114,Konni,GEN,K. U. Jenish Kumar,Adoor Prakash,CPI(M),INC
+KERALA,Kerala,115,Adoor,SC,Chittayam Gopakumar,Chittayam Gopakumar,CPI,CPI
+KERALA,Kerala,116,Karunagapally,GEN,C. R. Mahesh,R. Ramachandran,INC,CPI
+KERALA,Kerala,117,Chavara,GEN,Sujith Vijayanpillai,N. Vijayan Pillai,IND,CMP(A)
+KERALA,Kerala,118,Kunnathur,SC,Kovoor Kunjumon,Kovoor Kunjumon,IND,IND
+KERALA,Kerala,119,Kottarakkara,GEN,K. N. Balagopal,P. Aisha Potty,CPI(M),CPI(M)
+KERALA,Kerala,120,Pathanapuram,GEN,K. B. Ganesh Kumar,K. B. Ganesh Kumar,KC(B),Kerala Congress (B)
+KERALA,Kerala,121,Punalur,GEN,P. S. Supal,K. Raju,CPI,CPI
+KERALA,Kerala,122,Chadayamangalam,GEN,J. Chinchu Rani,Mullakkara Ratnakaran,CPI,CPI
+KERALA,Kerala,123,Kundara,GEN,P. C. Vishnunath,J. Mercy Kutty Amma,INC,CPI(M)
+KERALA,Kerala,124,Kollam,GEN,Mukesh,M. Mukesh,CPI(M),CPI(M)
+KERALA,Kerala,125,Eravipuram,GEN,M. Noushad,M. Noushad,CPI(M),CPI(M)
+KERALA,Kerala,126,Chathannoor,GEN,G. S. Jayalal,G. S. Jayalal,CPI,CPI
+KERALA,Kerala,127,Varkala,GEN,V. Joy,V. Joy,CPI(M),CPI(M)
+KERALA,Kerala,128,Attingal,SC,O. S. Ambika,B. Satyan,CPI(M),CPI(M)
+KERALA,Kerala,129,Chirayinkeezhu,SC,V. Sasi,V. Sasi,CPI,CPI
+KERALA,Kerala,130,Nedumangad,GEN,G. R. Anil,C. Divakaran,CPI,CPI
+KERALA,Kerala,131,Vamanapuram,GEN,D. K. Murali,D. K. Murali,CPI(M),CPI(M)
+KERALA,Kerala,132,Kazhakkoottam,GEN,Kadakampally Surendran,Kadakampally Surendran,CPI(M),CPI(M)
+KERALA,Kerala,133,Vattiyoorkavu,GEN,V. K. Prasanth,K. Muraleedharan,CPI(M),INC
+KERALA,Kerala,134,Thiruvananthapuram,GEN,Antony Raju,V. S. Sivakumar,JKC,INC
+KERALA,Kerala,135,Nemom,GEN,V. Sivankutty,O. Rajagopal,CPI(M),BJP
+KERALA,Kerala,136,Aruvikkara,GEN,G. Stephen,K. S. Sabarinathan,CPI(M),INC
+KERALA,Kerala,137,Parassala,GEN,C. K. Hareendran,C. K. Hareendrakumar,CPI(M),CPI(M)
+KERALA,Kerala,138,Kattakkada,GEN,I. B. Sathish,I. B. Satheesh,CPI(M),CPI(M)
+KERALA,Kerala,139,Kovalam,GEN,M. Vincent,M. Vincent,INC,INC
+KERALA,Kerala,140,Neyyattinkara,GEN,K. Ansalan,K. Ansalan,CPI(M),CPI(M)
+PUDUCHERRY,Puducherry,1,Mannadipet,GEN,A. Namassivayam,T. P. R. Selvame,BJP,A. Krishnan
+PUDUCHERRY,Puducherry,2,Thirubuvanai (SC),SC,P. Angalane,B. Kobiga,IND,P. Angalane
+PUDUCHERRY,Puducherry,3,Ossudu (SC),SC,A. K. Saravanankumar,E. Theeppainthan,BJP,INC
+PUDUCHERRY,Puducherry,4,Mangalam,GEN,C. Djeacoumar,S. V. Sugumaran,AINRC,S. Kumaravel
+PUDUCHERRY,Puducherry,5,Villianur,GEN,R. Siva,A. Namassivayam,DMK,INC
+PUDUCHERRY,Puducherry,6,Ozhukarai,GEN,M. Sivasankar,M. N. R. Balan,IND,INC
+PUDUCHERRY,Puducherry,7,Kadirkamam,GEN,S. Ramesh,N. S. J. Jayabal Ayyanar,AINRC,S. Ramesh
+PUDUCHERRY,Puducherry,8,Indira Nagar,GEN,A. K. D. Arumugam,N. Rangaswamy,AINRC,A. K. D. Arumugam
+PUDUCHERRY,Puducherry,9,Thattanchavady,GEN,N. Rangasamy,Ashok Anand,AINRC,K. Sethu Sethuselvam
+PUDUCHERRY,Puducherry,10,Kamaraj Nagar,GEN,A. Johnkumar,V. Vaithilingam,BJP,INC
+PUDUCHERRY,Puducherry,11,Lawspet,GEN,M. Vaithianathan,V. P. Sivakolundhu,INC,INC
+PUDUCHERRY,Puducherry,12,Kalapet,GEN,P. M. L. Kalyanasundaram,M. O. H. F. Shahjahan,BJP,INC
+PUDUCHERRY,Puducherry,13,Muthialpet,GEN,J. Prakash Kumar,Vaiyapuri Manikandan,IND,J. Prakash Kumar
+PUDUCHERRY,Puducherry,14,Raj Bhavan,GEN,K. Lakshminarayanan,K. Lakshminarayanan,AINRC,INC
+PUDUCHERRY,Puducherry,15,Oupalam,GEN,Annibal Kennedy,A. Anbalagan,DMK,Annibal Kennedy
+PUDUCHERRY,Puducherry,16,Orleampeth,GEN,G. Nehru Kuppusamy,R. Siva,IND,G. Nehru Kuppusamy
+PUDUCHERRY,Puducherry,17,Nellithope,GEN,V. R. Johnkumar,A. Johnkumar,BJP,INC
+PUDUCHERRY,Puducherry,18,Mudaliarpet,GEN,L. Sambath,A. Baskar,DMK,V. Balan
+PUDUCHERRY,Puducherry,19,Ariankuppam,GEN,R. Baskar Datchanamourtty,T. Djeamourthy,AINRC,INC
+PUDUCHERRY,Puducherry,20,Manavely,GEN,Embalam R. Selvam,R.K.R. Anantharaman,BJP,INC
+PUDUCHERRY,Puducherry,21,Embalam (SC),SC,U. Lakshmikandhan,M. Candassamy,AINRC,INC
+PUDUCHERRY,Puducherry,22,Nettapakkam (SC),SC,P. Rajavelu,V. Vizeaveny,AINRC,INC
+PUDUCHERRY,Puducherry,23,Bahour,GEN,R. Senthilkumar,N. Danavelou,DMK,INC
+PUDUCHERRY,Puducherry,24,Nedungadu (SC),SC,S. Chandra Priyanga,Chandira Priyanga,AINRC,A. Marimottou
+PUDUCHERRY,Puducherry,25,Thirunallar,GEN,P. R. Siva,R. Kamalakannan,IND,INC
+PUDUCHERRY,Puducherry,26,Karaikal North,GEN,P. R. N. Thirumurugan,P. R. N. Thirumurugan,AINRC,M. V. Omalingam
+PUDUCHERRY,Puducherry,27,Karaikal South,GEN,A. M. H. Nazeem,K. A. U. Asana,DMK,A. M. H. Nazeem
+PUDUCHERRY,Puducherry,28,Neravy T.R. Pattinam,GEN,M. Nagathiyagarajan,A. Geetha,DMK,V. M. C. Sivakumar
+PUDUCHERRY,Puducherry,29,Mahe,GEN,Ramesh Parambath,Dr. V. Ramachandran,INC,Party color cell Independent
+PUDUCHERRY,Puducherry,30,Yanam,GEN,Gollapalli Srinivas Ashok,Malladi Krishna Rao,IND,INC
+TAMIL_NADU,Tamil Nadu,1,Gummidipoondi,GEN,T. J. Govindrajan,K. S. Vijayakumar,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,2,Ponneri (SC),SC,Durai Chandrasekar,P. Balaraman,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,3,Tiruttani,GEN,S. Chandran,P. M. Narasimhan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,4,Thiruvallur,GEN,V. G. Raajendran,V. G. Raajendran,DMK,DMK
+TAMIL_NADU,Tamil Nadu,5,Poonamallee (SC),SC,A. Krishnaswamy,T. A. Elumalai,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,6,Avadi,GEN,S. M. Nasar,K. Pandiarajan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,7,Maduravoyal,GEN,K. Ganapathy,P. Benjamin,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,8,Ambattur,GEN,Joseph Samuel,V. Alexander,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,9,Madavaram,GEN,S. Sudharsanam,S. Sudharsanam,DMK,DMK
+TAMIL_NADU,Tamil Nadu,10,Thiruvottiyur,GEN,K. P. Shankar,K. P. P. Samy,DMK,DMK
+TAMIL_NADU,Tamil Nadu,11,Dr. Radhakrishnan Nagar,GEN,J. John Ebenezer,J. Jayalalithaa,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,12,Perambur,GEN,R. D. Sekar,P. Vetrivel,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,13,Kolathur,GEN,M. K. Stalin,M. K. Stalin,DMK,DMK
+TAMIL_NADU,Tamil Nadu,14,Villivakkam,GEN,A. Vetriazhagan,B. Ranganathan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,15,Thiru-VI-Ka-Nagar (SC),SC,P. Sivakumar,P. Sivakumar @ Thayagamkavi,DMK,DMK
+TAMIL_NADU,Tamil Nadu,16,Egmore (SC),SC,I. Paranthamen,K. S. Ravichandran,DMK,DMK
+TAMIL_NADU,Tamil Nadu,17,Royapuram,GEN,Idream R. Murthy,D. Jayakumar,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,18,Harbour,GEN,P. K. Sekar Babu,P. K. Sekar Babu,DMK,DMK
+TAMIL_NADU,Tamil Nadu,19,Chepauk-Thiruvallikeni,GEN,Udhayanidhi Stalin,J. Anbazhagan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,20,Thousand Lights,GEN,Ezhilan Naganathan,K. K. Selvam,DMK,DMK
+TAMIL_NADU,Tamil Nadu,21,Anna Nagar,GEN,M. K. Mohan,M. K. Mohan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,22,Virugambakkam,GEN,A. M. V. Prabhakara Raja,V.N.Virugai Ravi,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,23,Saidapet,GEN,Ma.Subramanian,M. Subramaniam,DMK,DMK
+TAMIL_NADU,Tamil Nadu,24,Thiyagarayanagar,GEN,J. Karunanithi,B. Sathyanarayanan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,25,Mylapore,GEN,Dha. Velu,R Nataraj IPS (Rtd),DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,26,Velachery,GEN,Aassan Maulaana,Vagai Chanderasekar,INC,DMK
+TAMIL_NADU,Tamil Nadu,27,Shozhinganallur,GEN,S. Aravind Ramesh,S. Aravind Ramesh,DMK,DMK
+TAMIL_NADU,Tamil Nadu,28,Alandur,GEN,T. M. Anbarasan,Anbarasan. T.M.,DMK,DMK
+TAMIL_NADU,Tamil Nadu,29,Sriperumbudur (SC),SC,K. Selvaperunthagai,Palani. K,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,30,Pallavaram,GEN,I. Karunanithi,Karunanithi. I,DMK,DMK
+TAMIL_NADU,Tamil Nadu,31,Tambaram,GEN,S. R. Raja,S. R. Raja,DMK,DMK
+TAMIL_NADU,Tamil Nadu,32,Chengalpattu,GEN,M. Varalakshmi,M. Varalakshmi,DMK,DMK
+TAMIL_NADU,Tamil Nadu,33,Thiruporur,GEN,S. S. Balaji,Kothandapani. M,VCK,AIADMK
+TAMIL_NADU,Tamil Nadu,34,Cheyyur (SC),SC,M. Babu,Arasu R T,VCK,DMK
+TAMIL_NADU,Tamil Nadu,35,Madurantakam (SC),SC,Maragatham Kumaravel,S.Pugazhenthi,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,36,Uthiramerur,GEN,K. Sundar,K. Sundar,DMK,DMK
+TAMIL_NADU,Tamil Nadu,37,Kancheepuram,GEN,C. V. M. P. Ezhilarasan,C. V. M. P. Ezhilarasan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,38,Arakkonam (SC),SC,S. Ravi,S. Ravi,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,39,Sholinghur,GEN,A. N. Munirathinam,N. G. Parthiban,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,40,Katpadi,GEN,Durai Murugan,Durai Murugan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,41,Ranipet,GEN,R. Gandhi,Gandhi. R,DMK,DMK
+TAMIL_NADU,Tamil Nadu,42,Arcot,GEN,J. L. Eswarappan,Eswarappan J L,DMK,DMK
+TAMIL_NADU,Tamil Nadu,43,Vellore,GEN,P. Karthikeyan,Karthikeyan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,44,Anaikattu,GEN,A. P. Nandakumar,Nandakumar. A.P,DMK,DMK
+TAMIL_NADU,Tamil Nadu,45,Kilvaithinankuppam(sc,SC,M. Jaganmoorthy,Loganathan.G,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,46,Gudiyattam (SC),SC,V. Amulu,Jayanthi Padmanabhan .C,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,47,Vaniyambadi,GEN,G Sendhil Kumar,Nilofer,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,48,Ambur,GEN,A. C. Vilwanathan,Balasubramani R.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,49,Jolarpet,GEN,K. Devaraji,Veeramani. K. C,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,50,Tirupattur,GEN,A. Nallathambi,Nallathambi. A,DMK,DMK
+TAMIL_NADU,Tamil Nadu,51,Uthangarai (SC),SC,T. M. Tamilselvam,N.Manoranjitham,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,52,Bargur,GEN,D. Mathiazhagan,V.Rajendran,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,53,Krishnagiri,GEN,K. Ashok Kumar,T.Senguttuvan,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,54,Veppanahalli,GEN,K. P. Munusamy,Murugan P,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,55,Hosur,GEN,Y. Prakaash,Balakrishna Reddy P,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,56,Thalli,GEN,T. Ramachandran,Prakaash.Y.,CPI,DMK
+TAMIL_NADU,Tamil Nadu,57,Palacode,GEN,K. P. Anbalagan,K. P. Anbalagan,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,58,Pennagaram,GEN,G. K. Mani,Inbasekaran. P.N.P.,PMK,DMK
+TAMIL_NADU,Tamil Nadu,59,Dharmapuri,GEN,S. P. Venkateshwaran,Subramani. P.,PMK,DMK
+TAMIL_NADU,Tamil Nadu,60,Pappireddippatti,GEN,A. Govindasamy,Palaniyappan. P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,61,Harur (SC),SC,V. Sampathkumar,R.Murugan,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,62,Chengam (SC),SC,M. P. Giri,Giri .M.P,DMK,DMK
+TAMIL_NADU,Tamil Nadu,63,Tiruvannamalai,GEN,E. V. Velu,E. V. Velu,DMK,DMK
+TAMIL_NADU,Tamil Nadu,64,Kilpennathur,GEN,K. Pitchandi,Pitchandi K,DMK,DMK
+TAMIL_NADU,Tamil Nadu,65,Kalasapakkam,GEN,P. S. T. Saravanan,Panneerselvam V,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,66,Polur,GEN,S. S. Krishnamoorthy,Sekaran.K.V,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,67,Arani,GEN,Sevvoor S. Ramachandran,Ramachandran. S,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,68,Cheyyar,GEN,O. Jothi,Mohan K,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,69,Vandavasi (SC),SC,S. Ambethkumar,Ambethkumar. S,DMK,DMK
+TAMIL_NADU,Tamil Nadu,70,Gingee,GEN,K. S. Masthan,K. S. Masthan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,71,Mailam,GEN,C. Sivakumar,Masilamani R,PMK,DMK
+TAMIL_NADU,Tamil Nadu,72,Tindivanam (SC),SC,P. Arjunan,Seethapathy P,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,73,Vanur (SC),SC,M. Chakrapani,Chakrapani M,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,74,Villupuram,GEN,R. Lakshmanan,C V Shanmugam,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,75,Vikravandi,GEN,N. Pugazhenthi,Rathamani.K,DMK,DMK
+TAMIL_NADU,Tamil Nadu,76,Tirukkoyilur,GEN,K. Ponmudy,Ponmudy K,DMK,DMK
+TAMIL_NADU,Tamil Nadu,77,Ulundurpettai,GEN,A. J. Manikannan,Kumaraguru. R.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,78,Rishivandiyam,GEN,K. Karthikeyan,Karthikeyan.K,DMK,DMK
+TAMIL_NADU,Tamil Nadu,79,Sankarapuram,GEN,T. Udhayasuriyan,Udhayasuriyan.T,DMK,DMK
+TAMIL_NADU,Tamil Nadu,80,Kallakurichi (SC),SC,M. Senthilkumar,Prabhu A,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,81,Gangavalli (SC),SC,A. Nallathambi,Maruthamuthu.A,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,82,Attur (SC),SC,A. P. Jayasankaran,Chinnathambi R M,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,83,Yercaud (ST),ST,G. Chitra,Chitra.G,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,84,Omalur,GEN,R. Mani,Vetrivel.S,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,85,Mettur,GEN,S. Sadhasivam,Semmalai.S,PMK,AIADMK
+TAMIL_NADU,Tamil Nadu,86,Edappadi,GEN,Edappadi K. Palaniswami,Edappadi K. Palaniswami,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,87,Sankari,GEN,S. Sundararajan,Raja.S,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,88,Salem (West),GEN,Arul Ramadas,Venkatachalam.G,PMK,AIADMK
+TAMIL_NADU,Tamil Nadu,89,Salem (North),GEN,R. Rajendran,Rajendran.R,DMK,DMK
+TAMIL_NADU,Tamil Nadu,90,Salem (South),GEN,E. Balasubramanian,Sakthivel A B,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,91,Veerapandi,GEN,M. Rajamuthu,Manonmani.P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,92,Rasipuram (SC),SC,M. Mathiventhan,Saroja V. Dr,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,93,Senthamangalam (ST),ST,K. Ponnusamy,Chandrasekaran C,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,94,Namakkal,GEN,P. Ramalingam,K. P. P. Baskar,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,95,Paramathi-Velur,GEN,S. Sekar,Moorthiy K S,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,96,Tiruchengodu,GEN,E. R. Eswaran,Saraswathi Pon,KMDK,AIADMK
+TAMIL_NADU,Tamil Nadu,97,Kumarapalayam,GEN,P. Thangamani,Thangamani P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,98,Erode (East),GEN,Thirumagan Evera,Thennarasu K S,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,99,Erode (West),GEN,S. Muthusamy,Ramalingam K.V.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,100,Modakkurichi,GEN,Dr. C.K. Saraswathi,Sivasubramani . V.P.,BJP,AIADMK
+TAMIL_NADU,Tamil Nadu,101,Dharapuram (SC),SC,N. Kayalvizhi,Kalimuthu. V.S,DMK,INC
+TAMIL_NADU,Tamil Nadu,102,Kangayam,GEN,M. P. Saminathan,Thaniyarasu U,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,103,Perundurai,GEN,S. Jayakumar,Venkatachalam.N.D,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,104,Bhavani,GEN,K. C. Karuppannan,Karuppanan K C,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,105,Anthiyur,GEN,A. G. Venkatachalam,E. M. R. Raja,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,106,Gobichettipalayam,GEN,K. A. Sengottaiyan,Sengottaiyan K.A,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,107,Bhavanisagar,SC,A. Bannari,Eswaran.S,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,108,Udhagamandalam,GEN,R. Ganesh,Ganesh. R.,INC,INC
+TAMIL_NADU,Tamil Nadu,109,Gudalur (SC),SC,Pon. Jayaseelan,Thiravidamani.M.,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,110,Coonoor,GEN,K. Ramachandran,Ramu. A.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,111,Mettupalayam,GEN,A. K. Selvaraj,Chinnaraj.O.K,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,112,Avanashi (SC),SC,P. Dhanapal,Dhanapal P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,113,Tiruppur (North),GEN,K. N. Vijayakumar,Vijayakumar Kn,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,114,Tiruppur (South),GEN,K. Selvaraj,Gunasekaran S,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,115,Palladam,GEN,M. S. M. Anandan,Natarajan. A,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,116,Sulur,GEN,V. P. Kandasamy,Kanagaraj. R.,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,117,Kavundampalayam,GEN,G. Arunkumar,V. C. Arukutty,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,118,Coimbatore (North),GEN,Amman K. Arjunan,Arun Kumar. P.R.G.,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,119,Thondamuthur,GEN,S. P. Velumani,Velumani.S.P.,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,120,Coimbatore (South),GEN,Vanathi Srinivasan,Amman K. Arjunan,BJP,AIADMK
+TAMIL_NADU,Tamil Nadu,121,Singanallur,GEN,K. R. Jayaram,Karthik. N.,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,122,Kinathukadavu,GEN,S. Damodaran,Shanmugam. A.,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,123,Pollachi,GEN,Pollachi V. Jayaraman,Pollachi V Jayaraman,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,124,Valparai (SC),SC,T. K. Amulkandasami,Kasthuri Vasu. V.,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,125,Udumalaipettai,GEN,Udumalai K. Radhakrishnan,Radhakrishnan. K,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,126,Madathukulam,GEN,C. Mahendran,Jayaramakrishnan R,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,127,Palani,GEN,I. P. Senthil Kumar,Senthilkumar I P,DMK,DMK
+TAMIL_NADU,Tamil Nadu,128,Oddanchatram,GEN,R. Sakkarapani,Sakkarapani R,DMK,DMK
+TAMIL_NADU,Tamil Nadu,129,Athoor,GEN,I. Periyasamy,Periyasamy I,DMK,DMK
+TAMIL_NADU,Tamil Nadu,130,Nilakottai,SC,S. Thenmozhi,Thangathurai R,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,131,Natham,GEN,Natham R. Viswanathan,Andi Ambalam M.A,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,132,Dindigul,GEN,Dindigul C. Sreenivaasan,Sreenivasan C,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,133,Vedasandur,GEN,S. Gandhirajan,V. P. B. Paramasivam,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,134,Aravakurichi,GEN,R. Elango,V. Senthil Balaji,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,135,Karur,GEN,V. Senthilbalaji,Vijayabhaskar .M.R,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,136,Krishnarayapuram (SC),SC,K. Sivagama Sundari,Geetha . M.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,137,Kulithalai,GEN,R. Manickam,Ramar .E,DMK,DMK
+TAMIL_NADU,Tamil Nadu,138,Manapaarai,GEN,P. Abdul Samad,Chandrasekar R,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,139,Srirangam,GEN,M. Palaniyandi,Valarmathi.S,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,140,Tiruchirappalli (West),GEN,K. N. Nehru,Nehru.K.N,DMK,DMK
+TAMIL_NADU,Tamil Nadu,141,Tiruchirappalli (East),GEN,Inigo S. Irudayaraj,Natarajan .N.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,142,Thiruverumbur,GEN,Anbil Mahesh,Anbil Mahesh Poyyamozhi,DMK,DMK
+TAMIL_NADU,Tamil Nadu,143,Lalgudi,GEN,A. Soundara Pandian,Soundarapandian A,DMK,DMK
+TAMIL_NADU,Tamil Nadu,144,Manachanallur,GEN,S. Kathiravan,Parameswari. M,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,145,Musiri,GEN,N. Thiyagarajan,Selvarasu M,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,146,Thuraiyur (SC),SC,S. Stalinkumar,Stalinkumar .S,DMK,DMK
+TAMIL_NADU,Tamil Nadu,147,Perambalur (SC),SC,M. Prabhakaran,R.Thamizhselvan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,148,Kunnam,GEN,S. S. Sivasankar,Ramachandran.R.T,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,149,Ariyalur,GEN,K. Chinnappa,Rajendran. S,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,150,Jayankondam,GEN,Ka. So. Ka. Kannan,Ramajeyalingam.J.K.N,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,151,Tittakudi (SC),SC,C. V. Ganesan,Ganesan V,DMK,DMK
+TAMIL_NADU,Tamil Nadu,152,Virudhachalam,GEN,R. Radhakrishnan,Kalaiselvan V T,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,153,Neyveli,GEN,Saba Rajendran,Saba. Rajendran,DMK,DMK
+TAMIL_NADU,Tamil Nadu,154,Panruti,GEN,T. Velmurugan,Sathya.P,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,155,Cuddalore,GEN,G. Iyappan,Sampath M C,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,156,Kurinjipadi,GEN,M. R. K. Panneerselvam,Panneerselvam Mrk,DMK,DMK
+TAMIL_NADU,Tamil Nadu,157,Bhuvanagiri,GEN,A. Arunmozhithevan,Saravanan. Durai K.,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,158,Chidambaram,GEN,K. A. Pandian,Pandian K A,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,159,Kattumannarkoil (SC),SC,Sinthanai Selvan,Murugumaran.N,VCK,AIADMK
+TAMIL_NADU,Tamil Nadu,160,Sirkazhi (SC),SC,M. Panneerselvam,Bharathi.P.V,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,161,Mayiladuturai,GEN,S. Rajakumar,Rathakrishnan.V,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,162,Poompuhar,GEN,Nivedha M. Murugan,Pavunraj.S,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,163,Nagapattinam,GEN,Aloor Shanavas,Thamimun Ansari.M,VCK,AIADMK
+TAMIL_NADU,Tamil Nadu,164,Kilvelur (SC),SC,Nagai Maali (A) P. Mahalingam,Mathivanan.U,CPI(M),DMK
+TAMIL_NADU,Tamil Nadu,165,Vedaranyam,GEN,O. S. Manian,Manian.O.S,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,166,Thiruthuraipoondi (SC),SC,K. Marimuthu,Adalarasan. P,CPI,DMK
+TAMIL_NADU,Tamil Nadu,167,Mannargudi,GEN,Dr. T. R. B. Rajaa,T. R. B. Rajaa,DMK,DMK
+TAMIL_NADU,Tamil Nadu,168,Thiruvarur,GEN,K. Poondi Kalaivanan,Kalaignar M Karunanidhi,DMK,DMK
+TAMIL_NADU,Tamil Nadu,169,Nannilam,GEN,R. Kamaraj,Kamaraj. R,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,170,Thiruvidaimarudur,SC,Govi. Chezhiyan,Chezhiaan.Govi,DMK,DMK
+TAMIL_NADU,Tamil Nadu,171,Kumbakonam,GEN,G. Anbalagan,G. Anbalagan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,172,Papanasam,GEN,Dr. M. H. Jawahirullah,Doraikkannu R,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,173,Thiruvaiyaru,GEN,Durai Chandrasekaran,Durai.Chandrasekaran,DMK,DMK
+TAMIL_NADU,Tamil Nadu,174,Thanjavur,GEN,T. K. G. Neelamegam,M.Rengasamy,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,175,Orathanadu,GEN,R. Vaithilingam,Ramchandran. M,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,176,Pattukkottai,GEN,K. Annadurai,Sekar. V,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,177,Peravurani,GEN,Peravurani N. Ashokkumar,Govindarasu M,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,178,Gandarvakottai,SC,M. Chinnadurai,Arumugam.B,CPI(M),AIADMK
+TAMIL_NADU,Tamil Nadu,179,Viralimalai,GEN,C. Vijayabaskar,Vijaya Baskar C,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,180,Pudukkottai,GEN,Dr. V. Muthuraja,Periyannan Arassu,DMK,DMK
+TAMIL_NADU,Tamil Nadu,181,Thirumayam,GEN,S. Regupathy,Regupathy S,DMK,DMK
+TAMIL_NADU,Tamil Nadu,182,Alangudi,GEN,Meyyanathan Siva V,Meyyanathan .Siva .V,DMK,DMK
+TAMIL_NADU,Tamil Nadu,183,Aranthangi,GEN,T. Ramachandran,Rathinasabhapathy E,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,184,Karaikudi,GEN,S. Mangudi,Ramasamy Kr,INC,INC
+TAMIL_NADU,Tamil Nadu,185,Tiruppattur,GEN,K. R. Periyakaruppan,Periakaruppan Kr,DMK,DMK
+TAMIL_NADU,Tamil Nadu,186,Sivaganga,GEN,P. R. Senthilnathan,Baskaran.G,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,187,Manamadurai (SC),SC,A. Tamilarasi,Mariappankennady S,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,188,Melur,GEN,P. Selvam,Periyapullan @ Selvam P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,189,Madurai East,GEN,P. Moorthy,P. Moorthy,DMK,DMK
+TAMIL_NADU,Tamil Nadu,190,Sholavandan (SC),SC,A. Venkatesan,K. Manickam,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,191,Madurai North,GEN,G. Thalapathi,V. V. Rajan Chellappa,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,192,Madurai South,GEN,M. Boominathan,Saravanan .S.S.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,193,Madurai Central,GEN,Palanivel Thiagarajan,Palanivel Thiagarajan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,194,Madurai West,GEN,Sellur K. Raju,Sellur K. Raju,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,195,Thiruparankundram,GEN,V. V. Rajan Chellappa,S. M. Seenivel,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,196,Thirumangalam,GEN,R. B. Udhaya Kumar,Udhayakumar.R.B,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,197,Usilampatti,GEN,P. Ayyappan,Neethipathi P,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,198,Andipatti,GEN,A. Maharajan,Thanga Tamil Selvam,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,199,Periyakulam,SC,K. S. Saravana Kumar,K. Kathirkamu,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,200,Bodinayakanur,GEN,O. Panneerselvam,O. Panneerselvam,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,201,Cumbum,GEN,N. Eramakrishnan,S.T.K.Jakkaiyan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,202,Rajapalayam,GEN,S. Thangappandian,S. Thangappandian,DMK,DMK
+TAMIL_NADU,Tamil Nadu,203,Srivilliputhur (SC),SC,E. M. Manraj,M. Chandra Prabha,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,204,Sattur,GEN,A. R. R. Raghuraman,S. G. Subramanian,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,205,Sivakasi,GEN,A. M. S. G. Ashokan,K. T. Rajenthrabhalaji,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,206,Virudhunagar,GEN,A. R. R. Seenivasan,A. R. R. Seenivasan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,207,Aruppukkottai,GEN,Sattur Ramachandran,Ramachandran K.K.S.S.R,DMK,DMK
+TAMIL_NADU,Tamil Nadu,208,Tiruchuli,GEN,Thangam Thennarasu,Thangam Thenarasu,DMK,DMK
+TAMIL_NADU,Tamil Nadu,209,Paramakudi (SC),SC,S. Murugesan,Dr. S. Muthiah,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,210,Tiruvadanai,GEN,R. M. Karumanikam,Karunaas,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,211,Ramanathapuram,GEN,K. Muthuramalingam,Dr. M. Manikandan,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,212,Mudhukulathur,GEN,R. S. Raja Kannappan,S. Pandi,DMK,INC
+TAMIL_NADU,Tamil Nadu,213,Vilathikulam,GEN,G. V. Markandayan,Uma Maheswari,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,214,Thoothukkudi,GEN,P. Geetha Jeevan,Geetha Jeevan. P,DMK,DMK
+TAMIL_NADU,Tamil Nadu,215,Tiruchendur,GEN,Anitha R. Radhakrishnan,Anitha R Radhakrishnan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,216,Srivaikuntam,GEN,Oorvasi S. Amirtharaj,S. P. Shanmuganathan,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,217,Ottapidaram (SC),SC,M. C. Shunmugaiah,R. Sundararaj,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,218,Kovilpatti,GEN,Kadambur C. Raju,Kadambur Raju,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,219,Sankarankovil (SC),SC,E. Raja,V. M. Rajalakshmi,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,220,Vasudevanallur (SC),SC,Dr. T. Sadhan Tirumalaikumar,Manoharan A.,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,221,Kadayanallur,GEN,C. Krishnamurali,K. A. M. Muhammed Abubacker,AIADMK,IUML
+TAMIL_NADU,Tamil Nadu,222,Tenkasi,GEN,S. Palani Nadar,S. Selvamohandas Pandian,INC,AIADMK
+TAMIL_NADU,Tamil Nadu,223,Alangulam,GEN,P. H. Manoj Pandian,Dr. Poongothai Aladi Aruna,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,224,Tirunelveli,GEN,Nainar Nagendran,A. L. S. Lakshmanan,BJP,DMK
+TAMIL_NADU,Tamil Nadu,225,Ambasamudram,GEN,E. Subaya,R. Murugaiah Pandian,AIADMK,AIADMK
+TAMIL_NADU,Tamil Nadu,226,Palayamkottai,GEN,M. Abdul Wahab,T. P. M. Mohideen Khan,DMK,DMK
+TAMIL_NADU,Tamil Nadu,227,Nanguneri,GEN,Ruby R. Manoharan,H. Vasanthakumar,INC,INC
+TAMIL_NADU,Tamil Nadu,228,Radhapuram,GEN,M. Appavu,I. S. Inbadurai,DMK,AIADMK
+TAMIL_NADU,Tamil Nadu,229,Kanniyakumari,GEN,N. Thalavai Sundaram,S. Austin,AIADMK,DMK
+TAMIL_NADU,Tamil Nadu,230,Nagercoil,GEN,|M. R. Gandhi,N. Suresh Rajan,BJP,DMK
+TAMIL_NADU,Tamil Nadu,231,Colachal,GEN,J. G. Prince,J. G. Prince,INC,INC
+TAMIL_NADU,Tamil Nadu,232,Padmanabhapuram,GEN,Mano Thangaraj,Mano Thangaraj,DMK,DMK
+TAMIL_NADU,Tamil Nadu,233,Vilavancode,GEN,S. Vijayadharani,S. Vijayadharani,INC,INC
+TAMIL_NADU,Tamil Nadu,234,Killiyoor,GEN,S. Rajeshkumar,S. Rajesh Kumar,INC,INC
+WEST_BENGAL,West Bengal,1,Mekliganj (SC),SC,Paresh Chandra Adhikary,Arghya Roy Pradhan,TMC,TMC
+WEST_BENGAL,West Bengal,2,Mathabhanga (SC),SC,Sushil Barman,Binay Krishna Barman,BJP,TMC
+WEST_BENGAL,West Bengal,3,Cooch Behar Uttar,SC,Sukumar Roy,Nagendra Nath Roy,BJP,AIFB
+WEST_BENGAL,West Bengal,4,Cooch Behar Dakshin,GEN,Nikhil Ranjan Dey,Mihir Goswami,BJP,TMC
+WEST_BENGAL,West Bengal,5,Sitalkuchi (SC),SC,Baren Chandra Barman,Hiten Barman,BJP,TMC
+WEST_BENGAL,West Bengal,6,Sitai (SC),SC,Jagadish Barma Basunia,Jagadish Barma Basunia,TMC,TMC
+WEST_BENGAL,West Bengal,7,Dinhata,GEN,Nisith Pramanik,Udayan Guha,BJP,TMC
+WEST_BENGAL,West Bengal,8,Natabari,GEN,Mihir Goswami,Rabindra Nath Ghosh,BJP,TMC
+WEST_BENGAL,West Bengal,9,Tufanganj,GEN,Malati Rava Roy,Fazal Karim Miah,BJP,TMC
+WEST_BENGAL,West Bengal,10,Kumargram (ST),ST,Manoj Kumar Oraon,James Kujur,BJP,TMC
+WEST_BENGAL,West Bengal,11,Kalchini (ST),ST,Bishal Lama,Wilson Champramary,BJP,TMC
+WEST_BENGAL,West Bengal,12,Alipurduars,GEN,Suman Kanjilal,Sourav Chakraborty,BJP,TMC
+WEST_BENGAL,West Bengal,13,Falakata (SC),SC,Dipak Barman,Anil Adhikari,BJP,TMC
+WEST_BENGAL,West Bengal,14,Madarihat (ST),ST,Manoj Tigga,Manoj Tigga,BJP,BJP
+WEST_BENGAL,West Bengal,15,Dhupguri (SC),SC,Bishnu Pada Ray,Mitali Roy,BJP,TMC
+WEST_BENGAL,West Bengal,16,Maynaguri (SC),SC,Kaushik Roy,Ananta Deb Adhikari,BJP,TMC
+WEST_BENGAL,West Bengal,17,Jalpaiguri (SC),SC,Pradip Kumar Barma,Sukhbilas Barma,TMC,INC
+WEST_BENGAL,West Bengal,18,Rajganj (SC),SC,Khageswar Roy,Khageswar Roy,TMC,TMC
+WEST_BENGAL,West Bengal,19,Dabgram-Phulbari,GEN,Shikha Chatterjee,Goutam Deb,BJP,TMC
+WEST_BENGAL,West Bengal,20,Mal (ST),ST,Bulu Chik Baraik,Bulu Chik Baraik,TMC,TMC
+WEST_BENGAL,West Bengal,21,Nagrakata (ST),ST,Puna Bhengra,Sukra Munda,BJP,TMC
+WEST_BENGAL,West Bengal,22,Kalimpong,GEN,Ruden Sada Lepcha,Sarita Rai,GJM,GJM
+WEST_BENGAL,West Bengal,23,Darjeeling,GEN,Neeraj Zimba,Amar Singh Rai,BJP,GJM
+WEST_BENGAL,West Bengal,24,Kurseong,GEN,Bishnu Prasad Sharma,Rohit Sharma,BJP,GJM
+WEST_BENGAL,West Bengal,25,Matigara-Naxalbari (SC),SC,Anandamoy Barman,Shankar Malakar,BJP,INC
+WEST_BENGAL,West Bengal,26,Siliguri,GEN,Shankar Ghosh,Ashok Bhattacharya,BJP,CPI(M)
+WEST_BENGAL,West Bengal,27,Phansidewa (ST),ST,Durga Murmu,Sunil Chandra Tirkey,BJP,INC
+WEST_BENGAL,West Bengal,28,Chopra,GEN,Hamidul Rahman,Hamidul Rahaman,TMC,TMC
+WEST_BENGAL,West Bengal,29,Islampur,GEN,Abdul Karim Chowdhury,Kanaia Lal Agarwal,TMC,INC
+WEST_BENGAL,West Bengal,30,Goalpokhar,GEN,Mohammad Ghulam Rabbani,Md. Ghulam Rabbani,TMC,TMC
+WEST_BENGAL,West Bengal,31,Chakulia,GEN,Minhajul Arfin Azad,Ali Imran Ramz (Victor),TMC,AIFB
+WEST_BENGAL,West Bengal,32,Karandighi,GEN,Goutam Paul,Manodeb Sinha,TMC,TMC
+WEST_BENGAL,West Bengal,33,Hemtabad (SC),SC,Satyajit Barman,Debendra Nath Roy,TMC,CPI(M)
+WEST_BENGAL,West Bengal,34,Kaliaganj (SC),SC,Soumen Roy,Pramatha Nath Ray,BJP,INC
+WEST_BENGAL,West Bengal,35,Raiganj,GEN,Krishna Kalyani,Mohit Sengupta,BJP,INC
+WEST_BENGAL,West Bengal,36,Itahar,GEN,Mosarraf Hossain,Amal Acharjee,TMC,TMC
+WEST_BENGAL,West Bengal,37,Kushmandi (SC),SC,Rekha Roy,Narmada Chandra Roy,TMC,RSP
+WEST_BENGAL,West Bengal,38,Kumarganj,GEN,Toraf Hossain Mandal,Toraf Hossain Mandal,TMC,TMC
+WEST_BENGAL,West Bengal,39,Balurghat,GEN,Ashok Lahiri,Biswanath Choudhury,BJP,RSP
+WEST_BENGAL,West Bengal,40,Tapan (ST),ST,Budhrai Tudu,Bachchu Hansda,BJP,TMC
+WEST_BENGAL,West Bengal,41,Gangarampur (SC),SC,Satyendra Nath Ray,Goutam Das,BJP,INC
+WEST_BENGAL,West Bengal,42,Harirampur,GEN,Biplab Mitra,Rafikul Islam,TMC,CPI(M)
+WEST_BENGAL,West Bengal,43,Habibpur (ST),ST,Joyel Murmu,Khagen Murmu,BJP,CPI(M)
+WEST_BENGAL,West Bengal,44,Gazole (SC),SC,Chinmoy Deb Barman,Dipali Biswas,BJP,CPI(M)
+WEST_BENGAL,West Bengal,45,Chanchal,GEN,Nihar Ranjan Ghosh,Asif Mehbub,TMC,INC
+WEST_BENGAL,West Bengal,46,Harishchandrapur,GEN,Tajmul Hossain,Mostaque Alam,TMC,INC
+WEST_BENGAL,West Bengal,47,Malatipur,GEN,Abdur Rahim Bakshi,Alberuni Zulkarnain,TMC,INC
+WEST_BENGAL,West Bengal,48,Ratua,GEN,Samar Mukherjee,Samar Mukherjee,TMC,INC
+WEST_BENGAL,West Bengal,49,Manikchak,GEN,Sabitri Mitra,Md. Mottakin Alam,TMC,INC
+WEST_BENGAL,West Bengal,50,Maldaha (SC),SC,Gopal Chandra Saha,Bhupendra Nath Halder,BJP,INC
+WEST_BENGAL,West Bengal,51,English Bazar,GEN,Sreerupa Mitra Chaudhury,Nihar Ranjan Ghosh,BJP,IND
+WEST_BENGAL,West Bengal,52,Mothabari,GEN,Sabina Yeasmin,Sabina Yeasmin,TMC,INC
+WEST_BENGAL,West Bengal,53,Sujapur,GEN,Muhammad Abdul Ghani,Isha Khan Choudhury,TMC,INC
+WEST_BENGAL,West Bengal,54,Baisnabnagar,GEN,Chandana Sarkar,Swadhin Kumar Sarkar,TMC,BJP
+WEST_BENGAL,West Bengal,55,Farakka,GEN,Manirul Islam,Mainul Haque,TMC,INC
+WEST_BENGAL,West Bengal,56,Samserganj,GEN,Amirul Islam,Amirul Islam,TMC,TMC
+WEST_BENGAL,West Bengal,57,Suti,GEN,Emani Biswas,Humayun Reza,TMC,INC
+WEST_BENGAL,West Bengal,58,Jangipur,GEN,Jakir Hossain,Jakir Hossain,TMC,TMC
+WEST_BENGAL,West Bengal,59,Raghunathganj,GEN,Akhruzzaman,Akhruzzaman,TMC,INC
+WEST_BENGAL,West Bengal,60,Sagardighi,GEN,Subrata Saha,Subrata Saha,TMC,TMC
+WEST_BENGAL,West Bengal,61,Lalgola,GEN,Mohammad Ali,Abu Hena,TMC,INC
+WEST_BENGAL,West Bengal,62,Bhagabangola,GEN,Idris Ali,Mahasin Ali,TMC,CPI(M)
+WEST_BENGAL,West Bengal,63,Raninagar,GEN,Abdul Soumik Hossain,Firoza Begam,TMC,INC
+WEST_BENGAL,West Bengal,64,Murshidabad,GEN,Gouri Shankar Ghosh,Shaoni Singha Roy,BJP,INC
+WEST_BENGAL,West Bengal,65,Nabagram (SC),SC,Kanai Chandra Mondal,Kanai Chandra Mondal,TMC,CPI(M)
+WEST_BENGAL,West Bengal,66,Khargram (SC),SC,Ashish Marjit,Ashis Marjit,TMC,INC
+WEST_BENGAL,West Bengal,67,Burwan (SC),SC,Jiban Krishna Saha,Protima Rajak,TMC,INC
+WEST_BENGAL,West Bengal,68,Kandi,GEN,Apurba Sarkar,Apurba Sarkar,TMC,INC
+WEST_BENGAL,West Bengal,69,Bharatpur,GEN,Humayun Kabir,Kamalesh Chatterjee,TMC,INC
+WEST_BENGAL,West Bengal,70,Rejinagar,GEN,Rabiul Alam Chowdhury,Rabiul Alam Chowdhury,TMC,INC
+WEST_BENGAL,West Bengal,71,Beldanga,GEN,Sheikh Hasanuzzaman,Seikh Safiujjaman,TMC,INC
+WEST_BENGAL,West Bengal,72,Baharampur,GEN,Subrata Maitra,Manoj Chakraborty,BJP,INC
+WEST_BENGAL,West Bengal,73,Hariharpara,GEN,Niamot Sheikh,Niamot Sheikh,TMC,TMC
+WEST_BENGAL,West Bengal,74,Naoda,GEN,Sahina Mumtaz Begum,Abu Taher Khan,TMC,INC
+WEST_BENGAL,West Bengal,75,Domkal,GEN,Jafikul Islam,Anisur Rahaman,TMC,CPI(M)
+WEST_BENGAL,West Bengal,76,Jalangi,GEN,Abdur Razzak,Abdur Razzak Mandal,TMC,CPI(M)
+WEST_BENGAL,West Bengal,77,Karimpur,GEN,Bimalendu Sinha Roy,Mahua Moitra,TMC,TMC
+WEST_BENGAL,West Bengal,78,Tehatta,GEN,Tapas Kumar Saha,Gouri Sankar Dutta,TMC,TMC
+WEST_BENGAL,West Bengal,79,Palashipara,GEN,Manik Bhattacharya,Tapas Kumar Saha,TMC,TMC
+WEST_BENGAL,West Bengal,80,Kaliganj,GEN,Nasiruddin Ahamed,Hasanuzzaman Sk,TMC,INC
+WEST_BENGAL,West Bengal,81,Nakashipara,GEN,Kallol Khan,Kallol Khan,TMC,TMC
+WEST_BENGAL,West Bengal,82,Chapra,GEN,Rukbanur Rahman,Rukbanur Rahman,TMC,TMC
+WEST_BENGAL,West Bengal,83,Krishnanagar Uttar,GEN,Mukul Roy,Abani Mohan Joardar,BJP,TMC
+WEST_BENGAL,West Bengal,84,Nabadwip,GEN,Pundarikakshya Saha,Pundarikakshya Saha,TMC,TMC
+WEST_BENGAL,West Bengal,85,Krishnanagar Dakshin,GEN,Ujjal Biswas,Ujjal Biswas,TMC,TMC
+WEST_BENGAL,West Bengal,86,Santipur,GEN,Jagannath Sarkar,Arindam Bhattacharya,BJP,INC
+WEST_BENGAL,West Bengal,87,Ranaghat Uttar Paschim,GEN,Parthasarathi Chatterjee,Sankar Singha,BJP,INC
+WEST_BENGAL,West Bengal,88,Krishnaganj (SC),SC,Ashish Kumar Biswas,Satyajit Biswas,BJP,TMC
+WEST_BENGAL,West Bengal,89,Ranaghat Uttar Purba (SC),SC,Ashim Biswas,Samir Kumar Poddar,BJP,TMC
+WEST_BENGAL,West Bengal,90,Ranaghat Dakshin (SC),SC,Mukut Mani Adhikari,Rama Biswas,BJP,CPI(M)
+WEST_BENGAL,West Bengal,91,Chakdaha,GEN,Bankim Chandra Ghosh,Ratna Ghosh Kar,BJP,TMC
+WEST_BENGAL,West Bengal,92,Kalyani (SC),SC,Ambika Roy,Ramendra Nath Biswas,BJP,TMC
+WEST_BENGAL,West Bengal,93,Haringhata (SC),SC,Ashim Kumar Sarkar,Nilima Nag,BJP,TMC
+WEST_BENGAL,West Bengal,94,Bagdah,SC,Biswajit Das,Dulal Chandra Bar,BJP,INC
+WEST_BENGAL,West Bengal,95,Bangaon Uttar (SC),SC,Ashok Kirtania,Biswajit Das,BJP,TMC
+WEST_BENGAL,West Bengal,96,Bangaon Dakshin (SC),SC,Swapan Majumder,Surajit Kumar Biswas,BJP,TMC
+WEST_BENGAL,West Bengal,97,Gaighata (SC),SC,Subrata Thakur,Pulin Bihari Ray,BJP,TMC
+WEST_BENGAL,West Bengal,98,Swarupnagar,SC,Bina Mondal,Bina Mandal,TMC,TMC
+WEST_BENGAL,West Bengal,99,Baduria,GEN,Abdur Rahim Qazi,Abdur Rahim Quazi,TMC,INC
+WEST_BENGAL,West Bengal,100,Habra,GEN,Jyotipriya Mallick,Jyotipriya Mallick,TMC,TMC
+WEST_BENGAL,West Bengal,101,Ashokenagar,GEN,Narayan Goswami,Dhiman Roy,TMC,TMC
+WEST_BENGAL,West Bengal,102,Amdanga,GEN,Rafiqur Rahaman,Rafiqur Rahaman,TMC,TMC
+WEST_BENGAL,West Bengal,103,Bijpur,GEN,Subodh Adhikary,Subhranshu Roy,TMC,TMC
+WEST_BENGAL,West Bengal,104,Naihati,GEN,Partha Bhowmick,Partha Bhowmick,TMC,TMC
+WEST_BENGAL,West Bengal,105,Bhatpara,GEN,Pawan Kumar Singh,Arjun Singh,BJP,TMC
+WEST_BENGAL,West Bengal,106,Jagatdal,GEN,Somenath Shyam Ichini,Parash Dutta,TMC,TMC
+WEST_BENGAL,West Bengal,107,Noapara,GEN,Manju Basu,Madhusudan Ghose,TMC,INC
+WEST_BENGAL,West Bengal,108,Barrackpur,GEN,Raj Chakraborty,Silbhadra Dutta,TMC,TMC
+WEST_BENGAL,West Bengal,109,Khardaha,GEN,Kajal Sinha,Amit Mitra,TMC,TMC
+WEST_BENGAL,West Bengal,110,Dum Dum Uttar,GEN,Chandrima Bhattacharya,Tanmoy Bhattacharya,TMC,CPI(M)
+WEST_BENGAL,West Bengal,111,Panihati,GEN,Nirmal Ghosh,Nirmal Ghosh,TMC,TMC
+WEST_BENGAL,West Bengal,112,Kamarhati,GEN,Madan Mitra,Manash Mukherjee,TMC,CPI(M)
+WEST_BENGAL,West Bengal,113,Baranagar,GEN,Tapas Roy,Tapas Roy,TMC,TMC
+WEST_BENGAL,West Bengal,114,Dum Dum,GEN,Bratya Basu,Bratya Basu,TMC,TMC
+WEST_BENGAL,West Bengal,115,Rajarhat New Town,GEN,Tapash Chatterjee,Sabyasachi Dutta,TMC,TMC
+WEST_BENGAL,West Bengal,116,Bidhannagar,GEN,Sujit Bose,Sujit Bose,TMC,TMC
+WEST_BENGAL,West Bengal,117,Rajarhat Gopalpur,GEN,Aditi Munshi,Purnendu Basu,TMC,TMC
+WEST_BENGAL,West Bengal,118,Madhyamgram,GEN,Rathin Ghosh,Rathin Ghosh,TMC,TMC
+WEST_BENGAL,West Bengal,119,Barasat,GEN,Chiranjeet Chakraborty,Chiranjeet Chakrabarti,TMC,TMC
+WEST_BENGAL,West Bengal,120,Deganga,GEN,Rahima Mondal,Rahima Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,121,Haroa,GEN,Haji Nurul Islam,Haji Nurul Islam,TMC,TMC
+WEST_BENGAL,West Bengal,122,Minakhan (SC),SC,Usha Rani Mondal,Usha Rani Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,123,Sandeshkhali (ST),ST,Sukumar Mahata,Sukumar Mahata,TMC,TMC
+WEST_BENGAL,West Bengal,124,Basirhat Dakshin,GEN,Saptarshi Banerjee,Dipendu Biswas,TMC,TMC
+WEST_BENGAL,West Bengal,125,Basirhat Uttar,GEN,Rafikul Islam Mondal,Rafikul Islam Mondal,TMC,CPI(M)
+WEST_BENGAL,West Bengal,126,Hingalganj (SC),SC,Debesh Mondal,Debes Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,127,Gosaba (SC),SC,Jayanta Naskar,Jayanta Naskar,TMC,TMC
+WEST_BENGAL,West Bengal,128,Basanti (SC),SC,Shyamal Mondal,Gobinda Chandra Naskar,TMC,TMC
+WEST_BENGAL,West Bengal,129,Kultali (SC),SC,Ganesh Chandra Mondal,Ram Sankar Halder,TMC,CPI(M)
+WEST_BENGAL,West Bengal,130,Patharpratima,GEN,Samir Kumar Jana,Samir Kumar Jana,TMC,TMC
+WEST_BENGAL,West Bengal,131,Kakdwip,GEN,Manturam Pakhira,Manturam Pakhira,TMC,TMC
+WEST_BENGAL,West Bengal,132,Sagar,GEN,Bankim Chandra Hazra,Bankim Chandra Hazra,TMC,TMC
+WEST_BENGAL,West Bengal,133,Kulpi,GEN,Jogaranjan Halder,Jogaranjan Halder,TMC,TMC
+WEST_BENGAL,West Bengal,134,Raidighi,GEN,Aloke Jaldata,Debasree Roy,TMC,TMC
+WEST_BENGAL,West Bengal,135,Mandirbazar (SC),SC,Joydeb Halder,Joydeb Halder,TMC,TMC
+WEST_BENGAL,West Bengal,136,Jaynagar (SC),SC,Biswanath Das,Biswanath Das,TMC,TMC
+WEST_BENGAL,West Bengal,137,Baruipur Purba (SC),SC,Bivas Sardar,Nirmal Chandra Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,138,Canning Paschim (SC),SC,Paresh Ram Das,Shyamal Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,139,Canning Purba,GEN,Saokat Molla,Saokat Molla,TMC,TMC
+WEST_BENGAL,West Bengal,140,Baruipur Paschim,GEN,Biman Banerjee,Biman Banerjee,TMC,TMC
+WEST_BENGAL,West Bengal,141,Magrahat Purba (SC),SC,Namita Saha,Namita Saha,TMC,TMC
+WEST_BENGAL,West Bengal,142,Magrahat Paschim,GEN,Giasuddin Molla,Giasuddin Molla,TMC,TMC
+WEST_BENGAL,West Bengal,143,Diamond Harbour,GEN,Pannalal Halder,Dipak Kumar Halder,TMC,TMC
+WEST_BENGAL,West Bengal,144,Falta,GEN,Shankar Kumar Naskar,Tamonash Ghosh,TMC,TMC
+WEST_BENGAL,West Bengal,145,Satgachia,GEN,Mohan Chandra Naskar,Sonali Guha,TMC,TMC
+WEST_BENGAL,West Bengal,146,Bishnupur (SC),SC,Dilip Mondal,Dilip Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,147,Sonarpur Dakshin,GEN,Arundhuti Maitra,Jiban Mukhopadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,148,Bhangar,GEN,Nawsad Siddique,Abdur Razzak Molla,ISF,TMC
+WEST_BENGAL,West Bengal,149,Kasba,GEN,Javed Ahmed Khan,Javed Ahmed Khan,TMC,TMC
+WEST_BENGAL,West Bengal,150,Jadavpur,GEN,Debabrata Majumdar,Sujan Chakraborty,TMC,CPI(M)
+WEST_BENGAL,West Bengal,151,Sonarpur Uttar,GEN,Firdousi Begum,Firdousi Begum,TMC,TMC
+WEST_BENGAL,West Bengal,152,Tollygunge,GEN,Aroop Biswas,Aroop Biswas,TMC,TMC
+WEST_BENGAL,West Bengal,153,Behala Purba,GEN,Ratna Chatterjee,Sovan Chatterjee,TMC,TMC
+WEST_BENGAL,West Bengal,154,Behala Paschim,GEN,Partha Chatterjee,Partha Chatterjee,TMC,TMC
+WEST_BENGAL,West Bengal,155,Maheshtala,GEN,Dulal Chandra Das,Kasturi Das,TMC,TMC
+WEST_BENGAL,West Bengal,156,Budge Budge,GEN,Ashok Kumar Deb,Ashok Kumar Deb,TMC,TMC
+WEST_BENGAL,West Bengal,157,Metiaburuz,GEN,Abdul Khaleque Molla,Abdul Khaleque Molla,TMC,TMC
+WEST_BENGAL,West Bengal,158,Kolkata Port,GEN,Firhad Hakim,Firhad Hakim,TMC,TMC
+WEST_BENGAL,West Bengal,159,Bhabanipur,GEN,Sovandeb Chattopadhyay,Mamata Banerjee,TMC,TMC
+WEST_BENGAL,West Bengal,160,Rashbehari,GEN,Debasish Kumar,Sobhandeb Chattopadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,161,Ballygunge,GEN,Subrata Mukherjee,Subrata Mukherjee,TMC,TMC
+WEST_BENGAL,West Bengal,162,Chowrangee,GEN,Nayna Bandyopadhyay,Nayna Bandyopadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,163,Entally,GEN,Swarna Kamal Saha,Swarna Kamal Saha,TMC,TMC
+WEST_BENGAL,West Bengal,164,Beleghata,GEN,Paresh Paul,Paresh Paul,TMC,TMC
+WEST_BENGAL,West Bengal,165,Jorasanko,GEN,Vivek Gupta,Smita Bakshi,TMC,TMC
+WEST_BENGAL,West Bengal,166,Shyampukur,GEN,Shashi Panja,Shashi Panja,TMC,TMC
+WEST_BENGAL,West Bengal,167,Maniktala,GEN,Sadhan Pande,Sadhan Pande,TMC,TMC
+WEST_BENGAL,West Bengal,168,Kashipur-Belgachhia,GEN,Atin Ghosh,Mala Saha,TMC,TMC
+WEST_BENGAL,West Bengal,169,Bally,GEN,Rana Chatterjee,Baishali Dalmiya,TMC,TMC
+WEST_BENGAL,West Bengal,170,Howrah Uttar,GEN,Gautam Chowdhuri,Laxmi Ratan Shukla,TMC,TMC
+WEST_BENGAL,West Bengal,171,Howrah Madhya,GEN,Arup Roy,Arup Roy,TMC,TMC
+WEST_BENGAL,West Bengal,172,Shibpur,GEN,Manoj Tiwary,Jatu Lahiri,TMC,TMC
+WEST_BENGAL,West Bengal,173,Howrah Dakshin,GEN,Nandita Chowdhury,Brajamohan Mazumder,TMC,TMC
+WEST_BENGAL,West Bengal,174,Sankrail (SC),SC,Priya Paul,Sital Kumar Sardar,TMC,TMC
+WEST_BENGAL,West Bengal,175,Panchla,GEN,Gulsan Mullick,Gulsan Mullick,TMC,TMC
+WEST_BENGAL,West Bengal,176,Uluberia Purba,GEN,Bidesh Ranjan Bose,Haider Aziz Safwi,TMC,TMC
+WEST_BENGAL,West Bengal,177,Uluberia Uttar (SC),SC,Nirmal Maji,Dr. Nirmal Maji,TMC,TMC
+WEST_BENGAL,West Bengal,178,Uluberia Dakshin,GEN,Pulak Roy,Pulak Roy,TMC,TMC
+WEST_BENGAL,West Bengal,179,Shyampur,GEN,Kalipada Mandal,Kalipada Mandal,TMC,TMC
+WEST_BENGAL,West Bengal,180,Bagnan,GEN,Arunava Sen,Arunava Sen,TMC,TMC
+WEST_BENGAL,West Bengal,181,Amta,GEN,Sukanta Kumar Paul,Asit Mitra,TMC,INC
+WEST_BENGAL,West Bengal,182,Udaynarayanpur,GEN,Samir Kumar Panja,Samir Kumar Panja,TMC,TMC
+WEST_BENGAL,West Bengal,183,Jagatballavpur,GEN,Sitanath Ghosh,Muhammad Abdul Ghani,TMC,TMC
+WEST_BENGAL,West Bengal,184,Domjur,GEN,Kalyan Ghosh,Rajib Banerjee,TMC,TMC
+WEST_BENGAL,West Bengal,185,Uttarpara,GEN,Kanchan Mullick,Prabir Kumar Ghosal,TMC,TMC
+WEST_BENGAL,West Bengal,186,Sreerampur,GEN,Sudipto Roy,Sudipto Roy,TMC,TMC
+WEST_BENGAL,West Bengal,187,Champdani,GEN,Arindam Guin,Abdul Mannan,TMC,INC
+WEST_BENGAL,West Bengal,188,Singur,GEN,Becharam Manna,Rabindranath Bhattacharya,TMC,TMC
+WEST_BENGAL,West Bengal,189,Chandannagar,GEN,Indranil Sen,Indranil Sen,TMC,TMC
+WEST_BENGAL,West Bengal,190,Chunchura,GEN,Asit Mazumdar,Asit Mazumder,TMC,TMC
+WEST_BENGAL,West Bengal,191,Balagarh (SC),SC,Manoranjan Byapari,Ashim Kumar Majhi,TMC,TMC
+WEST_BENGAL,West Bengal,192,Pandua,GEN,Ratna De Nag,Sk. Amjad Hossain,TMC,CPI(M)
+WEST_BENGAL,West Bengal,193,Saptagram,GEN,Tapan Dasgupta,Tapan Dasgupta,TMC,TMC
+WEST_BENGAL,West Bengal,194,Chanditala,GEN,Swati Khandoker,Swati Khandoker,TMC,TMC
+WEST_BENGAL,West Bengal,195,Jangipara,GEN,Snehasis Chakraborty,Snehasis Chakraborty,TMC,TMC
+WEST_BENGAL,West Bengal,196,Haripal,GEN,Karabi Manna,Becharam Manna,TMC,TMC
+WEST_BENGAL,West Bengal,197,Dhanekhali (SC),SC,Ashima Patra,Ashima Patra,TMC,TMC
+WEST_BENGAL,West Bengal,198,Tarakeswar,GEN,Ramendu Sinharay,Rachhpal Singh,TMC,TMC
+WEST_BENGAL,West Bengal,199,Pursurah,GEN,Biman Ghosh,M. Nuruzzaman,BJP,TMC
+WEST_BENGAL,West Bengal,200,Arambagh,SC,Madhusudan Bag,Krishna Chandra Santra,BJP,TMC
+WEST_BENGAL,West Bengal,201,Goghat (SC),SC,Biswanath Karak,Manas Majumdar,BJP,TMC
+WEST_BENGAL,West Bengal,202,Khanakul,GEN,Susanta Ghosh,Iqbal Ahmed,BJP,TMC
+WEST_BENGAL,West Bengal,203,Tamluk,GEN,Soumen Mahapatra,Ashok Dinda,TMC,CPI
+WEST_BENGAL,West Bengal,204,Panskura Purba,GEN,Biplab Roy Chowdhury,Sheikh Ibrahim Ali,TMC,CPI(M)
+WEST_BENGAL,West Bengal,205,Panskura Paschim,GEN,Firoja Bibi,Firoja Bibi,TMC,TMC
+WEST_BENGAL,West Bengal,206,Moyna,GEN,Ashok Dinda,Sangram Kumar Dolai,BJP,TMC
+WEST_BENGAL,West Bengal,207,Nandakumar,GEN,Sukumar De,Sukumar De,TMC,TMC
+WEST_BENGAL,West Bengal,208,Mahisadal,GEN,Tilak Kumar Chakraborty,Sudarsan Ghosh Dastidar,TMC,TMC
+WEST_BENGAL,West Bengal,209,Haldia (SC),SC,Tapasi Mondal,Tapasi Mondal,BJP,CPI(M)
+WEST_BENGAL,West Bengal,210,Nandigram,GEN,Suvendu Adhikari,Suvendu Adhikari,BJP,TMC
+WEST_BENGAL,West Bengal,211,Chandipur,GEN,Soham Chakraborty,Amiya Kanti Bhattacharjee,TMC,TMC
+WEST_BENGAL,West Bengal,212,Patashpur,GEN,Uttam Barik,Jyotirmoy Kar,TMC,TMC
+WEST_BENGAL,West Bengal,213,Kanthi Uttar,GEN,Sumita Sinha,Banasri Maity,BJP,TMC
+WEST_BENGAL,West Bengal,214,Bhagabanpur,GEN,Rabindranath Maity,Ardhendu Maity,BJP,TMC
+WEST_BENGAL,West Bengal,215,Khejuri (SC),SC,Shantanu Pramanik,Ranajit Mondal,BJP,TMC
+WEST_BENGAL,West Bengal,216,Kanthi Dakshin,GEN,Arup Kumar Das,Dibyendu Adhikari,BJP,TMC
+WEST_BENGAL,West Bengal,217,Ramnagar,GEN,Akhil Giri,Akhil Giri,TMC,TMC
+WEST_BENGAL,West Bengal,218,Egra,GEN,Tarun Kumar Maity,Samares Das,TMC,TMC
+WEST_BENGAL,West Bengal,219,Dantan,GEN,Bikram Chandra Pradhan,Bikram Chandra Pradhan,TMC,TMC
+WEST_BENGAL,West Bengal,220,Nayagram (ST),ST,Dulal Murmu,Dulal Murmu,TMC,TMC
+WEST_BENGAL,West Bengal,221,Gopiballavpur,GEN,Khagendra Nath Mahata,Churamani Mahata,TMC,TMC
+WEST_BENGAL,West Bengal,222,Jhargram,GEN,Birbaha Hansda,Sukumar Hansda,TMC,TMC
+WEST_BENGAL,West Bengal,223,Keshiary (ST),ST,Paresh Murmu,Paresh Murmu,TMC,TMC
+WEST_BENGAL,West Bengal,224,Kharagpur Sadar,GEN,Hiran Chatterjee,Dilip Ghosh,BJP,BJP
+WEST_BENGAL,West Bengal,225,Narayangarh,GEN,Surja Kanta Atta,Prodyut Kumar Ghosh,TMC,TMC
+WEST_BENGAL,West Bengal,226,Sabang,GEN,Manas Bhunia,Manas Bhunia,TMC,INC
+WEST_BENGAL,West Bengal,227,Pingla,GEN,Ajit Maity,Saumen Kumar Mahapatra,TMC,TMC
+WEST_BENGAL,West Bengal,228,Kharagpur,GEN,Dinen Roy,Dinen Roy,TMC,TMC
+WEST_BENGAL,West Bengal,229,Debra,GEN,Humayun Kabir,Selima Khatun,TMC,TMC
+WEST_BENGAL,West Bengal,230,Daspur,GEN,Mamata Bhunia,Mamata Bhunia,TMC,TMC
+WEST_BENGAL,West Bengal,231,Ghatal (SC),SC,Shital Kapat,Shankar Dolai,BJP,TMC
+WEST_BENGAL,West Bengal,232,Chandrakona (SC),SC,Arup Dhara,Chhaya Dolai,TMC,TMC
+WEST_BENGAL,West Bengal,233,Garbeta,GEN,Uttara Singha,Ashis Chakraborty,TMC,TMC
+WEST_BENGAL,West Bengal,234,Salboni,GEN,Srikanta Mahata,Srikanta Mahata,TMC,TMC
+WEST_BENGAL,West Bengal,235,Keshpur (SC),SC,Siuli Saha,Seuli Saha,TMC,TMC
+WEST_BENGAL,West Bengal,236,Medinipur,GEN,June Malia,Mrigendra Nath Maiti,TMC,TMC
+WEST_BENGAL,West Bengal,237,Binpur (ST),ST,Debnath Hansda,Khagendranath Hembram,TMC,TMC
+WEST_BENGAL,West Bengal,238,Bandwan (ST),ST,Rajib Lochan Saren,Rajib Lochan Saren,TMC,TMC
+WEST_BENGAL,West Bengal,239,Balarampur,GEN,Baneswar Mahato,Shantiram Mahato,BJP,TMC
+WEST_BENGAL,West Bengal,240,Baghmundi,GEN,Sushanta Mahato,Nepal Mahata,TMC,INC
+WEST_BENGAL,West Bengal,241,Joypur,GEN,Narahari Mahato,Shaktipada Mahato,BJP,TMC
+WEST_BENGAL,West Bengal,242,Purulia,GEN,Sudip Kumar Mukherjee,Sudip Kumar Mukherjee,BJP,INC
+WEST_BENGAL,West Bengal,243,Manbazar (ST),ST,Sandhya Rani Tudu,Sandhya Rani Tudu,TMC,TMC
+WEST_BENGAL,West Bengal,244,Kashipur,GEN,Kamalakanta Hansda,Swapan Kumar Beltharia,BJP,TMC
+WEST_BENGAL,West Bengal,245,Para (SC),SC,Nadiar Chand Bouri,Umapada Bauri,BJP,TMC
+WEST_BENGAL,West Bengal,246,Raghunathpur (SC),SC,Vivekananda Bauri,Purna Chandra Bauri,BJP,TMC
+WEST_BENGAL,West Bengal,247,Saltora (SC),SC,Chandana Bauri,Swapan Bouri,BJP,TMC
+WEST_BENGAL,West Bengal,248,Chhatna,GEN,Satyanarayan Mukhopadhyay,Dhirendra Nath Layek,BJP,RSP
+WEST_BENGAL,West Bengal,249,Ranibandh (ST),ST,Jyotsna Mandi,Jyotsna Mandi,TMC,TMC
+WEST_BENGAL,West Bengal,250,Raipur (ST),ST,Mrityunjoy Murmu,Birendra Nath Tudu,TMC,TMC
+WEST_BENGAL,West Bengal,251,Taldangra,GEN,Arup Chakraborty,Samir Chakraborty,TMC,TMC
+WEST_BENGAL,West Bengal,252,Bankura,GEN,Niladri Sekhar Dana,Shampa Daripa,BJP,INC
+WEST_BENGAL,West Bengal,253,Barjora,GEN,Alok Mukherjee,Sujit Chakraborty,TMC,CPI(M)
+WEST_BENGAL,West Bengal,254,Onda,GEN,Amarnath Shakha,Arup Kumar Khan,BJP,TMC
+WEST_BENGAL,West Bengal,255,Bishnupur,GEN,Tanmay Ghosh,Tushar Kanti Bhattacharya,BJP,INC
+WEST_BENGAL,West Bengal,256,Katulpur (SC),SC,Harakali Protiher,Shyamal Santra,BJP,TMC
+WEST_BENGAL,West Bengal,257,Indas,SC,Nirmal Kumar Dhara,Gurupada Mete,BJP,TMC
+WEST_BENGAL,West Bengal,258,Sonamukhi (SC),SC,Dibakar Gharami,Ajit Ray,BJP,CPI(M)
+WEST_BENGAL,West Bengal,259,Khandaghosh (SC),SC,Nabin Chandra Bag,Nabin Chandra Bag,TMC,TMC
+WEST_BENGAL,West Bengal,260,Bardhaman Dakshin,GEN,Khokan Das,Rabiranjan Chattopadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,261,Raina (SC),SC,Shampa Dhara,Nepal Ghorui,TMC,TMC
+WEST_BENGAL,West Bengal,262,Jamalpur (SC),SC,Alok Kumar Majhi,Samar Hazra,TMC,CPI(M)
+WEST_BENGAL,West Bengal,263,Monteswar,GEN,Siddiqullah Chowdhury,Sajal Panja,TMC,TMC
+WEST_BENGAL,West Bengal,264,Kalna (SC),SC,Deboprasad Bag,Biswajit Kundu,TMC,TMC
+WEST_BENGAL,West Bengal,265,Memari,GEN,Madhusudan Bhattacharya,Begum Nargis,TMC,TMC
+WEST_BENGAL,West Bengal,266,Bardhaman Uttar,SC,Nisith Kumar Malik,Nisith Kumar Malik,TMC,TMC
+WEST_BENGAL,West Bengal,267,Bhatar,GEN,Mangobinda Adhikari,Subhash Mondal,TMC,TMC
+WEST_BENGAL,West Bengal,268,Purbasthali Dakshin,GEN,Swapan Debnath,Swapan Debnath,TMC,TMC
+WEST_BENGAL,West Bengal,269,Purbasthali Uttar,GEN,Tapan Chatterjee,Pradip Kumar Saha,TMC,CPI(M)
+WEST_BENGAL,West Bengal,270,Katwa,GEN,Rabindranath Chatterjee,Rabindranath Chatterjee,TMC,TMC
+WEST_BENGAL,West Bengal,271,Ketugram,GEN,Sheikh Shahnawaz,Sekh Sahonawez,TMC,TMC
+WEST_BENGAL,West Bengal,272,Mangalkot,GEN,Apurba Chowdhury,Siddiqullah Chowdhury,TMC,TMC
+WEST_BENGAL,West Bengal,273,Ausgram (SC),SC,Abhedananda Thander,Abhedananda Thander,TMC,TMC
+WEST_BENGAL,West Bengal,274,Galsi (SC),SC,Nepal Ghorui,Alok Kumar Majhi,TMC,TMC
+WEST_BENGAL,West Bengal,275,Pandabeswar,GEN,Narendranath Chakraborty,Jitendra Tiwari,TMC,TMC
+WEST_BENGAL,West Bengal,276,Durgapur Purba,GEN,Pradip Mazumdar,Santosh Debray,TMC,CPI(M)
+WEST_BENGAL,West Bengal,277,Durgapur Paschim,GEN,Lakshman Chandra Ghorui,Biswanath Parial,BJP,INC
+WEST_BENGAL,West Bengal,278,Raniganj,GEN,Tapas Banerjee,Runu Dutta,TMC,CPI(M)
+WEST_BENGAL,West Bengal,279,Jamuria,GEN,Hareram Singh,Jahanara Khan,TMC,CPI(M)
+WEST_BENGAL,West Bengal,280,Asansol Dakshin,GEN,Agnimitra Paul,Tapas Banerjee,BJP,TMC
+WEST_BENGAL,West Bengal,281,Asansol Uttar,GEN,Moloy Ghatak,Moloy Ghatak,TMC,TMC
+WEST_BENGAL,West Bengal,282,Kulti,GEN,Ajay Kumar Poddar,Ujjal Chatterjee,BJP,TMC
+WEST_BENGAL,West Bengal,283,Barabani,GEN,Bidhan Upadhyay,Bidhan Upadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,284,Dubrajpur (SC),SC,Anup Kumar Saha,Chandra Naresh Bauri,BJP,TMC
+WEST_BENGAL,West Bengal,285,Suri,GEN,Bikash Roy Choudhury,Asok Kumar Chattopadhyay,TMC,TMC
+WEST_BENGAL,West Bengal,286,Bolpur,GEN,Chandranath Sinha,Chandranath Sinha,TMC,TMC
+WEST_BENGAL,West Bengal,287,Nanoor (SC),SC,Bidhan Chandra Majhi,Shyamali Pradhan,TMC,CPI(M)
+WEST_BENGAL,West Bengal,288,Labpur,GEN,Abhijit Sinha,Manirul Islam,TMC,TMC
+WEST_BENGAL,West Bengal,289,Sainthia (SC),SC,Nilabati Saha,Nilabati Saha,TMC,TMC
+WEST_BENGAL,West Bengal,290,Mayureswar,GEN,Abhijit Roy,Abhijit Roy,TMC,TMC
+WEST_BENGAL,West Bengal,291,Rampurhat,GEN,Ashish Banerjee,Asish Banerjee,TMC,TMC
+WEST_BENGAL,West Bengal,292,Hansan,GEN,Ashok Chattopadhyaya,Miltan Rasid,TMC,INC
+WEST_BENGAL,West Bengal,293,Nalhati,GEN,Rajendra Prasad Singh,Moinuddin Shams,TMC,TMC
+WEST_BENGAL,West Bengal,294,Murarai,GEN,Mosarraf Hossain,Abdur Rahaman Liton,TMC,TMC
