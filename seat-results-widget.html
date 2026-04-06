@@ -180,8 +180,13 @@
 // ─────────────────────────────────────────────
 //  i18n
 // ─────────────────────────────────────────────
+const QUERY_PARAMS = new URLSearchParams(location.search);
+const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
+const TOP_BUCKET_LIMIT = 5;
+const OTHERS_KEY = '__others__';
+
 const LANG = (() => {
-  const raw = new URLSearchParams(location.search).get('lang') || '';
+  const raw = QUERY_PARAMS.get('lang') || '';
   return raw.trim().toLowerCase() === 'kn' ? 'kn' : 'en';
 })();
 
@@ -199,6 +204,8 @@ const UI = {
     majority: 'ಬಹುಮತ',
   }
 };
+UI.en.others = 'Others';
+UI.kn.others = 'à²‡à²¤à²°à²°à³';
 
 // State labels
 const STATE_LABELS_KN = {
@@ -227,6 +234,7 @@ const NAME_KN = {
 function t(key)      { return (LANG === 'kn' ? UI.kn : UI.en)[key] || key; }
 function tName(name) { return LANG === 'kn' ? (NAME_KN[name] || name) : name; }
 function tState(key, fallback) { return LANG === 'kn' ? (STATE_LABELS_KN[key] || fallback) : fallback; }
+function displayName(name) { return name === OTHERS_KEY ? t('others') : tName(name); }
 
 // ─────────────────────────────────────────────
 //  State
@@ -238,6 +246,16 @@ let viewMode = 'party';       // 'party' | 'alliance'
 
 // D3 selections
 let svg, chartGroup, labelsGroup;
+
+const STATE_MINI_MAP_SOURCES = {
+  KERALA: { type: 'image', url: 'root/KERALA_outer.svg' },
+  TAMIL_NADU: { type: 'image', url: 'root/TAMIL_NADU_outer.svg' },
+  WEST_BENGAL: { type: 'image', url: 'root/WEST_BENGAL_outer.svg' },
+  PUDUCHERRY: { type: 'image', url: 'root/PUDUCHERRY_outer.svg' },
+  ASSAM: { type: 'image', url: 'root/ASSAM_outer.svg' }
+};
+const miniMapCache = new Map();
+const miniMapInflight = new Map();
 
 // ─────────────────────────────────────────────
 //  Load data
@@ -309,6 +327,7 @@ function loadState(key) {
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
   currentYear = state.years[state.years.length - 1];
+  ensureMiniMapLoaded(key);
   setActiveStateTab(key);
   buildYearTabs(state);
   setActiveYearTab(currentYear);
@@ -323,13 +342,29 @@ function initSvg() {
   const container = document.getElementById('chart-svg-container');
   container.innerHTML = '';
   svg = d3.select(container).append('svg');
-  labelsGroup = svg.append('g').attr('class', 'labels-group');
   chartGroup  = svg.append('g').attr('class', 'chart-group');
+  labelsGroup = svg.append('g').attr('class', 'labels-group').style('pointer-events', 'none');
 }
 
 // ─────────────────────────────────────────────
 //  Data helpers
 // ─────────────────────────────────────────────
+function toTopFivePlusOthers(rows, othersColor = '#9CA3AF') {
+  if (!ENABLE_TOP5_OTHERS) return rows;
+  if (!Array.isArray(rows) || rows.length <= TOP_BUCKET_LIMIT) return rows;
+
+  const topRows = rows.slice(0, TOP_BUCKET_LIMIT);
+  const remaining = rows.slice(TOP_BUCKET_LIMIT);
+  const others = remaining.reduce((acc, row) => {
+    acc.wins += row.wins || 0;
+    acc.leads += row.leads || 0;
+    return acc;
+  }, { name: OTHERS_KEY, color: othersColor, wins: 0, leads: 0 });
+
+  if (others.wins + others.leads <= 0) return topRows;
+  return [...topRows, others];
+}
+
 function getDisplayData(stateData, year) {
   if (viewMode === 'alliance') {
     const allianceMap = {};
@@ -343,11 +378,13 @@ function getDisplayData(stateData, year) {
       allianceMap[a].wins  += wins;
       allianceMap[a].leads += leads;
     });
-    return Object.values(allianceMap)
+    const rows = Object.values(allianceMap)
       .filter(a => a.wins + a.leads > 0)
       .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+    const othersColor = (DATA.alliance_colors && DATA.alliance_colors.OTH) || '#9CA3AF';
+    return toTopFivePlusOthers(rows, othersColor);
   } else {
-    return stateData.parties
+    const rows = stateData.parties
       .map(p => ({
         name:  p.name || p.code,
         color: p.color || '#9CA3AF',
@@ -356,7 +393,131 @@ function getDisplayData(stateData, year) {
       }))
       .filter(p => p.wins + p.leads > 0)
       .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+    return toTopFivePlusOthers(rows, '#9CA3AF');
   }
+}
+
+function getMiniMapSource(stateKey) {
+  return STATE_MINI_MAP_SOURCES[stateKey] || null;
+}
+
+function removeMiniMap() {
+  if (!labelsGroup) return;
+  labelsGroup.selectAll('.state-mini-map').remove();
+}
+
+function normalizeGeoJsonFeatureCollection(json) {
+  if (!json) return null;
+  if (json.type === 'FeatureCollection' && Array.isArray(json.features)) return json;
+  if (json.type === 'Feature') return { type: 'FeatureCollection', features: [json] };
+  return null;
+}
+
+async function ensureMiniMapLoaded(stateKey) {
+  const source = getMiniMapSource(stateKey);
+  if (!source) return null;
+
+  if (miniMapCache.has(stateKey)) return miniMapCache.get(stateKey);
+  if (miniMapInflight.has(stateKey)) return miniMapInflight.get(stateKey);
+
+  const p = (async () => {
+    if (source.type === 'geojson') {
+      const res = await fetch(source.url, { cache: 'force-cache' });
+      if (!res.ok) throw new Error(`Mini map HTTP ${res.status}`);
+      const json = await res.json();
+      return { ...source, data: normalizeGeoJsonFeatureCollection(json) };
+    }
+    return { ...source };
+  })();
+
+  miniMapInflight.set(stateKey, p);
+  try {
+    const loaded = await p;
+    miniMapCache.set(stateKey, loaded);
+    return loaded;
+  } catch (e) {
+    console.warn('[seat-results-widget] mini-map load failed:', stateKey, e);
+    return null;
+  } finally {
+    miniMapInflight.delete(stateKey);
+  }
+}
+
+function renderMiniMap(stateKey, viewBoxX, viewBoxY, viewBoxWidth) {
+  if (!labelsGroup) return;
+  const cached = miniMapCache.get(stateKey);
+  const source = getMiniMapSource(stateKey);
+  if (!source) {
+    removeMiniMap();
+    return;
+  }
+
+  const size = Math.max(56, Math.min(110, Math.round(viewBoxWidth * 0.16)));
+  const x = viewBoxX + 10;
+  const y = viewBoxY + 10;
+  const pad = 5;
+  const innerSize = Math.max(20, size - pad * 2);
+
+  const group = labelsGroup.selectAll('.state-mini-map').data([stateKey]).join(
+    enter => {
+      const g = enter.append('g').attr('class', 'state-mini-map');
+      g.append('rect').attr('class', 'mini-map-bg');
+      g.append('g').attr('class', 'mini-map-shape');
+      return g;
+    },
+    update => update,
+    exit => exit.remove()
+  );
+
+  group.attr('transform', `translate(${x},${y})`);
+  group.select('.mini-map-bg')
+    .attr('x', 0)
+    .attr('y', 0)
+    .attr('width', size)
+    .attr('height', size)
+    .attr('rx', 6)
+    .attr('ry', 6)
+    .attr('fill', '#ffffff')
+    .attr('stroke', '#d1d5db')
+    .attr('stroke-width', 1);
+
+  const shapeLayer = group.select('.mini-map-shape');
+  shapeLayer.attr('transform', `translate(${pad},${pad})`);
+
+  if (!cached) {
+    shapeLayer.selectAll('*').remove();
+    ensureMiniMapLoaded(stateKey).then(() => {
+      if (currentStateKey === stateKey) render();
+    });
+    return;
+  }
+
+  if (cached.type === 'image') {
+    shapeLayer.selectAll('path').remove();
+    shapeLayer.selectAll('image').data([cached.url]).join('image')
+      .attr('href', d => d)
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('width', innerSize)
+      .attr('height', innerSize)
+      .attr('preserveAspectRatio', 'xMidYMid meet');
+    return;
+  }
+
+  const fc = cached.data;
+  if (!fc || !Array.isArray(fc.features) || !fc.features.length) {
+    shapeLayer.selectAll('*').remove();
+    return;
+  }
+
+  shapeLayer.selectAll('image').remove();
+  const projection = d3.geoIdentity().reflectY(true).fitSize([innerSize, innerSize], fc);
+  const path = d3.geoPath(projection);
+  shapeLayer.selectAll('path').data(fc.features).join('path')
+    .attr('d', path)
+    .attr('fill', '#f8fafc')
+    .attr('stroke', '#9ca3af')
+    .attr('stroke-width', 0.45);
 }
 
 // ─────────────────────────────────────────────
@@ -472,6 +633,9 @@ function render() {
   const container  = document.getElementById('chart-svg-container');
   const width      = container.getBoundingClientRect().width || 600;
   const chartHeight = width / 2;
+  const totalFontSize = Math.max(18, Math.round(chartHeight * 0.1));
+  const majorityFontSize = Math.max(10, Math.round(chartHeight * 0.055));
+  const centerMajorityY = totalFontSize * 1.2;
   const { positions, seatRadius } = calculateLayout(totalSeats, chartHeight);
 
   // ViewBox
@@ -484,8 +648,12 @@ function render() {
     minY = Math.min(...ys) - seatRadius - pad;
     maxY = Math.max(...ys) + seatRadius + 10;
   }
+  // Keep center labels (especially majority) from clipping at the bottom.
+  maxY = Math.max(maxY, centerMajorityY + majorityFontSize + 10);
   svg.attr('viewBox', `${minX} ${minY} ${maxX - minX} ${maxY - minY}`)
      .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  renderMiniMap(stateData.key, minX, minY, (maxX - minX));
 
   // Total label
   labelsGroup.selectAll('.total-label').remove();
@@ -493,27 +661,26 @@ function render() {
     labelsGroup.append('text').attr('class', 'total-label')
       .attr('x', 0).attr('y', 0)
       .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-      .style('font-size', Math.max(18, Math.round(chartHeight * 0.1)) + 'px')
+      .style('font-size', totalFontSize + 'px')
       .style('font-weight', 'bold').style('fill', '#333')
       .text(totalSeats);
     // Majority indicator
     const maj = stateData.majority;
     if (maj) {
       labelsGroup.append('text').attr('class', 'total-label')
-        .attr('x', 0).attr('y', Math.max(18, Math.round(chartHeight * 0.1)) * 1.2)
+        .attr('x', 0).attr('y', centerMajorityY)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .style('font-size', Math.max(10, Math.round(chartHeight * 0.055)) + 'px')
+        .style('font-size', majorityFontSize + 'px')
         .style('fill', '#6B7280')
         .text(t('majority') + ' ' + maj);
     }
   }
 
   // Majority line
-  labelsGroup.selectAll('.majority-line, .majority-line-text').remove();
+  labelsGroup.selectAll('.majority-line').remove();
   if (totalSeats >= 2 && stateData.majority) {
-    const majRatio = stateData.majority / totalSeats;
-    const targetIdx = Math.min(totalSeats - 1, Math.floor(totalSeats * majRatio));
-    const targetAngle = positions[targetIdx] ? positions[targetIdx].angle : Math.PI / 2;
+    // Keep majority line fixed at center so it does not tilt across states.
+    const targetAngle = Math.PI / 2;
     const outerR = Math.max(...positions.map(p => p.radius));
     const innerR = Math.min(...positions.map(p => p.radius));
     const x1 = Math.cos(targetAngle) * (innerR - 20);
@@ -565,7 +732,7 @@ function renderLegend(display) {
     e => e.append('div').attr('class','legend-item'),
     u => u,
     x => x.remove()
-  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${tName(d.name)}</span>`)
+  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${displayName(d.name)}</span>`)
    .style('cursor','pointer')
    .on('mouseover', (ev, d) => highlight(d.name, d.color))
    .on('mouseout', resetHighlight);
@@ -598,7 +765,7 @@ function renderTable(display) {
       .on('mouseout', resetHighlight);
 
     const nameTd = tr.insertCell();
-    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${tName(d.name)}</div>`;
+    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${displayName(d.name)}</div>`;
 
     const winsTd  = tr.insertCell(); winsTd.textContent  = d.wins;  winsTd.className = 'num';
     const leadsTd = tr.insertCell(); leadsTd.textContent = d.leads; leadsTd.className = 'num';
