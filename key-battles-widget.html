@@ -92,22 +92,12 @@
     body { min-height: max(884px, 100dvh); }
   </style>
 </head>
-<body class="bg-background text-on-background font-body pb-24">
-
-  <!-- Sticky header -->
-  <header class="w-full top-0 sticky z-40 bg-stone-50 flex items-center justify-between px-6 py-4 border-b border-stone-100">
-    <div class="flex items-center gap-3">
-      <span class="material-symbols-outlined text-stone-800">menu</span>
-      <h1 class="text-lg font-bold tracking-tight text-stone-900 font-headline">Key Battles</h1>
-    </div>
-    <span class="material-symbols-outlined text-stone-800">search</span>
-  </header>
-
+<body class="bg-background text-on-background font-body">
   <main class="px-4 pt-6">
 
     <!-- Search bar -->
-    <div class="mb-5">
-      <div class="flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
+    <div class="mb-5 w-full">
+      <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
         <span class="material-symbols-outlined text-stone-400 text-[20px]">search</span>
         <input
           id="search-input"
@@ -117,10 +107,6 @@
         />
       </div>
     </div>
-
-    <!-- Meta / error -->
-    <div id="meta" class="text-stone-400 text-xs mb-4">Loading…</div>
-    <div id="error" class="text-red-600 text-sm font-semibold mb-4"></div>
 
     <!-- Card list: 3-col grid on md+, horizontal carousel on mobile -->
     <div
@@ -132,26 +118,6 @@
     ></div>
   </main>
 
-  <!-- Bottom nav -->
-  <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 bg-stone-50/90 backdrop-blur-md z-50 rounded-t-xl shadow-[0px_-4px_20px_rgba(0,0,0,0.03)] border-t border-stone-200/20">
-    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
-      <span class="material-symbols-outlined">dashboard</span>
-      <span class="text-xs font-semibold tracking-wide capitalize">Overview</span>
-    </div>
-    <div class="flex flex-col items-center justify-center bg-stone-200/50 text-stone-900 rounded-full px-4 py-1 cursor-pointer">
-      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
-      <span class="text-xs font-semibold tracking-wide capitalize">Battles</span>
-    </div>
-    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
-      <span class="material-symbols-outlined">map</span>
-      <span class="text-xs font-semibold tracking-wide capitalize">Map</span>
-    </div>
-    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
-      <span class="material-symbols-outlined">podcasts</span>
-      <span class="text-xs font-semibold tracking-wide capitalize">Live Feed</span>
-    </div>
-  </nav>
-
   <script>
     const QUERY = new URLSearchParams(location.search);
 
@@ -159,21 +125,33 @@
     const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_TAB_NAME = 'Key_Battles';
+    const DEFAULT_MAPPING_LIVE_TAB_NAME = 'Live_Alliance_2026';
+    const DEFAULT_PARTIES_TAB_NAME = 'Party_Color';
+    const DEFAULT_ALLIANCES_TAB_NAME = 'Alliance_Color';
 
     const SHEET_ID_PARAM = (QUERY.get('sheetId') || '').trim();
     const SHEET_URL_PARAM = (QUERY.get('sheetUrl') || '').trim();
     const PUBLISHED_URL_PARAM = (QUERY.get('publishedSheetUrl') || QUERY.get('publishedUrl') || '').trim();
     const PUBLISHED_KEY_PARAM = (QUERY.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
     const TAB_NAME = (QUERY.get('tab') || QUERY.get('keyBattlesTab') || DEFAULT_TAB_NAME).trim();
+    const MAPPING_LIVE_TAB_NAME = (QUERY.get('mappingLiveTab') || DEFAULT_MAPPING_LIVE_TAB_NAME).trim();
+    const PARTIES_TAB_NAME = (QUERY.get('partiesTab') || DEFAULT_PARTIES_TAB_NAME).trim();
+    const ALLIANCES_TAB_NAME = (QUERY.get('alliancesTab') || DEFAULT_ALLIANCES_TAB_NAME).trim();
     const CSV_URL_PARAM = (QUERY.get('csvUrl') || QUERY.get('keyBattlesCsvUrl') || '').trim();
     const GID_PARAM = (QUERY.get('gid') || QUERY.get('keyBattlesGid') || '').trim();
+    const MAPPING_LIVE_CSV_URL_PARAM = (QUERY.get('mappingLiveCsvUrl') || '').trim();
+    const MAPPING_LIVE_GID_PARAM = (QUERY.get('mappingLiveGid') || '').trim();
+    const PARTIES_CSV_URL_PARAM = (QUERY.get('partiesCsvUrl') || '').trim();
+    const ALLIANCES_CSV_URL_PARAM = (QUERY.get('alliancesCsvUrl') || '').trim();
+    const PARTIES_GID_PARAM = (QUERY.get('partiesGid') || '').trim();
+    const ALLIANCES_GID_PARAM = (QUERY.get('alliancesGid') || '').trim();
 
-    const metaEl = document.getElementById('meta');
     const listEl = document.getElementById('list');
-    const errorEl = document.getElementById('error');
     const searchEl = document.getElementById('search-input');
 
     let allBattles = [];
+    let PARTY_COLORS = new Map();
+    let ALLIANCE_COLORS = new Map();
 
     // ── Data helpers (unchanged) ──────────────────────────────────────────────
 
@@ -261,6 +239,19 @@
       return Number.isFinite(n) ? n : null;
     }
 
+    function parseYear(value) {
+      const raw = String(value || '').trim();
+      const m = raw.match(/(19|20)\d{2}/);
+      return m ? m[0] : '';
+    }
+
+    function normalizeHexColor(value) {
+      const raw = String(value || '').trim();
+      if (!raw) return '';
+      const hex = raw.startsWith('#') ? raw : `#${raw}`;
+      return /^#[0-9a-fA-F]{6}$/.test(hex) ? hex : '';
+    }
+
     function formatVotes(value) {
       const n = parseVotes(value);
       if (n == null) return String(value || '').trim() || '-';
@@ -296,42 +287,150 @@
         name: firstNonEmpty(row, ['candidate_name', 'name']),
         photo: firstNonEmpty(row, ['candidate_photo', 'photo', 'photo_url', 'image']),
         party: firstNonEmpty(row, ['candidate_party', 'party']),
-        alliance: firstNonEmpty(row, ['candidate_alliance', 'alliance']),
+        alliance: '',
         votes: firstNonEmpty(row, ['candidate_votes', 'votes', 'vote_count']),
         rank: parseVotes(firstNonEmpty(row, ['lead_rank', 'rank', 'position']))
       };
     }
 
-    async function resolveCsvUrl() {
-      if (CSV_URL_PARAM) return CSV_URL_PARAM;
+    function mappingKey(stateKey, partyCode, year) {
+      return `${String(stateKey || '').trim().toUpperCase()}|${String(partyCode || '').trim().toUpperCase()}|${String(year || '').trim()}`;
+    }
+
+    function parseAllianceMappingRows(rows) {
+      const byYear = new Map();
+      const latestByParty = new Map();
+
+      (rows || []).forEach((row) => {
+        const state = firstNonEmpty(row, ['state_key', 'state']).toUpperCase();
+        const party = firstNonEmpty(row, ['party_code', 'party']).toUpperCase();
+        const alliance = firstNonEmpty(row, ['alliance', 'alliance_code']);
+        const year = parseYear(firstNonEmpty(row, ['year'])) || '2026';
+        if (!state || !party || !alliance) return;
+
+        byYear.set(mappingKey(state, party, year), alliance);
+        latestByParty.set(`${state}|${party}`, alliance);
+      });
+
+      return { byYear, latestByParty };
+    }
+
+    function resolveAllianceFromLiveMapping(mappingRows, state, party, year) {
+      if (!mappingRows) return '';
+      const s = String(state || '').trim().toUpperCase();
+      const p = String(party || '').trim().toUpperCase();
+      if (!s || !p) return '';
+
+      const y = parseYear(year) || '2026';
+      const exact = mappingRows.byYear.get(mappingKey(s, p, y));
+      if (exact) return exact;
+
+      return mappingRows.latestByParty.get(`${s}|${p}`) || '';
+    }
+
+    async function resolveCsvUrl(options = {}) {
+      const {
+        csvUrlParam = '',
+        tabName = '',
+        gidParam = '',
+        fallbackTabNames = []
+      } = options;
+
+      if (csvUrlParam) return csvUrlParam;
 
       const sheetId = SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM);
-      if (sheetId) return buildGoogleSheetCsvUrl(sheetId, TAB_NAME);
+      if (sheetId) return buildGoogleSheetCsvUrl(sheetId, tabName);
 
       const publishedKey = PUBLISHED_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_URL_PARAM);
       if (!publishedKey) throw new Error('Missing source. Pass csvUrl, sheetId/sheetUrl, or publishedKey/publishedUrl.');
 
-      const explicitGid = String(GID_PARAM || '').match(/-?\d+/);
+      const explicitGid = String(gidParam || '').match(/-?\d+/);
       if (explicitGid && explicitGid[0]) return buildGooglePublishedCsvUrl(publishedKey, explicitGid[0]);
 
       const response = await fetch(buildGooglePublishedHtmlUrl(publishedKey), { cache: 'no-store' });
       if (!response.ok) throw new Error(`Published sheet index HTTP ${response.status}`);
       const html = await response.text();
       const tabMap = parsePublishedSheetTabGids(html);
-      const gid = findPublishedTabGid(tabMap, [TAB_NAME, 'key_battles', 'key_battle']);
-      if (!gid) throw new Error(`Tab "${TAB_NAME}" not found in published sheet`);
+      const gid = findPublishedTabGid(tabMap, [tabName, ...(fallbackTabNames || [])]);
+      if (!gid) throw new Error(`Tab "${tabName}" not found in published sheet`);
       return buildGooglePublishedCsvUrl(publishedKey, gid);
     }
 
     async function loadRows() {
-      const csvUrl = await resolveCsvUrl();
+      const csvUrl = await resolveCsvUrl({
+        csvUrlParam: CSV_URL_PARAM,
+        tabName: TAB_NAME,
+        gidParam: GID_PARAM,
+        fallbackTabNames: ['key_battles', 'key_battle']
+      });
       const response = await fetch(csvUrl, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Sheet CSV HTTP ${response.status}`);
       const text = await response.text();
       return normalizeRows(d3.csvParse(text));
     }
 
-    function buildBattles(rows) {
+    async function loadLiveMappingRows() {
+      const csvUrl = await resolveCsvUrl({
+        csvUrlParam: MAPPING_LIVE_CSV_URL_PARAM,
+        tabName: MAPPING_LIVE_TAB_NAME,
+        gidParam: MAPPING_LIVE_GID_PARAM,
+        fallbackTabNames: ['live_alliance_2026', 'statewise_live_alliance_2026']
+      });
+      const response = await fetch(csvUrl, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Live alliance mapping CSV HTTP ${response.status}`);
+      const text = await response.text();
+      return normalizeRows(d3.csvParse(text));
+    }
+
+    async function loadPartyColorRows() {
+      const csvUrl = await resolveCsvUrl({
+        csvUrlParam: PARTIES_CSV_URL_PARAM,
+        tabName: PARTIES_TAB_NAME,
+        gidParam: PARTIES_GID_PARAM,
+        fallbackTabNames: ['party_color', 'party_master']
+      });
+      const response = await fetch(csvUrl, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Party color CSV HTTP ${response.status}`);
+      const text = await response.text();
+      return normalizeRows(d3.csvParse(text));
+    }
+
+    async function loadAllianceColorRows() {
+      const csvUrl = await resolveCsvUrl({
+        csvUrlParam: ALLIANCES_CSV_URL_PARAM,
+        tabName: ALLIANCES_TAB_NAME,
+        gidParam: ALLIANCES_GID_PARAM,
+        fallbackTabNames: ['alliance_color', 'alliance_master']
+      });
+      const response = await fetch(csvUrl, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Alliance color CSV HTTP ${response.status}`);
+      const text = await response.text();
+      return normalizeRows(d3.csvParse(text));
+    }
+
+    function parsePartyColors(rows) {
+      const out = new Map();
+      (rows || []).forEach((row) => {
+        const code = firstNonEmpty(row, ['party_code', 'party', 'code', 'name']).toUpperCase();
+        const color = normalizeHexColor(firstNonEmpty(row, ['color', 'party_color']));
+        if (!code || !color) return;
+        out.set(code, color);
+      });
+      return out;
+    }
+
+    function parseAllianceColors(rows) {
+      const out = new Map();
+      (rows || []).forEach((row) => {
+        const code = firstNonEmpty(row, ['alliance', 'alliance_code', 'name']).toUpperCase();
+        const color = normalizeHexColor(firstNonEmpty(row, ['color', 'alliance_color']));
+        if (!code || !color) return;
+        out.set(code, color);
+      });
+      return out;
+    }
+
+    function buildBattles(rows, liveAllianceMapping) {
       const grouped = new Map();
 
       (rows || []).forEach((row) => {
@@ -361,12 +460,19 @@
 
         const battle = grouped.get(battleId);
         const cand = candidateFromRow(row);
+        cand.alliance = resolveAllianceFromLiveMapping(
+          liveAllianceMapping,
+          battle.state || firstNonEmpty(row, ['state_key', 'state']),
+          cand.party,
+          firstNonEmpty(row, ['year']) || '2026'
+        );
         if (cand.name || cand.party || cand.alliance || String(cand.votes || '').trim()) {
           battle.candidates.push(cand);
         }
       });
 
       const battles = Array.from(grouped.values()).map((battle) => {
+        const mode = resolveViewModeForBattle(battle);
         const scored = battle.candidates.map((cand) => ({
           ...cand,
           votesNum: parseVotes(cand.votes)
@@ -374,7 +480,7 @@
 
         const hasRank = scored.some((c) => Number.isFinite(c.rank) && c.rank > 0);
         scored.sort((a, b) => {
-          if (hasRank) {
+          if (mode === 'before' && hasRank) {
             const ar = Number.isFinite(a.rank) && a.rank > 0 ? a.rank : 999;
             const br = Number.isFinite(b.rank) && b.rank > 0 ? b.rank : 999;
             if (ar !== br) return ar - br;
@@ -398,26 +504,62 @@
 
     // ── UI helpers ────────────────────────────────────────────────────────────
 
-    function partyChipClasses(party) {
-      const map = {
-        BJP:     'bg-orange-50 text-orange-800',
-        INC:     'bg-blue-50 text-blue-800',
-        CONGRESS:'bg-blue-50 text-blue-800',
-        AAP:     'bg-sky-50 text-sky-800',
-        SP:      'bg-red-50 text-red-800',
-        BSP:     'bg-indigo-50 text-indigo-800',
-        DMK:     'bg-red-50 text-red-800',
-        ADMK:    'bg-orange-50 text-orange-800',
-        AIADMK:  'bg-orange-50 text-orange-800',
-        RJD:     'bg-stone-100 text-stone-600',
-        JDU:     'bg-green-50 text-green-800',
-        NCP:     'bg-stone-100 text-stone-600',
-        SS:      'bg-orange-50 text-orange-800',
-        'CPI(M)':'bg-red-50 text-red-800',
-        CPIM:    'bg-red-50 text-red-800',
-        CPI:     'bg-red-50 text-red-800',
-      };
-      return map[String(party || '').trim().toUpperCase()] || 'bg-stone-100 text-stone-600';
+    function textColorForHex(hex) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '#57534e';
+      const r = parseInt(c.slice(1, 3), 16);
+      const g = parseInt(c.slice(3, 5), 16);
+      const b = parseInt(c.slice(5, 7), 16);
+      const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+      return yiq >= 150 ? '#1f2937' : '#f8fafc';
+    }
+
+    function mixHexWithWhite(hex, whiteRatio) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '';
+      const ratio = Math.max(0, Math.min(1, Number(whiteRatio)));
+      const r = parseInt(c.slice(1, 3), 16);
+      const g = parseInt(c.slice(3, 5), 16);
+      const b = parseInt(c.slice(5, 7), 16);
+      const rr = Math.round(r + (255 - r) * ratio);
+      const gg = Math.round(g + (255 - g) * ratio);
+      const bb = Math.round(b + (255 - b) * ratio);
+      return `#${rr.toString(16).padStart(2, '0')}${gg.toString(16).padStart(2, '0')}${bb.toString(16).padStart(2, '0')}`;
+    }
+
+    function darkenHex(hex, factor) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '';
+      const f = Math.max(0, Math.min(1, Number(factor)));
+      const r = Math.round(parseInt(c.slice(1, 3), 16) * f);
+      const g = Math.round(parseInt(c.slice(3, 5), 16) * f);
+      const b = Math.round(parseInt(c.slice(5, 7), 16) * f);
+      return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+    }
+
+    function applyChipColor(el, colorHex, fallbackBg = '#f5f5f4', fallbackText = '#57534e') {
+      const color = normalizeHexColor(colorHex);
+      if (color) {
+        const bg = mixHexWithWhite(color, 0.84);
+        const fg = darkenHex(color, 0.58);
+        el.style.backgroundColor = bg || color;
+        el.style.color = fg || textColorForHex(color);
+        el.style.border = `1px solid ${mixHexWithWhite(color, 0.68) || 'rgba(0,0,0,0.08)'}`;
+        return;
+      }
+      el.style.backgroundColor = fallbackBg;
+      el.style.color = fallbackText;
+      el.style.border = '1px solid rgba(0,0,0,0.08)';
+    }
+
+    function partyColorFromSheet(party) {
+      const key = String(party || '').trim().toUpperCase();
+      return key ? (PARTY_COLORS.get(key) || '') : '';
+    }
+
+    function allianceColorFromSheet(alliance) {
+      const key = String(alliance || '').trim().toUpperCase();
+      return key ? (ALLIANCE_COLORS.get(key) || '') : '';
     }
 
     function winnerOutcomeLabel(mode) {
@@ -467,16 +609,16 @@
       return div;
     }
 
-    function makeVoteShareBar(share, barColorClass) {
+    function makeVoteShareBar(share, barColorClass, labelText, valueText) {
       const wrap = document.createElement('div');
       wrap.className = 'w-full mt-2';
       const row = document.createElement('div');
       row.className = 'flex justify-between text-xs text-stone-400 mb-1';
       const label = document.createElement('span');
-      label.textContent = 'Vote Share';
+      label.textContent = labelText || 'Vote Share';
       const pct = document.createElement('span');
       pct.className = 'font-semibold text-stone-600';
-      pct.textContent = formatPercent(share);
+      pct.textContent = valueText || formatPercent(share);
       row.appendChild(label);
       row.appendChild(pct);
       wrap.appendChild(row);
@@ -490,9 +632,30 @@
       return wrap;
     }
 
+    function metricLabelAndValue(mode, cand, share) {
+      if (mode === 'counting') {
+        return {
+          label: 'Votes',
+          value: formatVotes(cand && cand.votes)
+        };
+      }
+      if (mode === 'after') {
+        const pct = formatPercent(share);
+        const votes = formatVotes(cand && cand.votes);
+        return {
+          label: 'Vote Share',
+          value: `${pct || '-'} (${votes})`
+        };
+      }
+      return {
+        label: 'Vote Share',
+        value: formatPercent(share)
+      };
+    }
+
     // ── Card renderers ────────────────────────────────────────────────────────
 
-    function renderCandidateSection(cand, isHero, outcomeLabelText, showVoteShare, share) {
+    function renderCandidateSection(cand, isHero, outcomeLabelText, showVoteShare, share, mode) {
       // Hero: large photo + outcome badge + name + party+constituency + optional vote share
       // Small: photo + outcome label + name + party badge + optional mini bar
       if (isHero) {
@@ -529,11 +692,26 @@
         meta.className = 'flex items-center justify-center gap-3 mt-2 flex-wrap';
 
         const party = document.createElement('span');
-        party.className = `px-3 py-1 rounded-md text-xs font-bold uppercase ${partyChipClasses(cand && cand.party)}`;
+        party.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
         party.textContent = (cand && cand.party) ? cand.party : '—';
+        applyChipColor(party, partyColorFromSheet(cand && cand.party));
         meta.appendChild(party);
 
-        if (cand && cand.party) {
+        if (cand && cand.party && cand.alliance) {
+          const divider = document.createElement('div');
+          divider.className = 'h-4 w-px bg-stone-300';
+          meta.appendChild(divider);
+        }
+
+        if (cand && cand.alliance) {
+          const alliance = document.createElement('span');
+          alliance.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
+          alliance.textContent = cand.alliance;
+          applyChipColor(alliance, allianceColorFromSheet(cand.alliance));
+          meta.appendChild(alliance);
+        }
+
+        if (cand && (cand.party || cand.alliance)) {
           const divider = document.createElement('div');
           divider.className = 'h-4 w-px bg-stone-300';
           meta.appendChild(divider);
@@ -548,7 +726,8 @@
         info._seatSpan = seat;
 
         if (showVoteShare && Number.isFinite(share)) {
-          info.appendChild(makeVoteShareBar(share, 'won-badge'));
+          const metric = metricLabelAndValue(mode, cand, share);
+          info.appendChild(makeVoteShareBar(share, 'won-badge', metric.label, metric.value));
         }
 
         wrap.appendChild(info);
@@ -580,14 +759,24 @@
         const partyRow = document.createElement('div');
         partyRow.className = 'flex items-center gap-1.5 flex-wrap';
         const partyBadge = document.createElement('div');
-        partyBadge.className = `w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase ${partyChipClasses(cand && cand.party)}`;
+        partyBadge.className = 'w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase';
         partyBadge.textContent = (cand && cand.party) ? cand.party : '—';
+        applyChipColor(partyBadge, partyColorFromSheet(cand && cand.party));
         partyRow.appendChild(partyBadge);
+
+        if (cand && cand.alliance) {
+          const allianceBadge = document.createElement('div');
+          allianceBadge.className = 'w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase';
+          allianceBadge.textContent = cand.alliance;
+          applyChipColor(allianceBadge, allianceColorFromSheet(cand.alliance));
+          partyRow.appendChild(allianceBadge);
+        }
 
         if (showVoteShare && Number.isFinite(share)) {
           const pct = document.createElement('span');
           pct.className = 'text-[10px] text-stone-500 font-semibold';
-          pct.textContent = formatPercent(share);
+          const metric = metricLabelAndValue(mode, cand, share);
+          pct.textContent = metric.value;
           partyRow.appendChild(pct);
         }
         wrap.appendChild(partyRow);
@@ -633,7 +822,7 @@
       // Hero candidate
       const heroSection = renderCandidateSection(
         slots[0], true, outcomeLabel,
-        hasVotes && Number.isFinite(winnerShare), winnerShare
+        hasVotes && Number.isFinite(winnerShare), winnerShare, mode
       );
       // Inject constituency into hero's seat span
       if (heroSection._seatSpan === undefined) {
@@ -672,14 +861,14 @@
       loser1Wrap.className = 'border-r border-stone-100 pr-3';
       loser1Wrap.appendChild(renderCandidateSection(
         slots[1], false, challengerLabel,
-        hasVotes && Number.isFinite(loser1Share), loser1Share
+        hasVotes && Number.isFinite(loser1Share), loser1Share, mode
       ));
       grid.appendChild(loser1Wrap);
 
       const loser2Wrap = document.createElement('div');
       loser2Wrap.appendChild(renderCandidateSection(
         slots[2], false, challengerLabel,
-        hasVotes && Number.isFinite(loser2Share), loser2Share
+        hasVotes && Number.isFinite(loser2Share), loser2Share, mode
       ));
       grid.appendChild(loser2Wrap);
 
@@ -719,12 +908,9 @@
       const visible = filterBattles(battles, q);
 
       if (!battles.length) {
-        metaEl.textContent = 'No battles found for the selected query.';
+        listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
         return;
       }
-
-      const viewText = VIEW_PARAM === 'before' ? 'Before Results' : VIEW_PARAM === 'after' ? 'After Results' : 'Auto';
-      metaEl.textContent = `Showing ${visible.length} of ${battles.length} battle${battles.length === 1 ? '' : 's'} | View: ${viewText}`;
 
       if (!visible.length) {
         const empty = document.createElement('p');
@@ -739,16 +925,24 @@
 
     async function init() {
       try {
-        const rows = await loadRows();
-        allBattles = buildBattles(rows);
+        listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
+        const [rows, mappingRows, partyColorRows, allianceColorRows] = await Promise.all([
+          loadRows(),
+          loadLiveMappingRows(),
+          loadPartyColorRows(),
+          loadAllianceColorRows()
+        ]);
+        PARTY_COLORS = parsePartyColors(partyColorRows);
+        ALLIANCE_COLORS = parseAllianceColors(allianceColorRows);
+        const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
+        allBattles = buildBattles(rows, liveAllianceMapping);
         const filtered = BATTLE_PARAM
           ? allBattles.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM))
           : allBattles;
         allBattles = filtered;
         render(allBattles);
       } catch (err) {
-        errorEl.textContent = `Failed to load key battles: ${err && err.message ? err.message : err}`;
-        metaEl.textContent = '';
+        listEl.innerHTML = `<p class="text-red-600 text-sm font-semibold py-8 text-center">Failed to load key battles: ${err && err.message ? err.message : err}</p>`;
       }
     }
 

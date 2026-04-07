@@ -60,3 +60,18 @@ Seats widget (seat-results-widget.html)
 Notes
 - Seats widget does not use constituency rows.
 - Live_Alliance_2026 can be shared by both widgets.
+
+Key Battles widget
+- File: key-battles-widget.html
+- Template CSV: key_battles_template.csv
+- Recommended tab name: Key_Battles
+- No-param default (uses default published sheet + Key_Battles tab):
+  http://127.0.0.1:8000/key-battles-widget.html
+- URL example:
+  http://127.0.0.1:8000/key-battles-widget.html?sheetId=YOUR_SHEET_ID&tab=Key_Battles
+- Story embed for one battle:
+  http://127.0.0.1:8000/key-battles-widget.html?sheetId=YOUR_SHEET_ID&tab=Key_Battles&battle=dharmadam_2026
+- Before/After result versions:
+  - before: `.../key-battles-widget.html?...&view=before`
+  - after: `.../key-battles-widget.html?...&view=after`
+  - auto (default): `.../key-battles-widget.html?...&view=auto`

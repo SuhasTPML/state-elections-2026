@@ -255,6 +255,7 @@ const DEFAULT_PUBLISHED_GIDS = Object.freeze({
   partyYear: '',
   partyYearLive: '',
   mapping: '2015371433',
+  mappingLive: '',
   parties: '1992176761',
   alliances: '1092628302'
 });
@@ -278,6 +279,7 @@ const PARTY_YEAR_LIVE_TAB_NAME = (
   'Live_Partywise_2026'
 ).trim();
 const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map').trim();
+const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Alliance_2026').trim();
 const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
 
@@ -294,6 +296,7 @@ const PARTY_YEAR_LIVE_CSV_URL_PARAM = (
   ''
 ).trim();
 const MAPPING_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingCsvUrl') || '').trim();
+const MAPPING_LIVE_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingLiveCsvUrl') || '').trim();
 const PARTIES_CSV_URL_PARAM = (QUERY_PARAMS.get('partiesCsvUrl') || '').trim();
 const ALLIANCES_CSV_URL_PARAM = (QUERY_PARAMS.get('alliancesCsvUrl') || '').trim();
 
@@ -310,6 +313,7 @@ const PARTY_YEAR_LIVE_GID_PARAM = (
   ''
 ).trim();
 const MAPPING_GID_PARAM = (QUERY_PARAMS.get('mappingGid') || '').trim();
+const MAPPING_LIVE_GID_PARAM = (QUERY_PARAMS.get('mappingLiveGid') || '').trim();
 const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
 const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
 
@@ -324,6 +328,7 @@ function hasAnyQueryParam(names){
 let PARTY_YEAR_SHEET_URL = PARTY_YEAR_CSV_URL_PARAM;
 let PARTY_YEAR_LIVE_SHEET_URL = PARTY_YEAR_LIVE_CSV_URL_PARAM;
 let MAPPING_SHEET_URL = MAPPING_CSV_URL_PARAM;
+let MAPPING_LIVE_SHEET_URL = MAPPING_LIVE_CSV_URL_PARAM;
 let PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
 let ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
 
@@ -552,14 +557,17 @@ async function ensureSheetCsvUrlsReady(){
 
   sheetCsvUrlsReadyPromise = (async () => {
     const explicitPartyYearLiveGid = normalizePublishedGid(PARTY_YEAR_LIVE_GID_PARAM);
+    const explicitMappingLiveGid = normalizePublishedGid(MAPPING_LIVE_GID_PARAM);
 
     if (!PARTY_YEAR_SHEET_URL && SHEET_ID) PARTY_YEAR_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTY_YEAR_TAB_NAME);
     if (!PARTY_YEAR_LIVE_SHEET_URL && SHEET_ID && PARTY_YEAR_LIVE_TAB_NAME) PARTY_YEAR_LIVE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME);
     if (!MAPPING_SHEET_URL && SHEET_ID) MAPPING_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_TAB_NAME);
+    if (!MAPPING_LIVE_SHEET_URL && SHEET_ID && MAPPING_LIVE_TAB_NAME) MAPPING_LIVE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_LIVE_TAB_NAME);
     if (!PARTIES_SHEET_URL && SHEET_ID) PARTIES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTIES_TAB_NAME);
     if (!ALLIANCES_SHEET_URL && SHEET_ID) ALLIANCES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, ALLIANCES_TAB_NAME);
     const livePartywiseReady = !PARTY_YEAR_LIVE_TAB_NAME || PARTY_YEAR_LIVE_SHEET_URL || explicitPartyYearLiveGid;
-    if (PARTY_YEAR_SHEET_URL && MAPPING_SHEET_URL && PARTIES_SHEET_URL && ALLIANCES_SHEET_URL && livePartywiseReady) return;
+    const liveMappingReady = !MAPPING_LIVE_TAB_NAME || MAPPING_LIVE_SHEET_URL || explicitMappingLiveGid;
+    if (PARTY_YEAR_SHEET_URL && MAPPING_SHEET_URL && PARTIES_SHEET_URL && ALLIANCES_SHEET_URL && livePartywiseReady && liveMappingReady) return;
 
     if (!PUBLISHED_SHEET_KEY) return;
 
@@ -567,6 +575,7 @@ async function ensureSheetCsvUrlsReady(){
       partyYear: normalizePublishedGid(PARTY_YEAR_GID_PARAM),
       partyYearLive: explicitPartyYearLiveGid,
       mapping: normalizePublishedGid(MAPPING_GID_PARAM),
+      mappingLive: explicitMappingLiveGid,
       parties: normalizePublishedGid(PARTIES_GID_PARAM),
       alliances: normalizePublishedGid(ALLIANCES_GID_PARAM)
     };
@@ -575,6 +584,7 @@ async function ensureSheetCsvUrlsReady(){
       ((!PARTY_YEAR_SHEET_URL) && !explicitGids.partyYear) ||
       ((PARTY_YEAR_LIVE_TAB_NAME && !PARTY_YEAR_LIVE_SHEET_URL) && !explicitGids.partyYearLive) ||
       ((!MAPPING_SHEET_URL) && !explicitGids.mapping) ||
+      ((MAPPING_LIVE_TAB_NAME && !MAPPING_LIVE_SHEET_URL) && !explicitGids.mappingLive) ||
       ((!PARTIES_SHEET_URL) && !explicitGids.parties) ||
       ((!ALLIANCES_SHEET_URL) && !explicitGids.alliances);
 
@@ -612,6 +622,12 @@ async function ensureSheetCsvUrlsReady(){
       'statewise_party_alliance_mapping',
       'statewise_party_alliance_map'
     ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['mappingTab', 'mappingGid']) ? DEFAULT_PUBLISHED_GIDS.mapping : '');
+    const mappingLiveGid = explicitGids.mappingLive || findPublishedTabGid(tabMap, [
+      MAPPING_LIVE_TAB_NAME,
+      'live_alliance_2026',
+      'statewise_live_alliance_2026',
+      'statewise_party_alliance_live_2026'
+    ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['mappingLiveTab', 'mappingLiveGid']) ? DEFAULT_PUBLISHED_GIDS.mappingLive : '');
     const partiesGid = explicitGids.parties || findPublishedTabGid(tabMap, [PARTIES_TAB_NAME, 'party_color', 'party_master'])
       || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['partiesTab', 'partiesGid']) ? DEFAULT_PUBLISHED_GIDS.parties : '');
     const alliancesGid = explicitGids.alliances || findPublishedTabGid(tabMap, [ALLIANCES_TAB_NAME, 'alliance_color', 'alliance_master'])
@@ -620,6 +636,7 @@ async function ensureSheetCsvUrlsReady(){
     if (!PARTY_YEAR_SHEET_URL && partyYearGid) PARTY_YEAR_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearGid);
     if (!PARTY_YEAR_LIVE_SHEET_URL && partyYearLiveGid) PARTY_YEAR_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearLiveGid);
     if (!MAPPING_SHEET_URL && mappingGid) MAPPING_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingGid);
+    if (!MAPPING_LIVE_SHEET_URL && mappingLiveGid) MAPPING_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingLiveGid);
     if (!PARTIES_SHEET_URL && partiesGid) PARTIES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partiesGid);
     if (!ALLIANCES_SHEET_URL && alliancesGid) ALLIANCES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, alliancesGid);
   })();
@@ -906,9 +923,10 @@ async function loadDataFromGoogleSheet(){
       `Missing sheet URLs. Ensure results/mapping tabs are published. Tabs: ${PARTY_YEAR_TAB_NAME}, ${MAPPING_TAB_NAME}`
     );
   }
-  const [rawSummaryRows, mappingRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
+  const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
     loadCsv(PARTY_YEAR_SHEET_URL, `${PARTY_YEAR_TAB_NAME} sheet`, 'force-cache'),
     loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, 'force-cache'),
+    MAPPING_LIVE_SHEET_URL ? loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME} sheet`, 'no-store') : Promise.resolve([]),
     loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, 'force-cache'),
     loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, 'force-cache'),
     PARTY_YEAR_LIVE_SHEET_URL ? loadCsv(PARTY_YEAR_LIVE_SHEET_URL, `${PARTY_YEAR_LIVE_TAB_NAME} sheet`, 'no-store') : Promise.resolve([])
@@ -921,7 +939,8 @@ async function loadDataFromGoogleSheet(){
   }
   const staticSummaryRows = rawSummaryRows;
   const summaryRows = mergeSummaryRowsWithLivePartywise(staticSummaryRows, livePartywiseRows);
-  return buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, allianceRows);
+  const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
+  return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
 }
 
 // ─────────────────────────────────────────────
