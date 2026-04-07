@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Battles Widget</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#dde4e5",
+            "on-secondary-fixed": "#294700",
+            "primary-dim": "#535252",
+            "on-surface-variant": "#5a6061",
+            "secondary-fixed": "#b9f474",
+            "surface-container-high": "#e4e9ea",
+            "on-tertiary-fixed-variant": "#3b0002",
+            "primary": "#5f5e5e",
+            "inverse-surface": "#0c0f0f",
+            "primary-fixed-dim": "#d6d4d3",
+            "on-primary-container": "#525151",
+            "secondary-dim": "#375d00",
+            "tertiary-fixed-dim": "#ec413e",
+            "on-tertiary": "#fff7f6",
+            "on-error": "#fff7f6",
+            "on-tertiary-container": "#1f0001",
+            "tertiary-fixed": "#fe4e49",
+            "on-primary": "#faf7f6",
+            "tertiary": "#bb1b21",
+            "on-secondary-container": "#365c00",
+            "on-tertiary-fixed": "#000000",
+            "error-dim": "#5c1202",
+            "primary-fixed": "#e5e2e1",
+            "on-secondary": "#eeffd5",
+            "on-error-container": "#742410",
+            "surface-container-low": "#f2f4f4",
+            "background": "#f9f9f9",
+            "surface-container": "#ebeeef",
+            "on-background": "#2d3435",
+            "primary-container": "#e5e2e1",
+            "tertiary-dim": "#a90816",
+            "surface-variant": "#dde4e5",
+            "inverse-on-surface": "#9c9d9d",
+            "surface-dim": "#d4dbdd",
+            "on-surface": "#2d3435",
+            "tertiary-container": "#fe4e49",
+            "outline-variant": "#adb3b4",
+            "surface-tint": "#5f5e5e",
+            "error-container": "#fe8b70",
+            "secondary-container": "#b9f474",
+            "inverse-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#3c6600",
+            "surface-bright": "#f9f9f9",
+            "on-primary-fixed-variant": "#5c5b5b",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#3f6a00",
+            "secondary-fixed-dim": "#abe668",
+            "outline": "#757c7d",
+            "surface": "#f9f9f9",
+            "on-primary-fixed": "#403f3f",
+            "error": "#9e422c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Work Sans"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .won-badge { background-color: #8CC63F; }
+    .leading-badge { background-color: #2563eb; }
+    body { min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body pb-24">
+
+  <!-- Sticky header -->
+  <header class="w-full top-0 sticky z-40 bg-stone-50 flex items-center justify-between px-6 py-4 border-b border-stone-100">
+    <div class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-stone-800">menu</span>
+      <h1 class="text-lg font-bold tracking-tight text-stone-900 font-headline">Key Battles</h1>
+    </div>
+    <span class="material-symbols-outlined text-stone-800">search</span>
+  </header>
+
+  <main class="px-4 pt-6">
+
+    <!-- Search bar -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
+        <span class="material-symbols-outlined text-stone-400 text-[20px]">search</span>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search constituency, candidate or party…"
+          class="flex-1 bg-transparent text-sm text-stone-700 placeholder-stone-400 outline-none font-body"
+        />
+      </div>
+    </div>
+
+    <!-- Meta / error -->
+    <div id="meta" class="text-stone-400 text-xs mb-4">Loading…</div>
+    <div id="error" class="text-red-600 text-sm font-semibold mb-4"></div>
+
+    <!-- Card list: 3-col grid on md+, horizontal carousel on mobile -->
+    <div
+      id="list"
+      class="
+        flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 hide-scrollbar
+        md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:snap-none
+      "
+    ></div>
+  </main>
+
+  <!-- Bottom nav -->
+  <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 bg-stone-50/90 backdrop-blur-md z-50 rounded-t-xl shadow-[0px_-4px_20px_rgba(0,0,0,0.03)] border-t border-stone-200/20">
+    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
+      <span class="material-symbols-outlined">dashboard</span>
+      <span class="text-xs font-semibold tracking-wide capitalize">Overview</span>
+    </div>
+    <div class="flex flex-col items-center justify-center bg-stone-200/50 text-stone-900 rounded-full px-4 py-1 cursor-pointer">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+      <span class="text-xs font-semibold tracking-wide capitalize">Battles</span>
+    </div>
+    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
+      <span class="material-symbols-outlined">map</span>
+      <span class="text-xs font-semibold tracking-wide capitalize">Map</span>
+    </div>
+    <div class="flex flex-col items-center justify-center text-stone-500 hover:text-stone-900 cursor-pointer">
+      <span class="material-symbols-outlined">podcasts</span>
+      <span class="text-xs font-semibold tracking-wide capitalize">Live Feed</span>
+    </div>
+  </nav>
+
+  <script>
+    const QUERY = new URLSearchParams(location.search);
+
+    const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
+    const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
+    const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
+    const DEFAULT_TAB_NAME = 'Key_Battles';
+
+    const SHEET_ID_PARAM = (QUERY.get('sheetId') || '').trim();
+    const SHEET_URL_PARAM = (QUERY.get('sheetUrl') || '').trim();
+    const PUBLISHED_URL_PARAM = (QUERY.get('publishedSheetUrl') || QUERY.get('publishedUrl') || '').trim();
+    const PUBLISHED_KEY_PARAM = (QUERY.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
+    const TAB_NAME = (QUERY.get('tab') || QUERY.get('keyBattlesTab') || DEFAULT_TAB_NAME).trim();
+    const CSV_URL_PARAM = (QUERY.get('csvUrl') || QUERY.get('keyBattlesCsvUrl') || '').trim();
+    const GID_PARAM = (QUERY.get('gid') || QUERY.get('keyBattlesGid') || '').trim();
+
+    const metaEl = document.getElementById('meta');
+    const listEl = document.getElementById('list');
+    const errorEl = document.getElementById('error');
+    const searchEl = document.getElementById('search-input');
+
+    let allBattles = [];
+
+    // ── Data helpers (unchanged) ──────────────────────────────────────────────
+
+    function normalizeHeaderKey(value) {
+      return String(value || '')
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '');
+    }
+
+    function normalizeRows(rows) {
+      return (rows || []).map((row) => {
+        const out = {};
+        Object.keys(row || {}).forEach((key) => {
+          out[normalizeHeaderKey(key)] = String(row[key] == null ? '' : row[key]).trim();
+        });
+        return out;
+      });
+    }
+
+    function extractGoogleSheetId(rawUrl) {
+      const raw = String(rawUrl || '').trim();
+      const match = raw.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
+    }
+
+    function extractGooglePublishedSheetKey(rawUrl) {
+      const raw = String(rawUrl || '').trim();
+      const match = raw.match(/\/spreadsheets\/d\/e\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
+    }
+
+    function buildGoogleSheetCsvUrl(sheetId, tabName) {
+      return `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+    }
+
+    function buildGooglePublishedCsvUrl(publishedKey, gid) {
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pub?gid=${encodeURIComponent(gid)}&single=true&output=csv`;
+    }
+
+    function buildGooglePublishedHtmlUrl(publishedKey) {
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+    }
+
+    function normalizeTabLookupKey(value) {
+      return String(value || '').trim().toLowerCase().replace(/[\s-]+/g, '_');
+    }
+
+    function parsePublishedSheetTabGids(html) {
+      const out = new Map();
+      const text = String(html || '');
+      const regex = /items\.push\(\{name:\s*"([^"]+)"[\s\S]*?gid:\s*"(-?\d+)"/g;
+      let match = null;
+      while ((match = regex.exec(text)) !== null) {
+        const key = normalizeTabLookupKey(match[1]);
+        const gid = String(match[2] || '').trim();
+        if (!key || !gid || out.has(key)) continue;
+        out.set(key, gid);
+      }
+      return out;
+    }
+
+    function findPublishedTabGid(tabMap, names) {
+      for (const name of (names || [])) {
+        const key = normalizeTabLookupKey(name);
+        if (!key) continue;
+        const gid = tabMap.get(key);
+        if (gid) return gid;
+      }
+      return '';
+    }
+
+    function slugify(value) {
+      return String(value || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function parseVotes(value) {
+      const raw = String(value == null ? '' : value).replace(/,/g, '').trim();
+      if (!raw) return null;
+      const n = Number(raw);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function formatVotes(value) {
+      const n = parseVotes(value);
+      if (n == null) return String(value || '').trim() || '-';
+      return n.toLocaleString('en-IN');
+    }
+
+    function resolveViewModeForBattle(battle) {
+      if (VIEW_PARAM === 'before' || VIEW_PARAM === 'counting' || VIEW_PARAM === 'after') return VIEW_PARAM;
+      const status = String((battle && battle.status) || '').trim().toLowerCase();
+      if (status.includes('announced') || status.includes('declared') || status.includes('won')) return 'after';
+      if (status.includes('counting') || status.includes('leading') || status.includes('trailing')) return 'counting';
+      return 'before';
+    }
+
+    function firstNonEmpty(row, keys) {
+      for (const key of (keys || [])) {
+        const value = String((row && row[key]) || '').trim();
+        if (value) return value;
+      }
+      return '';
+    }
+
+    function pickBattleId(row) {
+      return firstNonEmpty(row, ['battle_id', 'battle', 'battle_key', 'slug', 'id']);
+    }
+
+    function pickConstituency(row) {
+      return firstNonEmpty(row, ['constituency_name', 'constituency', 'ac_name', 'seat_name']);
+    }
+
+    function candidateFromRow(row) {
+      return {
+        name: firstNonEmpty(row, ['candidate_name', 'name']),
+        photo: firstNonEmpty(row, ['candidate_photo', 'photo', 'photo_url', 'image']),
+        party: firstNonEmpty(row, ['candidate_party', 'party']),
+        alliance: firstNonEmpty(row, ['candidate_alliance', 'alliance']),
+        votes: firstNonEmpty(row, ['candidate_votes', 'votes', 'vote_count']),
+        rank: parseVotes(firstNonEmpty(row, ['lead_rank', 'rank', 'position']))
+      };
+    }
+
+    async function resolveCsvUrl() {
+      if (CSV_URL_PARAM) return CSV_URL_PARAM;
+
+      const sheetId = SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM);
+      if (sheetId) return buildGoogleSheetCsvUrl(sheetId, TAB_NAME);
+
+      const publishedKey = PUBLISHED_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_URL_PARAM);
+      if (!publishedKey) throw new Error('Missing source. Pass csvUrl, sheetId/sheetUrl, or publishedKey/publishedUrl.');
+
+      const explicitGid = String(GID_PARAM || '').match(/-?\d+/);
+      if (explicitGid && explicitGid[0]) return buildGooglePublishedCsvUrl(publishedKey, explicitGid[0]);
+
+      const response = await fetch(buildGooglePublishedHtmlUrl(publishedKey), { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Published sheet index HTTP ${response.status}`);
+      const html = await response.text();
+      const tabMap = parsePublishedSheetTabGids(html);
+      const gid = findPublishedTabGid(tabMap, [TAB_NAME, 'key_battles', 'key_battle']);
+      if (!gid) throw new Error(`Tab "${TAB_NAME}" not found in published sheet`);
+      return buildGooglePublishedCsvUrl(publishedKey, gid);
+    }
+
+    async function loadRows() {
+      const csvUrl = await resolveCsvUrl();
+      const response = await fetch(csvUrl, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Sheet CSV HTTP ${response.status}`);
+      const text = await response.text();
+      return normalizeRows(d3.csvParse(text));
+    }
+
+    function buildBattles(rows) {
+      const grouped = new Map();
+
+      (rows || []).forEach((row) => {
+        const state = firstNonEmpty(row, ['state_key', 'state']);
+        const constituency = pickConstituency(row);
+        const fallbackId = slugify(`${state}-${constituency}`);
+        const battleId = slugify(pickBattleId(row) || fallbackId);
+        if (!battleId) return;
+
+        if (!grouped.has(battleId)) {
+          grouped.set(battleId, {
+            id: battleId,
+            rawId: pickBattleId(row) || battleId,
+            constituency: constituency || 'Unknown Constituency',
+            state: firstNonEmpty(row, ['state_key', 'state']),
+            acNo: firstNonEmpty(row, ['ac_no', 'no', 'ac']),
+            status: firstNonEmpty(row, ['status']),
+            resultDay: firstNonEmpty(row, ['result_day', 'result_date', 'updated_at']),
+            storyUrl: firstNonEmpty(row, ['story_url', 'cta_url', 'url', 'story_page']),
+            mapUrl: firstNonEmpty(row, ['map_url', 'map_widget_url']),
+            mapState: firstNonEmpty(row, ['map_state']),
+            mapAc: firstNonEmpty(row, ['map_ac']),
+            mapName: firstNonEmpty(row, ['map_name']),
+            candidates: []
+          });
+        }
+
+        const battle = grouped.get(battleId);
+        const cand = candidateFromRow(row);
+        if (cand.name || cand.party || cand.alliance || String(cand.votes || '').trim()) {
+          battle.candidates.push(cand);
+        }
+      });
+
+      const battles = Array.from(grouped.values()).map((battle) => {
+        const scored = battle.candidates.map((cand) => ({
+          ...cand,
+          votesNum: parseVotes(cand.votes)
+        }));
+
+        const hasRank = scored.some((c) => Number.isFinite(c.rank) && c.rank > 0);
+        scored.sort((a, b) => {
+          if (hasRank) {
+            const ar = Number.isFinite(a.rank) && a.rank > 0 ? a.rank : 999;
+            const br = Number.isFinite(b.rank) && b.rank > 0 ? b.rank : 999;
+            if (ar !== br) return ar - br;
+          }
+          const av = Number.isFinite(a.votesNum) ? a.votesNum : -1;
+          const bv = Number.isFinite(b.votesNum) ? b.votesNum : -1;
+          if (av !== bv) return bv - av;
+          return String(a.name || '').localeCompare(String(b.name || ''));
+        });
+
+        battle.candidates = scored.slice(0, 3);
+        return battle;
+      });
+
+      battles.sort((a, b) =>
+        String(a.state || '').localeCompare(String(b.state || ''))
+        || String(a.constituency || '').localeCompare(String(b.constituency || ''))
+      );
+      return battles;
+    }
+
+    // ── UI helpers ────────────────────────────────────────────────────────────
+
+    function partyChipClasses(party) {
+      const map = {
+        BJP:     'bg-orange-50 text-orange-800',
+        INC:     'bg-blue-50 text-blue-800',
+        CONGRESS:'bg-blue-50 text-blue-800',
+        AAP:     'bg-sky-50 text-sky-800',
+        SP:      'bg-red-50 text-red-800',
+        BSP:     'bg-indigo-50 text-indigo-800',
+        DMK:     'bg-red-50 text-red-800',
+        ADMK:    'bg-orange-50 text-orange-800',
+        AIADMK:  'bg-orange-50 text-orange-800',
+        RJD:     'bg-stone-100 text-stone-600',
+        JDU:     'bg-green-50 text-green-800',
+        NCP:     'bg-stone-100 text-stone-600',
+        SS:      'bg-orange-50 text-orange-800',
+        'CPI(M)':'bg-red-50 text-red-800',
+        CPIM:    'bg-red-50 text-red-800',
+        CPI:     'bg-red-50 text-red-800',
+      };
+      return map[String(party || '').trim().toUpperCase()] || 'bg-stone-100 text-stone-600';
+    }
+
+    function winnerOutcomeLabel(mode) {
+      if (mode === 'after') return 'Won';
+      if (mode === 'counting') return 'Leading';
+      return null;
+    }
+
+    function challengerOutcomeLabel(mode) {
+      if (mode === 'after') return 'Lost';
+      if (mode === 'counting') return 'Trailing';
+      return null;
+    }
+
+    function candidateVoteShare(cand, totalVotes) {
+      if (!cand || !Number.isFinite(cand.votesNum) || !Number.isFinite(totalVotes) || totalVotes <= 0) return null;
+      return (cand.votesNum / totalVotes) * 100;
+    }
+
+    function formatPercent(value) {
+      if (!Number.isFinite(value)) return null;
+      return `${value.toFixed(1)}%`;
+    }
+
+    function makeAvatar(photoUrl, name, sizeClasses) {
+      const url = String(photoUrl || '').trim();
+      if (url) {
+        const img = document.createElement('img');
+        img.className = `${sizeClasses} rounded-full object-cover bg-stone-100 shrink-0`;
+        img.alt = name ? `${name} photo` : 'Candidate photo';
+        img.src = url;
+        img.loading = 'lazy';
+        img.referrerPolicy = 'no-referrer';
+        img.onerror = () => {
+          const fb = makeFallbackAvatar(name, sizeClasses);
+          img.replaceWith(fb);
+        };
+        return img;
+      }
+      return makeFallbackAvatar(name, sizeClasses);
+    }
+
+    function makeFallbackAvatar(name, sizeClasses) {
+      const div = document.createElement('div');
+      div.className = `${sizeClasses} rounded-full bg-stone-200 flex items-center justify-center text-stone-500 font-bold shrink-0`;
+      div.textContent = name ? name.trim()[0].toUpperCase() : '?';
+      return div;
+    }
+
+    function makeVoteShareBar(share, barColorClass) {
+      const wrap = document.createElement('div');
+      wrap.className = 'w-full mt-2';
+      const row = document.createElement('div');
+      row.className = 'flex justify-between text-xs text-stone-400 mb-1';
+      const label = document.createElement('span');
+      label.textContent = 'Vote Share';
+      const pct = document.createElement('span');
+      pct.className = 'font-semibold text-stone-600';
+      pct.textContent = formatPercent(share);
+      row.appendChild(label);
+      row.appendChild(pct);
+      wrap.appendChild(row);
+      const track = document.createElement('div');
+      track.className = 'h-1.5 rounded-full bg-stone-200 w-full';
+      const fill = document.createElement('div');
+      fill.className = `h-full rounded-full ${barColorClass}`;
+      fill.style.width = `${Math.max(2, Math.min(100, share))}%`;
+      track.appendChild(fill);
+      wrap.appendChild(track);
+      return wrap;
+    }
+
+    // ── Card renderers ────────────────────────────────────────────────────────
+
+    function renderCandidateSection(cand, isHero, outcomeLabelText, showVoteShare, share) {
+      // Hero: large photo + outcome badge + name + party+constituency + optional vote share
+      // Small: photo + outcome label + name + party badge + optional mini bar
+      if (isHero) {
+        const wrap = document.createElement('div');
+        wrap.className = 'flex flex-col items-center text-center space-y-4';
+
+        const photoWrap = document.createElement('div');
+        photoWrap.className = 'relative';
+
+        const circle = document.createElement('div');
+        circle.className = 'w-36 h-36 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50';
+        circle.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-full h-full'));
+        photoWrap.appendChild(circle);
+
+        if (outcomeLabelText) {
+          const badge = document.createElement('div');
+          const isLeading = outcomeLabelText.toLowerCase() === 'leading';
+          badge.className = `absolute -bottom-3 left-1/2 -translate-x-1/2 ${isLeading ? 'leading-badge' : 'won-badge'} text-white px-6 py-1 rounded-lg text-xs font-bold uppercase tracking-wide shadow-md`;
+          badge.textContent = outcomeLabelText;
+          photoWrap.appendChild(badge);
+        }
+
+        wrap.appendChild(photoWrap);
+
+        const info = document.createElement('div');
+        info.className = 'pt-2 w-full';
+
+        const name = document.createElement('h2');
+        name.className = 'text-xl font-extrabold font-headline uppercase leading-tight tracking-tight';
+        name.textContent = (cand && cand.name) ? cand.name : 'Not set';
+        info.appendChild(name);
+
+        const meta = document.createElement('div');
+        meta.className = 'flex items-center justify-center gap-3 mt-2 flex-wrap';
+
+        const party = document.createElement('span');
+        party.className = `px-3 py-1 rounded-md text-xs font-bold uppercase ${partyChipClasses(cand && cand.party)}`;
+        party.textContent = (cand && cand.party) ? cand.party : '—';
+        meta.appendChild(party);
+
+        if (cand && cand.party) {
+          const divider = document.createElement('div');
+          divider.className = 'h-4 w-px bg-stone-300';
+          meta.appendChild(divider);
+        }
+
+        const seat = document.createElement('span');
+        seat.className = 'text-stone-900 text-base font-semibold font-headline';
+        seat.textContent = ''; // filled by caller via data-seat
+        meta.dataset && (meta.dataset.seatSlot = '1');
+        meta.appendChild(seat);
+        info.appendChild(meta);
+        info._seatSpan = seat;
+
+        if (showVoteShare && Number.isFinite(share)) {
+          info.appendChild(makeVoteShareBar(share, 'won-badge'));
+        }
+
+        wrap.appendChild(info);
+        return wrap;
+      } else {
+        // Small challenger card
+        const wrap = document.createElement('div');
+        wrap.className = 'flex flex-col items-start space-y-1.5';
+
+        const topRow = document.createElement('div');
+        topRow.className = 'flex items-center gap-2.5';
+        topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
+
+        const textWrap = document.createElement('div');
+        if (outcomeLabelText) {
+          const outcome = document.createElement('span');
+          const isTrailing = outcomeLabelText.toLowerCase() === 'trailing';
+          outcome.className = `text-[10px] font-bold uppercase ${isTrailing ? 'text-blue-700' : 'text-red-600'}`;
+          outcome.textContent = outcomeLabelText;
+          textWrap.appendChild(outcome);
+        }
+        const nm = document.createElement('h4');
+        nm.className = 'text-xs font-bold font-headline leading-tight';
+        nm.textContent = (cand && cand.name) ? cand.name : 'Not set';
+        textWrap.appendChild(nm);
+        topRow.appendChild(textWrap);
+        wrap.appendChild(topRow);
+
+        const partyRow = document.createElement('div');
+        partyRow.className = 'flex items-center gap-1.5 flex-wrap';
+        const partyBadge = document.createElement('div');
+        partyBadge.className = `w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase ${partyChipClasses(cand && cand.party)}`;
+        partyBadge.textContent = (cand && cand.party) ? cand.party : '—';
+        partyRow.appendChild(partyBadge);
+
+        if (showVoteShare && Number.isFinite(share)) {
+          const pct = document.createElement('span');
+          pct.className = 'text-[10px] text-stone-500 font-semibold';
+          pct.textContent = formatPercent(share);
+          partyRow.appendChild(pct);
+        }
+        wrap.appendChild(partyRow);
+
+        if (showVoteShare && Number.isFinite(share)) {
+          const track = document.createElement('div');
+          track.className = 'h-1 bg-stone-200 rounded-full w-full';
+          const fill = document.createElement('div');
+          fill.className = 'h-full bg-stone-400 rounded-full';
+          fill.style.width = `${Math.max(2, Math.min(100, share))}%`;
+          track.appendChild(fill);
+          wrap.appendChild(track);
+        }
+
+        return wrap;
+      }
+    }
+
+    function renderBattleCard(battle) {
+      const mode = resolveViewModeForBattle(battle);
+      const slots = [battle.candidates[0] || null, battle.candidates[1] || null, battle.candidates[2] || null];
+
+      const totalVotes = slots.reduce((sum, c) => {
+        const n = c && Number.isFinite(c.votesNum) ? c.votesNum : 0;
+        return sum + n;
+      }, 0);
+
+      const outcomeLabel = winnerOutcomeLabel(mode);
+      const challengerLabel = challengerOutcomeLabel(mode);
+      const hasVotes = totalVotes > 0;
+      const winnerShare = candidateVoteShare(slots[0], totalVotes);
+      const loser1Share = candidateVoteShare(slots[1], totalVotes);
+      const loser2Share = candidateVoteShare(slots[2], totalVotes);
+
+      // Card wrapper
+      const card = document.createElement('section');
+      card.className = [
+        'snap-start shrink-0 w-[85vw] md:w-auto',
+        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-5 space-y-5',
+        'flex flex-col'
+      ].join(' ');
+
+      // Hero candidate
+      const heroSection = renderCandidateSection(
+        slots[0], true, outcomeLabel,
+        hasVotes && Number.isFinite(winnerShare), winnerShare
+      );
+      // Inject constituency into hero's seat span
+      if (heroSection._seatSpan === undefined) {
+        // find it inside info._seatSpan
+      }
+      // Traverse to set constituency text
+      const seatSpan = heroSection.querySelector('span:last-of-type');
+      // More reliable: get the info div's last span inside the flex row
+      const metaRow = heroSection.querySelectorAll('.flex.items-center.justify-center')[0];
+      if (metaRow) {
+        const spans = metaRow.querySelectorAll('span');
+        if (spans.length > 0) spans[spans.length - 1].textContent = battle.constituency || '—';
+      }
+      card.appendChild(heroSection);
+
+      // VS divider
+      const vsDivider = document.createElement('div');
+      vsDivider.className = 'relative flex items-center py-1';
+      const line1 = document.createElement('div');
+      line1.className = 'flex-grow border-t border-stone-200';
+      const vsLabel = document.createElement('span');
+      vsLabel.className = 'flex-shrink mx-3 bg-stone-900 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-full';
+      vsLabel.textContent = 'vs';
+      const line2 = document.createElement('div');
+      line2.className = 'flex-grow border-t border-stone-200';
+      vsDivider.appendChild(line1);
+      vsDivider.appendChild(vsLabel);
+      vsDivider.appendChild(line2);
+      card.appendChild(vsDivider);
+
+      // Challengers grid
+      const grid = document.createElement('div');
+      grid.className = 'grid grid-cols-2 gap-3';
+
+      const loser1Wrap = document.createElement('div');
+      loser1Wrap.className = 'border-r border-stone-100 pr-3';
+      loser1Wrap.appendChild(renderCandidateSection(
+        slots[1], false, challengerLabel,
+        hasVotes && Number.isFinite(loser1Share), loser1Share
+      ));
+      grid.appendChild(loser1Wrap);
+
+      const loser2Wrap = document.createElement('div');
+      loser2Wrap.appendChild(renderCandidateSection(
+        slots[2], false, challengerLabel,
+        hasVotes && Number.isFinite(loser2Share), loser2Share
+      ));
+      grid.appendChild(loser2Wrap);
+
+      card.appendChild(grid);
+
+      // Optional story CTA
+      if (battle.storyUrl) {
+        const cta = document.createElement('a');
+        cta.href = battle.storyUrl;
+        cta.target = '_blank';
+        cta.rel = 'noopener';
+        cta.className = 'mt-auto pt-3 text-xs font-semibold text-stone-500 hover:text-stone-900 flex items-center gap-1 border-t border-stone-100';
+        cta.innerHTML = 'Read Full Story <span class="material-symbols-outlined text-[14px]">arrow_forward</span>';
+        card.appendChild(cta);
+      }
+
+      return card;
+    }
+
+    // ── Search + render ───────────────────────────────────────────────────────
+
+    function filterBattles(battles, query) {
+      const q = String(query || '').trim().toLowerCase();
+      if (!q) return battles;
+      return battles.filter((b) => {
+        if (b.constituency.toLowerCase().includes(q)) return true;
+        if (b.state.toLowerCase().includes(q)) return true;
+        return b.candidates.some(
+          (c) => (c.name || '').toLowerCase().includes(q) || (c.party || '').toLowerCase().includes(q)
+        );
+      });
+    }
+
+    function render(battles) {
+      listEl.innerHTML = '';
+      const q = searchEl.value;
+      const visible = filterBattles(battles, q);
+
+      if (!battles.length) {
+        metaEl.textContent = 'No battles found for the selected query.';
+        return;
+      }
+
+      const viewText = VIEW_PARAM === 'before' ? 'Before Results' : VIEW_PARAM === 'after' ? 'After Results' : 'Auto';
+      metaEl.textContent = `Showing ${visible.length} of ${battles.length} battle${battles.length === 1 ? '' : 's'} | View: ${viewText}`;
+
+      if (!visible.length) {
+        const empty = document.createElement('p');
+        empty.className = 'text-stone-400 text-sm col-span-3 py-8 text-center';
+        empty.textContent = 'No results match your search.';
+        listEl.appendChild(empty);
+        return;
+      }
+
+      visible.forEach((battle) => listEl.appendChild(renderBattleCard(battle)));
+    }
+
+    async function init() {
+      try {
+        const rows = await loadRows();
+        allBattles = buildBattles(rows);
+        const filtered = BATTLE_PARAM
+          ? allBattles.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM))
+          : allBattles;
+        allBattles = filtered;
+        render(allBattles);
+      } catch (err) {
+        errorEl.textContent = `Failed to load key battles: ${err && err.message ? err.message : err}`;
+        metaEl.textContent = '';
+      }
+    }
+
+    searchEl.addEventListener('input', () => render(allBattles));
+
+    init();
+  </script>
+</body>
+</html>
