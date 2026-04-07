@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Key Battles Widget</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
@@ -73,9 +73,9 @@
             "full": "0.75rem"
           },
           "fontFamily": {
-            "headline": ["Work Sans"],
-            "body": ["Inter"],
-            "label": ["Inter"]
+            "headline": ["Playfair Display", "serif"],
+            "body": ["Roboto Slab", "serif"],
+            "label": ["Roboto Slab", "serif"]
           }
         },
       },
@@ -87,8 +87,23 @@
     }
     .hide-scrollbar::-webkit-scrollbar { display: none; }
     .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    .won-badge { background-color: #8CC63F; }
-    .leading-badge { background-color: #2563eb; }
+    .won-badge { background-color: #4CAF50; }
+    .leading-badge { background-color: #81C784; color: #1B5E20 !important; }
+    .won-bar { background-color: #4CAF50; }
+    .leading-bar { background-color: #81C784; }
+    .lost-bar { background-color: #EF5350; }
+    .trailing-bar { background-color: #E57373; }
+    .trailing-label { color: #E57373; }
+    @keyframes barLoop {
+      0%      { width: 0%; }
+      50%     { width: var(--bar-w); }
+      87.5%   { width: var(--bar-w); }
+      87.51%  { width: 0%; }
+      100%    { width: 0%; }
+    }
+    .bar-counting {
+      animation: barLoop 1.6s ease-in infinite;
+    }
     body { min-height: max(884px, 100dvh); }
   </style>
 </head>
@@ -609,7 +624,7 @@
       return div;
     }
 
-    function makeVoteShareBar(share, barColorClass, labelText, valueText) {
+    function makeVoteShareBar(share, barColorClass, labelText, valueText, animate) {
       const wrap = document.createElement('div');
       wrap.className = 'w-full mt-2';
       const row = document.createElement('div');
@@ -625,8 +640,10 @@
       const track = document.createElement('div');
       track.className = 'h-1.5 rounded-full bg-stone-200 w-full';
       const fill = document.createElement('div');
-      fill.className = `h-full rounded-full ${barColorClass}`;
-      fill.style.width = `${Math.max(2, Math.min(100, share))}%`;
+      const barW = `${Math.max(2, Math.min(100, share))}%`;
+      fill.className = `h-full rounded-full ${barColorClass}${animate ? ' bar-counting' : ''}`;
+      fill.style.setProperty('--bar-w', barW);
+      if (!animate) fill.style.width = barW;
       track.appendChild(fill);
       wrap.appendChild(track);
       return wrap;
@@ -684,59 +701,46 @@
         info.className = 'pt-2 w-full';
 
         const name = document.createElement('h2');
-        name.className = 'text-xl font-extrabold font-headline uppercase leading-tight tracking-tight';
+        name.className = 'text-base font-bold font-headline uppercase leading-tight tracking-tight mt-1';
         name.textContent = (cand && cand.name) ? cand.name : 'Not set';
         info.appendChild(name);
 
-        const meta = document.createElement('div');
-        meta.className = 'flex items-center justify-center gap-3 mt-2 flex-wrap';
+        // Row 1: party + alliance chips
+        const chipsRow = document.createElement('div');
+        chipsRow.className = 'flex items-center justify-center gap-2 mt-2 flex-wrap';
 
         const party = document.createElement('span');
         party.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
         party.textContent = (cand && cand.party) ? cand.party : '—';
         applyChipColor(party, partyColorFromSheet(cand && cand.party));
-        meta.appendChild(party);
-
-        if (cand && cand.party && cand.alliance) {
-          const divider = document.createElement('div');
-          divider.className = 'h-4 w-px bg-stone-300';
-          meta.appendChild(divider);
-        }
+        chipsRow.appendChild(party);
 
         if (cand && cand.alliance) {
           const alliance = document.createElement('span');
           alliance.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
           alliance.textContent = cand.alliance;
           applyChipColor(alliance, allianceColorFromSheet(cand.alliance));
-          meta.appendChild(alliance);
+          chipsRow.appendChild(alliance);
         }
 
-        if (cand && (cand.party || cand.alliance)) {
-          const divider = document.createElement('div');
-          divider.className = 'h-4 w-px bg-stone-300';
-          meta.appendChild(divider);
-        }
-
-        const seat = document.createElement('span');
-        seat.className = 'text-stone-900 text-base font-semibold font-headline';
-        seat.textContent = ''; // filled by caller via data-seat
-        meta.dataset && (meta.dataset.seatSlot = '1');
-        meta.appendChild(seat);
-        info.appendChild(meta);
-        info._seatSpan = seat;
+        info.appendChild(chipsRow);
 
         if (showVoteShare && Number.isFinite(share)) {
           const metric = metricLabelAndValue(mode, cand, share);
-          info.appendChild(makeVoteShareBar(share, 'won-badge', metric.label, metric.value));
+          const winnerBarClass = mode === 'counting' ? 'leading-bar' : 'won-bar';
+          info.appendChild(makeVoteShareBar(share, winnerBarClass, metric.label, metric.value, mode === 'counting'));
         }
 
         wrap.appendChild(info);
         return wrap;
       } else {
         // Small challenger card
+        // Use justify-between so chips+bar always align at the same level
+        // regardless of whether the name wraps to 1 or 2 lines
         const wrap = document.createElement('div');
-        wrap.className = 'flex flex-col items-start space-y-1.5';
+        wrap.className = 'flex flex-col justify-between h-full gap-2';
 
+        // Top: avatar + outcome label + name
         const topRow = document.createElement('div');
         topRow.className = 'flex items-start gap-2.5';
         topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
@@ -745,16 +749,20 @@
         if (outcomeLabelText) {
           const outcome = document.createElement('span');
           const isTrailing = outcomeLabelText.toLowerCase() === 'trailing';
-          outcome.className = `text-[10px] font-bold uppercase ${isTrailing ? 'text-blue-700' : 'text-red-600'}`;
+          outcome.className = `text-[10px] font-bold uppercase ${isTrailing ? 'trailing-label' : 'text-red-600'}`;
           outcome.textContent = outcomeLabelText;
           textWrap.appendChild(outcome);
         }
         const nm = document.createElement('h4');
-        nm.className = 'text-xs font-bold font-headline leading-tight';
+        nm.className = 'text-xs font-bold font-headline leading-tight uppercase';
         nm.textContent = (cand && cand.name) ? cand.name : 'Not set';
         textWrap.appendChild(nm);
         topRow.appendChild(textWrap);
         wrap.appendChild(topRow);
+
+        // Bottom: chips + vote bar — always anchored to the same level
+        const bottom = document.createElement('div');
+        bottom.className = 'flex flex-col gap-1';
 
         const partyRow = document.createElement('div');
         partyRow.className = 'flex items-center gap-1.5 flex-wrap w-full';
@@ -779,18 +787,23 @@
           metricText.textContent = metric.value;
           partyRow.appendChild(metricText);
         }
-        wrap.appendChild(partyRow);
+        bottom.appendChild(partyRow);
 
         if (showVoteShare && Number.isFinite(share)) {
           const track = document.createElement('div');
           track.className = 'h-1 bg-stone-200 rounded-full w-full';
           const fill = document.createElement('div');
-          fill.className = 'h-full bg-stone-400 rounded-full';
-          fill.style.width = `${Math.max(2, Math.min(100, share))}%`;
+          const fillClass = mode === 'counting' ? 'trailing-bar' : 'lost-bar';
+          const animate = mode === 'counting';
+          const barW = `${Math.max(2, Math.min(100, share))}%`;
+          fill.className = `h-full rounded-full ${fillClass}${animate ? ' bar-counting' : ''}`;
+          fill.style.setProperty('--bar-w', barW);
+          if (!animate) fill.style.width = barW;
           track.appendChild(fill);
-          wrap.appendChild(track);
+          bottom.appendChild(track);
         }
 
+        wrap.appendChild(bottom);
         return wrap;
       }
     }
@@ -819,23 +832,17 @@
         'flex flex-col'
       ].join(' ');
 
+      // Constituency heading — top of card, highest hierarchy
+      const constituencyHeading = document.createElement('h3');
+      constituencyHeading.className = 'text-lg font-extrabold font-headline tracking-tight text-stone-900 text-center';
+      constituencyHeading.textContent = battle.constituency || '—';
+      card.appendChild(constituencyHeading);
+
       // Hero candidate
       const heroSection = renderCandidateSection(
         slots[0], true, outcomeLabel,
         hasVotes && Number.isFinite(winnerShare), winnerShare, mode
       );
-      // Inject constituency into hero's seat span
-      if (heroSection._seatSpan === undefined) {
-        // find it inside info._seatSpan
-      }
-      // Traverse to set constituency text
-      const seatSpan = heroSection.querySelector('span:last-of-type');
-      // More reliable: get the info div's last span inside the flex row
-      const metaRow = heroSection.querySelectorAll('.flex.items-center.justify-center')[0];
-      if (metaRow) {
-        const spans = metaRow.querySelectorAll('span');
-        if (spans.length > 0) spans[spans.length - 1].textContent = battle.constituency || '—';
-      }
       card.appendChild(heroSection);
 
       // VS divider
@@ -855,10 +862,10 @@
 
       // Challengers grid
       const grid = document.createElement('div');
-      grid.className = 'grid grid-cols-2 gap-3';
+      grid.className = 'grid grid-cols-2 gap-3 items-stretch';
 
       const loser1Wrap = document.createElement('div');
-      loser1Wrap.className = 'border-r border-stone-100 pr-3';
+      loser1Wrap.className = 'border-r border-stone-100 pr-3 flex flex-col';
       loser1Wrap.appendChild(renderCandidateSection(
         slots[1], false, challengerLabel,
         hasVotes && Number.isFinite(loser1Share), loser1Share, mode
@@ -866,6 +873,7 @@
       grid.appendChild(loser1Wrap);
 
       const loser2Wrap = document.createElement('div');
+      loser2Wrap.className = 'flex flex-col';
       loser2Wrap.appendChild(renderCandidateSection(
         slots[2], false, challengerLabel,
         hasVotes && Number.isFinite(loser2Share), loser2Share, mode
