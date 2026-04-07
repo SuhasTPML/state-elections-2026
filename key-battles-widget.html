@@ -738,7 +738,7 @@
         wrap.className = 'flex flex-col items-start space-y-1.5';
 
         const topRow = document.createElement('div');
-        topRow.className = 'flex items-center gap-2.5';
+        topRow.className = 'flex items-start gap-2.5';
         topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
 
         const textWrap = document.createElement('div');
@@ -757,7 +757,7 @@
         wrap.appendChild(topRow);
 
         const partyRow = document.createElement('div');
-        partyRow.className = 'flex items-center gap-1.5 flex-wrap';
+        partyRow.className = 'flex items-center gap-1.5 flex-wrap w-full';
         const partyBadge = document.createElement('div');
         partyBadge.className = 'w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase';
         partyBadge.textContent = (cand && cand.party) ? cand.party : '—';
@@ -773,11 +773,11 @@
         }
 
         if (showVoteShare && Number.isFinite(share)) {
-          const pct = document.createElement('span');
-          pct.className = 'text-[10px] text-stone-500 font-semibold';
+          const metricText = document.createElement('span');
+          metricText.className = 'text-[10px] text-stone-500 font-semibold ml-auto text-right';
           const metric = metricLabelAndValue(mode, cand, share);
-          pct.textContent = metric.value;
-          partyRow.appendChild(pct);
+          metricText.textContent = metric.value;
+          partyRow.appendChild(metricText);
         }
         wrap.appendChild(partyRow);
 
