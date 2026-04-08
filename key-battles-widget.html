@@ -239,6 +239,11 @@
     const listEl = document.getElementById('list');
     const searchEl = document.getElementById('search-input');
     const stateTabsEl = document.getElementById('stateTabs');
+    const carouselEl = document.getElementById('carousel-progress');
+
+    // Hide tabs and search immediately while loading — avoids flash of UI before data arrives
+    stateTabsEl.style.display = 'none';
+    searchEl.closest('.mb-5').style.display = 'none';
 
     let allBattles = [];
     let PARTY_COLORS = new Map();
@@ -1104,8 +1109,12 @@
             (b.constituency || '').toLowerCase().includes(cq)
           );
           currentStateFilter = ''; // bypass state filter in render()
-          stateTabsEl.style.display = 'none';
-          searchEl.closest('.mb-5').style.display = 'none';
+          if (carouselEl) carouselEl.style.display = 'none';
+          // tabs and search stay hidden (already hidden during load)
+        } else {
+          // Restore tabs and search now that data is ready
+          if (!HIDE_TABS) stateTabsEl.style.display = '';
+          searchEl.closest('.mb-5').style.display = '';
         }
         allBattles = filtered;
         render(allBattles);
