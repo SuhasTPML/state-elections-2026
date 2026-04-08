@@ -2294,7 +2294,7 @@
     async function loadElectionDataForState(stateKey, cfg){
       resetElectionCaches();
       await ensureSheetCsvUrlsReady();
-      if (!RESULTS_SHEET_URL) return false;
+      if (!RESULTS_SHEET_URL && !API_URL_PARAM) return false;
       const staticMode = staticCsvCacheMode();
 
       if (!cachedResultsRows) {
