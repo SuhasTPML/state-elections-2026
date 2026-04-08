@@ -546,14 +546,8 @@
 
     const RESULTS_TAB_NAME = (QUERY_PARAMS.get('resultsTab') || 'Constituency_Static').trim();
     const PARTY_WISE_TAB_PARAM = (QUERY_PARAMS.get('partyWiseTab') || '').trim();
-    const USE_COMBINED_RESULTS_TAB = (
-      !PARTY_WISE_TAB_PARAM &&
-      /(^|_)combined(_|$)/i.test(RESULTS_TAB_NAME)
-    );
-    const PARTY_WISE_TAB_NAME = (
-      PARTY_WISE_TAB_PARAM ||
-      (USE_COMBINED_RESULTS_TAB ? RESULTS_TAB_NAME : 'statewise_party_wise')
-    ).trim();
+    // Default to the results tab itself — no separate party-wise tab in current sheet structure
+    const PARTY_WISE_TAB_NAME = (PARTY_WISE_TAB_PARAM || RESULTS_TAB_NAME).trim();
     const RESULTS_LIVE_TAB_NAME = (
       QUERY_PARAMS.get('resultsLiveTab') ||
       QUERY_PARAMS.get('liveResultsTab') ||
@@ -2433,24 +2427,21 @@
 
     function _startFullStaticCacheLoad(staticMode) {
       if (_fullStaticCachePromise) return;
+      // Only re-fetch tabs that had stateFilter (results, mappingLive).
+      // Global tabs (mapping, parties, alliances) are already in browser cache from Phase 1
+      // and already assigned to cachedXxx vars — reuse them directly.
       _fullStaticCachePromise = Promise.all([
         loadSheetValues(RESULTS_TAB_NAME, staticMode).catch(() => null),
-        PARTY_WISE_TAB_NAME !== RESULTS_TAB_NAME
-          ? loadSheetValues(PARTY_WISE_TAB_NAME, staticMode).catch(() => null)
-          : Promise.resolve(null),
-        loadSheetValues(MAPPING_TAB_NAME, 'force-cache').catch(() => null),
         loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store').catch(() => null),
-        loadSheetValues(PARTIES_TAB_NAME, 'force-cache').catch(() => null),
-        loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache').catch(() => null),
-      ]).then(function([results, partyWiseSep, mapping, mappingLive, parties, alliances]) {
+      ]).then(function([results, mappingLive]) {
         if (results) {
           _fullStaticCache = {
             results,
-            partyWise: partyWiseSep || results,
-            mapping,
-            mappingLive,
-            parties,
-            alliances
+            partyWise: results,
+            mapping: cachedMappingRows,
+            mappingLive: mappingLive || cachedMappingLiveRows,
+            parties: cachedPartyRows,
+            alliances: cachedAllianceRows
           };
         }
       }).catch(function() {});
