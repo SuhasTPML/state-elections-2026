@@ -248,7 +248,16 @@ const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
 const TOP_BUCKET_LIMIT = 5;
 const OTHERS_KEY = '__others__';
 
-// Google Sheet source (no JSON fallback)
+// Seat results source
+const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbwpLhDraM7cBNxqi3kLJ3B7VuJYWqVI469PzXOiz22HPGjiWxQl7D6Nr4GtG2PXLBYm/exec';
+const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
+const API_URL_PARAM = (
+  QUERY_PARAMS.get('apiUrl') ||
+  QUERY_PARAMS.get('appsScriptUrl') ||
+  DEFAULT_API_URL
+).trim();
+
+// Legacy Google Sheet source (kept only as explicit fallback)
 const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
 const DEFAULT_PUBLISHED_SHEET_URL = '';
 const DEFAULT_PUBLISHED_GIDS = Object.freeze({
@@ -282,6 +291,13 @@ const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map'
 const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Alliance_2026').trim();
 const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
+const REFRESH_MS = (() => {
+  const refreshMs = parseNumber(QUERY_PARAMS.get('refreshMs'));
+  if (refreshMs != null && refreshMs > 0) return refreshMs;
+  const refreshSeconds = parseNumber(QUERY_PARAMS.get('refreshSeconds'));
+  if (refreshSeconds != null && refreshSeconds > 0) return refreshSeconds * 1000;
+  return 0;
+})();
 
 const PARTY_YEAR_CSV_URL_PARAM = (
   QUERY_PARAMS.get('partyYearCsvUrl') ||
@@ -317,7 +333,7 @@ const MAPPING_LIVE_GID_PARAM = (QUERY_PARAMS.get('mappingLiveGid') || '').trim()
 const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
 const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
 
-const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || '').trim();
+const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
 const PUBLISHED_SHEET_KEY = (PUBLISHED_SHEET_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_SHEET_URL_PARAM) || '').trim();
 const USE_DEFAULT_PUBLISHED_GIDS = !SHEET_ID && (PUBLISHED_SHEET_KEY === DEFAULT_PUBLISHED_SHEET_KEY);
 
@@ -407,6 +423,14 @@ function buildGooglePublishedCsvUrl(publishedKey, gid){
 
 function buildGooglePublishedHtmlUrl(publishedKey){
   return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+}
+
+function buildSheetValuesApiUrl(apiUrl, sheetId, tabName){
+  const url = new URL(apiUrl, location.href);
+  url.searchParams.set('action', 'values');
+  url.searchParams.set('sheetId', sheetId);
+  url.searchParams.set('tab', tabName);
+  return url.toString();
 }
 
 function normalizeTabLookupKey(value){
@@ -652,6 +676,43 @@ async function loadCsv(url, label, cacheMode = 'force-cache'){
   return normalizeCsvRows(d3.csvParse(text));
 }
 
+function rowsFromSheetValuesPayload(payload){
+  const values = Array.isArray(payload && payload.values) ? payload.values : [];
+  if (!values.length) return [];
+  const headers = (values[0] || []).map((value) => normalizeHeaderKey(value));
+  return values.slice(1).map((row) => {
+    const out = {};
+    headers.forEach((header, index) => {
+      if (!header) return;
+      out[header] = row && row[index] != null ? row[index] : '';
+    });
+    return out;
+  });
+}
+
+async function loadSheetValues(apiUrl, sheetId, tabName, label, cacheMode = 'force-cache'){
+  if (!apiUrl) throw new Error('Missing apiUrl');
+  if (!sheetId) throw new Error('Missing sheetId');
+  if (!tabName) return [];
+
+  const response = await fetch(buildSheetValuesApiUrl(apiUrl, sheetId, tabName), { cache: cacheMode });
+  let payload = null;
+  try {
+    payload = await response.json();
+  } catch (e) {
+    throw new Error(`${label} returned invalid JSON`);
+  }
+
+  if (!response.ok) {
+    const message = firstNonEmpty(payload || {}, ['error', 'message']) || `${label} HTTP ${response.status}`;
+    throw new Error(message);
+  }
+  if (payload && payload.error) {
+    throw new Error(firstNonEmpty(payload, ['error', 'message']) || `${label} failed`);
+  }
+  return rowsFromSheetValuesPayload(payload);
+}
+
 function parsePartyMasterRows(rows){
   const partyMap = new Map();
   (rows || []).forEach((row) => {
@@ -867,6 +928,8 @@ let DATA = null;              // normalized runtime data built from Google Sheet
 let currentStateKey = null;
 let currentYear = null;
 let viewMode = 'alliance';    // 'party' | 'alliance'
+let refreshTimer = null;
+let refreshInFlight = false;
 
 // D3 selections
 let svg, chartGroup, labelsGroup;
@@ -880,6 +943,65 @@ const STATE_MINI_MAP_SOURCES = {
 };
 const miniMapCache = new Map();
 const miniMapInflight = new Map();
+
+function applyDataAndRender(nextData, preserveSelection = false) {
+  if (!nextData || !Array.isArray(nextData.states) || nextData.states.length === 0) {
+    throw new Error('No valid state rows found in results sheet');
+  }
+
+  const previousStateKey = preserveSelection ? currentStateKey : null;
+  const previousYear = preserveSelection ? currentYear : null;
+  DATA = nextData;
+
+  const stateTabsEl = document.getElementById('state-tabs');
+  stateTabsEl.innerHTML = '';
+  buildStateTabs();
+
+  let targetStateKey = DATA.states[0].key;
+  if (previousStateKey && DATA.states.some((state) => state.key === previousStateKey)) {
+    targetStateKey = previousStateKey;
+  }
+
+  currentStateKey = targetStateKey;
+  const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
+  const years = Array.isArray(state.years) ? state.years : [];
+  currentYear = years[years.length - 1] || null;
+  if (previousYear && years.includes(previousYear)) {
+    currentYear = previousYear;
+  }
+
+  ensureMiniMapLoaded(targetStateKey);
+  setActiveStateTab(targetStateKey);
+  buildYearTabs(state);
+  setActiveYearTab(currentYear);
+  initSvg();
+  render();
+}
+
+async function refreshDataInBackground() {
+  if (refreshInFlight || !DATA) return;
+
+  const errorEl = document.getElementById('error-msg');
+  refreshInFlight = true;
+  errorEl.style.color = '#6b7280';
+  errorEl.textContent = LANG === 'kn' ? 'ಡೇಟಾ ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ...' : 'Refreshing data...';
+
+  try {
+    const nextData = await loadDataFromGoogleSheet();
+    applyDataAndRender(nextData, true);
+    errorEl.textContent = '';
+    errorEl.style.color = '#c52626';
+  } catch (e) {
+    const msg = String(e && e.message ? e.message : e);
+    errorEl.style.color = '#6b7280';
+    errorEl.textContent = LANG === 'kn'
+      ? `ಹಳೆಯ ಡೇಟಾ ತೋರಿಸಲಾಗುತ್ತಿದೆ. ನವೀಕರಣ ವಿಫಲವಾಗಿದೆ: ${msg}`
+      : `Showing cached data. Refresh failed: ${msg}`;
+    console.error('[seat-results-widget] refresh failed:', e);
+  } finally {
+    refreshInFlight = false;
+  }
+}
 
 // ─────────────────────────────────────────────
 //  Load data
@@ -899,28 +1021,50 @@ async function init() {
   document.getElementById('lbl-alliance').classList.remove('inactive');
 
   try {
-    DATA = await loadDataFromGoogleSheet();
-    if (!DATA || !Array.isArray(DATA.states) || DATA.states.length === 0) {
-      throw new Error('No valid state rows found in results sheet');
-    }
+    const nextData = await loadDataFromGoogleSheet();
+    applyDataAndRender(nextData, false);
     errorEl.textContent = '';
     errorEl.style.color = '#c52626';
-    buildStateTabs();
-    loadState(DATA.states[0].key);
+    if (REFRESH_MS > 0) {
+      refreshTimer = setInterval(refreshDataInBackground, REFRESH_MS);
+    }
   } catch(e) {
     const msg = String(e && e.message ? e.message : e);
     errorEl.style.color = '#c52626';
     errorEl.textContent =
-      `Could not load Google Sheet data. ${msg}`;
+      `Could not load seat results data. ${msg}`;
     console.error('[seat-results-widget] load failed:', e);
   }
 }
 
 async function loadDataFromGoogleSheet(){
+  if (API_URL_PARAM) {
+    if (!SHEET_ID) {
+      throw new Error('Missing sheetId. Provide sheetId or sheetUrl when using apiUrl.');
+    }
+    const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
+      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_TAB_NAME, `${PARTY_YEAR_TAB_NAME} API`, 'force-cache'),
+      loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_TAB_NAME, `${MAPPING_TAB_NAME} API`, 'force-cache'),
+      MAPPING_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_LIVE_TAB_NAME, `${MAPPING_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([]),
+      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTIES_TAB_NAME, `${PARTIES_TAB_NAME} API`, 'force-cache'),
+      loadSheetValues(API_URL_PARAM, SHEET_ID, ALLIANCES_TAB_NAME, `${ALLIANCES_TAB_NAME} API`, 'force-cache'),
+      PARTY_YEAR_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME, `${PARTY_YEAR_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([])
+    ]);
+    if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
+      throw new Error(
+        `Expected party-wise year-wise rows in ${PARTY_YEAR_TAB_NAME}. `
+        + `Provide columns like state_key, year, party_code, wins, leads.`
+      );
+    }
+    const summaryRows = mergeSummaryRowsWithLivePartywise(rawSummaryRows, livePartywiseRows);
+    const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
+    return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
+  }
+
   await ensureSheetCsvUrlsReady();
   if (!PARTY_YEAR_SHEET_URL || !MAPPING_SHEET_URL) {
     throw new Error(
-      `Missing sheet URLs. Ensure results/mapping tabs are published. Tabs: ${PARTY_YEAR_TAB_NAME}, ${MAPPING_TAB_NAME}`
+      `Missing sheet URLs. Provide apiUrl or ensure results/mapping tabs are published. Tabs: ${PARTY_YEAR_TAB_NAME}, ${MAPPING_TAB_NAME}`
     );
   }
   const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
