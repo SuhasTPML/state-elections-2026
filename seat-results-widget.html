@@ -249,7 +249,7 @@ const TOP_BUCKET_LIMIT = 5;
 const OTHERS_KEY = '__others__';
 
 // Seat results source
-const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbxG4GLXtF7T2-_zwpBFTttpvgHhrj0TwrlrCLiR3jRsmoZl9JOSeYf-YsBDSVRxHtMY/exec';
+const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
 const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
 const API_URL_PARAM = (
   QUERY_PARAMS.get('apiUrl') ||
@@ -291,6 +291,7 @@ const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map'
 const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Alliance_2026').trim();
 const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
+const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
 const REFRESH_MS = (() => {
   const refreshMs = parseNumber(QUERY_PARAMS.get('refreshMs'));
   if (refreshMs != null && refreshMs > 0) return refreshMs;
@@ -425,11 +426,12 @@ function buildGooglePublishedHtmlUrl(publishedKey){
   return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
 }
 
-function buildSheetValuesApiUrl(apiUrl, sheetId, tabName){
+function buildSheetValuesApiUrl(apiUrl, sheetId, tabName, stateFilter = ''){
   const url = new URL(apiUrl, location.href);
   url.searchParams.set('action', 'values');
   url.searchParams.set('sheetId', sheetId);
   url.searchParams.set('tab', tabName);
+  if (stateFilter) url.searchParams.set('stateFilter', stateFilter);
   return url.toString();
 }
 
@@ -690,12 +692,12 @@ function rowsFromSheetValuesPayload(payload){
   });
 }
 
-async function loadSheetValues(apiUrl, sheetId, tabName, label, cacheMode = 'force-cache'){
+async function loadSheetValues(apiUrl, sheetId, tabName, label, cacheMode = 'force-cache', stateFilter = ''){
   if (!apiUrl) throw new Error('Missing apiUrl');
   if (!sheetId) throw new Error('Missing sheetId');
   if (!tabName) return [];
 
-  const response = await fetch(buildSheetValuesApiUrl(apiUrl, sheetId, tabName), { cache: cacheMode });
+  const response = await fetch(buildSheetValuesApiUrl(apiUrl, sheetId, tabName, stateFilter), { cache: cacheMode });
   let payload = null;
   try {
     payload = await response.json();
@@ -1021,12 +1023,19 @@ async function init() {
   document.getElementById('lbl-alliance').classList.remove('inactive');
 
   try {
-    const nextData = await loadDataFromGoogleSheet();
+    // Phase 1: load filtered for initial state (fast render)
+    const nextData = await loadDataFromGoogleSheet(INITIAL_STATE_FILTER);
     applyDataAndRender(nextData, false);
     errorEl.textContent = '';
     errorEl.style.color = '#c52626';
     if (REFRESH_MS > 0) {
       refreshTimer = setInterval(refreshDataInBackground, REFRESH_MS);
+    }
+    // Phase 2: if we loaded a filtered view, fetch all states in background
+    if (INITIAL_STATE_FILTER) {
+      loadDataFromGoogleSheet('').then(fullData => {
+        applyDataAndRender(fullData, true);
+      }).catch(() => {});
     }
   } catch(e) {
     const msg = String(e && e.message ? e.message : e);
@@ -1037,18 +1046,19 @@ async function init() {
   }
 }
 
-async function loadDataFromGoogleSheet(){
+async function loadDataFromGoogleSheet(stateFilter = ''){
   if (API_URL_PARAM) {
     if (!SHEET_ID) {
       throw new Error('Missing sheetId. Provide sheetId or sheetUrl when using apiUrl.');
     }
+    // stateFilter applied only to summary (large) tabs; mapping/parties/alliances are small and global
     const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
-      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_TAB_NAME, `${PARTY_YEAR_TAB_NAME} API`, 'force-cache'),
+      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_TAB_NAME, `${PARTY_YEAR_TAB_NAME} API`, 'force-cache', stateFilter),
       loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_TAB_NAME, `${MAPPING_TAB_NAME} API`, 'force-cache'),
       MAPPING_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_LIVE_TAB_NAME, `${MAPPING_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([]),
       loadSheetValues(API_URL_PARAM, SHEET_ID, PARTIES_TAB_NAME, `${PARTIES_TAB_NAME} API`, 'force-cache'),
       loadSheetValues(API_URL_PARAM, SHEET_ID, ALLIANCES_TAB_NAME, `${ALLIANCES_TAB_NAME} API`, 'force-cache'),
-      PARTY_YEAR_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME, `${PARTY_YEAR_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([])
+      PARTY_YEAR_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME, `${PARTY_YEAR_LIVE_TAB_NAME} API`, 'no-store', stateFilter).catch(() => []) : Promise.resolve([])
     ]);
     if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
       throw new Error(
