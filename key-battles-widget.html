@@ -470,67 +470,31 @@
     }
 
     async function loadRows() {
-      if (!CSV_URL_PARAM) {
-        try { return await loadSheetValues(TAB_NAME, 'no-store'); } catch (_) {}
+      if (!API_URL_PARAM || !SHEET_ID) {
+        throw new Error('Missing apiUrl or sheetId.');
       }
-      const csvUrl = await resolveCsvUrl({
-        csvUrlParam: CSV_URL_PARAM,
-        tabName: TAB_NAME,
-        gidParam: GID_PARAM,
-        fallbackTabNames: ['key_battles', 'key_battle']
-      });
-      const response = await fetch(csvUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Sheet CSV HTTP ${response.status}`);
-      const text = await response.text();
-      return normalizeRows(d3.csvParse(text));
+      return loadSheetValues(TAB_NAME, 'no-store');
     }
 
     async function loadLiveMappingRows() {
-      if (!MAPPING_LIVE_CSV_URL_PARAM) {
-        try { return await loadSheetValues(MAPPING_LIVE_TAB_NAME, 'no-store'); } catch (_) {}
+      if (!API_URL_PARAM || !SHEET_ID) {
+        throw new Error('Missing apiUrl or sheetId.');
       }
-      const csvUrl = await resolveCsvUrl({
-        csvUrlParam: MAPPING_LIVE_CSV_URL_PARAM,
-        tabName: MAPPING_LIVE_TAB_NAME,
-        gidParam: MAPPING_LIVE_GID_PARAM,
-        fallbackTabNames: ['live_alliance_2026', 'statewise_live_alliance_2026']
-      });
-      const response = await fetch(csvUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Live alliance mapping CSV HTTP ${response.status}`);
-      const text = await response.text();
-      return normalizeRows(d3.csvParse(text));
+      return loadSheetValues(MAPPING_LIVE_TAB_NAME, 'no-store');
     }
 
     async function loadPartyColorRows() {
-      if (!PARTIES_CSV_URL_PARAM) {
-        try { return await loadSheetValues(PARTIES_TAB_NAME, 'force-cache'); } catch (_) {}
+      if (!API_URL_PARAM || !SHEET_ID) {
+        throw new Error('Missing apiUrl or sheetId.');
       }
-      const csvUrl = await resolveCsvUrl({
-        csvUrlParam: PARTIES_CSV_URL_PARAM,
-        tabName: PARTIES_TAB_NAME,
-        gidParam: PARTIES_GID_PARAM,
-        fallbackTabNames: ['party_color', 'party_master']
-      });
-      const response = await fetch(csvUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Party color CSV HTTP ${response.status}`);
-      const text = await response.text();
-      return normalizeRows(d3.csvParse(text));
+      return loadSheetValues(PARTIES_TAB_NAME, 'force-cache');
     }
 
     async function loadAllianceColorRows() {
-      if (!ALLIANCES_CSV_URL_PARAM) {
-        try { return await loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache'); } catch (_) {}
+      if (!API_URL_PARAM || !SHEET_ID) {
+        throw new Error('Missing apiUrl or sheetId.');
       }
-      const csvUrl = await resolveCsvUrl({
-        csvUrlParam: ALLIANCES_CSV_URL_PARAM,
-        tabName: ALLIANCES_TAB_NAME,
-        gidParam: ALLIANCES_GID_PARAM,
-        fallbackTabNames: ['alliance_color', 'alliance_master']
-      });
-      const response = await fetch(csvUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Alliance color CSV HTTP ${response.status}`);
-      const text = await response.text();
-      return normalizeRows(d3.csvParse(text));
+      return loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache');
     }
 
     function parsePartyColors(rows) {

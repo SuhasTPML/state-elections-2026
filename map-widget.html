@@ -1196,16 +1196,16 @@
     }
 
     async function loadLanguageData(langKey){
-      await ensureSheetCsvUrlsReady();
       currentLang = normalizeLangKey(langKey);
       i18nStrings = new Map();
       i18nReserved = {};
 
       if (currentLang === 'kn') {
         if (!cachedI18nRows) {
-          try { cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels', 'force-cache'); } catch (_) {}
-          if (!cachedI18nRows && I18N_SHEET_URL)
-            cachedI18nRows = await loadCsv(I18N_SHEET_URL, `${I18N_TAB_NAME} sheet`, true, 'force-cache');
+          try {
+            if (!API_URL_PARAM || !SHEET_ID) throw new Error('Missing apiUrl or sheetId.');
+            cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels', 'force-cache');
+          } catch (_) {}
         }
         const parsed = parseI18nRows(cachedI18nRows || []);
         if (parsed.strings.size || Object.keys(parsed.reserved).length) {
@@ -2293,8 +2293,7 @@
 
     async function loadElectionDataForState(stateKey, cfg){
       resetElectionCaches();
-      await ensureSheetCsvUrlsReady();
-      if (!RESULTS_SHEET_URL && !API_URL_PARAM) return false;
+      if (!API_URL_PARAM || !SHEET_ID) return false;
       const staticMode = staticCsvCacheMode();
 
       if (_fullStaticCache) {
@@ -2317,12 +2316,12 @@
           loadSheetValues(PARTIES_TAB_NAME, 'force-cache').catch(() => null),
           loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache').catch(() => null),
         ]);
-        cachedResultsRows     = _results     || (RESULTS_SHEET_URL ? await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true, staticMode).catch(() => null) : null);
-        cachedPartyWiseRows   = separatePartyWise ? (_partyWise || (PARTY_WISE_SHEET_URL ? await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true, staticMode).catch(() => null) : null)) : cachedResultsRows;
-        cachedMappingRows     = _mapping     || (MAPPING_SHEET_URL ? await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
-        cachedMappingLiveRows = _mappingLive || (MAPPING_LIVE_SHEET_URL ? await loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME || 'mappingLive'} sheet`, true, 'no-store').catch(() => null) : null);
-        cachedPartyRows       = _parties     || (PARTIES_SHEET_URL ? await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
-        cachedAllianceRows    = _alliances   || (ALLIANCES_SHEET_URL ? await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
+        cachedResultsRows     = _results;
+        cachedPartyWiseRows   = separatePartyWise ? _partyWise : cachedResultsRows;
+        cachedMappingRows     = _mapping;
+        cachedMappingLiveRows = _mappingLive;
+        cachedPartyRows       = _parties;
+        cachedAllianceRows    = _alliances;
         // Phase 2: load all states in background for instant future state switches
         _startFullStaticCacheLoad(staticMode);
       }
@@ -2335,8 +2334,8 @@
         loadSheetValues(liveLookup, 'no-store', stateKey).catch(() => null),
         !sameliveTabs ? loadSheetValues(livePartyWiseLookup, 'no-store', stateKey).catch(() => null) : Promise.resolve(null),
       ]);
-      const liveResultsRows = _liveResults || (RESULTS_LIVE_SHEET_URL ? await loadCsv(RESULTS_LIVE_SHEET_URL, `${liveLookup} sheet`, true, 'no-store').catch(() => null) : null);
-      let livePartyWiseRows = sameliveTabs ? liveResultsRows : (_livePartyWiseSep || (PARTY_WISE_LIVE_SHEET_URL ? await loadCsv(PARTY_WISE_LIVE_SHEET_URL, `${livePartyWiseLookup} sheet`, true, 'no-store').catch(() => null) : null));
+      const liveResultsRows = _liveResults;
+      let livePartyWiseRows = sameliveTabs ? liveResultsRows : _livePartyWiseSep;
 
       const baseResultsData = getRowsForState(cachedResultsRows || [], stateKey);
       const liveResultsData = getRowsForState(liveResultsRows || [], stateKey);

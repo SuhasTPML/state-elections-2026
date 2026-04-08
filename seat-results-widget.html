@@ -1058,43 +1058,17 @@ async function init() {
 }
 
 async function loadDataFromGoogleSheet(stateFilter = ''){
-  if (API_URL_PARAM) {
-    if (!SHEET_ID) {
-      throw new Error('Missing sheetId. Provide sheetId or sheetUrl when using apiUrl.');
-    }
-    // stateFilter applied only to summary (large) tabs; mapping/parties/alliances are small and global
-    const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
-      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_TAB_NAME, `${PARTY_YEAR_TAB_NAME} API`, 'force-cache', stateFilter),
-      loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_TAB_NAME, `${MAPPING_TAB_NAME} API`, 'force-cache'),
-      MAPPING_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_LIVE_TAB_NAME, `${MAPPING_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([]),
-      loadSheetValues(API_URL_PARAM, SHEET_ID, PARTIES_TAB_NAME, `${PARTIES_TAB_NAME} API`, 'force-cache'),
-      loadSheetValues(API_URL_PARAM, SHEET_ID, ALLIANCES_TAB_NAME, `${ALLIANCES_TAB_NAME} API`, 'force-cache'),
-      PARTY_YEAR_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME, `${PARTY_YEAR_LIVE_TAB_NAME} API`, 'no-store', stateFilter).catch(() => []) : Promise.resolve([])
-    ]);
-    if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
-      throw new Error(
-        `Expected party-wise year-wise rows in ${PARTY_YEAR_TAB_NAME}. `
-        + `Provide columns like state_key, year, party_code, wins, leads.`
-      );
-    }
-    const summaryRows = mergeSummaryRowsWithLivePartywise(rawSummaryRows, livePartywiseRows);
-    const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
-    return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
+  if (!API_URL_PARAM || !SHEET_ID) {
+    throw new Error('Missing apiUrl or sheetId.');
   }
-
-  await ensureSheetCsvUrlsReady();
-  if (!PARTY_YEAR_SHEET_URL || !MAPPING_SHEET_URL) {
-    throw new Error(
-      `Missing sheet URLs. Provide apiUrl or ensure results/mapping tabs are published. Tabs: ${PARTY_YEAR_TAB_NAME}, ${MAPPING_TAB_NAME}`
-    );
-  }
+  // stateFilter applied only to summary (large) tabs; mapping/parties/alliances are small and global
   const [rawSummaryRows, mappingRows, mappingLiveRows, partyRows, allianceRows, livePartywiseRows] = await Promise.all([
-    loadCsv(PARTY_YEAR_SHEET_URL, `${PARTY_YEAR_TAB_NAME} sheet`, 'force-cache'),
-    loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, 'force-cache'),
-    MAPPING_LIVE_SHEET_URL ? loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME} sheet`, 'no-store') : Promise.resolve([]),
-    loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, 'force-cache'),
-    loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, 'force-cache'),
-    PARTY_YEAR_LIVE_SHEET_URL ? loadCsv(PARTY_YEAR_LIVE_SHEET_URL, `${PARTY_YEAR_LIVE_TAB_NAME} sheet`, 'no-store') : Promise.resolve([])
+    loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_TAB_NAME, `${PARTY_YEAR_TAB_NAME} API`, 'force-cache', stateFilter),
+    loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_TAB_NAME, `${MAPPING_TAB_NAME} API`, 'force-cache'),
+    MAPPING_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, MAPPING_LIVE_TAB_NAME, `${MAPPING_LIVE_TAB_NAME} API`, 'no-store').catch(() => []) : Promise.resolve([]),
+    loadSheetValues(API_URL_PARAM, SHEET_ID, PARTIES_TAB_NAME, `${PARTIES_TAB_NAME} API`, 'force-cache'),
+    loadSheetValues(API_URL_PARAM, SHEET_ID, ALLIANCES_TAB_NAME, `${ALLIANCES_TAB_NAME} API`, 'force-cache'),
+    PARTY_YEAR_LIVE_TAB_NAME ? loadSheetValues(API_URL_PARAM, SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME, `${PARTY_YEAR_LIVE_TAB_NAME} API`, 'no-store', stateFilter).catch(() => []) : Promise.resolve([])
   ]);
   if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
     throw new Error(
@@ -1102,8 +1076,7 @@ async function loadDataFromGoogleSheet(stateFilter = ''){
       + `Provide columns like state_key, year, party_code, wins, leads.`
     );
   }
-  const staticSummaryRows = rawSummaryRows;
-  const summaryRows = mergeSummaryRowsWithLivePartywise(staticSummaryRows, livePartywiseRows);
+  const summaryRows = mergeSummaryRowsWithLivePartywise(rawSummaryRows, livePartywiseRows);
   const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
   return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
 }
