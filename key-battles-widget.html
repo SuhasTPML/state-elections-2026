@@ -199,6 +199,7 @@
 
     const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
     const CONSTITUENCY_PARAM = (QUERY.get('constituency') || QUERY.get('ac') || QUERY.get('acName') || '').trim();
+    const HIDE_TABS = QUERY.get('hideTabs') === 'true';
     const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
@@ -1033,6 +1034,7 @@
         });
         stateTabsEl.appendChild(btn);
       });
+      if (HIDE_TABS) stateTabsEl.style.display = 'none';
     }
 
     function render(battles) {

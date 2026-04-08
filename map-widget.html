@@ -518,6 +518,7 @@
     const DEFAULT_MAP_HEIGHT = 900;
 
     const QUERY_PARAMS = new URLSearchParams(location.search);
+    const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
 
     // Fallback source so sheet data works even without query params.
     // Query params continue to take precedence when provided.
@@ -1248,6 +1249,7 @@
         });
         tabsEl.appendChild(btn);
       });
+      if (HIDE_TABS) tabsEl.style.display = 'none';
     }
 
     function setActiveTab(stateKey) {

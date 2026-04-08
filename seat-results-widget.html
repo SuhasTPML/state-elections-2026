@@ -292,6 +292,7 @@ const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Allia
 const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
 const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
+const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
 // Preferred display order of state tabs (matches map-widget)
 const STATE_TAB_ORDER = ['TAMIL_NADU', 'KERALA', 'WEST_BENGAL', 'ASSAM', 'PUDUCHERRY'];
 const REFRESH_MS = (() => {
@@ -967,6 +968,7 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   const stateTabsEl = document.getElementById('state-tabs');
   stateTabsEl.innerHTML = '';
   buildStateTabs();
+  if (HIDE_TABS) stateTabsEl.style.display = 'none';
 
   let targetStateKey = DATA.states[0].key;
   if (previousStateKey && DATA.states.some((state) => state.key === previousStateKey)) {
