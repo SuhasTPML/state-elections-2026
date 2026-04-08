@@ -198,6 +198,7 @@
     const QUERY = new URLSearchParams(location.search);
 
     const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
+    const CONSTITUENCY_PARAM = (QUERY.get('constituency') || QUERY.get('ac') || QUERY.get('acName') || '').trim();
     const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
@@ -1090,9 +1091,19 @@
         ALLIANCE_COLORS = parseAllianceColors(allianceColorRows);
         const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
         allBattles = buildBattles(rows, liveAllianceMapping);
-        const filtered = BATTLE_PARAM
+        let filtered = BATTLE_PARAM
           ? allBattles.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM))
           : allBattles;
+        if (CONSTITUENCY_PARAM) {
+          const cq = CONSTITUENCY_PARAM.toLowerCase();
+          filtered = filtered.filter((b) =>
+            slugify(b.constituency) === slugify(CONSTITUENCY_PARAM) ||
+            String(b.acNo || '').trim().toLowerCase() === cq ||
+            (b.constituency || '').toLowerCase().includes(cq)
+          );
+          stateTabsEl.style.display = 'none';
+          searchEl.closest('.mb-5').style.display = 'none';
+        }
         allBattles = filtered;
         render(allBattles);
       } catch (err) {
