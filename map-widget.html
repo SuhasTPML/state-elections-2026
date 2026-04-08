@@ -1047,7 +1047,7 @@
       }
     };
 
-    const DEFAULT_STATE = 'KERALA';
+    const DEFAULT_STATE = 'TAMIL_NADU';
     const COMPACT_GROUP_PADDING = 10;
     const svg = d3.select('#svg');
     const g = d3.select('#zoomlayer');
@@ -2878,6 +2878,10 @@
         bottomSheetEl.style.display = 'none';
         document.body.classList.remove('bottom-sheet-active');
         hideTooltip();
+        // Clear previous state's map immediately so stale paths aren't visible during load
+        g.selectAll('path.ac').remove();
+        g.selectAll('g.district-groups').remove();
+        legendEl.style.display = 'none';
 
         let geoData = null;
         if (cfg.mapType === 'svg') {

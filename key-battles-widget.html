@@ -130,10 +130,39 @@
       animation: barLoop 1.6s ease-in infinite;
     }
     body { min-height: max(884px, 100dvh); }
+    /* State tab bar */
+    #stateTabs {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+      margin-bottom: 20px;
+    }
+    #stateTabs::-webkit-scrollbar { display: none; }
+    .state-tab {
+      flex-shrink: 0;
+      padding: 4px 12px;
+      border: none;
+      border-radius: 20px;
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .state-tab:hover { background: #e5e7eb; }
+    .state-tab.active { background: #1f2937; color: white; }
   </style>
 </head>
 <body class="bg-background text-on-background font-body">
   <main class="px-4 pt-6">
+
+    <!-- State tabs -->
+    <div id="stateTabs"></div>
 
     <!-- Search bar -->
     <div class="mb-5 w-full">
@@ -196,8 +225,18 @@
     const PARTIES_GID_PARAM = (QUERY.get('partiesGid') || '').trim();
     const ALLIANCES_GID_PARAM = (QUERY.get('alliancesGid') || '').trim();
 
+    const STATE_TABS = [
+      { key: 'TAMIL_NADU',  label: 'Tamil Nadu' },
+      { key: 'KERALA',      label: 'Kerala' },
+      { key: 'WEST_BENGAL', label: 'West Bengal' },
+      { key: 'ASSAM',       label: 'Assam' },
+      { key: 'PUDUCHERRY',  label: 'Puducherry' },
+    ];
+    let currentStateFilter = (QUERY.get('state') || '').trim().toUpperCase() || STATE_TABS[0].key;
+
     const listEl = document.getElementById('list');
     const searchEl = document.getElementById('search-input');
+    const stateTabsEl = document.getElementById('stateTabs');
 
     let allBattles = [];
     let PARTY_COLORS = new Map();
@@ -529,10 +568,6 @@
             status: firstNonEmpty(row, ['status']),
             resultDay: firstNonEmpty(row, ['result_day', 'result_date', 'updated_at']),
             storyUrl: firstNonEmpty(row, ['story_url', 'cta_url', 'url', 'story_page']),
-            mapUrl: firstNonEmpty(row, ['map_url', 'map_widget_url']),
-            mapState: firstNonEmpty(row, ['map_state']),
-            mapAc: firstNonEmpty(row, ['map_ac']),
-            mapName: firstNonEmpty(row, ['map_name']),
             candidates: []
           });
         }
@@ -982,12 +1017,32 @@
       });
     }
 
+    function buildStateTabs() {
+      stateTabsEl.innerHTML = '';
+      STATE_TABS.forEach(({ key, label }) => {
+        const btn = document.createElement('button');
+        btn.className = 'state-tab' + (key === currentStateFilter ? ' active' : '');
+        btn.textContent = label;
+        btn.dataset.key = key;
+        btn.addEventListener('click', () => {
+          if (key === currentStateFilter) return;
+          currentStateFilter = key;
+          stateTabsEl.querySelectorAll('.state-tab').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+          render(allBattles);
+        });
+        stateTabsEl.appendChild(btn);
+      });
+    }
+
     function render(battles) {
       listEl.innerHTML = '';
       const q = searchEl.value;
-      const visible = filterBattles(battles, q);
+      const stateFiltered = currentStateFilter
+        ? battles.filter(b => String(b.state || '').trim().toUpperCase() === currentStateFilter)
+        : battles;
+      const visible = filterBattles(stateFiltered, q);
 
-      if (!battles.length) {
+      if (!stateFiltered.length) {
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
         return;
       }
@@ -1022,6 +1077,7 @@
     }
 
     async function init() {
+      buildStateTabs();
       try {
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
         const [rows, mappingRows, partyColorRows, allianceColorRows] = await Promise.all([
