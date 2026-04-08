@@ -2310,59 +2310,37 @@
         cachedPartyRows     = _fullStaticCache.parties;
         cachedAllianceRows  = _fullStaticCache.alliances;
       } else {
-        // Phase 1: load filtered for current state (fast initial render)
-        const sf = stateKey; // stateFilter value
-        if (!cachedResultsRows) {
-          try { cachedResultsRows = await loadSheetValues(RESULTS_TAB_NAME, staticMode, sf); } catch (_) {}
-          if (!cachedResultsRows && RESULTS_SHEET_URL)
-            cachedResultsRows = await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true, staticMode);
-        }
-        if (!cachedPartyWiseRows) {
-          if (PARTY_WISE_TAB_NAME === RESULTS_TAB_NAME && Array.isArray(cachedResultsRows)) {
-            cachedPartyWiseRows = cachedResultsRows;
-          } else {
-            try { cachedPartyWiseRows = await loadSheetValues(PARTY_WISE_TAB_NAME, staticMode, sf); } catch (_) {}
-            if (!cachedPartyWiseRows && PARTY_WISE_SHEET_URL)
-              cachedPartyWiseRows = await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true, staticMode);
-          }
-        }
-        if (!cachedMappingRows) {
-          try { cachedMappingRows = await loadSheetValues(MAPPING_TAB_NAME, 'force-cache'); } catch (_) {}
-          if (!cachedMappingRows && MAPPING_SHEET_URL)
-            cachedMappingRows = await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true, 'force-cache');
-        }
-        if (!cachedMappingLiveRows) {
-          try { cachedMappingLiveRows = await loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store', sf); } catch (_) {}
-          if (!cachedMappingLiveRows && MAPPING_LIVE_SHEET_URL)
-            cachedMappingLiveRows = await loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME || 'mappingLive'} sheet`, true, 'no-store');
-        }
-        if (!cachedPartyRows) {
-          try { cachedPartyRows = await loadSheetValues(PARTIES_TAB_NAME, 'force-cache'); } catch (_) {}
-          if (!cachedPartyRows && PARTIES_SHEET_URL)
-            cachedPartyRows = await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true, 'force-cache');
-        }
-        if (!cachedAllianceRows) {
-          try { cachedAllianceRows = await loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache'); } catch (_) {}
-          if (!cachedAllianceRows && ALLIANCES_SHEET_URL)
-            cachedAllianceRows = await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true, 'force-cache');
-        }
+        // Phase 1: load all static tabs in parallel, filtered for current state
+        const sf = stateKey;
+        const separatePartyWise = PARTY_WISE_TAB_NAME && PARTY_WISE_TAB_NAME !== RESULTS_TAB_NAME;
+        const [_results, _partyWise, _mapping, _mappingLive, _parties, _alliances] = await Promise.all([
+          loadSheetValues(RESULTS_TAB_NAME, staticMode, sf).catch(() => null),
+          separatePartyWise ? loadSheetValues(PARTY_WISE_TAB_NAME, staticMode, sf).catch(() => null) : Promise.resolve(null),
+          loadSheetValues(MAPPING_TAB_NAME, 'force-cache').catch(() => null),
+          loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store', sf).catch(() => null),
+          loadSheetValues(PARTIES_TAB_NAME, 'force-cache').catch(() => null),
+          loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache').catch(() => null),
+        ]);
+        cachedResultsRows     = _results     || (RESULTS_SHEET_URL ? await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true, staticMode).catch(() => null) : null);
+        cachedPartyWiseRows   = separatePartyWise ? (_partyWise || (PARTY_WISE_SHEET_URL ? await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true, staticMode).catch(() => null) : null)) : cachedResultsRows;
+        cachedMappingRows     = _mapping     || (MAPPING_SHEET_URL ? await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
+        cachedMappingLiveRows = _mappingLive || (MAPPING_LIVE_SHEET_URL ? await loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME || 'mappingLive'} sheet`, true, 'no-store').catch(() => null) : null);
+        cachedPartyRows       = _parties     || (PARTIES_SHEET_URL ? await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
+        cachedAllianceRows    = _alliances   || (ALLIANCES_SHEET_URL ? await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true, 'force-cache').catch(() => null) : null);
         // Phase 2: load all states in background for instant future state switches
         _startFullStaticCacheLoad(staticMode);
       }
 
-      let liveResultsRows = null;
-      try { liveResultsRows = await loadSheetValues(RESULTS_LIVE_TAB_NAME || 'Live_Results_2026', 'no-store', stateKey); } catch (_) {}
-      if (!liveResultsRows && RESULTS_LIVE_SHEET_URL)
-        liveResultsRows = await loadCsv(RESULTS_LIVE_SHEET_URL, `${RESULTS_LIVE_TAB_NAME || 'resultsLive'} sheet`, true, 'no-store');
-
-      let livePartyWiseRows = null;
-      if (PARTY_WISE_LIVE_TAB_NAME === RESULTS_LIVE_TAB_NAME && Array.isArray(liveResultsRows)) {
-        livePartyWiseRows = liveResultsRows;
-      } else {
-        try { livePartyWiseRows = await loadSheetValues(PARTY_WISE_LIVE_TAB_NAME || 'Live_Results_2026', 'no-store', stateKey); } catch (_) {}
-        if (!livePartyWiseRows && PARTY_WISE_LIVE_SHEET_URL)
-          livePartyWiseRows = await loadCsv(PARTY_WISE_LIVE_SHEET_URL, `${PARTY_WISE_LIVE_TAB_NAME || 'partyWiseLive'} sheet`, true, 'no-store');
-      }
+      // Live data always fetched fresh per state switch
+      const liveLookup = RESULTS_LIVE_TAB_NAME || 'Live_Results_2026';
+      const livePartyWiseLookup = PARTY_WISE_LIVE_TAB_NAME || liveLookup;
+      const sameliveTabs = livePartyWiseLookup === liveLookup;
+      const [_liveResults, _livePartyWiseSep] = await Promise.all([
+        loadSheetValues(liveLookup, 'no-store', stateKey).catch(() => null),
+        !sameliveTabs ? loadSheetValues(livePartyWiseLookup, 'no-store', stateKey).catch(() => null) : Promise.resolve(null),
+      ]);
+      const liveResultsRows = _liveResults || (RESULTS_LIVE_SHEET_URL ? await loadCsv(RESULTS_LIVE_SHEET_URL, `${liveLookup} sheet`, true, 'no-store').catch(() => null) : null);
+      let livePartyWiseRows = sameliveTabs ? liveResultsRows : (_livePartyWiseSep || (PARTY_WISE_LIVE_SHEET_URL ? await loadCsv(PARTY_WISE_LIVE_SHEET_URL, `${livePartyWiseLookup} sheet`, true, 'no-store').catch(() => null) : null));
 
       const baseResultsData = getRowsForState(cachedResultsRows || [], stateKey);
       const liveResultsData = getRowsForState(liveResultsRows || [], stateKey);
