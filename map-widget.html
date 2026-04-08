@@ -523,6 +523,8 @@
     // Query params continue to take precedence when provided.
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_PUBLISHED_SHEET_URL = '';
+    const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbwpLhDraM7cBNxqi3kLJ3B7VuJYWqVI469PzXOiz22HPGjiWxQl7D6Nr4GtG2PXLBYm/exec';
+    const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
     const DEFAULT_PUBLISHED_GIDS = Object.freeze({
       results: '1602016273',
       partyWise: '1602016273',
@@ -535,6 +537,7 @@
       i18n: '1833633264'
     });
 
+    const API_URL_PARAM = (QUERY_PARAMS.get('apiUrl') || QUERY_PARAMS.get('appsScriptUrl') || DEFAULT_API_URL).trim();
     const SHEET_ID_PARAM = QUERY_PARAMS.get('sheetId');
     const SHEET_URL_PARAM = QUERY_PARAMS.get('sheetUrl');
     const PUBLISHED_SHEET_URL_PARAM =
@@ -636,7 +639,7 @@
     const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
     const I18N_GID_PARAM = (QUERY_PARAMS.get('i18nGid') || '').trim();
 
-    const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || '').trim();
+    const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
     const PUBLISHED_SHEET_KEY = (PUBLISHED_SHEET_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_SHEET_URL_PARAM) || '').trim();
     const USE_DEFAULT_PUBLISHED_GIDS = !SHEET_ID && (PUBLISHED_SHEET_KEY === DEFAULT_PUBLISHED_SHEET_KEY);
 
@@ -1201,8 +1204,10 @@
       i18nReserved = {};
 
       if (currentLang === 'kn') {
-        if (!cachedI18nRows && I18N_SHEET_URL) {
-          cachedI18nRows = await loadCsv(I18N_SHEET_URL, `${I18N_TAB_NAME} sheet`, true, 'force-cache');
+        if (!cachedI18nRows) {
+          try { cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels', 'force-cache'); } catch (_) {}
+          if (!cachedI18nRows && I18N_SHEET_URL)
+            cachedI18nRows = await loadCsv(I18N_SHEET_URL, `${I18N_TAB_NAME} sheet`, true, 'force-cache');
         }
         const parsed = parseI18nRows(cachedI18nRows || []);
         if (parsed.strings.size || Object.keys(parsed.reserved).length) {
@@ -2259,6 +2264,21 @@
       }
     }
 
+    async function loadSheetValues(tabName, cacheMode = 'force-cache') {
+      const url = `${API_URL_PARAM}?action=values&sheetId=${encodeURIComponent(SHEET_ID)}&tab=${encodeURIComponent(tabName)}`;
+      const res = await fetch(url, { cache: cacheMode });
+      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
+      if (!json.values || json.values.length < 2) return [];
+      const [headers, ...dataRows] = json.values;
+      return normalizeCsvRows(dataRows.map(row => {
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+        return obj;
+      }));
+    }
+
     async function loadJson(url, description, optional = false){
       try {
         // Cache map geometry aggressively; election CSVs still use no-store.
@@ -2278,55 +2298,52 @@
       const staticMode = staticCsvCacheMode();
 
       if (!cachedResultsRows) {
-        cachedResultsRows = await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true, staticMode);
+        try { cachedResultsRows = await loadSheetValues(RESULTS_TAB_NAME, staticMode); } catch (_) {}
+        if (!cachedResultsRows && RESULTS_SHEET_URL)
+          cachedResultsRows = await loadCsv(RESULTS_SHEET_URL, `${RESULTS_TAB_NAME} sheet`, true, staticMode);
       }
-      if (!cachedPartyWiseRows && PARTY_WISE_SHEET_URL) {
-        if (PARTY_WISE_SHEET_URL === RESULTS_SHEET_URL && Array.isArray(cachedResultsRows)) {
+      if (!cachedPartyWiseRows) {
+        if (PARTY_WISE_TAB_NAME === RESULTS_TAB_NAME && Array.isArray(cachedResultsRows)) {
           cachedPartyWiseRows = cachedResultsRows;
         } else {
-          cachedPartyWiseRows = await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true, staticMode);
+          try { cachedPartyWiseRows = await loadSheetValues(PARTY_WISE_TAB_NAME, staticMode); } catch (_) {}
+          if (!cachedPartyWiseRows && PARTY_WISE_SHEET_URL)
+            cachedPartyWiseRows = await loadCsv(PARTY_WISE_SHEET_URL, `${PARTY_WISE_TAB_NAME} sheet`, true, staticMode);
         }
       }
-      if (!cachedMappingRows && MAPPING_SHEET_URL) {
-        cachedMappingRows = await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true, 'force-cache');
+      if (!cachedMappingRows) {
+        try { cachedMappingRows = await loadSheetValues(MAPPING_TAB_NAME, 'force-cache'); } catch (_) {}
+        if (!cachedMappingRows && MAPPING_SHEET_URL)
+          cachedMappingRows = await loadCsv(MAPPING_SHEET_URL, `${MAPPING_TAB_NAME} sheet`, true, 'force-cache');
       }
-      if (!cachedMappingLiveRows && MAPPING_LIVE_SHEET_URL) {
-        cachedMappingLiveRows = await loadCsv(
-          MAPPING_LIVE_SHEET_URL,
-          `${MAPPING_LIVE_TAB_NAME || 'mappingLive'} sheet`,
-          true,
-          'no-store'
-        );
+      if (!cachedMappingLiveRows) {
+        try { cachedMappingLiveRows = await loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store'); } catch (_) {}
+        if (!cachedMappingLiveRows && MAPPING_LIVE_SHEET_URL)
+          cachedMappingLiveRows = await loadCsv(MAPPING_LIVE_SHEET_URL, `${MAPPING_LIVE_TAB_NAME || 'mappingLive'} sheet`, true, 'no-store');
       }
-      if (!cachedPartyRows && PARTIES_SHEET_URL) {
-        cachedPartyRows = await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true, 'force-cache');
+      if (!cachedPartyRows) {
+        try { cachedPartyRows = await loadSheetValues(PARTIES_TAB_NAME, 'force-cache'); } catch (_) {}
+        if (!cachedPartyRows && PARTIES_SHEET_URL)
+          cachedPartyRows = await loadCsv(PARTIES_SHEET_URL, `${PARTIES_TAB_NAME} sheet`, true, 'force-cache');
       }
-      if (!cachedAllianceRows && ALLIANCES_SHEET_URL) {
-        cachedAllianceRows = await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true, 'force-cache');
+      if (!cachedAllianceRows) {
+        try { cachedAllianceRows = await loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache'); } catch (_) {}
+        if (!cachedAllianceRows && ALLIANCES_SHEET_URL)
+          cachedAllianceRows = await loadCsv(ALLIANCES_SHEET_URL, `${ALLIANCES_TAB_NAME} sheet`, true, 'force-cache');
       }
 
       let liveResultsRows = null;
-      if (RESULTS_LIVE_SHEET_URL) {
-        liveResultsRows = await loadCsv(
-          RESULTS_LIVE_SHEET_URL,
-          `${RESULTS_LIVE_TAB_NAME || 'resultsLive'} sheet`,
-          true,
-          'no-store'
-        );
-      }
+      try { liveResultsRows = await loadSheetValues(RESULTS_LIVE_TAB_NAME || 'Live_Results_2026', 'no-store'); } catch (_) {}
+      if (!liveResultsRows && RESULTS_LIVE_SHEET_URL)
+        liveResultsRows = await loadCsv(RESULTS_LIVE_SHEET_URL, `${RESULTS_LIVE_TAB_NAME || 'resultsLive'} sheet`, true, 'no-store');
 
       let livePartyWiseRows = null;
-      if (PARTY_WISE_LIVE_SHEET_URL) {
-        if (RESULTS_LIVE_SHEET_URL && PARTY_WISE_LIVE_SHEET_URL === RESULTS_LIVE_SHEET_URL && Array.isArray(liveResultsRows)) {
-          livePartyWiseRows = liveResultsRows;
-        } else {
-          livePartyWiseRows = await loadCsv(
-            PARTY_WISE_LIVE_SHEET_URL,
-            `${PARTY_WISE_LIVE_TAB_NAME || 'partyWiseLive'} sheet`,
-            true,
-            'no-store'
-          );
-        }
+      if (PARTY_WISE_LIVE_TAB_NAME === RESULTS_LIVE_TAB_NAME && Array.isArray(liveResultsRows)) {
+        livePartyWiseRows = liveResultsRows;
+      } else {
+        try { livePartyWiseRows = await loadSheetValues(PARTY_WISE_LIVE_TAB_NAME || 'Live_Results_2026', 'no-store'); } catch (_) {}
+        if (!livePartyWiseRows && PARTY_WISE_LIVE_SHEET_URL)
+          livePartyWiseRows = await loadCsv(PARTY_WISE_LIVE_SHEET_URL, `${PARTY_WISE_LIVE_TAB_NAME || 'partyWiseLive'} sheet`, true, 'no-store');
       }
 
       const baseResultsData = getRowsForState(cachedResultsRows || [], stateKey);

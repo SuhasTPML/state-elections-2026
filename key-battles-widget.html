@@ -171,11 +171,14 @@
     const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
     const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
+    const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbwpLhDraM7cBNxqi3kLJ3B7VuJYWqVI469PzXOiz22HPGjiWxQl7D6Nr4GtG2PXLBYm/exec';
+    const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
     const DEFAULT_TAB_NAME = 'Key_Battles';
     const DEFAULT_MAPPING_LIVE_TAB_NAME = 'Live_Alliance_2026';
     const DEFAULT_PARTIES_TAB_NAME = 'Party_Color';
     const DEFAULT_ALLIANCES_TAB_NAME = 'Alliance_Color';
 
+    const API_URL_PARAM = (QUERY.get('apiUrl') || QUERY.get('appsScriptUrl') || DEFAULT_API_URL).trim();
     const SHEET_ID_PARAM = (QUERY.get('sheetId') || '').trim();
     const SHEET_URL_PARAM = (QUERY.get('sheetUrl') || '').trim();
     const PUBLISHED_URL_PARAM = (QUERY.get('publishedSheetUrl') || QUERY.get('publishedUrl') || '').trim();
@@ -375,6 +378,23 @@
       return mappingRows.latestByParty.get(`${s}|${p}`) || '';
     }
 
+    const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
+
+    async function loadSheetValues(tabName, cacheMode = 'force-cache') {
+      const url = `${API_URL_PARAM}?action=values&sheetId=${encodeURIComponent(SHEET_ID)}&tab=${encodeURIComponent(tabName)}`;
+      const res = await fetch(url, { cache: cacheMode });
+      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
+      if (!json.values || json.values.length < 2) return [];
+      const [headers, ...dataRows] = json.values;
+      return normalizeRows(dataRows.map(row => {
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+        return obj;
+      }));
+    }
+
     async function resolveCsvUrl(options = {}) {
       const {
         csvUrlParam = '',
@@ -404,6 +424,9 @@
     }
 
     async function loadRows() {
+      if (!CSV_URL_PARAM) {
+        try { return await loadSheetValues(TAB_NAME, 'no-store'); } catch (_) {}
+      }
       const csvUrl = await resolveCsvUrl({
         csvUrlParam: CSV_URL_PARAM,
         tabName: TAB_NAME,
@@ -417,6 +440,9 @@
     }
 
     async function loadLiveMappingRows() {
+      if (!MAPPING_LIVE_CSV_URL_PARAM) {
+        try { return await loadSheetValues(MAPPING_LIVE_TAB_NAME, 'no-store'); } catch (_) {}
+      }
       const csvUrl = await resolveCsvUrl({
         csvUrlParam: MAPPING_LIVE_CSV_URL_PARAM,
         tabName: MAPPING_LIVE_TAB_NAME,
@@ -430,6 +456,9 @@
     }
 
     async function loadPartyColorRows() {
+      if (!PARTIES_CSV_URL_PARAM) {
+        try { return await loadSheetValues(PARTIES_TAB_NAME, 'force-cache'); } catch (_) {}
+      }
       const csvUrl = await resolveCsvUrl({
         csvUrlParam: PARTIES_CSV_URL_PARAM,
         tabName: PARTIES_TAB_NAME,
@@ -443,6 +472,9 @@
     }
 
     async function loadAllianceColorRows() {
+      if (!ALLIANCES_CSV_URL_PARAM) {
+        try { return await loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache'); } catch (_) {}
+      }
       const csvUrl = await resolveCsvUrl({
         csvUrlParam: ALLIANCES_CSV_URL_PARAM,
         tabName: ALLIANCES_TAB_NAME,
