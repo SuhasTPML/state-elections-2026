@@ -52,6 +52,44 @@ Stop-Process -Id <PID>
 http://127.0.0.1:8000/map-widget.html?state=KERALA
 ```
 
+## Widget Auto-Update Checks
+
+Use this checklist when verifying auto-refresh behavior for widgets.
+
+### Scope
+
+- `map-widget.html`
+- `seat-results-widget.html`
+- `key-battles-widget.html`
+
+### Interval parameters
+
+Use one of these query params to define refresh cadence:
+
+- `refreshSeconds=<number>`
+- `refreshMs=<number>`
+
+Recommended QA values:
+
+- quick check: `refreshSeconds=10`
+- normal check: `refreshSeconds=30`
+
+### Verification steps
+
+1. Open the widget URL with a refresh param.
+2. Confirm initial render succeeds.
+3. Keep the page open for at least 2 refresh cycles.
+4. Verify periodic data requests are made again at the expected interval.
+5. Confirm UI updates without full page reload and without losing active UI state (selected state/tab/year where applicable).
+
+### Example URLs
+
+```text
+http://127.0.0.1:8000/map-widget.html?state=KERALA&refreshSeconds=30
+http://127.0.0.1:8000/seat-results-widget.html?refreshSeconds=30
+http://127.0.0.1:8000/key-battles-widget.html?refreshSeconds=30
+```
+
 ## Map Widget Data Sources
 
 `map-widget.html` loads its runtime data from these sources.
