@@ -8,6 +8,8 @@ function doGet(e) {
 
     const sheetId = extractSheetId(params.sheetId || params.sheetUrl || '');
     const tabName = String(params.tab || '').trim();
+    const stateFilter = String(params.stateFilter || '').trim().toUpperCase();
+
     if (!sheetId) {
       return jsonResponse({ error: 'Missing sheetId or sheetUrl.' }, 400);
     }
@@ -18,10 +20,32 @@ function doGet(e) {
     const accessToken = getServiceAccountToken();
     const data = getSheetValues(accessToken, sheetId, tabName);
 
+    var values = data.values || [];
+    if (stateFilter && values.length > 1) {
+      var headers = values[0];
+      var STATE_COLS = ['state_key', 'state_code', 'state'];
+      var colIdx = -1;
+      for (var i = 0; i < STATE_COLS.length; i++) {
+        for (var j = 0; j < headers.length; j++) {
+          if (String(headers[j] || '').trim().toLowerCase() === STATE_COLS[i]) {
+            colIdx = j;
+            break;
+          }
+        }
+        if (colIdx >= 0) break;
+      }
+      if (colIdx >= 0) {
+        var filtered = values.slice(1).filter(function(row) {
+          return String(row[colIdx] || '').trim().toUpperCase() === stateFilter;
+        });
+        values = [headers].concat(filtered);
+      }
+    }
+
     return jsonResponse({
       range: data.range || (tabName + '!A1'),
       majorDimension: data.majorDimension || 'ROWS',
-      values: data.values || []
+      values: values
     });
   } catch (error) {
     return jsonResponse({
