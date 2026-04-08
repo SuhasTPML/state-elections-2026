@@ -1103,6 +1103,7 @@
             String(b.acNo || '').trim().toLowerCase() === cq ||
             (b.constituency || '').toLowerCase().includes(cq)
           );
+          currentStateFilter = ''; // bypass state filter in render()
           stateTabsEl.style.display = 'none';
           searchEl.closest('.mb-5').style.display = 'none';
         }
