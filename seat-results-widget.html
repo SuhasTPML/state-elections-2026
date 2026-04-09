@@ -57,7 +57,40 @@
     .widget {
       max-width: 720px; margin: 0 auto;
       padding: 4px 6px 8px;
+      position: relative;
       transform-origin: top center;
+      transition: opacity 0.24s ease, transform 0.24s ease;
+    }
+    .widget::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(226, 232, 240, 0.58) 40%,
+        rgba(255, 255, 255, 0) 100%);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-120%);
+      transition: transform 0.42s ease, opacity 0.24s ease;
+    }
+    .widget.is-rotating-out {
+      opacity: 0.76;
+      transform: translateX(-8px);
+    }
+    .widget.is-rotating-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .widget.is-rotating-out::after,
+    .widget.is-rotating-in::after {
+      opacity: 1;
+    }
+    .widget.is-rotating-out::after {
+      transform: translateX(-8%);
+    }
+    .widget.is-rotating-in::after {
+      transform: translateX(112%);
     }
 
     /* ── State tabs (grey-fill chips) ── */
@@ -320,6 +353,9 @@ const COMPACT_MODE = (() => {
   const raw = String(QUERY_PARAMS.get('compact') || '').trim().toLowerCase();
   return raw === 'true' || raw === '1' || raw === 'yes';
 })();
+const ROTATE_STATES = String(QUERY_PARAMS.get('rotate') || '').trim().toLowerCase() === 'true';
+const ROTATE_INTERVAL_MS = 10000;
+const ROTATE_RESUME_DELAY_MS = 20000;
 const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
 const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
 
@@ -1011,10 +1047,89 @@ let viewMode = 'alliance';    // 'party' | 'alliance'
 let refreshTimer = null;
 let refreshInFlight = false;
 let shareBusy = false;
+let rotateTimer = null;
+let rotatePauseTimer = null;
+let rotationSuspendedUntil = 0;
 const LOADER_CLASS = 'widget-loading';
 
 function setWidgetLoading(isLoading) {
   document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+}
+
+function getRotationStateKeys() {
+  if (!DATA || !Array.isArray(DATA.states)) return [];
+  return DATA.states.map((state) => state.key).filter(Boolean);
+}
+
+function shouldAutoRotateStates() {
+  return ROTATE_STATES && !HIDE_TABS && getRotationStateKeys().length > 1;
+}
+
+function clearRotateTimers() {
+  if (rotateTimer) {
+    clearTimeout(rotateTimer);
+    rotateTimer = null;
+  }
+  if (rotatePauseTimer) {
+    clearTimeout(rotatePauseTimer);
+    rotatePauseTimer = null;
+  }
+}
+
+function setRotationVisualState(phase = 'idle') {
+  const widgetEl = document.getElementById('widgetScaleRoot');
+  if (!widgetEl) return;
+  widgetEl.classList.remove('is-rotating-out', 'is-rotating-in');
+  if (phase === 'out') widgetEl.classList.add('is-rotating-out');
+  if (phase === 'in') widgetEl.classList.add('is-rotating-in');
+}
+
+function scheduleNextRotation(delayMs = ROTATE_INTERVAL_MS) {
+  if (!shouldAutoRotateStates()) return;
+  if (Date.now() < rotationSuspendedUntil) return;
+  if (rotateTimer) clearTimeout(rotateTimer);
+  rotateTimer = setTimeout(() => rotateToNextState(), delayMs);
+}
+
+function resumeRotationAfterPause() {
+  if (!shouldAutoRotateStates()) return;
+  rotationSuspendedUntil = 0;
+  scheduleNextRotation(ROTATE_INTERVAL_MS);
+}
+
+function pauseStateRotation() {
+  if (!shouldAutoRotateStates()) return;
+  clearRotateTimers();
+  rotationSuspendedUntil = Date.now() + ROTATE_RESUME_DELAY_MS;
+  rotatePauseTimer = setTimeout(() => {
+    rotatePauseTimer = null;
+    resumeRotationAfterPause();
+  }, ROTATE_RESUME_DELAY_MS);
+}
+
+function noteRotationInteraction() {
+  if (!shouldAutoRotateStates()) return;
+  pauseStateRotation();
+}
+
+function rotateToNextState() {
+  if (!shouldAutoRotateStates()) return;
+  if (Date.now() < rotationSuspendedUntil) return;
+  const stateKeys = getRotationStateKeys();
+  if (stateKeys.length < 2) return;
+  const currentIndex = stateKeys.indexOf(currentStateKey);
+  const nextIndex = currentIndex === -1 ? 0 : (currentIndex + 1) % stateKeys.length;
+  setRotationVisualState('out');
+  setTimeout(() => {
+    loadState(stateKeys[nextIndex], { fromRotation: true });
+    requestAnimationFrame(() => {
+      setRotationVisualState('in');
+      setTimeout(() => {
+        setRotationVisualState('idle');
+        scheduleNextRotation(ROTATE_INTERVAL_MS);
+      }, 260);
+    });
+  }, 150);
 }
 
 // D3 selections
@@ -1070,6 +1185,9 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   setActiveYearTab(currentYear);
   initSvg();
   render();
+  setupRotationInteractionListeners();
+  if (shouldAutoRotateStates()) scheduleNextRotation(ROTATE_INTERVAL_MS);
+  else clearRotateTimers();
 }
 
 async function refreshDataInBackground() {
@@ -1175,7 +1293,10 @@ function buildStateTabs() {
     btn.className = 'tab-btn';
     btn.dataset.key = s.key;
     btn.textContent = tState(s.key, s.label);
-    btn.addEventListener('click', () => { if (s.key !== currentStateKey) loadState(s.key); });
+    btn.addEventListener('click', () => {
+      noteRotationInteraction();
+      if (s.key !== currentStateKey) loadState(s.key);
+    });
     el.appendChild(btn);
   });
 }
@@ -1192,7 +1313,14 @@ function buildYearTabs(state) {
     btn.className = 'year-btn';
     btn.dataset.year = y;
     btn.textContent = y;
-    btn.addEventListener('click', () => { if (y !== currentYear) { currentYear = y; setActiveYearTab(y); render(); } });
+    btn.addEventListener('click', () => {
+      noteRotationInteraction();
+      if (y !== currentYear) {
+        currentYear = y;
+        setActiveYearTab(y);
+        render();
+      }
+    });
     el.appendChild(btn);
   });
 }
@@ -1203,6 +1331,16 @@ function setActiveYearTab(year) {
 
 function getCurrentState() {
   return DATA && Array.isArray(DATA.states) ? (DATA.states.find(s => s.key === currentStateKey) || null) : null;
+}
+
+function setupRotationInteractionListeners() {
+  if (!shouldAutoRotateStates()) return;
+  const viewport = document.getElementById('widgetViewport');
+  if (!viewport || viewport.dataset.rotateBound === 'true') return;
+  viewport.dataset.rotateBound = 'true';
+  ['pointerdown', 'touchstart', 'wheel', 'keydown', 'focusin'].forEach((eventName) => {
+    viewport.addEventListener(eventName, noteRotationInteraction, { passive: true });
+  });
 }
 
 function getShareFileName() {
@@ -1425,6 +1563,7 @@ async function shareWidgetImage() {
 //  Toggle
 // ─────────────────────────────────────────────
 document.getElementById('view-toggle').addEventListener('change', function() {
+  noteRotationInteraction();
   viewMode = this.checked ? 'alliance' : 'party';
   document.getElementById('lbl-party').classList.toggle('inactive',    this.checked);
   document.getElementById('lbl-alliance').classList.toggle('inactive', !this.checked);
@@ -1432,13 +1571,15 @@ document.getElementById('view-toggle').addEventListener('change', function() {
 });
 
 document.getElementById('share-widget-btn').addEventListener('click', () => {
+  noteRotationInteraction();
   shareWidgetImage();
 });
 
 // ─────────────────────────────────────────────
 //  Load state
 // ─────────────────────────────────────────────
-function loadState(key) {
+function loadState(key, { fromRotation = false } = {}) {
+  if (!fromRotation) noteRotationInteraction();
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
   currentYear = state.years[0];
