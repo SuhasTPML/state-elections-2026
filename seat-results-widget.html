@@ -294,7 +294,7 @@ const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
 const TOP_BUCKET_LIMIT = 5;
 const OTHERS_KEY = '__others__';
 const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
-const SHARE_LOGO_URL_KN = 'https://www.prajavani.net/icons/lstlogo.png';
+const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
 
 // Seat results source
 const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
@@ -1217,10 +1217,18 @@ function getShareLogoUrl() {
   return LANG === 'kn' ? SHARE_LOGO_URL_KN : SHARE_LOGO_URL;
 }
 
+function getShareFallbackBrandText() {
+  return LANG === 'kn' ? 'PV' : 'DH';
+}
+
 async function buildShareCanvas() {
   const captureRoot = document.getElementById('widgetScaleRoot');
   if (!captureRoot || typeof html2canvas !== 'function') {
     throw new Error('Share capture is unavailable.');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    try { await document.fonts.ready; } catch (_) {}
   }
 
   const captured = await html2canvas(captureRoot, {
@@ -1252,6 +1260,7 @@ async function buildShareCanvas() {
   const timestamp = formatShareTimestamp();
   ctx.fillStyle = '#334155';
   ctx.font = '600 24px "Roboto Slab", serif';
+  ctx.textAlign = 'left';
   ctx.textBaseline = 'middle';
   ctx.fillText(timestamp, 24, headerHeight / 2);
 
@@ -1266,7 +1275,7 @@ async function buildShareCanvas() {
     ctx.fillStyle = '#0f172a';
     ctx.font = '700 28px "Playfair Display", serif';
     ctx.textAlign = 'right';
-    ctx.fillText('DH', canvas.width - 24, headerHeight / 2);
+    ctx.fillText(getShareFallbackBrandText(), canvas.width - 24, headerHeight / 2);
     ctx.textAlign = 'left';
   }
 
