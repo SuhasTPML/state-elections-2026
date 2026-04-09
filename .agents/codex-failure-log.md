@@ -26,3 +26,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `apply_patch` failed because the expected lines did not match the file.
 - Working approach: Read the exact surrounding HTML/CSS block first, then patch against the current text.
 - Next-time rule: When editing UI markup that has already changed in prior iterations, inspect the exact current snippet before applying a structural patch.
+
+## 2026-04-09 - Do not scale the whole key battles widget to fit 500px
+- Context: Making `key-battles-widget.html` use the full iframe width on embedded LP pages.
+- Command/workflow: Fixed-height widget fitting logic in `fitWidgetToViewport()`.
+- Failed approach: Scaled `#widgetScaleRoot` down with `transform: scale(...)` whenever the natural height exceeded `500px`.
+- Symptom: The iframe itself was full width, but the live card rail shrank to a visibly narrower width because the whole widget was being transformed.
+- Working approach: Keep the viewport fixed at `500px`, remove the root scale transform, and tighten internal spacing so the layout fits naturally.
+- Next-time rule: For fixed-height embeds, do not solve overflow by scaling the full widget root; reduce internal spacing or restructure the layout so the content keeps its true width.
