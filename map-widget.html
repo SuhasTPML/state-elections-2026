@@ -44,7 +44,7 @@
     html, body { margin: 0; font-family: var(--pv-text); overflow: hidden; }
     body { display: flex; flex-direction: column; min-height: 500px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
-    main { display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; width: 100%; transform-origin: top center; }
+    main { display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; width: 100%; height: 100%; min-height: 100%; transform-origin: top center; }
     h1, h2, h3, h4, h5, h6 { font-family: var(--pv-headline); }
     input, select, textarea, button { font-family: var(--pv-text); }
     /* Change 1: Compact controls — reduced padding and gap */
@@ -155,6 +155,8 @@
       overflow-x: auto;
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
+      flex: 1 1 auto;
+      min-width: 0;
     }
     .year-tabs::-webkit-scrollbar { display: none; }
     .year-btn {
@@ -283,10 +285,13 @@
 
     #status { color: #b00; margin-left: 8px; font-size: 13px; }
     #mapwrap {
-      flex: 1;
-      min-height: 380px;
+      flex: 1 1 auto;
+      min-height: 320px;
       aspect-ratio: 4 / 3;
       position: relative;
+    }
+    body.bottom-sheet-active #mapwrap {
+      min-height: 220px;
     }
     svg { width: 100%; height: 100%; background: #f9fafb; display:block; }
     .ac {
@@ -430,8 +435,7 @@
         align-items: stretch;
       }
       #searchRow .controls-search { width: 100%; }
-      .controls-row { flex-wrap: wrap; }
-      .year-tabs { width: 100%; }
+      .controls-row { flex-wrap: nowrap; }
       .toggle-wrap { margin-left: auto; }
       #mapControls { top: 15px; left: 15px; gap: 8px; }
       #crossBtn { top: 15px; right: 15px; }
@@ -465,13 +469,6 @@
       </div>
     </div>
     <div id="stateTabs"></div>
-    <div id="mapDisclaimer" class="controls-disclaimer"></div>
-    <div id="searchRow">
-      <div class="controls-search">
-        <input id="acSearch" type="search" placeholder="Search constituency" />
-        <div id="dropdown" class="dropdown"></div>
-      </div>
-    </div>
     <div id="modeControlsRow" class="controls-row" style="display:none;">
       <div id="yearTabs" class="year-tabs"></div>
       <label class="toggle-wrap" id="viewToggleWrap">
@@ -483,6 +480,13 @@
         <span class="toggle-label inactive" id="lblAlliance"></span>
       </label>
     </div>
+    <div id="searchRow">
+      <div class="controls-search">
+        <input id="acSearch" type="search" placeholder="Search constituency" />
+        <div id="dropdown" class="dropdown"></div>
+      </div>
+    </div>
+    <div id="mapDisclaimer" class="controls-disclaimer"></div>
     <div id="legend" class="controls-legend"></div>
   </div>
 
