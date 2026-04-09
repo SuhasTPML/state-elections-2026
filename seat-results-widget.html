@@ -293,7 +293,10 @@ const QUERY_PARAMS = new URLSearchParams(location.search);
 const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
 const TOP_BUCKET_LIMIT = 5;
 const OTHERS_KEY = '__others__';
-const COMPACT_MODE = QUERY_PARAMS.get('compact') === 'true';
+const COMPACT_MODE = (() => {
+  const raw = String(QUERY_PARAMS.get('compact') || '').trim().toLowerCase();
+  return raw === 'true' || raw === '1' || raw === 'yes';
+})();
 const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
 const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
 
