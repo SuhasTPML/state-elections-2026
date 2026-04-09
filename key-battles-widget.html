@@ -313,6 +313,7 @@
     const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
     const CONSTITUENCY_PARAM = (QUERY.get('constituency') || QUERY.get('ac') || QUERY.get('acName') || '').trim();
     const HIDE_TABS = QUERY.get('hideTabs') === 'true';
+    const ROTATE_CAROUSEL = String(QUERY.get('rotate') || '').trim().toLowerCase() === 'true';
     const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
@@ -363,10 +364,40 @@
     let allBattles = [];
     let PARTY_COLORS = new Map();
     let ALLIANCE_COLORS = new Map();
+    let rotateTimer = null;
+    let rotatePauseTimer = null;
+    let rotationSuspendedUntil = 0;
     const LOADER_CLASS = 'widget-loading';
 
     function setWidgetLoading(isLoading) {
       document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+    }
+
+    function clearRotateTimer() {
+      if (rotateTimer) {
+        clearInterval(rotateTimer);
+        rotateTimer = null;
+      }
+      if (rotatePauseTimer) {
+        clearTimeout(rotatePauseTimer);
+        rotatePauseTimer = null;
+      }
+    }
+
+    function pauseAutoRotateCarousel() {
+      if (!ROTATE_CAROUSEL) return;
+      if (!getCarouselCards().length) return;
+      if (rotateTimer) {
+        clearInterval(rotateTimer);
+        rotateTimer = null;
+      }
+      rotationSuspendedUntil = Date.now() + 20000;
+      if (rotatePauseTimer) clearTimeout(rotatePauseTimer);
+      rotatePauseTimer = setTimeout(() => {
+        rotatePauseTimer = null;
+        rotationSuspendedUntil = 0;
+        startAutoRotateCarousel();
+      }, 20000);
     }
 
     // ── Data helpers (unchanged) ──────────────────────────────────────────────
@@ -1116,6 +1147,7 @@
         btn.textContent = label;
         btn.dataset.key = key;
         btn.addEventListener('click', () => {
+          pauseAutoRotateCarousel();
           if (key === currentStateFilter) return;
           currentStateFilter = key;
           stateTabsEl.querySelectorAll('.state-tab').forEach(b => b.classList.toggle('active', b.dataset.key === key));
@@ -1135,6 +1167,7 @@
       const visible = filterBattles(stateFiltered, q);
 
       if (!stateFiltered.length) {
+        clearRotateTimer();
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
         updateCarouselIndicator(0, 0);
         updateDesktopNav();
@@ -1143,6 +1176,7 @@
       }
 
       if (!visible.length) {
+        clearRotateTimer();
         const empty = document.createElement('p');
         empty.className = 'text-stone-400 text-sm col-span-3 py-8 text-center';
         empty.textContent = 'No results match your search.';
@@ -1164,6 +1198,7 @@
       updateDesktopNav();
 
       postEmbedSize('render');
+      startAutoRotateCarousel();
     }
 
     function getCarouselCards() {
@@ -1215,6 +1250,31 @@
       return cardWidth + gap;
     }
 
+    function scrollToCarouselCard(index, behavior = 'smooth') {
+      const cards = getCarouselCards();
+      if (!cards.length) return;
+      const safeIndex = ((index % cards.length) + cards.length) % cards.length;
+      const target = cards[safeIndex];
+      if (!target) return;
+      const left = Math.max(0, target.offsetLeft);
+      listEl.scrollTo({ left, behavior });
+    }
+
+    function startAutoRotateCarousel() {
+      clearRotateTimer();
+      if (!ROTATE_CAROUSEL) return;
+      const cards = getCarouselCards();
+      if (cards.length < 2) return;
+      rotateTimer = setInterval(() => {
+        if (Date.now() < rotationSuspendedUntil) return;
+        const liveCards = getCarouselCards();
+        if (liveCards.length < 2) return;
+        const activeIndex = getActiveCardIndex(liveCards);
+        const nextIndex = (activeIndex + 1) % liveCards.length;
+        scrollToCarouselCard(nextIndex, 'smooth');
+      }, 5000);
+    }
+
     function updateDesktopNav() {
       const prevBtn = document.getElementById('desktop-prev');
       const nextBtn = document.getElementById('desktop-next');
@@ -1237,13 +1297,16 @@
       if (!prevBtn || !nextBtn) return;
 
       prevBtn.addEventListener('click', () => {
+        pauseAutoRotateCarousel();
         listEl.scrollBy({ left: -getDesktopScrollAmount(), behavior: 'smooth' });
       });
       nextBtn.addEventListener('click', () => {
+        pauseAutoRotateCarousel();
         listEl.scrollBy({ left: getDesktopScrollAmount(), behavior: 'smooth' });
       });
       listEl.addEventListener('scroll', updateDesktopNav, { passive: true });
       window.addEventListener('resize', updateDesktopNav);
+      window.addEventListener('beforeunload', clearRotateTimer);
     }
 
     async function init() {
@@ -1289,7 +1352,13 @@
       }
     }
 
-    searchEl.addEventListener('input', () => render(allBattles));
+    searchEl.addEventListener('input', () => {
+      pauseAutoRotateCarousel();
+      render(allBattles);
+    });
+    searchEl.addEventListener('focus', pauseAutoRotateCarousel);
+    listEl.addEventListener('pointerdown', pauseAutoRotateCarousel, { passive: true });
+    listEl.addEventListener('touchstart', pauseAutoRotateCarousel, { passive: true });
 
     function fitWidgetToViewport() {
       const viewport = document.getElementById('widgetViewport');
