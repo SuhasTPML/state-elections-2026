@@ -17,7 +17,7 @@ function doGet(e) {
       return jsonResponse({ error: 'Missing tab.' }, 400);
     }
 
-    const accessToken = getServiceAccountToken();
+    const accessToken = getCachedServiceAccountToken();
     const data = getSheetValues(accessToken, sheetId, tabName);
 
     var values = data.values || [];
@@ -52,6 +52,19 @@ function doGet(e) {
       error: String(error && error.message ? error.message : error)
     }, 500);
   }
+}
+
+/**
+ * Returns a cached OAuth2 access token, generating a new one only when the cache misses.
+ * Token is cached for 55 minutes (tokens are valid for 60 min).
+ */
+function getCachedServiceAccountToken() {
+  var cache = CacheService.getScriptCache();
+  var cached = cache.get('service_account_token');
+  if (cached) return cached;
+  var token = getServiceAccountToken();
+  cache.put('service_account_token', token, 3300); // 55 minutes
+  return token;
 }
 
 /**
