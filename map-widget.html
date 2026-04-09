@@ -50,7 +50,7 @@
     /* Change 1: Compact controls — reduced padding and gap */
     #controls { padding: 6px 12px; display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
 
-    /* Change 1: Header row — title only */
+    /* Change 1: Header row */
     .controls-header {
       display: flex;
       align-items: center;
@@ -72,15 +72,6 @@
       flex: 1;
       min-width: 0;
       margin-bottom: 0;
-    }
-    .map-section-title { font-family: var(--pv-headline); font-size: 18px; font-weight: 600; line-height: 1.15; color: #000; margin: 0; }
-    /* Change 1: Hide description — redundant with search placeholder */
-    .controls-description {
-      display: block;
-      font-size: 12px;
-      line-height: 1.4;
-      color: #4b5563;
-      margin-bottom: 2px;
     }
     .controls-disclaimer {
       font-family: var(--pv-text);
@@ -467,17 +458,13 @@
   <div id="widgetViewport">
   <main id="widgetScaleRoot">
   <div id="controls">
-    <!-- Change 1: Title in header only; color-by moved next to search -->
+    <!-- Change 1: Header only; color-by moved next to search -->
     <div class="controls-header">
       <div class="controls-header-left">
-        <h3 id="mapTitle" class="map-section-title">State Assembly Constituency Map</h3>
         <span id="status"></span>
       </div>
     </div>
     <div id="stateTabs"></div>
-    <div id="mapDescription" class="controls-description">
-      Tap on a constituency to view details, or search by number/name/district.
-    </div>
     <div id="mapDisclaimer" class="controls-disclaimer"></div>
     <div id="searchRow">
       <div class="controls-search">
@@ -1227,8 +1214,8 @@
     }
 
     function setMapHeadingForState(stateKey){
-      mapTitleEl.textContent = mapTitleForState(stateKey);
-      mapDescriptionEl.textContent = mapDescriptionForState();
+      if (mapTitleEl) mapTitleEl.textContent = mapTitleForState(stateKey);
+      if (mapDescriptionEl) mapDescriptionEl.textContent = mapDescriptionForState();
       const disclaimerText = mapDisclaimerForState(stateKey);
       if (mapDisclaimerEl) {
         mapDisclaimerEl.textContent = disclaimerText;
