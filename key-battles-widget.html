@@ -144,18 +144,10 @@
     body.widget-loading #widgetViewport { visibility: hidden; }
     .widget-loader-player { width: 120px; height: 120px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
-    #widgetScaleRoot {
-      width: 100%;
-      max-width: none;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+    #widgetScaleRoot { transform-origin: top center; width: 100%; max-width: none; }
     .desktop-carousel-shell {
       position: relative;
       width: 100%;
-      flex: 1 1 auto;
-      min-height: 0;
     }
     .battle-card {
       width: 100%;
@@ -198,7 +190,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 2px 16px 10px;
+      padding: 4px 16px 20px;
     }
     .carousel-indicator-count {
       font-size: 11px;
@@ -229,6 +221,12 @@
       opacity: 1;
     }
     @media (max-width: 767px) {
+      .desktop-carousel-shell {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
       .desktop-carousel-nav {
         width: 36px;
         height: 36px;
@@ -269,13 +267,13 @@
     <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
   </div>
   <div id="widgetViewport">
-  <main id="widgetScaleRoot" class="pt-4">
+  <main id="widgetScaleRoot" class="pt-6">
 
     <!-- State tabs -->
     <div id="stateTabs" class="px-4"></div>
 
     <!-- Search bar -->
-    <div class="mb-3 w-full -mx-4 px-4 md:mx-0 md:px-0">
+    <div class="mb-5 w-full -mx-4 px-4 md:mx-0 md:px-0">
       <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
         <span class="material-symbols-outlined text-stone-400 text-[20px]">search</span>
         <input
@@ -294,7 +292,7 @@
       <!-- Card list: horizontal carousel on mobile and desktop -->
       <div
         id="list"
-        class="flex items-stretch gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-2 hide-scrollbar"
+        class="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-4 hide-scrollbar"
       ></div>
       <button id="desktop-next" class="desktop-carousel-nav next" type="button" aria-label="Next cards">
         <span class="material-symbols-outlined text-[20px]">chevron_right</span>
@@ -1028,7 +1026,7 @@
       const card = document.createElement('section');
       card.className = [
         'battle-card snap-start snap-always shrink-0',
-        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-4 md:p-5 space-y-4',
+        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-5 space-y-5',
         'flex flex-col'
       ].join(' ');
 
@@ -1297,7 +1295,10 @@
       const viewport = document.getElementById('widgetViewport');
       const root = document.getElementById('widgetScaleRoot');
       if (!viewport || !root) return;
-      root.style.transform = 'none';
+      root.style.transform = 'scale(1)';
+      const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+      const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+      root.style.transform = `scale(${scale})`;
       viewport.style.height = '500px';
     }
 

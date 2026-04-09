@@ -34,3 +34,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: The iframe itself was full width, but the live card rail shrank to a visibly narrower width because the whole widget was being transformed.
 - Working approach: Keep the viewport fixed at `500px`, remove the root scale transform, and tighten internal spacing so the layout fits naturally.
 - Next-time rule: For fixed-height embeds, do not solve overflow by scaling the full widget root; reduce internal spacing or restructure the layout so the content keeps its true width.
+
+## 2026-04-09 - Rename wrapper selectors safely when UI spacing classes change
+- Context: `key-battles-widget.html` got stuck on the loader after the search wrapper spacing class was changed.
+- Command/workflow: Loader hide/show logic for the search shell.
+- Failed approach: Continued using `searchEl.closest('.mb-5')` after the wrapper class was changed to `mb-3`.
+- Symptom: The script threw `Cannot read properties of null (reading 'style')` during startup, so `widget-loading` was never cleared and the page stayed on the loader.
+- Working approach: Give the wrapper a stable `id` (`search-shell`) and reference it directly with a null-safe check.
+- Next-time rule: Do not couple JS behavior to utility spacing classes; use stable IDs or data attributes for elements the script needs to show or hide.
