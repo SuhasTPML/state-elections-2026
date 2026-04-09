@@ -33,14 +33,17 @@
       --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
     }
     * { box-sizing: border-box; }
+    html, body { height: 400px; overflow: hidden; }
     body {
       font-family: var(--pv-text);
-      background: #fff; color: #333; margin: 0; padding: 4px;
+      background: #fff; color: #333; margin: 0; padding: 4px; height: 400px;
     }
     input, select, textarea, button { font-family: inherit; }
     .widget {
       max-width: 720px; margin: 0 auto;
       padding: 4px 6px 8px;
+      height: calc(400px - 8px);
+      overflow-y: auto;
     }
 
     /* ── State tabs (grey-fill chips) ── */
