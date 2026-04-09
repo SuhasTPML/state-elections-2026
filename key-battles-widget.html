@@ -196,6 +196,7 @@
 
   <script>
     const QUERY = new URLSearchParams(location.search);
+    const EMBED_ID = (QUERY.get('embedId') || QUERY.get('iframeId') || '').trim();
 
     const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
     const CONSTITUENCY_PARAM = (QUERY.get('constituency') || QUERY.get('ac') || QUERY.get('acName') || '').trim();
@@ -1016,6 +1017,7 @@
 
       if (!stateFiltered.length) {
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
+        postEmbedSize('empty-state');
         return;
       }
 
@@ -1024,6 +1026,7 @@
         empty.className = 'text-stone-400 text-sm col-span-3 py-8 text-center';
         empty.textContent = 'No results match your search.';
         listEl.appendChild(empty);
+        postEmbedSize('empty-search');
         return;
       }
 
@@ -1046,6 +1049,8 @@
         listEl.addEventListener('scroll', updateProgress, { passive: true });
         updateProgress();
       }
+
+      postEmbedSize('render');
     }
 
     async function init() {
@@ -1084,10 +1089,37 @@
         render(allBattles);
       } catch (err) {
         listEl.innerHTML = `<p class="text-red-600 text-sm font-semibold py-8 text-center">Failed to load key battles: ${err && err.message ? err.message : err}</p>`;
+        postEmbedSize('error');
       }
     }
 
     searchEl.addEventListener('input', () => render(allBattles));
+
+    function postEmbedSize(reason = 'manual') {
+      try {
+        const listRect = listEl.getBoundingClientRect();
+        const progressVisible = carouselEl && carouselEl.offsetParent !== null && getComputedStyle(carouselEl).display !== 'none';
+        const progressRect = progressVisible ? carouselEl.getBoundingClientRect() : null;
+        const bottom = progressRect ? Math.max(listRect.bottom, progressRect.bottom) : listRect.bottom;
+        const top = listRect.top;
+        const height = Math.ceil(Math.max(0, bottom - top));
+        const width = Math.ceil(listRect.width);
+        parent.postMessage({
+          type: 'widget-height',
+          widget: 'key-battles-widget',
+          embedId: EMBED_ID,
+          height,
+          width,
+          reason
+        }, '*');
+      } catch (e) {}
+    }
+
+    try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(listEl); } catch (_) {}
+    try { if (carouselEl) new ResizeObserver(() => postEmbedSize('carousel-resize')).observe(carouselEl); } catch (_) {}
+    window.addEventListener('load', () => postEmbedSize('load'));
+    window.addEventListener('resize', () => postEmbedSize('window-resize'));
+    setTimeout(() => postEmbedSize('init'), 0);
 
     init();
   </script>

@@ -1,0 +1,70 @@
+<!-- Story page embeds: auto-resize to widget height -->
+
+<!-- Map widget -->
+<iframe
+  id="map-widget-frame"
+  src="https://suhastpml.github.io/state-elections-2026/map-widget.html"
+  title="Map Widget"
+  loading="lazy"
+  scrolling="no"
+  style="width:100%;height:200px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
+  allowfullscreen>
+</iframe>
+
+<!-- Seat results widget -->
+<iframe
+  id="seat-results-widget-frame"
+  src="https://suhastpml.github.io/state-elections-2026/seat-results-widget.html"
+  title="Seat Results Widget"
+  loading="lazy"
+  scrolling="no"
+  style="width:100%;height:200px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
+  allowfullscreen>
+</iframe>
+
+<!-- Key battles widget -->
+<iframe
+  id="key-battles-widget-frame"
+  src="https://suhastpml.github.io/state-elections-2026/key-battles-widget.html?embedId=key-battles-widget-frame"
+  title="Key Battles Widget"
+  loading="lazy"
+  scrolling="no"
+  style="width:100%;height:200px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
+  allowfullscreen>
+</iframe>
+
+<script>
+  (function () {
+    function findIframeByWindow(sourceWindow) {
+      var iframes = document.getElementsByTagName("iframe");
+      for (var i = 0; i < iframes.length; i += 1) {
+        if (iframes[i].contentWindow === sourceWindow) return iframes[i];
+      }
+      return null;
+    }
+
+    window.addEventListener("message", function (event) {
+      if (event.origin !== "https://suhastpml.github.io") return;
+      if (!event.data) return;
+
+      var iframe = null;
+
+      if (event.data.type === "widget-height" && event.data.embedId) {
+        iframe = document.getElementById(event.data.embedId);
+      }
+
+      if (!iframe && event.data.type === "parliament-embed-size") {
+        iframe = findIframeByWindow(event.source);
+      }
+
+      if (!iframe && event.data.type === "widget-height") {
+        iframe = findIframeByWindow(event.source);
+      }
+
+      if (!iframe) return;
+      if (!event.data.height || event.data.height < 1) return;
+
+      iframe.style.height = event.data.height + "px";
+    });
+  })();
+</script>
