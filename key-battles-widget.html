@@ -177,8 +177,54 @@
     }
     .desktop-carousel-nav.prev { left: -8px; }
     .desktop-carousel-nav.next { right: -8px; }
-    @media (min-width: 768px) {
-      .desktop-carousel-nav { display: inline-flex; }
+    .carousel-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 4px 16px 20px;
+    }
+    .carousel-indicator-count {
+      font-size: 11px;
+      font-weight: 600;
+      color: #57534e;
+      letter-spacing: 0.02em;
+      min-width: 32px;
+      text-align: right;
+    }
+    .carousel-indicator-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+    .carousel-indicator-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #d6d3d1;
+      transition: width 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+      opacity: 0.8;
+      flex: 0 0 auto;
+    }
+    .carousel-indicator-dot.is-active {
+      width: 22px;
+      background: #1f2937;
+      opacity: 1;
+    }
+    @media (max-width: 767px) {
+      .desktop-carousel-shell {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .desktop-carousel-nav {
+        width: 36px;
+        height: 36px;
+      }
+      .desktop-carousel-nav.prev { left: 0; }
+      .desktop-carousel-nav.next { right: 0; }
     }
     /* State tab bar */
     #stateTabs {
@@ -208,7 +254,7 @@
     .state-tab.active { background: #1f2937; color: white; }
   </style>
 </head>
-<body class="bg-background text-on-background font-body widget-loading">
+<body class="bg-white text-on-background font-body widget-loading">
   <div class="widget-loader" id="widget-loader" aria-hidden="true">
     <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
   </div>
@@ -219,7 +265,7 @@
     <div id="stateTabs"></div>
 
     <!-- Search bar -->
-    <div class="mb-5 w-full">
+    <div class="mb-5 w-full -mx-4 px-4 md:mx-0 md:px-0">
       <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
         <span class="material-symbols-outlined text-stone-400 text-[20px]">search</span>
         <input
@@ -245,11 +291,9 @@
       </button>
     </div>
 
-    <!-- Carousel progress bar (mobile only) -->
-    <div id="carousel-progress" class="mt-3 pb-6 md:hidden px-4">
-      <div class="h-1 bg-stone-200 rounded-full overflow-hidden">
-        <div id="carousel-progress-fill" class="h-full bg-stone-700 rounded-full transition-none" style="width: 0%"></div>
-      </div>
+    <div id="carousel-progress" class="carousel-indicator" aria-live="polite">
+      <span id="carousel-progress-count" class="carousel-indicator-count"></span>
+      <div id="carousel-progress-dots" class="carousel-indicator-dots"></div>
     </div>
   </main>
   </div>
@@ -301,6 +345,8 @@
     const searchEl = document.getElementById('search-input');
     const stateTabsEl = document.getElementById('stateTabs');
     const carouselEl = document.getElementById('carousel-progress');
+    const carouselCountEl = document.getElementById('carousel-progress-count');
+    const carouselDotsEl = document.getElementById('carousel-progress-dots');
 
     // Hide tabs and search immediately while loading — avoids flash of UI before data arrives
     stateTabsEl.style.display = 'none';
@@ -1082,6 +1128,7 @@
 
       if (!stateFiltered.length) {
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
+        updateCarouselIndicator(0, 0);
         updateDesktopNav();
         postEmbedSize('empty-state');
         return;
@@ -1092,6 +1139,7 @@
         empty.className = 'text-stone-400 text-sm col-span-3 py-8 text-center';
         empty.textContent = 'No results match your search.';
         listEl.appendChild(empty);
+        updateCarouselIndicator(0, 0);
         updateDesktopNav();
         postEmbedSize('empty-search');
         return;
@@ -1103,23 +1151,51 @@
         return card;
       });
 
-      // Carousel progress bar (mobile only)
-      const progressFill = document.getElementById('carousel-progress-fill');
-      if (progressFill) {
-        const updateProgress = () => {
-          const scrollable = listEl.scrollWidth - listEl.clientWidth;
-          const ratio = scrollable > 0 ? listEl.scrollLeft / scrollable : 0;
-          progressFill.style.width = `${Math.round(ratio * 100)}%`;
-        };
-        listEl.removeEventListener('scroll', listEl._progressHandler);
-        listEl._progressHandler = updateProgress;
-        listEl.addEventListener('scroll', updateProgress, { passive: true });
-        updateProgress();
-      }
+      syncCarouselIndicator();
 
       updateDesktopNav();
 
       postEmbedSize('render');
+    }
+
+    function getCarouselCards() {
+      return Array.from(listEl.querySelectorAll('section'));
+    }
+
+    function getActiveCardIndex(cards = getCarouselCards()) {
+      if (!cards.length) return 0;
+      const listRect = listEl.getBoundingClientRect();
+      let bestIdx = 0;
+      let bestDistance = Number.POSITIVE_INFINITY;
+      cards.forEach((card, idx) => {
+        const rect = card.getBoundingClientRect();
+        const distance = Math.abs(rect.left - listRect.left);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestIdx = idx;
+        }
+      });
+      return bestIdx;
+    }
+
+    function updateCarouselIndicator(activeIndex, total) {
+      if (!carouselEl || !carouselCountEl || !carouselDotsEl) return;
+      carouselEl.style.display = total > 0 ? 'flex' : 'none';
+      carouselCountEl.textContent = total > 0 ? `${activeIndex + 1}/${total}` : '';
+      carouselDotsEl.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'carousel-indicator-dot' + (i === activeIndex ? ' is-active' : '');
+        carouselDotsEl.appendChild(dot);
+      }
+    }
+
+    function syncCarouselIndicator() {
+      const cards = getCarouselCards();
+      updateCarouselIndicator(getActiveCardIndex(cards), cards.length);
+      listEl.removeEventListener('scroll', listEl._progressHandler);
+      listEl._progressHandler = () => updateCarouselIndicator(getActiveCardIndex(cards), cards.length);
+      listEl.addEventListener('scroll', listEl._progressHandler, { passive: true });
     }
 
     function getDesktopScrollAmount() {
@@ -1136,9 +1212,9 @@
       const nextBtn = document.getElementById('desktop-next');
       if (!prevBtn || !nextBtn) return;
 
-      const isDesktop = window.innerWidth >= 768;
       const hasOverflow = listEl.scrollWidth > listEl.clientWidth + 4;
-      const show = isDesktop && hasOverflow;
+      const hasCards = !!listEl.querySelector('section');
+      const show = hasOverflow || hasCards;
 
       prevBtn.style.display = show ? 'inline-flex' : 'none';
       nextBtn.style.display = show ? 'inline-flex' : 'none';
@@ -1189,7 +1265,6 @@
             (b.constituency || '').toLowerCase().includes(cq)
           );
           currentStateFilter = ''; // bypass state filter in render()
-          if (carouselEl) carouselEl.style.display = 'none';
           // tabs and search stay hidden (already hidden during load)
         } else {
           // Restore tabs and search now that data is ready
