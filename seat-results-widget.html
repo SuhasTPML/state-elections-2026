@@ -1847,12 +1847,12 @@ function calculateLayout(totalSeats, chartHeight) {
 //  Highlight / reset
 // ─────────────────────────────────────────────
 function highlight(name, color) {
-  const darker  = d3.color(color).darker(0.7);
+  const darker  = d3.color(color).darker(0.9).formatHex();
   chartGroup.selectAll('.parliament-seat').classed('dimmed', true);
   chartGroup.selectAll('.parliament-seat').filter(d => d.name === name)
     .classed('dimmed', false)
-    .style('stroke', d => d.type === 'lead' ? d.color : darker)
-    .style('stroke-width', '2px')
+    .style('stroke', d => d.type === 'lead' ? darker : darker)
+    .style('stroke-width', d => d.type === 'lead' ? '2.25px' : '2px')
     .style('fill', d => d.color);
   d3.selectAll('.legend-item').style('opacity', 0.25);
   d3.selectAll('.legend-item').filter(d => d.name === name).style('opacity', 1).style('font-weight', 'bold');
@@ -1863,7 +1863,7 @@ function highlight(name, color) {
 
 function resetHighlight() {
   chartGroup.selectAll('.parliament-seat').classed('dimmed', false)
-    .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
+    .style('stroke', d => d.type === 'lead' ? d3.color(d.color).darker(0.75).formatHex() : '#fff')
     .style('stroke-width', '1px')
     .style('fill', d => d.color);
   d3.selectAll('.legend-item').style('opacity', 1).style('font-weight', 'normal');
