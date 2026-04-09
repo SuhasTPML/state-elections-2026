@@ -937,7 +937,7 @@ function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, all
       }
     });
 
-    const latestYear = years[years.length - 1] || '';
+    const latestYear = years[0] || '';
     return {
       key: state.key,
       label: state.label || stateLabelFromKey(state.key),
@@ -1055,7 +1055,7 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   currentStateKey = targetStateKey;
   const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
   const years = Array.isArray(state.years) ? state.years : [];
-  currentYear = years[years.length - 1] || null;
+  currentYear = years[0] || null;
   if (previousYear && years.includes(previousYear)) {
     currentYear = previousYear;
   }
@@ -1386,7 +1386,7 @@ document.getElementById('share-widget-btn').addEventListener('click', () => {
 function loadState(key) {
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
-  currentYear = state.years[state.years.length - 1];
+  currentYear = state.years[0];
   ensureMiniMapLoaded(key);
   setActiveStateTab(key);
   buildYearTabs(state);
