@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
   <style>
     @font-face {
       font-family: 'PvHeadlineSemiBold';
@@ -42,7 +43,19 @@
       --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
     }
     html, body { margin: 0; font-family: var(--pv-text); overflow: hidden; }
-    body { display: flex; flex-direction: column; min-height: 500px; }
+    body { display: flex; flex-direction: column; min-height: 500px; position: relative; }
+    .widget-loader {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: 20;
+    }
+    body.widget-loading .widget-loader { display: flex; }
+    body.widget-loading #widgetViewport { visibility: hidden; }
+    .widget-loader-player { width: 120px; height: 120px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
     main { display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; width: 100%; height: 100%; min-height: 100%; transform-origin: top center; }
     h1, h2, h3, h4, h5, h6 { font-family: var(--pv-headline); }
@@ -458,7 +471,10 @@
     }
   </style>
 </head>
-<body>
+<body class="widget-loading">
+  <div class="widget-loader" id="widget-loader" aria-hidden="true">
+    <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+  </div>
   <div id="widgetViewport">
   <main id="widgetScaleRoot">
   <div id="controls">
@@ -1103,6 +1119,11 @@
     let _fullStaticCache = null;
     let _fullStaticCachePromise = null;
     const featureByKey = new Map();
+    const LOADER_CLASS = 'widget-loading';
+
+    function setWidgetLoading(isLoading) {
+      document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+    }
 
     function hasSeparateLiveSourcesConfigured(){
       return Boolean(
@@ -2864,6 +2885,7 @@
       currentState = normalizedState;
       setMapHeadingForState(normalizedState);
       setActiveTab(normalizedState);
+      setWidgetLoading(true);
 
       try {
         statusEl.textContent = uiText().loadingMap(stateLabel);
@@ -2914,7 +2936,6 @@
         svg.call(zoom.transform, d3.zoomIdentity);
         setQueryParam('state', normalizedState);
         statusEl.textContent = '';
-        postEmbedSize('map-loaded');
 
         const initialAc = getQueryParam('ac');
         if (initialAc && featureByKey.has(initialAc)) {
@@ -2926,7 +2947,10 @@
             if (match) selectByKey(match.key, true);
           }
         }
+        setWidgetLoading(false);
+        postEmbedSize('map-loaded');
       } catch (e) {
+        setWidgetLoading(false);
         statusEl.textContent = uiText().failedToLoad(stateLabel, e && e.message ? e.message : 'unknown error');
         if (modeControlsRowEl) modeControlsRowEl.style.display = 'none';
         legendEl.style.display = 'none';

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
   <style>
     @font-face {
       font-family: 'PvHeadlineSemiBold'; font-weight: 600; font-style: normal; font-display: swap;
@@ -37,8 +38,20 @@
     html, body { overflow: hidden; }
     body {
       font-family: var(--pv-text);
-      background: #fff; color: #333; margin: 0; padding: 0; min-height: 500px;
+      background: #fff; color: #333; margin: 0; padding: 0; min-height: 500px; position: relative;
     }
+    .widget-loader {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: 20;
+    }
+    body.widget-loading .widget-loader { display: flex; }
+    body.widget-loading #widgetViewport { visibility: hidden; }
+    .widget-loader-player { width: 120px; height: 120px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; padding: 4px; }
     input, select, textarea, button { font-family: inherit; }
     .widget {
@@ -245,7 +258,10 @@
     html[lang="kn"] table { font-size: 14px; }
   </style>
 </head>
-<body>
+<body class="widget-loading">
+<div class="widget-loader" id="widget-loader" aria-hidden="true">
+  <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+</div>
 <div id="widgetViewport">
 <div class="widget" id="widgetScaleRoot">
   <!-- State tabs -->
@@ -990,6 +1006,11 @@ let viewMode = 'alliance';    // 'party' | 'alliance'
 let refreshTimer = null;
 let refreshInFlight = false;
 let shareBusy = false;
+const LOADER_CLASS = 'widget-loading';
+
+function setWidgetLoading(isLoading) {
+  document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+}
 
 // D3 selections
 let svg, chartGroup, labelsGroup;
@@ -1077,6 +1098,7 @@ async function refreshDataInBackground() {
 async function init() {
   const errorEl = document.getElementById('error-msg');
   const loadingText = LANG === 'kn' ? 'ಸ್ಥಾನಗಳ ಡೇಟಾ ಲೋಡ್ ಆಗುತ್ತಿದೆ...' : 'Loading seats data...';
+  setWidgetLoading(true);
   errorEl.style.color = '#374151';
   errorEl.textContent = loadingText;
 
@@ -1092,6 +1114,7 @@ async function init() {
     // Phase 1: load filtered for initial state (fast render)
     const nextData = await loadDataFromGoogleSheet(INITIAL_STATE_FILTER);
     applyDataAndRender(nextData, false);
+    setWidgetLoading(false);
     errorEl.textContent = '';
     errorEl.style.color = '#c52626';
     if (REFRESH_MS > 0) {
@@ -1104,6 +1127,7 @@ async function init() {
       }).catch(() => {});
     }
   } catch(e) {
+    setWidgetLoading(false);
     const msg = String(e && e.message ? e.message : e);
     errorEl.style.color = '#c52626';
     errorEl.textContent =
