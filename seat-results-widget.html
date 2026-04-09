@@ -160,6 +160,13 @@
       transition: opacity 0.25s, stroke 0.15s, stroke-width 0.15s;
     }
     .parliament-seat.dimmed { opacity: 0.15; }
+    .parliament-seat.is-lead {
+      animation: seatLeadBlink 1.1s ease-in-out infinite;
+    }
+    @keyframes seatLeadBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.42; }
+    }
 
     /* ── Legend ── */
     #legend {
@@ -227,15 +234,12 @@
       position: absolute; top: 0; bottom: 0;
     }
     .majority-progress-track .seg-leads {
-      opacity: 0.92;
-      background-image: repeating-linear-gradient(
-        -45deg,
-        rgba(255, 255, 255, 0.42) 0,
-        rgba(255, 255, 255, 0.42) 3px,
-        rgba(255, 255, 255, 0.12) 3px,
-        rgba(255, 255, 255, 0.12) 6px
-      );
-      border-left: 1px solid rgba(17, 24, 39, 0.35);
+      animation: leadSegmentBlink 1.1s ease-in-out infinite;
+      border-left: 1px solid rgba(17, 24, 39, 0.22);
+    }
+    @keyframes leadSegmentBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.38; }
     }
     .wins-leads-progress.is-majority .majority-progress-track {
       box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.18);
@@ -443,7 +447,7 @@ const UI = {
   }
 };
 UI.en.others = 'Others';
-UI.kn.others = 'à²‡à²¤à²°à²°à³';
+UI.kn.others = '\u0c87\u0ca4\u0cb0\u0cb0\u0cc1';
 
 // State labels
 const STATE_LABELS_KN = {
@@ -1281,6 +1285,43 @@ async function buildShareCanvas() {
       const controlsRow = clonedDoc.querySelector('.controls-row');
       if (controlsRow) controlsRow.style.display = 'none';
       clonedDoc.querySelectorAll('.state-mini-map').forEach((node) => node.remove());
+
+      const shareStyle = clonedDoc.createElement('style');
+      shareStyle.textContent = `
+        .parliament-seat.is-lead {
+          opacity: 1 !important;
+          fill-opacity: 1 !important;
+          stroke-width: 1.5px !important;
+          animation: none !important;
+          filter: none !important;
+        }
+        .majority-progress-track .seg-leads {
+          opacity: 1 !important;
+          animation: none !important;
+          border-left-width: 1px !important;
+        }
+      `;
+      clonedDoc.head.appendChild(shareStyle);
+
+      clonedDoc.querySelectorAll('.parliament-seat.is-lead').forEach((node) => {
+        const baseFill = node.getAttribute('fill') || node.style.fill;
+        const stroke = node.style.stroke || node.getAttribute('stroke') || '#1f2937';
+        if (baseFill) {
+          node.style.fill = baseFill;
+          node.style.opacity = '0.38';
+        }
+        node.style.stroke = stroke;
+        node.style.strokeWidth = '1.5px';
+      });
+
+      clonedDoc.querySelectorAll('.majority-progress-track .seg-leads').forEach((node) => {
+        const bg = node.style.background || node.style.backgroundColor;
+        if (bg) {
+          node.style.background = bg;
+          node.style.opacity = '0.42';
+        }
+        node.style.borderLeftColor = 'rgba(17, 24, 39, 0.7)';
+      });
     }
   });
 
@@ -1666,13 +1707,12 @@ function calculateLayout(totalSeats, chartHeight) {
 // ─────────────────────────────────────────────
 function highlight(name, color) {
   const darker  = d3.color(color).darker(0.7);
-  const leadHighlightFill = getLeadSeatFill(color, 0.6);
   chartGroup.selectAll('.parliament-seat').classed('dimmed', true);
   chartGroup.selectAll('.parliament-seat').filter(d => d.name === name)
     .classed('dimmed', false)
     .style('stroke', d => d.type === 'lead' ? d.color : darker)
     .style('stroke-width', '2px')
-    .style('fill',   d => d.type === 'lead' ? leadHighlightFill : d.color);
+    .style('fill', d => d.color);
   d3.selectAll('.legend-item').style('opacity', 0.25);
   d3.selectAll('.legend-item').filter(d => d.name === name).style('opacity', 1).style('font-weight', 'bold');
   d3.selectAll('#table-container tbody tr').style('opacity', 0.25);
@@ -1684,17 +1724,9 @@ function resetHighlight() {
   chartGroup.selectAll('.parliament-seat').classed('dimmed', false)
     .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
     .style('stroke-width', '1px')
-    .style('fill', d => d.type === 'seat' ? d.color : getLeadSeatFill(d.color));
+    .style('fill', d => d.color);
   d3.selectAll('.legend-item').style('opacity', 1).style('font-weight', 'normal');
   d3.selectAll('#table-container tbody tr').style('opacity', 1).style('background', 'transparent');
-}
-
-function getLeadSeatFill(color, alpha = 0.45) {
-  const c = d3.color(color);
-  if (!c) return `rgba(156,163,175,${alpha})`;
-  const lighter = c.brighter(1.35);
-  lighter.opacity = alpha;
-  return lighter.formatRgb();
 }
 
 // ─────────────────────────────────────────────
@@ -1802,7 +1834,8 @@ function render() {
     u => u.transition().duration(350)
           .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', seatRadius - 0.5),
     x => x.transition().duration(350).attr('r', 0).remove()
-  ).attr('fill', d => d.type === 'seat' ? d.color : getLeadSeatFill(d.color))
+  ).classed('is-lead', d => d.type === 'lead')
+   .attr('fill', d => d.color)
    .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
    .style('stroke-width', '1px')
    .style('pointer-events', 'none');

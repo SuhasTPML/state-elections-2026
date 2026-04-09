@@ -2495,10 +2495,22 @@
       crossBtn.style.display = (isZoomed || isSelected) ? 'block' : 'none';
     }
 
-    const zoom = d3.zoom().scaleExtent([1, 20]).on('zoom', (ev) => {
-      g.attr('transform', ev.transform);
-      updateCrossButton();
-    });
+    const zoomViewportExtent = [[0, 0], [mapWidth, mapHeight]];
+    const zoom = d3.zoom()
+      .scaleExtent([1, 20])
+      .extent(zoomViewportExtent)
+      .translateExtent(zoomViewportExtent)
+      .filter((ev) => {
+        if (ev.type === 'wheel') {
+          const transform = d3.zoomTransform(svg.node());
+          if (transform.k <= 1.01) return false;
+        }
+        return (!ev.ctrlKey || ev.type === 'wheel') && !ev.button;
+      })
+      .on('zoom', (ev) => {
+        g.attr('transform', ev.transform);
+        updateCrossButton();
+      });
     svg.call(zoom);
 
     function draw(features){
