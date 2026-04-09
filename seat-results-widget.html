@@ -183,6 +183,7 @@
     tbody tr:hover { background: #f9fafb; }
     tbody tr.placeholder-row { opacity: 0; pointer-events: none; }
     tbody tr.placeholder-row:hover { background: transparent; }
+    tbody tr.placeholder-row td { border-bottom-color: transparent; }
     .cell-name { display: flex; align-items: center; gap: 8px; }
     .color-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
     .num { text-align: right; }
@@ -635,7 +636,7 @@ function detectYearsFromRow(row){
     }
   });
 
-  return Array.from(years).sort((a, b) => Number(a) - Number(b));
+  return Array.from(years).sort((a, b) => Number(b) - Number(a));
 }
 
 function yearValue(row, baseKeys, year){
@@ -913,7 +914,7 @@ function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, all
   });
 
   const states = Array.from(statesMap.values()).map((state) => {
-    const years = Array.from(state.yearsSet).sort((a, b) => Number(a) - Number(b));
+    const years = Array.from(state.yearsSet).sort((a, b) => Number(b) - Number(a));
     const parties = Array.from(state.partiesMap.values()).map((party) => {
       const master = partyMaster.get(party.code.toUpperCase());
       if (!party.color) party.color = (master && master.color) || '#9CA3AF';
