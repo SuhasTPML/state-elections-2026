@@ -168,6 +168,8 @@
     td { padding: 3px 6px; border-bottom: 1px solid #e5e7eb; }
     tbody tr { transition: background 0.15s, opacity 0.2s; cursor: default; }
     tbody tr:hover { background: #f9fafb; }
+    tbody tr.placeholder-row { opacity: 0; pointer-events: none; }
+    tbody tr.placeholder-row:hover { background: transparent; }
     .cell-name { display: flex; align-items: center; gap: 8px; }
     .color-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
     .num { text-align: right; }
@@ -1869,8 +1871,8 @@ function renderTable(display, majority = 0, totalSeats = 0) {
     const placeholderCells = isAllianceTable ? 3 : 4;
     for (let i = display.length; i < targetRows; i++) {
       const tr = tbody.insertRow();
+      tr.className = 'placeholder-row';
       tr.setAttribute('aria-hidden', 'true');
-      tr.style.visibility = 'hidden';
       for (let c = 0; c < placeholderCells; c++) {
         const td = tr.insertCell();
         td.innerHTML = '&nbsp;';
