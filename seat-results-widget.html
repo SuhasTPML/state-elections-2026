@@ -293,6 +293,7 @@ const QUERY_PARAMS = new URLSearchParams(location.search);
 const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
 const TOP_BUCKET_LIMIT = 5;
 const OTHERS_KEY = '__others__';
+const COMPACT_MODE = QUERY_PARAMS.get('compact') === 'true';
 const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
 const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
 
@@ -1858,6 +1859,21 @@ function renderTable(display, majority = 0, totalSeats = 0) {
       totTd.style.fontWeight = '600';
     }
   });
+
+  if (COMPACT_MODE && display.length < 6) {
+    const targetRows = 6;
+    const isAllianceTable = viewMode === 'alliance' && majority > 0;
+    const placeholderCells = isAllianceTable ? 3 : 4;
+    for (let i = display.length; i < targetRows; i++) {
+      const tr = tbody.insertRow();
+      tr.setAttribute('aria-hidden', 'true');
+      tr.style.visibility = 'hidden';
+      for (let c = 0; c < placeholderCells; c++) {
+        const td = tr.insertCell();
+        td.innerHTML = '&nbsp;';
+      }
+    }
+  }
 
   container.appendChild(table);
 }
