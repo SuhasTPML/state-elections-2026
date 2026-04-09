@@ -1219,6 +1219,13 @@ function formatShareTimestamp(date = new Date()) {
   }).format(date);
 }
 
+function getShareHeaderLabel() {
+  const state = getCurrentState();
+  const stateLabel = displayName((state && state.label) || currentStateKey || '');
+  const yearLabel = currentYear ? String(currentYear) : '';
+  return [stateLabel, yearLabel].filter(Boolean).join(' · ');
+}
+
 function setShareStatus(message = '', isError = false) {
   const el = document.getElementById('share-status');
   if (!el) return;
@@ -1267,7 +1274,14 @@ async function buildShareCanvas() {
     scale: Math.max(2, window.devicePixelRatio || 1),
     useCORS: true,
     logging: false,
-    ignoreElements: (el) => !!(el && el.dataset && el.dataset.html2canvasIgnore === 'true')
+    ignoreElements: (el) => !!(el && el.dataset && el.dataset.html2canvasIgnore === 'true'),
+    onclone: (clonedDoc) => {
+      const stateTabs = clonedDoc.getElementById('state-tabs');
+      if (stateTabs) stateTabs.style.display = 'none';
+      const controlsRow = clonedDoc.querySelector('.controls-row');
+      if (controlsRow) controlsRow.style.display = 'none';
+      clonedDoc.querySelectorAll('.state-mini-map').forEach((node) => node.remove());
+    }
   });
 
   const headerHeight = 80;
@@ -1288,12 +1302,12 @@ async function buildShareCanvas() {
   ctx.lineTo(canvas.width, headerHeight + 0.5);
   ctx.stroke();
 
-  const timestamp = formatShareTimestamp();
+  const shareHeaderLabel = getShareHeaderLabel();
   ctx.fillStyle = '#334155';
   ctx.font = '600 24px "Roboto Slab", serif';
   ctx.textAlign = 'left';
   ctx.textBaseline = 'middle';
-  ctx.fillText(timestamp, 24, headerHeight / 2);
+  ctx.fillText(shareHeaderLabel, 24, headerHeight / 2);
 
   try {
     const logo = await loadImage(getShareLogoUrl());
