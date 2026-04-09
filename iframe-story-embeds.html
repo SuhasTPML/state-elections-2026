@@ -1,62 +1,36 @@
-<!-- Story page embeds: auto-resize to widget height -->
+<!-- Story page embeds with constituency-specific params -->
+<!-- Map uses `name` here because `South Chennai` is a constituency label, not an AC number. -->
 
 <!-- Map widget -->
 <iframe
   id="map-widget-frame"
-  src="https://suhastpml.github.io/state-elections-2026/map-widget.html"
+  src="https://suhastpml.github.io/state-elections-2026/map-widget.html?state=TAMIL_NADU&name=Gummidipoondi&hideTabs=true"
   title="Map Widget"
   loading="lazy"
-  scrolling="yes"
-  style="width:100%;height:400px;border:0;display:block;margin:0;padding:0;overflow:auto;"
+  scrolling="no"
+  style="width:100%;height:500px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
   allowfullscreen>
 </iframe>
 
 <!-- Seat results widget -->
+<!-- This widget supports state-level filtering, not constituency-level filtering. -->
 <iframe
   id="seat-results-widget-frame"
-  src="https://suhastpml.github.io/state-elections-2026/seat-results-widget.html"
+  src="https://suhastpml.github.io/state-elections-2026/seat-results-widget.html?state=TAMIL_NADU&hideTabs=true"
   title="Seat Results Widget"
   loading="lazy"
-  scrolling="yes"
-  style="width:100%;height:400px;border:0;display:block;margin:0;padding:0;overflow:auto;"
+  scrolling="no"
+  style="width:100%;height:500px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
   allowfullscreen>
 </iframe>
 
 <!-- Key battles widget -->
 <iframe
   id="key-battles-widget-frame"
-  src="https://suhastpml.github.io/state-elections-2026/key-battles-widget.html?embedId=key-battles-widget-frame"
+  src="https://suhastpml.github.io/state-elections-2026/key-battles-widget.html?state=TAMIL_NADU&constituency=Gummidipoondi&hideTabs=true&embedId=key-battles-widget-frame"
   title="Key Battles Widget"
   loading="lazy"
   scrolling="no"
-  style="width:100%;height:200px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
+  style="width:100%;height:500px;border:0;display:block;margin:0;padding:0;overflow:hidden;"
   allowfullscreen>
 </iframe>
-
-<script>
-  (function () {
-    function findIframeByWindow(sourceWindow) {
-      var iframes = document.getElementsByTagName("iframe");
-      for (var i = 0; i < iframes.length; i += 1) {
-        if (iframes[i].contentWindow === sourceWindow) return iframes[i];
-      }
-      return null;
-    }
-
-    window.addEventListener("message", function (event) {
-      if (event.origin !== "https://suhastpml.github.io") return;
-      if (!event.data) return;
-
-      var iframe = null;
-
-      if (event.data.type === "widget-height" && event.data.widget === "key-battles-widget" && event.data.embedId) {
-        iframe = document.getElementById(event.data.embedId);
-      }
-
-      if (!iframe) return;
-      if (!event.data.height || event.data.height < 1) return;
-
-      iframe.style.height = event.data.height + "px";
-    });
-  })();
-</script>

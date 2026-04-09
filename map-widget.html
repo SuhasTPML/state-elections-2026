@@ -41,9 +41,10 @@
       --pv-text: "PvTextRegular", var(--pv-fallback);
       --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
     }
-    html, body { height: 400px; margin: 0; font-family: var(--pv-text); overflow: hidden; }
-    body { display: flex; flex-direction: column; height: 400px; }
-    main { display: flex; flex: 1; flex-direction: column; height: 400px; max-width: 720px; margin: 0 auto; width: 100%; overflow-y: auto; }
+    html, body { margin: 0; font-family: var(--pv-text); overflow: hidden; }
+    body { display: flex; flex-direction: column; min-height: 500px; }
+    #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
+    main { display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; width: 100%; transform-origin: top center; }
     h1, h2, h3, h4, h5, h6 { font-family: var(--pv-headline); }
     input, select, textarea, button { font-family: var(--pv-text); }
     /* Change 1: Compact controls — reduced padding and gap */
@@ -463,7 +464,8 @@
   </style>
 </head>
 <body>
-  <main>
+  <div id="widgetViewport">
+  <main id="widgetScaleRoot">
   <div id="controls">
     <!-- Change 1: Title in header only; color-by moved next to search -->
     <div class="controls-header">
@@ -511,6 +513,7 @@
   <div id="bottomSheet"></div>
   <div id="mapTooltip"></div>
   </main>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script>
@@ -3009,6 +3012,17 @@
       }, 120);
     });
 
+    function fitWidgetToViewport() {
+      const viewport = document.getElementById('widgetViewport');
+      const root = document.getElementById('widgetScaleRoot');
+      if (!viewport || !root) return;
+      root.style.transform = 'scale(1)';
+      const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+      const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+      root.style.transform = `scale(${scale})`;
+      viewport.style.height = '500px';
+    }
+
     async function init(){
       await loadLanguageData(initialLangFromQuery());
       populateStateTabs();
@@ -3020,7 +3034,8 @@
 
     function postEmbedSize(reason = 'manual') {
       try {
-        const root = document.querySelector('main') || document.body;
+        fitWidgetToViewport();
+        const root = document.getElementById('widgetViewport') || document.querySelector('main') || document.body;
         const height = Math.ceil(root.getBoundingClientRect().height);
         const width  = Math.ceil(root.getBoundingClientRect().width);
         parent.postMessage({ type: 'parliament-embed-size', height, width, reason }, '*');

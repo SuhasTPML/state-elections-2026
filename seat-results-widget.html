@@ -33,17 +33,17 @@
       --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
     }
     * { box-sizing: border-box; }
-    html, body { height: 400px; overflow: hidden; }
+    html, body { overflow: hidden; }
     body {
       font-family: var(--pv-text);
-      background: #fff; color: #333; margin: 0; padding: 4px; height: 400px;
+      background: #fff; color: #333; margin: 0; padding: 0; min-height: 500px;
     }
+    #widgetViewport { height: 500px; overflow: hidden; width: 100%; padding: 4px; }
     input, select, textarea, button { font-family: inherit; }
     .widget {
       max-width: 720px; margin: 0 auto;
       padding: 4px 6px 8px;
-      height: calc(400px - 8px);
-      overflow-y: auto;
+      transform-origin: top center;
     }
 
     /* ── State tabs (grey-fill chips) ── */
@@ -214,7 +214,8 @@
   </style>
 </head>
 <body>
-<div class="widget">
+<div id="widgetViewport">
+<div class="widget" id="widgetScaleRoot">
   <!-- State tabs -->
   <div id="state-tabs" class="tab-row"></div>
 
@@ -240,6 +241,7 @@
   <!-- Table -->
   <div id="table-container"></div>
   <div id="error-msg"></div>
+</div>
 </div>
 
 <script>
@@ -1654,11 +1656,22 @@ window.addEventListener('resize', () => {
 
 function postEmbedSize(reason = 'manual') {
   try {
-    const root = document.querySelector('.widget') || document.body;
+    fitWidgetToViewport();
+    const root = document.getElementById('widgetViewport') || document.querySelector('.widget') || document.body;
     const height = Math.ceil(root.getBoundingClientRect().height);
     const width  = Math.ceil(root.getBoundingClientRect().width);
     parent.postMessage({ type: 'parliament-embed-size', height, width, reason }, '*');
   } catch (e) {}
+}
+function fitWidgetToViewport() {
+  const viewport = document.getElementById('widgetViewport');
+  const root = document.getElementById('widgetScaleRoot');
+  if (!viewport || !root) return;
+  root.style.transform = 'scale(1)';
+  const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+  const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+  root.style.transform = `scale(${scale})`;
+  viewport.style.height = '500px';
 }
 try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
 window.addEventListener('load',   () => postEmbedSize('load'));

@@ -129,7 +129,9 @@
     .bar-counting {
       animation: barLoop 1.6s ease-in infinite;
     }
-    body { min-height: max(884px, 100dvh); }
+    body { min-height: 500px; overflow: hidden; }
+    #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
+    #widgetScaleRoot { transform-origin: top center; }
     /* State tab bar */
     #stateTabs {
       display: flex;
@@ -159,7 +161,8 @@
   </style>
 </head>
 <body class="bg-background text-on-background font-body">
-  <main class="px-4 pt-6">
+  <div id="widgetViewport">
+  <main id="widgetScaleRoot" class="px-4 pt-6">
 
     <!-- State tabs -->
     <div id="stateTabs"></div>
@@ -193,6 +196,7 @@
       </div>
     </div>
   </main>
+  </div>
 
   <script>
     const QUERY = new URLSearchParams(location.search);
@@ -1095,15 +1099,23 @@
 
     searchEl.addEventListener('input', () => render(allBattles));
 
+    function fitWidgetToViewport() {
+      const viewport = document.getElementById('widgetViewport');
+      const root = document.getElementById('widgetScaleRoot');
+      if (!viewport || !root) return;
+      root.style.transform = 'scale(1)';
+      const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+      const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+      root.style.transform = `scale(${scale})`;
+      viewport.style.height = '500px';
+    }
+
     function postEmbedSize(reason = 'manual') {
       try {
-        const listRect = listEl.getBoundingClientRect();
-        const progressVisible = carouselEl && carouselEl.offsetParent !== null && getComputedStyle(carouselEl).display !== 'none';
-        const progressRect = progressVisible ? carouselEl.getBoundingClientRect() : null;
-        const bottom = progressRect ? Math.max(listRect.bottom, progressRect.bottom) : listRect.bottom;
-        const top = listRect.top;
-        const height = Math.ceil(Math.max(0, bottom - top));
-        const width = Math.ceil(listRect.width);
+        fitWidgetToViewport();
+        const root = document.getElementById('widgetViewport') || listEl;
+        const height = Math.ceil(root.getBoundingClientRect().height);
+        const width = Math.ceil(root.getBoundingClientRect().width);
         parent.postMessage({
           type: 'widget-height',
           widget: 'key-battles-widget',
