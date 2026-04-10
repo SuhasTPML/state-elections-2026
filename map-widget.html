@@ -2542,13 +2542,17 @@
       .scaleExtent([1, 20])
       .extent(zoomViewportExtent)
       .translateExtent(zoomViewportExtent)
-      .filter((ev) => ev.type !== 'wheel' && !ev.button)
+      .filter((ev) => ev.type !== 'wheel' && !String(ev.type || '').startsWith('touch') && !ev.button)
       .on('zoom', (ev) => {
         g.attr('transform', ev.transform);
         updateCrossButton();
       });
     svg.call(zoom);
     svg.on('wheel.zoom', null);
+    svg.on('touchstart.zoom', null);
+    svg.on('touchmove.zoom', null);
+    svg.on('touchend.zoom', null);
+    svg.style('touch-action', 'pan-y');
 
     function draw(features){
       g.selectAll('path.ac')
