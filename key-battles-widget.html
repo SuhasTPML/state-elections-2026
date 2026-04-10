@@ -144,7 +144,7 @@
     body.widget-loading #widgetViewport { visibility: hidden; }
     .widget-loader-player { width: 120px; height: 120px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
-    #widgetScaleRoot { transform-origin: top center; width: 100%; max-width: none; }
+    #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: none; }
     .desktop-carousel-shell {
       position: relative;
       width: 100%;
@@ -1365,8 +1365,12 @@
       const root = document.getElementById('widgetScaleRoot');
       if (!viewport || !root) return;
       root.style.transform = 'scale(1)';
+      root.style.width = '100%';
       const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
       const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+      // Widen the root so that after scaling it still fills the full viewport width.
+      // transform-origin is top left, so scale compresses from the left edge.
+      root.style.width = scale < 1 ? `${(100 / scale).toFixed(4)}%` : '100%';
       root.style.transform = `scale(${scale})`;
       viewport.style.height = '500px';
     }
