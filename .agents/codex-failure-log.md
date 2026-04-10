@@ -42,3 +42,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: The script threw `Cannot read properties of null (reading 'style')` during startup, so `widget-loading` was never cleared and the page stayed on the loader.
 - Working approach: Give the wrapper a stable `id` (`search-shell`) and reference it directly with a null-safe check.
 - Next-time rule: Do not couple JS behavior to utility spacing classes; use stable IDs or data attributes for elements the script needs to show or hide.
+
+## 2026-04-10 - Verify web app endpoints with elevated curl and quoted URLs
+- Context: Checking whether an Apps Script deployment supported the new `multiValues` action.
+- Command/workflow: Network verification with `curl.exe` from PowerShell.
+- Failed approach: Ran `curl` inside the sandbox and also passed URLs containing `&` without robust command quoting.
+- Symptom: Requests either failed at the network layer or produced misleading empty/sign-in responses, making it unclear whether the deployment was actually serving the new code.
+- Working approach: Run `curl.exe` with elevated permissions and pass the full URL as a single quoted `--url` argument.
+- Next-time rule: For external endpoint verification in this repo, use elevated `curl.exe` and quote the entire URL explicitly so query params are not reinterpreted by PowerShell.

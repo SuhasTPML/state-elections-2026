@@ -2319,6 +2319,42 @@
       }));
     }
 
+    function buildMultiSheetValuesApiUrl(requests) {
+      const url = new URL(API_URL_PARAM, location.href);
+      url.searchParams.set('action', 'multiValues');
+      url.searchParams.set('sheetId', SHEET_ID);
+      (requests || []).forEach((request) => {
+        if (!request || !request.alias || !request.tabName) return;
+        url.searchParams.append('request', [request.alias, request.tabName, request.stateFilter || ''].join('|'));
+      });
+      return url.toString();
+    }
+
+    function rowsFromValuesPayload(payload) {
+      if (!payload || !payload.values || payload.values.length < 2) return [];
+      const [headers, ...dataRows] = payload.values;
+      return normalizeCsvRows(dataRows.map(row => {
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+        return obj;
+      }));
+    }
+
+    async function loadMultiSheetValues(requests, cacheMode = 'force-cache') {
+      const filteredRequests = (requests || []).filter((request) => request && request.alias && request.tabName);
+      if (!filteredRequests.length) return {};
+      const res = await fetch(buildMultiSheetValuesApiUrl(filteredRequests), { cache: cacheMode });
+      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
+      const results = json.results && typeof json.results === 'object' ? json.results : {};
+      const rowsByAlias = {};
+      Object.keys(results).forEach((alias) => {
+        rowsByAlias[alias] = rowsFromValuesPayload(results[alias]);
+      });
+      return rowsByAlias;
+    }
+
     async function loadJson(url, description, optional = false){
       try {
         // Cache map geometry aggressively; election CSVs still use no-store.
@@ -2348,20 +2384,23 @@
         // Phase 1: load all static tabs in parallel, filtered for current state
         const sf = stateKey;
         const separatePartyWise = PARTY_WISE_TAB_NAME && PARTY_WISE_TAB_NAME !== RESULTS_TAB_NAME;
-        const [_results, _partyWise, _mapping, _mappingLive, _parties, _alliances] = await Promise.all([
-          loadSheetValues(RESULTS_TAB_NAME, staticMode, sf).catch(() => null),
-          separatePartyWise ? loadSheetValues(PARTY_WISE_TAB_NAME, staticMode, sf).catch(() => null) : Promise.resolve(null),
-          loadSheetValues(MAPPING_TAB_NAME, 'force-cache').catch(() => null),
-          loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store', sf).catch(() => null),
-          loadSheetValues(PARTIES_TAB_NAME, 'force-cache').catch(() => null),
-          loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache').catch(() => null),
-        ]);
-        cachedResultsRows     = _results;
-        cachedPartyWiseRows   = separatePartyWise ? _partyWise : cachedResultsRows;
-        cachedMappingRows     = _mapping;
-        cachedMappingLiveRows = _mappingLive;
-        cachedPartyRows       = _parties;
-        cachedAllianceRows    = _alliances;
+        const staticRequests = [
+          { alias: 'results', tabName: RESULTS_TAB_NAME, stateFilter: sf },
+          { alias: 'mapping', tabName: MAPPING_TAB_NAME },
+          { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', stateFilter: sf },
+          { alias: 'parties', tabName: PARTIES_TAB_NAME },
+          { alias: 'alliances', tabName: ALLIANCES_TAB_NAME }
+        ];
+        if (separatePartyWise) {
+          staticRequests.splice(1, 0, { alias: 'partyWise', tabName: PARTY_WISE_TAB_NAME, stateFilter: sf });
+        }
+        const staticRows = await loadMultiSheetValues(staticRequests, 'no-store');
+        cachedResultsRows     = staticRows.results || null;
+        cachedPartyWiseRows   = separatePartyWise ? (staticRows.partyWise || null) : cachedResultsRows;
+        cachedMappingRows     = staticRows.mapping || null;
+        cachedMappingLiveRows = staticRows.mappingLive || null;
+        cachedPartyRows       = staticRows.parties || null;
+        cachedAllianceRows    = staticRows.alliances || null;
         // Phase 2: load all states in background for instant future state switches
         _startFullStaticCacheLoad(staticMode);
       }
@@ -2370,12 +2409,13 @@
       const liveLookup = RESULTS_LIVE_TAB_NAME || 'Live_Results_2026';
       const livePartyWiseLookup = PARTY_WISE_LIVE_TAB_NAME || liveLookup;
       const sameliveTabs = livePartyWiseLookup === liveLookup;
-      const [_liveResults, _livePartyWiseSep] = await Promise.all([
-        loadSheetValues(liveLookup, 'no-store', stateKey).catch(() => null),
-        !sameliveTabs ? loadSheetValues(livePartyWiseLookup, 'no-store', stateKey).catch(() => null) : Promise.resolve(null),
-      ]);
-      const liveResultsRows = _liveResults;
-      let livePartyWiseRows = sameliveTabs ? liveResultsRows : _livePartyWiseSep;
+      const liveRequests = [{ alias: 'liveResults', tabName: liveLookup, stateFilter: stateKey }];
+      if (!sameliveTabs) {
+        liveRequests.push({ alias: 'livePartyWise', tabName: livePartyWiseLookup, stateFilter: stateKey });
+      }
+      const liveRows = await loadMultiSheetValues(liveRequests, 'no-store');
+      const liveResultsRows = liveRows.liveResults || null;
+      let livePartyWiseRows = sameliveTabs ? liveResultsRows : (liveRows.livePartyWise || null);
 
       const baseResultsData = getRowsForState(cachedResultsRows || [], stateKey);
       const liveResultsData = getRowsForState(liveResultsRows || [], stateKey);
@@ -2471,10 +2511,12 @@
       // Only re-fetch tabs that had stateFilter (results, mappingLive).
       // Global tabs (mapping, parties, alliances) are already in browser cache from Phase 1
       // and already assigned to cachedXxx vars — reuse them directly.
-      _fullStaticCachePromise = Promise.all([
-        loadSheetValues(RESULTS_TAB_NAME, staticMode).catch(() => null),
-        loadSheetValues(MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026', 'no-store').catch(() => null),
-      ]).then(function([results, mappingLive]) {
+      _fullStaticCachePromise = loadMultiSheetValues([
+        { alias: 'results', tabName: RESULTS_TAB_NAME },
+        { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME || 'Live_Alliance_2026' }
+      ], 'no-store').then(function(rows) {
+        const results = rows.results || null;
+        const mappingLive = rows.mappingLive || null;
         if (results) {
           _fullStaticCache = {
             results,
@@ -2500,18 +2542,13 @@
       .scaleExtent([1, 20])
       .extent(zoomViewportExtent)
       .translateExtent(zoomViewportExtent)
-      .filter((ev) => {
-        if (ev.type === 'wheel') {
-          const transform = d3.zoomTransform(svg.node());
-          if (transform.k <= 1.01) return false;
-        }
-        return (!ev.ctrlKey || ev.type === 'wheel') && !ev.button;
-      })
+      .filter((ev) => ev.type !== 'wheel' && !ev.button)
       .on('zoom', (ev) => {
         g.attr('transform', ev.transform);
         updateCrossButton();
       });
     svg.call(zoom);
+    svg.on('wheel.zoom', null);
 
     function draw(features){
       g.selectAll('path.ac')

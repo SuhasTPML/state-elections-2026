@@ -1,52 +1,42 @@
 function doGet(e) {
   try {
     const params = (e && e.parameter) || {};
+    const multiParams = (e && e.parameters) || {};
     const action = String(params.action || 'values').trim().toLowerCase();
-    if (action !== 'values') {
-      return jsonResponse({ error: 'Unsupported action. Use action=values.' }, 400);
+    if (action !== 'values' && action !== 'multivalues') {
+      return jsonResponse({ error: 'Unsupported action. Use action=values or action=multiValues.' }, 400);
     }
 
     const sheetId = extractSheetId(params.sheetId || params.sheetUrl || '');
-    const tabName = String(params.tab || '').trim();
-    const stateFilter = String(params.stateFilter || '').trim().toUpperCase();
 
     if (!sheetId) {
       return jsonResponse({ error: 'Missing sheetId or sheetUrl.' }, 400);
     }
-    if (!tabName) {
-      return jsonResponse({ error: 'Missing tab.' }, 400);
-    }
 
     const accessToken = getCachedServiceAccountToken();
-    const data = getSheetValues(accessToken, sheetId, tabName);
 
-    var values = data.values || [];
-    if (stateFilter && values.length > 1) {
-      var headers = values[0];
-      var STATE_COLS = ['state_key', 'state_code', 'state'];
-      var colIdx = -1;
-      for (var i = 0; i < STATE_COLS.length; i++) {
-        for (var j = 0; j < headers.length; j++) {
-          if (String(headers[j] || '').trim().toLowerCase() === STATE_COLS[i]) {
-            colIdx = j;
-            break;
-          }
-        }
-        if (colIdx >= 0) break;
+    if (action === 'values') {
+      const tabName = String(params.tab || '').trim();
+      const stateFilter = String(params.stateFilter || '').trim().toUpperCase();
+      if (!tabName) {
+        return jsonResponse({ error: 'Missing tab.' }, 400);
       }
-      if (colIdx >= 0) {
-        var filtered = values.slice(1).filter(function(row) {
-          return String(row[colIdx] || '').trim().toUpperCase() === stateFilter;
-        });
-        values = [headers].concat(filtered);
-      }
+      const data = getSheetValues(accessToken, sheetId, tabName);
+      return jsonResponse(buildValuesPayload(data, tabName, stateFilter));
     }
 
-    return jsonResponse({
-      range: data.range || (tabName + '!A1'),
-      majorDimension: data.majorDimension || 'ROWS',
-      values: values
+    const requestSpecs = parseMultiValueRequests(multiParams.request);
+    if (!requestSpecs.length) {
+      return jsonResponse({ error: 'Missing request. Use repeated request=alias|tab|stateFilter params.' }, 400);
+    }
+
+    const results = {};
+    requestSpecs.forEach(function(spec) {
+      const data = getSheetValues(accessToken, sheetId, spec.tabName);
+      results[spec.alias] = buildValuesPayload(data, spec.tabName, spec.stateFilter);
     });
+
+    return jsonResponse({ results: results });
   } catch (error) {
     return jsonResponse({
       error: String(error && error.message ? error.message : error)
@@ -145,6 +135,55 @@ function getSheetValues(accessToken, sheetId, tabName) {
     throw new Error('Sheets API error (' + response.getResponseCode() + '): ' + msg);
   }
   return data;
+}
+
+function buildValuesPayload(data, tabName, stateFilter) {
+  return {
+    range: data.range || (tabName + '!A1'),
+    majorDimension: data.majorDimension || 'ROWS',
+    values: applyStateFilterToValues(data.values || [], stateFilter)
+  };
+}
+
+function applyStateFilterToValues(values, stateFilter) {
+  var normalizedFilter = String(stateFilter || '').trim().toUpperCase();
+  if (!normalizedFilter || !values || values.length <= 1) return values || [];
+
+  var headers = values[0];
+  var STATE_COLS = ['state_key', 'state_code', 'state'];
+  var colIdx = -1;
+  for (var i = 0; i < STATE_COLS.length; i++) {
+    for (var j = 0; j < headers.length; j++) {
+      if (String(headers[j] || '').trim().toLowerCase() === STATE_COLS[i]) {
+        colIdx = j;
+        break;
+      }
+    }
+    if (colIdx >= 0) break;
+  }
+  if (colIdx < 0) return values;
+
+  var filtered = values.slice(1).filter(function(row) {
+    return String(row[colIdx] || '').trim().toUpperCase() === normalizedFilter;
+  });
+  return [headers].concat(filtered);
+}
+
+function parseMultiValueRequests(requestParams) {
+  var rawRequests = Array.isArray(requestParams)
+    ? requestParams
+    : (requestParams ? [requestParams] : []);
+
+  return rawRequests.map(function(raw) {
+    var parts = String(raw || '').split('|');
+    var alias = String(parts[0] || '').trim();
+    var tabName = String(parts[1] || '').trim();
+    var stateFilter = String(parts[2] || '').trim().toUpperCase();
+    if (!alias || !tabName) {
+      throw new Error('Invalid request. Use request=alias|tab|stateFilter.');
+    }
+    return { alias: alias, tabName: tabName, stateFilter: stateFilter };
+  });
 }
 
 /** Base64url-encodes a string or byte array (no padding). */

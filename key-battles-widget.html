@@ -221,12 +221,6 @@
       opacity: 1;
     }
     @media (max-width: 767px) {
-      .desktop-carousel-shell {
-        margin-left: -16px;
-        margin-right: -16px;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
       .desktop-carousel-nav {
         width: 36px;
         height: 36px;
@@ -590,6 +584,42 @@
         headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
         return obj;
       }));
+    }
+
+    function buildMultiSheetValuesApiUrl(requests) {
+      const url = new URL(API_URL_PARAM, location.href);
+      url.searchParams.set('action', 'multiValues');
+      url.searchParams.set('sheetId', SHEET_ID);
+      (requests || []).forEach((request) => {
+        if (!request || !request.alias || !request.tabName) return;
+        url.searchParams.append('request', [request.alias, request.tabName, request.stateFilter || ''].join('|'));
+      });
+      return url.toString();
+    }
+
+    function rowsFromValuesPayload(payload) {
+      if (!payload || !payload.values || payload.values.length < 2) return [];
+      const [headers, ...dataRows] = payload.values;
+      return normalizeRows(dataRows.map(row => {
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+        return obj;
+      }));
+    }
+
+    async function loadMultiSheetValues(requests, cacheMode = 'force-cache') {
+      const filteredRequests = (requests || []).filter((request) => request && request.alias && request.tabName);
+      if (!filteredRequests.length) return {};
+      const res = await fetch(buildMultiSheetValuesApiUrl(filteredRequests), { cache: cacheMode });
+      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
+      const results = json.results && typeof json.results === 'object' ? json.results : {};
+      const rowsByAlias = {};
+      Object.keys(results).forEach((alias) => {
+        rowsByAlias[alias] = rowsFromValuesPayload(results[alias]);
+      });
+      return rowsByAlias;
     }
 
     async function resolveCsvUrl(options = {}) {
@@ -1315,12 +1345,16 @@
       setWidgetLoading(true);
       try {
         listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
-        const [rows, mappingRows, partyColorRows, allianceColorRows] = await Promise.all([
-          loadRows(),
-          loadLiveMappingRows(),
-          loadPartyColorRows(),
-          loadAllianceColorRows()
-        ]);
+        const rowsByAlias = await loadMultiSheetValues([
+          { alias: 'battles', tabName: TAB_NAME },
+          { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME },
+          { alias: 'partyColors', tabName: PARTIES_TAB_NAME },
+          { alias: 'allianceColors', tabName: ALLIANCES_TAB_NAME }
+        ], 'no-store');
+        const rows = rowsByAlias.battles || [];
+        const mappingRows = rowsByAlias.mappingLive || [];
+        const partyColorRows = rowsByAlias.partyColors || [];
+        const allianceColorRows = rowsByAlias.allianceColors || [];
         PARTY_COLORS = parsePartyColors(partyColorRows);
         ALLIANCE_COLORS = parseAllianceColors(allianceColorRows);
         const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
