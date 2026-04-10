@@ -327,6 +327,24 @@
     .kb-cta {
       font-size: 13px;
       font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #1f2937;
+      color: #ffffff !important;
+      border: 1px solid #1f2937;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+      text-decoration: none;
+      transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .kb-cta:hover {
+      background: #111827;
+      border-color: #111827;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
     }
     .kb-cta .material-symbols-outlined {
       font-size: 16px !important;
@@ -1286,7 +1304,7 @@
         cta.href = battle.storyUrl;
         cta.target = '_blank';
         cta.rel = 'noopener';
-        cta.className = 'kb-cta mt-auto pt-2 text-stone-500 hover:text-stone-900 flex items-center gap-1 border-t border-stone-100';
+        cta.className = 'kb-cta mt-auto';
         cta.innerHTML = 'Read Full Story <span class="material-symbols-outlined text-[14px]">arrow_forward</span>';
         card.appendChild(cta);
       }
