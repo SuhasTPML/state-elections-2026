@@ -327,7 +327,7 @@
     body.bottom-sheet-active #mapwrap {
       min-height: 220px;
     }
-    svg { width: 100%; height: 100%; background: #f9fafb; display:block; }
+    svg { width: 100%; height: 100%; background: #e9ebee; display:block; border-radius: 10px; }
     .ac {
       stroke-width: 0.5;
       stroke-linejoin: round;
@@ -375,6 +375,16 @@
     }
     .map-scroll-hint.is-visible {
       opacity: 1;
+    }
+    .map-touch-caption {
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+      margin: 4px 0 0;
+      pointer-events: none;
+    }
+    @media (hover: hover) {
+      .map-touch-caption { display: none; }
     }
     .map-control-btn {
       width: 44px;
@@ -565,6 +575,7 @@
     </div>
   </div>
 
+  <p class="map-touch-caption">Tap outside the map to scroll the page</p>
   <div id="bottomSheet"></div>
   <div id="mapTooltip"></div>
   </main>
