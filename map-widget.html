@@ -354,6 +354,28 @@
       right: 20px;
       display: none;
     }
+    .map-scroll-hint {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(31, 41, 55, 0.88);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.2;
+      white-space: nowrap;
+      pointer-events: none;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 90;
+    }
+    .map-scroll-hint.is-visible {
+      opacity: 1;
+    }
     .map-control-btn {
       width: 44px;
       height: 44px;
@@ -535,6 +557,7 @@
     <svg id="svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
       <g id="zoomlayer"></g>
     </svg>
+    <div id="mapScrollHint" class="map-scroll-hint">Use Ctrl + scroll to zoom</div>
     <button id="crossBtn" class="map-control-btn" title="Clear selection and reset view">&times;</button>
     <div id="mapControls">
       <button id="zoomInBtn" class="map-control-btn" title="Zoom in">+</button>
@@ -1128,7 +1151,6 @@
     let i18nReserved = {};
     let colorCache = new Map();
     let leadingStripePatternCache = new Map();
-    let mapTouchActivated = false;
     let activeColorModes = [];
     let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2021';
     let currentModeYear = '';
@@ -1151,19 +1173,21 @@
       }
     })();
 
-    function isTouchZoomAllowed() {
-      return !IS_IFRAME_EMBED || mapTouchActivated;
+    const scrollHintEl = document.getElementById('mapScrollHint');
+    let scrollHintTimer = null;
+
+    function showScrollHint() {
+      if (!scrollHintEl) return;
+      scrollHintEl.classList.add('is-visible');
+      clearTimeout(scrollHintTimer);
+      scrollHintTimer = setTimeout(() => scrollHintEl.classList.remove('is-visible'), 1500);
     }
 
     function updateMapInteractionOverlay() {
-      svg.style('touch-action', isTouchZoomAllowed() ? 'none' : 'pan-y');
+      svg.style('touch-action', 'pan-y');
     }
 
-    function activateMapTouchInteractions() {
-      if (!IS_IFRAME_EMBED || mapTouchActivated) return;
-      mapTouchActivated = true;
-      updateMapInteractionOverlay();
-    }
+    function activateMapTouchInteractions() {}
     const featureByKey = new Map();
     const LOADER_CLASS = 'widget-loading';
 
@@ -2565,8 +2589,8 @@
       .translateExtent(zoomViewportExtent)
       .filter((ev) => {
         const type = String(ev.type || '');
-        if (type === 'wheel') return false;
-        if (type.startsWith('touch')) return isTouchZoomAllowed();
+        if (type === 'wheel') return ev.ctrlKey || ev.metaKey;
+        if (type.startsWith('touch')) return true;
         return !ev.button;
       })
       .on('zoom', (ev) => {
@@ -2574,9 +2598,10 @@
         updateCrossButton();
       });
     svg.call(zoom);
-    svg.on('wheel.zoom', null);
     updateMapInteractionOverlay();
-    svg.node().addEventListener('touchstart', () => activateMapTouchInteractions(), { once: true, passive: true });
+    svg.node().addEventListener('wheel', (ev) => {
+      if (!ev.ctrlKey && !ev.metaKey) showScrollHint();
+    }, { passive: true });
 
     function draw(features){
       g.selectAll('path.ac')
