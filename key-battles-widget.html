@@ -190,10 +190,10 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 4px 16px 20px;
+      padding: 2px 16px 12px;
     }
     .carousel-indicator-count {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 600;
       color: #57534e;
       letter-spacing: 0.02em;
@@ -254,6 +254,133 @@
     }
     .state-tab:hover { background: #e5e7eb; }
     .state-tab.active { background: #1f2937; color: white; }
+    .kb-search-icon {
+      font-size: 22px !important;
+    }
+    .kb-search-input {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .kb-carousel-nav-icon {
+      font-size: 22px !important;
+    }
+    .kb-indicator-count {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .kb-card-heading {
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .kb-hero-name {
+      font-size: 17px;
+      font-weight: 700;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+    .kb-chip {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-outcome-badge {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .kb-small-outcome {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-small-name {
+      font-size: 13px;
+      font-weight: 700;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .kb-small-chip {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-metric-text,
+    .kb-vs-label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .kb-cta {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .kb-cta .material-symbols-outlined {
+      font-size: 16px !important;
+    }
+    .kb-empty-state {
+      font-size: 15px;
+    }
+    .kb-vote-bar-wrap {
+      margin-top: 6px;
+    }
+    @media (min-width: 768px) {
+      .state-tab {
+        font-size: 15px;
+        padding: 6px 14px;
+      }
+      .kb-search-icon {
+        font-size: 24px !important;
+      }
+      .kb-search-input {
+        font-size: 16px;
+      }
+      .kb-carousel-nav-icon {
+        font-size: 24px !important;
+      }
+      .kb-indicator-count {
+        font-size: 12px;
+      }
+      .kb-card-heading {
+        font-size: 22px;
+      }
+      .kb-hero-name {
+        font-size: 18px;
+      }
+      .kb-chip {
+        font-size: 13px;
+      }
+      .kb-outcome-badge {
+        font-size: 13px;
+      }
+      .kb-small-outcome {
+        font-size: 11px;
+      }
+      .kb-small-name {
+        font-size: 14px;
+      }
+      .kb-small-chip {
+        font-size: 11px;
+      }
+      .kb-metric-text,
+      .kb-vs-label {
+        font-size: 11px;
+      }
+      .kb-cta {
+        font-size: 13px;
+      }
+      .kb-cta .material-symbols-outlined {
+        font-size: 16px !important;
+      }
+      .kb-empty-state {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body class="bg-white text-on-background font-body widget-loading">
@@ -261,40 +388,40 @@
     <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
   </div>
   <div id="widgetViewport">
-  <main id="widgetScaleRoot" class="pt-6">
+  <main id="widgetScaleRoot" class="pt-4">
 
     <!-- State tabs -->
     <div id="stateTabs" class="px-4"></div>
 
     <!-- Search bar -->
-    <div class="mb-5 w-full -mx-4 px-4 md:mx-0 md:px-0">
-      <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2.5 shadow-sm">
-        <span class="material-symbols-outlined text-stone-400 text-[20px]">search</span>
+    <div id="search-shell" class="mb-3 w-full -mx-4 px-4 md:mx-0 md:px-0">
+      <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2 shadow-sm">
+        <span class="material-symbols-outlined kb-search-icon text-stone-400 text-[20px]">search</span>
         <input
           id="search-input"
           type="text"
           placeholder="Search constituency, candidate or party…"
-          class="flex-1 bg-transparent text-sm text-stone-700 placeholder-stone-400 outline-none font-body"
+          class="kb-search-input flex-1 bg-transparent text-sm text-stone-700 placeholder-stone-400 outline-none font-body"
         />
       </div>
     </div>
 
     <div class="desktop-carousel-shell">
       <button id="desktop-prev" class="desktop-carousel-nav prev" type="button" aria-label="Previous cards">
-        <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+        <span class="material-symbols-outlined kb-carousel-nav-icon text-[20px]">chevron_left</span>
       </button>
       <!-- Card list: horizontal carousel on mobile and desktop -->
       <div
         id="list"
-        class="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory pb-4 hide-scrollbar"
+        class="flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-2 hide-scrollbar"
       ></div>
       <button id="desktop-next" class="desktop-carousel-nav next" type="button" aria-label="Next cards">
-        <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+        <span class="material-symbols-outlined kb-carousel-nav-icon text-[20px]">chevron_right</span>
       </button>
     </div>
 
     <div id="carousel-progress" class="carousel-indicator" aria-live="polite">
-      <span id="carousel-progress-count" class="carousel-indicator-count"></span>
+      <span id="carousel-progress-count" class="carousel-indicator-count kb-indicator-count"></span>
       <div id="carousel-progress-dots" class="carousel-indicator-dots"></div>
     </div>
   </main>
@@ -346,6 +473,7 @@
 
     const listEl = document.getElementById('list');
     const searchEl = document.getElementById('search-input');
+    const searchShellEl = document.getElementById('search-shell');
     const stateTabsEl = document.getElementById('stateTabs');
     const carouselEl = document.getElementById('carousel-progress');
     const carouselCountEl = document.getElementById('carousel-progress-count');
@@ -353,7 +481,7 @@
 
     // Hide tabs and search immediately while loading — avoids flash of UI before data arrives
     stateTabsEl.style.display = 'none';
-    searchEl.closest('.mb-5').style.display = 'none';
+    if (searchShellEl) searchShellEl.style.display = 'none';
 
     let allBattles = [];
     let PARTY_COLORS = new Map();
@@ -877,7 +1005,7 @@
 
     function makeVoteShareBar(share, barColorClass, labelText, valueText, animate) {
       const wrap = document.createElement('div');
-      wrap.className = 'w-full mt-2';
+      wrap.className = 'kb-vote-bar-wrap w-full mt-2';
       const row = document.createElement('div');
       row.className = 'flex justify-between text-xs text-stone-400 mb-1';
       const label = document.createElement('span');
@@ -928,20 +1056,20 @@
       // Small: photo + outcome label + name + party badge + optional mini bar
       if (isHero) {
         const wrap = document.createElement('div');
-        wrap.className = 'flex flex-col items-center text-center space-y-4';
+        wrap.className = 'flex flex-col items-center text-center space-y-3';
 
         const photoWrap = document.createElement('div');
         photoWrap.className = 'relative';
 
         const circle = document.createElement('div');
-        circle.className = 'w-36 h-36 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50';
+        circle.className = 'w-32 h-32 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50';
         circle.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-full h-full'));
         photoWrap.appendChild(circle);
 
         if (outcomeLabelText) {
           const badge = document.createElement('div');
           const isLeading = outcomeLabelText.toLowerCase() === 'leading';
-          badge.className = `absolute -bottom-3 left-1/2 -translate-x-1/2 ${isLeading ? 'leading-badge' : 'won-badge'} text-white px-6 py-1 rounded-lg text-xs font-bold uppercase tracking-wide shadow-md flex items-center gap-0.5`;
+          badge.className = `kb-outcome-badge absolute -bottom-3 left-1/2 -translate-x-1/2 ${isLeading ? 'leading-badge' : 'won-badge'} text-white px-6 py-1 rounded-lg shadow-md flex items-center gap-0.5`;
           if (isLeading) {
             badge.innerHTML = `${outcomeLabelText}<span class="counting-dots ml-0.5"><span>.</span><span>.</span><span>.</span></span>`;
           } else {
@@ -953,26 +1081,26 @@
         wrap.appendChild(photoWrap);
 
         const info = document.createElement('div');
-        info.className = 'pt-2 w-full';
+        info.className = 'pt-1 w-full';
 
         const name = document.createElement('h2');
-        name.className = 'text-base font-bold font-headline uppercase leading-tight tracking-tight mt-1';
+        name.className = 'kb-hero-name mt-1';
         name.textContent = (cand && cand.name) ? cand.name : 'Not set';
         info.appendChild(name);
 
         // Row 1: party + alliance chips
         const chipsRow = document.createElement('div');
-        chipsRow.className = 'flex items-center justify-center gap-2 mt-2 flex-wrap';
+        chipsRow.className = 'flex items-center justify-center gap-2 mt-1.5 flex-wrap';
 
         const party = document.createElement('span');
-        party.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
+        party.className = 'kb-chip px-3 py-1 rounded-md';
         party.textContent = (cand && cand.party) ? cand.party : '—';
         applyChipColor(party, partyColorFromSheet(cand && cand.party));
         chipsRow.appendChild(party);
 
         if (cand && cand.alliance) {
           const alliance = document.createElement('span');
-          alliance.className = 'px-3 py-1 rounded-md text-xs font-bold uppercase';
+          alliance.className = 'kb-chip px-3 py-1 rounded-md';
           alliance.textContent = cand.alliance;
           applyChipColor(alliance, allianceColorFromSheet(cand.alliance));
           chipsRow.appendChild(alliance);
@@ -993,18 +1121,18 @@
         // Use justify-between so chips+bar always align at the same level
         // regardless of whether the name wraps to 1 or 2 lines
         const wrap = document.createElement('div');
-        wrap.className = 'flex flex-col justify-between h-full gap-2';
+        wrap.className = 'flex flex-col justify-between h-full gap-1.5';
 
         // Top: avatar + outcome label + name
         const topRow = document.createElement('div');
-        topRow.className = 'flex items-start gap-2.5';
+        topRow.className = 'flex items-start gap-2';
         topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
 
         const textWrap = document.createElement('div');
         if (outcomeLabelText) {
           const outcome = document.createElement('span');
           const isTrailing = outcomeLabelText.toLowerCase() === 'trailing';
-          outcome.className = `text-[10px] font-bold uppercase flex items-center ${isTrailing ? 'trailing-label' : 'text-red-600'}`;
+          outcome.className = `kb-small-outcome flex items-center ${isTrailing ? 'trailing-label' : 'text-red-600'}`;
           if (isTrailing) {
             outcome.innerHTML = `${outcomeLabelText}<span class="counting-dots ml-0.5"><span>.</span><span>.</span><span>.</span></span>`;
           } else {
@@ -1013,7 +1141,7 @@
           textWrap.appendChild(outcome);
         }
         const nm = document.createElement('h4');
-        nm.className = 'text-xs font-bold font-headline leading-tight uppercase';
+        nm.className = 'kb-small-name';
         nm.textContent = (cand && cand.name) ? cand.name : 'Not set';
         textWrap.appendChild(nm);
         topRow.appendChild(textWrap);
@@ -1021,19 +1149,19 @@
 
         // Bottom: chips + vote bar — always anchored to the same level
         const bottom = document.createElement('div');
-        bottom.className = 'flex flex-col gap-1';
+        bottom.className = 'flex flex-col gap-0.5';
 
         const partyRow = document.createElement('div');
-        partyRow.className = 'flex items-center gap-1.5 flex-wrap w-full';
+        partyRow.className = 'flex items-center gap-1 flex-wrap w-full';
         const partyBadge = document.createElement('div');
-        partyBadge.className = 'w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase';
+        partyBadge.className = 'kb-small-chip w-fit px-2 py-0.5 rounded';
         partyBadge.textContent = (cand && cand.party) ? cand.party : '—';
         applyChipColor(partyBadge, partyColorFromSheet(cand && cand.party));
         partyRow.appendChild(partyBadge);
 
         if (cand && cand.alliance) {
           const allianceBadge = document.createElement('div');
-          allianceBadge.className = 'w-fit px-2 py-0.5 rounded text-[10px] font-bold uppercase';
+          allianceBadge.className = 'kb-small-chip w-fit px-2 py-0.5 rounded';
           allianceBadge.textContent = cand.alliance;
           applyChipColor(allianceBadge, allianceColorFromSheet(cand.alliance));
           partyRow.appendChild(allianceBadge);
@@ -1041,7 +1169,7 @@
 
         if (showVoteShare && Number.isFinite(share)) {
           const metricText = document.createElement('span');
-          metricText.className = 'text-[10px] text-stone-500 font-semibold ml-auto text-right';
+          metricText.className = 'kb-metric-text text-stone-500 ml-auto text-right';
           const metric = metricLabelAndValue(mode, cand, share);
           metricText.textContent = metric.value;
           partyRow.appendChild(metricText);
@@ -1087,13 +1215,13 @@
       const card = document.createElement('section');
       card.className = [
         'battle-card snap-start snap-always shrink-0',
-        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-5 space-y-5',
+        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-4 space-y-4',
         'flex flex-col'
       ].join(' ');
 
       // Constituency heading — top of card, highest hierarchy
       const constituencyHeading = document.createElement('h3');
-      constituencyHeading.className = 'text-lg font-extrabold font-headline tracking-tight text-stone-900 text-center';
+      constituencyHeading.className = 'kb-card-heading text-stone-900 text-center';
       constituencyHeading.textContent = battle.constituency || '—';
       card.appendChild(constituencyHeading);
 
@@ -1106,11 +1234,11 @@
 
       // VS divider
       const vsDivider = document.createElement('div');
-      vsDivider.className = 'relative flex items-center py-1';
+      vsDivider.className = 'relative flex items-center py-0.5';
       const line1 = document.createElement('div');
       line1.className = 'flex-grow border-t border-stone-200';
       const vsLabel = document.createElement('span');
-      vsLabel.className = 'flex-shrink mx-3 bg-stone-900 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-full';
+      vsLabel.className = 'kb-vs-label flex-shrink mx-3 bg-stone-900 text-white px-2 py-0.5 rounded-full';
       vsLabel.textContent = 'vs';
       const line2 = document.createElement('div');
       line2.className = 'flex-grow border-t border-stone-200';
@@ -1121,10 +1249,10 @@
 
       // Challengers grid
       const grid = document.createElement('div');
-      grid.className = 'grid grid-cols-2 gap-3 items-stretch';
+      grid.className = 'grid grid-cols-2 gap-2.5 items-stretch';
 
       const loser1Wrap = document.createElement('div');
-      loser1Wrap.className = 'border-r border-stone-100 pr-3 flex flex-col';
+      loser1Wrap.className = 'border-r border-stone-100 pr-2.5 flex flex-col';
       loser1Wrap.appendChild(renderCandidateSection(
         slots[1], false, challengerLabel,
         hasVotes && Number.isFinite(loser1Share), loser1Share, mode
@@ -1147,7 +1275,7 @@
         cta.href = battle.storyUrl;
         cta.target = '_blank';
         cta.rel = 'noopener';
-        cta.className = 'mt-auto pt-3 text-xs font-semibold text-stone-500 hover:text-stone-900 flex items-center gap-1 border-t border-stone-100';
+        cta.className = 'kb-cta mt-auto pt-2 text-stone-500 hover:text-stone-900 flex items-center gap-1 border-t border-stone-100';
         cta.innerHTML = 'Read Full Story <span class="material-symbols-outlined text-[14px]">arrow_forward</span>';
         card.appendChild(cta);
       }
@@ -1198,7 +1326,7 @@
 
       if (!stateFiltered.length) {
         clearRotateTimer();
-        listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
+        listEl.innerHTML = '<p class="kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
         updateCarouselIndicator(0, 0);
         updateDesktopNav();
         postEmbedSize('empty-state');
@@ -1208,7 +1336,7 @@
       if (!visible.length) {
         clearRotateTimer();
         const empty = document.createElement('p');
-        empty.className = 'text-stone-400 text-sm col-span-3 py-8 text-center';
+        empty.className = 'kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center';
         empty.textContent = 'No results match your search.';
         listEl.appendChild(empty);
         updateCarouselIndicator(0, 0);
@@ -1344,7 +1472,7 @@
       buildStateTabs();
       setWidgetLoading(true);
       try {
-        listEl.innerHTML = '<p class="text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
+        listEl.innerHTML = '<p class="kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
         const rowsByAlias = await loadMultiSheetValues([
           { alias: 'battles', tabName: TAB_NAME },
           { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME },
@@ -1374,14 +1502,14 @@
         } else {
           // Restore tabs and search now that data is ready
           if (!HIDE_TABS) stateTabsEl.style.display = '';
-          searchEl.closest('.mb-5').style.display = '';
+          if (!HIDE_TABS && searchShellEl) searchShellEl.style.display = '';
         }
         allBattles = filtered;
         render(allBattles);
         setWidgetLoading(false);
       } catch (err) {
         setWidgetLoading(false);
-        listEl.innerHTML = `<p class="text-red-600 text-sm font-semibold py-8 text-center">Failed to load key battles: ${err && err.message ? err.message : err}</p>`;
+        listEl.innerHTML = `<p class="kb-empty-state text-red-600 text-sm font-semibold py-8 text-center">Failed to load key battles: ${err && err.message ? err.message : err}</p>`;
         postEmbedSize('error');
       }
     }
