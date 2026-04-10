@@ -152,6 +152,9 @@
     .battle-card {
       width: 100%;
     }
+    .single-card-layout {
+      justify-content: center;
+    }
     @media (min-width: 768px) {
       #widgetViewport {
         height: auto;
@@ -1347,6 +1350,7 @@
 
     function render(battles) {
       listEl.innerHTML = '';
+      listEl.classList.remove('single-card-layout');
       const q = searchEl.value;
       const stateFiltered = currentStateFilter
         ? battles.filter(b => String(b.state || '').trim().toUpperCase() === currentStateFilter)
@@ -1379,6 +1383,10 @@
         listEl.appendChild(card);
         return card;
       });
+
+      if (CONSTITUENCY_PARAM && cards.length === 1) {
+        listEl.classList.add('single-card-layout');
+      }
 
       syncCarouselIndicator();
 
@@ -1469,11 +1477,13 @@
       if (!prevBtn || !nextBtn) return;
 
       const hasOverflow = listEl.scrollWidth > listEl.clientWidth + 4;
-      const hasCards = !!listEl.querySelector('section');
+      const cards = getCarouselCards();
+      const hasCards = cards.length > 0;
+      const isSingleConstituencyCard = !!CONSTITUENCY_PARAM && cards.length === 1;
       const show = hasOverflow || hasCards;
 
-      prevBtn.style.display = show ? 'inline-flex' : 'none';
-      nextBtn.style.display = show ? 'inline-flex' : 'none';
+      prevBtn.style.display = show && !isSingleConstituencyCard ? 'inline-flex' : 'none';
+      nextBtn.style.display = show && !isSingleConstituencyCard ? 'inline-flex' : 'none';
 
       prevBtn.classList.toggle('is-disabled', !show || listEl.scrollLeft <= 4);
       nextBtn.classList.toggle('is-disabled', !show || (listEl.scrollLeft + listEl.clientWidth >= listEl.scrollWidth - 4));
