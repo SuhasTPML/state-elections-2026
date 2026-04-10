@@ -324,6 +324,35 @@
       aspect-ratio: 4 / 3;
       position: relative;
     }
+    .map-activate-overlay {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      z-index: 90;
+      touch-action: pan-y;
+    }
+    .map-activate-overlay.is-visible {
+      display: flex;
+    }
+    .map-activate-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(31, 41, 55, 0.92);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.2;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+      pointer-events: none;
+    }
     body.bottom-sheet-active #mapwrap {
       min-height: 220px;
     }
@@ -535,6 +564,9 @@
     <svg id="svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
       <g id="zoomlayer"></g>
     </svg>
+    <button id="mapActivateOverlay" class="map-activate-overlay" type="button" aria-label="Activate map interactions">
+      <span class="map-activate-pill">Tap once to interact with map</span>
+    </button>
     <button id="crossBtn" class="map-control-btn" title="Clear selection and reset view">&times;</button>
     <div id="mapControls">
       <button id="zoomInBtn" class="map-control-btn" title="Zoom in">+</button>
@@ -1044,6 +1076,13 @@
     const DEFAULT_RESULTS_DISCLAIMER = '';
 
     const STATE_CONFIG = {
+      WEST_BENGAL: {
+        label: 'West Bengal',
+        title: 'West Bengal Assembly Constituency Map',
+        description: 'Tap on a constituency to view details, or search by number/name/district.',
+        geoUrl: stateRootUrl('WEST_BENGAL_ASSEMBLY_optimized.geojson'),
+        disclaimer: DEFAULT_RESULTS_DISCLAIMER
+      },
       TAMIL_NADU: {
         label: 'Tamil Nadu',
         title: 'Tamil Nadu Assembly Constituency Map',
@@ -1051,19 +1090,11 @@
         geoUrl: stateRootUrl('TAMIL_NADU_ASSEMBLY_optimized.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
-
       KERALA: {
         label: 'Kerala',
         title: 'Kerala Assembly Constituency Map',
         description: 'Tap on a constituency to view details, or search by number/name/district.',
         geoUrl: stateRootUrl('KERALA_ASSEMBLY_optimized.geojson'),
-        disclaimer: DEFAULT_RESULTS_DISCLAIMER
-      },
-      WEST_BENGAL: {
-        label: 'West Bengal',
-        title: 'West Bengal Assembly Constituency Map',
-        description: 'Tap on a constituency to view details, or search by number/name/district.',
-        geoUrl: stateRootUrl('WEST_BENGAL_ASSEMBLY_optimized.geojson'),
         disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
       ASSAM: {
@@ -1102,6 +1133,7 @@
     const allianceLabelEl = document.getElementById('lblAlliance');
     const legendEl = document.getElementById('legend');
     const wrapEl = document.getElementById('mapwrap');
+    const mapActivateOverlayEl = document.getElementById('mapActivateOverlay');
     const bottomSheetEl = document.getElementById('bottomSheet');
     const tooltipEl = document.getElementById('mapTooltip');
     const crossBtn = document.getElementById('crossBtn');
@@ -1129,6 +1161,7 @@
     let i18nReserved = {};
     let colorCache = new Map();
     let leadingStripePatternCache = new Map();
+    let mapTouchActivated = false;
     let activeColorModes = [];
     let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2021';
     let currentModeYear = '';
@@ -1143,6 +1176,29 @@
     // Full-data cache (all states, loaded in background after first state renders)
     let _fullStaticCache = null;
     let _fullStaticCachePromise = null;
+    const IS_IFRAME_EMBED = (() => {
+      try {
+        return window.self !== window.top;
+      } catch (_) {
+        return true;
+      }
+    })();
+
+    function isTouchZoomAllowed() {
+      return !IS_IFRAME_EMBED || mapTouchActivated;
+    }
+
+    function updateMapInteractionOverlay() {
+      if (!mapActivateOverlayEl) return;
+      mapActivateOverlayEl.classList.toggle('is-visible', IS_IFRAME_EMBED && !mapTouchActivated);
+      svg.style('touch-action', isTouchZoomAllowed() ? 'none' : 'pan-y');
+    }
+
+    function activateMapTouchInteractions() {
+      if (!IS_IFRAME_EMBED || mapTouchActivated) return;
+      mapTouchActivated = true;
+      updateMapInteractionOverlay();
+    }
     const featureByKey = new Map();
     const LOADER_CLASS = 'widget-loading';
 
@@ -2542,17 +2598,25 @@
       .scaleExtent([1, 20])
       .extent(zoomViewportExtent)
       .translateExtent(zoomViewportExtent)
-      .filter((ev) => ev.type !== 'wheel' && !String(ev.type || '').startsWith('touch') && !ev.button)
+      .filter((ev) => {
+        const type = String(ev.type || '');
+        if (type === 'wheel') return false;
+        if (type.startsWith('touch')) return isTouchZoomAllowed();
+        return !ev.button;
+      })
       .on('zoom', (ev) => {
         g.attr('transform', ev.transform);
         updateCrossButton();
       });
     svg.call(zoom);
     svg.on('wheel.zoom', null);
-    svg.on('touchstart.zoom', null);
-    svg.on('touchmove.zoom', null);
-    svg.on('touchend.zoom', null);
-    svg.style('touch-action', 'pan-y');
+    updateMapInteractionOverlay();
+    if (mapActivateOverlayEl) {
+      mapActivateOverlayEl.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        activateMapTouchInteractions();
+      });
+    }
 
     function draw(features){
       g.selectAll('path.ac')

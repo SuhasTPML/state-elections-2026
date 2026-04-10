@@ -495,9 +495,9 @@
     const ALLIANCES_GID_PARAM = (QUERY.get('alliancesGid') || '').trim();
 
     const STATE_TABS = [
+      { key: 'WEST_BENGAL', label: 'West Bengal' },
       { key: 'TAMIL_NADU',  label: 'Tamil Nadu' },
       { key: 'KERALA',      label: 'Kerala' },
-      { key: 'WEST_BENGAL', label: 'West Bengal' },
       { key: 'ASSAM',       label: 'Assam' },
       { key: 'PUDUCHERRY',  label: 'Puducherry' },
     ];
@@ -1301,8 +1301,8 @@
 
       card.appendChild(grid);
 
-      // Optional story CTA
-      if (battle.storyUrl) {
+      // Optional story CTA (hidden when a specific constituency is pinned via URL param)
+      if (battle.storyUrl && !CONSTITUENCY_PARAM) {
         const cta = document.createElement('a');
         cta.href = battle.storyUrl;
         cta.target = '_blank';

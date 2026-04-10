@@ -405,7 +405,7 @@ const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color'
 const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
 const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
 // Preferred display order of state tabs (matches map-widget)
-const STATE_TAB_ORDER = ['TAMIL_NADU', 'KERALA', 'WEST_BENGAL', 'ASSAM', 'PUDUCHERRY'];
+const STATE_TAB_ORDER = ['WEST_BENGAL', 'TAMIL_NADU', 'KERALA', 'ASSAM', 'PUDUCHERRY'];
 const REFRESH_MS = (() => {
   const refreshMs = parseNumber(QUERY_PARAMS.get('refreshMs'));
   if (refreshMs != null && refreshMs > 0) return refreshMs;
@@ -1545,20 +1545,34 @@ async function buildShareCanvas() {
   ctx.textBaseline = 'middle';
   ctx.fillText(shareHeaderLabel, 24, headerHeight / 2);
 
+  const timestamp = formatShareTimestamp();
+  const timestampFontSize = 11;
+  const logoMaxHeight = 34;
+  const logoTimestampGap = 5;
+  const stackHeight = logoMaxHeight + logoTimestampGap + timestampFontSize;
+  const stackTop = (headerHeight - stackHeight) / 2;
+
   try {
     const logo = await loadImage(getShareLogoUrl());
-    const maxLogoHeight = 40;
     const ratio = logo.width / logo.height || 1;
-    const logoHeight = maxLogoHeight;
+    const logoHeight = logoMaxHeight;
     const logoWidth = logoHeight * ratio;
-    ctx.drawImage(logo, canvas.width - logoWidth - 24, (headerHeight - logoHeight) / 2, logoWidth, logoHeight);
+    ctx.drawImage(logo, canvas.width - logoWidth - 24, stackTop, logoWidth, logoHeight);
   } catch (_) {
     ctx.fillStyle = '#0f172a';
-    ctx.font = '700 28px "Playfair Display", serif';
+    ctx.font = `700 28px "Playfair Display", serif`;
     ctx.textAlign = 'right';
-    ctx.fillText(getShareFallbackBrandText(), canvas.width - 24, headerHeight / 2);
+    ctx.textBaseline = 'top';
+    ctx.fillText(getShareFallbackBrandText(), canvas.width - 24, stackTop);
     ctx.textAlign = 'left';
   }
+
+  ctx.fillStyle = '#64748b';
+  ctx.font = `500 ${timestampFontSize}px "Roboto Slab", serif`;
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'top';
+  ctx.fillText(timestamp, canvas.width - 24, stackTop + logoMaxHeight + logoTimestampGap);
+  ctx.textAlign = 'left';
 
   return canvas;
 }
