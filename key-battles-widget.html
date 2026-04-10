@@ -144,7 +144,7 @@
     body.widget-loading #widgetViewport { visibility: hidden; }
     .widget-loader-player { width: 120px; height: 120px; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
-    #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: none; }
+    #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: 720px; margin: 0 auto; }
     .desktop-carousel-shell {
       position: relative;
       width: 100%;
@@ -153,8 +153,16 @@
       width: 100%;
     }
     @media (min-width: 768px) {
+      #widgetViewport {
+        height: auto;
+        overflow: visible;
+      }
+      #widgetScaleRoot {
+        transform: none !important;
+        width: 100% !important;
+      }
       .battle-card {
-        width: calc((100% - 48px) / 3);
+        width: calc((100% - 24px) / 2);
       }
     }
     .desktop-carousel-nav {
@@ -379,6 +387,9 @@
       }
       .kb-empty-state {
         font-size: 16px;
+      }
+      .carousel-indicator {
+        display: none !important;
       }
     }
   </style>
@@ -1395,7 +1406,7 @@
       const cards = getCarouselCards();
       updateCarouselIndicator(getActiveCardIndex(cards), cards.length);
       listEl.removeEventListener('scroll', listEl._progressHandler);
-      listEl._progressHandler = () => updateCarouselIndicator(getActiveCardIndex(cards), cards.length);
+      listEl._progressHandler = () => updateCarouselIndicator(getActiveCardIndex(getCarouselCards()), getCarouselCards().length);
       listEl.addEventListener('scroll', listEl._progressHandler, { passive: true });
     }
 
@@ -1405,7 +1416,7 @@
       const cardWidth = firstCard.getBoundingClientRect().width;
       const styles = window.getComputedStyle(listEl);
       const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
-      return cardWidth + gap;
+      return (cardWidth * 2) + gap;
     }
 
     function scrollToCarouselCard(index, behavior = 'smooth') {
@@ -1427,8 +1438,9 @@
         if (Date.now() < rotationSuspendedUntil) return;
         const liveCards = getCarouselCards();
         if (liveCards.length < 2) return;
+        const step = window.innerWidth >= 768 ? 2 : 1;
         const activeIndex = getActiveCardIndex(liveCards);
-        const nextIndex = (activeIndex + 1) % liveCards.length;
+        const nextIndex = (activeIndex + step) % liveCards.length;
         scrollToCarouselCard(nextIndex, 'smooth');
       }, 8000);
     }
@@ -1526,8 +1538,15 @@
       const viewport = document.getElementById('widgetViewport');
       const root = document.getElementById('widgetScaleRoot');
       if (!viewport || !root) return;
+      const isDesktop = window.innerWidth >= 768;
       root.style.transform = 'scale(1)';
       root.style.width = '100%';
+      if (isDesktop) {
+        root.style.transform = 'none';
+        root.style.width = '100%';
+        viewport.style.height = 'auto';
+        return;
+      }
       const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
       const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
       // Widen the root so that after scaling it still fills the full viewport width.
