@@ -324,35 +324,6 @@
       aspect-ratio: 4 / 3;
       position: relative;
     }
-    .map-activate-overlay {
-      position: absolute;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(1px);
-      -webkit-backdrop-filter: blur(1px);
-      z-index: 90;
-      touch-action: pan-y;
-    }
-    .map-activate-overlay.is-visible {
-      display: flex;
-    }
-    .map-activate-pill {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(31, 41, 55, 0.92);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 1.2;
-      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
-      pointer-events: none;
-    }
     body.bottom-sheet-active #mapwrap {
       min-height: 220px;
     }
@@ -564,9 +535,6 @@
     <svg id="svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
       <g id="zoomlayer"></g>
     </svg>
-    <button id="mapActivateOverlay" class="map-activate-overlay" type="button" aria-label="Activate map interactions">
-      <span class="map-activate-pill">Tap once to interact with map</span>
-    </button>
     <button id="crossBtn" class="map-control-btn" title="Clear selection and reset view">&times;</button>
     <div id="mapControls">
       <button id="zoomInBtn" class="map-control-btn" title="Zoom in">+</button>
@@ -1133,7 +1101,6 @@
     const allianceLabelEl = document.getElementById('lblAlliance');
     const legendEl = document.getElementById('legend');
     const wrapEl = document.getElementById('mapwrap');
-    const mapActivateOverlayEl = document.getElementById('mapActivateOverlay');
     const bottomSheetEl = document.getElementById('bottomSheet');
     const tooltipEl = document.getElementById('mapTooltip');
     const crossBtn = document.getElementById('crossBtn');
@@ -1189,8 +1156,6 @@
     }
 
     function updateMapInteractionOverlay() {
-      if (!mapActivateOverlayEl) return;
-      mapActivateOverlayEl.classList.toggle('is-visible', IS_IFRAME_EMBED && !mapTouchActivated);
       svg.style('touch-action', isTouchZoomAllowed() ? 'none' : 'pan-y');
     }
 
@@ -2611,12 +2576,7 @@
     svg.call(zoom);
     svg.on('wheel.zoom', null);
     updateMapInteractionOverlay();
-    if (mapActivateOverlayEl) {
-      mapActivateOverlayEl.addEventListener('click', (ev) => {
-        ev.preventDefault();
-        activateMapTouchInteractions();
-      });
-    }
+    svg.node().addEventListener('touchstart', () => activateMapTouchInteractions(), { once: true, passive: true });
 
     function draw(features){
       g.selectAll('path.ac')
