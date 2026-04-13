@@ -1,0 +1,112 @@
+<!-- Election page template: Kerala -->
+<!-- Use this as the Kerala tab panel in your CMS. -->
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
+
+  .election-widget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+
+  .election-widget-slot {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .election-widget-slot iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .election-widget-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    line-height: 1.1;
+    color: #111827;
+  }
+
+  .election-widget-heading-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 10px;
+  }
+
+  .election-widget-link {
+    font-family: "Roboto Slab", serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #374151;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+  .election-widget-link:hover {
+    color: #111827;
+  }
+
+  @media (max-width: 767px) {
+    .election-widget-grid {
+      grid-template-columns: 1fr;
+    }
+    .election-widget-heading {
+      font-size: 24px;
+    }
+  }
+</style>
+
+<div class="election-widget-grid">
+  <div class="election-widget-slot">
+    <div class="election-widget-heading-row">
+      <h2 class="election-widget-heading">Constituency Map</h2>
+      <a class="election-widget-link" href="https://suhastpml.github.io/state-elections-2026/map-widget.html" target="_blank" rel="noopener">View all ↗</a>
+    </div>
+    <iframe
+      title="Kerala Map Widget"
+      loading="lazy"
+      scrolling="no"
+      src="https://suhastpml.github.io/state-elections-2026/map-widget.html?state=KERALA&hideTabs=true"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="election-widget-slot">
+    <div class="election-widget-heading-row">
+      <h2 class="election-widget-heading">Results</h2>
+      <a class="election-widget-link" href="https://suhastpml.github.io/state-elections-2026/seat-results-widget.html" target="_blank" rel="noopener">View all ↗</a>
+    </div>
+    <iframe
+      title="Kerala Seat Results Widget"
+      loading="lazy"
+      scrolling="no"
+      src="https://suhastpml.github.io/state-elections-2026/seat-results-widget.html?state=KERALA&compact=1&hideTabs=true"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="election-widget-slot">
+    <div class="election-widget-heading-row">
+      <h2 class="election-widget-heading">Key Battles</h2>
+      <a class="election-widget-link" href="https://suhastpml.github.io/state-elections-2026/key-battles-widget.html" target="_blank" rel="noopener">View all ↗</a>
+    </div>
+    <iframe
+      title="Kerala Key Battles Widget"
+      loading="lazy"
+      scrolling="no"
+src="https://suhastpml.github.io/state-elections-2026/key-battles-widget.html?state=KERALA&hideTabs=true&rotate=true"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>

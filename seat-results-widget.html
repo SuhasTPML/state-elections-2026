@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parliament Results | ಸಂಸತ್ ಫಲಿತಾಂಶ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
+  <style>
+    @font-face {
+      font-family: 'PvHeadlineSemiBold'; font-weight: 600; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PvHeadlineSemibold3.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextSemiBold'; font-weight: 600; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextSemibold.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'PvTextRegular'; font-weight: 400; font-style: normal; font-display: swap;
+      src: url('https://fea.assettype.com/tpml/assets/PrajavaniTextRegular.woff2') format('woff2');
+    }
+    :root {
+      --pv-fallback: Roboto, Oxygen, Ubuntu, Cantarell, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --pv-headline: "Playfair Display", Georgia, serif;
+      --pv-text: "Roboto Slab", var(--pv-fallback);
+      --pv-text-semibold: "Roboto Slab", var(--pv-fallback);
+    }
+    html[lang="kn"] {
+      --pv-headline: "PvHeadlineSemiBold", var(--pv-fallback);
+      --pv-text: "PvTextRegular", var(--pv-fallback);
+      --pv-text-semibold: "PvTextSemiBold", var(--pv-fallback);
+    }
+    * { box-sizing: border-box; }
+    html, body { overflow: hidden; }
+    body {
+      font-family: var(--pv-text);
+      background: #fff; color: #333; margin: 0; padding: 0; min-height: 500px; position: relative;
+    }
+    .widget-loader {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: 20;
+    }
+    body.widget-loading .widget-loader { display: flex; }
+    body.widget-loading #widgetViewport { visibility: hidden; }
+    .widget-loader-player { width: 120px; height: 120px; }
+    #widgetViewport { height: 500px; overflow: hidden; width: 100%; padding: 4px; }
+    input, select, textarea, button { font-family: inherit; }
+    .widget {
+      max-width: 720px; margin: 0 auto;
+      padding: 4px 6px 8px;
+      position: relative;
+      transform-origin: top center;
+      transition: opacity 0.24s ease, transform 0.24s ease;
+    }
+    .widget::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(226, 232, 240, 0.58) 40%,
+        rgba(255, 255, 255, 0) 100%);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-120%);
+      transition: transform 0.42s ease, opacity 0.24s ease;
+    }
+    .widget.is-rotating-out {
+      opacity: 0.76;
+      transform: translateX(-8px);
+    }
+    .widget.is-rotating-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .widget.is-rotating-out::after,
+    .widget.is-rotating-in::after {
+      opacity: 1;
+    }
+    .widget.is-rotating-out::after {
+      transform: translateX(-8%);
+    }
+    .widget.is-rotating-in::after {
+      transform: translateX(112%);
+    }
+
+    /* ── State tabs (grey-fill chips) ── */
+    .tab-row {
+      display: flex; gap: 4px; flex-wrap: nowrap;
+      overflow-x: auto; scrollbar-width: none; margin-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tab-row::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0; padding: 4px 12px;
+      border: none; border-radius: 20px;
+      background: #f3f4f6; color: #374151; font-size: 13px;
+      font-family: inherit;
+      cursor: pointer; white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tab-btn:hover { background: #e5e7eb; }
+    .tab-btn.active { background: #1f2937; color: #fff; }
+
+    /* ── Controls row ── */
+    .controls-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 8px; margin-bottom: 6px;
+      border-top: 1px solid #f3f4f6; padding-top: 6px;
+    }
+    .year-tabs { display: flex; gap: 2px; }
+
+    /* ── Year tabs (underline style) ── */
+    .year-btn {
+      flex-shrink: 0; padding: 3px 8px;
+      border: none; border-bottom: 2px solid transparent;
+      background: transparent; color: #6B7280; font-size: 13px;
+      font-family: inherit; cursor: pointer; white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .year-btn:hover { color: #1f2937; }
+    .year-btn.active { color: #1f2937; border-bottom-color: #1f2937; font-weight: 600; }
+
+    /* ── Toggle switch ── */
+    .toggle-wrap {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 12px; color: #374151; cursor: pointer;
+      user-select: none;
+      background: #f9fafb; border: 1px solid #e5e7eb;
+      border-radius: 20px; padding: 3px 10px;
+    }
+    .toggle-wrap .toggle-label { font-weight: 500; }
+    .toggle-wrap .toggle-label.inactive { color: #9CA3AF; }
+    .switch { position: relative; display: inline-block; width: 40px; height: 22px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer; inset: 0;
+      background: #D1D5DB; border-radius: 22px; transition: background 0.2s;
+    }
+    .slider::before {
+      content: ""; position: absolute;
+      height: 16px; width: 16px; left: 3px; bottom: 3px;
+      background: #fff; border-radius: 50%; transition: transform 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    input:checked + .slider { background: #1f2937; }
+    input:checked + .slider::before { transform: translateX(18px); }
+
+    /* ── Chart ── */
+    #chart-section { position: relative; }
+    #chart-svg-container { width: 100%; }
+    #chart-svg-container svg { display: block; width: 100%; }
+    .share-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+      z-index: 5;
+    }
+    .share-btn:hover { background: #fff; border-color: #d1d5db; }
+    .share-btn:disabled { opacity: 0.65; cursor: wait; }
+    .share-btn-icon { width: 14px; height: 14px; display: inline-block; flex-shrink: 0; }
+    .share-status {
+      margin-top: 8px;
+      text-align: right;
+      font-size: 12px;
+      color: #6b7280;
+      min-height: 16px;
+    }
+    .parliament-seat {
+      stroke: #fff; stroke-width: 1px;
+      transition: opacity 0.25s, stroke 0.15s, stroke-width 0.15s;
+    }
+    .parliament-seat.dimmed { opacity: 0.15; }
+    .parliament-seat.is-lead {
+      animation: seatLeadBlink 1.1s ease-in-out infinite;
+    }
+    @keyframes seatLeadBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.42; }
+    }
+
+    /* ── Legend ── */
+    #legend {
+      display: flex; flex-wrap: wrap; gap: 8px 14px;
+      justify-content: center; margin-top: 12px; font-size: 12px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 5px;
+      cursor: pointer; transition: opacity 0.2s;
+    }
+    .legend-swatch {
+      width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
+    }
+
+    /* ── Table ── */
+    #table-container { margin-top: 14px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { background: #f8f8f8; font-weight: 600; padding: 4px 6px; text-align: left; border-bottom: 2px solid #e5e7eb; }
+    td { padding: 3px 6px; border-bottom: 1px solid #e5e7eb; }
+    tbody tr { transition: background 0.15s, opacity 0.2s; cursor: default; }
+    tbody tr:hover { background: #f9fafb; }
+    tbody tr.placeholder-row { opacity: 0; pointer-events: none; }
+    tbody tr.placeholder-row:hover { background: transparent; }
+    tbody tr.placeholder-row td { border-bottom-color: transparent; }
+    .cell-name { display: flex; align-items: center; gap: 8px; }
+    .color-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+    .num { text-align: right; }
+    .total-progress-cell { min-width: 188px; }
+    .wins-leads-progress {
+      display: grid;
+      grid-template-columns: 58px 112px;
+      column-gap: 6px;
+      align-items: center;
+      justify-content: start;
+      white-space: nowrap;
+    }
+    .wins-leads-value {
+      width: 58px; min-width: 58px; text-align: right; font-size: 11px; color: #4b5563;
+      font-variant-numeric: tabular-nums;
+    }
+    .majority-progress-track {
+      position: relative; width: 112px; height: 8px; border-radius: 999px;
+      overflow: visible;
+    }
+    .majority-progress-fill-layer {
+      position: absolute; inset: 0;
+      border-radius: 999px;
+      background: #e5e7eb;
+      overflow: hidden;
+    }
+    .majority-progress-marker {
+      position: absolute; left: 100%; top: -3px; bottom: -3px; width: 2px;
+      transform: translateX(-50%);
+      background: #111827; z-index: 2;
+    }
+    .majority-number-cell {
+      min-width: 88px; text-align: right; white-space: nowrap; color: #4b5563;
+      font-variant-numeric: tabular-nums;
+    }
+    .majority-number-cell .delta-positive { color: #166534; }
+    .majority-number-cell .delta-negative { color: #b91c1c; }
+    .majority-number-cell .delta-zero { color: #6b7280; }
+    .majority-progress-track .seg-wins,
+    .majority-progress-track .seg-leads {
+      position: absolute; top: 0; bottom: 0;
+    }
+    .majority-progress-track .seg-leads {
+      animation: leadSegmentBlink 1.1s ease-in-out infinite;
+      border-left: 1px solid rgba(17, 24, 39, 0.22);
+    }
+    @keyframes leadSegmentBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.38; }
+    }
+    .wins-leads-progress.is-majority .majority-progress-track {
+      box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.18);
+    }
+    @media (max-width: 480px) {
+      .total-progress-cell { min-width: 150px; }
+      .wins-leads-progress {
+        grid-template-columns: 50px 88px;
+        column-gap: 4px;
+      }
+      .majority-progress-track { width: 88px; }
+      .wins-leads-value { width: 50px; min-width: 50px; }
+      .majority-number-cell { min-width: 74px; }
+    }
+    #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; text-align: center; font-weight: 700; }
+
+    /* Kannada padding adjustments (Prajavani glyphs sit lower) */
+    html[lang="kn"] .tab-btn  { padding-top: 5px; padding-bottom: 0px; }
+    html[lang="kn"] .year-btn { padding-top: 5px; padding-bottom: 0px; }
+    html[lang="kn"] .toggle-label { position: relative; top: 1px; }
+    html[lang="kn"] table { font-size: 14px; }
+  </style>
+</head>
+<body class="widget-loading">
+<div class="widget-loader" id="widget-loader" aria-hidden="true">
+  <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+</div>
+<div id="widgetViewport">
+<div class="widget" id="widgetScaleRoot">
+  <!-- State tabs -->
+  <div id="state-tabs" class="tab-row"></div>
+
+  <!-- Year tabs + toggle -->
+  <div class="controls-row">
+    <div id="year-tabs" class="year-tabs"></div>
+    <label class="toggle-wrap" id="toggle-wrap">
+      <span class="toggle-label" id="lbl-party"></span>
+      <span class="switch">
+        <input type="checkbox" id="view-toggle">
+        <span class="slider"></span>
+      </span>
+      <span class="toggle-label inactive" id="lbl-alliance"></span>
+    </label>
+  </div>
+
+  <!-- Chart -->
+  <div id="chart-section">
+    <button id="share-widget-btn" class="share-btn" type="button" data-html2canvas-ignore="true" aria-label="Share widget image">
+      <svg class="share-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/>
+        <path d="M12 16V3"/>
+        <path d="m7 8 5-5 5 5"/>
+      </svg>
+      <span>Share</span>
+    </button>
+    <div id="chart-svg-container"></div>
+  </div>
+  <div id="share-status" class="share-status" data-html2canvas-ignore="true" aria-live="polite"></div>
+
+  <!-- Legend -->
+  <div id="legend"></div>
+
+  <!-- Table -->
+  <div id="table-container"></div>
+  <div id="error-msg"></div>
+</div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────
+//  i18n
+// ─────────────────────────────────────────────
+const QUERY_PARAMS = new URLSearchParams(location.search);
+const ENABLE_TOP5_OTHERS = QUERY_PARAMS.toString().trim().length > 0;
+const TOP_BUCKET_LIMIT = 5;
+const OTHERS_KEY = '__others__';
+const COMPACT_MODE = (() => {
+  const raw = String(QUERY_PARAMS.get('compact') || '').trim().toLowerCase();
+  return raw === 'true' || raw === '1' || raw === 'yes';
+})();
+const ROTATE_STATES = String(QUERY_PARAMS.get('rotate') || '').trim().toLowerCase() === 'true';
+const ROTATE_INTERVAL_MS = 10000;
+const ROTATE_RESUME_DELAY_MS = 20000;
+const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
+const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
+
+// Seat results source
+const DEFAULT_LEGACY_API_BASE = 'https://d167rmgvosnh6r.cloudfront.net';
+const DEFAULT_LEGACY_API_KEY = 'AIzaSyC0zoFtuDm_zspdl_D0q1Nqtnos8AZOSsc';
+const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
+const SOURCE_MODE = String(QUERY_PARAMS.get('sourceMode') || 'legacyCloudfront').trim().toLowerCase();
+const IS_LEGACY_CLOUDFRONT_MODE = SOURCE_MODE === 'legacycloudfront';
+const LEGACY_API_BASE_PARAM = (
+  QUERY_PARAMS.get('legacyApiBase') ||
+  QUERY_PARAMS.get('cloudfrontApiBase') ||
+  DEFAULT_LEGACY_API_BASE
+).trim();
+const LEGACY_API_KEY_PARAM = (
+  QUERY_PARAMS.get('legacyApiKey') ||
+  QUERY_PARAMS.get('cloudfrontApiKey') ||
+  DEFAULT_LEGACY_API_KEY
+).trim();
+if (!IS_LEGACY_CLOUDFRONT_MODE) {
+  throw new Error('Unsupported sourceMode. This widget only supports legacyCloudfront.');
+}
+
+// Legacy Google Sheet source (kept only as explicit fallback)
+const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
+const DEFAULT_PUBLISHED_SHEET_URL = '';
+const DEFAULT_PUBLISHED_GIDS = Object.freeze({
+  partyYear: '',
+  partyYearLive: '',
+  mapping: '2015371433',
+  mappingLive: '',
+  parties: '1992176761',
+  alliances: '1092628302'
+});
+
+const SHEET_ID_PARAM = QUERY_PARAMS.get('sheetId');
+const SHEET_URL_PARAM = QUERY_PARAMS.get('sheetUrl');
+const PUBLISHED_SHEET_URL_PARAM =
+  (QUERY_PARAMS.get('publishedSheetUrl') || QUERY_PARAMS.get('publishedUrl') || DEFAULT_PUBLISHED_SHEET_URL).trim();
+const PUBLISHED_SHEET_KEY_PARAM = (QUERY_PARAMS.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
+
+const PARTY_YEAR_TAB_NAME = (
+  QUERY_PARAMS.get('partyYearTab') ||
+  QUERY_PARAMS.get('partySummaryTab') ||
+  QUERY_PARAMS.get('partyWiseTab') ||
+  'Partywise_Static'
+).trim();
+const PARTY_YEAR_LIVE_TAB_NAME = (
+  QUERY_PARAMS.get('partyYearLiveTab') ||
+  QUERY_PARAMS.get('partySummaryLiveTab') ||
+  QUERY_PARAMS.get('partyWiseLiveTab') ||
+  'Live_Partywise_2026'
+).trim();
+const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map').trim();
+const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Alliance_2026').trim();
+const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
+const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
+const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
+const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
+// Preferred display order of state tabs (matches map-widget)
+const STATE_TAB_ORDER = ['WEST_BENGAL', 'TAMIL_NADU', 'KERALA', 'ASSAM', 'PUDUCHERRY'];
+const REFRESH_MS = (() => {
+  const refreshMs = parseNumber(QUERY_PARAMS.get('refreshMs'));
+  if (refreshMs != null && refreshMs > 0) return refreshMs;
+  const refreshSeconds = parseNumber(QUERY_PARAMS.get('refreshSeconds'));
+  if (refreshSeconds != null && refreshSeconds > 0) return refreshSeconds * 1000;
+  return 0;
+})();
+
+const PARTY_YEAR_CSV_URL_PARAM = (
+  QUERY_PARAMS.get('partyYearCsvUrl') ||
+  QUERY_PARAMS.get('partySummaryCsvUrl') ||
+  QUERY_PARAMS.get('partyWiseCsvUrl') ||
+  ''
+).trim();
+const PARTY_YEAR_LIVE_CSV_URL_PARAM = (
+  QUERY_PARAMS.get('partyYearLiveCsvUrl') ||
+  QUERY_PARAMS.get('partySummaryLiveCsvUrl') ||
+  QUERY_PARAMS.get('partyWiseLiveCsvUrl') ||
+  ''
+).trim();
+const MAPPING_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingCsvUrl') || '').trim();
+const MAPPING_LIVE_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingLiveCsvUrl') || '').trim();
+const PARTIES_CSV_URL_PARAM = (QUERY_PARAMS.get('partiesCsvUrl') || '').trim();
+const ALLIANCES_CSV_URL_PARAM = (QUERY_PARAMS.get('alliancesCsvUrl') || '').trim();
+
+const PARTY_YEAR_GID_PARAM = (
+  QUERY_PARAMS.get('partyYearGid') ||
+  QUERY_PARAMS.get('partySummaryGid') ||
+  QUERY_PARAMS.get('partyWiseGid') ||
+  ''
+).trim();
+const PARTY_YEAR_LIVE_GID_PARAM = (
+  QUERY_PARAMS.get('partyYearLiveGid') ||
+  QUERY_PARAMS.get('partySummaryLiveGid') ||
+  QUERY_PARAMS.get('partyWiseLiveGid') ||
+  ''
+).trim();
+const MAPPING_GID_PARAM = (QUERY_PARAMS.get('mappingGid') || '').trim();
+const MAPPING_LIVE_GID_PARAM = (QUERY_PARAMS.get('mappingLiveGid') || '').trim();
+const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
+const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
+
+const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
+const PUBLISHED_SHEET_KEY = (PUBLISHED_SHEET_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_SHEET_URL_PARAM) || '').trim();
+const USE_DEFAULT_PUBLISHED_GIDS = !SHEET_ID && (PUBLISHED_SHEET_KEY === DEFAULT_PUBLISHED_SHEET_KEY);
+
+function hasAnyQueryParam(names){
+  return (names || []).some((name) => QUERY_PARAMS.has(name));
+}
+
+let PARTY_YEAR_SHEET_URL = PARTY_YEAR_CSV_URL_PARAM;
+let PARTY_YEAR_LIVE_SHEET_URL = PARTY_YEAR_LIVE_CSV_URL_PARAM;
+let MAPPING_SHEET_URL = MAPPING_CSV_URL_PARAM;
+let MAPPING_LIVE_SHEET_URL = MAPPING_LIVE_CSV_URL_PARAM;
+let PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
+let ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
+
+const LANG = (() => {
+  const raw = QUERY_PARAMS.get('lang') || '';
+  return raw.trim().toLowerCase() === 'kn' ? 'kn' : 'en';
+})();
+
+document.documentElement.lang = LANG;
+
+const UI = {
+  en: {
+    party: 'Party', alliance: 'Alliance',
+    wins: 'Wins', leads: 'Leads', total: 'Total',
+    majority: 'Majority',
+  },
+  kn: {
+    party: 'ಪಕ್ಷ', alliance: 'ಮೈತ್ರಿ',
+    wins: 'ಗೆಲುವು', leads: 'ಮುನ್ನಡೆ', total: 'ಒಟ್ಟು',
+    majority: 'ಬಹುಮತ',
+  }
+};
+UI.en.others = 'Others';
+UI.kn.others = '\u0c87\u0ca4\u0cb0\u0cb0\u0cc1';
+
+// State labels
+const STATE_LABELS_KN = {
+  KERALA: 'ಕೇರಳ', TAMIL_NADU: 'ತಮಿಳುನಾಡು',
+  WEST_BENGAL: 'ಪಶ್ಚಿಮ ಬಂಗಾಳ', ASSAM: 'ಅಸ್ಸಾಂ', PUDUCHERRY: 'ಪುದುಚೇರಿ'
+};
+
+// Party / alliance name translations
+const NAME_KN = {
+  // Parties
+  'BJP': 'ಬಿಜೆಪಿ', 'INC': 'ಐಎನ್‌ಸಿ', 'CPI(M)': 'ಸಿಪಿಐ(ಎಂ)', 'CPI': 'ಸಿಪಿಐ',
+  'IUML': 'ಐಯುಎಂಎಲ್', 'DMK': 'ಡಿಎಂಕೆ', 'AIADMK': 'ಎಐಎಡಿಎಂಕೆ', 'TMC': 'ಟಿಎಂಸಿ',
+  'PMK': 'ಪಿಎಂಕೆ', 'VCK': 'ವಿಸಿಕೆ', 'KMDK': 'ಕೆಎಂಡಿಕೆ', 'NCP': 'ಎನ್‌ಸಿಪಿ',
+  'GJM': 'ಜಿಜೆಎಂ', 'ISF': 'ಐಎಸ್‌ಎಫ್', 'AGP': 'ಎಜಿಪಿ', 'AIUDF': 'ಎಐಯುಡಿಎಫ್',
+  'BPF': 'ಬಿಪಿಎಫ್', 'UPPL': 'ಯುಪಿಪಿಎಲ್', 'AINRC': 'ಎಐಎನ್‌ಆರ್‌ಸಿ',
+  'AIFB': 'ಎಐಎಫ್‌ಬಿ', 'RSP': 'ಆರ್‌ಎಸ್‌ಪಿ', 'IND': 'ಪಕ್ಷೇತರ',
+  'JD(S)': 'ಜೆಡಿ(ಎಸ್)', 'KC(M)': 'ಕೆಸಿ(ಎಂ)', 'KC(J)': 'ಕೆಸಿ(ಜೆ)', 'KC(B)': 'ಕೆಸಿ(ಬಿ)',
+  'Con(S)': 'ಕಾಂ(ಎಸ್)', 'NSC': 'ಎನ್‌ಎಸ್‌ಸಿ', 'NCK': 'ಎನ್‌ಸಿಕೆ', 'INL': 'ಐಎನ್‌ಎಲ್',
+  'LJD': 'ಎಲ್‌ಜೆಡಿ', 'JKC': 'ಜೆಕೆಸಿ', 'RMPI': 'ಆರ್‌ಎಂಪಿಐ', 'CMP(A)': 'ಸಿಎಂಪಿ(ಎ)',
+  'UDF': 'ಯುಡಿಎಫ್',
+  // Alliances
+  'LDF': 'ಎಲ್‌ಡಿಎಫ್', 'NDA': 'ಎನ್‌ಡಿಎ', 'UPA': 'ಯುಪಿಎ', 'SPA': 'ಎಸ್‌ಪಿಎ',
+  'SM': 'ಎಸ್‌ಎಂ', 'MAHAJOT': 'ಮಹಾಜೋಟ್', 'OTH': 'ಇತರರು'
+};
+
+function t(key)      { return (LANG === 'kn' ? UI.kn : UI.en)[key] || key; }
+function tName(name) { return LANG === 'kn' ? (NAME_KN[name] || name) : name; }
+function tState(key, fallback) { return LANG === 'kn' ? (STATE_LABELS_KN[key] || fallback) : fallback; }
+function displayName(name) { return name === OTHERS_KEY ? t('others') : tName(name); }
+
+function extractGoogleSheetId(sheetUrl){
+  const raw = String(sheetUrl || '').trim();
+  if (!raw) return '';
+  const match = raw.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
+  return match && match[1] ? match[1] : '';
+}
+
+function extractGooglePublishedSheetKey(sheetUrl){
+  const raw = String(sheetUrl || '').trim();
+  if (!raw) return '';
+  const match = raw.match(/\/spreadsheets\/d\/e\/([a-zA-Z0-9-_]+)/);
+  return match && match[1] ? match[1] : '';
+}
+
+function buildGoogleSheetCsvUrl(sheetId, tabName){
+  return `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+}
+
+function buildGooglePublishedCsvUrl(publishedKey, gid){
+  return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pub?gid=${encodeURIComponent(gid)}&single=true&output=csv`;
+}
+
+function buildGooglePublishedHtmlUrl(publishedKey){
+  return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+}
+
+if (!window.pvElectionCache) {
+  window.pvElectionCache = (function() {
+    const LS_PREFIX = 'pvElec_';
+    const LS_TTL = 2 * 60 * 1000; // 2 minutes
+    function lsKey(url) {
+      try { return LS_PREFIX + btoa(url).slice(0, 80); } catch(e) { return null; }
+    }
+    return {
+      mem: {},
+      pending: {},
+      get: function(url) {
+        if (url in this.mem) return this.mem[url];
+        const k = lsKey(url);
+        if (!k) return undefined;
+        try {
+          const raw = localStorage.getItem(k);
+          if (!raw) return undefined;
+          const entry = JSON.parse(raw);
+          if (Date.now() - entry.t < LS_TTL) { this.mem[url] = entry.d; return entry.d; }
+          localStorage.removeItem(k);
+        } catch(e) {}
+        return undefined;
+      },
+      set: function(url, data) {
+        this.mem[url] = data;
+        const k = lsKey(url);
+        if (!k) return;
+        try { localStorage.setItem(k, JSON.stringify({ d: data, t: Date.now() })); } catch(e) {}
+      }
+    };
+  })();
+}
+
+function buildLegacyCloudfrontValuesUrl(apiBase, sheetId, tabName, apiKey){
+  const trimmedBase = String(apiBase || '').trim().replace(/\/+$/g, '');
+  if (!trimmedBase) throw new Error('Missing legacyApiBase');
+  if (!sheetId) throw new Error('Missing sheetId');
+  if (!tabName) throw new Error('Missing tab name');
+  if (!apiKey) throw new Error('Missing legacyApiKey');
+  const url = new URL(`${trimmedBase}/v4/spreadsheets/${encodeURIComponent(sheetId)}/values/${encodeURIComponent(tabName)}`);
+  url.searchParams.set('key', apiKey);
+  return url.toString();
+}
+
+function normalizeTabLookupKey(value){
+  return String(value || '').trim().toLowerCase().replace(/[\s-]+/g, '_');
+}
+
+function parsePublishedSheetTabGids(html){
+  const out = new Map();
+  const text = String(html || '');
+  const regex = /items\.push\(\{name:\s*"([^"]+)"[\s\S]*?gid:\s*"(-?\d+)"/g;
+  let match = null;
+  while ((match = regex.exec(text)) !== null) {
+    const tabName = normalizeTabLookupKey(match[1]);
+    const gid = String(match[2] || '').trim();
+    if (!tabName || !gid || out.has(tabName)) continue;
+    out.set(tabName, gid);
+  }
+  return out;
+}
+
+function findPublishedTabGid(tabMap, names){
+  for (const name of (names || [])) {
+    const key = normalizeTabLookupKey(name);
+    if (!key) continue;
+    const gid = tabMap.get(key);
+    if (gid) return gid;
+  }
+  return '';
+}
+
+function normalizePublishedGid(value){
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const m = raw.match(/-?\d+/);
+  return m && m[0] ? m[0] : '';
+}
+
+function normalizeHeaderKey(value){
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+function normalizeCsvRows(rows){
+  return (rows || []).map(row => {
+    const out = {};
+    Object.keys(row || {}).forEach((key) => {
+      out[normalizeHeaderKey(key)] = row[key];
+    });
+    return out;
+  });
+}
+
+function firstNonEmpty(row, keys){
+  for (const key of (keys || [])) {
+    const v = row[key];
+    if (v == null) continue;
+    const s = String(v).trim();
+    if (s !== '') return s;
+  }
+  return '';
+}
+
+function parseYear(value){
+  const raw = String(value || '').trim();
+  const m = raw.match(/(19|20)\d{2}/);
+  return m ? m[0] : '';
+}
+
+function parseNumber(value){
+  const raw = String(value == null ? '' : value).replace(/,/g, '').trim();
+  if (!raw) return null;
+  const n = Number(raw);
+  return Number.isFinite(n) ? n : null;
+}
+
+function normalizeHexColor(value){
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const hex = raw.startsWith('#') ? raw : `#${raw}`;
+  return /^#[0-9a-fA-F]{6}$/.test(hex) ? hex : '';
+}
+
+function normalizeStateKeyForData(value){
+  const raw = String(value || '').trim().toUpperCase().replace(/[^A-Z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  if (!raw) return '';
+  if (raw === 'PONDICHERRY') return 'PUDUCHERRY';
+  return raw;
+}
+
+function stateLabelFromKey(stateKey){
+  return String(stateKey || '')
+    .toLowerCase()
+    .split('_')
+    .filter(Boolean)
+    .map(p => p.charAt(0).toUpperCase() + p.slice(1))
+    .join(' ');
+}
+
+const HARD_CODED_TOTAL_SEATS = {
+  KERALA: 140,
+  TAMIL_NADU: 234,
+  WEST_BENGAL: 294,
+  ASSAM: 126,
+  PUDUCHERRY: 30
+};
+
+function hardcodedTotalSeatsForState(stateKey){
+  return Number(HARD_CODED_TOTAL_SEATS[String(stateKey || '').trim().toUpperCase()] || 0);
+}
+
+function detectYearsFromRow(row){
+  const years = new Set();
+  const rowYear = parseYear(row.year);
+  if (rowYear) years.add(rowYear);
+
+  Object.keys(row || {}).forEach((key) => {
+    const m1 = key.match(/^y((19|20)\d{2})_/);
+    if (m1 && m1[1]) years.add(m1[1]);
+
+    const m2 = key.match(/_(19|20)\d{2}$/);
+    if (m2) {
+      const ym = key.match(/((19|20)\d{2})$/);
+      if (ym && ym[1]) years.add(ym[1]);
+    }
+  });
+
+  return Array.from(years).sort((a, b) => Number(b) - Number(a));
+}
+
+function yearValue(row, baseKeys, year){
+  const y = String(year || '').trim();
+  if (!y) return '';
+  const keys = [];
+  (baseKeys || []).forEach((base) => {
+    const b = normalizeHeaderKey(base);
+    if (!b) return;
+    keys.push(`${b}_${y}`, `${b}${y}`, `y${y}_${b}`, `${y}_${b}`);
+  });
+  return firstNonEmpty(row, keys);
+}
+
+let sheetCsvUrlsReadyPromise = null;
+async function ensureSheetCsvUrlsReady(){
+  if (sheetCsvUrlsReadyPromise) return sheetCsvUrlsReadyPromise;
+
+  sheetCsvUrlsReadyPromise = (async () => {
+    const explicitPartyYearLiveGid = normalizePublishedGid(PARTY_YEAR_LIVE_GID_PARAM);
+    const explicitMappingLiveGid = normalizePublishedGid(MAPPING_LIVE_GID_PARAM);
+
+    if (!PARTY_YEAR_SHEET_URL && SHEET_ID) PARTY_YEAR_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTY_YEAR_TAB_NAME);
+    if (!PARTY_YEAR_LIVE_SHEET_URL && SHEET_ID && PARTY_YEAR_LIVE_TAB_NAME) PARTY_YEAR_LIVE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTY_YEAR_LIVE_TAB_NAME);
+    if (!MAPPING_SHEET_URL && SHEET_ID) MAPPING_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_TAB_NAME);
+    if (!MAPPING_LIVE_SHEET_URL && SHEET_ID && MAPPING_LIVE_TAB_NAME) MAPPING_LIVE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_LIVE_TAB_NAME);
+    if (!PARTIES_SHEET_URL && SHEET_ID) PARTIES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTIES_TAB_NAME);
+    if (!ALLIANCES_SHEET_URL && SHEET_ID) ALLIANCES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, ALLIANCES_TAB_NAME);
+    const livePartywiseReady = !PARTY_YEAR_LIVE_TAB_NAME || PARTY_YEAR_LIVE_SHEET_URL || explicitPartyYearLiveGid;
+    const liveMappingReady = !MAPPING_LIVE_TAB_NAME || MAPPING_LIVE_SHEET_URL || explicitMappingLiveGid;
+    if (PARTY_YEAR_SHEET_URL && MAPPING_SHEET_URL && PARTIES_SHEET_URL && ALLIANCES_SHEET_URL && livePartywiseReady && liveMappingReady) return;
+
+    if (!PUBLISHED_SHEET_KEY) return;
+
+    const explicitGids = {
+      partyYear: normalizePublishedGid(PARTY_YEAR_GID_PARAM),
+      partyYearLive: explicitPartyYearLiveGid,
+      mapping: normalizePublishedGid(MAPPING_GID_PARAM),
+      mappingLive: explicitMappingLiveGid,
+      parties: normalizePublishedGid(PARTIES_GID_PARAM),
+      alliances: normalizePublishedGid(ALLIANCES_GID_PARAM)
+    };
+
+    const needLookup =
+      ((!PARTY_YEAR_SHEET_URL) && !explicitGids.partyYear) ||
+      ((PARTY_YEAR_LIVE_TAB_NAME && !PARTY_YEAR_LIVE_SHEET_URL) && !explicitGids.partyYearLive) ||
+      ((!MAPPING_SHEET_URL) && !explicitGids.mapping) ||
+      ((MAPPING_LIVE_TAB_NAME && !MAPPING_LIVE_SHEET_URL) && !explicitGids.mappingLive) ||
+      ((!PARTIES_SHEET_URL) && !explicitGids.parties) ||
+      ((!ALLIANCES_SHEET_URL) && !explicitGids.alliances);
+
+    let tabMap = new Map();
+    if (needLookup) {
+      try {
+        const response = await fetch(buildGooglePublishedHtmlUrl(PUBLISHED_SHEET_KEY), { cache: 'force-cache' });
+        if (response.ok) {
+          const html = await response.text();
+          tabMap = parsePublishedSheetTabGids(html);
+        }
+      } catch (e) {
+        console.warn('[seat-results-widget] Failed to resolve published sheet tabs:', e);
+      }
+    }
+
+    const partyYearGid = explicitGids.partyYear || findPublishedTabGid(tabMap, [
+      PARTY_YEAR_TAB_NAME,
+      'partywise_static',
+      'statewise_party_yearwise',
+      'statewise_party_year_wise',
+      'statewise_party_summary',
+      'party_yearwise',
+      'party_year_wise'
+    ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['partyYearTab', 'partySummaryTab', 'partyWiseTab', 'partyYearGid', 'partySummaryGid', 'partyWiseGid']) ? DEFAULT_PUBLISHED_GIDS.partyYear : '');
+    const partyYearLiveGid = explicitGids.partyYearLive || findPublishedTabGid(tabMap, [
+      PARTY_YEAR_LIVE_TAB_NAME,
+      'live_partywise_2026',
+      'statewise_partywise_live_2026',
+      'statewise_party_wise_live_2026'
+    ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['partyYearLiveTab', 'partySummaryLiveTab', 'partyWiseLiveTab', 'partyYearLiveGid', 'partySummaryLiveGid', 'partyWiseLiveGid']) ? DEFAULT_PUBLISHED_GIDS.partyYearLive : '');
+    const mappingGid = explicitGids.mapping || findPublishedTabGid(tabMap, [
+      MAPPING_TAB_NAME,
+      'party_alliance_map',
+      'statewise_party_alliance_mapping',
+      'statewise_party_alliance_map'
+    ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['mappingTab', 'mappingGid']) ? DEFAULT_PUBLISHED_GIDS.mapping : '');
+    const mappingLiveGid = explicitGids.mappingLive || findPublishedTabGid(tabMap, [
+      MAPPING_LIVE_TAB_NAME,
+      'live_alliance_2026',
+      'statewise_live_alliance_2026',
+      'statewise_party_alliance_live_2026'
+    ]) || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['mappingLiveTab', 'mappingLiveGid']) ? DEFAULT_PUBLISHED_GIDS.mappingLive : '');
+    const partiesGid = explicitGids.parties || findPublishedTabGid(tabMap, [PARTIES_TAB_NAME, 'party_color', 'party_master'])
+      || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['partiesTab', 'partiesGid']) ? DEFAULT_PUBLISHED_GIDS.parties : '');
+    const alliancesGid = explicitGids.alliances || findPublishedTabGid(tabMap, [ALLIANCES_TAB_NAME, 'alliance_color', 'alliance_master'])
+      || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['alliancesTab', 'alliancesGid']) ? DEFAULT_PUBLISHED_GIDS.alliances : '');
+
+    if (!PARTY_YEAR_SHEET_URL && partyYearGid) PARTY_YEAR_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearGid);
+    if (!PARTY_YEAR_LIVE_SHEET_URL && partyYearLiveGid) PARTY_YEAR_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearLiveGid);
+    if (!MAPPING_SHEET_URL && mappingGid) MAPPING_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingGid);
+    if (!MAPPING_LIVE_SHEET_URL && mappingLiveGid) MAPPING_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingLiveGid);
+    if (!PARTIES_SHEET_URL && partiesGid) PARTIES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partiesGid);
+    if (!ALLIANCES_SHEET_URL && alliancesGid) ALLIANCES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, alliancesGid);
+  })();
+
+  return sheetCsvUrlsReadyPromise;
+}
+
+async function loadCsv(url, label, cacheMode = 'force-cache'){
+  if (!url) return [];
+  const response = await fetch(url, { cache: cacheMode });
+  if (!response.ok) throw new Error(`${label} HTTP ${response.status}`);
+  const text = await response.text();
+  return normalizeCsvRows(d3.csvParse(text));
+}
+
+function rowsFromSheetValuesPayload(payload){
+  const values = Array.isArray(payload && payload.values) ? payload.values : [];
+  if (!values.length) return [];
+  const headers = (values[0] || []).map((value) => normalizeHeaderKey(value));
+  return values.slice(1).map((row) => {
+    const out = {};
+    headers.forEach((header, index) => {
+      if (!header) return;
+      out[header] = row && row[index] != null ? row[index] : '';
+    });
+    return out;
+  });
+}
+
+function rowsByAliasFromMultiSheetValuesPayload(payload){
+  const results = payload && payload.results && typeof payload.results === 'object'
+    ? payload.results
+    : {};
+  const out = {};
+  Object.keys(results).forEach((alias) => {
+    out[alias] = rowsFromSheetValuesPayload(results[alias]);
+  });
+  return out;
+}
+
+async function loadSheetValues(sheetId, tabName, label, cacheMode = 'force-cache'){
+  if (!sheetId) throw new Error('Missing sheetId');
+  if (!tabName) return [];
+  const requestUrl = buildLegacyCloudfrontValuesUrl(LEGACY_API_BASE_PARAM, sheetId, tabName, LEGACY_API_KEY_PARAM);
+  const useCache = cacheMode !== 'no-store';
+
+  if (useCache) {
+    const hit = window.pvElectionCache.get(requestUrl);
+    if (hit !== undefined) return hit;
+    if (window.pvElectionCache.pending[requestUrl]) return window.pvElectionCache.pending[requestUrl];
+  }
+
+  const doFetch = async () => {
+    const response = await fetch(requestUrl, { cache: cacheMode });
+    let payload = null;
+    try { payload = await response.json(); } catch (e) { throw new Error(`${label} returned invalid JSON`); }
+    if (!response.ok) {
+      throw new Error(firstNonEmpty(payload || {}, ['error', 'message']) || `${label} HTTP ${response.status}`);
+    }
+    if (payload && payload.error) throw new Error(firstNonEmpty(payload, ['error', 'message']) || `${label} failed`);
+    return rowsFromSheetValuesPayload(payload);
+  };
+
+  if (!useCache) return doFetch();
+
+  const promise = doFetch().then(rows => {
+    window.pvElectionCache.set(requestUrl, rows);
+    delete window.pvElectionCache.pending[requestUrl];
+    return rows;
+  }).catch(e => {
+    delete window.pvElectionCache.pending[requestUrl];
+    throw e;
+  });
+  window.pvElectionCache.pending[requestUrl] = promise;
+  return promise;
+}
+
+async function loadMultiSheetValues(sheetId, requests, label, cacheMode = 'force-cache'){
+  if (!sheetId) throw new Error('Missing sheetId');
+  const filteredRequests = (requests || []).filter((request) => request && request.alias && request.tabName);
+  if (!filteredRequests.length) return {};
+  const entries = await Promise.all(filteredRequests.map(async (request) => {
+    const rows = await loadSheetValues(
+      sheetId,
+      request.tabName,
+      `${label}:${request.alias}`,
+      cacheMode
+    );
+    return [request.alias, rows];
+  }));
+  return Object.fromEntries(entries);
+}
+
+function parsePartyMasterRows(rows){
+  const partyMap = new Map();
+  (rows || []).forEach((row) => {
+    const code = firstNonEmpty(row, ['party_code', 'party', 'code', 'name']);
+    if (!code) return;
+    const key = code.trim().toUpperCase();
+    const byYear = {};
+    Object.keys(row).forEach((k) => {
+      const m = k.match(/^alliance_(\d{4})$/);
+      if (!m) return;
+      const allianceVal = String(row[k] || '').trim();
+      if (allianceVal) byYear[m[1]] = allianceVal;
+    });
+    partyMap.set(key, {
+      code: code.trim(),
+      name: firstNonEmpty(row, ['party', 'name']) || code.trim(),
+      color: normalizeHexColor(firstNonEmpty(row, ['color', 'party_color'])),
+      alliance: firstNonEmpty(row, ['alliance']),
+      allianceByYear: byYear
+    });
+  });
+  return partyMap;
+}
+
+function parseAllianceMasterRows(rows){
+  const out = { OTH: '#9CA3AF', NA: '#999999' };
+  (rows || []).forEach((row) => {
+    const alliance = firstNonEmpty(row, ['alliance', 'alliance_code', 'name']);
+    const color = normalizeHexColor(firstNonEmpty(row, ['color', 'alliance_color']));
+    if (alliance && color) out[alliance] = color;
+  });
+  return out;
+}
+
+function mappingKey(stateKey, partyCode, year){
+  return `${String(stateKey || '').trim().toUpperCase()}|${String(partyCode || '').trim().toUpperCase()}|${String(year || '').trim()}`;
+}
+
+function parseAllianceMappingRows(rows){
+  const out = new Map();
+  (rows || []).forEach((row) => {
+    const stateKey = normalizeStateKeyForData(firstNonEmpty(row, ['state_key', 'state', 'state_code', 'state_name']));
+    const partyCode = firstNonEmpty(row, ['party_code', 'party', 'party_name', 'code', 'name']).trim().toUpperCase();
+    if (!stateKey || !partyCode) return;
+
+    const rowYear = parseYear(firstNonEmpty(row, ['year']));
+    const rowAlliance = firstNonEmpty(row, ['alliance', 'alliance_code']);
+    if (rowYear && rowAlliance) {
+      out.set(mappingKey(stateKey, partyCode, rowYear), rowAlliance.trim());
+    }
+
+    Object.keys(row || {}).forEach((key) => {
+      const m = key.match(/^alliance_(\d{4})$/);
+      if (!m) return;
+      const year = m[1];
+      const value = String(row[key] || '').trim();
+      if (value) out.set(mappingKey(stateKey, partyCode, year), value);
+    });
+  });
+  return out;
+}
+
+function ensureStateContainer(map, stateKey, stateLabel){
+  if (!map.has(stateKey)) {
+    map.set(stateKey, {
+      key: stateKey,
+      label: stateLabel || stateLabelFromKey(stateKey),
+      yearsSet: new Set(),
+      partiesMap: new Map(),
+      totalByYear: {},
+      majorityByYear: {}
+    });
+  }
+  return map.get(stateKey);
+}
+
+function ensurePartyContainer(state, partyCode, partyName){
+  if (!state.partiesMap.has(partyCode)) {
+    state.partiesMap.set(partyCode, {
+      code: partyCode,
+      name: partyName || partyCode,
+      color: '',
+      alliance: {},
+      results: {}
+    });
+  }
+  return state.partiesMap.get(partyCode);
+}
+
+function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, allianceRows){
+  const partyMaster = parsePartyMasterRows(partyRows);
+  const allianceColors = parseAllianceMasterRows(allianceRows);
+  const allianceMapping = parseAllianceMappingRows(mappingRows);
+  const statesMap = new Map();
+
+  (summaryRows || []).forEach((row) => {
+    const stateRaw = firstNonEmpty(row, ['state_key', 'state', 'state_code', 'state_name']);
+    const stateKey = normalizeStateKeyForData(stateRaw);
+    if (!stateKey) return;
+    const stateLabel = firstNonEmpty(row, ['state', 'state_name']) || stateLabelFromKey(stateKey);
+    const state = ensureStateContainer(statesMap, stateKey, stateLabel);
+
+    const partyRaw = firstNonEmpty(row, ['party_code', 'party', 'party_name', 'code', 'name']);
+    if (!partyRaw) return;
+    const partyCode = partyRaw.trim().toUpperCase();
+    const partyName = firstNonEmpty(row, ['party', 'party_name', 'name']) || partyRaw.trim();
+    const party = ensurePartyContainer(state, partyCode, partyName);
+
+    const rowColor = normalizeHexColor(firstNonEmpty(row, ['color', 'party_color']));
+    if (rowColor) party.color = rowColor;
+
+    const years = detectYearsFromRow(row);
+    if (!years.length) return;
+
+    years.forEach((year) => {
+      state.yearsSet.add(year);
+      const winsVal = parseNumber(firstNonEmpty(row, ['wins']) || yearValue(row, ['wins', 'won'], year));
+      const leadsVal = parseNumber(firstNonEmpty(row, ['leads']) || yearValue(row, ['leads', 'lead'], year));
+      const wins = winsVal == null ? 0 : winsVal;
+      const leads = leadsVal == null ? 0 : leadsVal;
+      party.results[year] = { wins, leads };
+    });
+  });
+
+  const states = Array.from(statesMap.values()).map((state) => {
+    const years = Array.from(state.yearsSet).sort((a, b) => Number(b) - Number(a));
+    const parties = Array.from(state.partiesMap.values()).map((party) => {
+      const master = partyMaster.get(party.code.toUpperCase());
+      if (!party.color) party.color = (master && master.color) || '#9CA3AF';
+
+      years.forEach((year) => {
+        if (!party.results[year]) party.results[year] = { wins: 0, leads: 0 };
+        const mapAlliance = allianceMapping.get(mappingKey(state.key, party.code, year));
+        party.alliance[year] = (mapAlliance && String(mapAlliance).trim()) || 'OTH';
+      });
+      return party;
+    });
+
+    years.forEach((year) => {
+      const hardcodedTotal = hardcodedTotalSeatsForState(state.key);
+      state.totalByYear[year] = hardcodedTotal > 0
+        ? hardcodedTotal
+        : parties.reduce((sum, p) => sum + ((p.results[year]?.wins || 0) + (p.results[year]?.leads || 0)), 0);
+      if (!(state.majorityByYear[year] > 0) && state.totalByYear[year] > 0) {
+        state.majorityByYear[year] = Math.floor(state.totalByYear[year] / 2) + 1;
+      }
+    });
+
+    const latestYear = years[0] || '';
+    return {
+      key: state.key,
+      label: state.label || stateLabelFromKey(state.key),
+      years,
+      total_seats: latestYear ? (state.totalByYear[latestYear] || 0) : 0,
+      majority: latestYear ? (state.majorityByYear[latestYear] || 0) : 0,
+      total_seats_by_year: state.totalByYear,
+      majority_by_year: state.majorityByYear,
+      parties
+    };
+  }).filter(state => state.years.length && state.parties.length);
+
+  return { alliance_colors: allianceColors, states };
+}
+
+function looksLikeYearwiseSummaryRows(rows){
+  return (rows || []).some((row) => {
+    const hasParty = !!firstNonEmpty(row, ['party_code', 'party', 'party_name', 'code', 'name']);
+    if (!hasParty) return false;
+    const keys = Object.keys(row || {});
+    const hasWinsLeadsColumns = keys.some((key) => /(^|_)wins?($|_)|(^|_)leads?($|_)/.test(key));
+    const hasYear = !!parseYear(firstNonEmpty(row, ['year']));
+    return hasWinsLeadsColumns || hasYear;
+  });
+}
+
+function normalizeLivePartywiseRows(rows){
+  const out = [];
+  const keyed = new Map();
+
+  const rowKey = (row) => {
+    const state = normalizeStateKeyForData(firstNonEmpty(row, ['state_key', 'state', 'state_code', 'state_name']));
+    const party = firstNonEmpty(row, ['party_code', 'party', 'party_name', 'code', 'name']).trim().toUpperCase();
+    const year = parseYear(firstNonEmpty(row, ['year'])) || '2026';
+    if (!state || !party || !year) return '';
+    return `${state}|${party}|${year}`;
+  };
+
+  for (const row of (rows || [])) {
+    const normalized = { ...row };
+    if (!parseYear(firstNonEmpty(normalized, ['year']))) normalized.year = '2026';
+    const key = rowKey(normalized);
+    if (!key) continue;
+    const existing = keyed.get(key) || {};
+    keyed.set(key, { ...existing, ...normalized });
+  }
+
+  keyed.forEach((row) => out.push(row));
+  return out;
+}
+
+function mergeSummaryRowsWithLivePartywise(staticRows, livePartywiseRows){
+  const base = Array.isArray(staticRows) ? staticRows : [];
+  const live = normalizeLivePartywiseRows(livePartywiseRows || []);
+  if (!live.length) return base;
+  // Process live rows after static rows so 2026 wins/leads overwrite stale values.
+  return [...base, ...live];
+}
+
+// ─────────────────────────────────────────────
+//  State
+// ─────────────────────────────────────────────
+let DATA = null;              // normalized runtime data built from Google Sheet
+let currentStateKey = null;
+let currentYear = null;
+let viewMode = 'alliance';    // 'party' | 'alliance'
+let refreshTimer = null;
+let refreshInFlight = false;
+let shareBusy = false;
+let rotateTimer = null;
+let rotatePauseTimer = null;
+let rotationSuspendedUntil = 0;
+const LOADER_CLASS = 'widget-loading';
+
+function setWidgetLoading(isLoading) {
+  document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+}
+
+function getRotationStateKeys() {
+  if (!DATA || !Array.isArray(DATA.states)) return [];
+  return DATA.states.map((state) => state.key).filter(Boolean);
+}
+
+function shouldAutoRotateStates() {
+  return ROTATE_STATES && !HIDE_TABS && getRotationStateKeys().length > 1;
+}
+
+function clearRotateTimers() {
+  if (rotateTimer) {
+    clearTimeout(rotateTimer);
+    rotateTimer = null;
+  }
+  if (rotatePauseTimer) {
+    clearTimeout(rotatePauseTimer);
+    rotatePauseTimer = null;
+  }
+}
+
+function setRotationVisualState(phase = 'idle') {
+  const widgetEl = document.getElementById('widgetScaleRoot');
+  if (!widgetEl) return;
+  widgetEl.classList.remove('is-rotating-out', 'is-rotating-in');
+  if (phase === 'out') widgetEl.classList.add('is-rotating-out');
+  if (phase === 'in') widgetEl.classList.add('is-rotating-in');
+}
+
+function scheduleNextRotation(delayMs = ROTATE_INTERVAL_MS) {
+  if (!shouldAutoRotateStates()) return;
+  if (Date.now() < rotationSuspendedUntil) return;
+  if (rotateTimer) clearTimeout(rotateTimer);
+  rotateTimer = setTimeout(() => rotateToNextState(), delayMs);
+}
+
+function resumeRotationAfterPause() {
+  if (!shouldAutoRotateStates()) return;
+  rotationSuspendedUntil = 0;
+  scheduleNextRotation(ROTATE_INTERVAL_MS);
+}
+
+function pauseStateRotation() {
+  if (!shouldAutoRotateStates()) return;
+  clearRotateTimers();
+  rotationSuspendedUntil = Date.now() + ROTATE_RESUME_DELAY_MS;
+  rotatePauseTimer = setTimeout(() => {
+    rotatePauseTimer = null;
+    resumeRotationAfterPause();
+  }, ROTATE_RESUME_DELAY_MS);
+}
+
+function noteRotationInteraction() {
+  if (!shouldAutoRotateStates()) return;
+  pauseStateRotation();
+}
+
+function rotateToNextState() {
+  if (!shouldAutoRotateStates()) return;
+  if (Date.now() < rotationSuspendedUntil) return;
+  const stateKeys = getRotationStateKeys();
+  if (stateKeys.length < 2) return;
+  const currentIndex = stateKeys.indexOf(currentStateKey);
+  const nextIndex = currentIndex === -1 ? 0 : (currentIndex + 1) % stateKeys.length;
+  setRotationVisualState('out');
+  setTimeout(() => {
+    loadState(stateKeys[nextIndex], { fromRotation: true });
+    requestAnimationFrame(() => {
+      setRotationVisualState('in');
+      setTimeout(() => {
+        setRotationVisualState('idle');
+        scheduleNextRotation(ROTATE_INTERVAL_MS);
+      }, 260);
+    });
+  }, 150);
+}
+
+// D3 selections
+let svg, chartGroup, labelsGroup;
+
+const STATE_MINI_MAP_SOURCES = {
+  KERALA: { type: 'image', url: 'root/KERALA_outer.svg' },
+  TAMIL_NADU: { type: 'image', url: 'root/TAMIL_NADU_outer.svg' },
+  WEST_BENGAL: { type: 'image', url: 'root/WEST_BENGAL_outer.svg' },
+  PUDUCHERRY: { type: 'image', url: 'root/PUDUCHERRY_outer.svg' },
+  ASSAM: { type: 'image', url: 'root/ASSAM_outer.svg' }
+};
+const miniMapCache = new Map();
+const miniMapInflight = new Map();
+
+function applyDataAndRender(nextData, preserveSelection = false) {
+  if (!nextData || !Array.isArray(nextData.states) || nextData.states.length === 0) {
+    throw new Error('No valid state rows found in results sheet');
+  }
+
+  const previousStateKey = preserveSelection ? currentStateKey : null;
+  const previousYear = preserveSelection ? currentYear : null;
+  DATA = nextData;
+  DATA.states.sort((a, b) => {
+    const ai = STATE_TAB_ORDER.indexOf(a.key);
+    const bi = STATE_TAB_ORDER.indexOf(b.key);
+    const aIdx = ai === -1 ? STATE_TAB_ORDER.length : ai;
+    const bIdx = bi === -1 ? STATE_TAB_ORDER.length : bi;
+    return aIdx - bIdx;
+  });
+
+  const stateTabsEl = document.getElementById('state-tabs');
+  stateTabsEl.innerHTML = '';
+  buildStateTabs();
+  if (HIDE_TABS) stateTabsEl.style.display = 'none';
+
+  let targetStateKey = DATA.states[0].key;
+  if (previousStateKey && DATA.states.some((state) => state.key === previousStateKey)) {
+    targetStateKey = previousStateKey;
+  }
+
+  currentStateKey = targetStateKey;
+  const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
+  const years = Array.isArray(state.years) ? state.years : [];
+  currentYear = years[0] || null;
+  if (previousYear && years.includes(previousYear)) {
+    currentYear = previousYear;
+  }
+
+  ensureMiniMapLoaded(targetStateKey);
+  setActiveStateTab(targetStateKey);
+  buildYearTabs(state);
+  setActiveYearTab(currentYear);
+  initSvg();
+  render();
+  setupRotationInteractionListeners();
+  if (shouldAutoRotateStates()) scheduleNextRotation(ROTATE_INTERVAL_MS);
+  else clearRotateTimers();
+}
+
+async function refreshDataInBackground() {
+  if (refreshInFlight || !DATA) return;
+
+  const errorEl = document.getElementById('error-msg');
+  refreshInFlight = true;
+  errorEl.style.color = '#6b7280';
+  errorEl.textContent = LANG === 'kn' ? 'ಡೇಟಾ ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ...' : 'Refreshing data...';
+
+  try {
+    const nextData = await loadDataFromGoogleSheet();
+    applyDataAndRender(nextData, true);
+    errorEl.textContent = '';
+    errorEl.style.color = '#c52626';
+  } catch (e) {
+    const msg = String(e && e.message ? e.message : e);
+    errorEl.style.color = '#6b7280';
+    errorEl.textContent = LANG === 'kn'
+      ? `ಹಳೆಯ ಡೇಟಾ ತೋರಿಸಲಾಗುತ್ತಿದೆ. ನವೀಕರಣ ವಿಫಲವಾಗಿದೆ: ${msg}`
+      : `Showing cached data. Refresh failed: ${msg}`;
+    console.error('[seat-results-widget] refresh failed:', e);
+  } finally {
+    refreshInFlight = false;
+  }
+}
+
+// ─────────────────────────────────────────────
+//  Load data
+// ─────────────────────────────────────────────
+async function init() {
+  const errorEl = document.getElementById('error-msg');
+  const loadingText = LANG === 'kn' ? 'ಸ್ಥಾನಗಳ ಡೇಟಾ ಲೋಡ್ ಆಗುತ್ತಿದೆ...' : 'Loading seats data...';
+  setWidgetLoading(true);
+  errorEl.style.color = '#374151';
+  errorEl.textContent = loadingText;
+
+  // Set toggle labels from i18n
+  document.getElementById('lbl-party').textContent    = t('party');
+  document.getElementById('lbl-alliance').textContent = t('alliance');
+  const viewToggle = document.getElementById('view-toggle');
+  viewToggle.checked = true;
+  document.getElementById('lbl-party').classList.add('inactive');
+  document.getElementById('lbl-alliance').classList.remove('inactive');
+
+  try {
+    // Phase 1: load filtered for initial state (fast render)
+    const nextData = await loadDataFromGoogleSheet(INITIAL_STATE_FILTER);
+    applyDataAndRender(nextData, false);
+    setWidgetLoading(false);
+    errorEl.textContent = '';
+    errorEl.style.color = '#c52626';
+    if (REFRESH_MS > 0) {
+      refreshTimer = setInterval(refreshDataInBackground, REFRESH_MS);
+    }
+    // Phase 2: if we loaded a filtered view, fetch all states in background
+    if (INITIAL_STATE_FILTER) {
+      loadDataFromGoogleSheet('').then(fullData => {
+        applyDataAndRender(fullData, true);
+      }).catch(() => {});
+    }
+  } catch(e) {
+    setWidgetLoading(false);
+    const msg = String(e && e.message ? e.message : e);
+    errorEl.style.color = '#c52626';
+    errorEl.textContent =
+      `Could not load seat results data. ${msg}`;
+    console.error('[seat-results-widget] load failed:', e);
+  }
+}
+
+async function loadDataFromGoogleSheet(stateFilter = ''){
+  if (!SHEET_ID) {
+    throw new Error('Missing sheetId.');
+  }
+  if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+    throw new Error('Missing legacyApiBase or legacyApiKey.');
+  }
+  // stateFilter applied only to summary (large) tabs; mapping/parties/alliances are small and global
+  const requests = [
+    { alias: 'summary', tabName: PARTY_YEAR_TAB_NAME, stateFilter: stateFilter },
+    { alias: 'mapping', tabName: MAPPING_TAB_NAME },
+    { alias: 'parties', tabName: PARTIES_TAB_NAME },
+    { alias: 'alliances', tabName: ALLIANCES_TAB_NAME }
+  ];
+  if (MAPPING_LIVE_TAB_NAME) requests.push({ alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME });
+  if (PARTY_YEAR_LIVE_TAB_NAME) requests.push({ alias: 'livePartywise', tabName: PARTY_YEAR_LIVE_TAB_NAME, stateFilter: stateFilter });
+
+  const rowsByAlias = await loadMultiSheetValues(SHEET_ID, requests, 'Legacy CloudFront API', 'no-store');
+  const rawSummaryRows = rowsByAlias.summary || [];
+  const mappingRows = rowsByAlias.mapping || [];
+  const mappingLiveRows = rowsByAlias.mappingLive || [];
+  const partyRows = rowsByAlias.parties || [];
+  const allianceRows = rowsByAlias.alliances || [];
+  const livePartywiseRows = rowsByAlias.livePartywise || [];
+  if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
+    throw new Error(
+      `Expected party-wise year-wise rows in ${PARTY_YEAR_TAB_NAME}. `
+      + `Provide columns like state_key, year, party_code, wins, leads.`
+    );
+  }
+  const summaryRows = mergeSummaryRowsWithLivePartywise(rawSummaryRows, livePartywiseRows);
+  const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
+  return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
+}
+
+// ─────────────────────────────────────────────
+//  Tabs
+// ─────────────────────────────────────────────
+function buildStateTabs() {
+  const el = document.getElementById('state-tabs');
+  DATA.states.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.key = s.key;
+    btn.textContent = tState(s.key, s.label);
+    btn.addEventListener('click', () => {
+      noteRotationInteraction();
+      if (s.key !== currentStateKey) loadState(s.key);
+    });
+    el.appendChild(btn);
+  });
+}
+
+function setActiveStateTab(key) {
+  document.querySelectorAll('#state-tabs .tab-btn').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+}
+
+function buildYearTabs(state) {
+  const el = document.getElementById('year-tabs');
+  el.innerHTML = '';
+  state.years.forEach(y => {
+    const btn = document.createElement('button');
+    btn.className = 'year-btn';
+    btn.dataset.year = y;
+    btn.textContent = y;
+    btn.addEventListener('click', () => {
+      noteRotationInteraction();
+      if (y !== currentYear) {
+        currentYear = y;
+        setActiveYearTab(y);
+        render();
+      }
+    });
+    el.appendChild(btn);
+  });
+}
+
+function setActiveYearTab(year) {
+  document.querySelectorAll('#year-tabs .year-btn').forEach(b => b.classList.toggle('active', b.dataset.year === year));
+}
+
+function getCurrentState() {
+  return DATA && Array.isArray(DATA.states) ? (DATA.states.find(s => s.key === currentStateKey) || null) : null;
+}
+
+function setupRotationInteractionListeners() {
+  if (!shouldAutoRotateStates()) return;
+  const viewport = document.getElementById('widgetViewport');
+  if (!viewport || viewport.dataset.rotateBound === 'true') return;
+  viewport.dataset.rotateBound = 'true';
+  ['pointerdown', 'touchstart', 'keydown', 'focusin'].forEach((eventName) => {
+    viewport.addEventListener(eventName, noteRotationInteraction, { passive: true });
+  });
+}
+
+function getShareFileName() {
+  const state = getCurrentState();
+  const statePart = (state && state.key ? state.key : 'seat-results').toLowerCase();
+  const yearPart = String(currentYear || 'latest');
+  const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+  return `${statePart}-${yearPart}-${stamp}.png`;
+}
+
+function formatShareTimestamp(date = new Date()) {
+  return new Intl.DateTimeFormat('en-IN', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit'
+  }).format(date);
+}
+
+function getShareHeaderLabel() {
+  const state = getCurrentState();
+  const stateLabel = displayName((state && state.label) || currentStateKey || '');
+  const yearLabel = currentYear ? String(currentYear) : '';
+  return [stateLabel, yearLabel].filter(Boolean).join(' · ');
+}
+
+function setShareStatus(message = '', isError = false) {
+  const el = document.getElementById('share-status');
+  if (!el) return;
+  el.textContent = message;
+  el.style.color = isError ? '#b91c1c' : '#6b7280';
+}
+
+function setShareBusy(isBusy) {
+  shareBusy = isBusy;
+  const btn = document.getElementById('share-widget-btn');
+  if (!btn) return;
+  btn.disabled = isBusy;
+  btn.setAttribute('aria-busy', isBusy ? 'true' : 'false');
+}
+
+function loadImage(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+
+function getShareLogoUrl() {
+  return LANG === 'kn' ? SHARE_LOGO_URL_KN : SHARE_LOGO_URL;
+}
+
+function getShareFallbackBrandText() {
+  return LANG === 'kn' ? 'PV' : 'DH';
+}
+
+async function buildShareCanvas() {
+  const captureRoot = document.getElementById('widgetScaleRoot');
+  if (!captureRoot || typeof html2canvas !== 'function') {
+    throw new Error('Share capture is unavailable.');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    try { await document.fonts.ready; } catch (_) {}
+  }
+
+  const captured = await html2canvas(captureRoot, {
+    backgroundColor: '#ffffff',
+    scale: Math.max(2, window.devicePixelRatio || 1),
+    useCORS: true,
+    logging: false,
+    ignoreElements: (el) => !!(el && el.dataset && el.dataset.html2canvasIgnore === 'true'),
+    onclone: (clonedDoc) => {
+      const stateTabs = clonedDoc.getElementById('state-tabs');
+      if (stateTabs) stateTabs.style.display = 'none';
+      const controlsRow = clonedDoc.querySelector('.controls-row');
+      if (controlsRow) controlsRow.style.display = 'none';
+      clonedDoc.querySelectorAll('.state-mini-map').forEach((node) => node.remove());
+
+      const shareStyle = clonedDoc.createElement('style');
+      shareStyle.textContent = `
+        .parliament-seat.is-lead {
+          opacity: 1 !important;
+          fill-opacity: 1 !important;
+          stroke-width: 1.5px !important;
+          animation: none !important;
+          filter: none !important;
+        }
+        .majority-progress-track .seg-leads {
+          opacity: 1 !important;
+          animation: none !important;
+          border-left-width: 1px !important;
+        }
+      `;
+      clonedDoc.head.appendChild(shareStyle);
+
+      clonedDoc.querySelectorAll('.parliament-seat.is-lead').forEach((node) => {
+        const baseFill = node.getAttribute('fill') || node.style.fill;
+        const stroke = node.style.stroke || node.getAttribute('stroke') || '#1f2937';
+        if (baseFill) {
+          node.style.fill = baseFill;
+          node.style.opacity = '0.38';
+        }
+        node.style.stroke = stroke;
+        node.style.strokeWidth = '1.5px';
+      });
+
+      clonedDoc.querySelectorAll('.majority-progress-track .seg-leads').forEach((node) => {
+        const bg = node.style.background || node.style.backgroundColor;
+        if (bg) {
+          node.style.background = bg;
+          node.style.opacity = '0.42';
+        }
+        node.style.borderLeftColor = 'rgba(17, 24, 39, 0.7)';
+      });
+    }
+  });
+
+  const headerHeight = 80;
+  const canvas = document.createElement('canvas');
+  canvas.width = captured.width;
+  canvas.height = captured.height + headerHeight;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(captured, 0, headerHeight);
+
+  ctx.fillStyle = '#f8fafc';
+  ctx.fillRect(0, 0, canvas.width, headerHeight);
+  ctx.strokeStyle = '#e5e7eb';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(0, headerHeight + 0.5);
+  ctx.lineTo(canvas.width, headerHeight + 0.5);
+  ctx.stroke();
+
+  const shareHeaderLabel = getShareHeaderLabel();
+  ctx.fillStyle = '#334155';
+  ctx.font = '600 24px "Roboto Slab", serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(shareHeaderLabel, 24, headerHeight / 2);
+
+  const timestamp = formatShareTimestamp();
+  const timestampFontSize = 11;
+  const logoMaxHeight = 34;
+  const logoTimestampGap = 5;
+  const stackHeight = logoMaxHeight + logoTimestampGap + timestampFontSize;
+  const stackTop = (headerHeight - stackHeight) / 2;
+
+  try {
+    const logo = await loadImage(getShareLogoUrl());
+    const ratio = logo.width / logo.height || 1;
+    const logoHeight = logoMaxHeight;
+    const logoWidth = logoHeight * ratio;
+    ctx.drawImage(logo, canvas.width - logoWidth - 24, stackTop, logoWidth, logoHeight);
+  } catch (_) {
+    ctx.fillStyle = '#0f172a';
+    ctx.font = `700 28px "Playfair Display", serif`;
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'top';
+    ctx.fillText(getShareFallbackBrandText(), canvas.width - 24, stackTop);
+    ctx.textAlign = 'left';
+  }
+
+  ctx.fillStyle = '#64748b';
+  ctx.font = `500 ${timestampFontSize}px "Roboto Slab", serif`;
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'top';
+  ctx.fillText(timestamp, canvas.width - 24, stackTop + logoMaxHeight + logoTimestampGap);
+  ctx.textAlign = 'left';
+
+  return canvas;
+}
+
+function canvasToBlob(canvas) {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob((blob) => {
+      if (blob) resolve(blob);
+      else reject(new Error('Could not generate image.'));
+    }, 'image/png');
+  });
+}
+
+function downloadBlob(blob, fileName) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function shareWidgetImage() {
+  if (shareBusy) return;
+  setShareBusy(true);
+  setShareStatus('Preparing image...');
+
+  try {
+    const canvas = await buildShareCanvas();
+    const blob = await canvasToBlob(canvas);
+    const fileName = getShareFileName();
+    const file = new File([blob], fileName, { type: 'image/png' });
+    const state = getCurrentState();
+    const shareData = {
+      files: [file],
+      title: 'Seat Results',
+      text: `${displayName((state && state.label) || currentStateKey)} seat results`
+    };
+
+    if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+      setShareStatus('Opening share sheet...');
+      await navigator.share(shareData);
+      setShareStatus('Shared.');
+    } else {
+      downloadBlob(blob, fileName);
+      setShareStatus('Image downloaded.');
+    }
+  } catch (error) {
+    console.error('[seat-results-widget] share failed:', error);
+    setShareStatus(error && error.message ? error.message : 'Share failed.', true);
+  } finally {
+    setShareBusy(false);
+  }
+}
+
+// ─────────────────────────────────────────────
+//  Toggle
+// ─────────────────────────────────────────────
+document.getElementById('view-toggle').addEventListener('change', function() {
+  noteRotationInteraction();
+  viewMode = this.checked ? 'alliance' : 'party';
+  document.getElementById('lbl-party').classList.toggle('inactive',    this.checked);
+  document.getElementById('lbl-alliance').classList.toggle('inactive', !this.checked);
+  render();
+});
+
+document.getElementById('share-widget-btn').addEventListener('click', () => {
+  noteRotationInteraction();
+  shareWidgetImage();
+});
+
+// ─────────────────────────────────────────────
+//  Load state
+// ─────────────────────────────────────────────
+function loadState(key, { fromRotation = false } = {}) {
+  if (!fromRotation) noteRotationInteraction();
+  currentStateKey = key;
+  const state = DATA.states.find(s => s.key === key);
+  currentYear = state.years[0];
+  ensureMiniMapLoaded(key);
+  setActiveStateTab(key);
+  buildYearTabs(state);
+  setActiveYearTab(currentYear);
+  initSvg();
+  render();
+}
+
+// ─────────────────────────────────────────────
+//  SVG init
+// ─────────────────────────────────────────────
+function initSvg() {
+  const container = document.getElementById('chart-svg-container');
+  container.innerHTML = '';
+  svg = d3.select(container).append('svg');
+  chartGroup  = svg.append('g').attr('class', 'chart-group');
+  labelsGroup = svg.append('g').attr('class', 'labels-group').style('pointer-events', 'none');
+}
+
+// ─────────────────────────────────────────────
+//  Data helpers
+// ─────────────────────────────────────────────
+function toTopFivePlusOthers(rows, othersColor = '#9CA3AF') {
+  if (!ENABLE_TOP5_OTHERS) return rows;
+  if (!Array.isArray(rows) || rows.length <= TOP_BUCKET_LIMIT) return rows;
+
+  const topRows = rows.slice(0, TOP_BUCKET_LIMIT);
+  const remaining = rows.slice(TOP_BUCKET_LIMIT);
+  const others = remaining.reduce((acc, row) => {
+    acc.wins += row.wins || 0;
+    acc.leads += row.leads || 0;
+    return acc;
+  }, { name: OTHERS_KEY, color: othersColor, wins: 0, leads: 0 });
+
+  if (others.wins + others.leads <= 0) return topRows;
+  return [...topRows, others];
+}
+
+function getDisplayData(stateData, year) {
+  if (viewMode === 'alliance') {
+    const allianceMap = {};
+    stateData.parties.forEach(p => {
+      const a = (p.alliance && p.alliance[year]) || 'OTH';
+      const wins  = (p.results[year] && p.results[year].wins)  || 0;
+      const leads = (p.results[year] && p.results[year].leads) || 0;
+      if (!allianceMap[a]) {
+        allianceMap[a] = { name: a, color: (DATA.alliance_colors && DATA.alliance_colors[a]) || '#9CA3AF', wins: 0, leads: 0 };
+      }
+      allianceMap[a].wins  += wins;
+      allianceMap[a].leads += leads;
+    });
+    const rows = Object.values(allianceMap)
+      .filter(a => a.wins + a.leads > 0)
+      .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+    const othersColor = (DATA.alliance_colors && DATA.alliance_colors.OTH) || '#9CA3AF';
+    return toTopFivePlusOthers(rows, othersColor);
+  } else {
+    const rows = stateData.parties
+      .map(p => ({
+        name:  p.name || p.code,
+        color: p.color || '#9CA3AF',
+        wins:  (p.results[year] && p.results[year].wins)  || 0,
+        leads: (p.results[year] && p.results[year].leads) || 0
+      }))
+      .filter(p => p.wins + p.leads > 0)
+      .sort((a, b) => (b.wins + b.leads) - (a.wins + a.leads));
+    return toTopFivePlusOthers(rows, '#9CA3AF');
+  }
+}
+
+function getMiniMapSource(stateKey) {
+  return STATE_MINI_MAP_SOURCES[stateKey] || null;
+}
+
+function removeMiniMap() {
+  if (!labelsGroup) return;
+  labelsGroup.selectAll('.state-mini-map').remove();
+}
+
+function normalizeGeoJsonFeatureCollection(json) {
+  if (!json) return null;
+  if (json.type === 'FeatureCollection' && Array.isArray(json.features)) return json;
+  if (json.type === 'Feature') return { type: 'FeatureCollection', features: [json] };
+  return null;
+}
+
+async function ensureMiniMapLoaded(stateKey) {
+  const source = getMiniMapSource(stateKey);
+  if (!source) return null;
+
+  if (miniMapCache.has(stateKey)) return miniMapCache.get(stateKey);
+  if (miniMapInflight.has(stateKey)) return miniMapInflight.get(stateKey);
+
+  const p = (async () => {
+    if (source.type === 'geojson') {
+      const res = await fetch(source.url, { cache: 'force-cache' });
+      if (!res.ok) throw new Error(`Mini map HTTP ${res.status}`);
+      const json = await res.json();
+      return { ...source, data: normalizeGeoJsonFeatureCollection(json) };
+    }
+    return { ...source };
+  })();
+
+  miniMapInflight.set(stateKey, p);
+  try {
+    const loaded = await p;
+    miniMapCache.set(stateKey, loaded);
+    return loaded;
+  } catch (e) {
+    console.warn('[seat-results-widget] mini-map load failed:', stateKey, e);
+    return null;
+  } finally {
+    miniMapInflight.delete(stateKey);
+  }
+}
+
+function renderMiniMap(stateKey, viewBoxX, viewBoxY, viewBoxWidth) {
+  if (!labelsGroup) return;
+  const cached = miniMapCache.get(stateKey);
+  const source = getMiniMapSource(stateKey);
+  if (!source) {
+    removeMiniMap();
+    return;
+  }
+
+  const size = Math.max(56, Math.min(110, Math.round(viewBoxWidth * 0.16)));
+  const x = viewBoxX + 10;
+  const y = viewBoxY + 10;
+  const pad = 5;
+  const innerSize = Math.max(20, size - pad * 2);
+
+  const group = labelsGroup.selectAll('.state-mini-map').data([stateKey]).join(
+    enter => {
+      const g = enter.append('g').attr('class', 'state-mini-map');
+      g.append('rect').attr('class', 'mini-map-bg');
+      g.append('g').attr('class', 'mini-map-shape');
+      return g;
+    },
+    update => update,
+    exit => exit.remove()
+  );
+
+  group.attr('transform', `translate(${x},${y})`);
+  group.select('.mini-map-bg')
+    .attr('x', 0)
+    .attr('y', 0)
+    .attr('width', size)
+    .attr('height', size)
+    .attr('rx', 6)
+    .attr('ry', 6)
+    .attr('fill', '#ffffff')
+    .attr('stroke', '#d1d5db')
+    .attr('stroke-width', 1);
+
+  const shapeLayer = group.select('.mini-map-shape');
+  shapeLayer.attr('transform', `translate(${pad},${pad})`);
+
+  if (!cached) {
+    shapeLayer.selectAll('*').remove();
+    ensureMiniMapLoaded(stateKey).then(() => {
+      if (currentStateKey === stateKey) render();
+    });
+    return;
+  }
+
+  if (cached.type === 'image') {
+    shapeLayer.selectAll('path').remove();
+    shapeLayer.selectAll('image').data([cached.url]).join('image')
+      .attr('href', d => d)
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('width', innerSize)
+      .attr('height', innerSize)
+      .attr('preserveAspectRatio', 'xMidYMid meet');
+    return;
+  }
+
+  const fc = cached.data;
+  if (!fc || !Array.isArray(fc.features) || !fc.features.length) {
+    shapeLayer.selectAll('*').remove();
+    return;
+  }
+
+  shapeLayer.selectAll('image').remove();
+  const projection = d3.geoIdentity().reflectY(true).fitSize([innerSize, innerSize], fc);
+  const path = d3.geoPath(projection);
+  shapeLayer.selectAll('path').data(fc.features).join('path')
+    .attr('d', path)
+    .attr('fill', '#f8fafc')
+    .attr('stroke', '#9ca3af')
+    .attr('stroke-width', 0.45);
+}
+
+// ─────────────────────────────────────────────
+//  Layout (ported from Dynamicchart.html)
+// ─────────────────────────────────────────────
+const ARC_DEGREES = 180;
+const INNER_RADIUS_RATIO = 0.3;
+
+function getLayoutCapacity(seatRadius, chartHeight) {
+  if (seatRadius < 0.5) return 0;
+  const spacing = seatRadius * 0.15;
+  const footprint = seatRadius * 2 + spacing;
+  const arcRadians = ARC_DEGREES * Math.PI / 180;
+  let capacity = 0;
+  let rowRadius = chartHeight - seatRadius;
+  while (rowRadius > chartHeight * INNER_RADIUS_RATIO) {
+    capacity += Math.floor(rowRadius * arcRadians / footprint);
+    rowRadius -= footprint;
+  }
+  return capacity;
+}
+
+function calculateLayout(totalSeats, chartHeight) {
+  if (totalSeats === 0) return { positions: [], seatRadius: 0 };
+  let lo = 0.1, hi = 50, best = 1;
+  for (let i = 0; i < 30; i++) {
+    const mid = (lo + hi) / 2;
+    if (getLayoutCapacity(mid, chartHeight) >= totalSeats) { best = mid; lo = mid; }
+    else hi = mid;
+  }
+  const seatRadius = best;
+  const spacing = seatRadius * 0.15;
+  const footprint = seatRadius * 2 + spacing;
+  const arcRadians = ARC_DEGREES * Math.PI / 180;
+  const rows = [];
+  let rowRadius = chartHeight - seatRadius;
+  while (rowRadius > chartHeight * INNER_RADIUS_RATIO) {
+    const capacity = Math.floor(rowRadius * arcRadians / footprint);
+    if (capacity <= 0) break;
+    rows.push({ radius: rowRadius, capacity });
+    rowRadius -= footprint;
+  }
+  const totalArcLength = rows.reduce((s, r) => s + r.radius * arcRadians, 0);
+  const seatsPerRow = [];
+  let assigned = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const inRow = i < rows.length - 1
+      ? (totalArcLength > 0 ? Math.round(arcRadians * rows[i].radius * totalSeats / totalArcLength) : 0)
+      : totalSeats - assigned;
+    seatsPerRow.push(Math.min(rows[i].capacity, inRow));
+    assigned += seatsPerRow[seatsPerRow.length - 1];
+  }
+  let diff = totalSeats - seatsPerRow.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < Math.abs(diff); i++) seatsPerRow[i % seatsPerRow.length] += Math.sign(diff);
+  const positions = [];
+  const startAngle = (Math.PI - arcRadians) / 2;
+  for (let i = 0; i < rows.length; i++) {
+    const radius = rows[i].radius;
+    const n = seatsPerRow[i];
+    const step = n > 1 ? arcRadians / (n - 1) : 0;
+    for (let j = 0; j < n; j++) {
+      const angle = Math.PI - startAngle - j * step;
+      positions.push({ x: Math.cos(angle) * radius, y: Math.sin(angle) * -radius, angle, radius });
+    }
+  }
+  positions.sort((a, b) => b.angle - a.angle);
+  return { positions: positions.slice(0, totalSeats), seatRadius };
+}
+
+// ─────────────────────────────────────────────
+//  Highlight / reset
+// ─────────────────────────────────────────────
+function highlight(name, color) {
+  const darker  = d3.color(color).darker(0.9).formatHex();
+  chartGroup.selectAll('.parliament-seat').classed('dimmed', true);
+  chartGroup.selectAll('.parliament-seat').filter(d => d.name === name)
+    .classed('dimmed', false)
+    .style('stroke', d => d.type === 'lead' ? darker : darker)
+    .style('stroke-width', d => d.type === 'lead' ? '2.25px' : '2px')
+    .style('fill', d => d.color);
+  d3.selectAll('.legend-item').style('opacity', 0.25);
+  d3.selectAll('.legend-item').filter(d => d.name === name).style('opacity', 1).style('font-weight', 'bold');
+  d3.selectAll('#table-container tbody tr').style('opacity', 0.25);
+  d3.selectAll('#table-container tbody tr').filter(function() { return d3.select(this).datum()?.name === name; })
+    .style('opacity', 1).style('background', '#f0f8ff');
+}
+
+function resetHighlight() {
+  chartGroup.selectAll('.parliament-seat').classed('dimmed', false)
+    .style('stroke', d => d.type === 'lead' ? d3.color(d.color).darker(0.75).formatHex() : '#fff')
+    .style('stroke-width', '1px')
+    .style('fill', d => d.color);
+  d3.selectAll('.legend-item').style('opacity', 1).style('font-weight', 'normal');
+  d3.selectAll('#table-container tbody tr').style('opacity', 1).style('background', 'transparent');
+}
+
+// ─────────────────────────────────────────────
+//  Render
+// ─────────────────────────────────────────────
+function render() {
+  const stateData = DATA.states.find(s => s.key === currentStateKey);
+  const display   = getDisplayData(stateData, currentYear);
+
+  // Build seat data array
+  const seatData = [];
+  display.forEach(d => {
+    for (let i = 0; i < d.wins;  i++) seatData.push({ name: d.name, color: d.color, type: 'seat' });
+    for (let i = 0; i < d.leads; i++) seatData.push({ name: d.name, color: d.color, type: 'lead' });
+  });
+
+  const totalSeats = seatData.length;
+  const activeTotalSeats =
+    Number((stateData.total_seats_by_year && stateData.total_seats_by_year[currentYear]) || stateData.total_seats || stateData.total || totalSeats) || totalSeats;
+  const activeMajority = Number(
+    (stateData.majority_by_year && stateData.majority_by_year[currentYear]) ||
+    stateData.majority ||
+    (activeTotalSeats > 0 ? (Math.floor(activeTotalSeats / 2) + 1) : 0)
+  ) || 0;
+  const container  = document.getElementById('chart-svg-container');
+  const width      = container.getBoundingClientRect().width || 600;
+  const chartHeight = width / 2;
+  const totalFontSize = Math.max(18, Math.round(chartHeight * 0.1));
+  const majorityFontSize = Math.max(10, Math.round(chartHeight * 0.055));
+  const centerMajorityY = totalFontSize * 1.2;
+  const { positions, seatRadius } = calculateLayout(totalSeats, chartHeight);
+
+  // ViewBox
+  const pad = 30;
+  let minX = -width/2, maxX = width/2, minY = -chartHeight - pad, maxY = pad + 20;
+  if (positions.length) {
+    const xs = positions.map(p => p.x), ys = positions.map(p => p.y);
+    minX = Math.min(...xs) - seatRadius - pad;
+    maxX = Math.max(...xs) + seatRadius + pad;
+    minY = Math.min(...ys) - seatRadius - pad;
+    maxY = Math.max(...ys) + seatRadius + 10;
+  }
+  // Keep center labels (especially majority) from clipping at the bottom.
+  maxY = Math.max(maxY, centerMajorityY + majorityFontSize + 10);
+  svg.attr('viewBox', `${minX} ${minY} ${maxX - minX} ${maxY - minY}`)
+     .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  renderMiniMap(stateData.key, minX, minY, (maxX - minX));
+
+  // Total label
+  labelsGroup.selectAll('.total-label').remove();
+  if (totalSeats > 0) {
+    labelsGroup.append('text').attr('class', 'total-label')
+      .attr('x', 0).attr('y', 0)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .style('font-size', totalFontSize + 'px')
+      .style('font-weight', 'bold').style('fill', '#333')
+      .text(totalSeats);
+    // Majority indicator
+    const maj = activeMajority;
+    if (maj) {
+      labelsGroup.append('text').attr('class', 'total-label')
+        .attr('x', 0).attr('y', centerMajorityY)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .style('font-size', majorityFontSize + 'px')
+        .style('fill', '#6B7280')
+        .text(t('majority') + ' ' + maj);
+    }
+  }
+
+  // Majority line
+  labelsGroup.selectAll('.majority-line').remove();
+  if (totalSeats >= 2 && activeMajority) {
+    // Keep majority line fixed at center so it does not tilt across states.
+    const targetAngle = Math.PI / 2;
+    const outerR = Math.max(...positions.map(p => p.radius));
+    const innerR = Math.min(...positions.map(p => p.radius));
+    const x1 = Math.cos(targetAngle) * (innerR - 20);
+    const y1 = Math.sin(targetAngle) * -(innerR - 20);
+    const x2 = Math.cos(targetAngle) * (outerR + 30);
+    const y2 = Math.sin(targetAngle) * -(outerR + 30);
+    labelsGroup.append('line').attr('class', 'majority-line')
+      .attr('x1', x1).attr('y1', y1).attr('x2', x2).attr('y2', y2)
+      .attr('stroke', '#555').attr('stroke-width', 1.5).attr('stroke-dasharray', '5,4');
+  }
+
+  // Hit areas
+  chartGroup.selectAll('.seat-hit').data(seatData, (d, i) => `${d.name}-hit-${i}`).join(
+    e => e.append('circle').attr('class','seat-hit')
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', 0)
+          .call(e => e.transition().duration(350).attr('r', seatRadius + 2)),
+    u => u.transition().duration(350)
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', seatRadius + 2),
+    x => x.transition().duration(350).attr('r', 0).remove()
+  ).attr('fill', 'transparent').attr('stroke', 'none')
+   .style('pointer-events', 'all').style('cursor', 'pointer')
+   .on('mouseover', (ev, d) => highlight(d.name, d.color))
+   .on('mouseout', resetHighlight);
+
+  // Seats
+  chartGroup.selectAll('.parliament-seat').data(seatData, (d, i) => `${d.name}-${d.type}-${i}`).join(
+    e => e.append('circle').attr('class', 'parliament-seat')
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', 0)
+          .call(e => e.transition().duration(350).attr('r', seatRadius - 0.5)),
+    u => u.transition().duration(350)
+          .attr('cx', (d,i) => positions[i]?.x ?? 0).attr('cy', (d,i) => positions[i]?.y ?? 0).attr('r', seatRadius - 0.5),
+    x => x.transition().duration(350).attr('r', 0).remove()
+  ).classed('is-lead', d => d.type === 'lead')
+   .attr('fill', d => d.color)
+   .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
+   .style('stroke-width', '1px')
+   .style('pointer-events', 'none');
+
+  renderLegend(display);
+  renderTable(display, activeMajority || 0, activeTotalSeats || totalSeats);
+  postEmbedSize('render');
+}
+
+// ─────────────────────────────────────────────
+//  Legend
+// ─────────────────────────────────────────────
+function renderLegend(display) {
+  const el = d3.select('#legend');
+  el.selectAll('.legend-item').data(display, d => d.name).join(
+    e => e.append('div').attr('class','legend-item'),
+    u => u,
+    x => x.remove()
+  ).html(d => `<div class="legend-swatch" style="background:${d.color}"></div><span>${displayName(d.name)}</span>`)
+   .style('cursor','pointer')
+   .on('mouseover', (ev, d) => highlight(d.name, d.color))
+   .on('mouseout', resetHighlight);
+}
+
+// ─────────────────────────────────────────────
+//  Table
+// ─────────────────────────────────────────────
+function renderTable(display, majority = 0, totalSeats = 0) {
+  const container = document.getElementById('table-container');
+  container.innerHTML = '';
+  const table = document.createElement('table');
+  const isAllianceMajorityTable = viewMode === 'alliance' && majority > 0;
+
+  // Header
+  const thead = table.createTHead();
+  const hrow = thead.insertRow();
+  const label = viewMode === 'alliance' ? t('alliance') : t('party');
+  const headers = isAllianceMajorityTable ? [label, `${t('wins')} + ${t('leads')}`, t('majority')] : [label, t('wins'), t('leads'), t('total')];
+  headers.forEach((h, i) => {
+    const th = document.createElement('th');
+    th.textContent = h;
+    if (isAllianceMajorityTable) {
+      if (i === 1) th.style.textAlign = 'left';
+      if (i === 2) th.style.textAlign = 'right';
+    } else if (i > 0) {
+      th.style.textAlign = 'right';
+    }
+    hrow.appendChild(th);
+  });
+
+  const tbody = table.createTBody();
+  display.forEach(d => {
+    const tr = tbody.insertRow();
+    d3.select(tr).datum(d)
+      .on('mouseover', () => highlight(d.name, d.color))
+      .on('mouseout', resetHighlight);
+
+    const nameTd = tr.insertCell();
+    nameTd.innerHTML = `<div class="cell-name"><div class="color-dot" style="background:${d.color}"></div>${displayName(d.name)}</div>`;
+
+    const total = d.wins + d.leads;
+
+    if (isAllianceMajorityTable) {
+      const scaleSeats = Math.max(1, totalSeats || majority || total);
+      const winsPct = Math.max(0, Math.min(100, (d.wins / scaleSeats) * 100));
+      const leadsPct = Math.max(0, Math.min(100 - winsPct, (d.leads / scaleSeats) * 100));
+      const majorityPct = Math.max(0, Math.min(100, (majority / scaleSeats) * 100));
+      const delta = total - majority;
+      const isMajority = total >= majority;
+      const deltaText = delta > 0 ? `+${delta}` : `${delta}`;
+      const deltaClass = delta > 0 ? 'delta-positive' : (delta < 0 ? 'delta-negative' : 'delta-zero');
+
+      const winsLeadsTd = tr.insertCell();
+      winsLeadsTd.className = 'total-progress-cell';
+      winsLeadsTd.innerHTML = `
+        <div class="wins-leads-progress ${isMajority ? 'is-majority' : ''}">
+          <span class="wins-leads-value">${d.wins}+${d.leads}</span>
+          <div class="majority-progress-track">
+            <div class="majority-progress-fill-layer">
+              <div class="seg-wins" style="left:0;width:${winsPct}%;background:${d.color};"></div>
+              <div class="seg-leads" style="left:${winsPct}%;width:${leadsPct}%;background:${d.color};"></div>
+            </div>
+            <span class="majority-progress-marker" style="left:${majorityPct}%;"></span>
+          </div>
+        </div>
+      `;
+
+      const majorityTd = tr.insertCell();
+      majorityTd.className = 'majority-number-cell';
+      majorityTd.innerHTML = `${majority} <span class="${deltaClass}">(${deltaText})</span>`;
+      majorityTd.title = `${t('wins')}: ${d.wins}, ${t('leads')}: ${d.leads}, ${t('majority')}: ${majority}`;
+    } else {
+      const winsTd  = tr.insertCell(); winsTd.textContent  = d.wins;  winsTd.className = 'num';
+      const leadsTd = tr.insertCell(); leadsTd.textContent = d.leads; leadsTd.className = 'num';
+      const totTd = tr.insertCell();
+      totTd.textContent = total;
+      totTd.className = 'num';
+      totTd.style.fontWeight = '600';
+    }
+  });
+
+  if (COMPACT_MODE && display.length < 6) {
+    const targetRows = 6;
+    const isAllianceTable = viewMode === 'alliance' && majority > 0;
+    const placeholderCells = isAllianceTable ? 3 : 4;
+    for (let i = display.length; i < targetRows; i++) {
+      const tr = tbody.insertRow();
+      tr.className = 'placeholder-row';
+      tr.setAttribute('aria-hidden', 'true');
+      for (let c = 0; c < placeholderCells; c++) {
+        const td = tr.insertCell();
+        td.innerHTML = '&nbsp;';
+      }
+    }
+  }
+
+  container.appendChild(table);
+}
+
+// ─────────────────────────────────────────────
+//  Resize
+// ─────────────────────────────────────────────
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => { if (currentStateKey) render(); }, 200);
+});
+
+function postEmbedSize(reason = 'manual') {
+  try {
+    fitWidgetToViewport();
+    const root = document.getElementById('widgetViewport') || document.querySelector('.widget') || document.body;
+    const height = Math.ceil(root.getBoundingClientRect().height);
+    const width  = Math.ceil(root.getBoundingClientRect().width);
+    parent.postMessage({ type: 'parliament-embed-size', height, width, reason }, '*');
+  } catch (e) {}
+}
+function fitWidgetToViewport() {
+  const viewport = document.getElementById('widgetViewport');
+  const root = document.getElementById('widgetScaleRoot');
+  if (!viewport || !root) return;
+  root.style.transform = 'scale(1)';
+  const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+  const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+  root.style.transform = `scale(${scale})`;
+  viewport.style.height = '500px';
+}
+try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
+window.addEventListener('load',   () => postEmbedSize('load'));
+window.addEventListener('resize', () => postEmbedSize('window-resize'));
+setTimeout(() => postEmbedSize('init'), 0);
+
+init();
+</script>
+</body>
+</html>

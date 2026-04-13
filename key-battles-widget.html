@@ -1,0 +1,1686 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Battles Widget</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#dde4e5",
+            "on-secondary-fixed": "#294700",
+            "primary-dim": "#535252",
+            "on-surface-variant": "#5a6061",
+            "secondary-fixed": "#b9f474",
+            "surface-container-high": "#e4e9ea",
+            "on-tertiary-fixed-variant": "#3b0002",
+            "primary": "#5f5e5e",
+            "inverse-surface": "#0c0f0f",
+            "primary-fixed-dim": "#d6d4d3",
+            "on-primary-container": "#525151",
+            "secondary-dim": "#375d00",
+            "tertiary-fixed-dim": "#ec413e",
+            "on-tertiary": "#fff7f6",
+            "on-error": "#fff7f6",
+            "on-tertiary-container": "#1f0001",
+            "tertiary-fixed": "#fe4e49",
+            "on-primary": "#faf7f6",
+            "tertiary": "#bb1b21",
+            "on-secondary-container": "#365c00",
+            "on-tertiary-fixed": "#000000",
+            "error-dim": "#5c1202",
+            "primary-fixed": "#e5e2e1",
+            "on-secondary": "#eeffd5",
+            "on-error-container": "#742410",
+            "surface-container-low": "#f2f4f4",
+            "background": "#f9f9f9",
+            "surface-container": "#ebeeef",
+            "on-background": "#2d3435",
+            "primary-container": "#e5e2e1",
+            "tertiary-dim": "#a90816",
+            "surface-variant": "#dde4e5",
+            "inverse-on-surface": "#9c9d9d",
+            "surface-dim": "#d4dbdd",
+            "on-surface": "#2d3435",
+            "tertiary-container": "#fe4e49",
+            "outline-variant": "#adb3b4",
+            "surface-tint": "#5f5e5e",
+            "error-container": "#fe8b70",
+            "secondary-container": "#b9f474",
+            "inverse-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#3c6600",
+            "surface-bright": "#f9f9f9",
+            "on-primary-fixed-variant": "#5c5b5b",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#3f6a00",
+            "secondary-fixed-dim": "#abe668",
+            "outline": "#757c7d",
+            "surface": "#f9f9f9",
+            "on-primary-fixed": "#403f3f",
+            "error": "#9e422c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Playfair Display", "serif"],
+            "body": ["Roboto Slab", "serif"],
+            "label": ["Roboto Slab", "serif"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .won-badge { background-color: #4CAF50; }
+    .leading-badge { background-color: #81C784; color: #1B5E20 !important; }
+    .won-bar { background-color: #4CAF50; }
+    .leading-bar { background-color: #81C784; }
+    .lost-bar { background-color: #EF5350; }
+    .trailing-bar { background-color: #E57373; }
+    .trailing-label { color: #E57373; }
+    .trailing-label .counting-dots span { color: #E57373; }
+    .leading-badge .counting-dots span { color: #1B5E20; }
+    /* counting dots: 1 → 1+2 → 1+2+3 → [all off] → repeat (1.5s cycle)
+       Phase A 0–20%  (0–0.3s): dot 1 only
+       Phase B 20–40% (0.3–0.6s): dots 1+2
+       Phase C 40–60% (0.6–0.9s): all 3 visible (hold)
+       Phase D 60–100% (0.9–1.5s): all off              */
+    .counting-dots span { opacity: 0; }
+    .counting-dots span:nth-child(1) { animation: countDot1 1.5s linear infinite; }
+    .counting-dots span:nth-child(2) { animation: countDot2 1.5s linear infinite; }
+    .counting-dots span:nth-child(3) { animation: countDot3 1.5s linear infinite; }
+    @keyframes countDot1 {
+      0%,   60%   { opacity: 1; }
+      60.01%, 100% { opacity: 0; }
+    }
+    @keyframes countDot2 {
+      0%,   19.99% { opacity: 0; }
+      20%,  60%    { opacity: 1; }
+      60.01%, 100% { opacity: 0; }
+    }
+    @keyframes countDot3 {
+      0%,   39.99% { opacity: 0; }
+      40%,  60%    { opacity: 1; }
+      60.01%, 100% { opacity: 0; }
+    }
+    @keyframes barLoop {
+      0%      { width: 0%; }
+      50%     { width: var(--bar-w); }
+      87.5%   { width: var(--bar-w); }
+      87.51%  { width: 0%; }
+      100%    { width: 0%; }
+    }
+    .bar-counting {
+      animation: barLoop 1.6s ease-in infinite;
+    }
+    body { min-height: 500px; overflow: hidden; position: relative; }
+    .widget-loader {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: 20;
+    }
+    body.widget-loading .widget-loader { display: flex; }
+    body.widget-loading #widgetViewport { visibility: hidden; }
+    .widget-loader-player { width: 120px; height: 120px; }
+    #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
+    #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: 720px; margin: 0 auto; }
+    .desktop-carousel-shell {
+      position: relative;
+      width: 100%;
+    }
+    .battle-card {
+      width: 100%;
+    }
+    .single-card-layout {
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      #widgetViewport {
+        height: auto;
+        overflow: visible;
+      }
+      #widgetScaleRoot {
+        transform: none !important;
+        width: 100% !important;
+      }
+      .battle-card {
+        width: calc((100% - 24px) / 2);
+      }
+    }
+    .desktop-carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d6d3d1;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1f2937;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+      cursor: pointer;
+      z-index: 5;
+    }
+    .desktop-carousel-nav:hover {
+      background: #fff;
+      border-color: #a8a29e;
+    }
+    .desktop-carousel-nav.is-disabled {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+    .desktop-carousel-nav.prev { left: -8px; }
+    .desktop-carousel-nav.next { right: -8px; }
+    .carousel-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 2px 16px 12px;
+    }
+    .carousel-indicator-count {
+      font-size: 12px;
+      font-weight: 600;
+      color: #57534e;
+      letter-spacing: 0.02em;
+      min-width: 32px;
+      text-align: right;
+    }
+    .carousel-indicator-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+    .carousel-indicator-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #d6d3d1;
+      transition: width 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+      opacity: 0.8;
+      flex: 0 0 auto;
+    }
+    .carousel-indicator-dot.is-active {
+      width: 22px;
+      background: #1f2937;
+      opacity: 1;
+    }
+    @media (max-width: 767px) {
+      .desktop-carousel-nav {
+        width: 36px;
+        height: 36px;
+      }
+      .desktop-carousel-nav.prev { left: 0; }
+      .desktop-carousel-nav.next { right: 0; }
+    }
+    /* State tab bar */
+    #stateTabs {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+      margin-bottom: 20px;
+    }
+    #stateTabs::-webkit-scrollbar { display: none; }
+    .state-tab {
+      flex-shrink: 0;
+      padding: 4px 12px;
+      border: none;
+      border-radius: 20px;
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .state-tab:hover { background: #e5e7eb; }
+    .state-tab.active { background: #1f2937; color: white; }
+    .kb-search-icon {
+      font-size: 22px !important;
+    }
+    .kb-search-input {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .kb-carousel-nav-icon {
+      font-size: 22px !important;
+    }
+    .kb-indicator-count {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .kb-card-heading {
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .kb-hero-name {
+      font-size: 17px;
+      font-weight: 700;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+    .kb-chip {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-outcome-badge {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .kb-small-outcome {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-small-name {
+      font-size: 13px;
+      font-weight: 700;
+      font-family: "Playfair Display", "serif";
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .kb-small-chip {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .kb-metric-text,
+    .kb-vs-label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .kb-cta {
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #1f2937;
+      color: #ffffff !important;
+      border: 1px solid #1f2937;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+      text-decoration: none;
+      transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .kb-cta:hover {
+      background: #111827;
+      border-color: #111827;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+    }
+    .kb-cta .material-symbols-outlined {
+      font-size: 16px !important;
+    }
+    .kb-empty-state {
+      font-size: 15px;
+    }
+    .kb-vote-bar-wrap {
+      margin-top: 6px;
+    }
+    @media (min-width: 768px) {
+      .state-tab {
+        font-size: 15px;
+        padding: 6px 14px;
+      }
+      .kb-search-icon {
+        font-size: 24px !important;
+      }
+      .kb-search-input {
+        font-size: 16px;
+      }
+      .kb-carousel-nav-icon {
+        font-size: 24px !important;
+      }
+      .kb-indicator-count {
+        font-size: 12px;
+      }
+      .kb-card-heading {
+        font-size: 22px;
+      }
+      .kb-hero-name {
+        font-size: 18px;
+      }
+      .kb-chip {
+        font-size: 13px;
+      }
+      .kb-outcome-badge {
+        font-size: 13px;
+      }
+      .kb-small-outcome {
+        font-size: 11px;
+      }
+      .kb-small-name {
+        font-size: 14px;
+      }
+      .kb-small-chip {
+        font-size: 11px;
+      }
+      .kb-metric-text,
+      .kb-vs-label {
+        font-size: 11px;
+      }
+      .kb-cta {
+        font-size: 13px;
+      }
+      .kb-cta .material-symbols-outlined {
+        font-size: 16px !important;
+      }
+      .kb-empty-state {
+        font-size: 16px;
+      }
+      .carousel-indicator {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-on-background font-body widget-loading">
+  <div class="widget-loader" id="widget-loader" aria-hidden="true">
+    <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+  </div>
+  <div id="widgetViewport">
+  <main id="widgetScaleRoot" class="pt-4">
+
+    <!-- State tabs -->
+    <div id="stateTabs" class="px-4"></div>
+
+    <!-- Search bar -->
+    <div id="search-shell" class="mb-3 w-full -mx-4 px-4 md:mx-0 md:px-0">
+      <div class="w-full flex items-center gap-2 bg-white border border-stone-200 rounded-xl px-4 py-2 shadow-sm">
+        <span class="material-symbols-outlined kb-search-icon text-stone-400 text-[20px]">search</span>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search constituency, candidate or party…"
+          class="kb-search-input flex-1 bg-transparent text-sm text-stone-700 placeholder-stone-400 outline-none font-body"
+        />
+      </div>
+    </div>
+
+    <div class="desktop-carousel-shell">
+      <button id="desktop-prev" class="desktop-carousel-nav prev" type="button" aria-label="Previous cards">
+        <span class="material-symbols-outlined kb-carousel-nav-icon text-[20px]">chevron_left</span>
+      </button>
+      <!-- Card list: horizontal carousel on mobile and desktop -->
+      <div
+        id="list"
+        class="flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-2 hide-scrollbar"
+      ></div>
+      <button id="desktop-next" class="desktop-carousel-nav next" type="button" aria-label="Next cards">
+        <span class="material-symbols-outlined kb-carousel-nav-icon text-[20px]">chevron_right</span>
+      </button>
+    </div>
+
+    <div id="carousel-progress" class="carousel-indicator" aria-live="polite">
+      <span id="carousel-progress-count" class="carousel-indicator-count kb-indicator-count"></span>
+      <div id="carousel-progress-dots" class="carousel-indicator-dots"></div>
+    </div>
+  </main>
+  </div>
+
+  <script>
+    const QUERY = new URLSearchParams(location.search);
+    const EMBED_ID = (QUERY.get('embedId') || QUERY.get('iframeId') || '').trim();
+
+    const BATTLE_PARAM = (QUERY.get('battle') || QUERY.get('battleId') || '').trim();
+    const CONSTITUENCY_PARAM = (QUERY.get('constituency') || QUERY.get('ac') || QUERY.get('acName') || '').trim();
+    const HIDE_TABS = QUERY.get('hideTabs') === 'true';
+    const ROTATE_CAROUSEL = String(QUERY.get('rotate') || '').trim().toLowerCase() === 'true';
+    const VIEW_PARAM = (QUERY.get('view') || QUERY.get('phase') || 'auto').trim().toLowerCase();
+    const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
+    const DEFAULT_LEGACY_API_BASE = 'https://d167rmgvosnh6r.cloudfront.net';
+    const DEFAULT_LEGACY_API_KEY = 'AIzaSyC0zoFtuDm_zspdl_D0q1Nqtnos8AZOSsc';
+    const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
+    const DEFAULT_TAB_NAME = 'Key_Battles';
+    const DEFAULT_MAPPING_LIVE_TAB_NAME = 'Live_Alliance_2026';
+    const DEFAULT_PARTIES_TAB_NAME = 'Party_Color';
+    const DEFAULT_ALLIANCES_TAB_NAME = 'Alliance_Color';
+
+    const SOURCE_MODE = String(QUERY.get('sourceMode') || 'legacyCloudfront').trim().toLowerCase();
+    const IS_LEGACY_CLOUDFRONT_MODE = SOURCE_MODE === 'legacycloudfront';
+    const LEGACY_API_BASE_PARAM = (
+      QUERY.get('legacyApiBase') ||
+      QUERY.get('cloudfrontApiBase') ||
+      DEFAULT_LEGACY_API_BASE
+    ).trim();
+    const LEGACY_API_KEY_PARAM = (
+      QUERY.get('legacyApiKey') ||
+      QUERY.get('cloudfrontApiKey') ||
+      DEFAULT_LEGACY_API_KEY
+    ).trim();
+    if (!IS_LEGACY_CLOUDFRONT_MODE) {
+      throw new Error('Unsupported sourceMode. This widget only supports legacyCloudfront.');
+    }
+    const SHEET_ID_PARAM = (QUERY.get('sheetId') || '').trim();
+    const SHEET_URL_PARAM = (QUERY.get('sheetUrl') || '').trim();
+    const PUBLISHED_URL_PARAM = (QUERY.get('publishedSheetUrl') || QUERY.get('publishedUrl') || '').trim();
+    const PUBLISHED_KEY_PARAM = (QUERY.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
+    const TAB_NAME = (QUERY.get('tab') || QUERY.get('keyBattlesTab') || DEFAULT_TAB_NAME).trim();
+    const MAPPING_LIVE_TAB_NAME = (QUERY.get('mappingLiveTab') || DEFAULT_MAPPING_LIVE_TAB_NAME).trim();
+    const PARTIES_TAB_NAME = (QUERY.get('partiesTab') || DEFAULT_PARTIES_TAB_NAME).trim();
+    const ALLIANCES_TAB_NAME = (QUERY.get('alliancesTab') || DEFAULT_ALLIANCES_TAB_NAME).trim();
+    const CSV_URL_PARAM = (QUERY.get('csvUrl') || QUERY.get('keyBattlesCsvUrl') || '').trim();
+    const GID_PARAM = (QUERY.get('gid') || QUERY.get('keyBattlesGid') || '').trim();
+    const MAPPING_LIVE_CSV_URL_PARAM = (QUERY.get('mappingLiveCsvUrl') || '').trim();
+    const MAPPING_LIVE_GID_PARAM = (QUERY.get('mappingLiveGid') || '').trim();
+    const PARTIES_CSV_URL_PARAM = (QUERY.get('partiesCsvUrl') || '').trim();
+    const ALLIANCES_CSV_URL_PARAM = (QUERY.get('alliancesCsvUrl') || '').trim();
+    const PARTIES_GID_PARAM = (QUERY.get('partiesGid') || '').trim();
+    const ALLIANCES_GID_PARAM = (QUERY.get('alliancesGid') || '').trim();
+
+    const STATE_TABS = [
+      { key: 'WEST_BENGAL', label: 'West Bengal' },
+      { key: 'TAMIL_NADU',  label: 'Tamil Nadu' },
+      { key: 'KERALA',      label: 'Kerala' },
+      { key: 'ASSAM',       label: 'Assam' },
+      { key: 'PUDUCHERRY',  label: 'Puducherry' },
+    ];
+    let currentStateFilter = (QUERY.get('state') || '').trim().toUpperCase() || STATE_TABS[0].key;
+
+    const listEl = document.getElementById('list');
+    const searchEl = document.getElementById('search-input');
+    const searchShellEl = document.getElementById('search-shell');
+    const stateTabsEl = document.getElementById('stateTabs');
+    const carouselEl = document.getElementById('carousel-progress');
+    const carouselCountEl = document.getElementById('carousel-progress-count');
+    const carouselDotsEl = document.getElementById('carousel-progress-dots');
+
+    // Hide tabs and search immediately while loading — avoids flash of UI before data arrives
+    stateTabsEl.style.display = 'none';
+    if (searchShellEl) searchShellEl.style.display = 'none';
+
+    let allBattles = [];
+    let PARTY_COLORS = new Map();
+    let ALLIANCE_COLORS = new Map();
+    let rotateTimer = null;
+    let rotatePauseTimer = null;
+    let rotationSuspendedUntil = 0;
+    const LOADER_CLASS = 'widget-loading';
+
+    function setWidgetLoading(isLoading) {
+      document.body.classList.toggle(LOADER_CLASS, Boolean(isLoading));
+    }
+
+    function clearRotateTimer() {
+      if (rotateTimer) {
+        clearInterval(rotateTimer);
+        rotateTimer = null;
+      }
+      if (rotatePauseTimer) {
+        clearTimeout(rotatePauseTimer);
+        rotatePauseTimer = null;
+      }
+    }
+
+    function pauseAutoRotateCarousel() {
+      if (!ROTATE_CAROUSEL) return;
+      if (!getCarouselCards().length) return;
+      if (rotateTimer) {
+        clearInterval(rotateTimer);
+        rotateTimer = null;
+      }
+      rotationSuspendedUntil = Date.now() + 20000;
+      if (rotatePauseTimer) clearTimeout(rotatePauseTimer);
+      rotatePauseTimer = setTimeout(() => {
+        rotatePauseTimer = null;
+        rotationSuspendedUntil = 0;
+        startAutoRotateCarousel();
+      }, 20000);
+    }
+
+    // ── Data helpers (unchanged) ──────────────────────────────────────────────
+
+    function normalizeHeaderKey(value) {
+      return String(value || '')
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '');
+    }
+
+    function normalizeRows(rows) {
+      return (rows || []).map((row) => {
+        const out = {};
+        Object.keys(row || {}).forEach((key) => {
+          out[normalizeHeaderKey(key)] = String(row[key] == null ? '' : row[key]).trim();
+        });
+        return out;
+      });
+    }
+
+    function extractGoogleSheetId(rawUrl) {
+      const raw = String(rawUrl || '').trim();
+      const match = raw.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
+    }
+
+    function extractGooglePublishedSheetKey(rawUrl) {
+      const raw = String(rawUrl || '').trim();
+      const match = raw.match(/\/spreadsheets\/d\/e\/([a-zA-Z0-9-_]+)/);
+      return match && match[1] ? match[1] : '';
+    }
+
+    function buildGoogleSheetCsvUrl(sheetId, tabName) {
+      return `https://docs.google.com/spreadsheets/d/${encodeURIComponent(sheetId)}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+    }
+
+    function buildGooglePublishedCsvUrl(publishedKey, gid) {
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pub?gid=${encodeURIComponent(gid)}&single=true&output=csv`;
+    }
+
+    function buildGooglePublishedHtmlUrl(publishedKey) {
+      return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+    }
+
+    function buildLegacyCloudfrontValuesUrl(apiBase, sheetId, tabName, apiKey) {
+      const trimmedBase = String(apiBase || '').trim().replace(/\/+$/g, '');
+      if (!trimmedBase) throw new Error('Missing legacyApiBase');
+      if (!sheetId) throw new Error('Missing sheetId');
+      if (!tabName) throw new Error('Missing tab name');
+      if (!apiKey) throw new Error('Missing legacyApiKey');
+      const url = new URL(`${trimmedBase}/v4/spreadsheets/${encodeURIComponent(sheetId)}/values/${encodeURIComponent(tabName)}`);
+      url.searchParams.set('key', apiKey);
+      return url.toString();
+    }
+
+    function normalizeTabLookupKey(value) {
+      return String(value || '').trim().toLowerCase().replace(/[\s-]+/g, '_');
+    }
+
+    function parsePublishedSheetTabGids(html) {
+      const out = new Map();
+      const text = String(html || '');
+      const regex = /items\.push\(\{name:\s*"([^"]+)"[\s\S]*?gid:\s*"(-?\d+)"/g;
+      let match = null;
+      while ((match = regex.exec(text)) !== null) {
+        const key = normalizeTabLookupKey(match[1]);
+        const gid = String(match[2] || '').trim();
+        if (!key || !gid || out.has(key)) continue;
+        out.set(key, gid);
+      }
+      return out;
+    }
+
+    function findPublishedTabGid(tabMap, names) {
+      for (const name of (names || [])) {
+        const key = normalizeTabLookupKey(name);
+        if (!key) continue;
+        const gid = tabMap.get(key);
+        if (gid) return gid;
+      }
+      return '';
+    }
+
+    function slugify(value) {
+      return String(value || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function parseVotes(value) {
+      const raw = String(value == null ? '' : value).replace(/,/g, '').trim();
+      if (!raw) return null;
+      const n = Number(raw);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function parseYear(value) {
+      const raw = String(value || '').trim();
+      const m = raw.match(/(19|20)\d{2}/);
+      return m ? m[0] : '';
+    }
+
+    function normalizeHexColor(value) {
+      const raw = String(value || '').trim();
+      if (!raw) return '';
+      const hex = raw.startsWith('#') ? raw : `#${raw}`;
+      return /^#[0-9a-fA-F]{6}$/.test(hex) ? hex : '';
+    }
+
+    function formatVotes(value) {
+      const n = parseVotes(value);
+      if (n == null) return String(value || '').trim() || '-';
+      return n.toLocaleString('en-IN');
+    }
+
+    function resolveViewModeForBattle(battle) {
+      if (VIEW_PARAM === 'before' || VIEW_PARAM === 'counting' || VIEW_PARAM === 'after') return VIEW_PARAM;
+      const status = String((battle && battle.status) || '').trim().toLowerCase();
+      if (status.includes('announced') || status.includes('declared') || status.includes('won')) return 'after';
+      if (status.includes('counting') || status.includes('leading') || status.includes('trailing')) return 'counting';
+      return 'before';
+    }
+
+    function firstNonEmpty(row, keys) {
+      for (const key of (keys || [])) {
+        const value = String((row && row[key]) || '').trim();
+        if (value) return value;
+      }
+      return '';
+    }
+
+    function pickBattleId(row) {
+      return firstNonEmpty(row, ['battle_id', 'battle', 'battle_key', 'slug', 'id']);
+    }
+
+    function pickConstituency(row) {
+      return firstNonEmpty(row, ['constituency_name', 'constituency', 'ac_name', 'seat_name']);
+    }
+
+    function candidateFromRow(row) {
+      return {
+        name: firstNonEmpty(row, ['candidate_name', 'name']),
+        photo: firstNonEmpty(row, ['candidate_photo', 'photo', 'photo_url', 'image']),
+        party: firstNonEmpty(row, ['candidate_party', 'party']),
+        alliance: '',
+        votes: firstNonEmpty(row, ['candidate_votes', 'votes', 'vote_count']),
+        rank: parseVotes(firstNonEmpty(row, ['lead_rank', 'rank', 'position']))
+      };
+    }
+
+    function mappingKey(stateKey, partyCode, year) {
+      return `${String(stateKey || '').trim().toUpperCase()}|${String(partyCode || '').trim().toUpperCase()}|${String(year || '').trim()}`;
+    }
+
+    function parseAllianceMappingRows(rows) {
+      const byYear = new Map();
+      const latestByParty = new Map();
+
+      (rows || []).forEach((row) => {
+        const state = firstNonEmpty(row, ['state_key', 'state']).toUpperCase();
+        const party = firstNonEmpty(row, ['party_code', 'party']).toUpperCase();
+        const alliance = firstNonEmpty(row, ['alliance', 'alliance_code']);
+        const year = parseYear(firstNonEmpty(row, ['year'])) || '2026';
+        if (!state || !party || !alliance) return;
+
+        byYear.set(mappingKey(state, party, year), alliance);
+        latestByParty.set(`${state}|${party}`, alliance);
+      });
+
+      return { byYear, latestByParty };
+    }
+
+    function resolveAllianceFromLiveMapping(mappingRows, state, party, year) {
+      if (!mappingRows) return '';
+      const s = String(state || '').trim().toUpperCase();
+      const p = String(party || '').trim().toUpperCase();
+      if (!s || !p) return '';
+
+      const y = parseYear(year) || '2026';
+      const exact = mappingRows.byYear.get(mappingKey(s, p, y));
+      if (exact) return exact;
+
+      return mappingRows.latestByParty.get(`${s}|${p}`) || '';
+    }
+
+    const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
+
+    if (!window.pvElectionCache) {
+      window.pvElectionCache = (function() {
+        const LS_PREFIX = 'pvElec_';
+        const LS_TTL = 2 * 60 * 1000; // 2 minutes
+        function lsKey(url) {
+          try { return LS_PREFIX + btoa(url).slice(0, 80); } catch(e) { return null; }
+        }
+        return {
+          mem: {},
+          pending: {},
+          get: function(url) {
+            if (url in this.mem) return this.mem[url];
+            const k = lsKey(url);
+            if (!k) return undefined;
+            try {
+              const raw = localStorage.getItem(k);
+              if (!raw) return undefined;
+              const entry = JSON.parse(raw);
+              if (Date.now() - entry.t < LS_TTL) { this.mem[url] = entry.d; return entry.d; }
+              localStorage.removeItem(k);
+            } catch(e) {}
+            return undefined;
+          },
+          set: function(url, data) {
+            this.mem[url] = data;
+            const k = lsKey(url);
+            if (!k) return;
+            try { localStorage.setItem(k, JSON.stringify({ d: data, t: Date.now() })); } catch(e) {}
+          }
+        };
+      })();
+    }
+
+    async function loadSheetValues(tabName, cacheMode = 'force-cache') {
+      const url = buildLegacyCloudfrontValuesUrl(LEGACY_API_BASE_PARAM, SHEET_ID, tabName, LEGACY_API_KEY_PARAM);
+      const useCache = cacheMode !== 'no-store';
+
+      if (useCache) {
+        const hit = window.pvElectionCache.get(url);
+        if (hit !== undefined) return hit;
+        if (window.pvElectionCache.pending[url]) return window.pvElectionCache.pending[url];
+      }
+
+      const doFetch = async () => {
+        const res = await fetch(url, { cache: cacheMode });
+        if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+        const json = await res.json();
+        if (json.error) throw new Error(json.error);
+        if (!json.values || json.values.length < 2) return [];
+        const [headers, ...dataRows] = json.values;
+        return normalizeRows(dataRows.map(row => {
+          const obj = {};
+          headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+          return obj;
+        }));
+      };
+
+      if (!useCache) return doFetch();
+
+      const promise = doFetch().then(rows => {
+        window.pvElectionCache.set(url, rows);
+        delete window.pvElectionCache.pending[url];
+        return rows;
+      }).catch(e => {
+        delete window.pvElectionCache.pending[url];
+        throw e;
+      });
+      window.pvElectionCache.pending[url] = promise;
+      return promise;
+    }
+
+    async function loadMultiSheetValues(requests, cacheMode = 'force-cache') {
+      const filteredRequests = (requests || []).filter((request) => request && request.alias && request.tabName);
+      if (!filteredRequests.length) return {};
+      const entries = await Promise.all(filteredRequests.map(async (request) => {
+        const rows = await loadSheetValues(request.tabName, cacheMode);
+        return [request.alias, rows];
+      }));
+      return Object.fromEntries(entries);
+    }
+
+    async function resolveCsvUrl(options = {}) {
+      const {
+        csvUrlParam = '',
+        tabName = '',
+        gidParam = '',
+        fallbackTabNames = []
+      } = options;
+
+      if (csvUrlParam) return csvUrlParam;
+
+      const sheetId = SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM);
+      if (sheetId) return buildGoogleSheetCsvUrl(sheetId, tabName);
+
+      const publishedKey = PUBLISHED_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_URL_PARAM);
+      if (!publishedKey) throw new Error('Missing source. Pass csvUrl, sheetId/sheetUrl, or publishedKey/publishedUrl.');
+
+      const explicitGid = String(gidParam || '').match(/-?\d+/);
+      if (explicitGid && explicitGid[0]) return buildGooglePublishedCsvUrl(publishedKey, explicitGid[0]);
+
+      const response = await fetch(buildGooglePublishedHtmlUrl(publishedKey), { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Published sheet index HTTP ${response.status}`);
+      const html = await response.text();
+      const tabMap = parsePublishedSheetTabGids(html);
+      const gid = findPublishedTabGid(tabMap, [tabName, ...(fallbackTabNames || [])]);
+      if (!gid) throw new Error(`Tab "${tabName}" not found in published sheet`);
+      return buildGooglePublishedCsvUrl(publishedKey, gid);
+    }
+
+    async function loadRows() {
+      if (!SHEET_ID) {
+        throw new Error('Missing sheetId.');
+      }
+      if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+        throw new Error('Missing legacyApiBase or legacyApiKey.');
+      }
+      return loadSheetValues(TAB_NAME, 'no-store');
+    }
+
+    async function loadLiveMappingRows() {
+      if (!SHEET_ID) {
+        throw new Error('Missing sheetId.');
+      }
+      if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+        throw new Error('Missing legacyApiBase or legacyApiKey.');
+      }
+      return loadSheetValues(MAPPING_LIVE_TAB_NAME, 'no-store');
+    }
+
+    async function loadPartyColorRows() {
+      if (!SHEET_ID) {
+        throw new Error('Missing sheetId.');
+      }
+      if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+        throw new Error('Missing legacyApiBase or legacyApiKey.');
+      }
+      return loadSheetValues(PARTIES_TAB_NAME, 'force-cache');
+    }
+
+    async function loadAllianceColorRows() {
+      if (!SHEET_ID) {
+        throw new Error('Missing sheetId.');
+      }
+      if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+        throw new Error('Missing legacyApiBase or legacyApiKey.');
+      }
+      return loadSheetValues(ALLIANCES_TAB_NAME, 'force-cache');
+    }
+
+    function parsePartyColors(rows) {
+      const out = new Map();
+      (rows || []).forEach((row) => {
+        const code = firstNonEmpty(row, ['party_code', 'party', 'code', 'name']).toUpperCase();
+        const color = normalizeHexColor(firstNonEmpty(row, ['color', 'party_color']));
+        if (!code || !color) return;
+        out.set(code, color);
+      });
+      return out;
+    }
+
+    function parseAllianceColors(rows) {
+      const out = new Map();
+      (rows || []).forEach((row) => {
+        const code = firstNonEmpty(row, ['alliance', 'alliance_code', 'name']).toUpperCase();
+        const color = normalizeHexColor(firstNonEmpty(row, ['color', 'alliance_color']));
+        if (!code || !color) return;
+        out.set(code, color);
+      });
+      return out;
+    }
+
+    function buildBattles(rows, liveAllianceMapping) {
+      const grouped = new Map();
+
+      (rows || []).forEach((row) => {
+        const state = firstNonEmpty(row, ['state_key', 'state']);
+        const constituency = pickConstituency(row);
+        const fallbackId = slugify(`${state}-${constituency}`);
+        const battleId = slugify(pickBattleId(row) || fallbackId);
+        if (!battleId) return;
+
+        if (!grouped.has(battleId)) {
+          grouped.set(battleId, {
+            id: battleId,
+            rawId: pickBattleId(row) || battleId,
+            constituency: constituency || 'Unknown Constituency',
+            state: firstNonEmpty(row, ['state_key', 'state']),
+            acNo: firstNonEmpty(row, ['ac_no', 'no', 'ac']),
+            status: firstNonEmpty(row, ['status']),
+            resultDay: firstNonEmpty(row, ['result_day', 'result_date', 'updated_at']),
+            storyUrl: firstNonEmpty(row, ['story_url', 'cta_url', 'url', 'story_page']),
+            candidates: []
+          });
+        }
+
+        const battle = grouped.get(battleId);
+        const cand = candidateFromRow(row);
+        cand.alliance = resolveAllianceFromLiveMapping(
+          liveAllianceMapping,
+          battle.state || firstNonEmpty(row, ['state_key', 'state']),
+          cand.party,
+          firstNonEmpty(row, ['year']) || '2026'
+        );
+        if (cand.name || cand.party || cand.alliance || String(cand.votes || '').trim()) {
+          battle.candidates.push(cand);
+        }
+      });
+
+      const battles = Array.from(grouped.values()).map((battle) => {
+        const mode = resolveViewModeForBattle(battle);
+        const scored = battle.candidates.map((cand) => ({
+          ...cand,
+          votesNum: parseVotes(cand.votes)
+        }));
+
+        const hasRank = scored.some((c) => Number.isFinite(c.rank) && c.rank > 0);
+        scored.sort((a, b) => {
+          if (mode === 'before' && hasRank) {
+            const ar = Number.isFinite(a.rank) && a.rank > 0 ? a.rank : 999;
+            const br = Number.isFinite(b.rank) && b.rank > 0 ? b.rank : 999;
+            if (ar !== br) return ar - br;
+          }
+          const av = Number.isFinite(a.votesNum) ? a.votesNum : -1;
+          const bv = Number.isFinite(b.votesNum) ? b.votesNum : -1;
+          if (av !== bv) return bv - av;
+          return String(a.name || '').localeCompare(String(b.name || ''));
+        });
+
+        battle.candidates = scored.slice(0, 3);
+        return battle;
+      });
+
+      battles.sort((a, b) =>
+        String(a.state || '').localeCompare(String(b.state || ''))
+        || String(a.constituency || '').localeCompare(String(b.constituency || ''))
+      );
+      return battles;
+    }
+
+    // ── UI helpers ────────────────────────────────────────────────────────────
+
+    function textColorForHex(hex) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '#57534e';
+      const r = parseInt(c.slice(1, 3), 16);
+      const g = parseInt(c.slice(3, 5), 16);
+      const b = parseInt(c.slice(5, 7), 16);
+      const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+      return yiq >= 150 ? '#1f2937' : '#f8fafc';
+    }
+
+    function mixHexWithWhite(hex, whiteRatio) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '';
+      const ratio = Math.max(0, Math.min(1, Number(whiteRatio)));
+      const r = parseInt(c.slice(1, 3), 16);
+      const g = parseInt(c.slice(3, 5), 16);
+      const b = parseInt(c.slice(5, 7), 16);
+      const rr = Math.round(r + (255 - r) * ratio);
+      const gg = Math.round(g + (255 - g) * ratio);
+      const bb = Math.round(b + (255 - b) * ratio);
+      return `#${rr.toString(16).padStart(2, '0')}${gg.toString(16).padStart(2, '0')}${bb.toString(16).padStart(2, '0')}`;
+    }
+
+    function darkenHex(hex, factor) {
+      const c = normalizeHexColor(hex);
+      if (!c) return '';
+      const f = Math.max(0, Math.min(1, Number(factor)));
+      const r = Math.round(parseInt(c.slice(1, 3), 16) * f);
+      const g = Math.round(parseInt(c.slice(3, 5), 16) * f);
+      const b = Math.round(parseInt(c.slice(5, 7), 16) * f);
+      return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+    }
+
+    function applyChipColor(el, colorHex, fallbackBg = '#f5f5f4', fallbackText = '#57534e') {
+      const color = normalizeHexColor(colorHex);
+      if (color) {
+        const bg = mixHexWithWhite(color, 0.84);
+        const fg = darkenHex(color, 0.58);
+        el.style.backgroundColor = bg || color;
+        el.style.color = fg || textColorForHex(color);
+        el.style.border = `1px solid ${mixHexWithWhite(color, 0.68) || 'rgba(0,0,0,0.08)'}`;
+        return;
+      }
+      el.style.backgroundColor = fallbackBg;
+      el.style.color = fallbackText;
+      el.style.border = '1px solid rgba(0,0,0,0.08)';
+    }
+
+    function partyColorFromSheet(party) {
+      const key = String(party || '').trim().toUpperCase();
+      return key ? (PARTY_COLORS.get(key) || '') : '';
+    }
+
+    function allianceColorFromSheet(alliance) {
+      const key = String(alliance || '').trim().toUpperCase();
+      return key ? (ALLIANCE_COLORS.get(key) || '') : '';
+    }
+
+    function winnerOutcomeLabel(mode) {
+      if (mode === 'after') return 'Won';
+      if (mode === 'counting') return 'Leading';
+      return null;
+    }
+
+    function challengerOutcomeLabel(mode) {
+      if (mode === 'after') return 'Lost';
+      if (mode === 'counting') return 'Trailing';
+      return null;
+    }
+
+    function candidateVoteShare(cand, totalVotes) {
+      if (!cand || !Number.isFinite(cand.votesNum) || !Number.isFinite(totalVotes) || totalVotes <= 0) return null;
+      return (cand.votesNum / totalVotes) * 100;
+    }
+
+    function formatPercent(value) {
+      if (!Number.isFinite(value)) return null;
+      return `${value.toFixed(1)}%`;
+    }
+
+    function makeAvatar(photoUrl, name, sizeClasses) {
+      const url = String(photoUrl || '').trim();
+      if (url) {
+        const img = document.createElement('img');
+        img.className = `${sizeClasses} rounded-full object-cover bg-stone-100 shrink-0`;
+        img.alt = name ? `${name} photo` : 'Candidate photo';
+        img.src = url;
+        img.loading = 'lazy';
+        img.referrerPolicy = 'no-referrer';
+        img.onerror = () => {
+          const fb = makeFallbackAvatar(name, sizeClasses);
+          img.replaceWith(fb);
+        };
+        return img;
+      }
+      return makeFallbackAvatar(name, sizeClasses);
+    }
+
+    function makeFallbackAvatar(name, sizeClasses) {
+      const div = document.createElement('div');
+      div.className = `${sizeClasses} rounded-full bg-stone-200 flex items-center justify-center text-stone-500 font-bold shrink-0`;
+      div.textContent = name ? name.trim()[0].toUpperCase() : '?';
+      return div;
+    }
+
+    function makeVoteShareBar(share, barColorClass, labelText, valueText, animate) {
+      const wrap = document.createElement('div');
+      wrap.className = 'kb-vote-bar-wrap w-full mt-2';
+      const row = document.createElement('div');
+      row.className = 'flex justify-between text-xs text-stone-400 mb-1';
+      const label = document.createElement('span');
+      label.textContent = labelText || 'Vote Share';
+      const pct = document.createElement('span');
+      pct.className = 'font-semibold text-stone-600';
+      pct.textContent = valueText || formatPercent(share);
+      row.appendChild(label);
+      row.appendChild(pct);
+      wrap.appendChild(row);
+      const track = document.createElement('div');
+      track.className = 'h-1.5 rounded-full bg-stone-200 w-full';
+      const fill = document.createElement('div');
+      const barW = `${Math.max(2, Math.min(100, share))}%`;
+      fill.className = `h-full rounded-full ${barColorClass}${animate ? ' bar-counting' : ''}`;
+      fill.style.setProperty('--bar-w', barW);
+      if (!animate) fill.style.width = barW;
+      track.appendChild(fill);
+      wrap.appendChild(track);
+      return wrap;
+    }
+
+    function metricLabelAndValue(mode, cand, share) {
+      if (mode === 'counting') {
+        return {
+          label: 'Votes',
+          value: formatVotes(cand && cand.votes)
+        };
+      }
+      if (mode === 'after') {
+        const pct = formatPercent(share);
+        const votes = formatVotes(cand && cand.votes);
+        return {
+          label: 'Vote Share',
+          value: `${pct || '-'} (${votes})`
+        };
+      }
+      return {
+        label: 'Vote Share',
+        value: formatPercent(share)
+      };
+    }
+
+    // ── Card renderers ────────────────────────────────────────────────────────
+
+    function renderCandidateSection(cand, isHero, outcomeLabelText, showVoteShare, share, mode) {
+      // Hero: large photo + outcome badge + name + party+constituency + optional vote share
+      // Small: photo + outcome label + name + party badge + optional mini bar
+      if (isHero) {
+        const wrap = document.createElement('div');
+        wrap.className = 'flex flex-col items-center text-center space-y-3';
+
+        const photoWrap = document.createElement('div');
+        photoWrap.className = 'relative';
+
+        const circle = document.createElement('div');
+        circle.className = 'w-32 h-32 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50';
+        circle.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-full h-full'));
+        photoWrap.appendChild(circle);
+
+        if (outcomeLabelText) {
+          const badge = document.createElement('div');
+          const isLeading = outcomeLabelText.toLowerCase() === 'leading';
+          badge.className = `kb-outcome-badge absolute -bottom-3 left-1/2 -translate-x-1/2 ${isLeading ? 'leading-badge' : 'won-badge'} text-white px-6 py-1 rounded-lg shadow-md flex items-center gap-0.5`;
+          if (isLeading) {
+            badge.innerHTML = `${outcomeLabelText}<span class="counting-dots ml-0.5"><span>.</span><span>.</span><span>.</span></span>`;
+          } else {
+            badge.textContent = outcomeLabelText;
+          }
+          photoWrap.appendChild(badge);
+        }
+
+        wrap.appendChild(photoWrap);
+
+        const info = document.createElement('div');
+        info.className = 'pt-1 w-full';
+
+        const name = document.createElement('h2');
+        name.className = 'kb-hero-name mt-1';
+        name.textContent = (cand && cand.name) ? cand.name : 'Not set';
+        info.appendChild(name);
+
+        // Row 1: party + alliance chips
+        const chipsRow = document.createElement('div');
+        chipsRow.className = 'flex items-center justify-center gap-2 mt-1.5 flex-wrap';
+
+        const party = document.createElement('span');
+        party.className = 'kb-chip px-3 py-1 rounded-md';
+        party.textContent = (cand && cand.party) ? cand.party : '—';
+        applyChipColor(party, partyColorFromSheet(cand && cand.party));
+        chipsRow.appendChild(party);
+
+        if (cand && cand.alliance) {
+          const alliance = document.createElement('span');
+          alliance.className = 'kb-chip px-3 py-1 rounded-md';
+          alliance.textContent = cand.alliance;
+          applyChipColor(alliance, allianceColorFromSheet(cand.alliance));
+          chipsRow.appendChild(alliance);
+        }
+
+        info.appendChild(chipsRow);
+
+        if (showVoteShare && Number.isFinite(share)) {
+          const metric = metricLabelAndValue(mode, cand, share);
+          const winnerBarClass = mode === 'counting' ? 'leading-bar' : 'won-bar';
+          info.appendChild(makeVoteShareBar(share, winnerBarClass, metric.label, metric.value, mode === 'counting'));
+        }
+
+        wrap.appendChild(info);
+        return wrap;
+      } else {
+        // Small challenger card
+        // Use justify-between so chips+bar always align at the same level
+        // regardless of whether the name wraps to 1 or 2 lines
+        const wrap = document.createElement('div');
+        wrap.className = 'flex flex-col justify-between h-full gap-1.5';
+
+        // Top: avatar + outcome label + name
+        const topRow = document.createElement('div');
+        topRow.className = 'flex items-start gap-2';
+        topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
+
+        const textWrap = document.createElement('div');
+        if (outcomeLabelText) {
+          const outcome = document.createElement('span');
+          const isTrailing = outcomeLabelText.toLowerCase() === 'trailing';
+          outcome.className = `kb-small-outcome flex items-center ${isTrailing ? 'trailing-label' : 'text-red-600'}`;
+          if (isTrailing) {
+            outcome.innerHTML = `${outcomeLabelText}<span class="counting-dots ml-0.5"><span>.</span><span>.</span><span>.</span></span>`;
+          } else {
+            outcome.textContent = outcomeLabelText;
+          }
+          textWrap.appendChild(outcome);
+        }
+        const nm = document.createElement('h4');
+        nm.className = 'kb-small-name';
+        nm.textContent = (cand && cand.name) ? cand.name : 'Not set';
+        textWrap.appendChild(nm);
+        topRow.appendChild(textWrap);
+        wrap.appendChild(topRow);
+
+        // Bottom: chips + vote bar — always anchored to the same level
+        const bottom = document.createElement('div');
+        bottom.className = 'flex flex-col gap-0.5';
+
+        const partyRow = document.createElement('div');
+        partyRow.className = 'flex items-center gap-1 flex-wrap w-full';
+        const partyBadge = document.createElement('div');
+        partyBadge.className = 'kb-small-chip w-fit px-2 py-0.5 rounded';
+        partyBadge.textContent = (cand && cand.party) ? cand.party : '—';
+        applyChipColor(partyBadge, partyColorFromSheet(cand && cand.party));
+        partyRow.appendChild(partyBadge);
+
+        if (cand && cand.alliance) {
+          const allianceBadge = document.createElement('div');
+          allianceBadge.className = 'kb-small-chip w-fit px-2 py-0.5 rounded';
+          allianceBadge.textContent = cand.alliance;
+          applyChipColor(allianceBadge, allianceColorFromSheet(cand.alliance));
+          partyRow.appendChild(allianceBadge);
+        }
+
+        if (showVoteShare && Number.isFinite(share)) {
+          const metricText = document.createElement('span');
+          metricText.className = 'kb-metric-text text-stone-500 ml-auto text-right';
+          const metric = metricLabelAndValue(mode, cand, share);
+          metricText.textContent = metric.value;
+          partyRow.appendChild(metricText);
+        }
+        bottom.appendChild(partyRow);
+
+        if (showVoteShare && Number.isFinite(share)) {
+          const track = document.createElement('div');
+          track.className = 'h-1 bg-stone-200 rounded-full w-full';
+          const fill = document.createElement('div');
+          const fillClass = mode === 'counting' ? 'trailing-bar' : 'lost-bar';
+          const animate = mode === 'counting';
+          const barW = `${Math.max(2, Math.min(100, share))}%`;
+          fill.className = `h-full rounded-full ${fillClass}${animate ? ' bar-counting' : ''}`;
+          fill.style.setProperty('--bar-w', barW);
+          if (!animate) fill.style.width = barW;
+          track.appendChild(fill);
+          bottom.appendChild(track);
+        }
+
+        wrap.appendChild(bottom);
+        return wrap;
+      }
+    }
+
+    function renderBattleCard(battle) {
+      const mode = resolveViewModeForBattle(battle);
+      const slots = [battle.candidates[0] || null, battle.candidates[1] || null, battle.candidates[2] || null];
+
+      const totalVotes = slots.reduce((sum, c) => {
+        const n = c && Number.isFinite(c.votesNum) ? c.votesNum : 0;
+        return sum + n;
+      }, 0);
+
+      const outcomeLabel = winnerOutcomeLabel(mode);
+      const challengerLabel = challengerOutcomeLabel(mode);
+      const hasVotes = totalVotes > 0;
+      const winnerShare = candidateVoteShare(slots[0], totalVotes);
+      const loser1Share = candidateVoteShare(slots[1], totalVotes);
+      const loser2Share = candidateVoteShare(slots[2], totalVotes);
+
+      // Card wrapper
+      const card = document.createElement('section');
+      card.className = [
+        'battle-card snap-start snap-always shrink-0',
+        'bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-4 space-y-4',
+        'flex flex-col'
+      ].join(' ');
+
+      // Constituency heading — top of card, highest hierarchy
+      const constituencyHeading = document.createElement('h3');
+      constituencyHeading.className = 'kb-card-heading text-stone-900 text-center';
+      constituencyHeading.textContent = battle.constituency || '—';
+      card.appendChild(constituencyHeading);
+
+      // Hero candidate
+      const heroSection = renderCandidateSection(
+        slots[0], true, outcomeLabel,
+        hasVotes && Number.isFinite(winnerShare), winnerShare, mode
+      );
+      card.appendChild(heroSection);
+
+      // VS divider
+      const vsDivider = document.createElement('div');
+      vsDivider.className = 'relative flex items-center py-0.5';
+      const line1 = document.createElement('div');
+      line1.className = 'flex-grow border-t border-stone-200';
+      const vsLabel = document.createElement('span');
+      vsLabel.className = 'kb-vs-label flex-shrink mx-3 bg-stone-900 text-white px-2 py-0.5 rounded-full';
+      vsLabel.textContent = 'vs';
+      const line2 = document.createElement('div');
+      line2.className = 'flex-grow border-t border-stone-200';
+      vsDivider.appendChild(line1);
+      vsDivider.appendChild(vsLabel);
+      vsDivider.appendChild(line2);
+      card.appendChild(vsDivider);
+
+      // Challengers grid
+      const grid = document.createElement('div');
+      grid.className = 'grid grid-cols-2 gap-2.5 items-stretch';
+
+      const loser1Wrap = document.createElement('div');
+      loser1Wrap.className = 'border-r border-stone-100 pr-2.5 flex flex-col';
+      loser1Wrap.appendChild(renderCandidateSection(
+        slots[1], false, challengerLabel,
+        hasVotes && Number.isFinite(loser1Share), loser1Share, mode
+      ));
+      grid.appendChild(loser1Wrap);
+
+      const loser2Wrap = document.createElement('div');
+      loser2Wrap.className = 'flex flex-col';
+      loser2Wrap.appendChild(renderCandidateSection(
+        slots[2], false, challengerLabel,
+        hasVotes && Number.isFinite(loser2Share), loser2Share, mode
+      ));
+      grid.appendChild(loser2Wrap);
+
+      card.appendChild(grid);
+
+      // Optional story CTA (hidden when a specific constituency is pinned via URL param)
+      if (battle.storyUrl && !CONSTITUENCY_PARAM) {
+        const cta = document.createElement('a');
+        cta.href = battle.storyUrl;
+        cta.target = '_blank';
+        cta.rel = 'noopener';
+        cta.className = 'kb-cta mt-auto';
+        cta.innerHTML = 'Read Full Story <span class="material-symbols-outlined text-[14px]">arrow_forward</span>';
+        card.appendChild(cta);
+      }
+
+      return card;
+    }
+
+    // ── Search + render ───────────────────────────────────────────────────────
+
+    function filterBattles(battles, query) {
+      const q = String(query || '').trim().toLowerCase();
+      if (!q) return battles;
+      return battles.filter((b) => {
+        if (b.constituency.toLowerCase().includes(q)) return true;
+        if (b.state.toLowerCase().includes(q)) return true;
+        return b.candidates.some(
+          (c) => (c.name || '').toLowerCase().includes(q) || (c.party || '').toLowerCase().includes(q)
+        );
+      });
+    }
+
+    function buildStateTabs() {
+      stateTabsEl.innerHTML = '';
+      STATE_TABS.forEach(({ key, label }) => {
+        const btn = document.createElement('button');
+        btn.className = 'state-tab' + (key === currentStateFilter ? ' active' : '');
+        btn.textContent = label;
+        btn.dataset.key = key;
+        btn.addEventListener('click', () => {
+          pauseAutoRotateCarousel();
+          if (key === currentStateFilter) return;
+          currentStateFilter = key;
+          stateTabsEl.querySelectorAll('.state-tab').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+          render(allBattles, { resetCarousel: true });
+        });
+        stateTabsEl.appendChild(btn);
+      });
+      if (HIDE_TABS) stateTabsEl.style.display = 'none';
+    }
+
+    function render(battles, options = {}) {
+      const resetCarousel = !!(options && options.resetCarousel);
+      listEl.innerHTML = '';
+      listEl.classList.remove('single-card-layout');
+      const q = searchEl.value;
+      const stateFiltered = currentStateFilter
+        ? battles.filter(b => String(b.state || '').trim().toUpperCase() === currentStateFilter)
+        : battles;
+      const visible = filterBattles(stateFiltered, q);
+
+      if (!stateFiltered.length) {
+        clearRotateTimer();
+        listEl.innerHTML = '<p class="kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center">No battles found.</p>';
+        updateCarouselIndicator(0, 0);
+        updateDesktopNav();
+        postEmbedSize('empty-state');
+        return;
+      }
+
+      if (!visible.length) {
+        clearRotateTimer();
+        const empty = document.createElement('p');
+        empty.className = 'kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center';
+        empty.textContent = 'No results match your search.';
+        listEl.appendChild(empty);
+        updateCarouselIndicator(0, 0);
+        updateDesktopNav();
+        postEmbedSize('empty-search');
+        return;
+      }
+
+      const cards = visible.map((battle) => {
+        const card = renderBattleCard(battle);
+        listEl.appendChild(card);
+        return card;
+      });
+
+      if (CONSTITUENCY_PARAM && cards.length === 1) {
+        listEl.classList.add('single-card-layout');
+      }
+
+      if (resetCarousel) {
+        listEl.scrollLeft = 0;
+      }
+
+      syncCarouselIndicator();
+
+      updateDesktopNav();
+
+      postEmbedSize('render');
+      startAutoRotateCarousel();
+    }
+
+    function getCarouselCards() {
+      return Array.from(listEl.querySelectorAll('section'));
+    }
+
+    function getActiveCardIndex(cards = getCarouselCards()) {
+      if (!cards.length) return 0;
+      const listRect = listEl.getBoundingClientRect();
+      let bestIdx = 0;
+      let bestDistance = Number.POSITIVE_INFINITY;
+      cards.forEach((card, idx) => {
+        const rect = card.getBoundingClientRect();
+        const distance = Math.abs(rect.left - listRect.left);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestIdx = idx;
+        }
+      });
+      return bestIdx;
+    }
+
+    function updateCarouselIndicator(activeIndex, total) {
+      if (!carouselEl || !carouselCountEl || !carouselDotsEl) return;
+      carouselEl.style.display = total > 0 ? 'flex' : 'none';
+      carouselCountEl.textContent = total > 0 ? `${activeIndex + 1}/${total}` : '';
+      carouselDotsEl.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'carousel-indicator-dot' + (i === activeIndex ? ' is-active' : '');
+        carouselDotsEl.appendChild(dot);
+      }
+    }
+
+    function syncCarouselIndicator() {
+      const cards = getCarouselCards();
+      updateCarouselIndicator(getActiveCardIndex(cards), cards.length);
+      listEl.removeEventListener('scroll', listEl._progressHandler);
+      listEl._progressHandler = () => updateCarouselIndicator(getActiveCardIndex(getCarouselCards()), getCarouselCards().length);
+      listEl.addEventListener('scroll', listEl._progressHandler, { passive: true });
+    }
+
+    function getDesktopScrollAmount() {
+      const firstCard = listEl.querySelector('section');
+      if (!firstCard) return listEl.clientWidth;
+      const cardWidth = firstCard.getBoundingClientRect().width;
+      const styles = window.getComputedStyle(listEl);
+      const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
+      return (cardWidth * 2) + gap;
+    }
+
+    function scrollToCarouselCard(index, behavior = 'smooth') {
+      const cards = getCarouselCards();
+      if (!cards.length) return;
+      const safeIndex = ((index % cards.length) + cards.length) % cards.length;
+      const target = cards[safeIndex];
+      if (!target) return;
+      const left = Math.max(0, target.offsetLeft);
+      listEl.scrollTo({ left, behavior });
+    }
+
+    function startAutoRotateCarousel() {
+      clearRotateTimer();
+      if (!ROTATE_CAROUSEL) return;
+      const cards = getCarouselCards();
+      if (cards.length < 2) return;
+      rotateTimer = setInterval(() => {
+        if (Date.now() < rotationSuspendedUntil) return;
+        const liveCards = getCarouselCards();
+        if (liveCards.length < 2) return;
+        const step = window.innerWidth >= 768 ? 2 : 1;
+        const activeIndex = getActiveCardIndex(liveCards);
+        const nextIndex = (activeIndex + step) % liveCards.length;
+        scrollToCarouselCard(nextIndex, 'smooth');
+      }, 8000);
+    }
+
+    function updateDesktopNav() {
+      const prevBtn = document.getElementById('desktop-prev');
+      const nextBtn = document.getElementById('desktop-next');
+      if (!prevBtn || !nextBtn) return;
+
+      const hasOverflow = listEl.scrollWidth > listEl.clientWidth + 4;
+      const cards = getCarouselCards();
+      const hasCards = cards.length > 0;
+      const isSingleConstituencyCard = !!CONSTITUENCY_PARAM && cards.length === 1;
+      const show = hasOverflow || hasCards;
+
+      prevBtn.style.display = show && !isSingleConstituencyCard ? 'inline-flex' : 'none';
+      nextBtn.style.display = show && !isSingleConstituencyCard ? 'inline-flex' : 'none';
+
+      prevBtn.classList.toggle('is-disabled', !show || listEl.scrollLeft <= 4);
+      nextBtn.classList.toggle('is-disabled', !show || (listEl.scrollLeft + listEl.clientWidth >= listEl.scrollWidth - 4));
+    }
+
+    function bindDesktopCarouselNav() {
+      const prevBtn = document.getElementById('desktop-prev');
+      const nextBtn = document.getElementById('desktop-next');
+      if (!prevBtn || !nextBtn) return;
+
+      prevBtn.addEventListener('click', () => {
+        pauseAutoRotateCarousel();
+        listEl.scrollBy({ left: -getDesktopScrollAmount(), behavior: 'smooth' });
+      });
+      nextBtn.addEventListener('click', () => {
+        pauseAutoRotateCarousel();
+        listEl.scrollBy({ left: getDesktopScrollAmount(), behavior: 'smooth' });
+      });
+      listEl.addEventListener('scroll', updateDesktopNav, { passive: true });
+      window.addEventListener('resize', updateDesktopNav);
+      window.addEventListener('beforeunload', clearRotateTimer);
+    }
+
+    async function init() {
+      bindDesktopCarouselNav();
+      buildStateTabs();
+      setWidgetLoading(true);
+      try {
+        listEl.innerHTML = '<p class="kb-empty-state text-stone-400 text-sm col-span-3 py-8 text-center">Loading key battles...</p>';
+        const rowsByAlias = await loadMultiSheetValues([
+          { alias: 'battles', tabName: TAB_NAME },
+          { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME },
+          { alias: 'partyColors', tabName: PARTIES_TAB_NAME },
+          { alias: 'allianceColors', tabName: ALLIANCES_TAB_NAME }
+        ], 'no-store');
+        const rows = rowsByAlias.battles || [];
+        const mappingRows = rowsByAlias.mappingLive || [];
+        const partyColorRows = rowsByAlias.partyColors || [];
+        const allianceColorRows = rowsByAlias.allianceColors || [];
+        PARTY_COLORS = parsePartyColors(partyColorRows);
+        ALLIANCE_COLORS = parseAllianceColors(allianceColorRows);
+        const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
+        allBattles = buildBattles(rows, liveAllianceMapping);
+        let filtered = BATTLE_PARAM
+          ? allBattles.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM))
+          : allBattles;
+        if (CONSTITUENCY_PARAM) {
+          const cq = CONSTITUENCY_PARAM.toLowerCase();
+          filtered = filtered.filter((b) =>
+            slugify(b.constituency) === slugify(CONSTITUENCY_PARAM) ||
+            String(b.acNo || '').trim().toLowerCase() === cq ||
+            (b.constituency || '').toLowerCase().includes(cq)
+          );
+          currentStateFilter = ''; // bypass state filter in render()
+          // tabs and search stay hidden (already hidden during load)
+        } else {
+          // Restore tabs and search now that data is ready
+          if (!HIDE_TABS) stateTabsEl.style.display = '';
+          if (!HIDE_TABS && searchShellEl) searchShellEl.style.display = '';
+        }
+        allBattles = filtered;
+        render(allBattles);
+        setWidgetLoading(false);
+      } catch (err) {
+        setWidgetLoading(false);
+        listEl.innerHTML = `<p class="kb-empty-state text-red-600 text-sm font-semibold py-8 text-center">Failed to load key battles: ${err && err.message ? err.message : err}</p>`;
+        postEmbedSize('error');
+      }
+    }
+
+    searchEl.addEventListener('input', () => {
+      pauseAutoRotateCarousel();
+      render(allBattles);
+    });
+    searchEl.addEventListener('focus', pauseAutoRotateCarousel);
+    listEl.addEventListener('pointerdown', pauseAutoRotateCarousel, { passive: true });
+    listEl.addEventListener('touchstart', pauseAutoRotateCarousel, { passive: true });
+
+    function fitWidgetToViewport() {
+      const viewport = document.getElementById('widgetViewport');
+      const root = document.getElementById('widgetScaleRoot');
+      if (!viewport || !root) return;
+      const isDesktop = window.innerWidth >= 768;
+      root.style.transform = 'scale(1)';
+      root.style.width = '100%';
+      if (isDesktop) {
+        root.style.transform = 'none';
+        root.style.width = '100%';
+        viewport.style.height = 'auto';
+        return;
+      }
+      const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
+      const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+      // Widen the root so that after scaling it still fills the full viewport width.
+      // transform-origin is top left, so scale compresses from the left edge.
+      root.style.width = scale < 1 ? `${(100 / scale).toFixed(4)}%` : '100%';
+      root.style.transform = `scale(${scale})`;
+      viewport.style.height = '500px';
+    }
+
+    function postEmbedSize(reason = 'manual') {
+      try {
+        fitWidgetToViewport();
+        const root = document.getElementById('widgetViewport') || listEl;
+        const height = Math.ceil(root.getBoundingClientRect().height);
+        const width = Math.ceil(root.getBoundingClientRect().width);
+        parent.postMessage({
+          type: 'widget-height',
+          widget: 'key-battles-widget',
+          embedId: EMBED_ID,
+          height,
+          width,
+          reason
+        }, '*');
+      } catch (e) {}
+    }
+
+    try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(listEl); } catch (_) {}
+    try { if (carouselEl) new ResizeObserver(() => postEmbedSize('carousel-resize')).observe(carouselEl); } catch (_) {}
+    window.addEventListener('load', () => postEmbedSize('load'));
+    window.addEventListener('resize', () => postEmbedSize('window-resize'));
+    setTimeout(() => postEmbedSize('init'), 0);
+
+    init();
+  </script>
+</body>
+</html>

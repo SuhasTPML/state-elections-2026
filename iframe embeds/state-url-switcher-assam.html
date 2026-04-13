@@ -1,0 +1,85 @@
+<!-- State URL switcher embed: Assam -->
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
+
+  .state-url-switcher {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .state-url-switcher-heading {
+    margin: 0 0 12px;
+    color: #111827;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+
+  .state-url-switcher-tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .state-url-switcher-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .state-url-switcher-tab {
+    flex: 1 1 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #374151;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .state-url-switcher-tab:hover {
+    background: #e5e7eb;
+    color: #111827;
+  }
+
+  .state-url-switcher-tab.is-active {
+    background: #1f2937;
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    .state-url-switcher-heading {
+      font-size: 26px;
+    }
+
+    .state-url-switcher-tab {
+      flex: 0 0 auto;
+      font-size: 13px;
+    }
+  }
+</style>
+
+<div class="state-url-switcher">
+  <h2 class="state-url-switcher-heading">Assam Assembly Elections 2026</h2>
+  <div class="state-url-switcher-tabs">
+    <a class="state-url-switcher-tab" href="https://dh-sandbox-web.quintype.io/west-bengal-elections-2026-lp">West Bengal</a>
+    <a class="state-url-switcher-tab" href="https://dh-sandbox-web.quintype.io/tamil-nadu-elections-2026-lp">Tamil Nadu</a>
+    <a class="state-url-switcher-tab" href="https://dh-sandbox-web.quintype.io/kerala-elections-2026-lp">Kerala</a>
+    <a class="state-url-switcher-tab is-active" href="https://dh-sandbox-web.quintype.io/assam-elections-2026-lp">Assam</a>
+    <a class="state-url-switcher-tab" href="https://dh-sandbox-web.quintype.io/puducherry-elections-2026-lp">Puducherry</a>
+  </div>
+</div>

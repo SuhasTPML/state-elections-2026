@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#dde4e5",
+                        "on-secondary-fixed": "#294700",
+                        "primary-dim": "#535252",
+                        "on-surface-variant": "#5a6061",
+                        "secondary-fixed": "#b9f474",
+                        "surface-container-high": "#e4e9ea",
+                        "on-tertiary-fixed-variant": "#3b0002",
+                        "primary": "#5f5e5e",
+                        "inverse-surface": "#0c0f0f",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-primary-container": "#525151",
+                        "secondary-dim": "#375d00",
+                        "tertiary-fixed-dim": "#ec413e",
+                        "on-tertiary": "#fff7f6",
+                        "on-error": "#fff7f6",
+                        "on-tertiary-container": "#1f0001",
+                        "tertiary-fixed": "#fe4e49",
+                        "on-primary": "#faf7f6",
+                        "tertiary": "#bb1b21",
+                        "on-secondary-container": "#365c00",
+                        "on-tertiary-fixed": "#000000",
+                        "error-dim": "#5c1202",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary": "#eeffd5",
+                        "on-error-container": "#742410",
+                        "surface-container-low": "#f2f4f4",
+                        "background": "#f9f9f9",
+                        "surface-container": "#ebeeef",
+                        "on-background": "#2d3435",
+                        "primary-container": "#e5e2e1",
+                        "tertiary-dim": "#a90816",
+                        "surface-variant": "#dde4e5",
+                        "inverse-on-surface": "#9c9d9d",
+                        "surface-dim": "#d4dbdd",
+                        "on-surface": "#2d3435",
+                        "tertiary-container": "#fe4e49",
+                        "outline-variant": "#adb3b4",
+                        "surface-tint": "#5f5e5e",
+                        "error-container": "#fe8b70",
+                        "secondary-container": "#b9f474",
+                        "inverse-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#3c6600",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#3f6a00",
+                        "secondary-fixed-dim": "#abe668",
+                        "outline": "#757c7d",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed": "#403f3f",
+                        "error": "#9e422c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .won-badge {
+            background-color: #8CC63F;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-stone-50 dark:bg-stone-950 flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-stone-800 dark:text-stone-200">menu</span>
+<h1 class="text-lg font-bold tracking-tight text-stone-900 dark:text-stone-100 font-headline">National Election 2024</h1>
+</div>
+<span class="material-symbols-outlined text-stone-800 dark:text-stone-200">search</span>
+</header>
+<main class="px-4 pt-6 space-y-8">
+<!-- Constituency 1: Raghopur -->
+<section class="bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-6 space-y-6">
+<!-- Winner Profile -->
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="relative">
+<div class="w-48 h-48 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50">
+<img class="w-full h-full object-cover" data-alt="portrait of Tejashwi Prasad Yadav" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cka_EVEQ4WuPPhG6RGE5aP6XXa8Ijnyvg_7tpY_0n-uTRCNy_gBwfQYsjZfwUUpusNvaukhEVkRHg9n09t5BcOd1y99VZ-CIGtmy2f9SBREqiV8UHO2tEB_9-0I_arnVIl3kiTGqn17I-YHvFEdgqWZssw99X265nOCuReNIsxwaj03l3obRbKGgSTgG8fbmOWGpM3yCak6DD0s6EefaAnubmWWtosI0Aop82t0SwmlybumhfVYPHETjRtVek8zjM6KQq40aMKm-"/>
+</div>
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 won-badge text-white px-8 py-1 rounded-lg text-sm font-bold uppercase tracking-wide shadow-md">
+                    Won
+                </div>
+</div>
+<div class="pt-2">
+<h2 class="text-2xl font-extrabold font-headline uppercase leading-tight tracking-tight">Tejashwi Prasad Yadav</h2>
+<div class="flex items-center justify-center gap-4 mt-2">
+<span class="bg-stone-100 text-stone-600 px-4 py-1 rounded-md text-sm font-bold uppercase">RJD</span>
+<div class="h-4 w-px bg-stone-300"></div>
+<span class="text-stone-900 text-lg font-semibold font-headline">Raghopur</span>
+</div>
+</div>
+</div>
+<!-- Divider with vs -->
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-stone-200"></div>
+<span class="flex-shrink mx-4 bg-stone-900 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-full z-10">vs</span>
+<div class="flex-grow border-t border-stone-200"></div>
+</div>
+<!-- Losing Candidates Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Opponent 1 -->
+<div class="flex flex-col items-start space-y-2 border-r border-stone-100 pr-2 last:border-r-0">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover bg-stone-100" data-alt="portrait of Satish Kumar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe1j0j5CBTNAId1qlCkxVTtXwKP5kshanutdmIlIltKqvQckSw9wdSCiT4FmiXv1JCD8q6EXwWVB1ImoqZqJxyfvjLUn4IHsfBFz9q6Ct6OX1uvjx9-uWHW_kHsr0Y0n41MP4pTrWVb1q4vaBo7RdpwrlrIzpk7C4zkFNDtcLiCADsP1ylOkSIPAEWBXBoripFEy0Pj3bndZPln8DPLVrsJgsG3nMFdTWF4ewgUtlAlB4GeugiWXyXF3VfVm8ITyyITskF86vndhrY"/>
+<div>
+<span class="text-[10px] font-bold text-red-600 uppercase">Lost</span>
+<h4 class="text-xs font-bold font-headline leading-tight">Satish Kumar</h4>
+</div>
+</div>
+<div class="w-fit bg-orange-50 text-orange-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">BJP</div>
+</div>
+<!-- Opponent 2 -->
+<div class="flex flex-col items-start space-y-2">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover bg-stone-100" data-alt="portrait of Baliram Singh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9yN5wAdSPxxFT7VrDTVB_eVLpRDouTMoZJE9nVt2lc4hMPHf1ENWsqqsW5_cIo4zZbQ0g5tRvMw8gv8nh1bEYYyXqBJmSK9sNT2yHlio7jPTUUxdHy22COK0L44ks_0Yi1Ti2CLPcaBXRB5PkqxgkzJ2i6OicykW8RcBrO9wqKB0RYPe8wuK5i_ylFEOWomLNzg6xHPzyu_ocy7Tm2d3XujXCAc3DGhiOdgTas5BAB9lqexR0RjXbhJfhyB35Fi-IEG0zXZSBy2nd"/>
+<div>
+<span class="text-[10px] font-bold text-red-600 uppercase">Lost</span>
+<h4 class="text-xs font-bold font-headline leading-tight">Meena Devi</h4>
+</div>
+</div>
+<div class="w-fit bg-stone-100 text-stone-600 px-2 py-0.5 rounded text-[10px] font-bold uppercase">IND</div>
+</div>
+</div>
+</section>
+<!-- Constituency 2: Alinagar -->
+<section class="bg-surface-container-lowest rounded-xl border border-stone-200 shadow-sm overflow-hidden p-6 space-y-6">
+<!-- Winner Profile -->
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="relative">
+<div class="w-48 h-48 rounded-full overflow-hidden border-4 border-stone-100 bg-stone-50">
+<img class="w-full h-full object-cover" data-alt="portrait of Maithili Thakur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6o5KPkTE9icMpda5-z6TwPA9Gkr0yf53eU_7sjcdF-GINQArw624Cc2jDwViBrmTCVNgs3htTVYmgLZCzZB5-y9Fp4jRJoEb1sjC0PAVBl3Eh_bG9r4P3onhUQHR4NnXb46XMMYpoq7dVjQonP77gBFTkhfGmkQNkJFDDDANbf34wJckHLqb6ps84fRhLDdL98IB7hS6As_uqvuop7TGWh8JC0whvOG0VYwCAqPtEJKLf64dK2lGL1tfu-PNTCal37GAP5GU88VbA"/>
+</div>
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 won-badge text-white px-8 py-1 rounded-lg text-sm font-bold uppercase tracking-wide shadow-md">
+                    Won
+                </div>
+</div>
+<div class="pt-2">
+<h2 class="text-2xl font-extrabold font-headline uppercase leading-tight tracking-tight">Maithili Thakur</h2>
+<div class="flex items-center justify-center gap-4 mt-2">
+<span class="bg-orange-50 text-orange-800 px-4 py-1 rounded-md text-sm font-bold uppercase">BJP</span>
+<div class="h-4 w-px bg-stone-300"></div>
+<span class="text-stone-900 text-lg font-semibold font-headline">Alinagar</span>
+</div>
+</div>
+</div>
+<!-- Divider with vs -->
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-stone-200"></div>
+<span class="flex-shrink mx-4 bg-stone-900 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-full z-10">vs</span>
+<div class="flex-grow border-t border-stone-200"></div>
+</div>
+<!-- Losing Candidates Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Opponent 1 -->
+<div class="flex flex-col items-start space-y-2 border-r border-stone-100 pr-2 last:border-r-0">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover bg-stone-100" data-alt="portrait of Binod Mishra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR-gzEmqx5zIvNxTi0hdEnQVDfWo4jjFxpuRYQ_zUBGUq1TeykY6mjnR0g_fEzk2kgeR9LhowIGgCbOZZUPVU0OL8yUYFlWApYjB1JZ72-ti3V9L6XXNlokGdGxLMXg3kpkanTY9uZZfp52M1wtj9AGzaQB9W2mZB5uLPLuZhNbBBjkqJ78KQkgDN0UQMU6qkFPJIvkr_d2GTFERxSRHIfQ7OtQAAZsHTPAm3dKxW7fC7pDNHUxu_Uq1nI05IzvopbweYwuR5UOmwt"/>
+<div>
+<span class="text-[10px] font-bold text-red-600 uppercase">Lost</span>
+<h4 class="text-xs font-bold font-headline leading-tight">Binod Mishra</h4>
+</div>
+</div>
+<div class="w-fit bg-stone-100 text-stone-600 px-2 py-0.5 rounded text-[10px] font-bold uppercase">RJD</div>
+</div>
+<!-- Opponent 2 -->
+<div class="flex flex-col items-start space-y-2">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover bg-stone-100" data-alt="portrait of Saifuddin Ahmed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrdXLZS-csoCPTZTC8KvEsGEVS4HXDO1VIx8woqt_5eDZQlRYjSfWA4_VPAR2f8i4jcx2eGUQ9_vI2nVgJwQYcP5xAAtRYQm2gfbSWjTRqw7homYm2Ri1QpzGuSDv3xJ6mPUaC6kWNb2tU_zyjUZiqAXvshDqbz886a7l6Ka0eQL6I8LccguX_pZVvd03Y5HcpVA7kPetU7BCntsj6-pVsQFMdIEGPuS4ycu1hisVazcqtLthr8zCtqp8lluIXT6KoLELLOGVJqoGw"/>
+<div>
+<span class="text-[10px] font-bold text-red-600 uppercase">Lost</span>
+<h4 class="text-xs font-bold font-headline leading-tight">Saifuddin Ahmed</h4>
+</div>
+</div>
+<div class="w-fit bg-stone-100 text-stone-600 px-2 py-0.5 rounded text-[10px] font-bold uppercase">IND</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md z-50 rounded-t-xl shadow-[0px_-4px_20px_rgba(0,0,0,0.03)] border-t border-stone-200/20 dark:border-stone-800/20">
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 cursor-pointer">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-inter text-xs font-semibold tracking-wide capitalize">Overview</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-stone-200/50 dark:bg-stone-800/50 text-stone-900 dark:text-stone-100 rounded-full px-4 py-1 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-inter text-xs font-semibold tracking-wide capitalize">Constituencies</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 cursor-pointer">
+<span class="material-symbols-outlined">map</span>
+<span class="font-inter text-xs font-semibold tracking-wide capitalize">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 cursor-pointer">
+<span class="material-symbols-outlined">podcasts</span>
+<span class="font-inter text-xs font-semibold tracking-wide capitalize">Live Feed</span>
+</div>
+</nav>
+</body></html>

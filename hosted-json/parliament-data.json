@@ -1,0 +1,114 @@
+{
+  "alliance_colors": {
+    "LDF": "#E31E24",
+    "NDA": "#FF9933",
+    "UDF": "#0078FF",
+    "UPA": "#00BFFF",
+    "SPA": "#DD1100",
+    "TMC": "#23A455",
+    "SM": "#D32F2F",
+    "MAHAJOT": "#1565C0",
+    "OTH": "#9CA3AF",
+    "NA": "#999999"
+  },
+  "states": [
+    {
+      "key": "KERALA",
+      "label": "Kerala",
+      "total_seats": 140,
+      "majority": 71,
+      "years": ["2016", "2021"],
+      "parties": [
+        { "code": "CPI(M)", "name": "CPI(M)", "color": "#D32F2F", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 60, "leads": 0 }, "2021": { "wins": 62, "leads": 0 } } },
+        { "code": "CPI",    "name": "CPI",    "color": "#E53935", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 17, "leads": 0 }, "2021": { "wins": 17, "leads": 0 } } },
+        { "code": "INC",    "name": "INC",    "color": "#00BFFF", "alliance": { "2016": "UDF", "2021": "UDF" }, "results": { "2016": { "wins": 22, "leads": 0 }, "2021": { "wins": 21, "leads": 0 } } },
+        { "code": "IUML",   "name": "IUML",   "color": "#2E7D32", "alliance": { "2016": "UDF", "2021": "UDF" }, "results": { "2016": { "wins": 18, "leads": 0 }, "2021": { "wins": 15, "leads": 0 } } },
+        { "code": "KC(M)",  "name": "KC(M)",  "color": "#9cc78f", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 6,  "leads": 0 }, "2021": { "wins": 5,  "leads": 0 } } },
+        { "code": "JD(S)",  "name": "JD(S)",  "color": "#388E3C", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 3,  "leads": 0 }, "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "NCP",    "name": "NCP",    "color": "#1976D2", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 2,  "leads": 0 }, "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "IND",    "name": "IND",    "color": "#6B7280", "alliance": { "2016": "OTH", "2021": "OTH" }, "results": { "2016": { "wins": 6,  "leads": 0 }, "2021": { "wins": 5,  "leads": 0 } } },
+        { "code": "BJP",    "name": "BJP",    "color": "#FF9933", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 0,  "leads": 0 } } },
+        { "code": "Con(S)", "name": "Con(S)", "color": "#8c5373", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "NSC",    "name": "NSC",    "color": "#6e7f51", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "KC(J)",  "name": "KC(J)",  "color": "#bfc68f", "alliance": { "2016": "UDF", "2021": "UDF" }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "KC(B)",  "name": "KC(B)",  "color": "#c7c58f", "alliance": { "2016": "LDF", "2021": "LDF" }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "CMP(A)", "name": "CMP(A)", "color": "#b05070", "alliance": { "2016": "LDF"              }, "results": { "2016": { "wins": 1,  "leads": 0 }                                        } },
+        { "code": "LJD",    "name": "LJD",    "color": "#567651", "alliance": {              "2021": "LDF"  }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "RMPI",   "name": "RMPI",   "color": "#c4c176", "alliance": {              "2021": "UDF"  }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "INL",    "name": "INL",    "color": "#976b51", "alliance": {              "2021": "LDF"  }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "JKC",    "name": "JKC",    "color": "#726f51", "alliance": {              "2021": "LDF"  }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "UDF",    "name": "UDF",    "color": "#679751", "alliance": {              "2021": "UDF"  }, "results": {                                        "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "NCK",    "name": "NCK",    "color": "#867d51", "alliance": {              "2021": "UDF"  }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } }
+      ]
+    },
+    {
+      "key": "TAMIL_NADU",
+      "label": "Tamil Nadu",
+      "total_seats": 234,
+      "majority": 118,
+      "years": ["2016", "2021"],
+      "parties": [
+        { "code": "AIADMK", "name": "AIADMK", "color": "#1E88E5", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 136, "leads": 0 }, "2021": { "wins": 66, "leads": 0 } } },
+        { "code": "DMK",    "name": "DMK",    "color": "#DD1100", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 89,  "leads": 0 }, "2021": { "wins": 132,"leads": 0 } } },
+        { "code": "INC",    "name": "INC",    "color": "#00BFFF", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 8,   "leads": 0 }, "2021": { "wins": 18, "leads": 0 } } },
+        { "code": "BJP",    "name": "BJP",    "color": "#FF9933", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 4,  "leads": 0 } } },
+        { "code": "PMK",    "name": "PMK",    "color": "#FF7043", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 5,  "leads": 0 } } },
+        { "code": "VCK",    "name": "VCK",    "color": "#7B1FA2", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 4,  "leads": 0 } } },
+        { "code": "CPI",    "name": "CPI",    "color": "#E53935", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "CPI(M)", "name": "CPI(M)", "color": "#D32F2F", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "KMDK",   "name": "KMDK",   "color": "#b99173", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 0,   "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "IUML",   "name": "IUML",   "color": "#2E7D32", "alliance": { "2016": "SPA", "2021": "SPA" }, "results": { "2016": { "wins": 1,   "leads": 0 }, "2021": { "wins": 0,  "leads": 0 } } }
+      ]
+    },
+    {
+      "key": "WEST_BENGAL",
+      "label": "West Bengal",
+      "total_seats": 294,
+      "majority": 148,
+      "years": ["2016", "2021"],
+      "parties": [
+        { "code": "TMC",    "name": "TMC",    "color": "#23A455", "alliance": { "2016": "TMC", "2021": "TMC" }, "results": { "2016": { "wins": 211, "leads": 0 }, "2021": { "wins": 215, "leads": 0 } } },
+        { "code": "BJP",    "name": "BJP",    "color": "#FF9933", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 3,   "leads": 0 }, "2021": { "wins": 77,  "leads": 0 } } },
+        { "code": "INC",    "name": "INC",    "color": "#00BFFF", "alliance": { "2016": "SM",  "2021": "SM"  }, "results": { "2016": { "wins": 44,  "leads": 0 }, "2021": { "wins": 0,   "leads": 0 } } },
+        { "code": "CPI(M)", "name": "CPI(M)", "color": "#D32F2F", "alliance": { "2016": "SM",  "2021": "SM"  }, "results": { "2016": { "wins": 26,  "leads": 0 }, "2021": { "wins": 0,   "leads": 0 } } },
+        { "code": "GJM",    "name": "GJM",    "color": "#8E24AA", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 3,   "leads": 0 }, "2021": { "wins": 1,   "leads": 0 } } },
+        { "code": "AIFB",   "name": "AIFB",   "color": "#B71C1C", "alliance": { "2016": "SM"               }, "results": { "2016": { "wins": 2,   "leads": 0 }                                        } },
+        { "code": "RSP",    "name": "RSP",    "color": "#C62828", "alliance": { "2016": "SM"               }, "results": { "2016": { "wins": 3,   "leads": 0 }                                        } },
+        { "code": "CPI",    "name": "CPI",    "color": "#E53935", "alliance": { "2016": "SM",  "2021": "SM"  }, "results": { "2016": { "wins": 1,   "leads": 0 }, "2021": { "wins": 0,   "leads": 0 } } },
+        { "code": "ISF",    "name": "ISF",    "color": "#43A047", "alliance": {              "2021": "SM"   }, "results": {                                        "2021": { "wins": 1,   "leads": 0 } } },
+        { "code": "IND",    "name": "IND",    "color": "#6B7280", "alliance": { "2016": "OTH", "2021": "OTH" }, "results": { "2016": { "wins": 1,   "leads": 0 }, "2021": { "wins": 0,   "leads": 0 } } }
+      ]
+    },
+    {
+      "key": "ASSAM",
+      "label": "Assam",
+      "total_seats": 126,
+      "majority": 64,
+      "years": ["2016", "2021"],
+      "parties": [
+        { "code": "BJP",   "name": "BJP",   "color": "#FF9933", "alliance": { "2016": "NDA",     "2021": "NDA"     }, "results": { "2016": { "wins": 60, "leads": 0 }, "2021": { "wins": 60, "leads": 0 } } },
+        { "code": "INC",   "name": "INC",   "color": "#00BFFF", "alliance": { "2016": "MAHAJOT", "2021": "MAHAJOT" }, "results": { "2016": { "wins": 26, "leads": 0 }, "2021": { "wins": 29, "leads": 0 } } },
+        { "code": "AGP",   "name": "AGP",   "color": "#FF8F00", "alliance": { "2016": "NDA",     "2021": "NDA"     }, "results": { "2016": { "wins": 14, "leads": 0 }, "2021": { "wins": 9,  "leads": 0 } } },
+        { "code": "AIUDF", "name": "AIUDF", "color": "#1565C0", "alliance": { "2016": "MAHAJOT", "2021": "MAHAJOT" }, "results": { "2016": { "wins": 13, "leads": 0 }, "2021": { "wins": 16, "leads": 0 } } },
+        { "code": "BPF",   "name": "BPF",   "color": "#4CAF50", "alliance": { "2016": "NDA",     "2021": "MAHAJOT" }, "results": { "2016": { "wins": 12, "leads": 0 }, "2021": { "wins": 4,  "leads": 0 } } },
+        { "code": "UPPL",  "name": "UPPL",  "color": "#7B1FA2", "alliance": {                    "2021": "NDA"     }, "results": {                                        "2021": { "wins": 6,  "leads": 0 } } },
+        { "code": "CPI(M)","name": "CPI(M)","color": "#D32F2F", "alliance": {                    "2021": "MAHAJOT" }, "results": {                                        "2021": { "wins": 1,  "leads": 0 } } },
+        { "code": "IND",   "name": "IND",   "color": "#6B7280", "alliance": { "2016": "OTH",     "2021": "OTH"     }, "results": { "2016": { "wins": 1,  "leads": 0 }, "2021": { "wins": 1,  "leads": 0 } } }
+      ]
+    },
+    {
+      "key": "PUDUCHERRY",
+      "label": "Puducherry",
+      "total_seats": 30,
+      "majority": 16,
+      "years": ["2016", "2021"],
+      "parties": [
+        { "code": "INC",   "name": "INC",   "color": "#00BFFF", "alliance": { "2016": "UPA", "2021": "UPA" }, "results": { "2016": { "wins": 15, "leads": 0 }, "2021": { "wins": 2,  "leads": 0 } } },
+        { "code": "AINRC", "name": "AINRC", "color": "#FBC02D", "alliance": { "2016": "OTH", "2021": "NDA" }, "results": { "2016": { "wins": 8,  "leads": 0 }, "2021": { "wins": 10, "leads": 0 } } },
+        { "code": "DMK",   "name": "DMK",   "color": "#DD1100", "alliance": { "2016": "OTH", "2021": "UPA" }, "results": { "2016": { "wins": 3,  "leads": 0 }, "2021": { "wins": 6,  "leads": 0 } } },
+        { "code": "BJP",   "name": "BJP",   "color": "#FF9933", "alliance": { "2016": "NDA", "2021": "NDA" }, "results": { "2016": { "wins": 0,  "leads": 0 }, "2021": { "wins": 6,  "leads": 0 } } },
+        { "code": "IND",   "name": "IND",   "color": "#6B7280", "alliance": { "2016": "OTH", "2021": "OTH" }, "results": { "2016": { "wins": 4,  "leads": 0 }, "2021": { "wins": 6,  "leads": 0 } } }
+      ]
+    }
+  ]
+}

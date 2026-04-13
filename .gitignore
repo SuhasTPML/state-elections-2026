@@ -1,1 +1,5 @@
 misc/legacy/Bihar elections/
+*.json
+.claspignore
+.clasp-remote-check/
+CLASP_WORKFLOW.md
