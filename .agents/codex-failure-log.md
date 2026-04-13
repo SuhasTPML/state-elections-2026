@@ -50,3 +50,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: Requests either failed at the network layer or produced misleading empty/sign-in responses, making it unclear whether the deployment was actually serving the new code.
 - Working approach: Run `curl.exe` with elevated permissions and pass the full URL as a single quoted `--url` argument.
 - Next-time rule: For external endpoint verification in this repo, use elevated `curl.exe` and quote the entire URL explicitly so query params are not reinterpreted by PowerShell.
+
+## 2026-04-13 - Use the exact workspace root in `apply_patch` targets
+- Context: Cleaning up non-legacy source paths after switching the widgets to CloudFront-only mode.
+- Command/workflow: Manual file edits with `apply_patch`.
+- Failed approach: Used an absolute path that omitted the `Claude\Experiments` segment of the workspace root.
+- Symptom: `apply_patch` failed with a file-not-found error even though the file existed in the repo.
+- Working approach: Re-run `apply_patch` with the full absolute path under `C:\Users\suhas.bhandari\Downloads\Claude\Experiments\CMS Widgets\Elections`.
+- Next-time rule: When patching by absolute path in this repo, copy the full `cwd` prefix exactly from the environment context before editing.
