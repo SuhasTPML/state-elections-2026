@@ -1256,6 +1256,8 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   let targetStateKey = DATA.states[0].key;
   if (previousStateKey && DATA.states.some((state) => state.key === previousStateKey)) {
     targetStateKey = previousStateKey;
+  } else if (!previousStateKey && INITIAL_STATE_FILTER && DATA.states.some((state) => state.key === INITIAL_STATE_FILTER)) {
+    targetStateKey = INITIAL_STATE_FILTER;
   }
 
   currentStateKey = targetStateKey;
