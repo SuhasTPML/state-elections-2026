@@ -2385,19 +2385,75 @@
       }
     }
 
+    if (!window.pvElectionCache) {
+      window.pvElectionCache = (function() {
+        const LS_PREFIX = 'pvElec_';
+        const LS_TTL = 2 * 60 * 1000; // 2 minutes
+        function lsKey(url) {
+          try { return LS_PREFIX + btoa(url).slice(0, 80); } catch(e) { return null; }
+        }
+        return {
+          mem: {},
+          pending: {},
+          get: function(url) {
+            if (url in this.mem) return this.mem[url];
+            const k = lsKey(url);
+            if (!k) return undefined;
+            try {
+              const raw = localStorage.getItem(k);
+              if (!raw) return undefined;
+              const entry = JSON.parse(raw);
+              if (Date.now() - entry.t < LS_TTL) { this.mem[url] = entry.d; return entry.d; }
+              localStorage.removeItem(k);
+            } catch(e) {}
+            return undefined;
+          },
+          set: function(url, data) {
+            this.mem[url] = data;
+            const k = lsKey(url);
+            if (!k) return;
+            try { localStorage.setItem(k, JSON.stringify({ d: data, t: Date.now() })); } catch(e) {}
+          }
+        };
+      })();
+    }
+
     async function loadSheetValues(tabName, cacheMode = 'force-cache', stateFilter = '') {
-      let url = buildLegacyCloudfrontValuesUrl(LEGACY_API_BASE_PARAM, SHEET_ID, tabName, LEGACY_API_KEY_PARAM);
-      const res = await fetch(url, { cache: cacheMode });
-      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
-      const json = await res.json();
-      if (json.error) throw new Error(json.error);
-      if (!json.values || json.values.length < 2) return [];
-      const [headers, ...dataRows] = json.values;
-      return normalizeCsvRows(dataRows.map(row => {
-        const obj = {};
-        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
-        return obj;
-      }));
+      const url = buildLegacyCloudfrontValuesUrl(LEGACY_API_BASE_PARAM, SHEET_ID, tabName, LEGACY_API_KEY_PARAM);
+      const useCache = cacheMode !== 'no-store';
+
+      if (useCache) {
+        const hit = window.pvElectionCache.get(url);
+        if (hit !== undefined) return hit;
+        if (window.pvElectionCache.pending[url]) return window.pvElectionCache.pending[url];
+      }
+
+      const doFetch = async () => {
+        const res = await fetch(url, { cache: cacheMode });
+        if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
+        const json = await res.json();
+        if (json.error) throw new Error(json.error);
+        if (!json.values || json.values.length < 2) return [];
+        const [headers, ...dataRows] = json.values;
+        return normalizeCsvRows(dataRows.map(row => {
+          const obj = {};
+          headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
+          return obj;
+        }));
+      };
+
+      if (!useCache) return doFetch();
+
+      const promise = doFetch().then(rows => {
+        window.pvElectionCache.set(url, rows);
+        delete window.pvElectionCache.pending[url];
+        return rows;
+      }).catch(e => {
+        delete window.pvElectionCache.pending[url];
+        throw e;
+      });
+      window.pvElectionCache.pending[url] = promise;
+      return promise;
     }
 
     async function loadMultiSheetValues(requests, cacheMode = 'force-cache') {
