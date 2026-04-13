@@ -593,7 +593,8 @@
     // Query params continue to take precedence when provided.
     const DEFAULT_PUBLISHED_SHEET_KEY = '2PACX-1vQ36TTM8PshuA8ODBEDceUqhEiKyQ1BkNE-KG6S8WPy8LU2r6qOBLtSMNQhJP0jDSWCIZyJMTgx6x4A';
     const DEFAULT_PUBLISHED_SHEET_URL = '';
-    const DEFAULT_API_URL = 'https://script.google.com/macros/s/AKfycbzNrPDIMJrKiUtJA_bTnrwj5xHJDy8ebWWNFawSs4f0YDGTimt0QK20sT9SuUaFIjZf/exec';
+    const DEFAULT_LEGACY_API_BASE = 'https://d167rmgvosnh6r.cloudfront.net';
+    const DEFAULT_LEGACY_API_KEY = 'AIzaSyC0zoFtuDm_zspdl_D0q1Nqtnos8AZOSsc';
     const DEFAULT_SHEET_ID = '13w-_-vUgl-dRglyKNHBj5qxdzHEv3PtLdrIs3gsFiSg';
     const DEFAULT_PUBLISHED_GIDS = Object.freeze({
       results: '1602016273',
@@ -607,7 +608,21 @@
       i18n: '1833633264'
     });
 
-    const API_URL_PARAM = (QUERY_PARAMS.get('apiUrl') || QUERY_PARAMS.get('appsScriptUrl') || DEFAULT_API_URL).trim();
+    const SOURCE_MODE = String(QUERY_PARAMS.get('sourceMode') || 'legacyCloudfront').trim().toLowerCase();
+    const IS_LEGACY_CLOUDFRONT_MODE = SOURCE_MODE === 'legacycloudfront';
+    const LEGACY_API_BASE_PARAM = (
+      QUERY_PARAMS.get('legacyApiBase') ||
+      QUERY_PARAMS.get('cloudfrontApiBase') ||
+      DEFAULT_LEGACY_API_BASE
+    ).trim();
+    const LEGACY_API_KEY_PARAM = (
+      QUERY_PARAMS.get('legacyApiKey') ||
+      QUERY_PARAMS.get('cloudfrontApiKey') ||
+      DEFAULT_LEGACY_API_KEY
+    ).trim();
+    if (!IS_LEGACY_CLOUDFRONT_MODE) {
+      throw new Error('Unsupported sourceMode. This widget only supports legacyCloudfront.');
+    }
     const SHEET_ID_PARAM = QUERY_PARAMS.get('sheetId');
     const SHEET_URL_PARAM = QUERY_PARAMS.get('sheetUrl');
     const PUBLISHED_SHEET_URL_PARAM =
@@ -897,6 +912,17 @@
 
     function buildGooglePublishedHtmlUrl(publishedKey){
       return `https://docs.google.com/spreadsheets/d/e/${encodeURIComponent(publishedKey)}/pubhtml`;
+    }
+
+    function buildLegacyCloudfrontValuesUrl(apiBase, sheetId, tabName, apiKey) {
+      const trimmedBase = String(apiBase || '').trim().replace(/\/+$/g, '');
+      if (!trimmedBase) throw new Error('Missing legacyApiBase');
+      if (!sheetId) throw new Error('Missing sheetId');
+      if (!tabName) throw new Error('Missing tab name');
+      if (!apiKey) throw new Error('Missing legacyApiKey');
+      const url = new URL(`${trimmedBase}/v4/spreadsheets/${encodeURIComponent(sheetId)}/values/${encodeURIComponent(tabName)}`);
+      url.searchParams.set('key', apiKey);
+      return url.toString();
     }
 
     function normalizeTabLookupKey(value){
@@ -1299,7 +1325,7 @@
       if (currentLang === 'kn') {
         if (!cachedI18nRows) {
           try {
-            if (!API_URL_PARAM || !SHEET_ID) throw new Error('Missing apiUrl or sheetId.');
+            if (!SHEET_ID || !LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) throw new Error('Missing legacyCloudfront configuration.');
             cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels', 'force-cache');
           } catch (_) {}
         }
@@ -2360,8 +2386,7 @@
     }
 
     async function loadSheetValues(tabName, cacheMode = 'force-cache', stateFilter = '') {
-      let url = `${API_URL_PARAM}?action=values&sheetId=${encodeURIComponent(SHEET_ID)}&tab=${encodeURIComponent(tabName)}`;
-      if (stateFilter) url += `&stateFilter=${encodeURIComponent(stateFilter)}`;
+      let url = buildLegacyCloudfrontValuesUrl(LEGACY_API_BASE_PARAM, SHEET_ID, tabName, LEGACY_API_KEY_PARAM);
       const res = await fetch(url, { cache: cacheMode });
       if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
       const json = await res.json();
@@ -2375,40 +2400,14 @@
       }));
     }
 
-    function buildMultiSheetValuesApiUrl(requests) {
-      const url = new URL(API_URL_PARAM, location.href);
-      url.searchParams.set('action', 'multiValues');
-      url.searchParams.set('sheetId', SHEET_ID);
-      (requests || []).forEach((request) => {
-        if (!request || !request.alias || !request.tabName) return;
-        url.searchParams.append('request', [request.alias, request.tabName, request.stateFilter || ''].join('|'));
-      });
-      return url.toString();
-    }
-
-    function rowsFromValuesPayload(payload) {
-      if (!payload || !payload.values || payload.values.length < 2) return [];
-      const [headers, ...dataRows] = payload.values;
-      return normalizeCsvRows(dataRows.map(row => {
-        const obj = {};
-        headers.forEach((h, i) => { obj[h] = row[i] ?? ''; });
-        return obj;
-      }));
-    }
-
     async function loadMultiSheetValues(requests, cacheMode = 'force-cache') {
       const filteredRequests = (requests || []).filter((request) => request && request.alias && request.tabName);
       if (!filteredRequests.length) return {};
-      const res = await fetch(buildMultiSheetValuesApiUrl(filteredRequests), { cache: cacheMode });
-      if (!res.ok) throw new Error(`Sheet API HTTP ${res.status}`);
-      const json = await res.json();
-      if (json.error) throw new Error(json.error);
-      const results = json.results && typeof json.results === 'object' ? json.results : {};
-      const rowsByAlias = {};
-      Object.keys(results).forEach((alias) => {
-        rowsByAlias[alias] = rowsFromValuesPayload(results[alias]);
-      });
-      return rowsByAlias;
+      const entries = await Promise.all(filteredRequests.map(async (request) => {
+        const rows = await loadSheetValues(request.tabName, cacheMode, request.stateFilter || '');
+        return [request.alias, rows];
+      }));
+      return Object.fromEntries(entries);
     }
 
     async function loadJson(url, description, optional = false){
@@ -2425,7 +2424,10 @@
 
     async function loadElectionDataForState(stateKey, cfg){
       resetElectionCaches();
-      if (!API_URL_PARAM || !SHEET_ID) return false;
+      if (!SHEET_ID) throw new Error('Missing sheetId.');
+      if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
+        throw new Error('Missing legacyApiBase or legacyApiKey.');
+      }
       const staticMode = staticCsvCacheMode();
 
       if (_fullStaticCache) {
