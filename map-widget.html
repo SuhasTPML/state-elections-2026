@@ -338,6 +338,11 @@
     .ac:not(.no-hover):hover { fill: #a9d0ff; cursor: pointer; }
     .selected { stroke-width: 3; }
     .dimmed { opacity: 0.3; transition: opacity 0.2s ease; }
+    @keyframes blink-leading {
+      0%, 100% { fill-opacity: 1; }
+      50% { fill-opacity: 0.3; }
+    }
+    .leading-blink { animation: blink-leading 1.2s ease-in-out infinite; }
 
     #mapControls {
       position: absolute;
@@ -1750,7 +1755,7 @@
       const is2026Mode = parsed && parsed.year === '2026';
       if (!is2026Mode) return baseColor;
       if (!isLeadingStatus(row) || !hasAny2026WinnerField(row)) return baseColor;
-      return getLeadingStripePatternFill(baseColor);
+      return baseColor;
     }
 
     function inferColorModes(rows){
@@ -2056,8 +2061,16 @@
       legendEl.style.display = 'flex';
     }
 
+    function isLeadingBlink(acNo, mode){
+      const row = electionData.get(acNo);
+      if (!row) return false;
+      const parsed = parseMode(mode);
+      return parsed && parsed.year === '2026' && isLeadingStatus(row) && hasAny2026WinnerField(row);
+    }
+
     function applyCurrentColorMode(){
       g.selectAll('path.ac').attr('fill', d => getFillForMode(featureKey(d.properties), currentColorMode));
+      g.selectAll('path.ac').classed('leading-blink', d => isLeadingBlink(featureKey(d.properties), currentColorMode));
       if (selectedKey) {
         g.selectAll('path.ac').attr('stroke', d => {
           const key = featureKey(d.properties);
@@ -2075,13 +2088,19 @@
         return;
       }
 
-      if (!activeColorModes.includes(currentColorMode)) {
-        if (ENABLE_2026_MODES && activeColorModes.includes('alliance-2026')) {
-          currentColorMode = 'alliance-2026';
-        } else {
-          const firstAllianceMode = activeColorModes.find((mode) => /^alliance-\d{4}$/.test(mode));
+      {
+        const availableYears = inferAvailableYears(activeColorModes).sort();
+        const latestYear = availableYears[availableYears.length - 1];
+        if (latestYear) {
+          const preferredMode = `${currentModeView}-${latestYear}`;
+          currentColorMode = activeColorModes.includes(preferredMode) ? preferredMode
+            : activeColorModes.includes(`alliance-${latestYear}`) ? `alliance-${latestYear}`
+            : activeColorModes.includes(`party-${latestYear}`) ? `party-${latestYear}`
+            : currentColorMode;
+        }
+        if (!activeColorModes.includes(currentColorMode)) {
           const firstPartyMode = activeColorModes.find((mode) => /^party-\d{4}$/.test(mode));
-          currentColorMode = firstAllianceMode || firstPartyMode || (activeColorModes.includes('reserved') ? 'reserved' : activeColorModes[0]);
+          currentColorMode = firstPartyMode || (activeColorModes.includes('reserved') ? 'reserved' : activeColorModes[0]);
         }
       }
 
@@ -2706,6 +2725,7 @@
         .attr('data-key', d => featureKey(d.properties))
         .attr('d', d => path(d))
         .attr('fill', d => getFillForMode(featureKey(d.properties), currentColorMode))
+        .classed('leading-blink', d => isLeadingBlink(featureKey(d.properties), currentColorMode))
         .attr('stroke', '#1f77b4')
         .on('mouseenter', (ev, d) => showTooltip(ev, d))
         .on('mousemove', (ev) => moveTooltip(ev))

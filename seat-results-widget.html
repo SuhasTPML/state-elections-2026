@@ -1264,7 +1264,7 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   currentStateKey = targetStateKey;
   const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
   const years = Array.isArray(state.years) ? state.years : [];
-  currentYear = years[0] || null;
+  currentYear = years[years.length - 1] || null;
   if (previousYear && years.includes(previousYear)) {
     currentYear = previousYear;
   }
@@ -1707,7 +1707,7 @@ function loadState(key, { fromRotation = false } = {}) {
   if (!fromRotation) noteRotationInteraction();
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
-  currentYear = state.years[0];
+  currentYear = state.years[state.years.length - 1];
   ensureMiniMapLoaded(key);
   setActiveStateTab(key);
   buildYearTabs(state);
