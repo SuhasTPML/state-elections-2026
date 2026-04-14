@@ -656,6 +656,14 @@
     const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
     const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
     const I18N_TAB_NAME = (QUERY_PARAMS.get('i18nTab') || 'Kannada_Labels').trim();
+    const DEFAULT_REFRESH_MS = 2 * 60 * 1000;
+    const REFRESH_MS = (() => {
+      const refreshMsRaw = Number(QUERY_PARAMS.get('refreshMs'));
+      if (Number.isFinite(refreshMsRaw) && refreshMsRaw > 0) return refreshMsRaw;
+      const refreshSecondsRaw = Number(QUERY_PARAMS.get('refreshSeconds'));
+      if (Number.isFinite(refreshSecondsRaw) && refreshSecondsRaw > 0) return refreshSecondsRaw * 1000;
+      return DEFAULT_REFRESH_MS;
+    })();
 
     const RESULTS_TAB_FALLBACKS = [
       'constituency_static',
@@ -735,6 +743,8 @@
     let PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
     let ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
     let I18N_SHEET_URL = I18N_CSV_URL_PARAM;
+    let refreshTimer = null;
+    let refreshInFlight = false;
     const LANGUAGE_QUERY_PARAM = 'lang';
     // 2026 tabs are auto-enabled whenever live 2026 rows are present
     // (status: LEADING/DECLARED with at least one 2026 winner field).
@@ -2620,6 +2630,22 @@
       return electionData.size > 0;
     }
 
+    async function refreshCurrentStateLiveData() {
+      if (refreshInFlight || !currentState || !STATE_CONFIG[currentState]) return;
+      refreshInFlight = true;
+      try {
+        await loadElectionDataForState(currentState, STATE_CONFIG[currentState]);
+        applyCurrentColorMode();
+        if (selectedKey && featureByKey.has(selectedKey)) {
+          renderDetails(featureByKey.get(selectedKey));
+        }
+      } catch (e) {
+        console.error('[map-widget] live refresh failed:', e);
+      } finally {
+        refreshInFlight = false;
+      }
+    }
+
     function _startFullStaticCacheLoad(staticMode) {
       if (_fullStaticCachePromise) return;
       // Only re-fetch tabs that had stateFilter (results, mappingLive).
@@ -3241,6 +3267,10 @@
       bindControls();
       updateMapDimensions();
       await loadState(initialStateFromQuery());
+      if (REFRESH_MS > 0) {
+        if (refreshTimer) clearInterval(refreshTimer);
+        refreshTimer = setInterval(refreshCurrentStateLiveData, REFRESH_MS);
+      }
     }
 
     function postEmbedSize(reason = 'manual') {
@@ -3255,6 +3285,9 @@
     try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
     window.addEventListener('load',   () => postEmbedSize('load'));
     window.addEventListener('resize', () => postEmbedSize('window-resize'));
+    window.addEventListener('beforeunload', () => {
+      if (refreshTimer) clearInterval(refreshTimer);
+    });
     setTimeout(() => postEmbedSize('init'), 0);
 
     init();

@@ -508,6 +508,14 @@
     const ALLIANCES_CSV_URL_PARAM = (QUERY.get('alliancesCsvUrl') || '').trim();
     const PARTIES_GID_PARAM = (QUERY.get('partiesGid') || '').trim();
     const ALLIANCES_GID_PARAM = (QUERY.get('alliancesGid') || '').trim();
+    const DEFAULT_REFRESH_MS = 2 * 60 * 1000;
+    const REFRESH_MS = (() => {
+      const refreshMs = Number(QUERY.get('refreshMs'));
+      if (Number.isFinite(refreshMs) && refreshMs > 0) return refreshMs;
+      const refreshSeconds = Number(QUERY.get('refreshSeconds'));
+      if (Number.isFinite(refreshSeconds) && refreshSeconds > 0) return refreshSeconds * 1000;
+      return DEFAULT_REFRESH_MS;
+    })();
 
     const STATE_TABS = [
       { key: 'WEST_BENGAL', label: 'West Bengal' },
@@ -536,6 +544,8 @@
     let rotateTimer = null;
     let rotatePauseTimer = null;
     let rotationSuspendedUntil = 0;
+    let liveRefreshTimer = null;
+    let liveRefreshInFlight = false;
     const LOADER_CLASS = 'widget-loading';
 
     function setWidgetLoading(isLoading) {
@@ -994,6 +1004,22 @@
         || String(a.constituency || '').localeCompare(String(b.constituency || ''))
       );
       return battles;
+    }
+
+    function applyPinnedBattleFilters(battles) {
+      let filtered = Array.isArray(battles) ? battles : [];
+      if (BATTLE_PARAM) {
+        filtered = filtered.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM));
+      }
+      if (CONSTITUENCY_PARAM) {
+        const cq = CONSTITUENCY_PARAM.toLowerCase();
+        filtered = filtered.filter((b) =>
+          slugify(b.constituency) === slugify(CONSTITUENCY_PARAM) ||
+          String(b.acNo || '').trim().toLowerCase() === cq ||
+          (b.constituency || '').toLowerCase().includes(cq)
+        );
+      }
+      return filtered;
     }
 
     // ── UI helpers ────────────────────────────────────────────────────────────
@@ -1544,6 +1570,26 @@
       }, 8000);
     }
 
+    async function refreshLiveDataInBackground() {
+      if (liveRefreshInFlight) return;
+      liveRefreshInFlight = true;
+      try {
+        const rowsByAlias = await loadMultiSheetValues([
+          { alias: 'battles', tabName: TAB_NAME },
+          { alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME }
+        ], 'no-store');
+        const rows = rowsByAlias.battles || [];
+        const mappingRows = rowsByAlias.mappingLive || [];
+        const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
+        allBattles = applyPinnedBattleFilters(buildBattles(rows, liveAllianceMapping));
+        render(allBattles);
+      } catch (err) {
+        console.error('[key-battles-widget] live refresh failed:', err);
+      } finally {
+        liveRefreshInFlight = false;
+      }
+    }
+
     function updateDesktopNav() {
       const prevBtn = document.getElementById('desktop-prev');
       const nextBtn = document.getElementById('desktop-next');
@@ -1578,6 +1624,9 @@
       listEl.addEventListener('scroll', updateDesktopNav, { passive: true });
       window.addEventListener('resize', updateDesktopNav);
       window.addEventListener('beforeunload', clearRotateTimer);
+      window.addEventListener('beforeunload', () => {
+        if (liveRefreshTimer) clearInterval(liveRefreshTimer);
+      });
     }
 
     async function init() {
@@ -1600,16 +1649,8 @@
         ALLIANCE_COLORS = parseAllianceColors(allianceColorRows);
         const liveAllianceMapping = parseAllianceMappingRows(mappingRows);
         allBattles = buildBattles(rows, liveAllianceMapping);
-        let filtered = BATTLE_PARAM
-          ? allBattles.filter((b) => slugify(b.id) === slugify(BATTLE_PARAM) || slugify(b.rawId) === slugify(BATTLE_PARAM))
-          : allBattles;
+        let filtered = applyPinnedBattleFilters(allBattles);
         if (CONSTITUENCY_PARAM) {
-          const cq = CONSTITUENCY_PARAM.toLowerCase();
-          filtered = filtered.filter((b) =>
-            slugify(b.constituency) === slugify(CONSTITUENCY_PARAM) ||
-            String(b.acNo || '').trim().toLowerCase() === cq ||
-            (b.constituency || '').toLowerCase().includes(cq)
-          );
           currentStateFilter = ''; // bypass state filter in render()
           // tabs and search stay hidden (already hidden during load)
         } else {
@@ -1619,6 +1660,10 @@
         }
         allBattles = filtered;
         render(allBattles);
+        if (REFRESH_MS > 0) {
+          if (liveRefreshTimer) clearInterval(liveRefreshTimer);
+          liveRefreshTimer = setInterval(refreshLiveDataInBackground, REFRESH_MS);
+        }
         setWidgetLoading(false);
       } catch (err) {
         setWidgetLoading(false);

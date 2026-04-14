@@ -415,6 +415,7 @@ const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim(
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
 const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
 const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
+const DEFAULT_REFRESH_MS = 2 * 60 * 1000;
 // Preferred display order of state tabs (matches map-widget)
 const STATE_TAB_ORDER = ['WEST_BENGAL', 'TAMIL_NADU', 'KERALA', 'ASSAM', 'PUDUCHERRY'];
 const REFRESH_MS = (() => {
@@ -422,7 +423,7 @@ const REFRESH_MS = (() => {
   if (refreshMs != null && refreshMs > 0) return refreshMs;
   const refreshSeconds = parseNumber(QUERY_PARAMS.get('refreshSeconds'));
   if (refreshSeconds != null && refreshSeconds > 0) return refreshSeconds * 1000;
-  return 0;
+  return DEFAULT_REFRESH_MS;
 })();
 
 const PARTY_YEAR_CSV_URL_PARAM = (
@@ -1288,7 +1289,10 @@ async function refreshDataInBackground() {
   errorEl.textContent = LANG === 'kn' ? 'ಡೇಟಾ ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ...' : 'Refreshing data...';
 
   try {
-    const nextData = await loadDataFromGoogleSheet();
+    const nextData = await loadDataFromGoogleSheet('', {
+      staticCacheMode: 'force-cache',
+      liveCacheMode: 'no-store'
+    });
     applyDataAndRender(nextData, true);
     errorEl.textContent = '';
     errorEl.style.color = '#c52626';
@@ -1348,13 +1352,15 @@ async function init() {
   }
 }
 
-async function loadDataFromGoogleSheet(stateFilter = ''){
+async function loadDataFromGoogleSheet(stateFilter = '', options = {}){
   if (!SHEET_ID) {
     throw new Error('Missing sheetId.');
   }
   if (!LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) {
     throw new Error('Missing legacyApiBase or legacyApiKey.');
   }
+  const staticCacheMode = options.staticCacheMode || 'no-store';
+  const liveCacheMode = options.liveCacheMode || 'no-store';
   // stateFilter applied only to summary (large) tabs; mapping/parties/alliances are small and global
   const requests = [
     { alias: 'summary', tabName: PARTY_YEAR_TAB_NAME, stateFilter: stateFilter },
@@ -1364,8 +1370,13 @@ async function loadDataFromGoogleSheet(stateFilter = ''){
   ];
   if (MAPPING_LIVE_TAB_NAME) requests.push({ alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME });
   if (PARTY_YEAR_LIVE_TAB_NAME) requests.push({ alias: 'livePartywise', tabName: PARTY_YEAR_LIVE_TAB_NAME, stateFilter: stateFilter });
-
-  const rowsByAlias = await loadMultiSheetValues(SHEET_ID, requests, 'Legacy CloudFront API', 'no-store');
+  const staticRequests = requests.filter((request) => request.alias !== 'mappingLive' && request.alias !== 'livePartywise');
+  const liveRequests = requests.filter((request) => request.alias === 'mappingLive' || request.alias === 'livePartywise');
+  const [staticRowsByAlias, liveRowsByAlias] = await Promise.all([
+    loadMultiSheetValues(SHEET_ID, staticRequests, 'Legacy CloudFront API', staticCacheMode),
+    loadMultiSheetValues(SHEET_ID, liveRequests, 'Legacy CloudFront API', liveCacheMode)
+  ]);
+  const rowsByAlias = { ...staticRowsByAlias, ...liveRowsByAlias };
   const rawSummaryRows = rowsByAlias.summary || [];
   const mappingRows = rowsByAlias.mapping || [];
   const mappingLiveRows = rowsByAlias.mappingLive || [];
