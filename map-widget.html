@@ -634,7 +634,7 @@
       (QUERY_PARAMS.get('publishedSheetUrl') || QUERY_PARAMS.get('publishedUrl') || DEFAULT_PUBLISHED_SHEET_URL).trim();
     const PUBLISHED_SHEET_KEY_PARAM = (QUERY_PARAMS.get('publishedKey') || DEFAULT_PUBLISHED_SHEET_KEY).trim();
 
-    const RESULTS_TAB_NAME = (QUERY_PARAMS.get('resultsTab') || 'Constituency_Static').trim();
+    const RESULTS_TAB_NAME = (QUERY_PARAMS.get('resultsTab') || 'Constituency_Static_2026').trim();
     const PARTY_WISE_TAB_PARAM = (QUERY_PARAMS.get('partyWiseTab') || '').trim();
     // Default to the results tab itself — no separate party-wise tab in current sheet structure
     const PARTY_WISE_TAB_NAME = (PARTY_WISE_TAB_PARAM || RESULTS_TAB_NAME).trim();
@@ -652,7 +652,7 @@
       PARTY_WISE_LIVE_TAB_PARAM ||
       (RESULTS_LIVE_TAB_NAME || '')
     ).trim();
-    const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map').trim();
+    const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map_2026').trim();
     const MAPPING_LIVE_TAB_NAME = (
       QUERY_PARAMS.get('mappingLiveTab') ||
       QUERY_PARAMS.get('liveMappingTab') ||
@@ -660,7 +660,7 @@
     ).trim();
     const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
     const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
-    const I18N_TAB_NAME = (QUERY_PARAMS.get('i18nTab') || 'Kannada_Labels').trim();
+    const I18N_TAB_NAME = (QUERY_PARAMS.get('i18nTab') || 'Kannada_Labels_2026').trim();
     const DEFAULT_REFRESH_MS = 2 * 60 * 1000;
     const REFRESH_MS = (() => {
       const refreshMsRaw = Number(QUERY_PARAMS.get('refreshMs'));
@@ -1341,7 +1341,7 @@
         if (!cachedI18nRows) {
           try {
             if (!SHEET_ID || !LEGACY_API_BASE_PARAM || !LEGACY_API_KEY_PARAM) throw new Error('Missing legacyCloudfront configuration.');
-            cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels', 'force-cache');
+            cachedI18nRows = await loadSheetValues(I18N_TAB_NAME || 'Kannada_Labels_2026', 'force-cache');
           } catch (_) {}
         }
         const parsed = parseI18nRows(cachedI18nRows || []);
