@@ -3,3 +3,4 @@ misc/legacy/Bihar elections/
 .claspignore
 .clasp-remote-check/
 CLASP_WORKFLOW.md
+.agents/codex-failure-log.md
