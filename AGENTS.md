@@ -53,9 +53,20 @@ Use this template:
 - Before finishing a task that required recovering from a failed attempt, update `.agents/codex-failure-log.md`.
 - Before retrying a similar workflow, scan `.agents/codex-failure-log.md` for relevant past failures.
 
+### Preflight check
+
+- Before high-risk or failure-prone workflows, quickly scan `.agents/codex-failure-log.md` for relevant past mistakes.
+- Treat this as required before:
+  - Git operations that change branch state, merge, rebase, or commit strategy
+  - network verification or remote fetches such as `curl`, API probing, or published-sheet checks
+  - `apply_patch` sequences after a failed edit attempt
+  - local hosting, browser QA, or other workflows that have already failed once in this repo
+- If a relevant prior failure exists, follow its `Next-time rule` unless there is a clear reason not to.
+
 ## Command Preference
 
 - Run `curl` requests with elevated permissions in this repo by default, because networked `curl` checks may fail or behave inconsistently under the sandbox.
+- Run local server commands with elevated permissions in this repo by default, because sandboxed launches may fail or leave the server unreachable from browser QA tools.
 
 ## Local Hosting
 
@@ -68,6 +79,8 @@ Use these steps when you need to host the widgets locally for QA or browser test
 - Seat results widget entry point: `seat-results-widget.html`
 
 ### Start a local server
+
+Use escalated permissions by default when starting the server for QA.
 
 From the repo root, run:
 
@@ -82,6 +95,8 @@ http://127.0.0.1:8000/map-widget.html
 ```
 
 ### Persistent local server
+
+Use escalated permissions by default for detached local server launches as well.
 
 If you need the server to keep running independently of the current terminal session, start it as a detached process:
 

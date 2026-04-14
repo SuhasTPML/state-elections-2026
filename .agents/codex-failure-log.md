@@ -58,3 +58,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `apply_patch` failed with a file-not-found error even though the file existed in the repo.
 - Working approach: Re-run `apply_patch` with the full absolute path under `C:\Users\suhas.bhandari\Downloads\Claude\Experiments\CMS Widgets\Elections`.
 - Next-time rule: When patching by absolute path in this repo, copy the full `cwd` prefix exactly from the environment context before editing.
+
+## 2026-04-14 - Use the real Python interpreter for detached local hosting
+- Context: Starting the repo-root HTTP server for browser QA.
+- Command/workflow: Detached local hosting with `Start-Process`.
+- Failed approach: Launched `Start-Process` with `C:\Users\suhas.bhandari\.local\bin\py.cmd` and `-3 -m http.server ...`.
+- Symptom: `Start-Process` returned a PID, but the process exited immediately and Playwright hit `ERR_CONNECTION_REFUSED`.
+- Working approach: Launch `Start-Process` with `C:\Users\suhas.bhandari\AppData\Local\Programs\Python\Python312\python.exe -m http.server 8000 --bind 127.0.0.1`.
+- Next-time rule: For detached local servers in this repo, do not use `py.cmd` as a launcher; use the real Python executable with escalated permissions.
