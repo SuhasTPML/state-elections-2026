@@ -68,6 +68,25 @@ Use this template:
 - Run `curl` requests with elevated permissions in this repo by default, because networked `curl` checks may fail or behave inconsistently under the sandbox.
 - Run local server commands with elevated permissions in this repo by default, because sandboxed launches may fail or leave the server unreachable from browser QA tools.
 
+## Graph Context
+
+Use the widget graph as required codebase context for this repo.
+
+- Before answering architecture, dependency, embed, or widget-relationship questions, first read `graphify-corpus/graphify-out/GRAPH_REPORT.md`.
+- Treat `graphify-corpus/graphify-out/graph.json` as the repo map for the three widget files plus `iframe embeds/`.
+- If the graph outputs are present, consult them before falling back to raw-file exploration for cross-file context.
+- If a task changes widget behavior, shared params, shared tabs, or embed wiring, refresh the graph before finishing.
+
+### Commit rule
+
+- Before every commit, update the graph for:
+  - `map-widget.html`
+  - `seat-results-widget.html`
+  - `key-battles-widget.html`
+  - `iframe embeds/`
+- Keep outputs under `graphify-corpus/graphify-out/`.
+- If the graph cannot be refreshed, call that out before committing.
+
 ## Local Hosting
 
 Use these steps when you need to host the widgets locally for QA or browser testing.
