@@ -1550,7 +1550,6 @@ async function buildShareCanvas() {
         .parliament-seat.is-lead {
           opacity: 1 !important;
           fill-opacity: 1 !important;
-          stroke-width: 1.5px !important;
           animation: none !important;
           filter: none !important;
         }
@@ -1564,13 +1563,12 @@ async function buildShareCanvas() {
 
       clonedDoc.querySelectorAll('.parliament-seat.is-lead').forEach((node) => {
         const baseFill = node.getAttribute('fill') || node.style.fill;
-        const stroke = node.style.stroke || node.getAttribute('stroke') || '#1f2937';
         if (baseFill) {
           node.style.fill = baseFill;
           node.style.opacity = '0.38';
         }
-        node.style.stroke = stroke;
-        node.style.strokeWidth = '1.5px';
+        node.style.stroke = '#fff';
+        node.style.strokeWidth = '1px';
       });
 
       clonedDoc.querySelectorAll('.majority-progress-track .seg-leads').forEach((node) => {
@@ -1998,7 +1996,7 @@ function highlight(name, color) {
 
 function resetHighlight() {
   chartGroup.selectAll('.parliament-seat').classed('dimmed', false)
-    .style('stroke', d => d.type === 'lead' ? d3.color(d.color).darker(0.75).formatHex() : '#fff')
+    .style('stroke', '#fff')
     .style('stroke-width', '1px')
     .style('fill', d => d.color);
   d3.selectAll('.legend-item').style('opacity', 1).style('font-weight', 'normal');
@@ -2112,7 +2110,7 @@ function render() {
     x => x.transition().duration(350).attr('r', 0).remove()
   ).classed('is-lead', d => d.type === 'lead')
    .attr('fill', d => d.color)
-   .style('stroke', d => d.type === 'lead' ? d.color : '#fff')
+   .style('stroke', '#fff')
    .style('stroke-width', '1px')
    .style('pointer-events', 'none');
 
