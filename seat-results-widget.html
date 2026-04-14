@@ -1125,6 +1125,16 @@ function mergeSummaryRowsWithLivePartywise(staticRows, livePartywiseRows){
   return [...base, ...live];
 }
 
+function getMostRecentYear(years) {
+  const normalizedYears = Array.isArray(years)
+    ? years.filter((year) => String(year || '').trim())
+    : [];
+  if (!normalizedYears.length) return null;
+  return normalizedYears
+    .slice()
+    .sort((a, b) => Number(b) - Number(a))[0] || null;
+}
+
 // ─────────────────────────────────────────────
 //  State
 // ─────────────────────────────────────────────
@@ -1264,7 +1274,7 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   currentStateKey = targetStateKey;
   const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
   const years = Array.isArray(state.years) ? state.years : [];
-  currentYear = years[years.length - 1] || null;
+  currentYear = getMostRecentYear(years);
   if (previousYear && years.includes(previousYear)) {
     currentYear = previousYear;
   }
@@ -1707,7 +1717,7 @@ function loadState(key, { fromRotation = false } = {}) {
   if (!fromRotation) noteRotationInteraction();
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
-  currentYear = state.years[state.years.length - 1];
+  currentYear = getMostRecentYear(state && state.years);
   ensureMiniMapLoaded(key);
   setActiveStateTab(key);
   buildYearTabs(state);
