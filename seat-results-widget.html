@@ -1291,6 +1291,29 @@ function getMostRecentYear(years) {
     .sort((a, b) => Number(b) - Number(a))[0] || null;
 }
 
+function getYearTotalSeats(state, year) {
+  const normalizedYear = String(year || '').trim();
+  if (!state || !normalizedYear || !Array.isArray(state.parties)) return 0;
+  return state.parties.reduce((sum, party) => {
+    const results = party && party.results ? party.results[normalizedYear] : null;
+    const wins = Number(results && results.wins) || 0;
+    const leads = Number(results && results.leads) || 0;
+    return sum + wins + leads;
+  }, 0);
+}
+
+function shouldShowYearTab(state, year) {
+  const normalizedYear = String(year || '').trim();
+  if (!normalizedYear) return false;
+  if (normalizedYear !== '2026') return true;
+  return getYearTotalSeats(state, normalizedYear) > 0;
+}
+
+function getVisibleYears(state) {
+  const years = Array.isArray(state && state.years) ? state.years : [];
+  return years.filter((year) => shouldShowYearTab(state, year));
+}
+
 // ─────────────────────────────────────────────
 //  State
 // ─────────────────────────────────────────────
@@ -1429,8 +1452,10 @@ function applyDataAndRender(nextData, preserveSelection = false) {
 
   currentStateKey = targetStateKey;
   const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
-  const years = Array.isArray(state.years) ? state.years : [];
+  const years = getVisibleYears(state);
+  const fallbackYears = Array.isArray(state.years) ? state.years : [];
   currentYear = getMostRecentYear(years);
+  if (!currentYear) currentYear = getMostRecentYear(fallbackYears);
   if (previousYear && years.includes(previousYear)) {
     currentYear = previousYear;
   }
@@ -1585,7 +1610,8 @@ function setActiveStateTab(key) {
 function buildYearTabs(state) {
   const el = document.getElementById('year-tabs');
   el.innerHTML = '';
-  state.years.forEach(y => {
+  const years = getVisibleYears(state);
+  years.forEach(y => {
     const btn = document.createElement('button');
     btn.className = 'year-btn';
     btn.dataset.year = y;
@@ -1871,7 +1897,9 @@ function loadState(key, { fromRotation = false } = {}) {
   if (!fromRotation) noteRotationInteraction();
   currentStateKey = key;
   const state = DATA.states.find(s => s.key === key);
-  currentYear = getMostRecentYear(state && state.years);
+  const visibleYears = getVisibleYears(state);
+  currentYear = getMostRecentYear(visibleYears);
+  if (!currentYear) currentYear = getMostRecentYear(state && state.years);
   ensureMiniMapLoaded(key);
   setActiveStateTab(key);
   buildYearTabs(state);
