@@ -417,6 +417,30 @@
         min-width: 64px;
       }
     }
+
+    @media (max-width: 767px) {
+      #widgetViewport {
+        padding: 2px;
+      }
+      .widget {
+        padding: 2px 4px 4px;
+      }
+      .tab-row {
+        margin-bottom: 5px;
+      }
+      .controls-row {
+        gap: 6px;
+        margin-bottom: 4px;
+        padding-top: 4px;
+      }
+      #legend {
+        margin-top: 8px;
+        gap: 6px 10px;
+      }
+      .share-status {
+        margin-top: 4px;
+      }
+    }
   </style>
 </head>
 <body class="widget-loading">
@@ -2159,14 +2183,15 @@ function render() {
   ) || 0;
   const container  = document.getElementById('chart-svg-container');
   const width      = container.getBoundingClientRect().width || 600;
-  const chartHeight = width / 2;
+  const isDesktopLayout = window.matchMedia('(min-width: 768px)').matches;
+  const chartHeight = width / (isDesktopLayout ? 2 : 2.34);
   const totalFontSize = Math.max(18, Math.round(chartHeight * 0.1));
   const majorityFontSize = Math.max(10, Math.round(chartHeight * 0.055));
   const centerMajorityY = totalFontSize * 1.2;
   const { positions, seatRadius } = calculateLayout(totalSeats, chartHeight);
 
   // ViewBox
-  const pad = 30;
+  const pad = isDesktopLayout ? 30 : 18;
   let minX = -width/2, maxX = width/2, minY = -chartHeight - pad, maxY = pad + 20;
   if (positions.length) {
     const xs = positions.map(p => p.x), ys = positions.map(p => p.y);
