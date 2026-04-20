@@ -72,10 +72,14 @@ Use this template:
 
 Use the widget graph as required codebase context for this repo.
 
+- `graphify-corpus/` is a generated analysis snapshot, not the canonical source tree.
+- Edit the root widget and embed files first; only refresh the corpus copies when you are regenerating the graph.
+- Use `python scripts/sync_graphify_corpus.py` to mirror the canonical files into `graphify-corpus/` before regenerating the graph.
 - Before answering architecture, dependency, embed, or widget-relationship questions, first read `graphify-corpus/graphify-out/GRAPH_REPORT.md`.
 - Treat `graphify-corpus/graphify-out/graph.json` as the repo map for the three widget files plus `iframe embeds/`.
 - If the graph outputs are present, consult them before falling back to raw-file exploration for cross-file context.
 - If a task changes widget behavior, shared params, shared tabs, or embed wiring, refresh the graph before finishing.
+- When refreshing, regenerate the graph outputs from the root files so `graphify-corpus` stays aligned with the originals.
 
 ### Commit rule
 

@@ -36,9 +36,17 @@
     }
     * { box-sizing: border-box; }
     html, body { overflow: hidden; }
+    :root {
+      --widget-max-height: 500px;
+    }
+    @media (min-width: 768px) {
+      :root {
+        --widget-max-height: 410px;
+      }
+    }
     body {
       font-family: var(--pv-text);
-      background: #fff; color: #333; margin: 0; padding: 0; min-height: 500px; position: relative;
+      background: #fff; color: #333; margin: 0; padding: 0; min-height: var(--widget-max-height); position: relative;
     }
     .widget-loader {
       position: absolute;
@@ -52,7 +60,7 @@
     body.widget-loading .widget-loader { display: flex; }
     body.widget-loading #widgetViewport { visibility: hidden; }
     .widget-loader-player { width: 120px; height: 120px; }
-    #widgetViewport { height: 500px; overflow: hidden; width: 100%; padding: 4px; }
+    #widgetViewport { height: var(--widget-max-height); overflow: hidden; width: 100%; padding: 4px; }
     input, select, textarea, button { font-family: inherit; }
     .widget {
       max-width: 720px; margin: 0 auto;
@@ -160,6 +168,14 @@
     #chart-section { position: relative; }
     #chart-svg-container { width: 100%; }
     #chart-svg-container svg { display: block; width: 100%; }
+    .results-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .results-column {
+      min-width: 0;
+    }
     .share-btn {
       position: absolute;
       top: 8px;
@@ -236,13 +252,29 @@
       justify-content: start;
       white-space: nowrap;
     }
+    .wins-leads-progress.is-stacked {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3px;
+      white-space: normal;
+    }
     .wins-leads-value {
       width: 58px; min-width: 58px; text-align: right; font-size: 11px; color: #4b5563;
       font-variant-numeric: tabular-nums;
     }
+    .wins-leads-progress.is-stacked .wins-leads-value {
+      width: auto;
+      min-width: 0;
+      text-align: left;
+    }
     .majority-progress-track {
       position: relative; width: 112px; height: 8px; border-radius: 999px;
       overflow: visible;
+    }
+    .wins-leads-progress.is-stacked .majority-progress-track {
+      width: 100%;
+      max-width: 100%;
     }
     .majority-progress-fill-layer {
       position: absolute; inset: 0;
@@ -294,6 +326,48 @@
     html[lang="kn"] .year-btn { padding-top: 5px; padding-bottom: 0px; }
     html[lang="kn"] .toggle-label { position: relative; top: 1px; }
     html[lang="kn"] table { font-size: 14px; }
+
+    @media (min-width: 768px) {
+      .results-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.42fr);
+        gap: 10px 12px;
+        align-items: start;
+      }
+      .chart-column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .table-column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-height: 0;
+      }
+      #chart-section {
+        margin-top: 0;
+      }
+      #share-status {
+        margin-top: 0;
+        text-align: left;
+      }
+      #legend {
+        justify-content: flex-start;
+        margin-top: 0;
+      }
+      #table-container {
+        margin-top: 0;
+        overflow-y: auto;
+        max-height: calc(var(--widget-max-height) - 140px);
+      }
+      .total-progress-cell {
+        min-width: 148px;
+      }
+      .majority-number-cell {
+        min-width: 64px;
+      }
+    }
   </style>
 </head>
 <body class="widget-loading">
@@ -318,26 +392,32 @@
     </label>
   </div>
 
-  <!-- Chart -->
-  <div id="chart-section">
-    <button id="share-widget-btn" class="share-btn" type="button" data-html2canvas-ignore="true" aria-label="Share widget image">
-      <svg class="share-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/>
-        <path d="M12 16V3"/>
-        <path d="m7 8 5-5 5 5"/>
-      </svg>
-      <span>Share</span>
-    </button>
-    <div id="chart-svg-container"></div>
+  <div class="results-layout">
+    <div class="results-column chart-column">
+      <!-- Chart -->
+      <div id="chart-section">
+        <button id="share-widget-btn" class="share-btn" type="button" data-html2canvas-ignore="true" aria-label="Share widget image">
+          <svg class="share-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/>
+            <path d="M12 16V3"/>
+            <path d="m7 8 5-5 5 5"/>
+          </svg>
+          <span>Share</span>
+        </button>
+        <div id="chart-svg-container"></div>
+      </div>
+      <div id="share-status" class="share-status" data-html2canvas-ignore="true" aria-live="polite"></div>
+
+      <!-- Legend -->
+      <div id="legend"></div>
+    </div>
+
+    <div class="results-column table-column">
+      <!-- Table -->
+      <div id="table-container"></div>
+      <div id="error-msg"></div>
+    </div>
   </div>
-  <div id="share-status" class="share-status" data-html2canvas-ignore="true" aria-live="polite"></div>
-
-  <!-- Legend -->
-  <div id="legend"></div>
-
-  <!-- Table -->
-  <div id="table-container"></div>
-  <div id="error-msg"></div>
 </div>
 </div>
 
@@ -358,6 +438,9 @@ const ROTATE_INTERVAL_MS = 10000;
 const ROTATE_RESUME_DELAY_MS = 20000;
 const SHARE_LOGO_URL = 'https://images.assettype.com/deccanherald/2025-08-20/h9a4ohs5/DH-Logo';
 const SHARE_LOGO_URL_KN = 'https://images.assettype.com/prajavani/2026-04-09/pliuamgm/PV-logo.png';
+function getEmbedMaxHeight() {
+  return window.matchMedia('(min-width: 768px)').matches ? 410 : 500;
+}
 
 // Seat results source
 const DEFAULT_LEGACY_API_BASE = 'https://d167rmgvosnh6r.cloudfront.net';
@@ -2142,6 +2225,7 @@ function renderTable(display, majority = 0, totalSeats = 0) {
   container.innerHTML = '';
   const table = document.createElement('table');
   const isAllianceMajorityTable = viewMode === 'alliance' && majority > 0;
+  const isDesktopLayout = window.matchMedia('(min-width: 768px)').matches;
 
   // Header
   const thead = table.createTHead();
@@ -2185,7 +2269,7 @@ function renderTable(display, majority = 0, totalSeats = 0) {
       const winsLeadsTd = tr.insertCell();
       winsLeadsTd.className = 'total-progress-cell';
       winsLeadsTd.innerHTML = `
-        <div class="wins-leads-progress ${isMajority ? 'is-majority' : ''}">
+        <div class="wins-leads-progress ${isMajority ? 'is-majority' : ''} ${isDesktopLayout ? 'is-stacked' : ''}">
           <span class="wins-leads-value">${d.wins}+${d.leads}</span>
           <div class="majority-progress-track">
             <div class="majority-progress-fill-layer">
@@ -2253,9 +2337,10 @@ function fitWidgetToViewport() {
   if (!viewport || !root) return;
   root.style.transform = 'scale(1)';
   const naturalHeight = Math.ceil(Math.max(root.scrollHeight, root.offsetHeight));
-  const scale = naturalHeight > 500 ? (500 / naturalHeight) : 1;
+  const embedMaxHeight = getEmbedMaxHeight();
+  const scale = naturalHeight > embedMaxHeight ? (embedMaxHeight / naturalHeight) : 1;
   root.style.transform = `scale(${scale})`;
-  viewport.style.height = '500px';
+  viewport.style.height = `${embedMaxHeight}px`;
 }
 try { new ResizeObserver(() => postEmbedSize('resize-observer')).observe(document.body); } catch (_) {}
 window.addEventListener('load',   () => postEmbedSize('load'));
