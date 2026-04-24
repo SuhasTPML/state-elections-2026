@@ -517,6 +517,14 @@
       return DEFAULT_REFRESH_MS;
     })();
 
+    function setStateQueryParam(stateKey) {
+      const normalized = String(stateKey || '').trim().toUpperCase();
+      if (!normalized) return;
+      const url = new URL(window.location.href);
+      url.searchParams.set('state', normalized);
+      history.replaceState(null, '', url);
+    }
+
     const STATE_TABS = [
       { key: 'WEST_BENGAL', label: 'West Bengal' },
       { key: 'TAMIL_NADU',  label: 'Tamil Nadu' },
@@ -1434,6 +1442,7 @@
           pauseAutoRotateCarousel();
           if (key === currentStateFilter) return;
           currentStateFilter = key;
+          setStateQueryParam(key);
           stateTabsEl.querySelectorAll('.state-tab').forEach(b => b.classList.toggle('active', b.dataset.key === key));
           render(allBattles, { resetCarousel: true });
         });

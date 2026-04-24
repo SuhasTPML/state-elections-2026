@@ -114,3 +114,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: The iframe could stay stuck at the old 500px inline height after resizing to desktop because the cached value did not update.
 - Working approach: Read the current breakpoint in a helper (`window.matchMedia('(min-width: 768px)')`) each time `fitWidgetToViewport()` runs.
 - Next-time rule: For responsive iframe sizing, compute breakpoint-dependent heights at render/resize time instead of caching them once at startup.
+
+## 2026-04-24 - Use elevated git staging when index lock permission fails
+- Context: Committing the state-tab persistence change in the election widgets.
+- Command/workflow: `git add` for the modified widget files.
+- Failed approach: Ran staging inside the sandbox without escalation.
+- Symptom: `fatal: Unable to create .../.git/index.lock: Permission denied`.
+- Working approach: Retry the git write operation with elevated permissions.
+- Next-time rule: If `git add` or similar repo-write commands fail on `.git/index.lock`, rerun them with escalated permissions before changing strategy.

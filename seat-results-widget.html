@@ -616,6 +616,14 @@ const MAPPING_LIVE_GID_PARAM = (QUERY_PARAMS.get('mappingLiveGid') || '').trim()
 const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
 const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
 
+function setStateQueryParam(stateKey) {
+  const normalized = String(stateKey || '').trim().toUpperCase();
+  if (!normalized) return;
+  const url = new URL(window.location.href);
+  url.searchParams.set('state', normalized);
+  history.replaceState(null, '', url);
+}
+
 const SHEET_ID = (SHEET_ID_PARAM || extractGoogleSheetId(SHEET_URL_PARAM) || DEFAULT_SHEET_ID).trim();
 const PUBLISHED_SHEET_KEY = (PUBLISHED_SHEET_KEY_PARAM || extractGooglePublishedSheetKey(PUBLISHED_SHEET_URL_PARAM) || '').trim();
 const USE_DEFAULT_PUBLISHED_GIDS = !SHEET_ID && (PUBLISHED_SHEET_KEY === DEFAULT_PUBLISHED_SHEET_KEY);
@@ -1451,6 +1459,7 @@ function applyDataAndRender(nextData, preserveSelection = false) {
   }
 
   currentStateKey = targetStateKey;
+  setStateQueryParam(targetStateKey);
   const state = DATA.states.find((item) => item.key === targetStateKey) || DATA.states[0];
   const years = getVisibleYears(state);
   const fallbackYears = Array.isArray(state.years) ? state.years : [];
@@ -1896,6 +1905,7 @@ document.getElementById('share-widget-btn').addEventListener('click', () => {
 function loadState(key, { fromRotation = false } = {}) {
   if (!fromRotation) noteRotationInteraction();
   currentStateKey = key;
+  setStateQueryParam(key);
   const state = DATA.states.find(s => s.key === key);
   const visibleYears = getVisibleYears(state);
   currentYear = getMostRecentYear(visibleYears);
