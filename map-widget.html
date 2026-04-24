@@ -1146,7 +1146,8 @@
         description: 'Tap on a constituency to view details, or search by number/name/district.',
         mapType: 'svg',
         svgUrl: stateRootUrl('ASSAM_2023_keyed.svg'),
-        disclaimer: 'Assam only: some seats show no data because constituency names/boundaries changed after 2021.'
+        legacySvgUrl: stateRootUrl('ASSAM_pre2023_keyed.svg'),
+        disclaimer: 'Assam only: 2016 and 2021 use pre-2023 constituency boundaries.'
       },
       PUDUCHERRY: {
         label: 'Puducherry',
@@ -1207,6 +1208,8 @@
     let currentColorMode = ENABLE_2026_MODES ? 'alliance-2026' : 'alliance-2021';
     let currentModeYear = '';
     let currentModeView = 'alliance';
+    let currentGeometryVariant = '';
+    let assamGeometryLoadSeq = 0;
     let cachedResultsRows = null;
     let cachedPartyWiseRows = null;
     let cachedMappingRows = null;
@@ -1274,6 +1277,31 @@
       return boundedPadding
         ? baseProjection.fitExtent([[boundedPadding, boundedPadding], [mapWidth - boundedPadding, mapHeight - boundedPadding]], geoData)
         : baseProjection.fitSize([mapWidth, mapHeight], geoData);
+    }
+
+    function assamGeometryVariantForYear(year){
+      const parsedYear = Number(year);
+      return Number.isFinite(parsedYear) && parsedYear <= 2021 ? 'legacy' : 'current';
+    }
+
+    function getStateGeometryVariant(stateKey, year = currentModeYear){
+      const normalizedState = normalizeStateKey(stateKey);
+      if (normalizedState === 'ASSAM') return assamGeometryVariantForYear(year);
+      const cfg = STATE_CONFIG[normalizedState];
+      if (!cfg) return '';
+      return cfg.mapType === 'svg' ? 'svg' : 'geojson';
+    }
+
+    function getStateGeometryUrl(stateKey, year = currentModeYear){
+      const normalizedState = normalizeStateKey(stateKey);
+      const cfg = STATE_CONFIG[normalizedState];
+      if (!cfg) return '';
+      if (normalizedState === 'ASSAM') {
+        return assamGeometryVariantForYear(year) === 'legacy'
+          ? cfg.legacySvgUrl || cfg.svgUrl
+          : cfg.svgUrl;
+      }
+      return cfg.svgUrl || cfg.geoUrl || '';
     }
 
     function getQueryParam(name) {
@@ -1896,7 +1924,7 @@
         btn.dataset.modeYear = year;
         btn.textContent = year;
         btn.classList.toggle('active', currentModeYear === year);
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', async () => {
           if (currentModeYear === year) return;
           currentModeYear = year;
           const nextMode = resolveModeForControls();
@@ -1905,6 +1933,11 @@
           syncControlsFromCurrentMode();
           renderYearTabs();
           updateViewToggleState();
+          try {
+            await ensureCurrentGeometryMatchesModeYear();
+          } catch (err) {
+            console.warn('Assam geometry refresh failed', err);
+          }
           applyCurrentColorMode();
         });
         yearTabsEl.appendChild(btn);
@@ -2071,12 +2104,14 @@
     function applyCurrentColorMode(){
       g.selectAll('path.ac').attr('fill', d => getFillForMode(featureKey(d.properties), currentColorMode));
       g.selectAll('path.ac').classed('leading-blink', d => isLeadingBlink(featureKey(d.properties), currentColorMode));
-      if (selectedKey) {
-        g.selectAll('path.ac').attr('stroke', d => {
+      g.selectAll('path.ac')
+        .classed('selected', d => selectedKey && featureKey(d.properties) === selectedKey)
+        .classed('dimmed', d => selectedKey && featureKey(d.properties) !== selectedKey)
+        .classed('no-hover', d => selectedKey && featureKey(d.properties) === selectedKey)
+        .attr('stroke', d => {
           const key = featureKey(d.properties);
-          return key === selectedKey ? selectedStrokeForKey(key) : '#1f77b4';
+          return selectedKey && key === selectedKey ? selectedStrokeForKey(key) : '#1f77b4';
         });
-      }
       updateLegend();
     }
 
@@ -2866,6 +2901,47 @@
       tooltipEl.style.opacity = '0';
     }
 
+    async function ensureCurrentGeometryMatchesModeYear(){
+      if (currentState !== 'ASSAM') return false;
+
+      const desiredVariant = getStateGeometryVariant(currentState, currentModeYear);
+      if (!desiredVariant || desiredVariant === currentGeometryVariant) return false;
+      const requestSeq = ++assamGeometryLoadSeq;
+
+      const cfg = STATE_CONFIG[currentState];
+      const geometryUrl = getStateGeometryUrl(currentState, currentModeYear);
+      if (!geometryUrl) throw new Error(`No geometry configured for ${cfg.label}`);
+
+      const previousTransform = d3.zoomTransform(svg.node());
+      const previousSelectedKey = selectedKey;
+
+      const svgText = await loadText(geometryUrl, `${cfg.label} SVG`);
+      if (requestSeq !== assamGeometryLoadSeq || currentState !== 'ASSAM') return false;
+      const features = buildFeaturesFromKeyedSvg(svgText);
+      if (requestSeq !== assamGeometryLoadSeq || currentState !== 'ASSAM') return false;
+      if (!features.length) throw new Error(`Invalid map data for ${cfg.label}`);
+
+      currentGeoData = { type: 'FeatureCollection', features };
+      updateMapDimensions();
+      projection = buildProjectionForState(currentState, currentGeoData);
+      path = d3.geoPath(projection);
+      currentReflectY = false;
+
+      g.selectAll('path.ac').remove();
+      g.selectAll('g.district-groups').remove();
+      draw(currentGeoData.features);
+      renderDistrictGroups(currentGeoData.features);
+      cacheFeatures(currentGeoData.features);
+      populateSearch(currentGeoData.features);
+      currentGeometryVariant = desiredVariant;
+
+      svg.call(zoom.transform, previousTransform);
+      if (previousSelectedKey && featureByKey.has(previousSelectedKey)) {
+        renderDetails(featureByKey.get(previousSelectedKey));
+      }
+      return true;
+    }
+
     function filterMatches(rawQuery){
       const query = String(rawQuery || '').trim().toLowerCase();
       if (!query) return searchData;
@@ -3125,6 +3201,7 @@
       const cfg = STATE_CONFIG[normalizedState];
       const stateLabel = localizedStateLabel(normalizedState);
       currentState = normalizedState;
+      assamGeometryLoadSeq++;
       setMapHeadingForState(normalizedState);
       setActiveTab(normalizedState);
       setWidgetLoading(true);
@@ -3144,13 +3221,16 @@
 
         let geoData = null;
         if (cfg.mapType === 'svg') {
-          const svgText = await loadText(cfg.svgUrl, `${cfg.label} SVG`);
+          const geometryUrl = getStateGeometryUrl(normalizedState, currentModeYear);
+          const svgText = await loadText(geometryUrl, `${cfg.label} SVG`);
           const features = buildFeaturesFromKeyedSvg(svgText);
           geoData = { type: 'FeatureCollection', features };
           currentReflectY = false;
+          currentGeometryVariant = getStateGeometryVariant(normalizedState, currentModeYear);
         } else {
           geoData = await loadJson(cfg.geoUrl, `${cfg.label} GeoJSON`);
           currentReflectY = true;
+          currentGeometryVariant = 'geojson';
         }
         if (!geoData || !Array.isArray(geoData.features) || !geoData.features.length) {
           throw new Error(`Invalid map data for ${cfg.label}`);
@@ -3168,6 +3248,7 @@
         cacheFeatures(currentGeoData.features);
         populateSearch(currentGeoData.features);
         configureColorModes();
+        await ensureCurrentGeometryMatchesModeYear();
         if (!hasElectionData) {
           g.selectAll('path.ac').attr('fill', '#f3f4f6');
           legendEl.style.display = 'none';

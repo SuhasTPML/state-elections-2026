@@ -122,3 +122,19 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `fatal: Unable to create .../.git/index.lock: Permission denied`.
 - Working approach: Retry the git write operation with elevated permissions.
 - Next-time rule: If `git add` or similar repo-write commands fail on `.git/index.lock`, rerun them with escalated permissions before changing strategy.
+
+## 2026-04-24 - Use elevated git branch creation when ref lock permission fails
+- Context: Starting a new branch for Assam pre-2023 SVG mapping work.
+- Command/workflow: `git switch -c assam-pre2023-svg`.
+- Failed approach: Created the branch inside the sandbox without escalation.
+- Symptom: `Unable to create .../.git/refs/heads/...lock: Permission denied`.
+- Working approach: Retry the branch-creation command with elevated permissions.
+- Next-time rule: If branch creation or ref updates fail with a lock permission error, rerun the git command with escalation before trying a different branch name or workflow.
+
+## 2026-04-24 - Graphify update does not rebuild this HTML widget corpus
+- Context: Refreshing graph snapshots after changing `map-widget.html` Assam geometry behavior.
+- Command/workflow: `graphify update graphify-corpus`.
+- Failed approach: Tried to use the local graphify CLI update path as if it would rebuild the widget corpus from the mirrored HTML files.
+- Symptom: The CLI reported `No code files found - nothing to rebuild`, so the graph snapshot did not refresh.
+- Working approach: Use `scripts/sync_graphify_corpus.py` to mirror the root widget files into `graphify-corpus/` first; do not rely on `graphify update` for this repo's HTML widget snapshot.
+- Next-time rule: For widget behavior changes in this repo, sync the corpus with `scripts/sync_graphify_corpus.py` and expect `graphify update` to skip HTML-only widget files.

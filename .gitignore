@@ -1,5 +1,6 @@
 misc/legacy/Bihar elections/
 *.json
+!hosted-json/results/ASSAM_2016_2021_sheet_data.json
 .claspignore
 .clasp-remote-check/
 CLASP_WORKFLOW.md
