@@ -138,3 +138,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: The CLI reported `No code files found - nothing to rebuild`, so the graph snapshot did not refresh.
 - Working approach: Use `scripts/sync_graphify_corpus.py` to mirror the root widget files into `graphify-corpus/` first; do not rely on `graphify update` for this repo's HTML widget snapshot.
 - Next-time rule: For widget behavior changes in this repo, sync the corpus with `scripts/sync_graphify_corpus.py` and expect `graphify update` to skip HTML-only widget files.
+
+## 2026-04-28 - Move binary map assets with filesystem commands
+- Context: Consolidating unused geometry files into one folder under `root/`.
+- Command/workflow: `apply_patch` move attempt for `*.geojson` assets.
+- Failed approach: Tried to move the geometry files with a multi-file patch hunk.
+- Symptom: `apply_patch` rejected the hunk as empty for the source file and did not move the assets.
+- Working approach: Create the destination folder, then use `Move-Item -LiteralPath ... -Destination ...` for the asset files.
+- Next-time rule: For bulk asset moves in this repo, use filesystem moves instead of `apply_patch` when the files are not being edited.
