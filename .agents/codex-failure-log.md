@@ -146,3 +146,11 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `apply_patch` rejected the hunk as empty for the source file and did not move the assets.
 - Working approach: Create the destination folder, then use `Move-Item -LiteralPath ... -Destination ...` for the asset files.
 - Next-time rule: For bulk asset moves in this repo, use filesystem moves instead of `apply_patch` when the files are not being edited.
+
+## 2026-04-29 - Patch widgets one file at a time when blocks differ
+- Context: Replacing map asset URLs in the election widgets.
+- Command/workflow: Single `apply_patch` touching `map-widget.html`, `seat-results-widget.html`, and `key-battles-widget.html`.
+- Failed approach: Used one multi-file patch assuming all three files had the same `STATE_MINI_MAP_SOURCES` block.
+- Symptom: `apply_patch` failed on `key-battles-widget.html` because that file does not have the expected map source table.
+- Working approach: Patch the files that actually contain the asset URLs, then verify whether the third widget needs any change at all.
+- Next-time rule: For cross-widget constant updates, inspect each target file first and patch only the ones whose current structure matches.
