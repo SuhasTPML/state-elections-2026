@@ -141,7 +141,13 @@
     }
     body.widget-loading .widget-loader { display: flex; }
     body.widget-loading #widgetViewport { visibility: hidden; }
-    .widget-loader-text { font-size: 14px; color: #666; }
+    .widget-loader-text { font-size: 16px; font-weight: bold; color: #0091ac; }
+    .widget-loader-text .dot:nth-child(1) { animation: wlDot1 1.5s linear infinite; }
+    .widget-loader-text .dot:nth-child(2) { animation: wlDot2 1.5s linear infinite; }
+    .widget-loader-text .dot:nth-child(3) { animation: wlDot3 1.5s linear infinite; }
+    @keyframes wlDot1 { 0%, 60% { opacity: 1; } 60.01%, 100% { opacity: 0; } }
+    @keyframes wlDot2 { 0%, 19.99% { opacity: 0; } 20%, 60% { opacity: 1; } 60.01%, 100% { opacity: 0; } }
+    @keyframes wlDot3 { 0%, 39.99% { opacity: 0; } 40%, 60% { opacity: 1; } 60.01%, 100% { opacity: 0; } }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
     #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: 720px; margin: 0 auto; }
     .desktop-carousel-shell {
@@ -419,7 +425,7 @@
 </head>
 <body class="bg-white text-on-background font-body widget-loading">
   <div class="widget-loader" id="widget-loader" aria-hidden="true">
-    <span class="widget-loader-text">Loading...</span>
+    <span class="widget-loader-text">Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
   </div>
   <div id="widgetViewport">
   <main id="widgetScaleRoot" class="pt-4">
