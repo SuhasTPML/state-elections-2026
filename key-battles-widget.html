@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Key Battles Widget</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -142,7 +141,7 @@
     }
     body.widget-loading .widget-loader { display: flex; }
     body.widget-loading #widgetViewport { visibility: hidden; }
-    .widget-loader-player { width: 120px; height: 120px; }
+    .widget-loader-text { font-size: 14px; color: #666; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
     #widgetScaleRoot { transform-origin: top left; width: 100%; max-width: 720px; margin: 0 auto; }
     .desktop-carousel-shell {
@@ -420,7 +419,7 @@
 </head>
 <body class="bg-white text-on-background font-body widget-loading">
   <div class="widget-loader" id="widget-loader" aria-hidden="true">
-    <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    <span class="widget-loader-text">Loading...</span>
   </div>
   <div id="widgetViewport">
   <main id="widgetScaleRoot" class="pt-4">

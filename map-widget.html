@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
   <style>
     @font-face {
       font-family: 'PvHeadlineSemiBold';
@@ -55,7 +54,7 @@
     }
     body.widget-loading .widget-loader { display: flex; }
     body.widget-loading #widgetViewport { visibility: hidden; }
-    .widget-loader-player { width: 120px; height: 120px; }
+    .widget-loader-text { font-size: 14px; color: #666; }
     #widgetViewport { height: 500px; overflow: hidden; width: 100%; }
     main { display: flex; flex-direction: column; max-width: 720px; margin: 0 auto; width: 100%; height: 100%; min-height: 100%; transform-origin: top center; }
     h1, h2, h3, h4, h5, h6 { font-family: var(--pv-headline); }
@@ -327,7 +326,7 @@
     body.bottom-sheet-active #mapwrap {
       min-height: 220px;
     }
-    svg { width: 100%; height: 100%; background: #e9ebee; display:block; border-radius: 10px; }
+    #mapwrap svg { width: 100%; height: 100%; background: #e9ebee; display:block; border-radius: 10px; }
     .ac {
       stroke-width: 0.5;
       stroke-linejoin: round;
@@ -531,7 +530,7 @@
 </head>
 <body class="widget-loading">
   <div class="widget-loader" id="widget-loader" aria-hidden="true">
-    <dotlottie-player class="widget-loader-player" src="loader.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    <span class="widget-loader-text">Loading...</span>
   </div>
   <div id="widgetViewport">
   <main id="widgetScaleRoot">
