@@ -1120,13 +1120,23 @@
       return `${value.toFixed(1)}%`;
     }
 
+    const CF_IMG_HOST = 'https://images.assettype.com';
+    function cfOptimize(url, sizeClasses) {
+      if (!url || !url.startsWith(CF_IMG_HOST)) return url;
+      const m = sizeClasses.match(/w-(\d+)/);
+      const px = m ? parseInt(m[1]) * 4 : 128;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const size = Math.round(px * dpr);
+      return `${CF_IMG_HOST}/cdn-cgi/image/width=${size},height=${size},fit=cover,format=auto,quality=75${url.replace(CF_IMG_HOST, '')}`;
+    }
+
     function makeAvatar(photoUrl, name, sizeClasses) {
       const url = String(photoUrl || '').trim();
       if (url) {
         const img = document.createElement('img');
         img.className = `${sizeClasses} rounded-full object-cover bg-stone-100 shrink-0`;
         img.alt = name ? `${name} photo` : 'Candidate photo';
-        img.src = url;
+        img.src = cfOptimize(url, sizeClasses);
         img.loading = 'lazy';
         img.referrerPolicy = 'no-referrer';
         img.onerror = () => {
