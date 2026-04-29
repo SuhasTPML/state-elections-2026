@@ -316,6 +316,9 @@
       font-family: "Playfair Display", "serif";
       line-height: 1.2;
       text-transform: uppercase;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     .kb-small-chip {
       font-size: 12px;
@@ -1259,10 +1262,11 @@
 
         // Top: avatar + outcome label + name
         const topRow = document.createElement('div');
-        topRow.className = 'flex items-start gap-2';
+        topRow.className = 'flex items-start gap-2 min-w-0';
         topRow.appendChild(makeAvatar(cand && cand.photo, cand && cand.name, 'w-10 h-10'));
 
         const textWrap = document.createElement('div');
+        textWrap.className = 'min-w-0 flex-1';
         if (outcomeLabelText) {
           const outcome = document.createElement('span');
           const isTrailing = outcomeLabelText.toLowerCase() === 'trailing';
@@ -1275,7 +1279,7 @@
           textWrap.appendChild(outcome);
         }
         const nm = document.createElement('h4');
-        nm.className = 'kb-small-name';
+        nm.className = 'kb-small-name block';
         nm.textContent = (cand && cand.name) ? cand.name : 'Not set';
         textWrap.appendChild(nm);
         topRow.appendChild(textWrap);

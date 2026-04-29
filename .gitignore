@@ -1,6 +1,24 @@
 misc/legacy/Bihar elections/
 *.json
+!hosted-json/results/ASSAM_2016_2021_sheet_data.json
 .claspignore
 .clasp-remote-check/
 CLASP_WORKFLOW.md
 .agents/codex-failure-log.md
+.playwright-mcp/
+apps-script/.clasp-version-32/
+apps-script/README.md
+eci-live-pipeline/
+graphify-corpus/
+iframe embeds/map/
+misc/Divisions_of_Assam.svg
+misc/alliance_master_live.csv
+misc/mapping_live.csv
+misc/party_master_live.csv
+misc/party_year_live.csv
+misc/published_sheet.html
+misc/published_sheet_current.html
+misc/seat_results_8765.html
+seat-widget-mini-map-check.png
+share-logo-requests.txt
+working/
