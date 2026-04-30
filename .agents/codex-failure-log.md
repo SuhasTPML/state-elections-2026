@@ -154,3 +154,19 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `apply_patch` failed on `key-battles-widget.html` because that file does not have the expected map source table.
 - Working approach: Patch the files that actually contain the asset URLs, then verify whether the third widget needs any change at all.
 - Next-time rule: For cross-widget constant updates, inspect each target file first and patch only the ones whose current structure matches.
+
+## 2026-04-30 - Avoid nested PowerShell for generated embed files
+- Context: Reorganizing `iframe embeds/` and generating the new `2-iframes/` state embeds from the `3-iframes/` templates.
+- Command/workflow: Bulk file generation with a PowerShell regex replace.
+- Failed approach: Piped a script into a nested `powershell -NoProfile -Command -` invocation from the Codex PowerShell shell.
+- Symptom: The command exited without error, but the expected generated files did not appear under `iframe embeds/2-iframes/`.
+- Working approach: Run the PowerShell script directly in the current shell session and verify the output files immediately after generation.
+- Next-time rule: For bulk PowerShell file generation in this repo, do not nest a second `powershell -Command -`; run the script directly and confirm the created files.
+
+## 2026-04-30 - Patch exact active blocks when wiring sheet-driven Kannada labels
+- Context: Making `seat-results-widget.html` prefer sheet-driven Kannada party/alliance names over the hardcoded `NAME_KN` map.
+- Command/workflow: Manual `apply_patch` around the name-translation helpers and yearwise data parser.
+- Failed approach: Patched against an assumed return block for `buildDataFromYearwisePartyRows` that no longer matched the live file text.
+- Symptom: `apply_patch` failed to find the expected lines even though the functions existed.
+- Working approach: Re-read the exact live block around the parser and helper functions, then patch the current text in smaller hunks.
+- Next-time rule: When adding sheet-driven translation plumbing, inspect the current helper and parser blocks immediately before patching instead of reusing stale context.

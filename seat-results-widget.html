@@ -314,6 +314,12 @@
     .wins-leads-progress.is-majority .majority-progress-track {
       box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.18);
     }
+    html[lang="kn"] .wins-leads-progress {
+      grid-template-columns: 58px 90px;
+    }
+    html[lang="kn"] .majority-progress-track {
+      width: 90px;
+    }
     @media (max-width: 480px) {
       .total-progress-cell { min-width: 150px; }
       .wins-leads-progress {
@@ -323,6 +329,16 @@
       .majority-progress-track { width: 88px; }
       .wins-leads-value { width: 50px; min-width: 50px; }
       .majority-number-cell { min-width: 74px; }
+      html[lang="kn"] .wins-leads-progress {
+        grid-template-columns: 40px 70px;
+      }
+      html[lang="kn"] .majority-progress-track {
+        width: 70px;
+      }
+      html[lang="kn"] .wins-leads-value {
+        width: 40px;
+        min-width: 40px;
+      }
     }
     #error-msg { color: #c52626; font-size: 13px; margin-top: 8px; text-align: center; font-weight: 700; }
 
@@ -420,6 +436,12 @@
       }
       .majority-number-cell {
         min-width: 64px;
+      }
+      html[lang="kn"] th:nth-child(1),
+      html[lang="kn"] td:nth-child(1),
+      html[lang="kn"] th:nth-child(3),
+      html[lang="kn"] td:nth-child(3) {
+        font-size: 12px;
       }
     }
 
@@ -549,7 +571,8 @@ const DEFAULT_PUBLISHED_GIDS = Object.freeze({
   mapping: '2015371433',
   mappingLive: '',
   parties: '1992176761',
-  alliances: '1092628302'
+  alliances: '1092628302',
+  i18n: '138421946'
 });
 
 const SHEET_ID_PARAM = QUERY_PARAMS.get('sheetId');
@@ -574,6 +597,7 @@ const MAPPING_TAB_NAME = (QUERY_PARAMS.get('mappingTab') || 'Party_Alliance_Map_
 const MAPPING_LIVE_TAB_NAME = (QUERY_PARAMS.get('mappingLiveTab') || 'Live_Alliance_2026').trim();
 const PARTIES_TAB_NAME = (QUERY_PARAMS.get('partiesTab') || 'Party_Color').trim();
 const ALLIANCES_TAB_NAME = (QUERY_PARAMS.get('alliancesTab') || 'Alliance_Color').trim();
+const I18N_TAB_NAME = (QUERY_PARAMS.get('i18nTab') || 'Kannada_Labels_2026').trim();
 const INITIAL_STATE_FILTER = (QUERY_PARAMS.get('state') || '').trim().toUpperCase();
 const HIDE_TABS = QUERY_PARAMS.get('hideTabs') === 'true';
 const DEFAULT_REFRESH_MS = 2 * 60 * 1000;
@@ -603,6 +627,7 @@ const MAPPING_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingCsvUrl') || '').trim();
 const MAPPING_LIVE_CSV_URL_PARAM = (QUERY_PARAMS.get('mappingLiveCsvUrl') || '').trim();
 const PARTIES_CSV_URL_PARAM = (QUERY_PARAMS.get('partiesCsvUrl') || '').trim();
 const ALLIANCES_CSV_URL_PARAM = (QUERY_PARAMS.get('alliancesCsvUrl') || '').trim();
+const I18N_CSV_URL_PARAM = (QUERY_PARAMS.get('i18nCsvUrl') || '').trim();
 
 const PARTY_YEAR_GID_PARAM = (
   QUERY_PARAMS.get('partyYearGid') ||
@@ -620,6 +645,7 @@ const MAPPING_GID_PARAM = (QUERY_PARAMS.get('mappingGid') || '').trim();
 const MAPPING_LIVE_GID_PARAM = (QUERY_PARAMS.get('mappingLiveGid') || '').trim();
 const PARTIES_GID_PARAM = (QUERY_PARAMS.get('partiesGid') || '').trim();
 const ALLIANCES_GID_PARAM = (QUERY_PARAMS.get('alliancesGid') || '').trim();
+const I18N_GID_PARAM = (QUERY_PARAMS.get('i18nGid') || '').trim();
 
 function setStateQueryParam(stateKey) {
   const normalized = String(stateKey || '').trim().toUpperCase();
@@ -643,6 +669,7 @@ let MAPPING_SHEET_URL = MAPPING_CSV_URL_PARAM;
 let MAPPING_LIVE_SHEET_URL = MAPPING_LIVE_CSV_URL_PARAM;
 let PARTIES_SHEET_URL = PARTIES_CSV_URL_PARAM;
 let ALLIANCES_SHEET_URL = ALLIANCES_CSV_URL_PARAM;
+let I18N_SHEET_URL = I18N_CSV_URL_PARAM;
 
 const LANG = (() => {
   const raw = QUERY_PARAMS.get('lang') || '';
@@ -690,9 +717,23 @@ const NAME_KN = {
   'SM': 'ಎಸ್‌ಎಂ', 'MAHAJOT': 'ಮಹಾಜೋಟ್', 'OTH': 'ಇತರರು'
 };
 
+let STATE_LABELS_KN_OVERRIDE = {};
+let PARTY_NAME_KN = {};
+let ALLIANCE_NAME_KN = {};
+
 function t(key)      { return (LANG === 'kn' ? UI.kn : UI.en)[key] || key; }
-function tName(name) { return LANG === 'kn' ? (NAME_KN[name] || name) : name; }
-function tState(key, fallback) { return LANG === 'kn' ? (STATE_LABELS_KN[key] || fallback) : fallback; }
+function tName(name) {
+  if (LANG !== 'kn') return name;
+  const raw = String(name || '').trim();
+  if (!raw) return raw;
+  const upper = raw.toUpperCase();
+  return PARTY_NAME_KN[upper] || ALLIANCE_NAME_KN[upper] || NAME_KN[raw] || NAME_KN[upper] || raw;
+}
+function tState(key, fallback) {
+  if (LANG !== 'kn') return fallback;
+  const normalized = String(key || '').trim().toUpperCase();
+  return STATE_LABELS_KN_OVERRIDE[normalized] || STATE_LABELS_KN[normalized] || fallback;
+}
 function displayName(name) { return name === OTHERS_KEY ? t('others') : tName(name); }
 
 function extractGoogleSheetId(sheetUrl){
@@ -921,9 +962,10 @@ async function ensureSheetCsvUrlsReady(){
     if (!MAPPING_LIVE_SHEET_URL && SHEET_ID && MAPPING_LIVE_TAB_NAME) MAPPING_LIVE_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, MAPPING_LIVE_TAB_NAME);
     if (!PARTIES_SHEET_URL && SHEET_ID) PARTIES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, PARTIES_TAB_NAME);
     if (!ALLIANCES_SHEET_URL && SHEET_ID) ALLIANCES_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, ALLIANCES_TAB_NAME);
+    if (!I18N_SHEET_URL && SHEET_ID && I18N_TAB_NAME) I18N_SHEET_URL = buildGoogleSheetCsvUrl(SHEET_ID, I18N_TAB_NAME);
     const livePartywiseReady = !PARTY_YEAR_LIVE_TAB_NAME || PARTY_YEAR_LIVE_SHEET_URL || explicitPartyYearLiveGid;
     const liveMappingReady = !MAPPING_LIVE_TAB_NAME || MAPPING_LIVE_SHEET_URL || explicitMappingLiveGid;
-    if (PARTY_YEAR_SHEET_URL && MAPPING_SHEET_URL && PARTIES_SHEET_URL && ALLIANCES_SHEET_URL && livePartywiseReady && liveMappingReady) return;
+    if (PARTY_YEAR_SHEET_URL && MAPPING_SHEET_URL && PARTIES_SHEET_URL && ALLIANCES_SHEET_URL && I18N_SHEET_URL && livePartywiseReady && liveMappingReady) return;
 
     if (!PUBLISHED_SHEET_KEY) return;
 
@@ -933,7 +975,8 @@ async function ensureSheetCsvUrlsReady(){
       mapping: normalizePublishedGid(MAPPING_GID_PARAM),
       mappingLive: explicitMappingLiveGid,
       parties: normalizePublishedGid(PARTIES_GID_PARAM),
-      alliances: normalizePublishedGid(ALLIANCES_GID_PARAM)
+      alliances: normalizePublishedGid(ALLIANCES_GID_PARAM),
+      i18n: normalizePublishedGid(I18N_GID_PARAM)
     };
 
     const needLookup =
@@ -942,7 +985,8 @@ async function ensureSheetCsvUrlsReady(){
       ((!MAPPING_SHEET_URL) && !explicitGids.mapping) ||
       ((MAPPING_LIVE_TAB_NAME && !MAPPING_LIVE_SHEET_URL) && !explicitGids.mappingLive) ||
       ((!PARTIES_SHEET_URL) && !explicitGids.parties) ||
-      ((!ALLIANCES_SHEET_URL) && !explicitGids.alliances);
+      ((!ALLIANCES_SHEET_URL) && !explicitGids.alliances) ||
+      ((!I18N_SHEET_URL) && !explicitGids.i18n);
 
     let tabMap = new Map();
     if (needLookup) {
@@ -988,6 +1032,8 @@ async function ensureSheetCsvUrlsReady(){
       || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['partiesTab', 'partiesGid']) ? DEFAULT_PUBLISHED_GIDS.parties : '');
     const alliancesGid = explicitGids.alliances || findPublishedTabGid(tabMap, [ALLIANCES_TAB_NAME, 'alliance_color', 'alliance_master'])
       || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['alliancesTab', 'alliancesGid']) ? DEFAULT_PUBLISHED_GIDS.alliances : '');
+    const i18nGid = explicitGids.i18n || findPublishedTabGid(tabMap, [I18N_TAB_NAME, 'kannada_labels', 'i18n_kn'])
+      || (USE_DEFAULT_PUBLISHED_GIDS && !hasAnyQueryParam(['i18nTab', 'i18nGid']) ? DEFAULT_PUBLISHED_GIDS.i18n : '');
 
     if (!PARTY_YEAR_SHEET_URL && partyYearGid) PARTY_YEAR_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearGid);
     if (!PARTY_YEAR_LIVE_SHEET_URL && partyYearLiveGid) PARTY_YEAR_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partyYearLiveGid);
@@ -995,6 +1041,7 @@ async function ensureSheetCsvUrlsReady(){
     if (!MAPPING_LIVE_SHEET_URL && mappingLiveGid) MAPPING_LIVE_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, mappingLiveGid);
     if (!PARTIES_SHEET_URL && partiesGid) PARTIES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, partiesGid);
     if (!ALLIANCES_SHEET_URL && alliancesGid) ALLIANCES_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, alliancesGid);
+    if (!I18N_SHEET_URL && i18nGid) I18N_SHEET_URL = buildGooglePublishedCsvUrl(PUBLISHED_SHEET_KEY, i18nGid);
   })();
 
   return sheetCsvUrlsReadyPromise;
@@ -1102,6 +1149,7 @@ function parsePartyMasterRows(rows){
     partyMap.set(key, {
       code: code.trim(),
       name: firstNonEmpty(row, ['party', 'name']) || code.trim(),
+      nameKn: firstNonEmpty(row, ['name_kn', 'kannada_name', 'kn']),
       color: normalizeHexColor(firstNonEmpty(row, ['color', 'party_color'])),
       alliance: firstNonEmpty(row, ['alliance']),
       allianceByYear: byYear
@@ -1111,11 +1159,43 @@ function parsePartyMasterRows(rows){
 }
 
 function parseAllianceMasterRows(rows){
-  const out = { OTH: '#9CA3AF', NA: '#999999' };
+  const out = {
+    colors: { OTH: '#9CA3AF', NA: '#999999' },
+    namesKn: {}
+  };
   (rows || []).forEach((row) => {
     const alliance = firstNonEmpty(row, ['alliance', 'alliance_code', 'name']);
     const color = normalizeHexColor(firstNonEmpty(row, ['color', 'alliance_color']));
-    if (alliance && color) out[alliance] = color;
+    const nameKn = firstNonEmpty(row, ['name_kn', 'kannada_name', 'kn']);
+    if (alliance && color) out.colors[alliance] = color;
+    if (alliance && nameKn) out.namesKn[alliance] = nameKn;
+  });
+  return out;
+}
+
+function parseSeatI18nRows(rows){
+  const out = { party: {}, alliance: {}, state: {} };
+  (rows || []).forEach((row) => {
+    const key = firstNonEmpty(row, ['key', 'label', 'name']);
+    const kn = firstNonEmpty(row, ['kn', 'kannada', 'value', 'target']);
+    if (!key || !kn) return;
+    const type = firstNonEmpty(row, ['type', 'kind', 'group']).trim().toLowerCase();
+    if (type === 'party') {
+      out.party[key.trim().toUpperCase()] = kn;
+      return;
+    }
+    if (type === 'alliance') {
+      out.alliance[key.trim().toUpperCase()] = kn;
+      return;
+    }
+    if (type === 'state') {
+      out.state[key.trim().toUpperCase()] = kn;
+      return;
+    }
+    const normalizedKey = key.trim().toUpperCase();
+    out.party[normalizedKey] = kn;
+    out.alliance[normalizedKey] = kn;
+    out.state[normalizedKey] = kn;
   });
   return out;
 }
@@ -1167,6 +1247,7 @@ function ensurePartyContainer(state, partyCode, partyName){
     state.partiesMap.set(partyCode, {
       code: partyCode,
       name: partyName || partyCode,
+      nameKn: '',
       color: '',
       alliance: {},
       results: {}
@@ -1175,11 +1256,15 @@ function ensurePartyContainer(state, partyCode, partyName){
   return state.partiesMap.get(partyCode);
 }
 
-function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, allianceRows){
+function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, allianceRows, i18nRows){
   const partyMaster = parsePartyMasterRows(partyRows);
-  const allianceColors = parseAllianceMasterRows(allianceRows);
+  const allianceMaster = parseAllianceMasterRows(allianceRows);
+  const allianceColors = allianceMaster.colors;
+  const allianceNamesKn = allianceMaster.namesKn;
+  const i18nLabels = parseSeatI18nRows(i18nRows);
   const allianceMapping = parseAllianceMappingRows(mappingRows);
   const statesMap = new Map();
+  STATE_LABELS_KN_OVERRIDE = {};
 
   (summaryRows || []).forEach((row) => {
     const stateRaw = firstNonEmpty(row, ['state_key', 'state', 'state_code', 'state_name']);
@@ -1215,6 +1300,8 @@ function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, all
     const parties = Array.from(state.partiesMap.values()).map((party) => {
       const master = partyMaster.get(party.code.toUpperCase());
       if (!party.color) party.color = (master && master.color) || '#9CA3AF';
+      if (!party.nameKn && master && master.nameKn) party.nameKn = master.nameKn;
+      if (!party.nameKn && i18nLabels.party[party.code.toUpperCase()]) party.nameKn = i18nLabels.party[party.code.toUpperCase()];
 
       years.forEach((year) => {
         if (!party.results[year]) party.results[year] = { wins: 0, leads: 0 };
@@ -1246,6 +1333,29 @@ function buildDataFromYearwisePartyRows(summaryRows, mappingRows, partyRows, all
       parties
     };
   }).filter(state => state.years.length && state.parties.length);
+
+  PARTY_NAME_KN = {};
+  partyMaster.forEach((entry) => {
+    if (!entry || !entry.code) return;
+    const key = String(entry.code).trim().toUpperCase();
+    if (entry.nameKn) PARTY_NAME_KN[key] = entry.nameKn;
+  });
+  ALLIANCE_NAME_KN = {};
+  Object.keys(allianceNamesKn || {}).forEach((key) => {
+    const normalizedKey = String(key || '').trim().toUpperCase();
+    const value = allianceNamesKn[key];
+    if (normalizedKey && value) ALLIANCE_NAME_KN[normalizedKey] = value;
+  });
+  Object.keys(i18nLabels.alliance || {}).forEach((key) => {
+    const normalizedKey = String(key || '').trim().toUpperCase();
+    const value = i18nLabels.alliance[key];
+    if (normalizedKey && value) ALLIANCE_NAME_KN[normalizedKey] = value;
+  });
+  Object.keys(i18nLabels.state || {}).forEach((key) => {
+    const normalizedKey = String(key || '').trim().toUpperCase();
+    const value = i18nLabels.state[key];
+    if (normalizedKey && value) STATE_LABELS_KN_OVERRIDE[normalizedKey] = value;
+  });
 
   return { alliance_colors: allianceColors, states };
 }
@@ -1571,7 +1681,8 @@ async function loadDataFromGoogleSheet(stateFilter = '', options = {}){
     { alias: 'summary', tabName: PARTY_YEAR_TAB_NAME, stateFilter: stateFilter },
     { alias: 'mapping', tabName: MAPPING_TAB_NAME },
     { alias: 'parties', tabName: PARTIES_TAB_NAME },
-    { alias: 'alliances', tabName: ALLIANCES_TAB_NAME }
+    { alias: 'alliances', tabName: ALLIANCES_TAB_NAME },
+    { alias: 'i18n', tabName: I18N_TAB_NAME }
   ];
   if (MAPPING_LIVE_TAB_NAME) requests.push({ alias: 'mappingLive', tabName: MAPPING_LIVE_TAB_NAME });
   if (PARTY_YEAR_LIVE_TAB_NAME) requests.push({ alias: 'livePartywise', tabName: PARTY_YEAR_LIVE_TAB_NAME, stateFilter: stateFilter });
@@ -1587,6 +1698,7 @@ async function loadDataFromGoogleSheet(stateFilter = '', options = {}){
   const mappingLiveRows = rowsByAlias.mappingLive || [];
   const partyRows = rowsByAlias.parties || [];
   const allianceRows = rowsByAlias.alliances || [];
+  const i18nRows = rowsByAlias.i18n || [];
   const livePartywiseRows = rowsByAlias.livePartywise || [];
   if (!looksLikeYearwiseSummaryRows(rawSummaryRows)) {
     throw new Error(
@@ -1596,7 +1708,7 @@ async function loadDataFromGoogleSheet(stateFilter = '', options = {}){
   }
   const summaryRows = mergeSummaryRowsWithLivePartywise(rawSummaryRows, livePartywiseRows);
   const mergedMappingRows = [...(mappingRows || []), ...(mappingLiveRows || [])];
-  return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows);
+  return buildDataFromYearwisePartyRows(summaryRows, mergedMappingRows, partyRows, allianceRows, i18nRows);
 }
 
 // ─────────────────────────────────────────────
