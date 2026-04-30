@@ -702,6 +702,18 @@
         .replace(/^-+|-+$/g, '');
     }
 
+    function addStoryCtaUtm(url) {
+      try {
+        const parsed = new URL(String(url || ''), window.location.href);
+        parsed.searchParams.set('utm_source', 'key-battles-widget');
+        parsed.searchParams.set('utm_medium', 'widget');
+        parsed.searchParams.set('utm_campaign', 'read-full-story');
+        return parsed.toString();
+      } catch (_) {
+        return url;
+      }
+    }
+
     function parseVotes(value) {
       const raw = String(value == null ? '' : value).replace(/,/g, '').trim();
       if (!raw) return null;
@@ -1442,7 +1454,7 @@
       // Optional story CTA (hidden when a specific constituency is pinned via URL param)
       if (battle.storyUrl && !CONSTITUENCY_PARAM) {
         const cta = document.createElement('a');
-        cta.href = battle.storyUrl;
+        cta.href = addStoryCtaUtm(battle.storyUrl);
         cta.target = '_blank';
         cta.rel = 'noopener';
         cta.className = 'kb-cta mt-auto';
