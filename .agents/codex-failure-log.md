@@ -170,3 +170,19 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: `apply_patch` failed to find the expected lines even though the functions existed.
 - Working approach: Re-read the exact live block around the parser and helper functions, then patch the current text in smaller hunks.
 - Next-time rule: When adding sheet-driven translation plumbing, inspect the current helper and parser blocks immediately before patching instead of reusing stale context.
+
+## 2026-05-04 - Assam CDN SVGs are not guaranteed to stay polygon-based
+- Context: Fixing `map-widget-2026?state=ASSAM` after production started failing with `SVG parse failed: no valid polygons found`.
+- Command/workflow: Assam keyed SVG parsing in `buildFeaturesFromKeyedSvg()`.
+- Failed approach: Assumed the live Assam CDN assets would keep the same `<polygon>` structure as the checked-in source SVGs.
+- Symptom: The live widget fetched successfully, but the parser found zero polygons because the CDN-served SVG had been optimized into keyed `<path>` elements.
+- Working approach: Verify the live asset markup, then support both keyed `<polygon>` and keyed `<path>` geometry when building Assam features.
+- Next-time rule: When a widget depends on externally hosted SVG markup, inspect the live asset format before relying on source-file structure; accept both polygon and path keyed shapes where feasible.
+
+## 2026-05-04 - Do not assign to PowerShell `$PID` when stopping local helpers
+- Context: Cleaning up the detached local HTTP server after browser QA for the election widgets.
+- Command/workflow: PowerShell process-stop helper around `Stop-Process`.
+- Failed approach: Used `$pid = <number>` as a temporary variable name before calling `Stop-Process`.
+- Symptom: PowerShell rejected the assignment with `Cannot overwrite variable PID because it is read-only or constant.`
+- Working approach: Use a different variable name such as `$targetPid`, and escalate the stop command if the helper was launched outside the sandbox.
+- Next-time rule: In this PowerShell environment, never reuse `$PID` as a scratch variable; use a non-reserved name for process IDs.

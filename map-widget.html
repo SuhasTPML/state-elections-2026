@@ -920,7 +920,7 @@
     }
 
     function mapDisclaimerForState(stateKey){
-      if (stateKey === 'ASSAM' && currentLang === 'kn') return uiText().assamDisclaimer;
+      if (stateKey === 'ASSAM') return '';
       const cfg = STATE_CONFIG[stateKey] || STATE_CONFIG[DEFAULT_STATE];
       return String(cfg.disclaimer || '').trim();
     }
@@ -1169,7 +1169,7 @@
         mapType: 'svg',
         svgUrl: 'https://images.assettype.com/deccanherald/2026-04-29/x9r3emjp/ASSAM2023keyed.svg',
         legacySvgUrl: 'https://images.assettype.com/deccanherald/2026-04-29/4hjq2vpw/ASSAMpre2023keyed.svg',
-        disclaimer: 'Assam only: 2016 and 2021 use pre-2023 constituency boundaries.'
+        disclaimer: DEFAULT_RESULTS_DISCLAIMER
       },
       PUDUCHERRY: {
         label: 'Puducherry',
@@ -3145,7 +3145,79 @@
       return out;
     }
 
-    function parseFeatureNoFromSvgPolygon(el, fallbackIndex){
+    let svgPathMeasureRoot = null;
+    let svgPathMeasureEl = null;
+
+    function getSvgPathMeasureEl(){
+      if (svgPathMeasureEl) return svgPathMeasureEl;
+      svgPathMeasureRoot = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svgPathMeasureRoot.setAttribute('width', '0');
+      svgPathMeasureRoot.setAttribute('height', '0');
+      svgPathMeasureRoot.setAttribute('aria-hidden', 'true');
+      svgPathMeasureRoot.style.position = 'absolute';
+      svgPathMeasureRoot.style.width = '0';
+      svgPathMeasureRoot.style.height = '0';
+      svgPathMeasureRoot.style.overflow = 'hidden';
+      svgPathMeasureRoot.style.opacity = '0';
+      svgPathMeasureRoot.style.pointerEvents = 'none';
+
+      svgPathMeasureEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      svgPathMeasureRoot.appendChild(svgPathMeasureEl);
+      (document.body || document.documentElement).appendChild(svgPathMeasureRoot);
+      return svgPathMeasureEl;
+    }
+
+    function closeSvgRing(points){
+      const ring = [];
+      points.forEach(point => {
+        if (!Array.isArray(point) || point.length < 2) return;
+        const x = Number(point[0]);
+        const y = Number(point[1]);
+        if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+        const last = ring[ring.length - 1];
+        if (last && Math.abs(last[0] - x) < 0.01 && Math.abs(last[1] - y) < 0.01) return;
+        ring.push([x, y]);
+      });
+      if (ring.length < 3) return [];
+      const first = ring[0];
+      const last = ring[ring.length - 1];
+      if (Math.abs(first[0] - last[0]) >= 0.01 || Math.abs(first[1] - last[1]) >= 0.01) {
+        ring.push([first[0], first[1]]);
+      }
+      return ring;
+    }
+
+    function sampleSvgPathRing(pathData){
+      const measurePath = getSvgPathMeasureEl();
+      try {
+        measurePath.setAttribute('d', String(pathData || ''));
+        const totalLength = measurePath.getTotalLength();
+        if (!Number.isFinite(totalLength) || totalLength <= 0) return [];
+        const sampleCount = Math.max(24, Math.min(1200, Math.ceil(totalLength / 4)));
+        const points = [];
+        for (let i = 0; i <= sampleCount; i++) {
+          const point = measurePath.getPointAtLength((totalLength * i) / sampleCount);
+          points.push([point.x, point.y]);
+        }
+        return closeSvgRing(points);
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function parseSvgPathRings(pathData){
+      const raw = String(pathData || '').trim();
+      if (!raw) return [];
+      const subpaths = raw.match(/[Mm][^Mm]*/g) || [];
+      const rings = subpaths
+        .map(sampleSvgPathRing)
+        .filter(ring => ring.length >= 4);
+      if (rings.length) return rings;
+      const fallbackRing = sampleSvgPathRing(raw);
+      return fallbackRing.length >= 4 ? [fallbackRing] : [];
+    }
+
+    function parseFeatureNoFromSvgElement(el, fallbackIndex){
       const candidates = [
         el.getAttribute('data-ac-no'),
         el.getAttribute('data-ac-key'),
@@ -3161,7 +3233,7 @@
       return fallbackIndex + 1;
     }
 
-    function parseFeatureNameFromSvgPolygon(el, fallbackNo){
+    function parseFeatureNameFromSvgElement(el, fallbackNo){
       const fromAttr = String(el.getAttribute('data-ac-name') || '').trim();
       if (fromAttr) return fromAttr;
       const titleEl = el.querySelector('title');
@@ -3173,7 +3245,7 @@
       return `AC ${fallbackNo}`;
     }
 
-    function parseFeatureDistrictFromSvgPolygon(el){
+    function parseFeatureDistrictFromSvgElement(el){
       const fromAttr = String(el.getAttribute('data-district') || '').trim();
       if (fromAttr) return fromAttr;
       const titleEl = el.querySelector('title');
@@ -3186,27 +3258,36 @@
     function buildFeaturesFromKeyedSvg(svgText){
       const parser = new DOMParser();
       const doc = parser.parseFromString(String(svgText || ''), 'image/svg+xml');
-      const polygons = Array.from(doc.querySelectorAll('polygon'));
+      const shapes = Array.from(doc.querySelectorAll(
+        'polygon[data-ac-no], polygon[data-ac-key], polygon[id^="ac-"], path[data-ac-no], path[data-ac-key], path[id^="ac-"]'
+      ));
       const features = [];
-      polygons.forEach((el, idx) => {
-        const points = parseSvgPointPairs(el.getAttribute('points') || '');
-        if (points.length < 3) return;
-        const no = parseFeatureNoFromSvgPolygon(el, idx);
-        const ring = points.slice();
-        const first = ring[0];
-        const last = ring[ring.length - 1];
-        if (first[0] !== last[0] || first[1] !== last[1]) ring.push([first[0], first[1]]);
+      shapes.forEach((el, idx) => {
+        const tagName = String(el.tagName || '').toLowerCase();
+        const rings = tagName === 'path'
+          ? parseSvgPathRings(el.getAttribute('d') || '')
+          : (() => {
+              const ring = closeSvgRing(parseSvgPointPairs(el.getAttribute('points') || ''));
+              return ring.length ? [ring] : [];
+            })();
+        if (!rings.length) return;
+        const no = parseFeatureNoFromSvgElement(el, idx);
         features.push({
           type: 'Feature',
           properties: {
             AC_NO: no,
-            AC_NAME: parseFeatureNameFromSvgPolygon(el, no),
-            DIST_NAME: parseFeatureDistrictFromSvgPolygon(el)
+            AC_NAME: parseFeatureNameFromSvgElement(el, no),
+            DIST_NAME: parseFeatureDistrictFromSvgElement(el)
           },
-          geometry: {
-            type: 'Polygon',
-            coordinates: [ring]
-          }
+          geometry: rings.length === 1
+            ? {
+                type: 'Polygon',
+                coordinates: [rings[0]]
+              }
+            : {
+                type: 'MultiPolygon',
+                coordinates: rings.map(ring => [ring])
+              }
         });
       });
       features.sort((a, b) => {
@@ -3214,7 +3295,7 @@
         const kb = featureKey(b.properties);
         return ka.localeCompare(kb, undefined, { numeric: true, sensitivity: 'base' });
       });
-      if (!features.length) throw new Error('SVG parse failed: no valid polygons found');
+      if (!features.length) throw new Error('SVG parse failed: no valid shapes found');
       return features;
     }
 
