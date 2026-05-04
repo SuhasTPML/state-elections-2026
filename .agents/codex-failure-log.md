@@ -186,3 +186,67 @@ This includes code changes, shell commands, search/read patterns, replace/edit a
 - Symptom: PowerShell rejected the assignment with `Cannot overwrite variable PID because it is read-only or constant.`
 - Working approach: Use a different variable name such as `$targetPid`, and escalate the stop command if the helper was launched outside the sandbox.
 - Next-time rule: In this PowerShell environment, never reuse `$PID` as a scratch variable; use a non-reserved name for process IDs.
+
+## 2026-05-04 - Browser MCP shared session collision
+- Context: Checking `results.eci.gov.in` with the Playwright MCP browser while another shared Chrome session was already active.
+- Command/workflow: `browser_navigate`, `browser_tabs list`, `browser_close` against the default MCP browser.
+- Failed approach: Tried to open and close the existing browser session directly without first clearing the occupied shared instance.
+- Symptom: MCP returned `Browser is already in use for C:\\Users\\suhas.bhandari\\AppData\\Local\\ms-playwright\\mcp-chrome-e5ac47a`.
+- Working approach: Wait for the shared session to clear, then reuse the same MCP browser tab set once `browser_tabs list` succeeded.
+- Next-time rule: If the Playwright MCP browser is locked by another run, do not keep retrying close/navigate immediately; wait for the session to clear or use the existing tab set once it becomes available.
+
+## 2026-05-04 - Clasp auth requires escalation in this repo
+- Context: Inspecting and syncing the Apps Script project in `eci-live-pipeline/apps-script`.
+- Command/workflow: `clasp deployments` against the target script project.
+- Failed approach: Ran clasp metadata queries inside the sandbox first.
+- Symptom: `request to https://oauth2.googleapis.com/token failed, reason: connect EACCES ...:443`.
+- Working approach: Re-run clasp queries with escalated permissions, then verify the deployment list after re-pointing `.clasp.json` to the intended Script ID.
+- Next-time rule: For clasp operations that hit Google auth, go straight to escalated permissions; do not rely on sandboxed token fetches.
+
+## 2026-05-04 - Re-read embed markup before patching iframe height
+- Context: Switching the home special-events seat-results embed to a 400px mobile height.
+- Command/workflow: `apply_patch` on `iframe embeds/home-special-events-seat-compact.html`.
+- Failed approach: Patched against an assumed blank-line and wrapper structure.
+- Symptom: `apply_patch` could not find the expected context even though the file existed.
+- Working approach: Re-read the exact current snippet, then patch the literal markup block with the existing spacing.
+- Next-time rule: For tiny embed snippets, inspect the exact current lines before replacing wrapper markup or inline styles.
+
+## 2026-05-04 - Graphify update skips HTML-only widget files
+- Context: Refreshing graph outputs before committing a seat-results widget height change.
+- Command/workflow: `graphify update graphify-corpus`.
+- Failed approach: Tried to use the graphify update path as if it would rebuild the HTML widget corpus.
+- Symptom: The tool reported `No code files found - nothing to rebuild.` and did not refresh `graphify-corpus/graphify-out`.
+- Working approach: Sync the corpus copies for HTML sources, then note that the graph update path does not rebuild these widget files.
+- Next-time rule: For HTML widget changes in this repo, do not rely on `graphify update` to regenerate outputs; expect it to skip non-code files.
+
+## 2026-05-04 - Use the real Python executable when WindowsApps shadows python
+- Context: Installing `scrapling` into the local Python 3.12 environment.
+- Command/workflow: `python -m pip install scrapling` after adding Python to PATH.
+- Failed approach: Relied on `python` resolving from PATH.
+- Symptom: PowerShell still hit the Microsoft Store alias and returned `Python was not found`.
+- Working approach: Call `C:\Users\suhas.bhandari\AppData\Local\Programs\Python\Python312\python.exe -m pip install scrapling` directly.
+- Next-time rule: In this repo, if `python` resolves to the WindowsApps alias, use the real Python executable path instead of retrying the PATH-based command.
+
+## 2026-05-04 - Use a PowerShell here-string for Scrapling inspection scripts
+- Context: Inspecting the ECI results page structure with Scrapling.
+- Command/workflow: Inline Python passed through PowerShell for `DynamicFetcher.fetch(...)`.
+- Failed approach: Embedded multi-line Python directly in a quoted `-c` string with `\n` escapes.
+- Symptom: PowerShell parsed the command incorrectly and raised a syntax error before Python ran.
+- Working approach: Pipe a PowerShell here-string into `python.exe -` for multi-line Scrapling inspection scripts.
+- Next-time rule: For multi-line Scrapling probes in PowerShell, prefer a here-string piped into `python.exe -` over packing the script into a single `-c` argument.
+
+## 2026-05-04 - Pagination regex must handle double-digit ECI pages
+- Context: Scraping ECI statewise results pages with Scrapling.
+- Command/workflow: Parsed pagination links with a regex that extracted the page suffix.
+- Failed approach: Used `statewise[A-Z]\d+(\d+)\.htm$`, which only captured the last digit when page numbers reached 10+.
+- Symptom: Tamil Nadu and West Bengal looked truncated at 9 pages even though page 10+ URLs existed.
+- Working approach: Treat the suffix as a full page number or probe pages sequentially until 404.
+- Next-time rule: For ECI pagination, do not assume single-digit page numbers; handle 10+ pages explicitly or stop only on 404.
+
+## 2026-05-04 - Read XLSX headers via row iteration, not sheet dimensions
+- Context: Inspecting the `eci-live-pipeline/Data Sheet` workbooks for tab names and header rows.
+- Command/workflow: `openpyxl` read-only workbook inspection.
+- Failed approach: Relied on `ws.max_row` and `ws.calculate_dimension()` in read-only mode.
+- Symptom: Some sheets were unsized and raised `ValueError` or returned `None`, which blocked metadata extraction.
+- Working approach: Use `next(ws.iter_rows(min_row=1, max_row=1, values_only=True))` to read the header row directly.
+- Next-time rule: When inspecting large XLSX files in read-only mode, read the first row by iteration instead of depending on sheet dimensions.
